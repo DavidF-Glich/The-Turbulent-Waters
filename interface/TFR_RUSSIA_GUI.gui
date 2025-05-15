@@ -1,0 +1,148 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_SOV_party_info_container"
+		clipping = no
+		position = { x = 5 y = 0 }
+		
+		iconType = {
+			name = "Duma_BG" 
+			position = { x = 0 y = -190 }
+			spriteType = "GFX_Duma_BG"
+		}
+		
+		instantTextboxType = {
+			name = "cprf_info_text"
+			position = { x = 5%% y = -135 }
+			maxWidth = 240
+			maxHeight = 23
+			font = "VCR02_12"
+			text = "CPRF_GUI_TEXT"
+			pdx_tooltip = "TFR_cprf_info_tooltip_name"
+			pdx_tooltip_delayed = "TFR_cprf_info_tooltip"
+		}
+		instantTextboxType = {
+			name = "ldpr_info_text"
+			position = { x = 5%% y = -105 }
+			maxWidth = 240
+			maxHeight = 23
+			font = "VCR02_12"
+			text = "LDPR_GUI_TEXT"
+			pdx_tooltip = "TFR_ldpr_info_tooltip_name"
+			pdx_tooltip_delayed = "TFR_ldpr_info_tooltip"
+		}
+		instantTextboxType = {
+			name = "ur_info_text"
+			position = { x = 5%% y = -165 }
+			size = { width = 1000 height= 25 }
+			font = "VCR02_12"
+			maxWidth = 270
+			maxHeight = 23
+			text = "UR_GUI_TEXT"
+			pdx_tooltip = "TFR_ur_info_tooltip_name"
+			pdx_tooltip_delayed = "TFR_ur_info_tooltip"
+		}
+		instantTextboxType = {
+			name = "jr_info_text"
+			position = { x = 5%% y = -75 }
+			font = "VCR02_12"
+			maxWidth = 300
+			maxHeight = 23
+			text = "JR_GUI_TEXT"
+			pdx_tooltip = "TFR_jr_info_tooltip_name"
+			pdx_tooltip_delayed = "TFR_jr_info_tooltip"
+		}	
+		instantTextboxType = {
+			name = "jr_support_info_text"
+			position = { x = 5 y = -75 }
+			font = "VCR02_12"
+			maxWidth = 500
+			maxHeight = 23
+			text = "JR_SUPPORT_GUI_TEXT"
+		}
+		instantTextboxType = {
+			name = "liberal_info_text"
+			position = { x = 5%% y = -45 }
+			font = "VCR02_12"
+			maxWidth = 270
+			maxHeight = 23
+			pdx_tooltip = "TFR_liberal_info_tooltip_name"
+			pdx_tooltip_delayed = "TFR_liberal_info_tooltip"
+		}
+	}
+	containerWindowType = {
+		name = "TFR_SOV_oligarch_info_container"
+		clipping = no
+		position = { x = 5 y = 0 }
+		
+		iconType = {
+			name = "Oligarch_BG" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Oligarch_BG"
+		}
+		
+		iconType = {
+			name = "Oligarch_BG_2" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Oligarch_BG_2"
+		}
+		
+		iconType = {
+			name = "Oligarch_BG_3" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Oligarch_BG_3"
+		}	
+		
+		iconType = {
+			name = "Oligarch_BG_4" 
+			position = { x = 0 y = -135 }
+			spriteType = "GFX_Oligarch_BG_4"
+		}
+		
+		instantTextboxType = {
+			name = "TFR_SOV_oligarch_info_text"
+			position = { x = 5%% y = -135 }
+			maxWidth = 470
+			maxHeight = 300
+			font = "VCR02_12"
+			text = "SOV_oligarch_info_text"
+			pdx_tooltip = "SOV_oligarch_info_tooltip_name"
+			pdx_tooltip_delayed = "SOV_oligarch_info_tooltip"
+		}
+		
+		iconType = {
+			name = "TFR_SOV_oligarch_info_text_2"
+			position = { x = 5%% y = -135 }
+			spriteType = "GFX_konata_dance"
+			
+		}
+	}
+	containerWindowType = {
+		name = "TFR_SOV_party_resources_info_container"
+		clipping = no
+		position = { x = 5 y = 0 }
+		
+		iconType = {
+			name = "Party_BG_1" 
+			position = { x = 0 y = -125 }
+			spriteType = "GFX_Party_BG_1"
+		}
+		
+		iconType = {
+			name = "Party_BG_2" 
+			position = { x = 0 y = -125 }
+			spriteType = "GFX_Party_BG_2"
+		}
+		
+		instantTextboxType = {
+			name = "SOV_party_resources_info_text"
+			position = { x = 5%% y = -67 }
+			maxWidth = 210
+			maxHeight = 40
+			font = "VCR02_12"
+			text = "SOV_party_resources_GUI_TEXT"
+			pdx_tooltip = "SOV_party_resources_tooltip_name"
+			pdx_tooltip_delayed = "SOV_party_resources_tooltip"
+		}
+	}
+
+}

@@ -1,0 +1,1370 @@
+﻿focus = {
+	current = "PRC_Wuhan_discovery"
+	progress = 0
+}
+
+division_template = {
+	name = "Armed Police Force"
+	division_names_group = PRC_MIL_00
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+	support = {
+		military_police = { x = 0 y = 0 }
+	}
+	priority = 0
+}
+division_template = {
+	name = "Theater Command Headquarters"
+	division_names_group = PRC_BUS_01
+	is_locked = no 
+	regiments = {
+		bus = { x = 0 y = 0 }
+	}
+	
+	support = {
+		military_police = { x = 0 y = 0 }		
+	}	
+}
+
+division_template = {
+	name = "Special Operations Brigade"
+	division_names_group = PRC_SOF_01
+	regiments = {
+		special_forces = { x = 0 y = 0 }
+		special_forces = { x = 0 y = 1 }
+		special_forces = { x = 0 y = 2 }
+	}
+	
+	support = {
+		engineer = { x = 0 y = 0 }
+		apc_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Marine Corps" 
+	division_names_group = PRC_MAR_01
+	regiments = {
+		marine = { x = 0 y = 0 }
+		marine = { x = 0 y = 1 }
+		marine = { x = 0 y = 2 }
+		marine = { x = 0 y = 3 }
+		
+		light_armor = { x = 1 y = 0 }
+		
+		artillery_brigade = { x = 2 y = 0 }
+		artillery_brigade = { x = 2 y = 1 }
+	}
+	
+	support = {
+		spaa_company = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Heavy Combined Arms Brigade"
+	
+	division_names_group = PRC_HMEC_02
+
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		mechanized = { x = 1 y = 0 }
+		mechanized = { x = 1 y = 1 }
+		mechanized = { x = 1 y = 2 }
+		mechanized = { x = 1 y = 3 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		spaa_brigade = { x = 2 y = 1 }
+		motorized_rocket_brigade = { x = 2 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		spa_company = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		logistics_company = { x = 1 y = 0 }
+		maintenance_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Medium Combined Arms Brigade"
+	
+	division_names_group = PRC_MEC_02
+
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+		light_armor = { x = 0 y = 2 }
+		light_armor = { x = 0 y = 3 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		light_mechanized = { x = 1 y = 3 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		spaa_brigade = { x = 2 y = 1 }
+		motorized_rocket_brigade = { x = 2 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		spa_company = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		logistics_company = { x = 1 y = 0 }
+		maintenance_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 3 }
+	}
+		
+}
+
+division_template = {
+	name = "Light Combined Arms Brigade"
+	
+	division_names_group = PRC_MOT_02
+
+	regiments = {
+		light_mechanized = { x = 0 y = 0 }
+		light_mechanized = { x = 0 y = 1 }
+		light_mechanized = { x = 0 y = 2 }
+		light_mechanized = { x = 1 y = 0 }
+		light_mechanized = { x = 1 y = 1 }
+		light_mechanized = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		spaa_brigade = { x = 2 y = 1 }
+		motorized_rocket_brigade = { x = 2 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		spa_company = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		logistics_company = { x = 1 y = 0 }
+		maintenance_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 3 }
+	}
+		
+}
+
+division_template = {
+	name = "Amphibious Combined Arms Brigade"
+	
+	division_names_group = PRC_MAR_02
+
+	regiments = {
+		amphibious_armor = { x = 0 y = 0 }
+		amphibious_armor = { x = 0 y = 1 }
+		amphibious_armor = { x = 0 y = 2 }
+		amphibious_armor = { x = 0 y = 3 }
+		amphibious_mechanized = { x = 1 y = 0 }
+		amphibious_mechanized = { x = 1 y = 1 }
+		amphibious_mechanized = { x = 1 y = 2 }
+		amphibious_mechanized = { x = 1 y = 3 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		spaa_brigade = { x = 2 y = 1 }
+		motorized_rocket_brigade = { x = 2 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		spa_company = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		logistics_company = { x = 1 y = 0 }
+		maintenance_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 3 }
+	}
+		
+}
+
+division_template = {
+	name = "Air Assault Brigade"
+	
+	division_names_group = PRC_AIR_01
+
+	regiments = {
+		paratrooper = { x = 0 y = 0 }
+		paratrooper = { x = 0 y = 1 }
+		paratrooper = { x = 0 y = 2 }
+		paratrooper = { x = 1 y = 0 }
+		paratrooper = { x = 1 y = 1 }
+		paratrooper = { x = 1 y = 2 }
+	}
+	
+	support = {
+		air_mechanized = { x = 0 y = 0 }
+		light_tank_recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		logistics_company = { x = 0 y = 3 }
+		signal_company = { x = 0 y = 4 }
+	}
+}
+
+division_template = {
+	name = "Border Defense Brigade"
+	division_names_group = PRC_MIL_04
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		modern_sp_artillery_brigade = { x = 2 y = 0 }
+		spaa_brigade = { x = 2 y = 1 }
+		light_armor = { x = 2 y = 2 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		helicopter_recon = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		logistics_company = { x = 1 y = 0 }
+		maintenance_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Combined Arms Division"
+	division_names_group = PRC_ARM_01
+	regiments = {
+		modern_armor = { x = 0 y = 0 }
+		modern_armor = { x = 0 y = 1 }
+		modern_armor = { x = 0 y = 2 }
+		modern_armor = { x = 0 y = 3 }
+		spaa_brigade = { x = 0 y = 4 }
+		modern_armor = { x = 1 y = 0 }
+		modern_armor = { x = 1 y = 1 }
+		modern_armor = { x = 1 y = 2 }
+		modern_armor = { x = 1 y = 3 }
+		spaa_brigade = { x = 1 y = 4 }
+		mechanized = { x = 2 y = 0 }
+		mechanized = { x = 2 y = 1 }
+		mechanized = { x = 2 y = 2 }
+		mechanized = { x = 2 y = 3 }
+		mechanized = { x = 3 y = 0 }
+		mechanized = { x = 3 y = 1 }
+		mechanized = { x = 3 y = 2 }
+		mechanized = { x = 3 y = 3 }
+		modern_sp_artillery_brigade = { x = 4 y = 0 }
+		modern_sp_artillery_brigade = { x = 4 y = 1 }
+		motorized_rocket_brigade = { x = 4 y = 2 }
+		motorized_rocket_brigade = { x = 4 y = 3 }
+	}
+	
+	support = {
+		artillery = { x = 0 y = 0 }
+		spa_company = { x = 0 y = 1 }
+		light_tank_recon = { x = 0 y = 2 }
+		engineer = { x = 0 y = 3 }
+		logistics_company = { x = 1 y = 0 }
+		maintenance_company = { x = 1 y = 1 }
+		field_hospital = { x = 1 y = 2 }
+		signal_company = { x = 1 y = 3 }
+	}
+	priority = 2	
+}
+
+units = {
+	division = {			
+		name = "Eastern Theater Command Headquarters"
+		location = 4196
+		division_template = "Theater Command Headquarters"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "Eastern Theater Command Coastal Defense 301st Brigade"
+		location = 11928
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Eastern Theater Command Coastal Defense 302nd Brigade"
+		location = 12076
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Eastern Theater Command Coastal Defense 303rd Brigade"
+		location = 4196
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Eastern Theater Command Coastal Defense 304th Brigade"
+		location = 7071
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "71st Group Army 2nd Combined Arms Brigade"
+		location = 11973
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "71st Group Army 35th Combined Arms Brigade"
+		location = 11973
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "71st Group Army 160th Combined Arms Brigade"
+		location = 11973
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "71st Group Army 178th Combined Arms Brigade"
+		location = 1146
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "71st Group Army 179th Combined Arms Brigade"
+		location = 11913
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "71st Group Army 235th Combined Arms Brigade"
+		location = 1146
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "72nd Group Army 5th Combined Arms Brigade"
+		location = 7191
+		division_template = "Amphibious Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "72nd Group Army 10th Combined Arms Brigade"
+		location = 10076
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "72nd Group Army 34th Combined Arms Brigade"
+		location = 11982
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "72nd Group Army 85th Combined Arms Brigade"
+		location = 4196
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "72nd Group Army 90th Combined Arms Brigade"
+		location = 10086
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "72nd Group Army 124th Combined Arms Brigade"
+		location = 7191
+		division_template = "Amphibious Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "73rd Group Army 3rd Combined Arms Brigade"
+		location = 10086
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "73rd Group Army 14th Combined Arms Brigade"
+		location = 7071
+		division_template = "Amphibious Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "73rd Group Army 86th Combined Arms Brigade"
+		location = 4196
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "73rd Group Army 91st Combined Arms Brigade"
+		location = 7071
+		division_template = "Amphibious Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "73rd Group Army 92nd Combined Arms Brigade"
+		location = 11986
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "73rd Group Army 145th Combined Arms Brigade"
+		location = 9938
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Southern Theater Command Headquarters"
+		location = 7137
+		division_template = "Theater Command Headquarters"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "Southern Theater Command Coastal Defense 311th Brigade"
+		location = 4189
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Southern Theater Command Coastal Defense 312th Brigade"
+		location = 994
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Southern Theater Command Border Defense 313th Brigade"
+		location = 1469
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Southern Theater Command Border Defense 314th Brigade"
+		location = 14187
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Southern Theater Command Border Defense 315th Brigade"
+		location = 10413
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Southern Theater Command Border Defense 316th Brigade"
+		location = 7976
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Southern Theater Command Border Defense 317th Brigade"
+		location = 10863
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Hong Kong Garrison Combined Arms Brigade"
+		location = 10062
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "74th Group Army 1st Combined Arms Brigade"
+		location = 14186
+		division_template = "Amphibious Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "74th Group Army 16th Combined Arms Brigade"
+		location = 1047
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "74th Group Army 125th Combined Arms Brigade"
+		location = 14186
+		division_template = "Amphibious Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "74th Group Army 132nd Combined Arms Brigade"
+		location = 1070
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "74th Group Army 154th Combined Arms Brigade"
+		location = 9970
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "74th Group Army 163rd Combined Arms Brigade"
+		location = 14186
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "75th Group Army 31st Combined Arms Brigade"
+		location = 7965
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "75th Group Army 32nd Combined Arms Brigade"
+		location = 7446
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "75th Group Army 37th Combined Arms Brigade"
+		location = 1114
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "75th Group Army 42nd Combined Arms Brigade"
+		location = 7446
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "75th Group Army 121st Air Assault Brigade"
+		location = 1469
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "75th Group Army 122nd Combined Arms Brigade"
+		location = 10404
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "75th Group Army 123rd Combined Arms Brigade"
+		location = 14187
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Western Theater Command Headquarters"
+		location = 12732
+		division_template = "Theater Command Headquarters"
+		start_experience_factor = 1
+	}  
+	division = {			
+		name = "76th Group Army 12th Combined Arms Brigade"
+		location = 12327
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "76th Group Army 17th Combined Arms Brigade"
+		location = 8081
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "76th Group Army 56th Combined Arms Brigade"
+		location = 7940
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "76th Group Army 62nd Combined Arms Brigade"
+		location = 2028
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "76th Group Army 149th Combined Arms Brigade"
+		location = 4939
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "76th Group Army 182nd Combined Arms Brigade"
+		location = 7911
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "77th Group Army 39th Combined Arms Brigade"
+		location = 6999
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "77th Group Army 40th Combined Arms Brigade"
+		location = 5033
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "77th Group Army 55th Combined Arms Brigade"
+		location = 13984
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "77th Group Army 139th Combined Arms Brigade"
+		location = 4925
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "77th Group Army 150th Combined Arms Brigade"
+		location = 10741
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "77th Group Army 181st Combined Arms Brigade"
+		location = 12705
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Northern Theater Command Headquarters"
+		location = 1069
+		division_template = "Theater Command Headquarters"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 321st Brigade"
+		location = 4783
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 322nd Brigade"
+		location = 12880
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 323rd Brigade"
+		location = 4555
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 324th Brigade"
+		location = 1502
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 325th Brigade"
+		location = 4852
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 326th Brigade"
+		location = 10541
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 327th Brigade"
+		location = 10368
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 328th Brigade"
+		location = 3815
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 329th Brigade"
+		location = 3944
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 330th Brigade"
+		location = 800
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Border Defense 331st Brigade"
+		location = 6860
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Coastal Defense 332nd Brigade"
+		location = 1150
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Coastal Defense 333rd Brigade"
+		location = 1104
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Coastal Defense 334th Brigade"
+		location = 4205
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Northern Theater Command Coastal Defense 335th Brigade"
+		location = 10000
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "78th Group Army 8th Combined Arms Brigade"
+		location = 10433
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "78th Group Army 48th Combined Arms Brigade"
+		location = 9803
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "78th Group Army 68th Combined Arms Brigade"
+		location = 4506
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "78th Group Army 115th Combined Arms Brigade"
+		location = 7582
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "78th Group Army 202nd Combined Arms Brigade"
+		location = 4642
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "78th Group Army 204th Combined Arms Brigade"
+		location = 6947
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "79th Group Army 46th Combined Arms Brigade"
+		location = 964
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "79th Group Army 46th Combined Arms Brigade"
+		location = 964
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "79th Group Army 116th Combined Arms Brigade"
+		location = 3839
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "79th Group Army 119th Combined Arms Brigade"
+		location = 6988
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "79th Group Army 190th Combined Arms Brigade"
+		location = 3849
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "79th Group Army 191st Combined Arms Brigade"
+		location = 6981
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "79th Group Army 200th Combined Arms Brigade"
+		location = 11764
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "80th Group Army 47th Combined Arms Brigade"
+		location = 10102
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "80th Group Army 69th Combined Arms Brigade"
+		location = 7089
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "80th Group Army 118th Combined Arms Brigade"
+		location = 987
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "80th Group Army 138th Combined Arms Brigade"
+		location = 1200
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "80th Group Army 199th Combined Arms Brigade"
+		location = 12045
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "80th Group Army 203rd Combined Arms Brigade"
+		location = 10000
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Central Theater Command Headquarters"
+		location = 14212
+		division_template = "Theater Command Headquarters"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "81st Group Army 7th Combined Arms Brigade"
+		location = 12432
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "81st Group Army 70th Combined Arms Brigade"
+		location = 11801
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "81st Group Army 162nd Combined Arms Brigade"
+		location = 10397
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "81st Group Army 189th Combined Arms Brigade"
+		location = 10068
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "81st Group Army 194th Combined Arms Brigade"
+		location = 10068
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "81st Group Army 195th Combined Arms Brigade"
+		location = 4612
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "82nd Group Army 6th Combined Arms Brigade"
+		location = 14925
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "82nd Group Army 80th Combined Arms Brigade"
+		location = 14212
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "82nd Group Army 112th Combined Arms Brigade"
+		location = 7109
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "82nd Group Army 127th Combined Arms Brigade"
+		location = 4058
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "82nd Group Army 151st Combined Arms Brigade"
+		location = 7109
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "82nd Group Army 188th Combined Arms Brigade"
+		location = 1438
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "82nd Group Army 196th Combined Arms Brigade"
+		location = 4140
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "83rd Group Army 11th Combined Arms Brigade"
+		location = 7549
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "83rd Group Army 58th Combined Arms Brigade"
+		location = 7540
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "83rd Group Army 60th Combined Arms Brigade"
+		location = 14203
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "83rd Group Army 113th Combined Arms Brigade"
+		location = 11931
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "83rd Group Army 131st Combined Arms Brigade"
+		location = 14203
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "83rd Group Army 161st Air Assault Brigade"
+		location = 7074
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "83rd Group Army 193rd Combined Arms Brigade"
+		location = 1180
+		division_template = "Medium Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Beijing Garrison 1st Guard Division"
+		location = 9843
+		division_template = "Combined Arms Division"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "Beijing Garrison 3rd Guard Division 'Imperial Guard'"
+		location = 14928
+		division_template = "Combined Arms Division"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "Xinjiang Military District 4th Combined Arms Division"
+		location = 4682
+		division_template = "Combined Arms Division"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Xinjiang Military District 6th Combined Arms Division"
+		location = 4973
+		division_template = "Combined Arms Division"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Xinjiang Military District 8th Combined Arms Division"
+		location = 10674
+		division_template = "Combined Arms Division"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Xinjiang Military District 11th Combined Arms Division"
+		location = 4709
+		division_template = "Combined Arms Division"
+		start_experience_factor = 1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 361st Brigade"
+		location = 8029
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 362nd Brigade"
+		location = 1961
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 363rd Brigade"
+		location = 5042
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 364th Brigade"
+		location = 1970
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 365th Brigade"
+		location = 5087
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 366th Brigade"
+		location = 1766
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 367th Brigade"
+		location = 12601
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 368th Brigade"
+		location = 4788
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 369th Brigade"
+		location = 12864
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Xinjiang Military District Border Defense 370th Brigade"
+		location = 4704
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District 52nd Combined Arms Brigade"
+		location = 10741
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Tibet Military District 53rd Combined Arms Brigade"
+		location = 5033
+		division_template = "Light Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Tibet Military District 54th Combined Arms Brigade"
+		location = 5033
+		division_template = "Heavy Combined Arms Brigade"
+		start_experience_factor = 0.3
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 351st Brigade"
+		location = 5102
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 352nd Brigade"
+		location = 8041
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 353rd Brigade"
+		location = 5018
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 354th Brigade"
+		location = 2098
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 355th Brigade"
+		location = 2014
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 356th Brigade"
+		location = 4900
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 357th Brigade"
+		location = 12807
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "Tibet Military District Border Defense 358th Brigade"
+		location = 1991
+		division_template = "Border Defense Brigade"
+		start_experience_factor = 0.1
+	}
+	division = {			
+		name = "43rd Air Assault Brigade"
+		location = 4619
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "44th Air Assault Brigade"
+		location = 4619
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "45th Air Assault Brigade"
+		location = 4619
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "121st Air Assault Brigade 'Tashan Defense Hero Regiment'"
+		location = 4619
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 0.8
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Airborne Corps Special Operations Brigade 'Thunder God'"
+		location = 4619
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st Marine Brigade"
+		location = 994
+		division_template = "Marine Corps"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "164th Marine Brigade"
+		location = 994
+		division_template = "Marine Corps"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "7th Marine Brigade 'Jiaolong' Assault Team"
+		location = 1146
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "1st Air Assault Brigade"
+		location = 1146
+		division_template = "Air Assault Brigade"
+		start_experience_factor = 0.5
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "73rd Special Operations Brigade 'East Sea Flying Dragon'"
+		location = 11986
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "80th Special Operations Brigade 'Eagle'"
+		location = 4514
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "81st Special Operations Brigade 'Cheetah'"
+		location = 2015
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "85th Special Operations Brigade 'Plateau Snow Leopard'"
+		location = 5033
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "83rd Special Operations Brigade 'Central Plains Tiger'"
+		location = 1139
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "78th Special Operations Brigade 'Blood Wolf'"
+		location = 7656
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "Rocket Force Special Operations Regiment 'Sharp Blade'"
+		location = 11771
+		division_template = "Special Operations Brigade"
+		start_experience_factor = 1
+		start_equipment_factor = 1
+	}
+}
+	instant_effect = {
+		add_equipment_production = {
+			equipment = {
+				type = infantry_equipment_3
+				creator = "PRC"
+			}
+			requested_factories = 5
+			progress = 0.3
+			efficiency = 50
+		}
+
+		add_equipment_production = {
+			equipment = {
+				type = support_equipment_1
+				creator = "PRC" 
+			}
+			requested_factories = 3
+			progress = 0.3
+			efficiency = 50
+		}
+
+		add_equipment_production = {
+			equipment = {
+				type = artillery_equipment_2
+				creator = "PRC" 
+			}
+			requested_factories = 3
+			progress = 0.3
+			efficiency = 50
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = anti_air_equipment_2
+				creator = "PRC" 
+			}
+			requested_factories = 2
+			progress = 0.3
+			efficiency = 50
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = anti_tank_equipment_2
+				creator = "PRC" 
+			}
+			requested_factories = 2
+			progress = 0.3
+			efficiency = 50
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = mechanized_equipment_2
+				creator = "PRC" 
+			}
+			requested_factories = 4
+			progress = 0.5
+			efficiency = 50
+		}
+		
+		add_equipment_production = {
+			equipment = {
+				type = modern_tank_artillery_equipment_1
+				creator = "PRC" 
+			}
+			requested_factories = 3
+			progress = 0.3
+			efficiency = 50
+		}
+		
+		#add_equipment_production = {
+		#	equipment = {
+		#		type = modern_tank_destroyer_equipment_1
+		#		creator = "PRC" 
+		#	}
+		#	requested_factories = 2
+		#	progress = 0.5
+		#	efficiency = 50
+		#}
+		
+		add_equipment_to_stockpile = {
+			type = motorized_equipment_1
+			amount = 3000
+			producer = PRC
+		}
+		
+		add_equipment_to_stockpile = {
+			type = train_equipment_1
+			amount = 250
+			producer = PRC
+		}
+		add_equipment_to_stockpile = {
+		type = modern_tank_chassis_3
+		amount = 2000
+		producer = PRC
+		variant_name = "ZTZ-96B"
+		}
+		add_equipment_to_stockpile = {
+		type = modern_tank_chassis_3
+		amount = 500
+		producer = PRC
+		variant_name = "ZTZ-99"
+		}
+		add_equipment_to_stockpile = {
+		type = modern_tank_chassis_4
+		amount = 250
+		producer = PRC
+		variant_name = "ZTZ-99A"
+		}
+		add_equipment_to_stockpile = {
+		type = light_tank_chassis_4
+		amount = 1000
+		producer = PRC
+		variant_name = "ZTQ-15"
+		}
+		add_equipment_to_stockpile = {
+		type = modern_tank_artillery_equipment_1
+		amount = 300
+		producer = PRC
+		variant_name = "PLZ-05"
+		}
+	}

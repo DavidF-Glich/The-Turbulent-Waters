@@ -1,0 +1,87 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_USA_Agenda"
+		position = {
+			x = 0
+			y = 0
+		}
+		orientation = CENTER
+		size = {
+			width = 100%
+			height = 500
+		}
+		
+		iconType = {
+			name = "Head_of_state_pic"
+			position = {
+				x = 60
+				y = 10
+			}
+			spriteType = GFX_portrait_USA_tim_cook
+		}
+		iconType = {
+			name = "Head_of_gov_pic"
+			position = {
+				x = 270
+				y = 10
+			}
+			spriteType = GFX_portrait_USA_greyson_walker
+		}
+		instantTextBoxType = {
+			name = "Head_of_state_name"
+			position = {
+				x = 100
+				y = 500
+			}
+			font = hoi_16mbs
+			text = "Head_of_state_name"
+			maxWidth = 100
+			maxHeight = 35
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			format = left
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "Head_of_gov_name"
+			position = {
+				x = 300
+				y = 500
+			}
+			font = hoi_16mbs
+			text = "Head_of_gov_name"
+			maxWidth = 100
+			maxHeight = 35
+			borderSize = {
+				x = 0
+				y = 0
+			}
+			format = left
+			alwaystransparent = yes
+		}
+		buttonType = {
+			name = "Make_Cook_Focus_on_Foreign"
+			position = {
+				x = 50
+				y = 500
+			}
+			quadTextureSprite = GFX_small_button_71x26
+			buttonFont = "hoi_18mbs"
+			buttonText = "Make_Cook_Focus_on_Foreign_Affair"
+			clicksound = click_default
+		}
+		buttonType = {
+			name = "Make_Cook_Focus_on_Interior"
+			position = {
+				x = 250
+				y = 500
+			}
+			quadTextureSprite = GFX_small_button_71x26
+			buttonFont = "hoi_18mbs"
+			buttonText = "Make_Cook_Focus_on_Interior_Affair"
+			clicksound = click_default
+		}
+	}
+}

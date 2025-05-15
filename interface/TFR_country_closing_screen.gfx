@@ -1,0 +1,69 @@
+spriteTypes = {
+
+	###########################
+	# // Main GUI Elements // #
+	###########################
+	spriteType = {
+		name = "GFX_CountryClosing_picture_frame"
+		texturefile = "gfx/interface/country_closing_screen/picture_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_CountryClosing_picture_frame_dark"
+		texturefile = "gfx/interface/country_closing_screen/picture_frame_dark.dds"
+	}
+	spriteType = {
+		name = "GFX_CountryClosing_select_btn"
+		texturefile = "gfx/interface/country_closing_screen/select_btn.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_CountryClosing_close_btn"
+		texturefile = "gfx/interface/country_closing_screen/close_btn.dds"
+	}
+	spriteType = {
+		name = "GFX_CountryClosing_divider"
+		texturefile = "gfx/interface/country_closing_screen/divider.dds"
+	}
+	spriteType = {
+		name = "GFX_CountryClosing_page_btn"
+		texturefile = "gfx/interface/country_closing_screen/page_btn.dds"
+		noOfFrames = 2
+	}
+
+	##################
+	# // Pictures // #
+	##################
+
+	###############
+	# / Generic / #
+	###############
+	spriteType = {
+		name = "GFX_TFR_CountryClosing_picture_generic"
+		texturefile = "gfx/interface/country_closing_screen/picture/generic.png"
+	}
+
+	spriteType = {
+		name = "GFX_TFR_CountryClosing_picture_Xi_Success_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/PRC_Xi_Good_End.png" 
+	}
+
+	spriteType = {
+		name = "GFX_TFR_CountryClosing_picture_USA_Chep_Failure_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/USA_Bad_Ending.png"
+	}
+
+	spriteType = {
+		name = "GFX_TFR_CountryClosing_picture_PRC_Revolution_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/PRC_Revolution_End.png"
+	}
+
+	spriteType = {
+		name = "GFX_TFR_CountryClosing_picture_PRK_Nothing_Ending"
+		texturefile = "gfx/interface/country_closing_screen/picture/PRK_Nothing_Ending.png"
+	}
+
+	spriteType = {
+		name = "GFX_TFR_CountryClosing_picture_PRC_God_Niu_Returns"
+		texturefile = "gfx/interface/country_closing_screen/picture/PRC_God_Niu_Returns.png" 
+	}
+}

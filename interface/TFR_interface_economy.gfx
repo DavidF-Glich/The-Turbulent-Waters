@@ -1,0 +1,57 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_money"
+		texturefile = "gfx/money.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_money2"
+		texturefile = "gfx/money2.dds"
+		legacy_lazy_load = no
+	}
+	#spriteType = {
+	#	name = "GFX_buy"
+	#	texturefile = "gfx/buy_button.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_debt"
+	#	texturefile = "gfx/button_debt.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_btn_x100"
+	#	texturefile = "gfx/btn_x100.dds"
+	#	legacy_lazy_load = no
+	#}
+	#spriteType = {
+	#	name = "GFX_btn_x10d"
+	#	texturefile = "gfx/btn_x10d.dds"
+	#	legacy_lazy_load = no
+	#}
+	spriteType = {
+		name = "report_event_equipment"
+		texturefile = "gfx/event_pictures/report_event_equipment.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "generic_box_125" 
+		texturefile = "gfx/interface/generic_box_125.dds" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_open_button_icon" 
+		texturefile = "gfx/interface/generic_button_smallest.dds" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_economic_action_loan_background" 
+		texturefile = "gfx/interface/economic_action_loan_background.dds" 
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_economic_action_debt_background" 
+		texturefile = "gfx/interface/economic_action_debt_background.dds" 
+		legacy_lazy_load = no
+	}
+}

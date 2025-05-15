@@ -1,0 +1,60 @@
+spriteTypes = {
+	# Foreign affair (Gain sth. from wars)
+	# 代理人战争，狠狠地苞米
+	spriteType = {
+		name = "GFX_tab_double"
+		texturefile = "gfx/interface/cold_war/tab_double.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_ParliamentMechanic_InfoButton"
+		textureFile = "gfx/interface/cold_war/GFX_ParliamentMechanic_InfoButton.dds"
+	}
+	spriteType = {
+		name = "GFX_fopo_crisis_box"
+		texturefile = "gfx/interface/cold_war/fopo_gui_box.dds"
+	}
+
+	spriteType = {
+		name = "GFX_fopo_tab"
+		texturefile = "gfx/interface/cold_war/tab.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_fopo_tab_bg"
+		texturefile = "gfx/interface/cold_war/tab_bg.dds"
+		noOfFrames = 2
+	}
+	spriteType = {
+		name = "GFX_fopo_homefront_btn"
+		texturefile = "gfx/interface/cold_war/homefront_button.dds"
+	}
+	spriteType = {
+		name = "GFX_fopo_frontlines_btn"
+		texturefile = "gfx/interface/cold_war/frontlines_button.dds"
+	}
+	spriteType = {
+		name = "GFX_fopo_conflict_status"
+		texturefile = "gfx/interface/cold_war/conflict_status.dds"
+	}
+	spriteType = {
+		name = "GFX_fopo_fake_background_frame"
+		textureFile = "gfx/interface/cold_war/fake_background_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_fopo_fake_mission_frame"
+		textureFile = "gfx/interface/cold_war/fake_mission_frame.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_diplomacy_stage"
+		textureFile = "gfx/interface/cold_war/stage.png"
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_fopo_empty_fopo_block"
+		texturefile = "gfx/interface/cold_war/empty_fopo_block.dds"
+	}
+
+
+}

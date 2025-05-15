@@ -1,0 +1,1711 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TFR_decision_button_container"
+		size = { width = 550 height = 950 }
+		position = { x=0  y=0 }
+		
+		buttonType = {
+			name = "open_decision_button"
+			position = { x = 13 y = 7 }
+			quadTextureSprite ="GFX_econ_switch_button"
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "open_decision_button_tt"
+			#shortcut = "TAB"
+			clicksound = click_action
+		}
+	}
+	containerWindowType = {
+		name = "countrydecisionview"
+		position = { x=-606 y=78 }	
+		show_position = { x=-6 y =78 }
+		show_animation_type = decelerated
+		hide_animation_type = accelerated
+		animation_time = 300
+		size = { width=550 height=100%% }
+		
+		#hide_sound = menu_close_window
+		show_sound = menu_open_window
+		
+		background = {
+			name = "Background"
+			quadTextureSprite ="GFX_tiled_window2_1b_border"
+		}
+
+		iconType = {
+			name ="production_header_bg"
+			spriteType = "GFX_header_bg"
+			position = { x= -248 y = 07 }
+			Orientation = "UPPER_LEFT"
+		}	
+		instantTextboxType = {
+			name = "decisionview_title"
+			position = { x = 18 y = 9 }
+			textureFile = ""
+			font = "VCR02_24"
+			borderSize = {x = 0 y = 0}
+			text = "DECISIONVIEW_TITLE"
+			maxWidth = 217
+			maxHeight = 25
+			format = center
+		}
+		instantTextboxType = {
+			name = "nuclear_title"
+			position = { x = 275 y = 9 }
+			textureFile = ""
+			font = "VCR02_24"
+			borderSize = {x = 0 y = 0}
+			text = "NUCLEAR_ECON"
+			maxWidth = 217
+			maxHeight = 25
+			format = center
+		}
+
+			
+		buttonType = {
+			name = "close_button"
+			position = { x = -43 y = 9 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		containerWindowType = {
+			name = "decision_grid_container"
+			position = {x=5 y=45}
+			size = {width=-1 height=-10 } # Y Set in code to match the window size, but initial value is used as extra space in height
+			Orientation = upper_left
+
+			verticalScrollbar = "right_vertical_slider"
+
+			background = {
+				name = "Background"
+				quadTextureSprite ="GFX_tiled_paper_w_frame_one_border"
+			}			
+			
+			gridboxtype = {
+				name = "decision_grid"
+				position = { x = 0 y = 0 }
+				size = { width = 520 height = 100%% }
+				slotsize = { width=502 height=1 }
+				#slotsize = { width = 1 height = 1 }
+				max_slots_horizontal = 1
+			}
+		}
+	}
+
+	###########################################
+	# Category container #
+	###########################################
+
+	containerWindowType = {
+		name = "category_header"
+		position = {x=0 y=0}
+		Orientation = upper_left
+		size = {width=3 height=60}
+		clipping = no
+
+		buttonType = {
+			name = "icon_header_bg"
+			position = {x=-4 y=8}
+			spriteType = "GFX_category_header_bg"
+			clicksound = decisions_ui_tab
+		}
+		
+		iconType = {
+			name = "icon"
+			position = {x=10 y=16}
+			spriteType = "GFX_decision_category_generic"
+		}
+
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 74 y = 20 }
+			textureFile = ""
+			font = "VCR02_20"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 365
+			maxHeight = 40
+			format = center
+			#alwaystransparent = yes
+			fixedsize=yes
+		}
+		
+		buttonType = {
+			name = "track_decisions_checkbox"
+			position = { x = 435 y = 24 }
+			quadTextureSprite = "GFX_checkbox_small5"
+			clicksound = decisions_ui_button
+			frame = 2
+		}
+		
+		buttonType = {
+			name = "category_collapse_btn"
+			position = { x=470 y=23 }
+			quadTextureSprite = "GFX_conveyor_collapse_btn"
+			buttonFont = "VCR02_12"
+			clicksound = click_default
+			alwaystransparent = yes
+			frame = 1
+		}
+	}
+	
+	containerWindowType = {
+		name = "decision_category_desc"
+		position = { x=0 y=0 }
+		size = { width=510 height=15 }
+		clipping = no
+		
+		background = {
+			name = "Background"
+			position = { x=0 y=-1 }
+			quadTextureSprite="GFX_tiled_decisions_bg_small"
+			clicksound = click_default
+		}
+		
+		iconType = {
+			name = "picture"
+			position = { x=3 y=3 }
+			spriteType = "GFX_d_category_empty_picture"
+			frame = 1
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "full_text"
+			position = { x = 14 y = 6 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 470
+		}
+		
+		instantTextboxType = {
+			name = "short_text"
+			position = { x = 125 y = 9 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 380
+		}
+
+		OverlappingElementsBoxType = {
+			name = "custom_icons"
+			position = { x = 0 y = 75 }
+			size = { x = 500 y = 32 }
+			format = center
+			spacing = 1.0
+			Orientation = LEFT
+		}	
+	}
+
+	containerWindowType = {
+		name = "custom_icon_item"
+		position = { x =0 y = 0 }
+		size = { width = 64 height = 64 }
+
+		instantTextBoxType = {
+			name = "value"
+			position = { x = 100 y = 3 }
+			font = "VCR02_12"
+			borderSize = {x = 0 y = 0}
+			text = "33"	
+			maxWidth = 50
+			maxHeight = 20
+			fixedsize=yes
+			format = left
+		}
+		
+		iconType = {
+			name = "target_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 135 y = 0}
+		}
+		
+	}
+	containerWindowType = {
+		name = "cold_war_tab_window"
+		size = { width = 540 height = 1300}
+		position = { x=8  y=40 }
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite = "GFX_tiled_plain_bg"
+		}
+		containerWindowType = {
+			name = "Cold_War_Button_Container"
+			position = { x=0  y=20 }
+			size = {
+				width = 540
+				height = 30
+			}
+			buttonType = {
+				name = "Nuclear_button"
+				position = {
+					x = 31 y = 3
+				}
+				buttonFont = "VCR02_16"
+				buttontext = "Nuclear"
+				quadTextureSprite = "button_type_1"
+			}
+			buttonType = {
+				name = "Ranking_button"
+				position = {
+					x = 196 y = 3
+				}
+				buttonFont = "VCR02_16"
+				buttontext = "Ranking"
+				quadTextureSprite = "button_type_1"
+			}
+			buttonType = {
+				name = "Tension_button"
+				position = {
+					x = 361 y = 3
+				}
+				buttonFont = "VCR02_16"
+				buttontext = "Cold_War"
+				quadTextureSprite = "button_type_1"
+			}
+	
+		}
+	}
+	containerWindowType = {
+		name = "nuclear_window"
+		position = { x = 8 y = 70 }
+		size = { width = 540 height = 1300}
+		containerWindowType = {
+			name = "ROOT_Nuclear_Situation_window"
+			position = {
+				x = 5 y = 40
+			}
+			size = {
+				width = 265
+				height = 250
+			}
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			instantTextBoxType = {
+				name = "ROOT_Nuclear_Situation_title"
+				position = { x = 82 y = 15 }
+				textureFile = ""
+				font = "VCR02_20"
+				borderSize = { x = 0 y = 0 }
+				text = "ROOT_Nuclear_Situation"
+				maxWidth = 100
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+			}
+			iconType = {
+				name = "peace_pigeon"
+				position = {
+					x = 32
+					y = 50
+				}
+				pdx_tooltip = "ROOT_Nuclear_Situation_tt"
+			}
+			instantTextBoxType = {
+				name = "ROOT_Nuclear_Situation_desc"
+				position = { x = 17 y = 150 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "[ROOT_Nuclear_Situation_text]"
+				pdx_tooltip = "ROOT_Nuclear_Situation_tt"
+				maxWidth = 230
+				maxHeight = 90
+				fixedsize = yes
+				format = center
+			}
+
+		}
+		containerWindowType = {
+			name = "ROOT_Nuclear_Legitimacy"
+			position = {
+				x = 270 y = 40
+			}
+			size = {
+				width = 265
+				height = 250
+			}
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			iconType = {
+				name = "united_nation"
+				position = {
+					x = 33
+					y = 50
+				}
+			}
+			instantTextBoxType = {
+				name = "ROOT_Nuclear_Legitimacy_title"
+				position = { x = 75 y = 15 }
+				textureFile = ""
+				font = "VCR02_20"
+				borderSize = { x = 0 y = 0 }
+				text = "ROOT_Nuclear_Legitimacy"
+				maxWidth = 120
+				maxHeight = 20
+				format = center
+			}
+			instantTextBoxType = {
+				name = "ROOT_Nuclear_Legitimacy_desc"
+				position = { x = 20 y = 150 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "[ROOT_Nuclear_Legitimacy_text]"
+				maxWidth = 230
+				maxHeight = 90
+				fixedsize = yes
+				format = center
+			}
+
+
+		}
+		containerWindowType = {
+			name = "World_Rank_nuke"
+			verticalScrollbar = "right_vertical_slider"
+			position = {
+				x = 5 y = 290
+			}
+			size = {
+				width = 530
+				height = 400
+			}
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			gridBoxType = {
+				name = "World_Rank_the_chart"
+				position = { x = 5	y = 5}
+				size = { width = 510 height = 100%% }
+				slotsize = {
+					width = 510
+					height = 100
+				}
+				max_slots_horizontal = 1
+				add_horizontal = no
+				orientation = UPPER_LEFT
+			}
+		}
+		containerWindowType = {
+			name = "ROOT_Nuclear_Plan"
+			position = {
+				x = 5 y = 700
+			}
+			size = {
+				width = 200
+				height = 300
+			}
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			instantTextBoxType = {
+				name = "ROOT_Thermo_Plan_title"
+				position = { x = 50 y = 10 }
+				textureFile = ""
+				font = "VCR02_20"
+				borderSize = { x = 0 y = 0 }
+				text = "ROOT_Thermo_Plan"
+				maxWidth = 100
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+			}
+			instantTextBoxType = {
+				name = "ROOT_Thermo_Plan_location"
+				position = { x = 30 y = 60 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "ROOT_Thermo_Plan_location_text"
+				maxWidth = 140
+				maxHeight = 200
+				fixedsize = yes
+				format = center
+			}
+
+		}
+
+		containerWindowType = {
+			name = "ROOT_Nuclear_decision"
+			position = {
+				x = 205 y = 700
+			}
+			size = {
+				width = 330
+				height = 300
+			}
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			iconType = {
+				name = "number_1"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 40
+					y = 55
+				}
+			}
+			iconType = {
+				name = "number_2"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 75
+					y = 55
+				}
+			}
+			iconType = {
+				name = "number_3"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 110
+					y = 55
+				}
+			}
+			iconType = {
+				name = "number_4"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 40
+					y = 85
+				}
+			}
+			iconType = {
+				name = "number_5"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 75
+					y = 85
+				}
+			}
+			iconType = {
+				name = "number_6"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 110
+					y = 85
+				}
+			}
+			iconType = {
+				name = "number_7"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 40
+					y = 115
+				}
+			}
+			iconType = {
+				name = "number_8"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 75
+					y = 115
+				}
+			}
+			iconType = {
+				name = "number_9"
+				spriteType = "GFX_nuclear_BG_medium"
+				
+				position = {
+					x = 110
+					y = 115
+				}
+			}
+			buttonType = {
+				name = "number_star"
+				quadTextureSprite = "GFX_Nuke_less_Ultimate"
+				position = {
+					x = 40
+					y = 145
+				}
+				pdx_tooltip = "button_star"
+				pdx_tooltip_delayed = "PRESS_FOR_WAR"
+			}
+			buttonType = {
+				name = "number_0"
+				quadTextureSprite = "GFX_Nuke_Ultimate"
+				position = {
+					x = 75
+					y = 145
+				}
+				pdx_tooltip = "button_0"
+				pdx_tooltip_delayed = "PRESS_FOR_WAR"
+			}
+			buttonType = {
+				name = "number_jin"
+				quadTextureSprite = "GFX_Nuke_no_Ultimate"
+				position = {
+					x = 110
+					y = 145
+				}
+				pdx_tooltip = "button_jin"
+				pdx_tooltip_delayed = "PRESS_FOR_WAR"
+			}
+			buttonType = {
+				name = "ROOT_Nuke_Num_change_MINUS"
+				quadTextureSprite = "GFX_Num_Minus"
+				position = {
+					x = 185
+					y = 72
+				}
+				scale = 0.6
+			}
+			instantTextBoxType = {
+				name = "Nuke_number_change_text"
+				position = { x = 183 y = 42 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "Nuke_number_change_text"
+				maxWidth = 100
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+
+			}
+
+			instantTextBoxType = {
+				name = "Nuke_number_change"
+				position = { x = 208 y = 70 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "[?Nuke_change_num]"
+				maxWidth = 50
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+
+			}
+			buttonType = {
+				name = "ROOT_Nuke_Num_change_ADD"
+				quadTextureSprite = "GFX_Num_Plus"
+				position = {
+					x = 265
+					y = 72
+				}
+				scale = 0.6
+			}
+			buttonType = {
+				name = "ROOT_Nuke_Num_MINUS"
+				quadTextureSprite = "GFX_Num_Minus"
+				position = {
+					x = 185
+					y = 130
+				}
+				scale = 0.6
+				pdx_disabled_tooltip = "DONT_CUT_NUKES_BRO"
+			}
+			instantTextBoxType = {
+				name = "Nuke_number_change_to_text"
+				position = { x = 183 y = 100 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "Nuke_number_change_to_text"
+				maxWidth = 100
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+
+			}
+
+			instantTextBoxType = {
+				name = "Nuke_number_change_to"
+				position = { x = 208 y = 128 }
+				textureFile = ""
+				font = "VCR02_16"
+				borderSize = { x = 0 y = 0 }
+				text = "[?Nuke_change_to_num]"
+				maxWidth = 50
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+
+			}
+
+			buttonType = {
+				name = "ROOT_Nuke_Num_ADD"
+				quadTextureSprite = "GFX_Num_Plus"
+				position = {
+					x = 265
+					y = 130
+				}
+				scale = 0.6
+			}
+
+			buttonType = {
+				name = "ROOT_Apply_Adjustment"
+				quadTextureSprite = "button_type_1"
+				position = {
+					x = 83
+					y = 220
+				}
+				buttonFont = "VCR02_16"
+				buttonText = "Apply_change"
+				scale = 1
+			}
+			instantTextBoxType = {
+				name = "ROOT_Thermo_decision_title"
+				position = { x = 115 y = 10 }
+				textureFile = ""
+				font = "VCR02_20"
+				borderSize = { x = 0 y = 0 }
+				text = "ROOT_Thermo_decision"
+				maxWidth = 100
+				maxHeight = 20
+				fixedsize = yes
+				format = center
+			}
+
+			buttonType = {
+				name = "destroy_everything"
+				position = { x = 55 y = 240 }
+				buttonText = "Start_WWIII"
+				buttonFont = "VCR02_16"
+				quadTextureSprite = "button_type_4"
+				pdx_disabled_tooltip = "WW_not_on"
+				clicksound = click_default
+			}	
+		}
+		
+	}	
+	containerWindowType = {
+		name = "TFR_major_competitors_nuke_rank"
+		size = { width = 510 height = 100 }
+		position = { x = 0 y = 0 }
+		background = {
+			quadTextureSprite = GFX_tiled_bg_copy
+		}
+		iconType = {
+			name = "competitor_flag_nuke"
+			quadTextureSprite = "GFX_player_flag"
+			position = { x = 5 y = 15 }
+		}
+		instantTextboxType = {
+			name = "competitor_country_name"
+			position = { x = 90 y = 5 }
+			font = "VCR02_20"
+			text = "[THIS.GetName]"
+			maxWidth = 392
+			maxHeight = 30
+			fixedsize = no
+			format = center
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "other_country_nuke_number"
+			position = { x = 105 y = 50 }
+			font = "VCR02_14"
+			text = "Other_country_nuke_num"
+			maxWidth = 160
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+		instantTextboxType = {
+			name = "other_country_nuke_projection"
+			position = { x = 105 y = 70 }
+			font = "VCR02_14"
+			text = "Other_country_nuke_projection_text"
+			pdx_tooltip = "Other_country_nuke_projection_text"
+			pdx_tooltip_delayed = "Other_country_nuke_projection_text_tt"
+			maxWidth = 230
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+		instantTextboxType = {
+			name = "other_country_nuke_maintainence"
+			position = { x = 320 y = 50 }
+			font = "VCR02_14"
+			text = "Other_country_nuke_maintainence_text"
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+		instantTextboxType = {
+			name = "other_country_nuke_score"
+			position = { x = 320 y = 70 }
+			font = "VCR02_14"
+			text = "Other_country_nuke_score_text"
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+	}
+
+
+	containerWindowType = {
+		name = "ranking_tab_window"
+		size = { width = 540 height = 1300}
+		position = { x=8  y=110 }
+		
+
+		containerWindowType = {
+			name = "rank_grid"
+			verticalScrollbar = "right_vertical_slider"
+			size = {
+				width = 530
+				height = 400
+			}
+			position = {
+				x = 0
+				y = 0
+			}
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			gridBoxType = {
+				name = "total_rank"
+				position = { x = 5	y = 5}
+				size = { width = 510 height = 100%% }
+				slotsize = {
+					width = 510
+					height = 100
+				}
+				max_slots_horizontal = 1
+				add_horizontal = no
+				orientation = UPPER_LEFT
+			}	
+		}
+		containerWindowType = {
+			name = "rank_grid2"
+			verticalScrollbar = "right_vertical_slider"
+			size = {
+				width = 530
+				height = 400
+			}
+			position = {
+				x = 0
+				y = 410
+			}
+
+			background = {
+				quadTextureSprite = GFX_tiled_bg_copy
+			}
+			instantTextBoxType = {
+				name = "rank_grid_title"
+				position = { x = 175 y = 20 }
+				font = "VCR02_14"
+				text = "rank_grid_title_text"
+				maxWidth = 180
+				maxHeight = 24
+				fixedsize = yes
+				format = center
+			}
+			gridBoxType = {
+				name = "incident_score_change"
+				position = { x = 5	y = 5}
+				size = { width = 510 height = 100%% }
+				slotsize = {
+					width = 510
+					height = 100
+				}
+				max_slots_horizontal = 1
+				add_horizontal = no
+				orientation = UPPER_LEFT
+	
+			}	
+		}
+
+	}
+	containerWindowType = {
+		name = "TFR_major_competitors_total_score"
+		size = { width = 510 height = 100 }
+		position = { x = 0 y = 0 }
+		background = {
+			quadTextureSprite = GFX_tiled_bg_copy
+		}
+		iconType = {
+			name = "competitor_flag_total"
+			quadTextureSprite = "GFX_player_flag"
+			position = { x = 5 y = 15 }
+		}
+		instantTextboxType = {
+			name = "competitor_country_name"
+			position = { x = 90 y = 5 }
+			font = "VCR02_20"
+			text = "[THIS.GetName]"
+			maxWidth = 392
+			maxHeight = 30
+			fixedsize = no
+			format = center
+			alwaystransparent = yes
+		}
+		instantTextboxType = {
+			name = "other_country_economy_score"
+			position = { x = 105 y = 50 }
+			font = "VCR02_14"
+			text = "Other_country_economy_score"
+			maxWidth = 160
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+		instantTextboxType = {
+			name = "other_country_nuke_score1"
+			position = { x = 105 y = 70 }
+			font = "VCR02_14"
+			text = "Other_country_nuke_score_text"
+			maxWidth = 230
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+		instantTextboxType = {
+			name = "other_country_military_score"
+			position = { x = 320 y = 50 }
+			font = "VCR02_14"
+			text = "Other_country_military_score"
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+		instantTextboxType = {
+			name = "other_country_total_score"
+			position = { x = 320 y = 70 }
+			font = "VCR02_14"
+			text = "Other_country_total_score"
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = no
+			format = left
+		}
+
+
+	}
+	containerWindowType = {
+		name = "TTW_the_incident_score"
+		size = { width = 510 height = 100 }
+		iconType = {
+			name = "top_layer"
+			spriteType = "GFX_Cold_War_GUI_Ranking_Incident"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		instantTextBoxType = {
+			name = "incident_name"
+			position = {
+				x = 20
+				y = 5
+			}
+			font = "VCR02_14"
+			text = "incident"
+			maxWidth = 180
+			maxHeight = 24
+			fixedsize = yes
+			format = center
+		}
+		instantTextBoxType = {
+			name = "incident_name1"
+			position = {
+				x = 239
+				y = 5
+			}
+			font = "VCR02_16"
+			text = "incident"
+			maxWidth = 80
+			maxHeight = 35
+			fixedsize = yes
+			format = center
+		}
+	}
+	containerWindowType = {
+		name = "international_relation_tab_window"
+		size = { width = 538 height = 1300}
+		position = { x = 8 y = 110 }
+		background = {
+			quadTextureSprite = GFX_tiled_bg_copy
+		}
+		instantTextBoxType = {
+			name = "TTW_Cold_War_GUI_Tension_Entry_A_Text"
+			position = { x = 122 y = 10 }
+			font = "VCR02_36"
+			text = "World_tension"
+			maxWidth = 300
+			maxHeight = 24
+			format = center
+		}
+
+		containerWindowType = {
+			name = "Cold_War_GUI_Tension_Tab_Superpower_Tension_List"
+			size = { width = 530 height = 230 }
+			position = { x = 14 y = 41 }
+
+			containerWindowType = {
+				name = "Cold_War_GUI_Tension_Tab_Superpower_Tension_List_Entry_A"
+				size = { width = 527 height = 70 }
+				position = { x = 0 y = 0 }
+
+				instantTextboxType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_A_Text"
+					position = { x = 108 y = 12 }
+					font = "VCR02_20"
+					text = "USA_PRC_Tension"
+					maxWidth = 300
+					maxHeight = 24
+					format = center
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_A_Progressbar"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Progressbar"
+					position = { x = 106 y = 38 }
+					pdx_tooltip = "TTW_Cold_War_GUI_Tension_Entry_A_Progressbar_tooltip"
+				}
+
+				iconType = {
+					name = "GFX_Cold_War_GUI_Tension_Frame"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Frame"
+					position = { x = -3 y = 6 }
+					alwaystransparent = yes
+
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_A_Superpower_1_Flag"
+					spriteType = "GFX_Cold_war_USA"
+					position = { x = 6 y = 13 }
+				}
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_A_Superpower_2_Flag"
+					spriteType = "GFX_Cold_war_PRC"
+					position = { x = -110 y = 13 }
+					orientation = UPPER_RIGHT
+				}
+			}
+
+			containerWindowType = {
+				name = "Cold_War_GUI_Tension_Tab_Superpower_Tension_List_Entry_B"
+				size = { width = 527 height = 70 }
+				position = { x = 0 y = 80 }
+
+				instantTextboxType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_B_Text"
+					position = { x = 108 y = 12 }
+					font = "VCR02_20"
+					text = "USA_RUS_Tension"
+					maxWidth = 300
+					maxHeight = 24
+					format = center
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_B_Progressbar"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Progressbar"
+					position = { x = 106 y = 38 }
+					pdx_tooltip = "TTW_Cold_War_GUI_Tension_Entry_B_Progressbar_tooltip"
+				}
+
+				iconType = {
+					name = "GFX_Cold_War_GUI_Tension_Frame"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Frame"
+					position = { x = -3 y = 6 }
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_B_Superpower_1_Flag"
+					spriteType = "GFX_Cold_war_USA"
+					position = { x = 6 y = 13 }
+				}
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_B_Superpower_2_Flag"
+					spriteType = "GFX_Cold_war_RUS"
+					position = { x = -110 y = 13 }
+					orientation = UPPER_RIGHT
+				}
+			}
+
+			containerWindowType = {
+				name = "Cold_War_GUI_Tension_Tab_Superpower_Tension_List_Entry_C"
+				size = { width = 527 height = 70 }
+				position = { x = 0 y = 160 }
+
+				instantTextboxType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_C_Text"
+					position = { x = 108 y = 12 }
+					font = "VCR02_20"
+					text = "RUS_BRS_Tension"
+					maxWidth = 300
+					maxHeight = 24
+					format = center
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_C_Progressbar"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Progressbar"
+					position = { x = 106 y = 38 }
+					pdx_tooltip = "TTW_Cold_War_GUI_Tension_Entry_C_Progressbar_tooltip"
+				}
+
+				iconType = {
+					name = "GFX_Cold_War_GUI_Tension_Frame"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Frame"
+					position = { x = -3 y = 6 }
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_C_Superpower_1_Flag"
+					spriteType = "GFX_Cold_war_RUS"
+					position = { x = 6 y = 13 }
+				}
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_C_Superpower_2_Flag"
+					spriteType = "GFX_Cold_war_EU"
+					position = { x = -110 y = 13 }
+					orientation = UPPER_RIGHT
+				}
+			}
+
+			containerWindowType = {
+				name = "Cold_War_GUI_Tension_Tab_Superpower_Tension_List_Entry_D"
+				size = { width = 527 height = 70 }
+				position = { x = 0 y = 240 }
+
+				instantTextboxType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_D_Text"
+					position = { x = 108 y = 12 }
+					font = "VCR02_20"
+					text = "PRC_BRS_Tension"
+					maxWidth = 300
+					maxHeight = 24
+					format = center
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Entry_D_Progressbar"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Progressbar"
+					position = { x = 106 y = 38 }
+					pdx_tooltip = "TTW_Cold_War_GUI_Tension_Entry_D_Progressbar_tooltip"
+				}
+
+				iconType = {
+					name = "GFX_Cold_War_GUI_Tension_Frame"
+					quadTextureSprite = "GFX_Cold_War_GUI_Tension_Frame"
+					position = { x = -3 y = 6 }
+					alwaystransparent = yes
+				}
+
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_D_Superpower_1_Flag"
+					spriteType = "GFX_Cold_war_PRC"
+					position = { x = 6 y = 13 }
+				}
+				iconType = {
+					name = "TTW_Cold_War_GUI_Tension_Tab_Entry_D_Superpower_2_Flag"
+					spriteType = "GFX_Cold_war_EU"
+					position = { x = -110 y = 13 }
+					orientation = UPPER_RIGHT
+				}
+			}
+		}
+		instantTextboxType = {
+			name = "incident_column_title"
+			position = { x = 150 y = 385}
+			font = "VCR02_36"
+			text = "incident_column_text"
+			maxWidth = 240
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+		}
+		containerWindowType = {
+			name = "Incident_window"
+			position = { x = 0 y = 425}
+			size = { width = 535 height = 420 }
+			clipping = yes
+			verticalScrollbar = "right_vertical_slider"
+			margin = { top = 10 left = 0 bottom = 12 right = 0 }
+			background = {
+				name = "Background"
+				quadTextureSprite = "GFX_tiled_bg"
+			}
+			gridBoxtype = {
+				name = "Incident_gridbox"
+				position = { x = 0 y = 5}
+				size = { width = 510 height = 450 }
+				slotsize = {
+					width = 510
+					height = 80
+				}
+				max_slots_horizontal = 1
+				add_horizontal = no
+				orientation = UPPER_LEFT
+			}
+	
+		}
+
+	
+	}
+	
+	containerWindowType = {
+		name = "TTW_the_incident_container"
+		position = { x = 5 y = 5}
+		size = {x = 520 y = 80}
+		iconType = {
+			name = "TNO_Cold_War_GUI_Tension_Tab_Incident_Entry"
+			quadTextureSprite = "GFX_Cold_War_GUI_Tension_Outline"
+			position = { x = 10 y = 0 }
+		}
+		instantTextboxType = {
+			name = "Cold_War_GUI_Tension_Tab_Incidents_Entry_Text"
+			position = { x = 26 y = 15 }
+			font = "VCR02_16"
+			text = "CWGUI_Incidents_Text"
+			maxWidth = 360
+			maxHeight = 55
+			fixedsize = yes
+			format = center
+		}
+
+		instantTextboxType = {
+			name = "Cold_War_GUI_Tension_Tab_Incidents_Entry_TensionChange_Text"
+			position = { x = 401 y = 22 }
+			font = "VCR02_36"
+			text = "CWGUIIncidents_TensionChange"
+			maxWidth = 100
+			maxHeight = 20
+			fixedsize = yes
+			format = center
+		}
+
+	}
+
+	###########################################
+	# Category container #
+	###########################################
+
+	containerWindowType = {
+		name = "event_header"
+		position = {x=0 y=0}
+		Orientation = upper_left
+		size = {width=3 height=65}
+		clipping = no
+
+		iconType = {
+			name = "icon_header_bg"
+			position = {x=0 y=0}
+			spriteType = "GFX_event_header_bg"
+		}
+
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 20 y = 15}
+			textureFile = ""
+			font = "VCR02_20"
+			borderSize = { x = 0 y = 0 }
+			text = "DECISIONSVIEW_EVENT_HEADER"
+			maxWidth = 240
+			maxHeight = 20
+			format = left
+		}
+
+		#Grouped text and checkbox for easier positioning
+		containerWindowType = {
+			name = "minor_event_checkbox_window"
+			position = {x=110 y=45}
+			Orientation = upper_right
+
+
+			checkBoxType = {
+				name = "popup_minor_events_checkbox"
+				position = { x = -11 y = -15 }
+				quadTextureSprite = "GFX_generic_checkbox"
+				clicksound = decisions_ui_button
+				pdx_tooltip = "MINOR_EVENT_POPUP_CHECKBOX_TOOLTIP"
+			}
+
+			instantTextboxType = {
+				name = "minor_events_popup_text"
+				position = { x = 25 y = -10 }
+				textureFile = ""
+				font = "VCR02_14"
+				borderSize = { x = 0 y = 0 }
+				text = "POPUP_MINOR_EVENTS"
+				maxWidth = 110
+				maxHeight = 10
+				format = left
+			}
+		}
+
+		#Grouped text and checkbox for easier positioning
+		containerWindowType = {
+			name = "event_checkbox_window"
+			position = {x=385 y=45}
+			Orientation = upper_right
+
+
+			checkBoxType = {
+				name = "popup_events_checkbox"
+				position = { x = -11 y = -15 }
+				quadTextureSprite = "GFX_generic_checkbox"
+				clicksound = decisions_ui_button
+				pdx_tooltip = "EVENT_POPUP_CHECKBOX_TOOLTIP"
+			}
+
+			instantTextboxType = {
+				name = "events_popup_text"
+				position = { x = 23 y = -5 }
+				textureFile = ""
+				font = "VCR02_14"
+				borderSize = { x = 0 y = 0 }
+				text = "POPUP_EVENTS"
+				maxWidth = 110
+				maxHeight = 10
+				format = left
+			}
+		}
+
+		#Grouped text and checkbox for easier positioning
+		containerWindowType = {
+			name = "news_checkbox_window"
+			position = {x=250 y=45}
+			Orientation = upper_right
+
+
+			checkBoxType = {
+				name = "popup_news_checkbox"
+				position = { x = -11 y = -15 }
+				quadTextureSprite = "GFX_generic_checkbox"
+				clicksound = decisions_ui_button
+				pdx_tooltip = "NEWS_POPUP_CHECKBOX_TOOLTIP"
+			}
+
+			instantTextboxType = {
+				name = "news_popup_text"
+				position = { x = 23 y = -5 }
+				textureFile = ""
+				font = "VCR02_14"
+				borderSize = { x = 0 y = 0 }
+				text = "POPUP_NEWS"
+				maxWidth = 110
+				maxHeight = 10
+				format = left
+			}
+		}
+	}
+
+	containerWindowType = {
+		name = "category_end"
+		position = {x=0 y=0}
+		Orientation = upper_left
+		size = {width=3 height=20}
+		clipping = no
+
+		iconType = {
+			name = "icon_end_bg"
+			position = {x=0 y=0}
+			spriteType = "GFX_category_end_bg"			
+		}
+	}
+
+###########################################
+# Items that go in the category container #
+###########################################
+
+
+	#################
+	# Report Events #
+	#################
+
+	containerWindowType = {
+		name = "event_item"
+		position = {x=0 y=0}
+		Orientation = upper_left
+		size = {width=3 height=33}
+		clipping = no
+
+		buttonType = {
+			name = "btn_bg"
+			position = {x=-1 y=0}
+			spriteType = "GFX_event_item_bg"
+			clicksound = click_default
+		}
+		
+		iconType = {
+			name = "event_type_icon"
+			position = {x=15 y=3}
+			spriteType = "GFX_event_type_strip"
+			frame = 1
+		}
+
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 50 y = 8 }
+			textureFile = ""
+			font = "VCR02_14"
+			borderSize = { x = 0 y = 0 }
+			text = "event name"
+			maxWidth = 450
+			maxHeight = 20
+			format = left
+		}
+
+		instantTextboxType = {
+			name = "timer_text"
+			position = { x = 350 y = 8 }
+			textureFile = ""
+			font = "VCR02_14"
+			borderSize = { x = 0 y = 0 }
+			text = "999"
+			maxWidth = 150
+			maxHeight = 20
+			format = right
+		}
+	}
+
+	#################################
+	# Decisions and Timed Decisions #
+	#################################
+
+	containerWindowType = {
+		name = "decision_item"
+		position = { x=0 y=0 }
+		size = { width=100% height=39 }
+		clipping = no
+
+		iconType = {
+			name = "btn_bg"
+			position = {x=0 y=0}
+			spriteType = "GFX_decision_item_bg"
+		}
+
+		iconType = {
+			name = "btn_progress_good"
+			position = {x=5 y=28}
+			spriteType = "GFX_decision_item_progress_good"
+		}
+
+		iconType = {
+			name = "btn_progress_bad"
+			position = {x=5 y=28}
+			spriteType = "GFX_decision_item_progress_bad"
+		}
+
+		iconType = {
+			name = "icon"
+			position = {x=30 y=19}
+			spriteType = "GFX_decision_unknown"
+			centerposition = yes
+		}
+
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 55 y = 10 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 330
+			maxHeight = 20
+			format = left
+		}
+		
+		iconType = {
+			name = "target_flag"	
+			position = { x= 32 y = 17 }			
+			quadTextureSprite = "GFX_flag_small2_not_masked"
+			scale = 0.5
+		}
+		iconType = {
+			name = "target_flag_frame"
+			quadTextureSprite = "GFX_small_flag_frame_thin2"
+			position = { x= 30 y = 15 }
+			alwaystransparent = yes
+			scale = 0.5
+		}
+		
+		instantTextboxType = {
+			name = "cost_and_timer_text"
+			position = { x = 112 y = 12 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = "999"
+			maxWidth = 320
+			maxHeight = 35
+			format = right
+		}
+		
+		buttonType = {
+			name = "track_decision_checkbox"
+			position = { x = 437 y = 7 }
+			quadTextureSprite = "GFX_checkbox_small4"
+			clicksound = decisions_ui_button
+			frame = 2
+		}
+
+		buttonType = {
+			name = "btn_select"
+			position = {x=465 y=6}
+			spriteType = "GFX_decision_select_icon_strip"
+			clicksound = decisions_ui_checkbox
+			frame = 2
+		}
+	}
+
+	containerWindowType = {
+		name = "targeted_decision_item"
+		position = { x=0 y=0 }
+		size = { width=100% height=40 }
+		clipping = no
+
+		iconType = {
+			name = "btn_bg"
+			position = {x=-1 y=-1}
+			spriteType = "GFX_decision_item_bg"
+		}
+
+		iconType = {
+			name = "btn_progress_good"
+			position = {x=9 y=28}
+			spriteType = "GFX_decision_item_progress_good"
+		}
+
+		iconType = {
+			name = "btn_progress_bad"
+			position = {x=9 y=28}
+			spriteType = "GFX_decision_item_progress_bad"
+		}
+	
+		iconType = {
+			name = "icon"
+			position = {x=15 y=0}
+			spriteType = "GFX_decision_unknown"
+		}
+
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 62 y = 9 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 280
+			maxHeight = 20
+			format = left
+		}
+
+		iconType = {
+			name = "target_flag"
+			quadTextureSprite ="GFX_flag_small"
+			position = { x= 30 y = 12}
+		}
+
+		iconType = {
+			name = "timer_icon"
+			position = {x=492 y=15}
+			spriteType = "GFX_decision_timer_icon_strip"
+			frame = 1
+			centerposition = yes
+			scale = 0.85
+		}
+
+		instantTextboxType = {
+			name = "timer_text"
+			position = { x = 405 y = 8 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = "999"
+			maxWidth = 70
+			maxHeight = 20
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "cost_and_timer_text"
+			position = { x = 112 y = 8 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = "999"
+			maxWidth = 320
+			maxHeight = 35
+			format = right
+		}
+		
+		buttonType = {
+			name = "track_decision_checkbox"
+			position = { x = 437 y = 7 }
+			quadTextureSprite = "GFX_checkbox_small4"
+			clicksound = click_checkbox
+			frame = 2
+		}
+
+		buttonType = {
+			name = "btn_select"
+			position = {x=465 y=4}
+			spriteType = "GFX_decision_select_icon_strip"
+			clicksound = click_default
+			frame = 2
+		}
+
+	}
+
+	containerWindowType = {
+		name = "timed_decision_item"
+		position = { x=0 y=0 }
+		size = { width=100% height=39 }
+		clipping = no
+
+		iconType = {
+			name = "btn_bg"
+			position = {x=0 y=0}
+			spriteType = "GFX_decision_item_bg"
+		}
+
+		iconType = {
+			name = "btn_progress_good"
+			position = {x=2 y=28}
+			spriteType = "GFX_decision_item_progress_good"
+		}
+
+		iconType = {
+			name = "btn_progress_bad"
+			position = {x=2 y=28}
+			spriteType = "GFX_decision_item_progress_bad"
+		}
+
+		iconType = {
+			name = "icon"
+			position = {x=32 y=20}
+			spriteType = "GFX_decision_unknown"
+			centerposition = yes
+		}
+		iconType = {
+			name = "target_flag"	
+			position = { x= 32 y = 17 }			
+			quadTextureSprite = "GFX_flag_small2_not_masked"
+			scale = 0.5
+		}
+		iconType = {
+			name = "target_flag_frame"
+			quadTextureSprite = "GFX_small_flag_frame_thin2"
+			position = { x= 30 y = 15 }
+			alwaystransparent = yes
+			scale = 0.5
+		}
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 62 y = 12 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 300
+			maxHeight = 20
+			format = left
+		}
+
+		iconType = {
+			name = "timer_icon"
+			position = {x=492 y=15}
+			spriteType = "GFX_decision_timer_icon_strip"
+			frame = 1
+			centerposition = yes
+			scale = 0.95
+		}
+
+		instantTextboxType = {
+			name = "timer_text"
+			position = { x = 405 y = 8 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = "999"
+			maxWidth = 70
+			maxHeight = 20
+			format = right
+		}
+
+		instantTextboxType = {
+			name = "cost_and_timer_text"
+			position = { x = 135 y = 8 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = "999"
+			maxWidth = 320
+			maxHeight = 35
+			format = right
+		}
+
+		buttonType = {
+			name = "btn_select"
+			position = {x=465 y=6}
+			spriteType = "GFX_decision_select_icon_strip"
+			clicksound = decisions_ui_checkbox
+			frame = 2
+		}
+	}
+
+
+	containerWindowType = {
+		name = "on_map_decision_locator_item"
+		position = { x=0 y=0 }
+		size = { width=100% height=41 }
+		clipping = no
+
+		iconType = {
+			name = "btn_bg"
+			position = {x=0 y=0}
+			spriteType = "GFX_decision_item_bg"
+			frame = 2
+		}
+
+		iconType = {
+			name = "decision_icon"
+			position = {x=32 y=20}
+			spriteType = "GFX_decision_infiltrate_state"
+			centerposition = yes
+		}
+
+		instantTextboxType = {
+			name = "name_text"
+			position = { x = 62 y = 12 }
+			textureFile = ""
+			font = "VCR02_12"
+			borderSize = { x = 0 y = 0 }
+			text = ""
+			maxWidth = 395
+			maxHeight = 20
+			fixedsize = yes
+			format = left
+		}
+
+		iconType = {
+			name = "zoom_icon"
+			position = {x=462 y=4}
+			spriteType = "GFX_locator_item_icon"
+		}
+	}
+}

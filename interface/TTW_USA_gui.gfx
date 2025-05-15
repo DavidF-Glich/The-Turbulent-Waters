@@ -1,0 +1,34 @@
+SpriteTypes = {
+	spriteType = {
+		name = "GFX_Fengyingas_Trump_selected"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_Trump_selected.png"
+	}
+	spriteType = {
+		name = "GFX_Fengyingas_Trump"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_Trump.png"
+	}
+	spriteType = {
+		name = "GFX_Fengyingas_Biden_selected"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_Biden_selected.png"
+	}
+	spriteType = {
+		name = "GFX_Fengyingas_Biden"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_Biden.png"
+	}
+	SpriteType = {
+		name = "GFX_bop_CAC_mike_ma"
+		texturefile = "gfx/interface/bop/bop_CAC_mike_ma.png"
+	}
+	spriteType = {
+		name = "GFX_Fengyingas_compare"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_compare.png"
+	}
+	spriteType = {
+		name = "GFX_Fengyingas_compare1"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_compare1.png"
+	}
+	spriteType = {
+		name = "GFX_Fengyingas_compare2"
+		textureFile = "gfx/interface/decisions/USA/Fengyingas_compare2.png"
+	}
+}

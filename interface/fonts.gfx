@@ -1,0 +1,256 @@
+
+bitmapfonts = {
+	### NORMAL
+
+	#Small debug font
+
+	bitmapfont = {
+		name = "garamond_12"
+		path = "gfx/fonts/garamond_12"
+		color = 0xffffffff
+	}
+	
+	bitmapfont = {
+		name = "cw_3d_debug"
+		path = "gfx/fonts/garamond_12"
+		color = 0xffffffff
+	}
+	
+
+
+	bitmapfont = {
+        name = "Kenyan Coffee Rg"
+        fontfiles = {
+			"gfx/fonts/EventText_0"
+			"gfx/fonts/EventText_rus"
+		}		
+        color = 0xffffffff
+        textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+       }
+    }
+	
+	bitmapfont = {
+        name = "Kenyan_22"
+        fontfiles = {
+			"gfx/fonts/Kenya22"
+			"gfx/fonts/Kenya22_rus"
+		}			
+        color = 0xffffffff
+        textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+       }
+    }
+	
+	bitmapfont = {
+        name = "Kenyan_28"
+        path = "gfx/fonts/Kenya28"
+        fontfiles = {
+			"gfx/fonts/Kenya28"
+			"gfx/fonts/Kenya28_rus"
+		}				
+		color = 0xffffffff
+    }
+	
+	bitmapfont = {
+        name = "Prototype"
+        fontfiles = {
+			"gfx/fonts/Prototype"
+			"gfx/fonts/Prototype_rus"
+            "gfx/fonts/chinese/Prototype_cn"    
+		}	
+        color = 0xffffffff		
+    }
+	
+	bitmapfont = {
+        name = "Calling Code"
+        path = "gfx/fonts/Calling Code"   
+        color = 0xffffffff
+    }
+
+    bitmapfont = {
+        name = "Arial16"
+        path = "gfx/fonts/arial16"   
+        color = 0xffffffff
+        textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+       }
+    }
+	
+	bitmapfont = {
+        name = "Electro"
+        path = "gfx/fonts/Electro_0"   
+        color = 0xffffffff
+        textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+       }
+    }	
+	bitmapfont = {
+        name = "Electro_20"
+        path = "gfx/fonts/Electro_20"   
+        color = 0xffffffff
+		fontfiles = {
+			"gfx/fonts/Electro_20"
+			"gfx/fonts/Electro_20_rus"
+		}	
+        textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+       }
+    }
+	bitmapfont = {
+		name = "aldrich_22_outline"
+		path = "gfx/fonts/aldrich_22_outline"
+		color = 0xffb2c9c2
+		textcolors = {
+			### Default Colors ###
+			F = { 178 201 194 } # New default
+			L = { 195 176 145 } # Tan (default for certain areas like bios)
+			D = { 89 199 194 }  # Default CRT blue color (Baby Blue)
+			M = { 35 206 255 }  # Light Neon Blue (old CRT default)
+
+			### Base Colors ###
+			W = { 255 255 255 } # White
+			B = { 47 138 135 }  # Blue
+			G = { 133 234 142 } # Green
+			R = { 224 130 130 } # Red
+			g = { 176 176 176 } # Gray
+			Y = { 220 218 80 }  # Yellow
+			H = { 220 218 80 }  # Duplicate yellow from basegame
+			O = { 234 161 14 }  # Orange
+			C = { 253 100 144 } # Hot Pink
+			P = { 169 27 79 }   # Pink
+			r = { 132 50 0 }    # Rust Brown
+			w = { 211 201 0 }   # Gold
+			e = { 146 0 0 }     # Dark Red
+			p = { 204 0 204 }   # Magenta
+			j = { 153 102 51 }  # Brown
+			S = { 255 128 114 } # Salmon
+			x = { 225 0 0 }     # Über-red
+			y = { 0 225 0 }     # Über-green
+			z = { 22 88 255 }   # Über-blue
+			l = { 147 112 219 } # Lavender
+			n = { 60 180 60 }   # Dark Green
+			q = { 65 65 65 }    # Darker Grey
+			Q = { 0 84 142 }    # Prussian Blue
+			I = { 116 71 209 }  # Deep Purple
+
+			### Tomsk GUI Colors ###
+			d = { 225 225 225 } # Gainsboro
+			m = { 0 174 239 }   # Deep Sky Blue
+			h = { 161 16 107 }  # Jazzberry Jam
+			s = { 137 137 137 } # Suva Gray
+
+			### Britain Parties ###
+			V = { 213 40 20 }	# Scarlet
+			E = { 152 40 92 }	# Purple
+			f = { 255 193 12 }	# Amber
+			i = { 46 60 169 }	# Cerulean Blue
+			J = { 213 87 57 }	# Light Orange
+			K = { 45 152 40 }	# Emerald Green
+			o = { 129 88 56 }	# Darker Brown
+			U = { 214 138 75 }	# Peru (Ideologues)
+
+			### Guangdong ###
+			A = { 0 108 114 }   # Teal (Government)
+			u = { 210 119 39 }  # Bitter Organe (Rioters)
+
+			## OPEN SLOTS
+			# c = {  } #
+			# k = {  } #
+			# t = {  } #
+			# v = {  } #
+			# H = {  } #
+			# N = {  } #
+			# T = {  } #
+		}
+	}
+	bitmapfont_override = {
+		name = "aldrich_22_outline"
+		fontfiles = {
+			
+		}
+	}
+    bitmapfont = {
+		name = "Bomb_32"
+		path = "gfx/fonts/Bomb_32"
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+		}
+	}
+
+	bitmapfont = {
+		name = "Bomb_36"
+		fontfiles = {
+			"gfx/fonts/fzwhjz_32"
+		}
+		color = 0xffffffff
+		textcolors = {
+			W = { 255 255 255 }
+			b = { 0 0 0 }
+			G = { 86 172 91 }
+			R = { 222 86 70 }
+			Y = { 238 201 35 }
+			O = { 238 123 35 }
+			H = { 238 201 35 }
+			T = { 255 255 255 }
+			g = { 175 175 175 }
+		}
+	}
+	bitmapfont_override = {
+		name = "Bomb_36"
+		fontfiles = {
+			"gfx/fonts/Bomb_36"
+		}
+		languages = { "l_english"}   
+
+	}
+}

@@ -1,0 +1,12 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_coalition_indicator"
+		texturefile = "gfx/interface/coalition_indicator.png"
+	}	
+	spriteType = {
+		name = "GFX_coalition_indicator_leader"
+		texturefile = "gfx/interface/coalition_indicator_leader.png"
+	}
+}
+

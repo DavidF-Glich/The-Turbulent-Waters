@@ -1,0 +1,37 @@
+﻿units = {
+	division = {	
+		name = "1. Liwa Mushat"
+		location = 10073
+		division_template = "Liwa Mushat"
+		start_experience_factor = 0.2
+		
+	}
+	division = {	
+		name = "2. Liwa Mushat"
+		location = 11964
+		division_template = "Liwa Mushat"
+		start_experience_factor = 0.2
+		
+	}
+	division = {	
+		name = "3. Liwa Mushat"
+		location = 10073
+		division_template = "Liwa Mushat"
+		start_experience_factor = 0.5
+		
+	}
+	division = {	
+		name = "4. Liwa Mushat"
+		location = 4076
+		division_template = "Liwa Mushat"
+		start_experience_factor = 0.2
+		
+	}
+	division = {	
+		name = "5. Liwa Mushat"
+		location = 4145
+		division_template = "Liwa Mushat"
+		start_experience_factor = 0.2
+		
+	}
+}

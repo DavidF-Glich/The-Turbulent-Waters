@@ -1,0 +1,88 @@
+﻿
+units = {
+	division = {			
+		name = "1aya Brigada Palachey"
+		location = 3501
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "2aya Brigada Palachey"
+		location = 3501
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "3'ya Brigada Palachey"
+		location = 3501
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "4aya Brigada Palachey"
+		location = 3501
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "5aya Brigada Palachey"
+		location = 11446
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "6aya Brigada Palachey"
+		location = 11446
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "7aya Brigada Palachey"
+		location = 11446
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "8aya Brigada Palachey"
+		location = 11446
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "9aya Brigada Palachey"
+		location = 9458
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "10aya Brigada Palachey"
+		location = 9458
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "11aya Brigada Palachey"
+		location = 9458
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+	division = {			
+		name = "12aya Brigada Palachey"
+		location = 9458
+		division_template = "Aeromobil'nyy Brigada"
+		start_experience_factor = 0.7
+		start_equipment_factor = 1
+	}
+}
+

@@ -1,0 +1,69 @@
+guiTypes = {
+	containerWindowType = {
+		name = "USA_2020_election_window"
+		position = { x = 0 y = 0 }
+		size = { width = 510 height= 300 }
+		iconType = {
+			name = "Donald_J_Trump"
+			position = {
+				x = 5
+				y = 20
+			}
+			spriteType = GFX_Fengyingas_Trump_selected
+		}
+		iconType = {
+			name = "Joe_Biden"
+			position = {
+				x = 325
+				y = 20
+			}
+			spriteType = GFX_Fengyingas_Biden_selected
+		}
+		iconType = {
+			name = "x1"
+			Spritetype = GFX_Fengyingas_compare
+			position = {
+				x = 235
+				y = 150
+			}
+		}
+		instantTextBoxType = {
+			name = "usa_info_title"
+			position = { x = 176 y = 36 }
+			font = "VCR02_24"
+			text = "usa_info_title_text"
+			maxWidth = 150
+			maxHeight = 50
+			format = center
+		}
+		instantTextBoxType = {
+			name = "info"
+			position = { x = 176 y = 76 }
+			font = "VCR02_18"
+			text = "usa_info_text"
+			maxWidth = 150
+			maxHeight = 50
+			format = center
+		}
+		instantTextBoxType = {
+			name = "leader_name1"
+			position = { x = 14 y = 246 }
+			font = "VCR02_12"
+			text = "USA_donald_trump_char"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center		
+		}
+		instantTextBoxType = {
+			name = "leader_name2"
+			position = { x = 334 y = 246 }
+			font = "VCR02_12"
+			text = "USA_joe_biden_char"
+			maxWidth = 155
+			maxHeight = 20
+			format = center
+			vertical_alignment = center		
+		}
+	}
+}

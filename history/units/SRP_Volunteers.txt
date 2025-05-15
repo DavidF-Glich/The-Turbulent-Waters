@@ -1,0 +1,16 @@
+﻿units = {
+	division = {	
+		name = "1. Dobrovoljačka Brigada"
+		location = 11574
+		division_template = "Dobrovoljačka Brigada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+	division = {	
+		name = "2. Dobrovoljačka Brigada"
+		location = 11574
+		division_template = "Dobrovoljačka Brigada"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1
+	}
+}

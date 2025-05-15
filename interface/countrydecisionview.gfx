@@ -1,0 +1,214 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_event_header_bg"
+		texturefile = "gfx/interface/decisionview/event_header_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_event_item_bg"
+		texturefile = "gfx/interface/decisionview/event_item_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_event_type_strip"
+		texturefile = "gfx/interface/decisionview/event_type_strip.dds"
+		noOfFrames = 2
+	}
+	
+	spriteType = {
+		name = "GFX_event_end_bg"
+		texturefile = "gfx/interface/decisionview/event_end_bg.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_category_header_bg"
+		texturefile = "gfx/interface/decisionview/category_header_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_decision_item_bg"
+		texturefile = "gfx/interface/decisionview/decision_item_bg.dds"
+		noOfFrames = 3
+	}
+	
+	spriteType = {
+		name = "GFX_decision_item_bg_single"
+		texturefile = "gfx/interface/decisionview/decision_item_bg_single.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_decision_progress_bg"
+		texturefile = "gfx/interface/decisionview/decision_progress_bg.dds"
+	}
+
+	progressbartype = {
+		name = "GFX_decision_item_progress_bad"
+		textureFile1 = "gfx/interface/decisionview/decision_progress_bad.dds"
+		textureFile2 = "gfx/interface/decisionview/decision_progress_bg.dds"
+		size = { x = 502 y = 10 }
+		effectFile = "gfx/FX/progress_startend.lua"
+		alwaystransparent = yes
+	}
+
+	progressbartype = {
+		name = "GFX_decision_item_progress_good"
+		textureFile1 = "gfx/interface/decisionview/decision_progress_good.dds"
+		textureFile2 = "gfx/interface/decisionview/decision_progress_bg.dds"
+		size = { x = 502 y = 10 }
+		effectFile = "gfx/FX/progress_startend.lua"
+		alwaystransparent = yes
+	}
+	
+	#spriteType = {
+	#	name = "GFX_decision_description_bg"
+	#	texturefile = "gfx/interface/decisionview/decision_description_bg.dds"
+	#}
+
+	spriteType = {
+		name = "GFX_decision_select_icon_strip"
+		textureFile = "gfx/interface/decisionview/decision_select_icon_strip.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 4
+	}
+
+	spriteType = {
+		name = "GFX_decision_timer_icon_strip"
+		textureFile = "gfx/interface/decisionview/decision_timer_icon_strip.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		noOfFrames = 4
+	}
+	
+	spriteType = {
+		name = "GFX_d_category_empty_picture"
+		textureFile = "gfx/interface/research_folder_strip.dds"
+		noOfFrames = 12
+	}
+
+	spriteType = {
+		name = "GFX_locator_item_icon"
+		textureFile = "gfx/interface/decisionview/locator_item_icon.dds"
+	}
+	#核弹数量
+	spriteType = {
+		name = "GFX_peace_pigeon"
+		textureFile = "gfx/interface/decisions/nuclear/peace_pigeon.png"
+	}
+
+	spriteType = {
+		name = "GFX_one_nuke"
+		textureFile = "gfx/interface/decisions/nuclear/safe_enough.png"
+	}
+
+	spriteType = {
+		name = "GFX_two_nukes"
+		textureFile = "gfx/interface/decisions/nuclear/critical.png"
+	}
+
+	spriteType = {
+		name = "GFX_three_nukes"
+		textureFile = "gfx/interface/decisions/nuclear/destructive.png"
+	}
+	#拥核合法性
+	spriteType = {
+		name = "GFX_nuclear_legitimacy_none"
+		textureFile = "gfx/interface/decisions/nuclear/legitimacy_none.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_legitimacy_USA"
+		textureFile = "gfx/interface/decisions/nuclear/legitimacy_USA.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_legitimacy_PRC_USA"
+		textureFile = "gfx/interface/decisions/nuclear/legitimacy_PRC_USA.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_legitimacy_PRC"
+		textureFile = "gfx/interface/decisions/nuclear/legitimacy_PRC.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_legitimacy_ENG_USA"
+		textureFile = "gfx/interface/decisions/nuclear/legitimacy_ENG_USA.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_legitimacy_UN"
+		textureFile = "gfx/interface/decisions/nuclear/legitimacy_UN.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_BG_large"
+		textureFile = "gfx/interface/decisions/nuclear/box_large.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_BG_medium"
+		textureFile = "gfx/interface/decisions/nuclear/box_medium.png"
+	}
+	spriteType = {
+		name = "GFX_nuclear_BG_small"
+		textureFile = "gfx/interface/decisions/nuclear/box_small.png"
+	}
+	spriteType = {
+		name = "GFX_Num_Minus"
+		textureFile = "gfx/interface/minus.dds"
+	}
+	spriteType = {
+		name = "GFX_Num_Plus"
+		textureFile = "gfx/interface/plus.dds"
+	}
+	spriteType = {
+		name = "GFX_Nuke_Adjustment_button"
+		textureFile = "gfx/interface/decisions/nuclear/nuke_adjust_button.png"
+	}
+	spriteType = {
+		name = "GFX_Nuke_Ultimate"
+		textureFile = "gfx/interface/decisions/nuclear/button_zero.png"
+	}
+	spriteType = {
+		name = "GFX_Nuke_less_Ultimate"
+		textureFile = "gfx/interface/decisions/nuclear/button_star.png"
+	}
+	spriteType = {
+		name = "GFX_Nuke_no_Ultimate"
+		textureFile = "gfx/interface/decisions/nuclear/button_jin.png"
+	}
+	progressbartype = {
+		name = "GFX_Cold_War_GUI_Tension_Progressbar"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		textureFile1 = "gfx/interface/decisions/cold_war/tension_mechanic_progressbar_full.dds"
+		textureFile2 = "gfx/interface/decisions/cold_war/tension_mechanic_progressbar_empty.dds"
+		size = { x = 300 y = 30 }
+		effectFile = "gfx/FX/progress_centered.lua"
+	}
+	spriteType = {
+		name = "GFX_Cold_War_GUI_Tension_Frame"
+		texturefile = "gfx/interface/decisions/cold_war/tension_mechanic_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_overlay_stateview_large"
+		textureFile = "gfx/interface/flag_overlay_stateview_large.dds"
+	}
+	spriteType = {
+		name = "GFX_Cold_war_USA"
+		textureFile = "gfx/interface/decisions/cold_war/USA.png"
+	}
+	spriteType = {
+		name = "GFX_Cold_war_PRC"
+		textureFile = "gfx/interface/decisions/cold_war/PRC.png"
+	}
+	spriteType = {
+		name = "GFX_Cold_war_RUS"
+		textureFile = "gfx/interface/decisions/cold_war/RUS.png"
+	}
+	spriteType = {
+		name = "GFX_Cold_war_EU"
+		textureFile = "gfx/interface/decisions/cold_war/EU.png"
+	}
+	SpriteType = {
+		name = "GFX_Cold_War_GUI_Tension_Outline"
+		texturefile = "gfx/interface/decisions/cold_war/Cold_War_GUI_Tension_Outline.dds"
+	}
+	SpriteType = {
+		name = "GFX_Cold_War_GUI_Ranking_Incident"
+		texturefile = "gfx/interface/decisions/cold_war/rankings_victories_slot.dds"
+	}
+
+}

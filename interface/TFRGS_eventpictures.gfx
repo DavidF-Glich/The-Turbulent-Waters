@@ -1,0 +1,6 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_CHI_counter_terrorist"
+		texturefile = "gfx/event_pictures/CHI_counter_terrorist.dds"
+	}
+}

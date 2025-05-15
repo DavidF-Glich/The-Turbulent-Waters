@@ -1,0 +1,68 @@
+﻿units = {
+	division = {
+		name = "1-a Natsionalna Hvardiya"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "2-a Natsionalna Hvardiya"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "3-a Natsionalna Hvardiya"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "4-a Natsionalna Hvardiya"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "5-a Natsionalna Hvardiya"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "6-a Natsionalna Hvardiya"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "8-a Natsionalna Hvardiya Bryhada"
+		location = 3430
+		division_template = "Natsionalna Hvardiya Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "7-a Mekhanizovana Bryhada"
+		location = 3430
+		division_template = "Mekhanizovana Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "8-a Mekhanizovana Bryhada"
+		location = 3430
+		division_template = "Mekhanizovana Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "9-a Mekhanizovana Bryhada"
+		location = 3430
+		division_template = "Mekhanizovana Bryhada"
+		start_experience_factor = 0.1
+	}
+	division = {
+		name = "10-a Tankova Bryhada"
+		location = 3430
+		division_template = "Tankova Bryhada"
+		start_experience_factor = 0.1
+	}
+}

@@ -1,0 +1,10 @@
+spritetypes = {
+	spriteType = {
+		name = "GFX_bop_XJP_Unhealthy_Side"
+		texturefile = "gfx/interface/bop/PRC/PRC_XJP_Unhealthy.png"
+	}
+	spriteType = {
+		name = "GFX_bop_XJP_healthy_Side"
+		texturefile = "gfx/interface/bop/PRC/PRC_XJP_healthy.png"
+	}
+}

@@ -1,0 +1,140 @@
+spriteTypes = {
+	spriteType = {
+			name = "GFX_lianyi"
+			texturefile = "gfx/event_pictures/lianyi.png"
+		}
+    spriteType = {
+			name = "GFX_bxj"
+			texturefile = "gfx/event_pictures/bxj.png"
+		}    
+    spriteType = {
+			name = "GFX_baoyuan"
+			texturefile = "gfx/event_pictures/baoyuan.png"
+		}
+	spriteType = {
+			name = "GFX_jjsszy"
+			texturefile = "gfx/event_pictures/jjsszy.png"
+		}
+	spriteType = {
+			name = "GFX_czc"
+			texturefile = "gfx/event_pictures/czc.png"
+		}		
+    spriteType = {
+			name = "GFX_daocao"
+			texturefile = "gfx/event_pictures/daocao.png"
+		}
+    spriteType = {
+			name = "GFX_wumao"
+			texturefile = "gfx/event_pictures/wumao.png"
+        } 
+    spriteType = {
+			name = "GFX_siji"
+			texturefile = "gfx/event_pictures/siji.png"
+		}    
+    spriteType = {
+			name = "GFX_juli"
+			texturefile = "gfx/event_pictures/juli.png"
+		}
+    spriteType = {
+			name = "GFX_yimiaojiezhong"
+			texturefile = "gfx/event_pictures/yimiaojiezhong.png"
+		}
+   spriteType = {
+			name = "GFX_jingqiaoqiao"
+			texturefile = "gfx/event_pictures/jingqiaoqiao.png"
+		}
+   spriteType = {
+			name = "GFX_xiang"
+			texturefile = "gfx/event_pictures/xiang.png"
+        }
+   spriteType = {
+			name = "GFX_cheng"
+			texturefile = "gfx/event_pictures/cheng.png"
+		}
+   spriteType = {
+			name = "GFX_zhixin"
+			texturefile = "gfx/event_pictures/zhixin.png"
+		}
+   spriteType = {
+			name = "GFX_gxwdalu"
+			texturefile = "gfx/event_pictures/gxwdalu.png"
+		}
+   spriteType = {
+			name = "GFX_gxwtaiw"
+			texturefile = "gfx/event_pictures/gxwtaiw.png"
+		}
+   spriteType = {
+			name = "GFX_chenai"
+			texturefile = "gfx/event_pictures/chenai.png"
+		}
+   spriteType = {
+			name = "GFX_youxing"
+			texturefile = "gfx/event_pictures/youxing.png"
+		}
+   spriteType = {
+			name = "GFX_lieshi"
+			texturefile = "gfx/event_pictures/lieshi.png"
+		}
+   spriteType = {
+			name = "GFX_shengji"
+			texturefile = "gfx/event_pictures/shengji.png"
+		}
+	spriteType = {
+			name = "GFX_taihaiwar_e"
+			texturefile = "gfx/event_pictures/taihaiwar.png"
+        }
+	spriteType = {
+			name = "GFX_tongyi"
+			texturefile = "gfx/event_pictures/tongyi.png"
+		}
+	spriteType = {
+			name = "GFX_guigen"
+			texturefile = "gfx/event_pictures/guigen.png"
+		}   
+	spriteType = {
+			name = "GFX_suyuan"
+			texturefile = "gfx/event_pictures/suyuan.png"
+		}  
+	spriteType = {
+			name = "GFX_ditie"
+			texturefile = "gfx/event_pictures/ditie.png"
+		} 
+	spriteType = {
+			name = "GFX_jiaozhi"
+			texturefile = "gfx/event_pictures/jiaozhi.png"
+		}      
+    spriteType = {
+			name = "GFX_mao130"
+			texturefile = "gfx/event_pictures/mao130.png"
+        }	
+    spriteType = {
+			name = "GFX_mao"
+			texturefile = "gfx/texticons/banners/PRC/mao.png"
+            legacy_lazy_load = no
+        }
+	spriteType = {
+			name = "GFX_jieshuyu"
+			texturefile = "gfx/texticons/banners/PRC/jieshuyu.png"
+            legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_jieshuyu1"
+			texturefile = "gfx/texticons/banners/PRC/jieshuyu1.png"
+            legacy_lazy_load = no
+		}
+	spriteType = {
+			name = "GFX_jieshuyu2"
+			texturefile = "gfx/texticons/banners/PRC/jieshuyu2.png"
+            legacy_lazy_load = no
+		}
+    spriteType = {
+			name = "GFX_mingyun"
+			texturefile = "gfx/texticons/banners/PRC/mingyun.png"
+            legacy_lazy_load = no
+		}
+    spriteType = {
+			name = "GFX_taihaiwar_t"
+			texturefile = "gfx/texticons/banners/PRC/taihaiwar.png"
+            legacy_lazy_load = no
+		}
+}

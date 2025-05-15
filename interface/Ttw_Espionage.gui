@@ -1,0 +1,72 @@
+guiTypes = {
+	#### Main Decision GUI ####
+	containerWindowType = {
+		name = "TTW_Espionage_GUI"
+		position = { x = -17 y = 43 }
+		size = { width = 1091 height = 842 }
+
+
+		# Vertical Divider
+		iconType = {
+			name = "Espionage_GUI_VerticalDivider"
+			position = { x = 555 y = 43 }
+			spriteType = "GFX_BoP_Base_Vertical_Divider_Full"
+		}
+
+	}
+
+
+
+	#### Leader Info Panel ####
+	containerWindowType = {
+		name = "TTW_Espionage_GUI_LeaderInfoWindow"
+		size = { width = 310 height = 650 }
+		position = { x = 770 y = 130 }
+		fade_time = 300
+		fade_type = linear
+		moveable = yes
+
+		background = {
+			name = "Background"
+			quadTextureSprite = "GFX_tiled_bg"
+		}
+
+		# Close Button
+		buttonType = {
+			name = "TTW_Espionage_GUI_LeaderInfo_CloseBtn"
+			position = { x = -32 y = 17 }
+			quadTextureSprite = "GFX_crt_closebutton"
+			Orientation = "UPPER_RIGHT"
+			shortcut = "ESCAPE"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		# Portrait
+		iconType = {
+			name = "TTW_Espionage_GUI_LeaderInfo_Portrait"
+			position = { x = 71 y = 25 }
+		}
+
+		# Name & Description
+		instantTextboxType = {
+			name = "TTW_Espionage_GUI_LeaderInfo_Name"
+			position = { x = 0 y = 243 }
+			font = "aldrich_32_outline"
+			text = TTW_Espionage_GUI_Leader_tt
+			maxWidth = 300
+			fixedsize = yes
+			format = center
+		}
+		instantTextboxType = {
+			name = "TTW_Espionage_GUI_LeaderInfo_Desc"
+			position = { x = 25 y = 275 }
+			font = "VCR02_18"
+			text = TTW_Espionage_GUI_Leader_Desc_tt
+			maxWidth = 250
+			maxHeight = 360
+			format = left
+			scrollbarType = standardtext_slider
+		}
+	}
+}

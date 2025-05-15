@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_auto_build"
+		textureFile = "gfx/bm_auto_build.dds"
+		legacy_lazy_load = no
+	}
+}

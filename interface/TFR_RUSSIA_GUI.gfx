@@ -1,0 +1,23 @@
+	spriteTypes = { 
+		
+		SpriteType = {
+			name = "GFX_Duma_BG"
+			texturefile = "gfx/interface/duma_background.png"			
+		}
+		SpriteType = {
+			name = "GFX_Oligarch_BG"
+			texturefile = "gfx/interface/oligarch_background.png"			
+		}
+		SpriteType = {
+			name = "GFX_Oligarch_BG_2"
+			texturefile = "gfx/interface/oligarch_background_2.png"		
+		}
+		SpriteType = {
+			name = "GFX_Oligarch_BG_3"
+			texturefile = "gfx/interface/oligarch_background_3.png"			
+		}	
+		SpriteType = {
+			name = "GFX_Oligarch_BG_4"
+			texturefile = "gfx/interface/oligarch_background_4.png"			
+		}
+	}		

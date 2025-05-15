@@ -1,0 +1,50 @@
+﻿units = {
+	division = {
+		name = "44. Bislamach Brigade"
+		location = 3730
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.5
+	}
+
+	division = {
+		name = "45. Bislamach Brigade"
+		location = 3730
+		division_template = "Gépesített Dandár"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "46. Bislamach Brigade"
+		location = 3730
+		division_template = "Gépesített Dandár"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "47. Bislamach Brigade"
+		location = 3730
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "52. Bislamach Brigade"
+		location = 3730
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "60. Bislamach Brigade"
+		location = 3730
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.5
+	}
+	
+	division = {
+		name = "101. Bislamach Brigade"
+		location = 3730
+		division_template = "Gyalogdandár"
+		start_experience_factor = 0.5
+	}
+}

@@ -1,0 +1,135 @@
+spriteTypes = {
+	#国策
+	SpriteType = {
+		name = "GFX_focus_PRC_network_to_censorship"
+		texturefile = "gfx/interface/goals/PRC/PRC_Network_to_censorship.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_proletariat_dream"
+		texturefile = "gfx/interface/goals/PRC/PRC_proletariat_dream.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_revolutionary_tradition"
+		texturefile = "gfx/interface/goals/PRC/PRC_revolutionary_tradition.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_free_dream_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_free_dream_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_frist_thaw_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_frist_thaw_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_down_centre_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_down_centre_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_shake_up_the_politburo_huchunhua"
+		texturefile = "gfx/interface/goals/PRC/PRC_shake_up_the_politburo_huchunhua.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_shake_up_the_politburo_wangyang"
+		texturefile = "gfx/interface/goals/PRC/PRC_shake_up_the_politburo_wangyang.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_talk_taiwan_peace_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_talk_taiwan_peace_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_Leader_talks_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_Leader_talks_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_Unblock_Taiwan_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_Unblock_Taiwan_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_tourism_to_taiwan_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_tourism_to_taiwan_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_invest_to_taiwan_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_invest_to_taiwan_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_send_PLA_to_taiwan"
+		texturefile = "gfx/interface/goals/PRC/PRC_send_PLA_to_taiwan.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_taiwan_is_back_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_taiwan_is_back_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_general_mobilization_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_general_mobilization_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_Eastern_TheaterCommand_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_Eastern_TheaterCommand_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_ready_to_login_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_ready_to_login_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_Theater_linkage_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_Theater_linkage_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_ari_plan_to_taiwan_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_ari_plan_to_taiwan_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_publicize_to_taiwan_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_publicize_to_taiwan_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_east_sea_exercise_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_east_sea_exercise_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_warproduction_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_warproduction_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_littlewarproduction_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_littlewarproduction_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_taiwan_supportunit_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_taiwan_supportunit_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_last_attack_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_last_attack_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_Revise_taiwan_textbooks_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_Revise_taiwan_textbooks_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_trial_taiwan_official_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_trial_taiwan_official_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_china_victorious_and_united_new"
+		texturefile = "gfx/interface/goals/PRC/PRC_china_victorious_and_united_new.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_production_constructioncorps_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_production_constructioncorps_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_taiwan_autonomousregion_focus"
+		texturefile = "gfx/interface/goals/PRC/PRC_taiwan_autonomousregion_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_NSTFR_reddragon_Inworld_focus"
+		texturefile = "gfx/interface/goals/PRC/NSTFR_reddragon_Inworld_focus.png"
+	}
+	SpriteType = {
+		name = "GFX_focus_NSTFR_PRC_confliction_PDTO_focus"
+		texturefile = "gfx/interface/goals/PRC/NSTFR_PRC_confliction_PDTO_focus.png"
+	}
+}

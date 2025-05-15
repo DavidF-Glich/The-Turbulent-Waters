@@ -1,0 +1,62 @@
+spriteTypes = {
+
+	corneredTileSpriteType = {
+		name = "GFX_constructions_background"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//supplement//GFX_constructions_background.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+		
+	corneredTileSpriteType = {
+		name = "GFX_production_lines_background_2"
+		size= { x=192 y=192 }
+		textureFile = "gfx//interface//supplement//GFX_production_lines_background_2.dds"
+		borderSize = { x=64 y=64 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+
+	corneredTileSpriteType = {
+		name = "GFX_production_lines_background_3"
+		size= { x=290 y=310 }
+		textureFile = "gfx//interface//supplement//GFX_production_lines_background_3.dds"
+		borderSize = { x=144 y=144 }
+		tilingCenter = yes
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+		alwaystransparent = yes
+	}
+	
+	spriteType = {
+		name = "GFX_state_constructions_background"
+		textureFile = "gfx//interface//supplement//GFX_state_constructions_background.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_shared_constructions_background"
+		textureFile = "gfx//interface//supplement//GFX_shared_constructions_background.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_province_constructions_background"
+		textureFile = "gfx//interface//supplement//GFX_province_constructions_background.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_other_constructions_background"
+		textureFile = "gfx//interface//supplement//GFX_other_constructions_background.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_stateview_background"
+		textureFile = "gfx//interface//supplement//GFX_stateview_background.dds"
+		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
+	}
+	
+	SpriteType = {
+		name = "GFX_develop_state_button"
+		texturefile = "gfx//interface//supplement//GFX_develop_state_button.dds"
+	}
+
+}
