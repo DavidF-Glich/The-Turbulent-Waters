@@ -1,0 +1,33 @@
+﻿l_russian:
+ #Focuses
+ italy.1.t: "Второй Марш на Рим"
+ italy.1.d: ""
+ italy.1.a: "Si!"
+ italy.2.t: ""
+ italy.2.d: ""
+ italy.2.a: ""
+ italy.3.t: "Совещание по вопросу восстановления Итальянского королевства"
+ italy.3.d: ""
+ italy.3.a: "Нам нужно вернуться к традициям!"
+ italy.3.b: "Нам не нужен король!"
+ italy.4.t: "Путь Большого Совета"
+ italy.4.d: ""
+ italy.4.a: "Новая Сила прокладывает путь!"
+ italy.4.b: "Королевская Италия прислушивается!"
+ italy.4.c: "Латинисты вернутся к старым обычаям!"
+ italy.4.e: "CasaPound удерживает доминирующее положение!"
+ italy.5.t: ""
+ italy.5.d: ""
+ italy.5.a: ""
+ italy.6.t: "Коронация Умберто III"
+ italy.6.d: ""
+ italy.6.a: "Foedere et Religione Tenemur"
+ 
+ hos_man_of_cobbled_stone: "Человек из Мощеного Камня"
+
+ ITA_kingdom_of_the_italians: "Королевство Итальянцев"
+ ITA_kingdom_of_the_italians_DEF: "Королевство Итальянцев"
+ ITA_kingdom_of_the_italians_ADJ: "Итальянск"
+ 
+ ITA_mafia: "Мафия"
+ ITA_corruption: "Повсеместная Коррупция"

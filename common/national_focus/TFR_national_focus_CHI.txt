@@ -1,0 +1,82 @@
+focus_tree = {
+	id = CHI
+	country = { 
+		factor = 0
+		modifier = {
+			add = 10
+			tag = CHI
+		}
+	}
+	default = no
+	focus = {
+		id = CHI_TCP
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 0
+		mutually_exclusive = {
+			focus = CHI_DPP
+		}
+		mutually_exclusive = {
+			focus = CHI_KMT
+		}
+		mutually_exclusive = {
+			focus = CHI_TPP
+		}
+		completion_reward = {
+			custom_effect_tooltip = CHI_Avoid_Annex_by_PRC
+		}
+	}
+	focus = {
+		id = CHI_DPP
+		icon = GFX_goal_unknown
+		cost = 6
+		x = 4
+		y = 0
+		mutually_exclusive = {
+			focus = CHI_TCP
+		}
+		mutually_exclusive = {
+			focus = CHI_KMT
+		}
+		mutually_exclusive = {
+			focus = CHI_TPP
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_KMT
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 6
+		y = 0
+		mutually_exclusive = {
+			focus = CHI_DPP
+		}
+		mutually_exclusive = {
+			focus = CHI_TPP
+		}
+		mutually_exclusive = {
+			focus = CHI_TCP
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = CHI_TPP
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 8
+		y = 0
+		mutually_exclusive = {
+			focus = CHI_KMT
+		}
+		mutually_exclusive = {
+			focus = CHI_DPP
+		}
+		mutually_exclusive = {
+			focus = CHI_TCP
+		}
+		completion_reward = { }
+	}
+	
+}

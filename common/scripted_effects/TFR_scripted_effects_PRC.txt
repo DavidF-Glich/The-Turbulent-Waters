@@ -1,0 +1,317 @@
+PRC_decrease_corona = {
+	if = {
+		limit = {
+			has_idea = PRC_coronavirus_pandemic_idea3
+		}
+		remove_ideas = PRC_coronavirus_pandemic_idea3
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_coronavirus_pandemic_idea4
+		}
+		swap_ideas = {
+			remove_idea = PRC_coronavirus_pandemic_idea4
+			add_idea = PRC_coronavirus_pandemic_idea3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = PRC_coronavirus_pandemic_idea5
+		}
+		swap_ideas = {
+			remove_idea = PRC_coronavirus_pandemic_idea5
+			add_idea = PRC_coronavirus_pandemic_idea4
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_coronavirus_pandemic_idea6
+		}
+		swap_ideas = {
+			remove_idea = PRC_coronavirus_pandemic_idea6
+			add_idea = PRC_coronavirus_pandemic_idea5
+		}
+	}
+	
+}
+PRC_increase_corona = {
+	if = {
+		limit = { 
+			has_idea = PRC_coronavirus_pandemic_idea3
+		}
+		swap_ideas = {
+			remove_idea = PRC_coronavirus_pandemic_idea3
+			add_idea = PRC_coronavirus_pandemic_idea4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = PRC_coronavirus_pandemic_idea4
+		}
+		swap_ideas = {
+			remove_idea = PRC_coronavirus_pandemic_idea4
+			add_idea = PRC_coronavirus_pandemic_idea5
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_coronavirus_pandemic_idea5
+		}
+		swap_ideas = {
+			remove_idea = PRC_coronavirus_pandemic_idea5
+			add_idea = PRC_coronavirus_pandemic_idea6
+		}
+		add_popularity = {
+			ideology = communist
+			popularity = -0.02
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_coronavirus_pandemic_idea6
+		}
+		add_political_power = -20
+		add_popularity = {
+			ideology = communist
+			popularity = -0.04
+		}
+	}
+}
+PRC_reduce_corruption = {
+	if = {
+		limit = { 
+			has_idea = PRC_corrupt_bureaucracy_idea
+		}
+		swap_ideas = {
+			remove_idea = PRC_corrupt_bureaucracy_idea
+			add_idea = PRC_corrupt_bureaucracy_idea1
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = PRC_corrupt_bureaucracy_idea1
+		}
+		swap_ideas = {
+			remove_idea = PRC_corrupt_bureaucracy_idea1
+			add_idea = PRC_corrupt_bureaucracy_idea2
+		}
+	}
+}
+
+PRC_add_influence_nat = {
+	custom_effect_tooltip = PRC_influence_nat_tooltip
+	
+	add_to_variable = {
+		var = PRC_influence_nat_var
+		value = PRC_influence_nat_var_temp
+	}
+	
+	clamp_variable = {
+		var = PRC_influence_nat_var
+		min = 0
+		max = 1
+	}
+
+	set_variable = {
+		var = PRC_influence_nat_dynamic_var
+		value = PRC_influence_nat_var
+	}
+	
+	multiply_variable = {
+		var = PRC_influence_nat_dynamic_var
+		value = 0.1
+	}
+}
+
+PRC_add_influence_cen = {
+	custom_effect_tooltip = PRC_influence_cen_tooltip
+	
+	add_to_variable = {
+		var = PRC_influence_cen_var
+		value = PRC_influence_cen_var_temp
+	}
+	
+	clamp_variable = {
+		var = PRC_influence_cen_var
+		min = 0
+		max = 1
+	}
+
+	set_variable = {
+		var = PRC_influence_cen_dynamic_var
+		value = PRC_influence_cen_var
+	}
+	
+	multiply_variable = {
+		var = PRC_influence_cen_dynamic_var
+		value = 0.2
+	}
+}
+
+PRC_add_influence_new = {
+	custom_effect_tooltip = PRC_influence_new_tooltip
+	
+	add_to_variable = {
+		var = PRC_influence_new_var
+		value = PRC_influence_new_var_temp
+	}
+	
+	clamp_variable = {
+		var = PRC_influence_new_var
+		min = 0
+		max = 1
+	}
+
+	set_variable = {
+		var = PRC_influence_new_dynamic_var
+		value = PRC_influence_new_var
+	}
+	
+	multiply_variable = {
+		var = PRC_influence_new_dynamic_var
+		value = 0.2
+	}
+}
+
+PRC_add_influence_lib = {
+	custom_effect_tooltip = PRC_influence_lib_tooltip
+	
+	add_to_variable = {
+		var = PRC_influence_lib_var
+		value = PRC_influence_lib_var_temp
+	}
+	
+	clamp_variable = {
+		var = PRC_influence_lib_var
+		min = 0
+		max = 1
+	}
+
+	set_variable = {
+		var = PRC_influence_lib_dynamic_var
+		value = PRC_influence_lib_var
+	}
+	
+	multiply_variable = {
+		var = PRC_influence_lib_dynamic_var
+		value = 0.2
+	}
+}
+
+
+PRC_add_lib_approval = {
+	custom_effect_tooltip = PRC_add_lib_approval_tt
+	add_to_variable = {
+		var = PRC_approval_rating_lib_var
+		value = PRC_approval_rating_lib_var_temp
+	}
+	
+}
+
+PRC_add_newleft_approval = {
+	custom_effect_tooltip = PRC_add_newleft_approval_tt
+	add_to_variable = {
+		var = PRC_approval_rating_newleft_var
+		value = PRC_approval_rating_newleft_var_temp
+	}
+}
+
+PRC_add_nat_approval = {
+	custom_effect_tooltip = PRC_add_nat_approval_tt
+	add_to_variable = {
+		var = PRC_approval_rating_nat_var
+		value = PRC_approval_rating_nat_var_temp
+	}
+
+}
+
+PRC_add_enviromental_progress = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = PRC_environmental_reform_success
+			}
+		}
+		custom_effect_tooltip = PRC_add_enviromental_progress_tt
+	
+		add_to_variable = {
+			var = PRC_enviromental_progress
+			value = PRC_enviromental_progress_temp
+		}
+
+		clamp_variable = {
+			var = PRC_enviromental_progress
+			min = 0
+			max = 1
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = PRC_enviromental_progress
+					value = 0.3
+					compare = less_than_or_equals
+				}
+			}
+			PRC = {
+			}
+		}
+		if = {
+			limit = {
+				check_variable = {
+					var = PRC_enviromental_progress
+					value = 0.2
+					compare = less_than_or_equals
+				}
+			}
+			PRC = {
+			}
+		}
+	}
+}
+PRC_Calibrate_Support = {
+	set_temp_variable = {
+		PRC_influence_cen_dynamic_var_temp = PRC_influence_cen_var 
+	}
+	multiply_temp_variable = {
+		PRC_influence_cen_dynamic_var_temp = PRC_approval_rating_cen_var
+	}
+	set_temp_variable = {
+		PRC_influence_lib_dynamic_var_temp = PRC_influence_lib_var 
+	}
+	multiply_temp_variable = {
+		PRC_influence_lib_dynamic_var_temp = PRC_approval_rating_lib_var
+	}
+	set_temp_variable = {
+		PRC_influence_nat_dynamic_var_temp = PRC_influence_nat_var 
+	}
+	multiply_temp_variable = {
+		PRC_influence_nat_dynamic_var_temp = PRC_approval_rating_nat_var
+	}
+	set_temp_variable = {
+		PRC_influence_new_dynamic_var_temp = PRC_approval_rating_newleft_var 
+	}
+	multiply_temp_variable = {
+		PRC_influence_new_dynamic_var_temp = PRC_approval_rating_newleft_var
+	}
+	divide_temp_variable = {
+		PRC_influence_lib_dynamic_var_temp = 5
+	}
+	divide_temp_variable = {
+		PRC_influence_new_dynamic_var_temp = 10
+	}
+	divide_temp_variable = {
+		PRC_influence_nat_dynamic_var_temp = 5
+	}
+	set_variable = {
+		PRC_influence_cen_dynamic_var = PRC_influence_cen_dynamic_var_temp
+	}
+	set_variable = {
+		PRC_influence_lib_dynamic_var = PRC_influence_lib_dynamic_var_temp
+	}
+	set_variable = {
+		PRC_influence_nat_dynamic_var = PRC_influence_nat_dynamic_var_temp
+	}
+	set_variable = {
+		PRC_influence_new_dynamic_var = PRC_influence_new_dynamic_var_temp
+	}
+}

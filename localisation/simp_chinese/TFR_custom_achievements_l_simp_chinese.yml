@@ -1,0 +1,8 @@
+﻿l_simp_chinese:
+ ACHIEVEMENT: "[This.GetAchievementTitleVanilla]"
+ ACHIEVEMENT_DESC: "[This.GetAchievementDescVanilla]"
+ ACHIEVEMENT_TRIGGER_TT: "解锁条件：\n[!achievement_icon_visible]"
+ ACHIEVEMENT_UNAVAILABLE_CONDITIONS_TT: "如果：\n[!achievement_icon_grey_visible]那可用"
+ ACHIEVEMENT_UNLOCKED_TT_DELAYED: "[This.GetAchievementUnlockedDelayedVanilla]"
+ PRC_Nation_Reborn_Achievement_NAME: "华夏巨龙浴火重生！"
+ PRC_Nation_Reborn_Achievement_DESC: "作为中华人民共和国，统一台湾。"

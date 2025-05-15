@@ -1,0 +1,22 @@
+	ideas = {
+		country = {
+			ANF_disorganized_militia = {
+				picture = GFX_ANF_disorganized_militia_idea 
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_org_factor = -0.05
+					planning_speed = -0.10
+				}
+			}
+		}
+	}

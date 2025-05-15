@@ -1,0 +1,18 @@
+dont_join_nato = {
+	enable = {
+		OR = {
+			tag = CHI
+			tag = AUS
+			tag = JAP
+			tag = RAJ
+			tag = NZL
+		}
+		is_puppet = no
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = USA
+		value = -1000
+	}
+}

@@ -1,0 +1,733 @@
+﻿#小民尊严专栏
+#鸣谢 @Snowlord 的《中国风味事件》mod！
+add_namespace = china
+#疫情危机
+country_event = {
+	id = china.1500
+	title = china.1500.t
+	desc = china.1500.d
+	picture = GFX_lianyi
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		date > 2020.6.4
+		NOT = {
+			has_completed_focus = PRC_Investigate_Corruption
+		}
+	}	
+    immediate = {
+     hidden_effect = {
+            country_event = { 
+             id = china.1504 days = 45         
+            }
+     }
+    }
+   option = {
+		name = china.1500.a
+        custom_effect_tooltip = PRC_lianyi_tt
+        set_variable = { PRC_FATE = 0 }
+   }
+}
+#疫情时的腐败
+country_event = {
+	id = china.1501
+	title = china.1501.t
+	desc = china.1501.d
+    picture = GFX_bxj
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1501.a
+	}
+}
+#疫情时的腐败2
+country_event = {
+	id = china.1502
+	title = china.1502.t
+	desc = china.1502.d
+    picture = GFX_baoyuan
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		date > 2020.8.15
+		NOT = {
+			has_completed_focus = PRC_Investigate_Corruption
+		}
+	}	
+    option = {
+		name = china.1502.a
+	}
+}
+#动手吧。
+country_event = {
+	id = china.1503
+	title = china.1503.t
+	desc = china.1503.d
+    picture = GFX_jjsszy
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1503.a
+	}
+}
+#短暂失业（由于OTL2020年没有发生石油危机，尚未启用）
+country_event = {
+	id = china.1504
+	title = china.1504.t
+	desc = china.1504.d
+    picture = GFX_czc
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+    }	
+    option = {
+		name = china.1504.a
+	}
+}
+#百无聊赖（笨蛋，问题在于经济！）
+country_event = {
+	id = china.1505
+	title = china.1505.t
+	desc = china.1505.d
+    picture = GFX_daocao
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		NOT = {
+			has_completed_focus = PRC_Economy_Reboot
+		}
+		date > 2021.1.10
+    }	
+    option = {
+		name = china.1505.a
+	}
+}
+#疯狂的网左、神神、兔兔在激烈地斗争
+country_event = {
+	id = china.1506
+	title = china.1506.t
+	desc = china.1506.d
+    picture = GFX_wumao
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		date > 2022.3.18
+		NOT = {
+			has_completed_focus = PRC_Bye_COVID
+		}
+	}	
+    option = {
+		name = china.1506.a
+	}
+}
+#疫情的温暖瞬间
+country_event = {
+	id = china.1507
+	title = china.1507.t
+	desc = china.1507.d
+    picture = GFX_siji
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		date > 2022.4.1
+		NOT = {
+			has_completed_focus = PRC_Bye_COVID
+		}
+	}	
+    option = {
+		name = china.1507.a
+	}
+}
+#为人民服务是中国共产党的义务，不是习近平或其他某些中共领导人的私人爱好。
+country_event = {
+	id = china.1508
+	title = china.1508.t
+	desc = china.1508.d
+    picture = GFX_juli
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1508.a
+	}
+}
+#疫苗来了，人民安全了！疫苗来了，复苏有望了！
+country_event = {
+	id = china.1509
+	title = china.1509.t
+	desc = china.1509.d
+    picture = GFX_yimiaojiezhong
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1509.a
+	}
+}
+#抗疫胜利（OTL式放开——时机有点晚）
+country_event = {
+	id = china.15101
+	title = china.1510.t
+    desc = china.15101.d
+    picture = GFX_jingqiaoqiao
+    is_triggered_only = yes
+    option = {
+		name = china.1510.a
+	}
+}
+#抗疫胜利（理想式放开——不磨蹭）
+country_event = {
+	id = china.15102
+	title = china.1510.t
+    desc = china.15102.d
+    picture = GFX_jingqiaoqiao
+    is_triggered_only = yes
+    option = {
+		name = china.1510.a
+	}
+}
+#乡下人的悲歌
+country_event = {
+	id = china.1511
+	title = china.1511.t
+	desc = china.1511.d
+    picture = GFX_xiang
+    is_triggered_only = yes
+    option = {
+		name = china.1511.a
+	}
+}
+#乡下人的悲歌（续）
+country_event = {
+	id = china.1512
+	title = china.1512.t
+	desc = china.1512.d
+    picture = GFX_cheng
+    is_triggered_only = yes
+    option = {
+		name = china.1512.a
+	}
+}
+#收复台湾动员
+country_event = {
+	id = china.1513
+	title = china.1513.t
+	desc = china.1513.d
+    picture = GFX_zhixin
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1513.a
+        custom_effect_tooltip = PRC_zhixin_tt
+	}
+}
+#民间热望（大陆）
+country_event = {
+	id = china.1514
+	title = china.1514.t
+	desc = china.1514.d
+    picture = GFX_gxwdalu
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1514.a
+	}
+}
+#小兵的迷茫（台湾）
+country_event = {
+	id = china.1515
+	title = china.1515.t
+	desc = china.1515.d
+    picture = GFX_gxwtaiw
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1515.a
+	}
+}
+#中日友人的分离（由于OTL美国没有解体是中美对抗，此事件尚未启用）
+country_event = {
+	id = china.1516
+	title = china.1516.t
+	desc = china.1516.d
+    picture = GFX_chenai
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1516.a
+	}
+}
+#日本多管闲事，人民害怕被盒。他妈的，日本的全斗焕来了！
+country_event = {
+	id = china.1517
+	title = china.1517.t
+	desc = china.1517.d
+    picture = GFX_youxing
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1517.a
+	}
+}
+#大陆—任何一个战损数字都是一颗破碎的心……
+country_event = {
+	id = china.1518
+	title = china.1518.t
+	desc = china.1518.d
+    picture = GFX_lieshi
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1518.a
+        custom_effect_tooltip = PRC_lieshi_tt
+	}
+}
+#台湾兵-特别军事行动本来就应该是这样的……
+country_event = {
+	id = china.1519
+	title = china.1519.t
+	desc = china.1519.d
+    picture = GFX_shengji
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1519.a
+	}
+}
+
+#台湾回归——新教育
+country_event = {
+	id = china.1520
+	title = china.1520.t
+	desc = china.1520.d
+    picture = GFX_taihaiwar_e
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1520.a
+        custom_effect_tooltip = PRC_taihaiwar_tt
+	}
+}
+#一位南开大学学生的Bilibili up之路
+country_event = {
+	id = china.1521
+	title = china.1521.t
+	desc = china.1521.d
+	is_triggered_only = yes
+	picture = GFX_Sirius_the_cat
+	trigger = {
+		owns_state = 716
+		date > 2025.2.1
+	}
+	option = {
+		name = china.1521.a
+		custom_effect_tooltip = Sirius_tt
+	}
+}
+#中共高层报告——对叛乱政权策略
+country_event = {
+	id = china.1524
+	title = china.1524.t
+	desc = china.1524.d
+    picture = GFX_SOV_secret_documents
+    is_triggered_only = yes
+	trigger = {
+		tag = PRC
+	}	
+    option = {
+		name = china.1524.a
+        set_country_flag = PRC_taiwanese_government_captured
+	}
+    option = {
+		name = china.1524.b
+	}
+}
+#大国已然崛起，那小民尊严呢？
+country_event = {
+	id = china.1525
+	title = china.1525.t
+	desc = china.1525.d
+    picture = GFX_tongyi
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+		NOT = {
+			country_exists = CHI
+		}
+        PRC = {
+			owns_state = 1148
+			owns_state = 1149
+			owns_state = 1150
+			owns_state = 524
+		}
+	}
+    option = {
+		name = china.1525.a
+        custom_effect_tooltip = PRC_tongyi_tt
+	}
+}
+#台湾人，蹒跚着熟悉本该如此的常态
+country_event = {
+	id = china.1526
+	title = china.1526.t
+	desc = china.1526.d
+    picture = GFX_guigen
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+		}
+    option = {
+		name = china.1526.a
+	}
+}
+#欢庆统一大游行（我自己给潜龙腾渊投稿的事件呢？）
+country_event = {
+	id = china.1527
+	title = china.1527.t
+	desc = china.1527.d
+    picture = GFX_suyuan
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+		}
+    option = {
+		name = china.1527.a
+        custom_effect_tooltip = PRC_suyuan_tt
+	}
+}
+#青春悸动
+country_event = {
+	id = china.1528
+	title = china.1528.t
+	desc = china.1528.d
+    picture = GFX_ditie
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+		}
+    option = {
+		name = china.1528.a
+		hidden_effect = {
+			country_event = {
+				id = china.1529
+				random_days = 35
+			}
+		}
+	}
+}
+#青春悸动（续）
+country_event = {
+	id = china.1529
+	title = china.1529.t
+	desc = china.1529.d
+    picture = GFX_jiaozhi
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+	}
+    option = {
+		name = china.1529.a
+        custom_effect_tooltip = PRC_jiaohui_tt
+	}
+}
+#毛泽东万岁！——> 毛泽东思想永垂不朽！
+country_event = {
+	id = china.1530
+	title = china.1530.t
+	desc = {
+		text = china.1530.d.1
+		trigger = {
+			OR = {
+				CHI = {
+					is_puppet_of = PRC
+				}
+				NOT = {
+					country_exists = CHI
+				}
+			}
+		}
+	}
+	desc = {
+		text = china.1530.d.2
+	}
+    picture = GFX_mao130
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+	}
+    option = {
+		name = china.1530.a
+        custom_effect_tooltip = PRC_mao130_tt
+	}
+}
+#在蒙古压抵抗度
+country_event = {
+	id = china.1531
+	title = china.1531.t
+	desc = china.1531.d
+	#picture = Nothing
+	is_triggered_only = yes
+	option = {
+		name = china.1531.a
+	}
+}
+#拔你网线
+country_event = {
+	id = china.1532
+	title = china.1532.t
+	desc = china.1532.d
+	is_triggered_only = yes
+	option = {
+		name = china.1532.a
+	}
+}
+#缅北剿匪
+country_event = {
+	id = china.1533
+	title = china.1533.t
+	desc = {
+		trigger = {
+			has_country_flag = PRC_Lost_Taiwan
+		}
+		text = china.1533.d.1
+	}
+	desc = {
+		text = china.1533.d.2
+	}
+	is_triggered_only = yes
+	option = {
+		name = china.1533.a
+		custom_effect_tooltip = PRC_Go_Hell_tt
+	}
+}
+#泯灭人性
+country_event = {
+	id = china.1534
+	title = china.1534.t
+	desc = china.1534.d
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		OR = {
+			has_government = fascist
+			has_government = national_socialist
+			has_government = nationalist
+		}
+		1340 = {
+			is_controlled_by_ROOT_or_ally = yes
+		}
+		has_war_with = JAP
+	}
+	option = {
+		name = china.1534.a
+		custom_effect_tooltip = GER_SS_tt
+	}
+}
+#晚安，人民军队……
+country_event = {
+	id = china.1535
+	title = china.1535.t
+	desc = china.1535.d
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		JAP = {
+			has_capitulated = yes
+			has_war_with = PRC
+		}
+	}
+	option = {
+		name = china.1535.a
+		custom_effect_tooltip = PRC_Stalin_1946_tt
+	}
+}
+#一对夫妻
+country_event = {
+	id = china.1536
+	title = china.1536.t
+	desc = china.1536.d
+	picture = GFX_sanfrancisco
+	is_triggered_only = yes
+	trigger = {
+		tag = PRC
+		has_war_with = JAP
+		casualties_inflicted_by = {
+			opponent = JAP
+			thousands > 10
+		}
+	}
+	option = {
+		name = china.1536.a
+	}
+}
+#余生，幸福漫长（等待原modder更新）
+country_event = {
+	id = china.1600
+	title = china.1600.t
+	desc = china.1600.d
+    picture = GFX_
+    fire_only_once = yes
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+	}
+    option = {
+		name = china.1600.a
+        custom_effect_tooltip = PRC_jieshuyu_tt
+	}
+}
+#脚下黑，但星光闪（等待原modder更新）
+country_event = {
+	id = china.1601
+	title = china.1601.t
+	desc = china.1601.d
+    picture = GFX_
+    fire_only_once = yes
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+	}
+    option = {
+		name = china.1601.a
+        custom_effect_tooltip = PRC_jieshuyu1_tt
+	}
+}
+#结束事件
+country_event = {
+	id = china.1602
+	title = china.1602.t
+	desc = china.1602.d
+    picture = GFX_
+    fire_only_once = yes
+    is_triggered_only = yes
+	trigger = {
+        tag = PRC
+	}
+    option = {
+		name = china.1602.a
+        custom_effect_tooltip = PRC_jieshuyu2_tt
+	}
+}
+
+#商场挤兑（由于OTL的2020没有石油危机，未启用）
+country_event = {
+	id = china.1601
+	title = china.1601.t
+	desc = china.1601.d
+	picture = GFX_oil_line
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	option = {
+		name = china.1601.a
+		add_stability = -0.025
+		add_political_power = -35
+        add_to_variable = { PRC_FATE = 5 }
+		set_temp_variable = {
+			var = PRC_influence_new_var_temp
+			value = 0.02
+		}
+	}
+	option = {
+		name = china.1601.b
+		add_stability = -0.06
+		add_political_power = 50
+	}
+}
+
+#Taiwan war victory
+country_event = {
+	id = china.1623
+	title = china.1623.t
+	desc = {
+		text = china.1623.d.1
+		trigger = {
+			has_country_flag = PRC_taiwanese_government_captured
+		}
+	}
+	desc = {
+		text = china.1623.d.2
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_taiwanese_government_captured
+			}
+		}
+	}
+	picture = GFX_event_taiwanwarwin
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = PRC
+	}
+	immediate = {
+	}
+	option = {
+		name = china.23.a
+		effect_tooltip = {
+			focus_unlock = yes
+			transfer_state = 524
+			transfer_state = 1150
+			transfer_state = 1149
+			transfer_state = 1148
+			if = {
+				limit = {
+					controls_state = 876
+				}
+				transfer_state = 876
+			}
+			add_war_support = 0.05
+		}
+	}
+}
+#过去的选择（等待原modder更新）
+country_event = {
+	id = china.2000
+	title = china.2000.t
+	desc = china.2000.d
+	picture = GFX_PRC_ending_cen
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+	}
+	immediate = {
+		hidden_effect = {
+			scoped_play_song = "bloominglife"
+		}
+	}
+	option = {
+		name = china.2000.a
+		custom_effect_tooltip = PRC_tfr_china_ending_tt
+		custom_effect_tooltip = unrestricted_diplomacy_tt
+        custom_effect_tooltip = PRC_2000_tt
+		set_country_flag = unrestricted_diplomacy_flag
+        hidden_effect = {
+          country_event = { id = china.1600 }
+        }
+    }              
+}
+
+

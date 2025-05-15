@@ -1,0 +1,27 @@
+add_namespace = north_korea
+
+country_event = {
+	id = north_korea.1
+	title = north_korea.1.t
+	desc = north_korea.1.d
+	is_triggered_only = yes
+	option = {
+		name = north_korea.1.a
+		set_temp_variable = {
+			society_development_var_temp = 0.15
+		}
+		set_temp_variable = {
+			poverty_development_var_temp = 0.1
+		}
+		set_temp_variable = {
+			farming_development_var_temp = 0.15
+		}
+		set_temp_variable = {
+			income_var_temp = 100
+		}
+		add_income_with_inflation = yes
+		add_society_development = yes
+		add_poverty_development = yes
+		add_farming_development = yes
+	}
+}

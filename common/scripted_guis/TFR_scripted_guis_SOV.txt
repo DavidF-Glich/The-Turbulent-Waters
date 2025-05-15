@@ -1,0 +1,75 @@
+	scripted_gui = {
+		TFR_SOV_party_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_party_info_container"
+			properties = {
+			}
+			triggers = {
+				jr_info_text_visible = {
+					NOT = {
+						OR = {
+							has_country_flag = SOV_UR_JR_alliance
+							has_country_flag = SOV_cprf_srzp_alliance 
+						}
+					}
+				}
+				jr_support_info_text_visible = {
+					OR = {
+						has_country_flag = SOV_UR_JR_alliance
+						has_country_flag = SOV_cprf_srzp_alliance 
+					}
+				}
+			}
+		}
+		TFR_SOV_party_resourse_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_party_resources_info_container"
+			properties = {
+			}
+			triggers = {
+				Party_BG_1_visible = {
+					NOT = {
+						OR = {
+							has_country_leader = {
+								character = SOV_alexei_navalny
+								ruling_only = yes
+							}
+							has_country_leader = {
+								character = SOV_Vladimir_Solovyov
+								ruling_only = yes
+							}
+						}
+					}
+				}
+				Party_BG_2_visible = {
+					OR = {
+						has_country_leader = {
+							character = SOV_alexei_navalny
+							ruling_only = yes
+						}
+						has_country_leader = {
+							character = SOV_Vladimir_Solovyov
+							ruling_only = yes
+						}
+					}
+				}
+			}
+		}
+		TFR_SOV_oligarch_info = {
+			context_type = decision_category
+			window_name = "TFR_SOV_oligarch_info_container"
+			properties = {
+			}
+			triggers = {
+				TFR_SOV_oligarch_info_text_visible = {
+					always = yes
+				}
+				TFR_SOV_oligarch_info_text_2_visible = {
+					always = no
+				}
+				Oligarch_BG_visible = {
+					always = yes
+				}
+			}
+		}
+	}

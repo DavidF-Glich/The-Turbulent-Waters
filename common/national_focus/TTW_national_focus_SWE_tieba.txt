@@ -1,0 +1,497 @@
+focus_tree = {
+	id = SWE_Paradox_TFX
+	country = { 
+		factor = 0
+	}
+	default = no
+
+	focus = {
+		id = SWE_BLITZKRIEG
+		icon = GFX_focus_PRC_taiwan_supportunit_focus
+		cost = 4
+		x = 9
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = SWE_Stand_with_Qianlong
+		icon = GFX_focus_SWE_fuck_TFX
+		cost = 4
+		x = 3
+		y = 1
+		mutually_exclusive = {
+			focus = SWE_Stand_with_TFX
+		}
+		prerequisite = {
+			focus = SWE_BLITZKRIEG
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_End_internal_conflict
+		icon = GFX_focus_generic_family
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = SWE_Stand_with_Qianlong
+		prerequisite = {
+			focus = SWE_Stand_with_Qianlong
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Contact_rest_of_modders
+		icon = GFX_focus_generic_communications
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = SWE_End_internal_conflict
+		prerequisite = {
+			focus = SWE_End_internal_conflict
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_united_front
+		icon = GFX_focus_generic_red_rebellion
+		cost = 1
+		x = -1
+		y = 1
+		relative_position_id = SWE_Contact_rest_of_modders
+		prerequisite = {
+			focus = SWE_Contact_rest_of_modders
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_mobilize_our_group
+		icon = GFX_focus_generic_red_revolution
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = SWE_End_internal_conflict
+		prerequisite = {
+			focus = SWE_End_internal_conflict
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_collect_information
+		icon = GFX_focus_generic_take_control_of_government
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SWE_united_front
+		prerequisite = {
+			focus = SWE_united_front
+			focus = SWE_mobilize_our_group
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Secure_Tieba
+		icon = GFX_focus_generic_diplomacy
+		cost = 2
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SWE_End_internal_conflict
+		}
+		relative_position_id = SWE_End_internal_conflict
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_New_updates
+		icon = GFX_focus_generic_fascist_accord
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SWE_Secure_Tieba
+		prerequisite = {
+			focus = SWE_Secure_Tieba
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_player_the_top
+		icon = GFX_focus_USB_import_humanitarian_aid
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SWE_mobilize_our_group
+		prerequisite = {
+			focus = SWE_mobilize_our_group
+			focus = SWE_New_updates
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_last_peace_attempt
+		icon = GFX_focus_generic_appeal_to_the_un
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = SWE_mobilize_our_group
+		prerequisite = {
+			focus = SWE_collect_information
+			focus = SWE_player_the_top
+		}
+		prerequisite = {
+			focus = SWE_mobilize_our_group
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_shameful_display_again
+		icon = GFX_focus_SWE_shameful_display_again
+		cost = 3
+		x = 0
+		y = 2
+		mutually_exclusive = {
+			focus = SWE_TNO
+		}
+		relative_position_id = SWE_last_peace_attempt
+		prerequisite = {
+			focus = SWE_collect_information
+			focus = SWE_player_the_top
+		}
+		prerequisite = {
+			focus = SWE_last_peace_attempt
+		}
+		completion_reward = { }
+	}
+
+
+	focus = {
+		id = SWE_Stand_with_TFX
+		icon = GFX_focus_SWE_fuck_qianlong
+		cost = 3
+		mutually_exclusive = {
+			focus = SWE_Stand_with_Qianlong
+		}
+		prerequisite = {
+			focus = SWE_BLITZKRIEG
+		}
+		x = 15
+		y = 1
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Secure_the_baryon_resonaces
+		icon = GFX_focus_generic_drone_strike
+		cost = 4
+		x = 7
+		y = 2
+		prerequisite = {
+			focus = SWE_Stand_with_Qianlong
+			focus = SWE_Stand_with_TFX
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Battle_of_intelligence
+		icon = GFX_focus_generic_election
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = SWE_Secure_the_baryon_resonaces
+		prerequisite = {
+			focus = SWE_Secure_the_baryon_resonaces
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Raise_credits_in_library
+		icon = GFX_focus_generic_female_empowerment
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = SWE_Secure_the_qiuqi_library
+		prerequisite = {
+			focus = SWE_Secure_the_qiuqi_library
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Urge_Neutrality
+		icon = GFX_focus_generic_uphold_nato_doctrine
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = SWE_Raise_credits_in_library
+		prerequisite = {
+			focus = SWE_Raise_credits_in_library
+		}
+		mutually_exclusive = {
+			focus = SWE_Neutrality_for_us
+			focus = SWE_Library_Marchs
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Neutrality_for_us
+		icon = GFX_focus_generic_gun_production1
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SWE_Raise_credits_in_library
+		prerequisite = {
+			focus = SWE_Raise_credits_in_library
+			focus = SWE_Persuade_Qiuqi
+		}
+		mutually_exclusive = {
+			focus = SWE_Urge_Neutrality
+			focus = SWE_Library_Marchs
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Persuade_Qiuqi
+		icon = GFX_focus_generic_innovationist_victory
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = SWE_Secure_the_qiuqi_library
+		prerequisite = {
+			focus = SWE_Secure_the_qiuqi_library
+		}
+		prerequisite = {
+			focus = SWE_Stand_with_TFX
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Secure_the_qiuqi_library
+		icon = GFX_focus_generic_trust_funding
+		cost = 4
+		x = 10
+		y = 2
+		prerequisite = {
+			focus = SWE_Stand_with_Qianlong
+			focus = SWE_Stand_with_TFX
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Library_Marchs
+		icon = GFX_focus_generic_attack_APA
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = SWE_Persuade_Qiuqi
+		prerequisite = {
+			focus = SWE_Persuade_Qiuqi
+		}
+		mutually_exclusive = {
+			focus = SWE_Neutrality_for_us
+			focus = SWE_Urge_Neutrality
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Curse_Qianlong
+		icon = GFX_focus_generic_bust_the_trusts
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = SWE_Stand_with_TFX
+		prerequisite = {
+			focus = SWE_Stand_with_TFX
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Critic_legacy
+		icon = GFX_focus_PRC_crack_down_on_left_radicals
+		cost = 6
+		x = -1
+		y = 1
+		relative_position_id = SWE_Stand_with_TFX
+		prerequisite = {
+			focus = SWE_Stand_with_TFX
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Steer_in_Chihong_conflict
+		icon = GFX_focus_generic_censorship
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = SWE_Stand_with_TFX
+		prerequisite = {
+			focus = SWE_Critic_legacy
+			focus = SWE_Curse_Qianlong
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Relations_of_Sergey_Taboritsky
+		icon = GFX_focus_SOV_reorganize_the_party
+		cost = 7
+		x = -1
+		y = 1
+		relative_position_id = SWE_Steer_in_Chihong_conflict
+		mutually_exclusive = {
+			focus = SWE_Stir_up_mod_conflict
+		}
+		prerequisite = {
+			focus = SWE_Steer_in_Chihong_conflict
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Granted_Authorization
+		icon = GFX_focus_SOV_resources_for_guns
+		cost = 5
+		x = -1
+		y = 1
+		relative_position_id = SWE_Relations_of_Sergey_Taboritsky
+		prerequisite = {
+			focus = SWE_Relations_of_Sergey_Taboritsky
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_bomb_submods
+		icon = GFX_focus_SOV_utilize_their_labor
+		cost = 3
+		x = 1
+		y = 2
+		relative_position_id = SWE_Granted_Authorization
+		prerequisite = {
+			focus = SWE_Granted_Authorization
+		}
+		prerequisite = {
+			focus = SWE_CR_opportunity
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_So_called_official
+		icon = GFX_focus_SOV_solar_leader_of_eurasia
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SWE_Relations_of_Sergey_Taboritsky
+		prerequisite = {
+			focus = SWE_Relations_of_Sergey_Taboritsky
+			focus = SWE_Stir_up_mod_conflict
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_CR_opportunity
+		icon = GFX_focus_generic_diplomacy
+		cost = 3
+		x = 0
+		y = 1
+		relative_position_id = SWE_So_called_official
+		prerequisite = {
+			focus = SWE_So_called_official
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Stir_up_mod_conflict
+		icon = GFX_focus_USB_national_awakening
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SWE_Steer_in_Chihong_conflict
+		mutually_exclusive = {
+			focus = SWE_Relations_of_Sergey_Taboritsky
+		}
+		prerequisite = {
+			focus = SWE_Steer_in_Chihong_conflict
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Proposal_to_honglong
+		icon = GFX_focus_generic_bank
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = SWE_Curse_Qianlong
+		prerequisite = {
+			focus = SWE_Curse_Qianlong
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_Initiate_honglong_coup
+		icon = GFX_focus_generic_attack_GMA
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SWE_Stir_up_mod_conflict
+		prerequisite = {
+			focus = SWE_Stir_up_mod_conflict
+		}
+		prerequisite = {
+			focus = SWE_Proposal_to_honglong
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_our_peace
+		icon = GFX_focus_generic_isolation
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SWE_CR_opportunity
+		prerequisite = {
+			focus = SWE_Initiate_honglong_coup
+			focus = SWE_CR_opportunity
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SWE_TNO
+		icon = GFX_focus_JAP_triumph_of_japanese_people
+		cost = 3
+		x = 0
+		y = 2
+		relative_position_id = SWE_CR_opportunity
+		mutually_exclusive = {
+			focus = SWE_shameful_display_again
+		}
+		prerequisite = {
+			focus = SWE_our_peace
+			focus = SWE_bomb_submods
+		}
+		completion_reward = { }
+	}
+}

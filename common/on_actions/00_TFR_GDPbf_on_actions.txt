@@ -1,0 +1,253 @@
+@nuke_triad = 1
+@nuke_semi_triad = 0.6
+@nuke_regional_deployment = 0.4
+on_actions = {
+    on_startup = {
+        effect = {
+            #@太空剪翅膀的功能性submod整合，在此鸣谢。
+            every_possible_country = {
+                limit = {
+                    is_relavent_tag = yes
+                }
+                add_to_array = {
+                    economic_actions_array = token:buy_industrial_complex_action
+                }
+                add_to_array = {
+                    economic_actions_array = token:buy_arms_factory_action
+                }
+                add_to_array = {
+                    economic_actions_array = token:buy_pp_action
+                }
+            }
+            #核弹系统初始化-当前数量、最低数量、额外预算、维护能力、分数
+            every_country = {
+                limit = {
+                    OR = {
+                        tag = PRC
+                        tag = FRA
+                        tag = ENG
+                        tag = RAJ
+                        tag = PAK
+                        tag = ISR
+                    }        
+                }
+                set_country_flag = {
+                    flag = nuke_num
+                    value = 2
+                }
+                set_variable = {
+                    target_nukes_mini = 100
+                }
+            }
+            PAK = {
+                set_variable = {
+                    num_of_nukes1 = 140
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.7
+                }
+            }
+            ENG = {
+                set_variable = {
+                    num_of_nukes1 = 200
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.3
+                }
+            }
+            FRA = {
+                set_variable = {
+                    num_of_nukes1 = 300
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.5
+                }
+            }
+            PRC = {
+                set_variable = {
+                    num_of_nukes1 = 300
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.7
+                }
+            }
+            RAJ = {
+                set_variable = {
+                    num_of_nukes1 = 130
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.4
+                }
+            }
+            PRK = {
+                set_country_flag = nuke_num
+                set_variable = {
+                    num_of_nukes1 = 20
+                }
+                set_variable = {
+                    target_nukes_mini = 10
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.7
+                }
+            }
+            ISR = {
+                add_to_variable = {
+                    num_of_nukes1 = 60
+                }
+                set_variable = {
+                    nuke_maintenence_ratio = 0.8
+                }
+            }
+            #调整按钮
+            every_country = {
+                limit = {
+                    has_variable = num_of_nukes1
+                }
+                add_to_array = {
+					global.TFR_the_competitors = THIS
+				}
+                add_to_array = {
+                    global.TFR_the_competitors2 = THIS
+                }
+                set_variable = {
+                    nuke_spending_var = num_of_nukes1
+                }
+                set_variable = {
+                    Nuke_change_num = 100
+                }
+                set_variable = {
+                    Nuke_change_to_num = num_of_nukes1
+                }
+                multiply_variable = {
+                    nuke_spending_var = 0.015
+                }
+                add_dynamic_modifier = {
+                    modifier = nuke_cost_dynamic
+                }
+            }
+            #分数计算-核弹
+            every_country = {
+                if = {
+                    limit = { 
+                        has_country_flag = {
+                            flag = nuke_num
+                            value = 3
+                        }
+                    }
+                    multiply_variable = {
+                        nuke_score = @nuke_triad
+                    }
+                    set_variable = {
+                        nuke_score = 1500
+                    }
+                }
+                else_if = {
+                    limit = { 
+                        has_country_flag = {
+                            flag = nuke_num
+                            value = 2
+                        }
+                    }
+                    set_variable = {
+                        nuke_score = 1000
+                    }
+                }
+                else_if = {
+                    limit = {
+                        has_country_flag = {
+                            flag = nuke_num
+                            value = 1
+                        }
+                    }
+                    set_variable = {
+                        nuke_score = 800
+                    }
+                }
+                set_temp_variable = {
+                    nuke_temp = num_of_nukes1
+                }
+                multiply_variable = {
+                    nuke_temp = 0.1
+                }
+                add_to_variable = {
+                    nuke_score = nuke_temp
+                }
+                multiply_variable = {
+                    nuke_score = nuke_maintenence_ratio
+                }
+            }
+            #分数计算-经济在money文件内
+            #分数计算-军事
+            every_country = {
+                limit = {
+                    has_variable = num_of_nukes1 
+                }
+                set_variable = {
+                    military_score1 = THIS.num_armies
+                }
+                add_to_variable = {
+                    military_score1 = THIS.num_ships
+                }
+                add_to_variable = {
+                    military_score1 = THIS.num_deployed_planes
+                }
+            }
+            #分数计算-总分
+            every_country = {
+                limit = {
+                    has_variable = num_of_nukes1  
+                }
+                set_variable = {
+                    THIS.total_score1 = THIS.military_score1
+                }
+                add_to_variable = {
+                    THIS.total_score1 = THIS.economic_score1
+                }
+                add_to_variable = {
+                    THIS.total_score1 = THIS.nuke_score
+                }
+                
+            }
+            ZZZ = {
+                get_sorted_scored_countries = {
+                    scorer = nuke_scorer
+                    array = global.TFR_the_competitors
+                }
+                for_each_scope_loop = {
+                    array = global.TFR_the_competitors
+                    add_to_variable = {
+                        global.TFR_the_competitors_index = 1
+                    }
+                    set_variable = {
+                        nuke_ranking = global.TFR_the_competitors_index
+                    }
+                }
+                clear_array = global.TFR_the_competitors_index
+                get_sorted_scored_countries = {
+                    scorer = total_scorer
+                    array = global.TFR_the_competitors2
+                }
+            }
+          
+        }
+    }
+    on_monthly = {
+        effect = {
+            #核武器持有量更新
+            every_country = {
+                limit = {
+                    has_variable = num_of_nukes1
+                }
+                set_variable = {
+                    nuke_spending_var = num_of_nuke1
+                }
+                multiply_variable = {
+                    nuke_spending_var = 0.015
+                }
+                calculate_cold_war_score = yes
+            }
+
+        }
+    }
+}

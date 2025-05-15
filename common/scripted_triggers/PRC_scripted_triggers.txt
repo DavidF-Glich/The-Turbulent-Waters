@@ -1,0 +1,192 @@
+PRC_Preparing_for_Reunification = {
+	OR = {
+		has_global_flag = PRC_Unification_action1
+		has_global_flag = PRC_Unification_action2
+		has_global_flag = PRC_Unification_action3
+		has_global_flag = PRC_Unification_action4
+	}
+}
+PRC_has_influence_nat_greater_than_or_equals = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_nat_greater_than_or_equals_tooltip
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_nat_trigger_temp
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+PRC_enviromental_complete_greater_than_or_equals = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_enviromental_complete_greater_than_or_equals_tt
+		check_variable = {
+			var = PRC_enviromental_progress
+			value = PRC_enviromental_progress_temp
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+PRC_has_influence_nat_less_than = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_nat_less_than_tooltip
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_nat_trigger_temp
+			compare = less_than
+		}
+	}
+}
+
+PRC_has_influence_nat_greatest = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_nat_greatest_tooltip
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_cen_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_new_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_lib_var
+			compare = greater_than
+		}
+	}
+}
+
+PRC_has_influence_cen_greater_than_or_equals = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_cen_greater_than_or_equals_tooltip
+		check_variable = {
+			var = PRC_influence_cen_var
+			value = PRC_influence_cen_trigger_temp
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+PRC_has_influence_cen_less_than = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_cen_less_than_tooltip
+		check_variable = {
+			var = PRC_influence_cen_var
+			value = PRC_influence_cen_trigger_temp
+			compare = less_than
+		}
+	}
+}
+
+PRC_has_influence_cen_greatest = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_cen_greatest_tooltip
+		check_variable = {
+			var = PRC_influence_cen_var
+			value = PRC_influence_nat_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_new_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_nat_var
+			value = PRC_influence_lib_var
+			compare = greater_than
+		}
+	}
+}
+
+PRC_has_influence_new_greater_than_or_equals = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_new_greater_than_or_equals_tooltip
+		check_variable = {
+			var = PRC_influence_new_var
+			value = PRC_influence_new_trigger_temp
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+PRC_has_influence_new_less_than = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_new_less_than_tooltip
+		check_variable = {
+			var = PRC_influence_new_var
+			value = PRC_influence_new_trigger_temp
+			compare = less_than
+		}
+	}
+}
+
+PRC_has_influence_new_greatest = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_new_greatest_tooltip
+
+		check_variable = {
+			var = PRC_influence_new_var
+			value = PRC_influence_nat_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_new_var
+			value = PRC_influence_cen_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_new_var
+			value = PRC_influence_lib_var
+			compare = greater_than
+		}
+	}
+}
+
+PRC_has_influence_lib_greater_than_or_equals = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_lib_greater_than_or_equals_tooltip
+		check_variable = {
+			var = PRC_influence_lib_var
+			value = PRC_influence_lib_trigger_temp
+			compare = greater_than_or_equals
+		}
+	}
+}
+
+PRC_has_influence_lib_less_than = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_lib_less_than_tooltip
+		check_variable = {
+			var = PRC_influence_lib_var
+			value = PRC_influence_lib_trigger_temp
+			compare = less_than
+		}
+	}
+}
+
+PRC_has_influence_lib_greatest = {
+	custom_trigger_tooltip = {
+		tooltip = PRC_has_influence_lib_greatest_tooltip
+		check_variable = {
+			var = PRC_influence_lib_var
+			value = PRC_influence_nat_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_lib_var
+			value = PRC_influence_cen_var
+			compare = greater_than
+		}
+		check_variable = {
+			var = PRC_influence_lib_var
+			value = PRC_influence_new_var
+			compare = greater_than
+		}
+	}
+}
+

@@ -1,0 +1,27 @@
+vic_market = {
+	icon = united_states
+	visible_when_empty = yes
+
+	visible = {
+		has_country_flag = developed_country
+		if = {
+			limit = {
+				tag = SOV
+			}
+			has_country_flag = SOV_navalny_pornushka
+		}
+		NOT = {
+			has_country_flag = shithole_country
+			OR = {
+				tag = USA
+				tag = ISR
+				tag = GER
+				tag = FRA
+				tag = ITA
+				tag = ENG
+				tag = PRC
+				tag = AST
+			}
+		}
+	}
+}

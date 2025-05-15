@@ -1,0 +1,31 @@
+unique_id = the_fire_rises
+
+PRC_Nation_Reborn_Achievement = {
+	possible = {
+		difficulty > 1
+		has_start_date < 2020.1.2
+		game_rules_allow_achievements = yes
+	}
+	happened = {
+		PRC = {
+			524 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			1150 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			1149 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			1148 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+			876 = {
+				is_controlled_by_ROOT_or_ally = yes
+			}
+		}
+		NOT = {
+			country_exists = CHI
+		}
+	}
+}

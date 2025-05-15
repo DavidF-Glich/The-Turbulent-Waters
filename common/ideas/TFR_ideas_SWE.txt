@@ -1,0 +1,42 @@
+ideas = {
+	country = {
+		SWD_carolean_spirit = {
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = ger_mefo_bills
+
+			modifier = {
+				training_time_factor = 0.25
+				army_core_defence_factor = 0.15
+				army_org = 10
+				breakthrough_factor = 0.1
+			}
+		}
+		SWE_Indi_Immigrant_spirit = {
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			picture = RAJ_rising_hindu_nationalism
+
+			modifier = {
+				monthly_population = 0.02
+				weekly_manpower = 200
+				stability_weekly = -0.001
+				society_development_monthly = -0.003
+			}
+			targeted_modifier = {
+				tag = RAJ
+				extra_trade_to_target_factor = 0.2
+				trade_cost_for_target_factor = -0.2
+			}
+		}
+	}
+}

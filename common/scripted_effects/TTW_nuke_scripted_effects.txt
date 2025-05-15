@@ -1,0 +1,223 @@
+calibrate_nuke_production = {
+	if = {
+		limit = { 
+			tag = SOV
+		}
+		clamp_variable = {
+			var = Nuke_change_num
+			min = 0
+			max = 1000
+		}	
+		clamp_variable = {
+			var = Nuke_change_to_num
+			min = 3000
+			max = 10000
+		}
+
+	}
+	else_if = {
+		limit = { 
+			tag = USA
+		}
+		clamp_variable = {
+			var = Nuke_change_num
+			min = 0
+			max = 1000
+		}	
+		clamp_variable = {
+			var = Nuke_change_to_num
+			min = 3000
+			max = 10000
+		}
+	}
+	else_if = {
+		limit = { 
+			tag = PRK
+		}
+		clamp_variable = {
+			var = Nuke_change_num
+			min = 0
+			max = 10
+		}	
+		clamp_variable = {
+			var = Nuke_change_to_num
+			min = 10
+			max = 250
+		}
+	}
+	else = {
+		clamp_variable = {
+			var = Nuke_change_num
+			min = 0
+			max = 50
+		}	
+		clamp_variable = {
+			var = Nuke_change_to_num
+			min = 100
+			max = 1000
+		}
+	}
+}
+nuke_apply_adjustment = {
+	if = {
+		limit = { 
+			check_variable = {
+				Nuke_change_to_num > num_of_nukes1
+			}
+		}
+		set_variable = {
+			nuke_transition_var = Nuke_change_to_num
+		}
+		subtract_from_variable = {
+			nuke_transition_var = num_of_nukes1
+		}
+		set_temp_variable = {
+			nuke_adjustment_days = nuke_transition_var
+		}
+		set_temp_variable = {
+			nuke_production_rate = 0
+		}
+		every_controlled_state = {
+			add_to_temp_variable = {
+				nuke_production_rate = ROOT.building_level@nuclear_reactor
+			}
+		}
+		divide_temp_variable = {
+			nuke_adjustment_days = nuke_production_rate
+		}
+		round_temp_variable = nuke_adjustment_days
+		effect_tooltip = {
+			country_event = {
+				id = decision_event_news.2
+				days = nuke_adjustment_days
+			}
+		}
+		country_event = {
+			id = decision_event_news.2
+			days = nuke_adjustment_days
+		}
+		divide_variable = {
+			nuke_transition_var = 40
+		}
+		add_named_threat = {
+			threat = nuke_transition_var
+			name = de_nuke
+		}
+		add_dynamic_modifier = {
+			modifier = embrace_nuke_modifier
+		}
+
+	}
+	else_if = {
+		limit = { 
+			check_variable = {
+				Nuke_change_to_num < num_of_nukes1
+			}
+		}
+		add_named_threat = {
+			threat = 2
+			name = nuke
+		}
+		set_variable = {
+			nuke_transition_var = num_of_nukes1
+		}
+		subtract_from_variable = {
+			nuke_transition_var = Nuke_change_to_num
+		}
+		divide_variable = {
+			nuke_transition_var = 40
+		}
+		add_named_threat = {
+			threat = nuke_transition_var
+			name = de_nuke
+		}
+		add_dynamic_modifier = {
+			modifier = embrace_nuke_modifier
+		}
+
+	}
+}
+tension_setup = {
+	# Past Incidents must be added chronologically, with the latest one at the top and the previous ones following
+	# 2019 US exits Intermediate-Range Nuclear Forces Treaty
+	add_to_array = { global.TTW_the_incidents = 5 }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_1 = USA }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_2 = ZZZ } 
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_WT = 20 }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_Date = 61491.572 }
+
+	# 2018-Present Sino-US Trade War
+	add_to_array = { global.TTW_the_incidents = 4 }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_1 = USA }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_2 = PRC }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_WT = 20 }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_Date = 61479.620 }
+
+	# 2016 Taiwan Crisis
+	add_to_array = { global.TTW_the_incidents = 3 }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_1 = USA }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_2 = PRC }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_WT = 40 }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_Date = 61464.787 }
+
+	# 2015 Syria Civil war
+	add_to_array = { global.TTW_the_incidents = 2 }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_1 = USA }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_2 = SOV }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_WT = 20 }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_Date = 61457.947 }
+
+	# 2014 Crimea Crisis
+	add_to_array = { global.TTW_the_incidents = 1 }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_1 = USA }
+	add_to_array = { global.OTL_cold_war_incidents_involved_Superpower_2 = SOV }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_WT = 50 }
+	add_to_array = { global.TTW_Cold_War_GUI_Tension_Incidents_Date = 61444.485 }
+
+	## Setup initial tensions
+	set_variable = {
+		global.USA_PRC_Conflict = 40
+	}
+	set_variable = {
+		global.USA_RUS_Conflict = 50
+	}
+	set_variable = {
+		global.RUS_BRS_Conflict = 30
+	}
+	set_variable = {
+		global.PRC_BRS_Conflict = 20
+	}
+
+}
+generate_nuke_rank_array = {
+	get_sorted_scored_countries = {
+		scorer = nuke_scorer
+		array = global.TFR_the_competitors
+	}
+	for_each_scope_loop = {
+		array = global.TFR_the_competitors
+		add_to_variable = {
+			global.TFR_the_competitors_index = 1
+		}
+		set_variable = {
+			nuke_ranking = global.TFR_the_competitors_index
+		}
+	}
+	clear_array = global.TFR_the_competitors_index
+}
+generate_total_rank_array = {
+	get_sorted_scored_countries = {
+		scorer = total_scorer
+		array = global.TFR_the_competitors2
+	}
+	for_each_scope_loop = {
+		array = global.TFR_the_competitors2
+		add_to_variable = {
+			global.TFR_the_competitors2_index = 1
+		}
+		set_variable = {
+			total_ranking = global.TFR_the_competitors2_index
+		}
+	}
+	clear_array = global.TFR_the_competitors2_index
+}

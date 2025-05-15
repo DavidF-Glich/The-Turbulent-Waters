@@ -1,0 +1,266 @@
+focus_tree = {
+	id = USA_Trump2024
+	country = { 
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = USA_T24_Back_on_Track
+		icon = GFX_focus_USC_crackdown_on_denver
+		cost = 1
+		x = 5
+		y = 0
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = USA_T24_Emergency_for_Immigrant
+		icon = GFX_focus_USC_through_the_barrel_of_a_gun
+		cost = 4
+		x = -3
+		y = 1
+		relative_position_id = USA_T24_Back_on_Track
+		prerequisite = {
+			focus = USA_T24_Back_on_Track
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_Cut_Spending
+		icon = GFX_focus_USC_downsize_the_bureacracy
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = USA_T24_Back_on_Track
+		prerequisite = {
+			focus = USA_T24_Back_on_Track
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_Set_DOGE
+		icon = GFX_focus_USC_Crush_the_Deepstate
+		cost = 4
+		x = -1
+		y = 2
+		relative_position_id = USA_T24_Cut_Spending
+		prerequisite = {
+			focus = USA_T24_Cut_Spending
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_Dissolve_Influency
+		icon = GFX_focus_USC_crush_the_fake_news_mob
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = USA_T24_Cut_Spending
+		prerequisite = {
+			focus = USA_T24_Cut_Spending
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_Less_Cost
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 1
+		y = 1
+		relative_position_id = USA_T24_Dissolve_Influency
+		prerequisite = {
+			focus = USA_T24_Dissolve_Influency
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_My_Republican_Party
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = USA_T24_Dissolve_Influency
+		prerequisite = {
+			focus = USA_T24_Set_DOGE
+		}
+		prerequisite = {
+			focus = USA_T24_Less_Cost
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_T24_My_Government
+		icon = GFX_surrender_tiny_flag
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = USA_T24_My_Republican_Party
+		prerequisite = {
+			focus = USA_T24_My_Republican_Party
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_T24_Reexit_Org
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 3
+		y = 1
+		relative_position_id = USA_T24_Dissolve_Influency
+		prerequisite = {
+			focus = USA_T24_Dissolve_Influency
+		}
+		prerequisite = {
+			focus = USA_T24_Expand_Now
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_Expand_Now
+		icon = GFX_focus_USC_maintain_the_balance
+		cost = 1
+		x = 7
+		y = 1
+		relative_position_id = USA_T24_Back_on_Track
+		prerequisite = {
+			focus = USA_T24_Back_on_Track
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = USA_T24_Our_Neighbor
+		icon = GFX_focus_USA_liberate_the_great_north1
+		cost = 2
+		x = 2
+		y = 1
+		relative_position_id = USA_T24_Expand_Now
+		prerequisite = {
+			focus = USA_T24_Expand_Now
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = USA_T24_Panama
+		icon = GFX_focus_USC_build_the_freedom_cities
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = USA_T24_Our_Neighbor
+		prerequisite = {
+			focus = USA_T24_Our_Neighbor
+		}
+		completion_reward = { 
+
+		}
+	}
+
+	focus = {
+		id = USA_T24_Denmark
+		icon = GFX_focus_USA_rebuild_the_great_american_navy
+		cost = 2
+		x = 1
+		y = 1
+		relative_position_id = USA_T24_Our_Neighbor
+		prerequisite = {
+			focus = USA_T24_Our_Neighbor
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_T24_Ukraine
+		icon = GFX_goal_unknown
+		cost = 2
+		x = -1
+		y = 1
+		relative_position_id = USA_T24_Expand_Now
+		prerequisite = {
+			focus = USA_T24_Expand_Now
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_T24_Putin_Stop_the_War
+		icon = GFX_goal_molotov_ribbentrop_pact
+		cost = 4
+		x = 0
+		y = 1
+		available = {
+			UKR = {
+				has_war_with = SOV
+				surrender_progress > 0.1
+				casualties_inflicted_by = {
+					opponent = SOV
+					thousands > 100
+				}
+			}
+		}
+		continue_if_invalid = yes
+		prerequisite = {
+			focus = USA_T24_Ukraine
+		}
+		relative_position_id = USA_T24_Ukraine
+		completion_reward = { 
+			add_political_power = 30
+			SOV = {
+				country_event = russia.11
+			}
+			custom_effect_tooltip = if_they_accept_newline_tt
+			activate_mission_tooltip = USA_RUS_Negotiation_mission
+			custom_effect_tooltip = if_they_refuse_newline_tt
+			uncomplete_national_focus = {
+				focus = USA_T24_Putin_Stop_the_War
+				refund_political_power = no
+			}
+		}
+	}
+	focus = {
+		id = USA_T24_China
+		icon = GFX_focus_USC_the_coming_storm
+		cost = 2
+		x = 5
+		y = 1
+		relative_position_id = USA_T24_Expand_Now
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		continue_if_invalid = yes
+		prerequisite = {
+			focus = USA_T24_Expand_Now
+		}
+		completion_reward = { 
+			if = {
+				limit = { 
+					USA_House_Senate_Trigger = no
+				}
+				country_event = usa.21
+			}
+			else = {
+				random = {
+					chance = 50
+					PRC = {
+						add_timed_idea = {
+							idea = PRK_heavy_sanctions_idea3
+							days = 300
+						}
+					}
+				}
+				add_timed_idea = {
+					idea = USA_locked_down_economy_idea1
+					days = 200
+				}	
+			}
+		}
+	}
+
+}

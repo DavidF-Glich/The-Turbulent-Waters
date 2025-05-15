@@ -1,0 +1,270 @@
+shared_focus = {
+	id = NATO_Transformation_Conference
+	icon = GFX_focus_NATO_transformation_conference
+	x = 6
+	y = 0
+	offset = {
+		x = 15
+		trigger = {
+			tag = USA
+			has_focus_tree = USA
+		}
+	}
+	offset = {
+		y = 7
+		trigger = {
+			has_focus_tree = USA_Biden2020
+		}
+	}
+	available = {
+		always = no	#仅供展示，日后修改
+	}
+	cost = 5
+	completion_reward = {
+		
+	}
+}
+joint_focus = {
+	id = NATO_WCC
+	icon = GFX_goal_unknown
+	x = -4
+	y = 1
+	cost = 10
+	prerequisite = {
+		focus = NATO_Transformation_Conference
+	}
+	relative_position_id = NATO_Transformation_Conference
+	completion_reward_joint_originator = {
+		add_doctrine_cost_reduction = {
+			cost_reduction = 0.2
+			name = NATO_WCC
+		}
+		set_temp_variable = {
+			military_development_var_temp = 0.05
+		}
+		add_military_development = yes
+		army_experience = 10
+	}
+	completion_reward_joint_member = {
+		set_temp_variable = {
+			military_development_var_temp = 0.03
+		}
+		add_military_development = yes
+	}
+}
+joint_focus = {
+	id = NATO_Technology_Conference
+	icon = GFX_goal_unknown
+	x = 2
+	y = 1
+	cost = 10
+	relative_position_id = NATO_Transformation_Conference
+	prerequisite = {
+		focus = NATO_Transformation_Conference
+	}
+	completion_reward = {
+		modify_tech_sharing_bonus = {
+			id = nato_research
+			bonus = 0.05
+		}
+	}
+	completion_reward_joint_member = {
+		
+	}
+	completion_reward_joint_originator = {
+		
+	}
+}
+joint_focus = {
+	id = NATO_Resource_Conference
+	icon = GFX_goal_unknown
+	x = -1
+	y = 1
+	cost = 10
+	relative_position_id = NATO_Transformation_Conference
+	prerequisite = {
+		focus = NATO_Transformation_Conference
+	}
+	completion_reward_joint_member = {
+		add_political_power = 20
+	}
+	completion_reward_joint_originator = {
+		army_experience = 20
+		
+	}
+}
+joint_focus = {
+	id = NATO_Industry_Forum
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 2
+	y = 1
+	relative_position_id = NATO_Resource_Conference
+	prerequisite = {
+		focus = NATO_Resource_Conference
+		focus = NATO_Technology_Conference
+	}
+	completion_reward_joint_originator = {
+		random_core_state = {
+			limit = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level > 3
+				}
+				free_building_slots = {
+					building = arms_factory
+					size > 2
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		random_core_state = {
+			limit = {
+				non_damaged_building_level = {
+					building = infrastructure
+					level > 3
+				}
+				free_building_slots = {
+					building = arms_factory
+					size > 2
+				}
+			}
+			add_building_construction = {
+				type = arms_factory
+				level = 1
+			}
+			add_building_construction = {
+				type = office_park
+				level = 1
+			}
+		}
+	}
+	completion_reward_joint_member = {
+		
+	}
+	
+}
+joint_focus = {
+	id = NATO_Multi_Domain
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = NATO_WCC
+	prerequisite = {
+		focus = NATO_WCC
+	}
+	prerequisite = {
+		focus = NATO_Resource_Conference
+	}
+}
+joint_focus = {
+	id = NATO_TIDE
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = NATO_Multi_Domain
+	prerequisite = {
+		focus = NATO_Multi_Domain
+	}
+}
+joint_focus = {
+	id = NATO_Wargame
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = NATO_Resource_Conference
+	prerequisite = {
+		focus = NATO_Resource_Conference
+	}
+}
+joint_focus = {
+	id = NATO_Communicator_Conference
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = NATO_Technology_Conference
+	prerequisite = {
+		focus = NATO_Technology_Conference
+	}
+}
+joint_focus = {
+	id = NATO_360
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 0
+	y = 1
+	relative_position_id = NATO_Wargame
+	prerequisite = {
+		focus = NATO_Wargame
+	}
+}
+joint_focus = {
+	id = One_NATO
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = NATO_360
+	prerequisite = {
+		focus = NATO_360
+	}
+}
+joint_focus = {
+	id = NATO_Strategic_Foresight
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 1
+	y = 1
+	relative_position_id = NATO_TIDE
+	prerequisite = {
+		focus = NATO_360
+		focus = NATO_TIDE
+	}
+
+}
+joint_focus = {
+	id = NATO_Festival
+	icon = GFX_goal_unknown
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = NATO_Communicator_Conference
+	prerequisite = {
+		focus = NATO_Communicator_Conference
+	}
+}
+joint_focus = {
+	id = NATO_Challenge
+	icon = GFX_goal_unknown
+	cost = 10
+	x = 1 
+	y = 1
+	relative_position_id = NATO_Festival
+	prerequisite = {
+		focus = NATO_Festival
+	}
+}
+shared_focus = {
+	id = NATO_Talk_Military
+	icon = GFX_goal_unknown
+	cost = 5
+	x = 0
+	y = 1
+	relative_position_id = One_NATO
+	prerequisite = {
+		focus = NATO_Challenge
+	}
+	prerequisite = {
+		focus = NATO_Strategic_Foresight
+	}
+	prerequisite = {
+		focus = One_NATO
+	}
+}

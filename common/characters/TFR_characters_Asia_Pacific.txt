@@ -1,0 +1,964 @@
+characters={
+	CAM_norodom_sihamoni_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_CAM_norodom_sihamoni
+			}
+		}
+		country_leader = {
+			ideology = oligarchist
+		}
+	}
+	CAM_tea_banh_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/CAM/generals/Tea_Banh.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	CAM_ke_kim_yan_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/CAM/generals/Ke_Kim_Yan.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	CAM_tea_vinh_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/CAM/admirals/Tea_Vinh.dds" 
+			}
+		}
+
+		navy_leader={
+			skill=1
+		}
+	}
+
+	HAW_claudio_graziano_char = {
+		portraits={
+			civilian = {
+				large = "Claudio Graziano.dds"
+			}
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	
+	INS_joko_widodo_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_INS_joko_widodo
+			}
+		}
+		country_leader = {
+			ideology = centrist
+		}
+	}
+	INS_prabowo_subianto_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/INS/Prabowo_Subianto.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+	}
+	INS_bambang_darmono_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/generals/Bambang_Darmono.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=2
+		}
+	}	
+	INS_gatot_numantyo_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/generals/Gatot_Nurmantyo.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	INS_jenderal_mulyono_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/generals/Jenderal_Mulyono.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	INS_moeldoko_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/generals/Moeldoko.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	INS_muhammad_munir_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/generals/Muhammad_Munir.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	INS_ade_supandi_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/admirals/Ade_Supandi.dds" 
+			}
+		}
+
+		navy_leader={
+			skill=2
+		}
+	}
+	INS_marsetio_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/admirals/Marsetio.dds" 
+			}
+		}
+
+		navy_leader={
+			skill=1
+		}
+	}
+	INS_soeparno_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/INS/admirals/Soeparno.dds" 
+			}
+		}
+
+		navy_leader={
+			skill=1
+		}
+	}
+	
+	LAO_bounnhang_vorachith_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_LAO_bounnhang_vorachith
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	LAO_thongloun_sisoulith_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_LAO_thongloun_sisoulith
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	LAO_somsavat_lengsavad_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_LAO_somsavat_lengsavad
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	
+	MAL_sultan_abdullah_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_MAL_al_sultan_abdullah
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+		}
+		country_leader = {
+			ideology = neoliberalism
+		}
+		country_leader = {
+			ideology = civic_nationalism
+		}
+		country_leader = {
+			ideology = constitutionalist
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+	}
+
+	MAL_sultan_ibrahim_iskandar_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/MAL/MAL_sultan_ibrahim.png"
+			}
+		}
+		country_leader = {
+			ideology = social_democracy
+		}
+		country_leader = {
+			ideology = neoliberalism
+		}
+		country_leader = {
+			ideology = civic_nationalism
+		}
+		country_leader = {
+			ideology = constitutionalist
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+	}
+	
+	NZL_patsy_reddy_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/NZL/Patsy_Reddy.png" 
+			}
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = neoliberalism
+			traits = {
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = neoconservative
+			traits = {
+			}
+		}
+		country_leader = {
+			ideology = reformist_socialism
+			traits = {
+			}
+		}
+	}
+	NZL_Bruce_Ferguson_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/NZL/NZL_Bruce_Ferguson.png" 
+			}
+		}
+	}
+	NZL_Cindy_Kiro_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/NZL/Cindy_Kiro.png" 
+			}
+		}
+	}
+	
+	PHI_rodrigo_duterte_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Duterte.png" 
+			}
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+	}
+	PHI_bongbong_marcos_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Bongbong_Marcos.png" 
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	PHI_leni_robredo_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Leni Robredo.png" 
+			}
+		}
+		country_leader = {
+			ideology = neoliberalism
+		}
+	}
+	PHI_manny_pacquiao_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Manny Pacquiao.png" 
+			}
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+	}
+	PHI_eduardo_ano_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/generals/Eduardo_Ano.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=2
+		}
+	}	
+	PHI_mayoralgo_dela_cruz_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/generals/Mayoralgo_Dela_Cruz.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=2
+		}
+	}
+	PHI_rey_guerrero_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/generals/Rey_Guerrero.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	PHI_ricardo_visaya_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/generals/Ricardo_Visaya.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	PHI_romeo_gan_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/generals/Romeo_Gan.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	PHI_romeo_tanalgo_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/generals/Romeo_Tanalgo.dds" 
+			}
+		}
+
+		corps_commander={
+			skill=1
+		}
+	}
+	PHI_caeser_taccad_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/admirals/Caeser_Taccad.dds" 
+			}
+		}
+
+		navy_leader={
+			skill=3
+		}
+	}
+	PHI_jesus_millan_char = {
+		portraits={
+			army = {
+				large = "gfx/Leaders/PHI/admirals/Jesus_Millan.dds" 
+			}
+		}
+
+		navy_leader={
+			skill=1
+		}
+	}
+	
+	VIS_gwendolyn_garcia_char = {
+		name = "Gwendolyn Garcia"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Gwendolyn Garcia.png" 
+			}
+		}
+		country_leader = {
+			ideology = military_democracy
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	
+	MIN_rodrigo_duterte_char = {
+		name = "Rodrigo Duterte"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Duterte.png" 
+			}
+		}
+		country_leader = {
+			ideology = left_populism
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+	}
+	NPA_luis_jalandoni_char = {
+		name = "Luis Jalandoni"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PHI/Luis_Jalandoni.png" 
+			}
+		}
+		country_leader = {
+			ideology = maoism
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+	}
+	BAG_terrorist_char = {
+		name = "Esmael Abdulmalik"
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/Terrorists/terror3.png" 
+			}
+		}
+		country_leader = {
+			ideology = salafi
+		}
+	}
+	PNG_bob_dadae_char = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PNG/Sir_Bob_Bofeng_Dadae.png" 
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	
+	SIA_rama_x_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_rama_x
+			}
+		}
+		country_leader = {
+			ideology = totalism
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+		country_leader = {
+			ideology = ultranationalism
+		}
+		country_leader = {
+			ideology = neonazism
+		}
+	}
+	SIA_dipangkorn_rasmijoti_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_dipangkorn_rasmijoti
+			}
+		}
+		country_leader = {
+			ideology = totalism
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+		country_leader = {
+			ideology = ultranationalism
+		}
+		country_leader = {
+			ideology = neonazism
+		}
+	}
+	SIA_vacharaesorn_vivacharawongse_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_vacharaesorn_vivacharawongse
+			}
+		}
+		country_leader = {
+			ideology = totalism
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+		country_leader = {
+			ideology = ultranationalism
+		}
+		country_leader = {
+			ideology = neonazism
+		}
+	}
+	SIA_maha_chakri_sirindhorn_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_maha_chakri_sirindhorn
+			}
+		}
+		country_leader = {
+			ideology = totalism
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+		country_leader = {
+			ideology = centrist
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = absolute_monarchist
+		}
+		country_leader = {
+			ideology = ultranationalism
+		}
+		country_leader = {
+			ideology = neonazism
+		}
+	}
+	SIA_prayut_chan-o-cha_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_prayut_chan-o-cha
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	SIA_apirat_kongsompong_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_apirat_kongsompong
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	SIA_santi_sakuntanak_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_santi_sakuntanak
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	SIA_thanathorn_juangroongruangkit_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_thanathorn_juangroongruangkit
+			}
+		}
+		country_leader = {
+			ideology = progressivism
+		}
+	}
+	SIA_thaksin_shinawatra_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_thaksin_shinawatra
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	SIA_yingluck_shinawatra_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_yingluck_shinawatra
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+		}
+	}
+	SIA_jurin_lakasanawisit_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_jurin_lakasanawisit
+			}
+		}
+		country_leader = {
+			ideology = classical_liberalism
+		}
+	}
+	SIA_sereepisuth_temeeyaves_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_sereepisuth_temeeyaves
+			}
+		}
+		country_leader = {
+			ideology = centrist
+		}
+	}
+	SIA_arnon_nanpa_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_arnon_nanpa
+			}
+		}
+		country_leader = {
+			ideology = liberal_socialism
+		}
+	}
+	SIA_panusaya_sithijirawattanakul_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_panusaya_sithijirawattanakul
+			}
+		}
+		country_leader = {
+			ideology = liberal_socialism
+		}
+	}
+	SIA_jatupat_boonpattararaksa_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_jatupat_boonpattararaksa
+			}
+		}
+		country_leader = {
+			ideology = reformist_socialism
+		}
+	}
+	SIA_anarchist_council_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_anarchist_council
+			}
+		}
+		country_leader = {
+			ideology = left_anarchist
+		}
+	}
+	SIA_wichai_chutham_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_wichai_chutham
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+		country_leader = {
+			ideology = totalism
+		}
+	}
+	SIA_peoples_coaltion_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_peoples_coaltion
+			}
+		}
+		country_leader = {
+			ideology = supervised_democracy
+		}
+	}
+	SIA_bak={
+		portraits={
+			army={
+				large="gfx/leaders/SIA/Bak.dds"
+			}
+		}
+		corps_commander={
+			traits={ trickster career_officer }
+			skill=2
+			attack_skill=5
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	ETI_peoples_coaltion_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_peoples_coaltion
+			}
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+	}
+	BRU_anas_abdulrahman_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_BRU_anas_abdulrahman
+			}
+		}
+		country_leader = {
+			ideology = radical_nationalism
+		}
+		country_leader = {
+			ideology = hybrid_regime
+		}
+	}
+	BRU_wan_kadir_che_man_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_BRU_wan_kadir_che_man
+			}
+		}
+		country_leader = {
+			ideology = islamic_authoritarian
+		}
+	}
+	BRU_abdullah_sungkar_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_BRU_abdullah_sungkar
+			}
+		}
+		country_leader = {
+			ideology = salafi
+		}
+	}
+	BRU_santi_sakuntanak_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIA_santi_sakuntanak
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+		}
+		country_leader = {
+			ideology = military_junta
+		}
+	}
+	
+	SIG_halimah_yacob_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIG_halimah_yacob
+			}
+		}
+		country_leader = {
+			ideology = oligarchist
+		}
+	}
+	SIG_tharman_shanmugaratnam_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_SIG_tharman_shanmugaratnam
+			}
+		}
+		country_leader = {
+			ideology = oligarchist
+		}
+	}
+	
+	VIN_nguyen_phu_trong_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_VIN_nguyen_phu_trong
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	VIN_nguyen_xuan_phuc_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_VIN_nguyen_xuan_phuc
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	VIN_vo_thi_anh_xuan_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_VIN_vo_thi_anh_xuan
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	VIN_vo_van_thuong_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_VIN_vo_van_thuong
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	VIN_to_lam_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_VIN_to_lam
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+	VIN_luong_cuong_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_VIN_luong_cuong
+			}
+		}
+		country_leader = {
+			ideology = marxism_leninism
+		}
+	}
+}

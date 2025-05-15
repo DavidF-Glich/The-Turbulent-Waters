@@ -1,0 +1,87 @@
+focus_tree = {
+	id = UKR_2022
+	country = { 
+		factor = 0
+	}
+	default = no
+
+	focus = {
+		id = UKR_Go_on_Taxi
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 5
+		y = 0
+		mutually_exclusive = {
+			focus = UKR_Stay_in_Front
+		}
+		completion_reward = { 
+			
+		}
+	}
+
+	focus = {
+		id = UKR_Address_the_UN
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		relative_position_id = UKR_Go_on_Taxi
+		prerequisite = {
+			focus = UKR_Go_on_Taxi
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Poroshenko_Returns
+		icon = GFX_surrender_tiny_flag
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = UKR_Address_the_UN
+		prerequisite = {
+			focus = UKR_Address_the_UN
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Stay_in_Front
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 9
+		y = 0
+		mutually_exclusive = {
+			focus = UKR_Go_on_Taxi
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Mobilize_Now
+		icon = GFX_surrender_tiny_flag
+		cost = 4
+		x = 0
+		y = 1
+		relative_position_id = UKR_Stay_in_Front
+		prerequisite = {
+			focus = UKR_Stay_in_Front
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Embargo_Russia
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = UKR_Address_the_UN
+			focus = UKR_Mobilize_Now
+		}
+		relative_position_id = UKR_Go_on_Taxi
+		completion_reward = { }
+	}
+
+}

@@ -1,0 +1,104 @@
+	characters = {
+		
+		CAN_julie_payette_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/CAN/CAN_julie_payette.png"
+				}
+			}
+			country_leader = {
+				ideology = neoliberalism
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id = -1
+			}
+			country_leader = {
+				ideology = classical_liberalism
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id = -1
+			}
+			country_leader = {
+				ideology = neoconservative
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id = -1
+			}
+			country_leader = {
+				ideology = ultra_conservatism
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id = -1
+			}
+			country_leader = {
+				ideology = progressivism
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id = -1
+			}
+			country_leader = {
+				ideology = reformist_socialism
+				traits = {
+				}
+				expire = "1.1.1.1"
+				id = -1
+			}
+		}
+		CAN_Mary_Simon_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/CAN/Mary Simon.png"
+				}
+			}
+		}
+		CAN_Joshua_Leakey_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/CAN/CAN_Joshua_Leakey.png"
+				}
+			}
+		}
+		CAN_justin_trudeau={
+			portraits={
+				civilian={
+					large="gfx/leaders/CAN/CAN_justin_trudeau.png"
+				}
+			}
+			country_leader={
+				ideology=neoliberalism
+				expire="1.1.1.1"
+				id=-1
+				traits = {
+					hog_pretty_boy
+				}
+			}
+			country_leader={
+				ideology=hybrid_regime
+				expire="1.1.1.1"
+				id=-1
+				traits = {
+					hog_pretty_boy
+				}
+			}
+		}
+		QUE_Yves_Francois_Blanchet={
+			portraits={
+				civilian={
+					large="gfx/leaders/CAN/QUE_Yves_Francois_Blanchet.png"
+				}
+			}
+			country_leader={
+				ideology=social_democracy
+				expire="1.1.1.1"
+				id=-1
+				traits = {
+					#
+				}
+			}
+		}
+	}

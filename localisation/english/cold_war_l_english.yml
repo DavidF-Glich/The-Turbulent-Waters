@@ -1,0 +1,8 @@
+﻿l_english:
+  BOP_BUTTON: "Foreign Policy"
+  World_tension: "Major Conflict"
+  USA_PRC_Tension: "Sino-US Tension"
+  USA_RUS_Tension: "Russo-American Tension"
+  RUS_BRS_Tension: "Russo-European Tension"
+  PRC_BRS_Tension: "Sino-European COnflict"
+  incident_column_text: "Latest Incidents"

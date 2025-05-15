@@ -1,0 +1,295 @@
+defined_text = { # Country
+	name = GetNatoName
+	text = {
+		trigger = { is_faction_leader = yes }
+		localization_key = TFR_nato_name_USA
+	}
+	text = {
+		localization_key = TFR_nato_name
+	}
+}
+
+defined_text = { # Country
+	name = GetNatoDesc
+	text = {
+		trigger = { is_faction_leader = yes }
+		localization_key = TFR_nato_desc_USA
+	}
+	text = {
+		localization_key = TFR_nato_desc
+	}
+}
+
+defined_text = { # GUI fuckery
+	name = GetNatoStats
+	text = {
+		trigger = { always = yes }
+		localization_key = nato_strength_delay_tt_script
+	}
+}
+
+defined_text = {
+	name = start_menu_country_desc
+	
+	text = { 
+		trigger = {
+			tag = USA
+		}
+		localization_key = "USA_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GER_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "SOV_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "FRA_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "PRC_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = SYR
+		}
+		localization_key = "SYR_country_summary"
+	}
+	text = { 
+		trigger = {
+			tag = UKR
+		}
+		localization_key = "UKR_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = PRK
+		}
+		localization_key = "PRK_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = SWE
+			has_game_rule = {
+				rule = oh_no_sweden
+				option = people_commissar
+			}
+		}
+		localization_key = "SWE_country_sunnary"
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = "CHI_country_summary"
+	}
+}
+
+defined_text = {
+	name = start_menu_country_paths
+	
+	text = { 
+		trigger = {
+			tag = USA
+		}
+		localization_key = "USA_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GER_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "SOV_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "FRA_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "PRC_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = SYR
+		}
+		localization_key = "SYR_country_paths"
+	}
+	text = { 
+		trigger = {
+			tag = UKR
+		}
+		localization_key = "UKR_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = PRK
+		}
+		localization_key = "PRK_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = SWE
+			has_game_rule = {
+				rule = oh_no_sweden
+				option = people_commissar
+			}
+		}
+		localization_key = "SWE_country_pass"
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = "CHI_country_paths"
+	}
+}
+
+defined_text = {
+	name = start_menu_country_other
+	
+	text = { 
+		trigger = {
+			tag = USA
+		}
+		localization_key = "USA_country_other"
+	}
+	text = { 
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GER_country_other"
+	}
+	text = { 
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "SOV_country_other"
+	}
+	text = { 
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "FRA_country_other"
+	}
+	text = { 
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "PRC_country_other"
+	}
+	text = { 
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "JAP_country_other"
+	}
+	text = { 
+		trigger = {
+			tag = UKR
+		}
+		localization_key = "UKR_country_other"
+	}
+	text = {
+		trigger = {
+			tag = PRK
+		}
+		localization_key = "PRK_country_other"
+	}
+	text = {
+		trigger = {
+			tag = SWE
+			has_game_rule = {
+				rule = oh_no_sweden
+				option = people_commissar
+			}
+		}
+		localization_key = "SWE_country_never"
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = "CHI_country_other"
+	}
+}	
+
+defined_text = {
+	name = GET_BACKGROUND
+	
+	text = { 
+		trigger = {
+			tag = SOV
+		}
+		localization_key = "GFX_Moscow_BG"
+	}	
+	text = { 
+		trigger = {
+			tag = FRA
+		}
+		localization_key = "GFX_France_BG"
+	}	
+	text = { 
+		trigger = {
+			tag = USA
+		}
+		localization_key = "GFX_USA_BG"
+	}
+	text = { 
+		trigger = {
+			tag = GER
+		}
+		localization_key = "GFX_GER_BG"
+	}
+	text = { 
+		trigger = {
+			tag = JAP
+		}
+		localization_key = "GFX_Japan_BG"
+	}
+	text = { 
+		trigger = {
+			tag = PRC
+		}
+		localization_key = "GFX_China_BG"
+	}
+	text = {
+		trigger = {
+			NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER }
+		}
+		localization_key = "GFX_World_Map_BG"
+	}
+}

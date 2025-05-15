@@ -1,0 +1,7 @@
+embrace_nuke_modifier = {
+	enable = {
+		has_variable = num_of_nukes1
+	}
+
+	misc_expense = nuke_transition_var
+}

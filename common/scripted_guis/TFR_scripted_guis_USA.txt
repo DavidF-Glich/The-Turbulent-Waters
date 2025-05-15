@@ -1,0 +1,27 @@
+scripted_gui = {
+	USA_2020_election_gui = {
+		context_type = decision_category
+		window_name = "USA_2020_election_window"
+		dirty = USA_2020_gui_dirty_var
+		effects = {
+			
+		}
+		triggers = {
+		
+		}
+		properties = {
+			Donald_J_Trump = {
+				image = "[GetTrumpPicture]"
+			}
+			Joe_Biden = {
+				image = "[GetBidenPicture]"
+			}
+			x1 = {
+				image = "[GetElectionScore]"
+			}
+			#election_progress = {
+			#	frame = election_score_2020
+			#}
+		}
+	}
+}

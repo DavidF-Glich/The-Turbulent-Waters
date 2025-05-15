@@ -1,0 +1,198 @@
+	ideas = {
+		
+		country = {
+			AST_ongoing_wildfires = {
+				picture = AST_wildfire
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = -0.2
+					production_factory_efficiency_gain_factor = -0.15
+					production_factory_max_efficiency_factor = -0.1
+					production_speed_buildings_factor = -0.1
+				}
+			}
+			AST_asian_cold_war = {
+				picture = AST_wildfire
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					production_speed_dockyard_factor = 0.25
+					industrial_capacity_dockyard = 0.3
+					drift_defence_factor = 0.1
+					defensive_war_stability_factor = 0.2
+					research_speed_factor = 0.1
+					production_lack_of_resource_penalty_factor = -0.3
+				}
+			}
+			AST_idea_bushfire_recovery_plan = {
+				picture = AST_recovery_plan
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					consumer_goods_factor = 0.05
+					production_speed_buildings_factor = 0.1
+					income_growth_factor = 0.15
+				}
+			}
+		}
+		
+		head_minister = {
+			AST_scott_morrison_hog = {
+				name = "Scott Morrison"
+				picture = AST_scott_morrison
+				
+				allowed = {
+					original_tag = AST
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					ide_mar_lib
+					hog_silent_workhorse
+				}
+			}
+			AST_anthony_albanese_hog = {
+				name = "Anthony Albanese"
+				picture = AST_anthony_albanese
+				
+				allowed = {
+					original_tag = AST
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					ide_soc_dem
+					hog_pragmatic_statesman
+				}
+			}
+			NZL_jacinda_ardern_hog = {
+				name = "Jacinda Ardern"
+				picture = NZL_jacinda_ardern_hog
+
+				allowed = {
+					original_tag = NZL
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					ide_soc_dem
+					hog_committed_social_activist
+				}
+			}
+			NZL_chris_hipkins_hog = {
+				name = "Chris Hipkins"
+				picture = NZL_chris_hipkins_hog
+
+				allowed = {
+					original_tag = NZL
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					ide_soc_dem
+					hog_pretty_boy
+				}
+			}
+			NZL_christopher_luxon_hog = {
+				name = "Christopher Luxon"
+				picture = NZL_christopher_luxon_hog
+
+				allowed = {
+					original_tag = NZL
+				}
+				
+				allowed_to_remove = {
+					head_minister_trigger = yes
+				}
+				
+				traits = {
+					ide_soc_con
+					hog_silent_workhorse
+				}
+			}
+		}
+		
+		foreign_minister = {
+			AST_Marise_Payne_for = {
+				name = "Marise Payne"
+				picture = AST_Marise_Payne
+				
+				allowed = {
+					original_tag = AST
+				}
+				
+				traits = {
+					ide_mar_lib
+					for_ideological_crusader
+				}
+			}
+		}
+		
+		economic_minister = {
+			AST_Josh_Frydenberg_eco = {
+				name = "Josh Frydenberg"
+				picture = AST_Josh_Frydenberg
+				
+				allowed = {
+					original_tag = AST
+				}
+				
+				traits = {
+					ide_mar_lib
+					eco_keynesian_economy
+				}
+			}
+		}
+		
+		interior_minister = {
+			AST_Barnaby_Joyce_sec = {
+				picture = AST_Barnaby_Joyce
+				
+				allowed = {
+					original_tag = AST
+				}
+				
+				traits = {
+					ide_mar_lib
+					sec_silent_lawyer
+				}
+			}
+		}
+	}

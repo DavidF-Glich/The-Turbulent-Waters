@@ -1,0 +1,88 @@
+	ideas = {
+		country = {
+			PAK_clash_of_the_millions = {
+				picture = RAJ_clash_of_the_millions
+
+				allowed = {
+					always = no
+				}
+
+				available = {
+					tag = PAK
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					#army_org_factor = -0.45  <--- bruh are you cereal
+					experience_loss_factor = 0.15
+					minimum_training_level = -0.10 
+				}
+			}
+			PAK_fervent_nationalism = {
+				picture = PAK_fervent_nationalism
+
+				allowed = {
+					always = no
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_morale_factor = 0.25
+					land_reinforce_rate = 0.1
+					org_loss_when_moving = -0.1
+					breakthrough_factor = 0.2
+					offensive_war_stability_factor = 0.3
+					defensive_war_stability_factor = 0.3
+				}
+			}
+			PAK_operation_gul = {
+				picture = RAJ_clash_of_the_millions
+
+				allowed = {
+					always = no
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_attack_factor = 0.1
+					terrain_penalty_reduction = 0.15
+					planning_speed = 0.1
+				}
+			}
+			PAK_operation_khalid = {
+				picture = RAJ_clash_of_the_millions
+
+				allowed = {
+					always = no
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_attack_factor = 0.1
+					army_speed_factor = 0.15
+					land_reinforce_rate = 0.1
+				}
+			}
+			PAK_sword_and_ummah = {
+				picture = PAK_fervent_nationalism
+
+				allowed = {
+					always = no
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					nationalist_drift = 0.1
+					army_core_defence_factor = 0.1
+					land_reinforce_rate = 0.1
+					stability_factor = 0.1
+					battalion_upkeep_factor = -0.25
+				}
+			}
+		}
+	}

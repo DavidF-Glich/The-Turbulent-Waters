@@ -1,0 +1,279 @@
+ideas = {
+
+	country = {
+	
+		RAJ_south_asian_tiger_idea = {
+			picture = RAJ_south_asian_tiger
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				training_time_factor = -0.05
+				dtg_threshold = 0.25
+				political_power_gain = 0.10
+				conservative_drift = 0.01
+			}
+		}
+
+		RAJ_religious_sectarianism_idea = {
+			picture = RAJ_religious_sectarianism
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+				war_support_factor = -0.15
+				conscription_factor = -0.7
+				society_development_monthly = -0.01
+				
+			}
+		}
+
+		RAJ_remnant_caste_system_idea = {
+			picture = RAJ_remnant_caste_system
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				resistance_growth = 0.10
+				army_org_factor = -0.2
+				resistance_target = 0.1
+				communist_drift = 0.01
+				military_development_monthly = -0.01
+				society_development_monthly = -0.01
+			}
+		}
+
+		RAJ_chinese_sanctions_idea = {
+			picture = RAJ_chinese_sanctions
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+				production_speed_buildings_factor = -0.075
+				stability_factor = -0.05
+				income_growth_factor = -0.05
+			}
+		}
+
+		
+		
+		RAJ_disorganised_forces = {
+			picture = RAJ_disorganised_forces
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.20
+				army_attack_factor = -0.10
+				army_defence_factor = -0.10
+			}
+		}
+
+		RAJ_inefficient_industry = {
+			picture = RAJ_disorganised_forces
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				industrial_capacity_factory = -0.3
+				production_factory_max_efficiency_factor = -0.1
+				production_factory_start_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = -1
+				business_value_factor = -0.2
+				conversion_cost_civ_to_mil_factor = 1
+				production_speed_arms_factory_factor = -0.2
+				monthly_population = -0.1
+			}
+		}
+
+		RAJ_disorganised_design = {
+			picture = RAJ_disorganised_forces
+
+			allowed = {
+				always = yes
+			}
+
+			modifier = {
+				research_speed_factor = -0.2
+				battalion_upkeep_factor = 0.2
+				production_speed_nuclear_reactor_factor = -0.3
+				reliability = -0.1
+				
+			}
+		}
+
+		RAJ_indian_civil_war_idea = {
+			picture = RAJ_indian_civil_war
+
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.25
+				army_morale_factor = -0.05
+				army_org = -5
+				army_attack_factor = -0.05
+			}		
+		}
+
+		RAJ_clash_of_the_millions = {
+			picture = RAJ_clash_of_the_millions
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				tag = RAJ
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org = -5
+				army_attack_factor = -0.1
+			}
+		}
+		
+		RAJ_clash_of_the_millions2 = {
+			picture = RAJ_clash_of_the_millions
+
+			allowed = {
+				always = no
+			}
+
+			available = {
+				tag = RAJ
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+				army_attack_factor = 0.1
+			}
+		}
+		
+		RAJ_disorganised_forces_ulf = {
+			picture = RAJ_disorganised_forces
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.10
+			}
+		}
+		
+		RAJ_kashmir_road0_idea = {
+			picture = "GFX_idea_florida_siege"
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				supply_factor = 0.1
+				supply_consumption_factor = -0.05
+				army_fuel_consumption_factor = -0.2
+				out_of_supply_factor = -0.05
+			}
+		}
+		
+		RAJ_kashmir_road_idea = {
+			picture = "GFX_idea_florida_siege"
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.2
+				supply_factor = 0.2
+				supply_consumption_factor = -0.15
+				army_fuel_consumption_factor = -0.35
+				out_of_supply_factor = -0.1
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+			}
+		}
+
+		ULF_united_struggle = {
+			picture = RAJ_south_asian_tiger
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				breakthrough_factor = 0.15
+				surrender_limit = 0.25
+				army_morale_factor = 0.1
+			}
+		}
+
+		NAX_insurgency_idea = {
+			picture = NAX_insurgency_idea
+			
+			allowed = { always = no }
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.15
+				surrender_limit = 0.5
+				army_morale_factor = 0.1
+			}
+		}
+
+		SRL_rajapaksa_family_idea = {
+			picture = SRL_rajapaksa_family
+				
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				political_power_factor = -0.05
+				consumer_goods_factor = 0.2
+				income_growth_factor = 0.05
+				social_democrat_drift = 0.04
+			}
+		}
+
+		SRL_economic_ruin_idea = {
+			picture = HEZ_currency_crisis
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+				political_power_factor = -0.2
+				consumer_goods_factor = 0.4
+				income_growth_factor = -0.1
+				business_value_factor = -0.1
+			}
+		}
+	}
+	
+}

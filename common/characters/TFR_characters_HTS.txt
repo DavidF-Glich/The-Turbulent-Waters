@@ -1,0 +1,14 @@
+characters={
+	HTS_abu_mohammad_aljulani={
+		portraits={
+			civilian={
+				large="gfx/leaders/HTS/Abu Mohammad al-Julani.png"
+			}
+		}
+		country_leader={
+			ideology=salafi
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

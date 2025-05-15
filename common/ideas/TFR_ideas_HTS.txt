@@ -1,0 +1,23 @@
+ideas = {
+		country = {
+			HTS_FSA_removal = {
+				picture = "GFX_idea_HTS_FSA_removal"
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					planning_speed = -0.25
+					army_attack_factor = -0.05
+					army_core_attack_factor = 0.01
+				}
+			}
+		}
+	}

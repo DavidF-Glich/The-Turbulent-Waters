@@ -1,0 +1,50 @@
+PRK_improve_supply = {
+	allowed = {
+		tag = PRK
+	}
+	enable = {
+		is_at_peace_exiled_countries_excluded = yes
+		any_controlled_state = {
+			infrastructure < 4
+		}
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PRC
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = building_target
+		id = infrastructure
+		value = 200
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = -1000
+	}
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = -1000
+	}
+	ai_strategy = {
+		type = build_army
+		id = artillery
+		value = -1000
+	}
+	ai_strategy = {
+		type = build_army
+		id = mechanized
+		value = -1000
+	}
+	ai_strategy = {
+		type = min_wanted_supply_trucks
+		value = 200
+	}
+}

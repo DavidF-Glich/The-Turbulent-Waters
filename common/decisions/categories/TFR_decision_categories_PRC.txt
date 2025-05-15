@@ -1,0 +1,132 @@
+PRC_coronavirus_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    picture = PRC_covid_19_cat
+    visible_when_empty = yes
+    priority = 5
+
+    allowed = {
+    	original_tag = PRC
+    }
+
+    visible = {
+        NOT = { 
+            has_idea = PRC_coronavirus_pandemic_idea1
+            has_idea = PRC_coronavirus_pandemic_idea2
+            has_idea = PRC_coronavirus_pandemic_idea3
+        }
+    }
+}
+PRC_coronavirus_pandemic_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    picture = PRC_covid_19_cat
+    priority = 4
+
+    allowed = {
+    	original_tag = PRC
+    }
+
+    visible = {
+        has_completed_focus = PRC_TV_Address
+        has_country_flag = Pandemic_Hit_China
+    }
+}
+PRC_Taiwan_Unification_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    priority = 5
+    allowed = {
+        OR = {
+        original_tag = PRC
+        tag = CHI
+        tag = USA
+        tag = SOV
+        tag = JAP
+        }
+    }
+    visible = {
+        has_global_flag = PRC_Taiwan_Reunion
+    }
+    visible_when_empty = yes
+
+}
+PRC_Food_Reform_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    priority = 1
+    allowed = {
+        tag = PRC
+    }
+    visible = {
+        has_country_flag = PRC_Food_Reforming
+    }
+    
+}
+PRC_Political_Opinion_category = {
+    icon = GFX_decision_category_PRC_internal_factions_icon
+    priority = 3
+    allowed = {
+        tag = PRC
+    }
+    visible = {
+        has_country_flag = PRC_internal_factions_enabled_flag
+    }
+    visible_when_empty = yes
+}
+PRC_Fourteenth_Five_Week_Plan_category = {
+	icon = GFX_decision_industrial_expansion
+    priority = 2
+	allowed = {
+		original_tag = PRC
+	}
+	visible = {
+		has_country_flag = PRC_14th_Five_Year
+	}
+    visible_when_empty = yes
+}
+PRC_enviromental_policy_category = {
+    icon = GFX_decision_PRC_chinese_enviroment_cat
+    picture = GFX_decision_cat_PRC_enviroment
+    visible_when_empty = yes
+    
+    allowed = {
+    	tag = PRC
+    }	
+    visible = {
+    	NOT = {
+            has_country_flag = PRC_environmental_reform_success
+        }
+        has_completed_focus = PRC_Carbon_Neutral
+    }
+    priority = 3
+}
+arunachal_war_decisions_category = { # 藏南地区边境冲突
+	icon = GFX_decision_generic_china
+	# picture = GFX_decision_indian_conflict
+	priority = 1
+
+	allowed = {
+		OR = {
+			# original_tag = RAJ
+			original_tag = PRC
+		}
+	}
+
+	visible = {
+        country_exists = PRC
+        434 = {
+            is_claimed_by = PRC
+            is_controlled_by = RAJ
+        }
+		NOT = {
+			OR = {
+				PRC = { is_subject_of = RAJ }
+				RAJ = { is_subject_of = PRC }
+				RAJ = { is_in_faction_with = PRC }
+			}
+		}
+	}
+}
+PRC_Xi_Jinping_Sweet_cat = {
+    allowed = {
+        tag = PRC
+    }
+
+}

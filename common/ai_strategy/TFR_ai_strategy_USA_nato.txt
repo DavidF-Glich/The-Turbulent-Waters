@@ -1,0 +1,124 @@
+seek_NATO_membership = {
+	
+	enable = {
+	
+		NOT = { tag = USA }
+		USA = { is_in_faction = yes }
+		
+		OR = {		#These countries should always desire membership
+			tag = BEL
+			tag = CAN
+			tag = DEN
+			tag = FRA
+			tag = ICE
+			tag = ITA
+			tag = LUX
+			tag = HOL
+			tag = NOR
+			tag = POR
+			tag = ENG
+			tag = GRE
+			tag = TUR
+			tag = GER
+			tag = SPR
+			tag = CZE
+			tag = HUN
+			tag = POL
+			tag = BUL
+			tag = EST
+			tag = LAT
+			tag = LIT
+			tag = ROM
+			tag = SLO
+			tag = SLV
+			tag = CRO
+			tag = ALB
+			
+			has_country_flag = has_joined_NATO_by_event
+		}
+		
+		NOT = { has_country_flag = left_NATO }
+		
+		#Also consider: Kosovo and Georgia
+		
+		
+	}
+	
+	abort = {
+		OR = {
+			has_war_with = USA
+			USA = { is_in_faction = no }
+			has_country_flag = left_NATO
+			USA = { exists = no }
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = 125
+	}
+}
+
+dont_fight_for_taiwan = {
+	
+	enable = {
+		NOT = { tag = USA }
+		USA = { is_in_faction = yes }
+		
+		OR = {		#These countries should always desire membership
+			tag = BEL
+			tag = CAN
+			tag = DEN
+			tag = FRA
+			tag = ICE
+			tag = ITA
+			tag = LUX
+			tag = HOL
+			tag = NOR
+			tag = POR
+			tag = ENG
+			tag = GRE
+			tag = TUR
+			tag = GER
+			tag = SPR
+			tag = CZE
+			tag = HUN
+			tag = POL
+			tag = BUL
+			tag = EST
+			tag = LAT
+			tag = LIT
+			tag = ROM
+			tag = SLO
+			tag = SLV
+			tag = CRO
+			tag = ALB
+			
+			has_country_flag = has_joined_NATO_by_event
+		}
+		
+		NOT = { has_country_flag = left_NATO }
+		PRC = {
+			has_war_with = CHI
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = PRC
+		value = 1000
+	}
+	ai_strategy = {
+		type = diplo_action_acceptance
+		id = USA
+		value = 1000
+		target = join_allies
+	}
+
+}

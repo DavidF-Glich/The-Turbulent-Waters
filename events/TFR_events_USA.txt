@@ -1,0 +1,1485 @@
+add_namespace = USA
+#国家介绍
+country_event = {
+    id = usa.1
+	title = usa.1.t
+	desc = usa.1.d
+	picture = GFX_report_USA_flag
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+    option = {
+		name = usa.1.a
+		country_event = {
+			id = usa.2
+		}
+	}
+}
+country_event = {
+    id = usa.2
+	title = usa.2.t
+	desc = usa.2.d
+	picture = GFX_USA_current_situation
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+    option = {
+		name = usa.2.a
+	}
+}
+#工具事件：国策未完成
+country_event = {
+	id = usa.0
+	title = usa.0.t
+	desc = usa.0.d
+	picture = GFX_social_credit
+	is_triggered_only = yes
+	option = {
+		name = usa.0.a
+	}
+}
+#新冠远征
+country_event = {
+	id = usa.3
+	title = usa.3.t
+	desc = usa.3.d
+	picture = GFX_report_first_us_covidcase
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.3 immediate"
+			add_stability = -0.1
+			if = {
+				limit = {
+					has_country_flag = USA_sided_with_trump_flag
+				}
+				add_political_power = -15
+			}
+			add_ideas = lower_covid_cases
+			remove_ideas = USA_on_the_up
+			activate_mission = USA_mask_update_mission
+			swap_ideas = {
+				remove_idea = USA_the_trump_economy_idea
+				add_idea = USA_locked_down_economy_idea
+			}
+			set_temp_variable = {
+				var = mask_daily_gain_var
+				value = 2000
+			}
+			add_mask_daily_gain = yes
+			set_variable = {
+				var = mask_supply_var
+				value = 50000
+			}
+			set_country_flag = USA_coronavirus_strikes
+			add_to_variable = {
+				var = USA_covid_states_var
+				value = 1
+			}
+			every_controlled_state = {
+				limit = {
+					has_state_flag = USA_oregon_state
+				}
+				USA_coronavirus_outbreak_in_state_effect = yes
+			}
+			USA_coronavirus_outbreak_effect = yes
+		}
+	}
+	option = {
+		name = usa.3.a
+		trigger = {
+			USA_sided_with_trump_trigger = yes
+		}
+		effect_tooltip = {
+			add_political_power = -15
+			add_stability = -0.1
+			add_ideas = lower_covid_cases
+			remove_ideas = USA_on_the_up
+			swap_ideas = {
+				remove_idea = USA_the_trump_economy_idea
+				add_idea = USA_locked_down_economy_idea
+			}
+			activate_mission = USA_coronavirus_outbreak_in_state_mission
+			activate_mission = USA_mask_update_mission
+			every_state = {
+				limit = {
+					has_state_flag = USA_oregon_state
+				}
+				add_dynamic_modifier = {
+					modifier = USA_coronavirus_state
+				}
+				set_state_flag = USA_coronavirus_affected_state
+			}
+		}
+	}
+	option = {
+		name = usa.3.b
+		trigger = {
+			USA_sided_with_resistance_trigger = yes
+		}
+		effect_tooltip = {
+			add_political_power = -15
+			add_stability = -0.1
+			add_ideas = lower_covid_cases
+			remove_ideas = USA_on_the_up
+			swap_ideas = {
+				remove_idea = USA_the_trump_economy_idea
+				add_idea = USA_locked_down_economy_idea
+			}
+			activate_mission = USA_coronavirus_outbreak_in_state_mission
+			activate_mission = USA_mask_update_mission
+			every_state = {
+				limit = {
+					has_state_flag = USA_oregon_state
+				}
+				add_dynamic_modifier = {
+					modifier = USA_coronavirus_state
+				}
+				set_state_flag = USA_coronavirus_affected_state
+			}
+		}
+	}
+}
+
+#美国非历史路线选择
+country_event = {
+	id = usa.4
+	title = usa.4.t
+	desc = usa.4.d
+	picture = GFX_America_NGO
+	is_triggered_only = yes
+	option = {
+		name = usa.4.a
+		custom_effect_tooltip = USA_APLA_tt
+		set_country_flag = USA_Go_APLA
+		
+	}
+	option = {
+		name = usa.4.b
+		custom_effect_tooltip = USA_MAGA_Communism_tt
+		set_country_flag = USA_MAGA_Communism
+		
+	}
+	option = {
+		name = usa.4.c
+		custom_effect_tooltip = USA_Patriotic_Front_tt
+		set_country_flag = USA_Patriotic_Front
+	}
+}
+#宪政危机
+country_event = {
+	id = usa.5
+	title = usa.5.t
+	desc = usa.5.d
+	picture = GFX_Anarchist_Revolt
+	is_triggered_only = yes
+	option = {
+		name = usa.5.a
+		custom_effect_tooltip = USA_Crisis1
+		add_stability = -0.2
+		add_war_support = 0.1
+	}
+}
+
+#重新开始
+country_event = {
+	id = usa.6
+	title = usa.6.t
+	desc = usa.6.d
+	picture = GFX_US_senate
+	is_triggered_only = yes
+	option = {
+		name = usa.6.a
+		create_country_leader = {
+			name = USA_micheal_flynn_char
+			picture = "gfx/leaders/USA/USA_michael_flynn.png"
+			ideology = military_democracy
+		}
+		set_politics = {
+			ruling_party = authoritarian_democrat
+			elections_allowed = no
+			last_election = "2020.11.5"
+			election_frequency = 48
+			}
+		set_party_name = {
+			ideology = authoritarian_democrat
+			long_name = USA_Army_Transition
+			name = USA_Army_Transition_short
+		}
+			load_focus_tree = USA_Provisional_Gov
+	}
+}
+#弗洛伊德之死
+country_event = {
+	id = usa.8
+	title = usa.8.t
+	desc = usa.8.d
+	picture = GFX_George_Floyd_Murdered
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_political_power = -20
+			add_stability = -0.1
+			add_war_support = -0.1
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.02
+			}
+			country_event = { 
+				id = usa.9
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = usa.8.a
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		set_variable = {
+			USA_Riot_Danger = 0.4
+		}
+	}
+	option = {
+		name = usa.8.b
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		set_variable = {
+			USA_Riot_Danger = 0.4
+		}
+	}
+	option = {
+		name = usa.8.c
+		trigger = {
+			has_completed_focus = USA_Out_of_System
+		}
+	}
+}
+#黑命贵
+country_event = {
+	id = usa.9
+	title = usa.9.t
+	desc = usa.9.d
+	picture = GFX_BLM
+	is_triggered_only = yes
+	immediate = {
+		set_country_flag = USA_2020_Riot
+		hidden_effect = {
+			add_ideas = USA_BLM_campaign_idea
+		}
+	}
+	option = {
+		name = usa.9.a
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		news_event = news.6
+	}
+	option = {
+		name = usa.9.b
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		news_event = news.6
+	}
+	option = {
+		name = usa.9.c
+		trigger = {
+			has_country_flag = USA_Patriotic_Front
+		}
+		news_event = news.6
+	}
+	option = {
+		name = usa.9.e
+		trigger = {
+			OR = {
+				has_country_flag = USA_MAGA_Communism
+				has_country_flag = USA_Go_APLA
+			}
+		}
+		news_event = news.6
+	}
+
+}
+#佩洛西窜台事件链
+ #佩洛西修改访日计划
+ country_event = {
+	id = usa.10
+	title = usa.10.t
+	desc = usa.10.d
+	is_triggered_only = yes
+	trigger = {
+		date = 2022.4.10
+		has_government = social_liberal
+	}
+	option = {
+		name = usa.10.a
+		hidden_effect = {
+			country_event = {
+				id = usa.11
+				days = 80
+			}
+			set_global_flag =Taiwan_Crisis
+			activate_mission = Pelosi_Coming_mission
+		}
+		PRC = {
+			country_event = china.28
+		}
+		CHI = {
+			country_event = china.28
+		}
+		custom_effect_tooltip = 2022_Taiwan_Crisis_tt3
+		set_temp_variable = { conflict_id = token:TaiwanCrisis2022 }
+		TTW_add_fopo_conflict_tab = yes
+	}
+ }
+ #确定访台
+ country_event = {
+	id = usa.11
+	title = usa.11.t
+	desc = usa.11.d
+	is_triggered_only = yes
+	option = {
+		name = usa.11.a
+		add_threat = 5
+		custom_effect_tooltip = 2022_midnight_coming
+	}
+ }
+ #佩洛西放弃（拜登站队）
+ country_event = {
+	id = usa.12
+	title = usa.12.t
+	desc = usa.12.d
+	is_triggered_only = yes
+	option = {
+		name = usa.12.a
+		add_threat = -4
+		hidden_effect = {
+			news_event = news.9
+		}
+		clr_global_flag = Taiwan_Crisis
+	}
+ }
+  #佩洛西飞机失事！
+  country_event = {
+	id = usa.13
+	title = usa.13.t
+	desc = usa.13.d
+	is_triggered_only = yes
+	option = {
+		name = usa.13.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = Pelosi_Taiwan_ai_behavior
+					option = PRC_TAIWAN_WAR
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = usa.13.b
+		custom_effect_tooltip = 2022_Taiwan_Crisis_Esculate
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_game_rule = {
+					rule = Pelosi_Taiwan_ai_behavior
+					option = PRC_TAIWAN_WAR
+				}
+				add = 1
+			}
+		}
+		add_named_threat = {
+			threat = 2
+			name = Fuck_PRC
+		}
+		clr_global_flag = Taiwan_Crisis
+		set_global_flag = Taiwan_War
+		FRA = {
+			set_faction_leader = yes
+		}
+		leave_faction = yes
+		create_faction = Anti_PRC_faction
+		add_to_faction = CHI
+		declare_war_on = {
+			target = PRC
+			type = liberate_wargoal
+		}
+		add_to_war = {
+			targeted_alliance = CHI
+			enemy = PRC
+		}
+		AST = {
+			country_event = taiwan_war.1
+		}
+		JAP = {
+			country_event = taiwan_war.1
+		}
+		PHI = {
+			country_event = taiwan_war.1
+		}
+
+	}
+ }
+
+ #佩洛西放弃（台湾取消预约）
+ country_event = {
+	id = usa.15
+	title = usa.15.t
+	desc = usa.15.d
+	is_triggered_only = yes
+	option = {
+		name = usa.15.a
+		add_threat = -4
+		hidden_effect = {
+			news_event = news.9
+		}
+		clr_global_flag = Taiwan_Crisis
+	}
+  }
+ #炸弹没有伤到佩洛西——当然是有意为之
+ country_event = {
+	id = usa.16
+	title = usa.16.t
+	desc = usa.16.d
+	is_triggered_only = yes
+	option = {
+		name = usa.16.a
+		ai_chance = {
+			base = 1
+			modifier = {
+				has_game_rule = {
+					rule = Pelosi_Taiwan_ai_behavior
+					option = PRC_TAIWAN_WAR
+				}
+				factor = 0
+			}
+		}
+	}
+	option = {
+		name = usa.16.b
+		ai_chance = {
+			base = 0
+			modifier = {
+				has_game_rule = {
+					rule = Pelosi_Taiwan_ai_behavior
+					option = PRC_TAIWAN_WAR
+				}
+				add = 1
+			}
+		}
+		add_threat = 2
+		custom_effect_tooltip = 2022_Taiwan_Crisis_Esculate
+	}
+ }
+ #佩洛西下机——情况报告
+ 
+#疫情恶化
+country_event = {
+	id = usa.17
+	title = usa.17.t
+	desc = usa.17.d
+	picture = GFX_Covid-19_Cases_Increase
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.17 immediate"
+		}
+	}
+	option = {
+		name = usa.17.a
+		trigger = {
+			USA_sided_with_trump_trigger = yes
+		}
+		effect_tooltip = {
+		}
+	}
+	option = {
+		name = usa.17.b
+		trigger = {
+			USA_sided_with_resistance_trigger = yes
+		}
+	}
+}
+#拜登离任前的最后一次回答
+country_event = {
+	id = usa.18
+	title = usa.18.t
+	desc = usa.18.d
+	is_triggered_only = yes
+	picture = GFX_2025_Biden_Leave_Press
+	option = {
+		name = usa.18.a
+	}
+}
+#大选准备
+country_event = {
+	id = usa.19
+	title = usa.19.t
+	desc = usa.19.d
+	picture = GFX_USA_elections_near
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.19 immediate"
+			add_political_power = 5
+			country_event = {
+				id = usa.20
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = usa.19.a
+		trigger = {
+			USA_sided_with_trump_trigger = yes
+		}
+		effect_tooltip = {
+			add_political_power = 5
+		}
+	}
+	option = {
+		name = usa.19.b
+		trigger = {
+			USA_sided_with_resistance_trigger = yes
+		}
+		effect_tooltip = {
+			add_political_power = 5
+		}
+	}
+}
+
+#2020 Elections - Delays
+country_event = {
+	id = usa.20
+	title = usa.20.t
+	desc = usa.20.d
+	picture = GFX_election_delay
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+		has_elections = yes
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.20 immediate"
+			add_stability = -0.05
+			activate_mission = USA_countdown_day_mission
+			country_event = {
+				id = usa.21
+				days = 2
+			}
+		}
+	}
+	option = {
+		name = usa.20.a
+		trigger = {
+			USA_sided_with_trump_trigger = yes
+		}
+		effect_tooltip = {
+			add_stability = -0.05
+			activate_mission = USA_countdown_day_mission
+		}
+	}
+	option = {
+		name = usa.20.b
+		trigger = {
+			USA_sided_with_resistance_trigger = yes
+		}
+		effect_tooltip = {
+			add_stability = -0.05
+			activate_mission = USA_countdown_day_mission
+		}
+	}
+	option = {
+		name = usa.20.c
+		trigger = {
+			has_completed_focus = USA_Out_of_System
+		}
+		add_stability = -0.03
+		add_popularity = {
+			ideology = market_liberal
+			popularity = -0.04
+		}
+		add_popularity = {
+			ideology = conservative
+			popularity = -0.05
+		}
+	}
+}
+
+#2020大选——操纵选票
+country_event = {
+	id = usa.21
+	title = usa.21.t
+	desc = usa.21.d
+	picture = GFX_election_meddling
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.21 immediate"
+			add_stability = -0.025
+			country_event = {
+				id = usa.22
+				days = 14
+			}
+			set_country_flag = USA_Chaotic_Election
+		}
+	}
+	option = {
+		name = usa.21.a
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		effect_tooltip = {
+			add_stability = -0.025
+		}
+	}
+	option = {
+		name = usa.21.b
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		effect_tooltip = {
+			add_stability = -0.025
+		}
+	}
+	option = {
+		name = usa.21.c
+		trigger = {
+			has_completed_focus = USA_Out_of_System
+		}
+		add_stability = -0.03
+		add_popularity = {
+			ideology = communist
+			popularity = 0.02
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.015
+		}
+	}
+}
+
+#2020 大选-拜登的媒体攻势
+country_event = {
+	id = usa.22
+	title = usa.22.t
+	desc = usa.22.d
+	picture = GFX_media_calls_joe
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.22 immediate"
+			if = {
+				limit = {
+					has_country_flag = USA_sided_with_trump_flag
+				}
+				add_political_power = -15
+				add_popularity = {
+					ideology = social_liberal
+					popularity = 0.01
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = USA_sided_with_resistance_flag
+				}
+				add_political_power = 10
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.01
+			}
+			country_event = {
+				id = usa.23
+				days = 6
+			}
+		}
+	}
+	option = {
+		name = usa.22.a
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		effect_tooltip = {
+			add_political_power = -10
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.01
+			}
+		}
+	}
+	option = {
+		name = usa.22.b
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		effect_tooltip = {
+			add_political_power = 10
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.01
+			}
+		}
+	}
+	option = {
+		name = usa.22.c
+		trigger = {
+			has_completed_focus = USA_Out_of_System
+		}
+		add_political_power = 10
+	}
+}
+
+#2020大选——特朗普的集会
+country_event = {
+	id = usa.23
+	title = usa.23.t
+	desc = usa.23.d
+	picture = GFX_trump_holds_ralley_election
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.23 immediate"
+			add_political_power = 25
+			country_event = {
+				id = usa.24
+				days = 14
+			}
+		}
+	}
+	option = {
+		name = usa.23.b
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		effect_tooltip = {
+			add_political_power = 25
+		}
+	}
+	option = {
+		name = usa.23.a
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		effect_tooltip = {
+			add_political_power = 25
+		}
+	}
+	option = {
+		name = usa.23.c
+		trigger = {
+			has_completed_focus = USA_Out_of_System
+		}
+		add_political_power = 10
+	}
+
+}
+
+#2020大选——德州的诉讼
+country_event = {
+	id = usa.24
+	title = usa.24.t
+	desc = usa.24.d
+	picture = GFX_texan_case_thrown
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.24 immediate"
+			add_political_power = -50
+			add_stability = -0.05
+		}
+	}
+	option = {
+		name = usa.24.a
+		trigger = {
+			USA_sided_with_trump_trigger = yes
+		}
+		effect_tooltip = {
+			add_political_power = -10
+		}
+	}
+	option = {
+		name = usa.24.b
+		trigger = {
+			USA_sided_with_resistance_trigger = yes
+		}
+		effect_tooltip = {
+			add_political_power = -10
+		}
+	}
+	option = {
+		name = usa.24.c
+		trigger = {
+			has_completed_focus = USA_Out_of_System
+		}
+		add_political_power = 50
+		add_stability = -0.02
+	}
+
+}
+#美塔和解
+country_event = {
+	id = usa.25
+	title = usa.25.t
+	desc = usa.25.d
+	picture = GFX_US_taliban_deal
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+		AFG = {
+			exists = yes
+		}
+		TAL = {
+			exists = yes
+		}
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.25 immediate"
+			AFG = {
+				white_peace = TAL
+			}
+			news_event = {
+				id = news.4
+				hours = 6
+			}
+			add_war_support = 0.01
+		}
+	}
+	option = {
+		name = usa.25.a
+		effect_tooltip = {
+			add_war_support = 0.01
+		}
+	}
+}
+
+#美国治愈
+country_event = {
+	id = usa.26
+	title = usa.26.t
+	desc = usa.26.d
+	picture = GFX_report_USA_flag
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.26 immediate"
+			set_country_flag = USA_coronavirus_eliminated
+			clr_country_flag = USA_coronavirus_strikes
+			add_stability = 0.25
+			set_variable = {
+				var = mask_weekly_gain
+				value = 0
+			}
+			remove_ideas = lower_covid_cases
+			remove_ideas = low_covid_cases
+			remove_ideas = medium_covid_cases
+			remove_ideas = high_covid_cases
+			remove_ideas = higher_covid_cases
+			add_ideas = USA_fear_for_corona_idea
+		}
+	}
+	option = {
+		name = usa.26.a
+		effect_tooltip = {
+			add_stability = 0.25
+		}
+		custom_effect_tooltip = USA_america_has_healed_tooltip
+	}
+}
+
+#拜登2020胜选
+country_event = {
+	id = usa.27
+	title = usa.27.t
+	desc = usa.27.d
+	picture = GFX_USA_biden_certified_president
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.27 immediate"
+		}
+	}
+	option = {
+		name = usa.27.a
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		custom_effect_tooltip = point_of_no_return
+		country_event = {
+			id = usa.28
+			days = 14
+		}
+	}
+	option = {
+		name = usa.27.b
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		custom_effect_tooltip = point_of_no_return
+		country_event = {
+			id = usa.28
+			days = 14
+		}
+	}
+}
+#拜登就任总统（2020）
+country_event = {
+	id = usa.28
+	title = usa.28.t
+	desc = usa.28.d
+	picture = GFX_report_trumpvictory_inauguration_bidenPOV
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.4 immediate"
+			swap_ideas = {
+				remove_idea = USA_political_division
+				add_idea = USA_political_division1
+			}
+			add_ideas = {
+				USB_kamala_harris_hog
+				USB_antony_blinken_for
+				USB_janet_yellen_eco
+				USB_deb_haaland_sec
+				USB_avril_haines_int
+			}
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 48
+			}
+			add_stability = -0.1
+			set_country_flag = USA_biden_2020_inauguration_flag
+			focus_unlock = yes
+			hidden_effect = {
+				load_focus_tree = {
+					tree = USA_Biden2020
+					keep_completed = yes
+				}
+				complete_national_focus = USA_Biden_Administation2020
+			}
+			clr_country_flag = USA_sided_with_resistance_flag
+			clr_country_flag = USA_sided_with_trump_flag
+		}
+	}
+	option = {
+		name = usa.28.a
+		trigger = {
+			USA_sided_with_trump_trigger = yes
+		}
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 48
+			}
+			swap_ideas = {
+				remove_idea = USA_political_division
+				add_idea = USA_political_division1
+			}
+			
+		}
+		hidden_effect = {
+			news_event = news.7
+		}
+	}
+	option = {
+		name = usa.28.b
+		trigger = {
+			USA_sided_with_resistance_trigger = yes
+		}
+		effect_tooltip = {
+			custom_effect_tooltip = USA_counting_heads_tooltip
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 48
+			}
+			swap_ideas = {
+				remove_idea = USA_political_division
+				add_idea = USA_political_division1
+			}
+			focus_unlock = yes
+			
+		}
+
+		hidden_effect = {
+			news_event = news.7
+		}
+	}
+}
+#国情咨文（2020）
+country_event = {
+	id = usa.29
+	title = usa.29.t
+	desc = usa.29.d
+	picture = GFX_report_USA_donald_trump
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.29 immediate"
+			add_stability = 0.05
+			add_ideas = USA_on_the_up
+			activate_mission = USA_opposistion_action_mission
+		}
+	}
+	option = {
+		name = usa.29.a
+		custom_effect_tooltip = USA_side_with_trump_tooltip
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_BIDEN_CHOSEN_AND_WINS
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_BIDEN_CHOSEN_AND_LOSES
+					}
+				}
+			}
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_TRUMP_CHOSEN_AND_WINS
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_TRUMP_CHOSEN_AND_LOSES
+					}
+				}
+			}
+		}
+		complete_national_focus = USA_Side_with_Trump
+		effect_tooltip = {
+			add_stability = 0.05
+			add_ideas = USA_on_the_up
+			activate_mission = USA_opposistion_action_mission
+		}
+	}
+	option = {
+		name = usa.29.b
+		custom_effect_tooltip = USA_side_with_resistance_tooltip
+		ai_chance = {
+			base = 1
+			modifier = {
+				factor = 100
+				OR = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_BIDEN_CHOSEN_AND_WINS
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_BIDEN_CHOSEN_AND_LOSES
+					}
+				}
+			}
+			modifier = {
+				factor = 0
+				OR = {
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_TRUMP_CHOSEN_AND_WINS
+					}
+					has_game_rule = {
+						rule = USA_ai_behavior
+						option = USA_TRUMP_CHOSEN_AND_LOSES
+					}
+				}
+			}
+		}
+		complete_national_focus = USA_Bring_Common_Back
+		effect_tooltip = {
+			add_stability = 0.05
+			add_ideas = USA_on_the_up
+			activate_mission = USA_opposistion_action_mission
+		}
+	}
+}
+#2024总统选举计划——支持谁？
+country_event = {
+	id = usa.30
+	title = usa.30.t
+	desc = usa.30.d
+	is_triggered_only = yes
+	picture = GFX_USB_biden_silence
+	option = {
+		name = usa.30.a
+		set_country_flag = USA_sided_with_resistance_flag
+	}
+	option = {
+		name = usa.30.b
+		set_country_flag = USA_sided_with_trump_flag
+	}
+}
+#特朗普2020胜选
+country_event = {
+	id = usa.31
+	title = usa.31.t
+	desc = usa.31.d
+	picture = GFX_report_trump_certified
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.31 immediate"
+		}
+	}
+	option = {
+		name = usa.31.a
+		trigger = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		custom_effect_tooltip = point_of_no_return
+		country_event = {
+			id = usa.32
+			days = 14
+		}
+
+	}
+	option = {
+		name = usa.31.b
+		trigger = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		custom_effect_tooltip = point_of_no_return
+		country_event = {
+			id = usa.32
+			days = 14
+		}
+
+	}
+}
+#特朗普就任总统（2020）
+country_event = {
+	id = usa.32
+	title = usa.32.t
+	desc = usa.32.d
+	picture = GFX_report_trumpvictory_inauguration_trumpPOV
+	fire_only_once = yes
+	is_triggered_only = yes
+	trigger = {
+		tag = USA
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.32 immediate"
+			swap_ideas = {
+				remove_idea = USA_political_division
+				add_idea = USA_political_division1
+			}
+			add_stability = -0.1
+			set_country_flag = USA_trump_2020_inauguration_flag
+			focus_unlock = yes
+			clr_country_flag = USA_sided_with_resistance_flag
+			clr_country_flag = USA_sided_with_trump_flag
+		}
+	}
+	option = {
+		name = usa.32.a
+		effect_tooltip = {
+			custom_effect_tooltip = USA_counting_heads_tooltip
+			swap_ideas = {
+				remove_idea = USA_political_division
+				add_idea = USA_political_division1
+			}
+			add_stability = -0.1
+			focus_unlock = yes
+		}
+		custom_effect_tooltip = point_of_no_return
+		hidden_effect = {
+			news_event = news.8
+		}
+	}
+}
+#特朗普就任总统（2024）
+country_event = {
+	id = usa.33
+	title = usa.33.t
+	desc = usa.33.d
+	picture = GFX_USC_flynn_trump
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		set_country_flag = DOGE_Reforming
+		set_politics = {
+			ruling_party = conservative
+			elections_allowed = yes
+			election_frequency = 48
+			last_election = "2024.11.5"
+		}
+		set_country_leader_portrait = {
+			portrait = GFX_portrait_USA_donald_trump3
+			ideology = conservative
+		}
+		add_ideas = USC_jd_vance_hog
+		hidden_effect = {
+			swap_ideas = {
+				remove_idea = USA_AID_Hidden
+				add_idea = USA_AID_idea
+			}
+			swap_ideas = {
+				remove_idea = USA_Manba_Out_Hidden
+				add_idea = USA_Manba_Out_idea
+			}
+		}
+		set_variable = {
+			DOGE_authority = 0.4
+		}
+	}
+	option = {
+		name = usa.33.a
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = USA_AID_Hidden
+				add_idea = USA_AID_idea
+			}
+			swap_ideas = {
+				remove_idea = USA_Manba_Out_Hidden
+				add_idea = USA_Manba_Out_idea
+			}
+			unlock_decision_category_tooltip = USA_DOGE_cat
+		}
+	}
+	option = {
+		name = usa.33.b
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = USA_AID_Hidden
+				add_idea = USA_AID_idea
+			}
+			swap_ideas = {
+				remove_idea = USA_Manba_Out_Hidden
+				add_idea = USA_Manba_Out_idea
+			}
+			unlock_decision_category_tooltip = USA_DOGE_cat
+		}
+	}
+}
+#淌入肾水
+country_event = {
+	id = usa.34
+	title = usa.34.t
+	desc = usa.34.d
+	is_triggered_only = yes
+	picture = GFX_USB_speech_1
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.34 immediate"
+		}
+	}
+	option = {
+		name = usa.34.a
+		unlock_decision_category_tooltip = USA_Biden_Disease_cat
+		activate_mission = USB_biden_health_timer_mission
+		custom_effect_tooltip = USB_biden_speech_warning_tt
+	}
+
+}
+country_event = {
+	#Should Biden Retire?
+	id = usa.35
+	title = usa.35.t
+	desc = usa.35.d
+	picture = GFX_USB_caligula_3
+	is_triggered_only = yes
+	trigger = {
+		tag = USB
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event bdnspch.119 immediate"
+		}
+	}
+	option = {
+		#No
+		name = usa.35.a
+	}
+	option = {
+		#Yes
+		name = usa.35.b
+		country_event = {
+			id = usa.36
+			days = 3
+		}
+	}
+}
+country_event = {
+	#Biden Resigns
+	id = usa.36
+	title = usa.36.t
+	desc = usa.36.d
+	picture = GFX_USB_speech_14
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = USB
+	}
+	immediate = {
+	}
+	option = {
+		name = usa.36.a
+		retire_country_leader = yes
+		add_ideas = USB_tim_walz_hog
+		clr_country_flag = USB_biden_stays_2024
+		set_country_flag = USB_resigned_biden_flag
+		#set_country_flag = USB_harris_dem_2024_flag
+		country_event = {
+			#Primaries
+			id = usa.37
+			days = 14
+		}
+		hidden_effect = {
+			add_country_leader_trait = USB_biden_1_off
+			add_country_leader_trait = USB_biden_2_off
+			add_country_leader_trait = USB_biden_3_off
+		}
+	}
+}
+country_event = {
+	#Biden retires, who now? / Democratic Party Primaries
+	id = usa.37
+	title = usa.37.t
+	desc = usa.37.d
+	picture = GFX_USB_biden_retires
+	is_triggered_only = yes
+	trigger = {
+		tag = USB
+	}
+	immediate = {
+	}
+	option = {
+		#Harris
+		name = usa.37.c
+		trigger = {
+			OR = {
+				has_country_leader = {
+					character = USB_kamala_harris_char
+					ruling_only = yes
+				}
+				has_idea = USB_kamala_harris_hog
+			}
+		}
+		set_country_flag = USB_harris_dem_2024_flag
+		custom_effect_tooltip = USB_harris_banner_ti
+	}
+	option = {
+		#Kennedy
+		name = usa.37.e
+		trigger = {
+			USC = {
+				exists = no
+			}
+		}
+		set_country_flag = USB_kennedy_dem_2024_flag
+		add_popularity = {
+			ideology = market_liberal
+			popularity = 0.05
+		}
+		custom_effect_tooltip = USB_kennedy_banner_ti
+		hidden_effect = {
+			country_event = {
+				id = usa.38
+				days = 10
+			}
+		}
+	}
+	option = {
+		#Dem Bernie Sanders
+		name = usa.37.h
+		trigger = {
+			NOT = {
+				has_country_flag = USB_progressive_party_flag
+			}
+		}
+		set_country_flag = USB_sanders_dem_2024_flag
+	}
+}
+country_event = {
+	id = usa.38
+	title = usa.38.t
+	desc = usa.38.desc
+	picture = GFX_USB_USB_im_a_kennedy_democrat
+	is_triggered_only = yes
+	trigger = {
+		tag = USB
+	}
+	immediate = {
+		hidden_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.38 immediate"
+		}
+	}
+	option = {
+		name = usa.38.a
+		custom_effect_tooltip = tooltip_white_line
+		custom_effect_tooltip = unlock_eco_minister_tooltip
+	}
+}

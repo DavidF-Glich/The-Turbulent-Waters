@@ -1,0 +1,68 @@
+	ideas = {
+		country = {
+			SPR_catalonian_separatism_idea = {
+				picture = SPR_catalonian_seperatists
+			
+				allowed = { 
+					tag = SPR
+				}
+				
+				modifier = {
+					political_power_gain = -0.25
+					conscription_factor = -0.1
+				}
+			}
+			
+			SPR_basque_nationalism_idea = {
+				picture = SPR_basque_nationalism
+			
+				allowed = { 
+					tag = SPR
+				}
+				
+				modifier = {
+					conscription_factor = -0.1
+					stability_weekly = -0.001
+				}
+			}
+			
+			SPR_the_ghost_of_franco_idea = {
+				picture = SPR_ghost_of_franco
+			
+				allowed = { 
+					tag = SPR
+				}
+				
+				modifier = {
+					stability_factor = -0.1
+				}
+			}
+			
+			SPR_plus_ultra = {
+				picture = SPR_ghost_of_franco
+			
+				allowed = { 
+					tag = SPR
+				}
+				
+				modifier = {
+					conscription_factor = 0.1
+					army_org = 5
+					land_reinforce_rate = 0.05
+					training_time_factor = -0.1
+				}
+			}
+			GOD_Military_Catholic_ISIS = {
+				picture = SPR_ghost_of_franco
+			
+				allowed = { 
+					tag = SPR
+				}
+				
+				modifier = {
+					army_attack_factor = 0.10
+					breakthrough_factor = 0.15
+				}
+			}
+		}
+	}

@@ -1,0 +1,471 @@
+defined_text = {
+	name = Nuke_Num_Picture
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = nuke_num
+				value = 3
+			}
+		}
+		localization_key = GFX_three_nukes
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = nuke_num
+				value = 2
+			}
+		}
+		localization_key = GFX_two_nukes
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = nuke_num
+				value = 1
+			}
+		}
+		localization_key = GFX_one_nuke
+	}
+	text = {
+		localization_key = GFX_peace_pigeon
+	}
+}
+defined_text = {
+	name = ROOT_Nuclear_Situation_text
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = nuke_num
+				value = 3
+			}
+		}
+		localization_key = Nuclear_Base_Destructive
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = nuke_num
+				value = 2
+			}
+		}
+		localization_key = Nuclear_Base_Critical
+	}
+	text = {
+		trigger = {
+			has_country_flag = {
+				flag = nuke_num
+				value = 1
+			}
+		}
+		localization_key = Nuclear_Base_Self_Defense
+	}
+	text = {
+		localization_key = Nuclear_All_for_Good
+	}
+}
+defined_text = {
+	name = ROOT_Nuclear_Situation_tt
+	text = {
+		trigger = {
+			OR = {
+				has_country_flag = {
+					flag = nuke_num
+					value = 1
+				}	
+				has_country_flag = {
+					flag = nuke_num
+					value = 2
+				}
+				has_country_flag = {
+					flag = nuke_num
+					value = 3
+				}
+			}
+		}
+		localization_key = Nuclear_Base_Destructive_tt
+	}
+	text = {
+		localization_key = Nuclear_All_for_Good_tt
+	}
+}
+defined_text = {
+	name = Nuke_Legitimacy_Picture
+	text = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = ENG
+				tag = SOV
+				tag = PRC
+				tag = FRA
+			}
+		}
+		localization_key = GFX_nuclear_legitimacy_UN
+	}
+	text = {
+		trigger = {
+			tag = PRK
+		}
+		localization_key = GFX_nuclear_legitimacy_PRC
+	}
+	text = {
+		trigger = {
+			tag = ISR
+		}
+		localization_key = GFX_nuclear_legitimacy_USA
+	}
+	text = {
+		trigger = {
+			tag = RAJ
+		}
+		localization_key = GFX_nuclear_legitimacy_ENG_USA
+	}
+	text = {
+		trigger = {
+			tag = PAK
+		}
+		localization_key = GFX_nuclear_legitimacy_PRC_USA
+	}
+	text = {
+		localization_key = GFX_nuclear_legitimacy_none
+	}
+}
+defined_text = {
+	name = ROOT_Nuclear_Legitimacy_text
+	text = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = ENG
+				tag = SOV
+				tag = PRC
+				tag = FRA
+			}
+		}
+		localization_key = Legitimacy_text_UN
+	}
+	text = {
+		trigger = {
+			tag = PRK
+		}
+		localization_key = Legitimacy_text_PRC
+	}
+	text = {
+		trigger = {
+			tag = ISR
+		}
+		localization_key = Legitimacy_text_USA
+	}
+	text = {
+		trigger = {
+			tag = RAJ
+		}
+		localization_key = Legitimacy_text_ENG_USA
+	}
+	text = {
+		trigger = {
+			tag = PAK
+		}
+		localization_key = Legitimacy_text_PRC_USA
+	}
+	text = {
+		localization_key = Legitimacy_text_none
+	}
+
+}
+defined_text = {
+	name = nuclear_deploy_capacity
+	text = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = SOV
+				tag = RAJ
+				tag = PRC
+			}
+		}
+		localization_key = nuclear_triad
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = ISR
+				tag = PAK
+				tag = FRA
+			}
+		}
+		localization_key = nuclear_partial_triad
+	}
+	text = {
+		localization_key = nuclear_regional_deployment
+	}
+}
+defined_text = {
+	name = nuclear_deploy_capacity_tt
+	text = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = SOV
+				tag = RAJ
+				tag = PRC
+			}
+		}
+		localization_key = nuclear_triad_tt
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = ISR
+				tag = PAK
+				tag = FRA
+			}
+		}
+		localization_key = nuclear_partial_triad_tt
+	}
+	text = {
+		localization_key = nuclear_regional_deployment_tt
+	}
+}
+defined_text = {
+	name = nuclear_target_location
+	text = {
+		trigger = {
+			OR = {
+				tag = ENG
+				tag = FRA
+			}
+		}
+		localization_key = nuclear_target_location_EU
+	}
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = nuclear_target_location_RUS
+	}
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = nuclear_target_location_USA
+	}
+	text = {
+		trigger = {
+			tag = PAK
+		}
+		localization_key = nuclear_target_location_PAK
+	}
+	text = {
+		trigger = {
+			tag = RAJ
+		}
+		localization_key = nuclear_target_location_IND
+	}
+	text = {
+		trigger = {
+			tag = ISR
+		}
+		localization_key = nuclear_target_location_ISR
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = nuclear_target_location_PRC
+	}
+	text = {
+		trigger = {
+			tag = PRK
+		}
+		localization_key = nuclear_target_location_PRK
+	}
+}
+defined_text = {
+	name = DONT_CUT_NUKES_BRO_tt
+	text = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = SOV
+			}
+		}
+		localization_key = DONT_CUT_NUKES_BRO_tt1
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = ISR
+				tag = PAK
+				tag = FRA
+				tag = RAJ
+				tag = PRC
+				tag = ENG
+			}
+		}
+		localization_key = DONT_CUT_NUKES_BRO_tt2
+	}
+	text = {
+		localization_key = DONT_CUT_NUKES_BRO_tt3
+	}
+}
+defined_text = {
+	name = Cold_War_GUI_Superpower_Amount
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_1^OTL_cold_war_incidents_i = ZZZ } }
+		localization_key = "CWGUIIncidents_All"
+	}
+	text = {
+		localization_key = "CWGUIIncidents"
+	}
+}
+
+defined_text = { #Add more Diplo Incidents Here
+	name = Cold_War_GUI_Past_Incidents
+	text = {
+		trigger = { check_variable = { global.TTW_the_incidents^OTL_cold_war_incidents_i = 0 } }
+		localization_key = "TTW_Cold_War_GUI_Tension_ID_Annual_Decay"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_the_incidents^OTL_cold_war_incidents_i = 1 } }
+		localization_key = "TTW_Cold_War_GUI_Tension_ID_Crimea_Crisis"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_the_incidents^OTL_cold_war_incidents_i = 2 } }
+		localization_key = "TTW_Cold_War_GUI_Tension_ID_Syria_Civil_War"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_the_incidents^OTL_cold_war_incidents_i = 3 } }
+		localization_key = "TTW_Cold_War_GUI_Tension_ID_Taiwan_Crisis_2016"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_the_incidents^OTL_cold_war_incidents_i = 4 } }
+		localization_key = "TTW_Cold_War_GUI_Tension_ID_Sino_US_Trade_War"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_the_incidents^OTL_cold_war_incidents_i = 5 } }
+		localization_key = "TTW_Cold_War_GUI_Tension_ID_US_Exit_IRNFT"
+	}
+
+}
+
+defined_text = {
+	name = Cold_War_GUI_Involved_Superpower_1
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_1^OTL_cold_war_incidents_i = USA } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_USA"
+	}
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_1^OTL_cold_war_incidents_i = PRC } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_PRC"
+	}
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_1^OTL_cold_war_incidents_i = SOV } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_RUS"
+	}
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_1^OTL_cold_war_incidents_i = ZZZ } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_ALL"
+	}
+}
+
+defined_text = {
+	name = Cold_War_GUI_Involved_Superpower_2
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_2^OTL_cold_war_incidents_i = USA } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_USA"
+	}
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_2^OTL_cold_war_incidents_i = PRC } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_PRC"
+	}
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_2^OTL_cold_war_incidents_i = SOV } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_RUS"
+	}
+	text = {
+		trigger = { check_variable = { global.OTL_cold_war_incidents_involved_Superpower_2^OTL_cold_war_incidents_i = ZZZ } }
+		localization_key = "TTW_Cold_War_GUI_Tension_Involved_Superpower_ALL"
+	}
+}
+defined_text = {
+	name = Cold_War_GUI_GetVictoryName
+	text = {
+		localization_key = "TTW_Cold_War_Victory_ID_[?global.TTW_Cold_War_GUI_Victory_Entry_Display^TTW_Cold_War_GUI_Victories_i]"
+	}
+}
+
+defined_text = {
+	name = Cold_War_GUI_GetVictoryOutcome
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 0 } }
+		localization_key = "TTW_Cold_War_Victory_Outcome_Ongoing"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 1 } }
+		localization_key = "TTW_Cold_War_Victory_Outcome_Total_Defeat"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 2 } }
+		localization_key = "TTW_Cold_War_Victory_Outcome_Defeat"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 3 } }
+		localization_key = "TTW_Cold_War_Victory_Outcome_Stalemate"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 4 } }
+		localization_key = "TTW_Cold_War_Victory_Outcome_Victory"
+	}
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 5 } }
+		localization_key = "TTW_Cold_War_Victory_Outcome_Total_Victory"
+	}
+	text = {
+		localization_key = "TTW_Cold_War_Victory_Outcome_Error"
+	}
+}
+
+defined_text = {
+	name = Superpower_GetNameColor
+	text = {
+		trigger = { event_target:global = { tag = USA } }
+		localization_key = "TTW_global_USA"
+	}
+	text = {
+		trigger = { event_target:global = { tag = GER } }
+		localization_key = "TTW_global_GER"
+	}
+	text = {
+		trigger = { event_target:global = { tag = JAP } }
+		localization_key = "TTW_global_JAP"
+	}
+	text = {
+		trigger = { event_target:global = { tag = ITA } }
+		localization_key = "TTW_global_ITA"
+	}
+	text = {
+		trigger = { event_target:global = { tag = RUS } }
+		localization_key = "TTW_global_RUS"
+	}
+	text = {
+		trigger = { event_target:global = { tag = CHI } }
+		localization_key = "TTW_global_CHI"
+	}
+	text = {
+		trigger = { event_target:global = { tag = IND } }
+		localization_key = "TTW_global_IND"
+	}
+}
+
+defined_text = {
+	name = Cold_War_GUI_Superpower_Amount
+	text = {
+		trigger = { check_variable = { global.TTW_Cold_War_GUI_Tension_Incidents_Involved_Superpower_1^TTW_Cold_War_GUI_Tension_Incidents_i = ALL } }
+		localization_key = "CWGUIIncidents_All"
+	}
+	text = {
+		localization_key = "CWGUIIncidents"
+	}
+}

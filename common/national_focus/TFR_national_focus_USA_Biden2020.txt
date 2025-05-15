@@ -1,0 +1,767 @@
+focus_tree = {
+	id = USA_Biden2020
+	country = {
+		factor = 0
+		
+	}
+	default = no
+	focus = {
+		id = USA_Biden_Administation2020
+		icon = GFX_focus_USB_fighting_for_democracy
+		cost = 5.00
+		x = 17
+		y = 0
+
+	}
+	focus = {
+		id = USA_B20_Fuck_COVID
+		icon = GFX_focus_USB_revitalize_the_affordable_care_act
+		cost = 4.00
+		prerequisite = {
+			focus = USA_Biden_Administation2020
+		}
+		bypass = {
+			has_country_flag = USA_coronavirus_eliminated
+		}
+		completion_reward = {
+			random = {
+				chance = 33
+				USA_covid_reduction = yes
+			}
+			add_to_variable = {
+				USA.mask_supply_var = 4000
+			}
+			set_temp_variable = {
+				debt_var_temp = 100
+			}
+			add_debt_with_inflation = yes
+		}
+		x = 3
+		y = 1
+
+	}
+	focus = {
+		id = USA_B20_Delall_Prices
+		icon = GFX_focus_USA_high_expectations
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Fuck_COVID
+		}
+		bypass = {
+			has_country_flag = USA_coronavirus_eliminated
+		}
+		completion_reward = {
+			set_temp_variable = {
+				debt_var_temp = 100
+			}
+			add_debt_with_inflation = yes
+			add_timed_idea = {
+				idea = research_boost_idea
+				days = 50
+			}
+			add_to_variable = {
+				USA.mask_supply_var = 4000
+			}
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Delall_Patent
+		icon = GFX_focus_USB_establish_corporate_governance_zones
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Delall_Prices
+		}
+		bypass = {
+			has_country_flag = USA_coronavirus_eliminated
+		}
+
+		x = 2
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Reverse_Fake_Propaganda
+		icon = GFX_focus_JAP_anti_prc_propaganda
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Fuck_COVID
+		}
+		completion_reward = {
+			add_political_power = 100
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Anti_CHN_Truthfully
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = USA_B20_Reverse_Fake_Propaganda
+		}
+		x = 4
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Mandatory_Injection
+		icon = GFX_focus_PRC_vaccine_factory_of_the_world
+		cost = 3.00
+		prerequisite = {
+			focus = USA_B20_Delall_Patent
+			focus = USA_B20_Anti_CHN_Truthfully
+		}
+		bypass = {
+			has_country_flag = USA_coronavirus_eliminated
+		}
+		completion_reward = {
+			add_political_power = -40
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.02
+			}
+			add_days_mission_timeout = {
+				mission = USA_vaccine_research_mission
+				days = -60
+			}
+		}
+		x = 3
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Haaland
+		icon = GFX_goal_unknown		#需要一张内务部长图像
+		cost = 2.00
+		prerequisite = {
+			focus = USA_Biden_Administation2020
+		}
+		x = 11
+		y = 1
+		completion_reward = {
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = USA_B20_String_on_Entreprenur
+		icon = GFX_focus_USB_synthesize_the_nation
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Haaland
+		}
+		x = 7
+		y = 2
+
+	}
+	focus = {
+		id = USA_Stand_with_Labor
+		icon = GFX_focus_USB_an_economic_revolution
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_String_on_Entreprenur
+		}
+		completion_reward = {
+			add_ideas = high_welfare
+			add_stability = -0.05
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Build_Back_Better
+		icon = GFX_focus_USA_build_back_better
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Haaland
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 11
+		y = 2
+		completion_reward = {
+			if = {
+				limit = { 
+					USA_House_Senate_Trigger = no
+				}
+				country_event = usa.21
+			}
+			else = {
+				add_timed_idea = {
+					idea = USB_an_economic_revolution
+					days = 250
+				}
+				random_core_state = {
+					limit = {
+						infrastructure < 3
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_core_state = {
+					limit = {
+						infrastructure < 3
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+				random_core_state = {
+					limit = {
+						infrastructure < 3
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+
+	}
+	focus = {
+		id = USA_B20_Family_Plan
+		icon = GFX_focus_USB_entrench_citizens_united
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Build_Back_Better
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = USA_Housing_Supply_Action
+		icon = GFX_focus_USB_expand_our_reach
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Family_Plan
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Trump_Legacy
+		icon = GFX_focus_USA_embrace_neutrality
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Build_Back_Better
+		}
+		x = 11
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_CHIP_SCIENCE
+		icon = GFX_focus_USB_technological_revolution
+		cost = 3.00
+		prerequisite = {
+			focus = USA_B20_Trump_Legacy
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Catch_Up_Electical
+		icon = GFX_focus_PRC_a_renewable_revolution
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Build_Back_Better
+		}
+		x = 13
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Deal_with_Inflation
+		icon = GFX_focus_USB_clergy_of_finance_and_state
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Haaland
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Bank_Funding_Program
+		icon = GFX_focus_USB_minor_reparations_for_minorities
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Deal_with_Inflation
+		}
+		x = 15
+		y = 3
+		available = {
+			has_country_flag = USA_2023_Bank_Crisis
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
+	}
+	focus = {
+		id = USA_B20_Investigate_Staff
+		icon = GFX_focus_USB_blow_the_whistle
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Bank_Funding_Program
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Electoral_Reform
+		icon = GFX_focus_USB_abolish_the_electoral_college
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Haaland
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 17
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Oppose_Trumpism
+		icon = GFX_focus_USB_grant_emergency_presidential_powers
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Electoral_Reform
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Kamala_Harris
+		icon = GFX_focus_USB_deal_with_establishment
+		cost = 2.00
+		prerequisite = {
+			focus = USA_Biden_Administation2020
+		}
+		x = 20
+		y = 1
+
+	}
+	focus = {
+		id = USA_B20_Citizenship_Act
+		icon = GFX_focus_USB_clean_up_the_countryside
+		cost = 3.00
+		prerequisite = {
+			focus = USA_B20_Kamala_Harris
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 19
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Pause_Deportation
+		icon = GFX_focus_USB_unification_deal
+		cost = 3.00
+		prerequisite = {
+			focus = USA_B20_Kamala_Harris
+		}
+		x = 21
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Go_for_the_Cause
+		icon = GFX_focus_USB_crush_partisans
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Citizenship_Act
+		}
+		prerequisite = {
+			focus = USA_B20_Pause_Deportation
+		}
+		x = 20
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Reinforce_Trump_Wall
+		icon = GFX_focus_USA_embrace_neutrality_NSM
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Go_for_the_Cause
+		}
+		x = 20
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Progressive_Section	#2个拜登内阁里最进步的人
+		icon = GFX_focus_USB_deal_with_progressives
+		cost = 3.00
+		prerequisite = {
+			focus = USA_Biden_Administation2020
+		}
+		x = 24
+		y = 1
+
+	}
+	focus = {
+		id = USA_B20_Depollute_Agenda
+		icon = GFX_focus_USA_green_economics
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Progressive_Section
+		}
+		x = 23
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Supply_NGO
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Depollute_Agenda
+		}
+		x = 23
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_America_the_Beautiful
+		icon = GFX_focus_USB_america_the_beautiful
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Supply_NGO
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 23
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Prevent_LGBT_Discrimination
+		icon = GFX_focus_USB_pass_the_equality_act
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Progressive_Section
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 25
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Abolish_DOMA
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Prevent_LGBT_Discrimination
+		}
+		x = 25
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Blinken
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = USA_Biden_Administation2020
+		}
+		x = 33
+		y = 1
+
+	}
+	focus = {
+		id = USA_B20_CHN_Task_Force
+		icon = GFX_focus_USB_enemies_of_america
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Blinken
+		}
+		x = 28
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Shift_Gears
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_CHN_Task_Force
+		}
+		x = 27
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Go_on_Sanction
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_CHN_Task_Force
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 29
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Sanction_Phase2
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Go_on_Sanction
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 28
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Ban_Tiktok
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Go_on_Sanction
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 30
+		y = 4
+
+	}
+	focus = {
+		id = USA_B20_Fuck_Russia_War
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Blinken
+		}
+		mutually_exclusive = {
+			focus = USA_B20_Detente_Russia
+		}
+		x = 31
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Aid_Ukraine
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Fuck_Russia_War
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 31
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Detente_Russia
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Blinken
+		}
+		mutually_exclusive = {
+			focus = USA_B20_Fuck_Russia_War
+		}
+		x = 33
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Neo_Appeasement
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Detente_Russia
+		}
+		x = 33
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Detente_Cuba
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Blinken
+		}
+		mutually_exclusive = {
+			focus = USA_B20_Cope_with_Cuba
+		}
+		x = 35
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Intelligence_Action
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = USA_B20_Detente_Cuba
+		}
+		x = 35
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Narrow_Escape
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Mandatory_Injection
+		}
+		x = 3
+		y = 5
+
+	}
+	focus = {
+		id = USA_B20_Bipartisan_Boarder_Bill
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = USA_B20_Reinforce_Trump_Wall
+		}
+		available = {
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+		x = 20
+		y = 5
+
+	}
+	focus = {
+		id = USA_B20_Safer_Community
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_Housing_Supply_Action
+		}
+		x = 9
+		y = 5
+		available = {	
+			#has_country_flag = Another_Gunshot
+			USA_House_Senate_Trigger = yes
+		}
+		cancel_if_invalid = no
+		continue_if_invalid = yes
+
+	}
+	focus = {
+		id = USA_B20_Cope_with_Cuba
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Blinken
+		}
+		mutually_exclusive = {
+			focus = USA_B20_Detente_Cuba
+		}
+		x = 37
+		y = 2
+
+	}
+	focus = {
+		id = USA_B20_Medical_Supply
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_B20_Cope_with_Cuba
+		}
+		x = 37
+		y = 3
+
+	}
+	focus = {
+		id = USA_B20_Support_Opposition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_B20_Intelligence_Action
+			focus = USA_B20_Medical_Supply
+		}
+		x = 36
+		y = 4
+
+	}
+	shared_focus = NATO_Transformation_Conference
+	shared_focus = NATO_360
+	shared_focus = NATO_Challenge
+	shared_focus = NATO_Communicator_Conference
+	shared_focus = NATO_Festival
+	shared_focus = NATO_Industry_Forum
+	shared_focus = NATO_Multi_Domain
+	shared_focus = NATO_Resource_Conference
+	shared_focus = NATO_Strategic_Foresight
+	shared_focus = NATO_TIDE
+	shared_focus = NATO_Talk_Military
+	shared_focus = NATO_Technology_Conference
+	shared_focus = NATO_WCC
+	shared_focus = NATO_Wargame
+}

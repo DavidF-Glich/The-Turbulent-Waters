@@ -1,0 +1,64 @@
+﻿l_english:
+ #Focuses
+
+ #Ideas
+ 
+ NAX_insurgency_idea: "Naxalite Insurgency"
+ RAJ_clash_of_the_millions2: "Clash of the Millions"
+ RAJ_clash_of_the_millions: "Clash of the Millions"
+ ULF_united_struggle: "United Struggle"
+
+ RAJ_south_asian_tiger_idea: "The Tiger of South Asia"
+ RAJ_south_asian_tiger_idea_desc: "India, birthplace of hinduism, one of of the greatest nations on earth, has finally recovered from centuries of colonialism and endless hardship. Let the enemies of India know that there is a tiger on the prowl - perhaps not visible, but definitely dangerous."
+ RAJ_religious_sectarianism_idea: "Religious Sectarianism"
+ RAJ_remnant_caste_system_idea: "Remnant Caste System"
+ RAJ_transitioning_economy_idea: "Transitioning Economy"
+ RAJ_rising_hindu_nationalism_idea: "Rising Hindu Nationalism"
+ RAJ_rising_hindu_nationalism_idea_desc: ""
+ RAJ_chinese_sanctions_idea: "Chinese Sanctions"
+ RAJ_chinese_sanctions_idea_desc: ""
+ RAJ_kashmir_road_idea: "Kashmir Road"
+ RAJ_kashmir_road_idea_desc: ""
+ RAJ_kashmir_road0_idea: "Kashmir Road"
+ RAJ_kashmir_road0_idea_desc: ""
+ RAJ_indian_civil_war_idea: "Indian Civil War"
+ RAJ_indian_civil_war_idea_desc: ""
+ #Events
+ RAJ.1.t: "Government Vacuum"
+ RAJ.1.d: ""
+ RAJ.1.a: "Who will Step in?"
+
+ RAJ.2.t: "Indian Collapse"
+ RAJ.2.d: ""
+ RAJ.2.a: "Ghandi's dream... diminished"
+
+ RAJ.5.t: "Indian Government retakes Dehli"
+ RAJ.5.d: "In the harrowing aftermath of the devastating thermonuclear war and the nuclear explosion in Dehli, the remnants of the Indian government have attempted to re-establish order in the areas surrounding the rubble of the Dehli. However, with the leadership largely disintegrated on the streets of the rubble that was formerly the capital, a powerful power vacuum has formed."
+ RAJ.5.a: "Long live the Provisional Government."
+
+ RAJ.8.t: "Indian Civil War"
+ RAJ.8.d: "Following the establishment of the Second Republic of India,"
+ RAJ.8.a: "Total Hindu Death"
+
+ RAJ.10.t: "Martial Law Declared"
+ RAJ.10.d: ""
+ RAJ.10.a: "The Military Will Take Control"
+
+ RAJ.11.t: "The RSS Take Control"
+ RAJ.11.d: ""
+ RAJ.11.a: "See what's next!"
+
+ RAJ.12.t: "The SS Take Control"
+ RAJ.12.d: ""
+ RAJ.12.a: "Hindustan is for Hindus!"
+
+ RAJ.13.t: "INC Fills in the Power Vaccum"
+ RAJ.13.d: ""
+ RAJ.13.a: "Modi led us into this mess, Congress will lead us out!"
+
+ RAJ.14.t: "Conservative Government Stabilized"
+ RAJ.14.d: ""
+ RAJ.14.a: "Momento Mori"
+ #Cosmetic Tags#
+
+ #Parties#

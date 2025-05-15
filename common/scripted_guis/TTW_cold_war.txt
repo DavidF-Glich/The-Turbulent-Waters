@@ -1,0 +1,117 @@
+scripted_gui = {
+	TTW_Cold_war_Tabs = {
+		context_type = player_context
+		parent_window_name = powerbalanceview
+		window_name = "powerbalanceview_tabs"
+
+		dynamic_lists = {
+			tab_grid = {
+				array = TTW_BoP_Tabs
+				index = Tab_i
+				value = Tab_v
+				entry_container = powerbalanceview_tabs_container
+			}
+		}
+
+		properties = {
+			tab      = { frame = TTW_BoP_Tabs_Frames^Tab_i }
+			tab_icon = { image = "GFX_[?Tab_v.GetTokenKey]_Icon" }
+		}
+
+		effects = {
+			tab_click = {
+				# Set tab frames
+				for_each_loop = {
+					array = TTW_BoP_Tabs_Frames
+					set_variable = { TTW_BoP_Tabs_Frames^i = 0 }
+				}
+				set_variable = { TTW_BoP_Tabs_Frames^Tab_i = 2 }
+
+				# Set tab decisions & GUI
+				set_variable = { TTW_BoP_SelectedTab = Tab_v }
+			}
+		}
+	}
+	TTW_fopo_container = {
+		window_name = "TTW_fopo_container"
+		context_type = player_context
+		parent_window_name = powerbalanceview
+
+		visible = { check_variable = { TTW_BoP_SelectedTab = token:BoP_Tab_GlobalConflicts } }
+		ai_enabled = { always = no }
+
+		dynamic_lists = {
+			conflict_tabs = {
+				array = TTW_active_conflicts
+				index = conflict_idx
+				value = conflict_id
+				entry_container = TTW_fopo_conflict_tab
+			}
+			# conflict_guis = {
+			# 	array = world_conflict_guis
+			# 	index = conflict_idx
+			# 	value = conflict_id
+			# 	entry_container = [Get_TTW_fopo_conflict_guis]
+			# }
+		}
+
+		effects = {
+			conflict_icon_click = {
+				set_variable = { selected_conflict_id = conflict_id }
+				clear_array = world_conflict_guis
+				add_to_array = { world_conflict_guis = conflict_id }
+			}
+			tab_click = {
+				set_variable = { selected_conflict_id = conflict_id }
+				clear_array = world_conflict_guis
+				add_to_array = { world_conflict_guis = conflict_id }
+			}
+
+		}
+
+		triggers = {
+			conflict_icon_visible = {
+				if = {
+					limit = {
+						check_variable = { selected_conflict_id = conflict_id }
+					}
+					set_temp_variable = { fopo_button_tab_frame = 2 }
+				}
+				else = {
+					set_temp_variable = { fopo_button_tab_frame = 1 }
+				}
+			}
+
+			info_tab_visible = {
+				TTW_fopo_show_info_tab = yes
+			}
+
+		}
+
+		properties = {
+			tab_bg = {
+				frame = fopo_button_tab_frame
+			}
+			tab = {
+				frame = fopo_button_tab_frame
+			}
+			conflict_icon = {
+				image = "[Get_fopo_icon]"
+			}
+		}
+	}
+
+	#################################################
+	#               No Conflicts GUI                #
+	#################################################
+	TTW_fopo_no_conflict = {
+		window_name = "TTW_fopo_no_conflict"
+		context_type = player_context
+		parent_window_name = powerbalanceview
+
+		visible = {
+			check_variable = { TTW_BoP_SelectedTab = token:BoP_Tab_GlobalConflicts }
+			check_variable = { TTW_active_conflicts^num = 0 }
+		}
+	}
+}

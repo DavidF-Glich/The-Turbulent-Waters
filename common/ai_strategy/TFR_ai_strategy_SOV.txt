@@ -1,0 +1,272 @@
+SOV_boost_economy_strategy = {
+	abort_when_not_enabled = yes
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		date < 2024.1.1
+	}
+	ai_strategy = {
+		type = building_target
+		id = industrial_complex
+		value = 180
+	}
+}
+
+SOV_build_for_war_strategy = {
+	abort_when_not_enabled = yes
+	allowed = {
+		OR = {
+			original_tag = SOV
+			is_in_faction_with = SOV	
+		}
+	}
+	enable = {
+		SOV = {
+			NOT = {
+				has_war_with = PRC
+			}
+		}
+		PRC = {
+			NOT = {
+				has_completed_focus = PRC_Price_for_West
+			}
+		}
+	}
+	ai_strategy = {
+		type = building_target
+		id = arms_factory
+		value = 200
+	}
+	ai_strategy = {
+		type = antagonize
+		id = GER
+		value = 20
+	}
+	ai_strategy = {
+		type = antagonize
+		id = FRA
+		value = 20
+	}
+	ai_strategy = {
+		type = antagonize
+		id = ENG
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = USA
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = UKR
+		value = 100
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = PRC
+		value = 1000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = MON
+		value = 1000
+	}
+
+}
+
+SOV_unit_production = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		always = yes
+	}
+	abort = {
+		has_war = yes
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 5
+	}
+	# Old garrison system against resistance
+	# ai_strategy = { 
+	# 	type = role_ratio
+	# 	id = suppression
+	# 	value = 3
+	# }
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 1
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 3
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 0
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 45
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 80
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 20
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = -80
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = naval_bomber
+		value = -120
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = -200
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = scout_plane
+		value = -200
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 15
+	}
+}
+
+SOV_upgrade_tanks_god_damnit = {
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		tag = SOV
+	}
+	abort = {
+		has_war = yes
+	}
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = modern_tank_chassis
+		value = 1000
+	}
+}
+
+#First NATO War
+SOV_defend_important_cities_strategy = {
+	abort_when_not_enabled = yes
+	allowed = {
+		original_tag = SOV
+	}
+	enable = {
+		OR = {
+			has_war_with = UKR
+			has_war_with = FRA
+			has_war_with = GER
+			has_war_with = ENG
+		}
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.15
+		states = {
+			853
+			1396
+			217
+			196
+			219
+			1339
+			260
+		}
+		subtract_fronts_from_need = yes
+	}
+	ai_strategy = {
+		type = garrison
+		value = 100
+	}
+	ai_strategy = {
+		type = garrison_reinforcement_priority
+		value = 100
+	}
+}
+
+
+Justice_League_Fuck_Nato = {
+	allowed = {
+		OR = {
+			tag = PRC
+			tag = PRK
+		}
+	}
+	enable = {
+		has_global_flag = Russo_Ukrainian_War
+		PRC = {
+			NOT = {
+				has_completed_focus = PRC_Price_for_West
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = befriend
+		id = SOV
+		value = 50
+	}
+}
+#SOV_lancets_lancets_lancets = {
+#	allowed = {
+#		original_tag = SOV
+#	}
+#	enable = {
+#		always = yes
+#	}
+#	abort = {
+#		always = no
+#	}
+#	ai_strategy = {
+#		type = building_target
+#		id = rocket_site
+#		value = 1
+#	}
+#}
+
+### SECOND NATO WAR ###
+###GO GO GO###

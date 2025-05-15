@@ -1,0 +1,5049 @@
+Russo_UKrainian_war_category = {
+	USA_RUS_Negotiation_mission = {
+		icon = generic_shaking_hands
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		days_mission_timeout = 28
+		selectable_mission = no
+		is_good = no
+		timeout_effect = {
+			every_country = {
+				limit = {
+					OR = {
+						tag = USA
+						tag = SOV
+					}
+				}
+				country_event = ukr_border.8
+			}
+			hidden_effect = {
+				UKR = {
+					country_event = {
+						id = ukr_border.9
+						days = 14
+					}
+				}
+			}
+		}
+	}
+
+	War_Propaganda_decision = {
+		icon = generic_speech
+		visible = {
+			always = yes
+		}
+		available = {
+			OR = {
+				has_war_with = SOV
+				has_war_with = UKR
+			}
+			
+			has_stability < 0.7
+			has_war_support < 0.8
+		}
+		priority = 1
+		cost = 20
+		days_remove = 14
+		days_re_enable = 28
+		modifier = {
+			political_power_factor = -0.2
+		}
+		remove_effect = {
+			add_stability = 0.02
+			add_war_support = 0.03
+		}
+	}
+	PRC_Blame_USA_decision = {
+		icon = generic_speech
+		visible = {
+			tag = PRC
+		}
+		available = {
+			NOT = {
+				has_country_flag = PRC_Russo_Ukrainian_action
+			}
+		}
+		cost = 25
+		days_remove = 28
+		days_re_enable = 28
+		modifier = {
+			war_support_weekly = 0.015
+		}
+		complete_effect = {
+			add_opinion_modifier = {
+				target = USA
+				modifier = medium_decrease
+				days = 50
+			}
+		}
+		remove_effect = {
+			add_stability = 0.03
+		}
+
+	}
+	Humanitarian_Supply_decision = {
+		visible = {
+			NOT = {
+				tag = UKR
+				tag = SOV
+			}
+		}
+		cost = 10
+		days_remove = 20
+		days_re_enable = 30
+		modifier = {
+			experience_gain_army_factor = 0.25
+		}
+		complete_effect = {
+			UKR = {
+				add_opinion_modifier = {
+					target = ROOT
+					modifier = large_increase
+					days = 60
+				}
+			}
+		}
+		remove_effect = {
+			send_equipment = {
+				equipment = support_equipment
+				amount = 1500
+				target = UKR
+			}
+			if = {
+				limit = { 
+					tag = PRC
+				}
+				custom_effect_tooltip = Humanitarian_Supply_impact_sov
+				add_to_variable = {
+					UKR_Diplomacy_Attitude = 5
+				}
+				add_to_variable = {
+					EUR_Diplomacy_Attitude = 5
+				}
+			}
+			else_if = {
+				limit = { 
+					OR = {
+						tag = USA
+						tag = ENG
+						tag = POL
+					}
+				}
+				custom_effect_tooltip = Humanitarian_Supply_impact_usa
+				add_to_variable = {
+					UKR_Diplomacy_Attitude = -5
+				}
+				add_to_variable = {
+					EUR_Diplomacy_Attitude = -5
+				}
+			}
+
+		}
+	}
+	SWIFT_BOMB_decision = {
+		icon = GFX_decision_generic_deploy_nukes
+		visible = {
+			tag = USA
+		}
+		cost = 30 
+		complete_effect = {
+			custom_effect_tooltip = USA_Blow_up_RUS_Economy_tt
+			set_global_flag = SOV_SWIFT_Abandoned
+			effect_tooltip = {
+				SOV = {
+					set_temp_variable = {
+						society_development_var_temp = -0.2
+					}
+					set_temp_variable = {
+						poverty_development_var_temp = -0.15 
+					}
+					set_temp_variable = {
+						farming_development_var_temp = -0.1
+					}
+					add_society_development = yes
+					add_farming_development = yes
+					add_poverty_development = yes
+					SOV_increase_sanction = yes
+					SOV_increase_sanction = yes
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = { 
+						SOV = {
+							NOT = {
+								has_completed_focus = SOV_Ease_West_Sanction
+							}
+						}
+					}
+					set_temp_variable = {
+						society_development_var_temp = -0.2
+					}
+					set_temp_variable = {
+						poverty_development_var_temp = -0.15 
+					}
+					set_temp_variable = {
+						farming_development_var_temp = -0.1
+					}
+					set_temp_variable = {
+						debt_var_temp = 500
+					}
+					add_debt_with_inflation = yes
+					add_society_development = yes
+					add_farming_development = yes
+					add_poverty_development = yes
+					SOV_increase_sanction = yes
+					SOV_increase_sanction = yes
+				}
+				else = {
+					set_temp_variable = {
+						society_development_var_temp = -0.05
+					}
+					set_temp_variable = {
+						poverty_development_var_temp = -0.03 
+					}
+					set_temp_variable = {
+						farming_development_var_temp = -0.01
+					}
+					set_temp_variable = {
+						debt_var_temp = 50
+					}
+					add_debt_with_inflation = yes
+					add_society_development = yes
+					add_farming_development = yes
+					add_poverty_development = yes
+					SOV_increase_sanction = yes
+				}
+			}
+		}
+	}
+}
+SOV_coronavirus_decrease = {
+	SOV_handle_covid_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_president_election_category
+		days_mission_timeout = 50
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		is_good = no
+		complete_effect = {
+		}
+		ai_will_do = {
+			base = 50
+		}
+		timeout_effect = {
+			SOV_increase_corona = yes
+			activate_mission = SOV_handle_covid_mission
+		}
+	}
+	SOV_waning_coronavirus_mission = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = SOV
+		}
+		available = {
+			hidden_trigger = {
+				NOT = {
+					OR = {
+						has_idea = SOV_coronavirus_pandemic_idea4
+					}
+					AND = {
+						has_idea = SOV_coronavirus_pandemic_idea3
+					}
+					AND = {
+						has_idea = SOV_coronavirus_pandemic_idea2
+					}
+					AND = {
+						has_idea = SOV_coronavirus_pandemic_idea1
+					}
+					AND = {
+						has_idea = SOV_coronavirus_pandemic_idea
+					}
+				}
+			}
+		}
+		visible = {
+			hidden_trigger = {
+				NOT = {
+					has_country_leader = {
+						character = SOV_vladimir_putin
+						ruling_only = yes
+					}
+					has_country_flag = SOV_dealt_with_coronavirus
+					has_country_flag = SOV_corona_decision
+				}
+			}
+		}
+		cancel_if_not_visible = yes
+		activation = {
+			OR = {
+				has_idea = SOV_coronavirus_pandemic_idea4
+				has_idea = SOV_coronavirus_pandemic_idea3
+				has_idea = SOV_coronavirus_pandemic_idea2
+				has_idea = SOV_coronavirus_pandemic_idea1
+				has_idea = SOV_coronavirus_pandemic_idea
+			}
+			NOT = {
+				has_country_leader = {
+					character = SOV_vladimir_putin
+					ruling_only = yes
+				}
+				has_country_flag = SOV_dealt_with_coronavirus
+			}
+		}
+		is_good = no
+		selectable_mission = no
+		days_mission_timeout = 50
+		timeout_effect = {
+			SOV_decrease_corona = yes
+			activate_mission = SOV_waning_coronavirus_mission
+		}
+		complete_effect = {
+		}
+	}
+}
+SOV_the_house_of_cards = {
+	SOV_constitution_russian_voting = {
+		priority = 1
+		icon = GFX_SOV_decision_president_election_category
+		available = {
+			hidden_trigger = {
+				NOT = {
+					original_tag = SOV
+				}
+			}
+		}
+		days_mission_timeout = 160
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = no
+		is_good = no
+		complete_effect = {
+		}
+		timeout_effect = {
+			custom_effect_tooltip = SOV_constitution_russian_voting_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						check_variable = {
+							var = SOV_election_approval_rating_ur_var
+							value = 0.50
+							compare = greater_than_or_equals
+						}
+					}
+					country_event = { id = russia.462 hours = 3 } #perfect referendum
+				}
+				else_if = {
+					limit = {
+						check_variable = {
+							var = SOV_election_approval_rating_ur_var
+							value = 0.50
+							compare = less_than
+						}
+					}
+					country_event = { id = russia.463 hours = 3 } #faulty referendum
+				}
+			}
+		}
+	}
+	SOV_pawns_making_moves_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_pawns_making_moves
+		available = {
+		}
+		priority = 1
+		fire_only_once = no
+		days_mission_timeout = 60
+		is_good = no
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			custom_effect_tooltip = SOV_opposition_growth_tt
+			hidden_effect = {
+				activate_mission = SOV_pawns_making_moves_mission
+				random_list = {
+					25 = {
+						set_temp_variable = {
+							var = SOV_election_approval_rating_ldpr_var_temp
+							value = 0.015
+						}
+						SOV_add_election_approval_rating_ldpr = yes
+						set_temp_variable = {
+							var = SOV_election_approval_rating_cprf_var_temp
+							value = 0.015
+						}
+						SOV_add_election_approval_rating_cprf = yes
+					}
+					50 = {
+						set_temp_variable = {
+							var = SOV_election_approval_rating_ldpr_var_temp
+							value = 0.01
+						}
+						SOV_add_election_approval_rating_ldpr = yes
+						set_temp_variable = {
+							var = SOV_election_approval_rating_cprf_var_temp
+							value = 0.01
+						}
+						SOV_add_election_approval_rating_cprf = yes
+					}
+				}
+				random = {
+					chance = 10
+					add_popularity = {
+						ideology = fascist
+						popularity = 0.015
+					}		
+					add_popularity = {
+						ideology = communist
+						popularity = 0.015
+					}
+					add_popularity = {
+						ideology = libertarian_socialist
+						popularity = 0.01
+					}
+				}
+				random = {
+					chance = 10
+					add_popularity = {
+						ideology = fascist
+						popularity = 0.015
+					}		
+					add_popularity = {
+						ideology = communist
+						popularity = 0.015
+					}
+					add_popularity = {
+						ideology = libertarian_socialist
+						popularity = 0.01
+					}
+				}
+			}
+		}
+	}
+	SOV_new_red_belt_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_new_red_belt
+		available = {
+			has_completed_focus = SOV_bribe_corrupt_cprf_officials
+		}
+		priority = 1
+		fire_only_once = yes
+		days_mission_timeout = 200
+		is_good = no
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.1
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_ur = yes		
+			hidden_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.035
+				}
+			}
+		}
+	}	
+	SOV_zhirinovsky_tour_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_zhirinovsky_tour
+		available = {
+			has_completed_focus = SOV_bribe_corrupt_ldpr_officials
+		}
+		priority = 1
+		fire_only_once = yes
+		days_mission_timeout = 195
+		is_good = no
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.1
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_ur = yes		
+			hidden_effect = {
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.035
+				}
+			}
+		}
+	}
+	SOV_liberalism_spreads_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_liberalism_spreads
+		available = {
+			OR = {
+				hidden_trigger = {
+					has_completed_focus = SOV_what_now
+				}
+				has_completed_focus = SOV_arrest_navalny
+			}
+		}
+		priority = 1
+		fire_only_once = no
+		days_mission_timeout = 145
+		is_good = no
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			hidden_effect = {
+				activate_mission = SOV_liberalism_spreads_mission
+				if = {
+					limit = {
+						check_variable = {
+							var = SOV_election_approval_rating_nav_var
+							value = 0.40
+							compare = greater_than_or_equals
+						}
+						has_stability < 0.25
+						OR = {
+							NOT = { has_completed_focus = SOV_destabilize_the_west }
+							NOT = { has_completed_focus = SOV_arrest_navalny }
+							NOT = { has_country_flag = SOV_assassination_attempt_happened_flag }
+							NOT = { has_country_flag = SOV_putin_ill_more_flag }
+						}
+					}
+					random = {
+						chance = 25
+						country_event = { id = russia.487 days = 5 random_days = 5 }
+					}
+				}
+			}
+			random_list = {
+				50 = {
+					set_temp_variable = {
+						var = SOV_election_approval_rating_nav_var_temp
+						value = 0.025
+					}
+					SOV_add_election_approval_rating_nav = yes
+				}
+				20 = {
+					set_temp_variable = {
+						var = SOV_election_approval_rating_nav_var_temp
+						value = 0.03
+					}
+					SOV_add_election_approval_rating_nav = yes
+				}
+			}
+		}
+	}
+	SOV_opposition_growth_mission = {
+		priority = 1
+		icon = GFX_SOV_decision_president_election_category
+		available = {
+			NOT = {
+				original_tag = SOV
+			}
+		}
+		priority = 1
+		fire_only_once = no
+		days_mission_timeout = 15
+		days_re_enable = 1
+		is_good = no
+		cancel_if_not_visible = yes
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		complete_effect = {
+		}
+		timeout_effect = {
+			activate_mission = SOV_opposition_growth_mission
+			custom_effect_tooltip = SOV_opposition_growth_tt
+			hidden_effect = {
+				if = {
+					limit = {
+						has_country_flag = SOV_sided_with_cprf_flag
+					}
+					random_list = {
+						40 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+						}
+						25 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.01
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+						}
+						20 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+						}
+						15 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_ur = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = SOV_sided_with_ldpr_flag
+					}
+					random_list = {
+						40 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						25 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.01
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						20 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						15 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_cprf = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_ur = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = SOV_sided_with_medvedev_flag
+					}
+					random_list = {
+						40 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						25 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.01
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						20 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						15 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_cprf = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+						}
+					}
+				}
+				else_if = {
+					limit = {
+						has_country_flag = SOV_sided_with_navalny_flag
+					}
+					random_list = {
+						40 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ur = yes
+						}
+						25 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.01
+							}
+							SOV_add_election_approval_rating_ur = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						20 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.03
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.02
+							}
+							SOV_add_election_approval_rating_cprf = yes
+						}
+						10 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_cprf_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_cprf = yes
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ldpr_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_ldpr = yes
+						}
+						5 = {
+							set_temp_variable = {
+								var = SOV_election_approval_rating_ur_var_temp
+								value = 0.05
+							}
+							SOV_add_election_approval_rating_ur = yes
+						}
+					}
+				}
+			}
+		}
+	}
+
+	SOV_ldpr_always_only_truth = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_promises_of_land
+		}
+		available = {
+			hidden_trigger = {
+				has_completed_focus = SOV_promises_of_land
+			}
+		}
+		icon = GFX_SOV_decision_LDPR
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.05
+			misc_expense = 5
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.03
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			add_war_support = 0.02
+		}
+		days_remove = 15
+		cost = 45
+	}
+	
+	SOV_ldpr_always_for_the_people = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_anti_establishment_big_tent
+		}
+		available = {
+			hidden_trigger = {
+				has_completed_focus = SOV_anti_establishment_big_tent
+			}
+		}
+		icon = GFX_SOV_decision_LDPR
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.05
+			misc_expense = 5
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = fascist
+				popularity = 0.035
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.035
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+		days_remove = 15
+		cost = 35
+	}	
+		
+	SOV_we_are_united_russia = {
+		visible = {
+			tag = SOV
+		}
+		available = {
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.05
+			misc_expense = 10
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.035
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.035
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+		days_remove = 15
+		cost = 35
+	}
+	
+	SOV_we_trust_in_medvedev = {
+		visible = {
+			tag = SOV
+		}
+		available = {
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.05
+			misc_expense = 5
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.05
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+		days_remove = 15
+		cost = 35
+	}	
+	
+	SOV_the_future_is_ours = {
+		visible = {
+			tag = SOV
+		}
+		available = {
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		modifier = {
+			political_power_cost = 0.05
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.02
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ur = yes
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.005
+			}
+			add_society_development = yes
+		}
+		days_remove = 15
+		cost = 35
+	}
+	
+	launch_a_cprf_campaign = {
+		visible = {
+			tag = SOV
+		}
+		available = {
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = no
+		remove_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = 0.03
+				}
+				set_temp_variable = {
+					var = SOV_election_approval_rating_cprf_var_temp
+					value = 0.03
+				}
+				SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 14
+		days_re_enable = 14
+		cost = 25
+	}
+	alliance_with_srzp_mission = {
+		activation = {
+			tag = SOV
+			has_country_flag = SOV_srzp_mission
+		}
+		available = {
+		}
+		selectable_mission = yes
+		cost = 50
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		complete_effect = {
+			if = {
+				limit = {
+					has_country_flag = SOV_sided_with_cprf_flag
+				}
+				custom_effect_tooltip = SOV_szrp_cprf_tooltip
+				set_temp_variable = {
+					var = SOV_election_approval_rating_cprf_var_temp
+					value = SOV_election_approval_rating_srzp_var
+				}
+				SOV_add_election_approval_rating_cprf = yes
+				hidden_effect = {
+					set_country_flag = SOV_cprf_srzp_alliance
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SOV_sided_with_medvedev_flag
+				}
+				custom_effect_tooltip = SOV_szrp_ur_tooltip
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ur_var_temp
+					value = SOV_election_approval_rating_srzp_var
+				}
+				SOV_add_election_approval_rating_ur = yes
+				hidden_effect = {
+					set_country_flag = SOV_UR_JR_alliance
+				}
+			}
+		}
+		timeout_effect = {
+			if = {
+				limit = {
+					has_country_flag = SOV_sided_with_cprf_flag
+				}
+				custom_effect_tooltip = SOV_szrp_ur_tooltip
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ur_var_temp
+					value = 0.02
+				}
+				SOV_add_election_approval_rating_ur = yes
+			}
+			else_if = {
+				limit = {
+					has_country_flag = SOV_sided_with_medvedev_flag
+				}
+				custom_effect_tooltip = SOV_szrp_cprf_tooltip
+				set_temp_variable = {
+					var = SOV_election_approval_rating_cprf_var_temp
+					value = 0.02
+				}
+				SOV_add_election_approval_rating_cprf = yes
+			}
+		}
+		days_remove = 5
+		days_mission_timeout = 30
+	}
+	SOV_victories_of_socialism = {
+		visible = {
+			tag = SOV
+			has_government = communist
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = no
+		modifier = {
+			political_power_factor = -0.05
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.025
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.025
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 15
+		cost = 35
+	}	
+	SOV_youth_for_communism = {
+		visible = {
+			tag = SOV
+			has_government = communist
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = no
+		modifier = {
+			political_power_factor = -0.1
+		}
+		remove_effect = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.015
+			}		
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = 0.015
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.05
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			add_war_support = -0.07
+		}
+		days_remove = 15
+		cost = 45
+	}
+	SOV_march_through_moscow = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_Prevent_Right_Wing
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = yes
+		remove_effect = {
+			add_popularity = {
+				ideology = communist
+				popularity = 0.03
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			add_stability = -0.05
+		}
+		days_remove = 13
+		cost = 45
+	}
+	SOV_expose_medvedev = {
+		visible = {
+			tag = SOV
+			has_government = communist
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = yes
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 14
+		cost = 35
+	}
+	SOV_use_srzp_to_hinder_ldpr = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_Prevent_Right_Wing
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.03
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_srzp_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_srzp = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.02
+				}
+			}
+		}
+		days_remove = 15
+		cost = 25
+	}
+	SOV_use_srzp_to_hinder_cprf = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_Prevent_Left_Wing
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.03
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_srzp_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_srzp = yes
+		}
+		days_remove = 15
+		cost = 25
+	}
+	launch_a_ldpr_campaign = {
+		visible = {
+			tag = SOV
+		}
+		available = {
+		}
+		icon = GFX_SOV_decision_LDPR
+		fire_only_once = no
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = SOV_Love_for_Empire
+				}
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.03
+				}
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ldpr_var_temp
+					value = 0.03
+				}
+				SOV_add_election_approval_rating_ldpr = yes
+			}
+			else = {
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.02
+				}
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ldpr_var_temp
+					value = 0.02
+				}
+				SOV_add_election_approval_rating_ldpr = yes
+			}
+		}
+		days_remove = 14
+		days_re_enable = 14
+		cost = 25
+	}
+	launch_a_ur_campaign = {
+		visible = {
+			tag = SOV
+			OR = {
+				has_completed_focus = SOV_Prevent_Left_Wing
+				has_completed_focus = SOV_Prevent_Right_Wing
+			}
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = no
+		remove_effect = {
+			if = {
+				limit = {
+					has_completed_focus = SOV_Love_for_Empire
+					has_completed_focus = SOV_Love_for_USSR
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.03
+				}
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ur_var_temp
+					value = 0.03
+				}
+				SOV_add_election_approval_rating_ur = yes
+			}
+			else = {
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.02
+				}
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ur_var_temp
+					value = 0.02
+				}
+				SOV_add_election_approval_rating_ur = yes
+			}
+		}
+		days_remove = 14
+		days_re_enable = 14
+		cost = 25
+	}
+	launch_a_srzp_campaign = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_srzp_path_unlocked_flag
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = no
+		remove_effect = {
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.02
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_srzp_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_srzp = yes
+		}
+		days_remove = 14
+		days_re_enable = 14
+		cost = 25
+	}
+	launch_a_liberal_campaign = {
+		visible = {
+			always = no
+		}
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		icon = GFX_SOV_decision_RftF
+		fire_only_once = no
+		remove_effect = {
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.02
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_nav = yes
+		}
+		days_remove = 14
+		days_re_enable = 14
+		cost = 25
+	}
+	SOV_promote_new_people_party = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_expand_onf_decision_flag
+		}
+		icon = GFX_SOV_decision_promote_new_people_party
+		fire_only_once = yes
+		modifier = {
+			social_liberal_drift = 0.01
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_nav = yes
+		}
+		days_remove = 25
+		cost = 15
+	}
+
+	SOV_promote_rodina_party = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_expand_onf_decision_flag
+		}
+		icon = GFX_SOV_decision_rodina
+		fire_only_once = yes
+		modifier = {
+			authoritarian_democrat_drift = 0.01
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+		days_remove = 25
+		cost = 15
+	}
+	
+	SOV_promote_greens_party = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_expand_onf_decision_flag
+		}
+		icon = GFX_SOV_decision_promote_greens_party
+		fire_only_once = yes
+		modifier = {
+			libertarian_socialist_drift = 0.01
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 25
+		cost = 15
+	}
+	
+	SOV_promote_party_of_pensioners_party = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_expand_onf_decision_flag
+		}
+		icon = GFX_SOV_decision_promote_pp_party
+		fire_only_once = yes
+		modifier = {
+			conservative_drift = 0.01
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+		days_remove = 25
+		cost = 15
+	}	
+	
+	SOV_promote_communists_of_russia_party = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_expand_onf_decision_flag
+		}
+		icon = GFX_SOV_decision_promote_communists_of_russia_party
+		fire_only_once = yes
+		modifier = {
+			totalitarian_socialist_drift = 0.01
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 25
+		cost = 15
+	}	
+	
+	SOV_promote_nod_party = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_expand_onf_decision_flag
+		}
+		icon = GFX_SOV_decision_promote_nod_party
+		fire_only_once = yes
+		modifier = {
+			fascist_drift = 0.01
+		}
+		remove_effect = {
+			add_war_support = 0.05
+			add_manpower = 2000
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+		days_remove = 25
+		cost = 15
+	}
+	conduct_ur_smear_campaign = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_spread_cprf_leaflets
+				has_completed_focus = SOV_ramp_up_the_agitation
+			}
+		}
+		icon = propaganda
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.03
+			}
+			SOV_add_election_approval_rating_ur = yes
+			hidden_effect = {
+				set_temp_variable = {
+					var = SOV_election_approval_rating_ur_var_temp
+					value = -0.02
+				}
+				SOV_add_election_approval_rating_ur = yes
+				add_stability = -0.02
+				hidden_effect = {
+					add_popularity = {
+						ideology = authoritarian_democrat
+						popularity = -0.02
+					}
+				}
+			}
+		}
+		days_remove = 14
+		days_re_enable = 30
+		cost = 30
+	}
+	conduct_communist_smear_campaign = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_ramp_up_the_agitation
+				has_completed_focus = SOV_party_of_power
+			}
+		}
+		icon = propaganda
+		fire_only_once = no
+		remove_effect = {
+			hidden_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = -0.02
+				}
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 14
+		days_re_enable = 30
+		cost = 30
+	}
+	conduct_liberal_smear_campaign = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_spread_cprf_leaflets
+				has_completed_focus = SOV_party_of_power
+				has_completed_focus = SOV_ramp_up_the_agitation
+			}
+		}
+		icon = propaganda
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_nav = yes
+		}
+		days_remove = 10
+		days_re_enable = 30
+		cost = 15
+	}
+	conduct_ldpr_smear_campaign = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_spread_cprf_leaflets
+				has_completed_focus = SOV_party_of_power
+			}
+		}
+		icon = propaganda
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = fascist
+					popularity = -0.02
+				}
+			}
+		}
+		days_remove = 14
+		days_re_enable = 60
+		cost = 30
+	}
+	send_in_the_police = {
+		visible = {
+			has_completed_focus = SOV_arrest_navalny
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = propaganda
+		fire_only_once = no
+		remove_effect = {
+			add_stability = -0.1
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.1
+			}
+			SOV_add_election_approval_rating_nav = yes
+		}
+		days_remove = 20
+		days_re_enable = 180
+		cost = 50
+	}
+	SOV_crack_down_on_western_ngos = {
+		visible = {
+			tag = SOV
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = generic_protest_riot
+		
+		modifier = {
+			social_liberal_drift = -0.01
+		}
+		
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.04
+			}
+			SOV_add_election_approval_rating_nav = yes
+		}
+		days_remove = 30
+		cost = 15
+	}
+	prevent_ldpr_rally = {
+		visible = {
+			has_completed_focus = SOV_Prevent_Right_Wing
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_prevent_ldpr_rally
+		fire_only_once = no
+		remove_effect = {
+			add_stability = -0.02
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+		days_remove = 14
+		days_re_enable = 14
+		cost = 20
+	}
+	censor_pro_ldpr_newspapers = {
+		visible = {
+			has_completed_focus = SOV_Prevent_Right_Wing
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_censor_pro_ldpr_newspapers
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+		days_remove = 15
+		days_re_enable = 60
+		cost = 25
+	}
+	shut_down_ldpr_social_media = {
+		visible = {
+			has_completed_focus = SOV_Prevent_Right_Wing
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_shut_down_ldpr_social_media
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.01
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = fascist
+					popularity = -0.01
+				}
+			}
+		}
+		days_remove = 10
+		days_re_enable = 30
+		cost = 15
+	}
+	arrest_ldpr_politician = {
+		visible = {
+			has_completed_focus = SOV_Prevent_Right_Wing
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_arrest_ldpr_politician
+		fire_only_once = yes
+		remove_effect = {
+			add_stability = -0.05
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			add_popularity = {
+				ideology = fascist
+				popularity = -0.05
+			}		
+		}
+		days_remove = 20
+		days_re_enable = 100
+		cost = 50
+	}
+	draw_support_from_church = {
+		visible = {
+			has_completed_focus = SOV_gain_church_support
+		}
+		icon = GFX_SOV_decision_draw_support_from_church
+		fire_only_once = yes
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.01
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.01
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+		days_remove = 10
+		cost = 50
+	}
+	stir_up_nationalism = {
+		visible = {
+			has_completed_focus = SOV_calls_of_russian_unity
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_stir_up_nationalism
+		fire_only_once = yes
+		remove_effect = {
+			add_war_support = 0.05
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ur = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.01
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			add_threat = 1
+		}
+		days_remove = 20
+		days_re_enable = 30
+		cost = 50
+	}
+	prevent_communist_rally = {
+		visible = {
+			has_completed_focus = SOV_fight_communist_nostolgia
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_prevent_communist_rally
+		fire_only_once = no
+		remove_effect = {
+			add_stability = -0.02
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.03
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = -0.03
+				}
+			}
+		}
+		days_remove = 14
+		days_re_enable = 100
+		cost = 20
+	}
+	censor_pro_communist_newspapers = {
+		visible = {
+			has_completed_focus = SOV_fight_against_the_left
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_censor_pro_communist_newspapers
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = -0.02
+				}
+			}
+		}
+		days_remove = 15
+		days_re_enable = 60
+		cost = 25
+	}
+	shut_down_communist_social_media = {
+		visible = {
+			has_completed_focus = SOV_arrest_communist_extremists
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_shut_down_communist_social_media
+		fire_only_once = no
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.01
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = -0.01
+				}
+			}
+		}
+		days_remove = 10
+		days_re_enable = 30
+		cost = 15
+	}
+	arrest_communist_politician = {
+		visible = {
+			has_completed_focus = SOV_arrest_troublesome_politicians
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_arrest_cprf_politician
+		fire_only_once = no
+		remove_effect = {
+			add_stability = -0.05
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			hidden_effect = {
+				add_popularity = {
+					ideology = communist
+					popularity = -0.05
+				}
+				random = {
+					chance = 35
+					country_event = { id = russia.476 days = 4 random_hours = 6 }
+				}
+			}
+		}
+		days_remove = 20
+		days_re_enable = 100
+		cost = 50
+	}
+	offer_material_concessions = {
+		visible = {
+			has_completed_focus = SOV_utilize_communist_nostalgia
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_offer_material_concessions
+		fire_only_once = yes
+		remove_effect = {
+			add_stability = 0.05
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ur = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.01
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+		days_remove = 20
+		cost = 50
+	}
+	SOV_delay_election = {
+		visible = {
+			has_completed_focus = SOV_gain_oligarchist_support
+		}
+		icon = generic_shaking_hands
+		fire_only_once = yes
+		complete_effect = {
+			add_stability = -0.15
+		}
+		remove_effect = {
+			add_days_mission_timeout = {
+				mission = SOV_countdown_day_mission
+				days = 50
+			}
+			hidden_effect = {
+				country_event = {
+					id = russia.54
+					days = 5
+				}
+			}
+		}
+		days_remove = 20
+		cost = 75
+	}
+
+}
+SOV_duma_category = {
+	SOV_prop_bastion_of_stability = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			hidden_trigger = {
+				OR = {
+					has_completed_focus = SOV_stronghold_of_law_and_order
+				}
+			}
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		ai_will_do = {
+			base = 15
+		}
+		ai_hint_pp_cost = 50
+		cost = SOV_propaganda_decision_cost_var
+		days_remove = 60
+		days_re_enable = 130
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		modifier = {
+			political_power_gain = -0.1
+			society_development_monthly = 0.005
+			stability_weekly = 0.001
+			war_support_weekly = 0.001
+			mobilization_speed = 0.025
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}	
+	SOV_free_russia_future = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			hidden_trigger = {
+				OR = {
+					has_completed_focus = SOV_putinism_with_human_face
+					has_completed_focus = SOV_popular_and_moral_nation
+				}
+			}
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		ai_will_do = {
+			base = 15
+		}
+		ai_hint_pp_cost = 50
+		cost = SOV_propaganda_decision_cost_var
+		days_remove = 60
+		days_re_enable = 100
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		modifier = {
+			political_power_gain = -0.15
+			society_development_monthly = 0.005
+			poverty_development_monthly = 0.015
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	SOV_strong_leader = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		ai_will_do = {
+			base = 15
+		}
+		ai_hint_pp_cost = 50
+		cost = SOV_propaganda_decision_cost_var
+		days_remove = 60
+		days_re_enable = 100
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		modifier = {
+			political_power_gain = -0.05
+			society_development_monthly = 0.01
+			war_support_weekly = 0.002
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	SOV_you_are_future = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			hidden_trigger = {
+				has_completed_focus = SOV_loosen_media_restrictions
+			}
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		ai_will_do = {
+			base = 15
+		}
+		ai_hint_pp_cost = 50
+		cost = SOV_propaganda_decision_cost_var
+		days_remove = 60
+		days_re_enable = 100
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		modifier = {
+			political_power_gain = -0.05
+			society_development_monthly = 0.01
+			poverty_development_monthly = 0.005
+			stability_weekly = 0.001
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}
+	SOV_putin_medvedev_russia = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			has_government = authoritarian_democrat
+			has_country_leader = SOV_vladimir_putin
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		ai_will_do = {
+			base = 15
+		}
+		ai_hint_pp_cost = 50
+		cost = SOV_propaganda_decision_cost_var
+		days_remove = 100
+		days_re_enable = 100
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		modifier = {
+			political_power_gain = -0.15
+			society_development_monthly = 0.01
+			stability_weekly = 0.001
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+		}
+	}	
+	SOV_crusade_against_globalism = {
+		icon = generic_propaganda_campaigns
+		allowed = {
+			original_tag = SOV
+		}
+		visible = {
+			OR = {
+				has_war_with = UKR
+				has_war_support < 0.7
+			}
+		}
+		available = {
+			has_campaign_slot = yes
+		}
+		ai_will_do = {
+			base = 15
+		}
+		ai_hint_pp_cost = 50
+		cost = SOV_propaganda_decision_cost_var
+		days_remove = 100
+		days_re_enable = 100
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		modifier = {
+			political_power_gain = -0.15
+			military_development_monthly = 0.01
+			army_attack_factor = 0.05
+			army_armor_speed_factor = 0.05
+			breakthrough_factor = 0.025
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_war_support = 0.05
+		}
+	}
+	SOV_implement_peoples_programme = {
+		visible = {
+			has_completed_focus = SOV_Talk_with_Ministers
+		}
+		ai_will_do = {
+			base = 25
+		}
+		modifier = {
+			political_power_gain = -0.10
+			consumer_goods_factor = 0.04
+			personal_expense_factor = 0.05
+			academic_development_monthly = 0.015
+			poverty_development_monthly = 0.015
+			society_development_monthly = 0.02
+			conservative_drift = 0.01
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income = yes
+		}
+		days_remove = 100
+		days_re_enable = 150
+		icon = GFX_SOV_ONF
+		cost = 50
+	}
+	SOV_support_young_families = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_Economic_Stability
+				has_completed_focus = SOV_Hospital_Budgets
+			}
+		}
+		ai_will_do = {
+			base = 25
+		}
+		modifier = {
+			weekly_manpower = 500
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -35
+			}
+			add_income = yes
+		}
+		days_remove = 100
+		days_re_enable = 150
+		icon = GFX_SOV_ONF
+		cost = 20
+	}
+	SOV_patriots_of_new_generations = {
+		visible = {
+			authoritarian_democrat < 0.7
+		}
+		ai_will_do = {
+			base = 25
+		}
+		modifier = {
+			political_power_gain = 0.1
+			war_support_weekly = 0.01
+			consumer_goods_factor = 0.02
+			personal_expense_factor = 0.05
+			authoritarian_democrat_drift = 0.01
+			society_development_monthly = 0.05
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income = yes
+		}
+		days_remove = 100
+		days_re_enable = 150
+		icon = GFX_SOV_ONF
+		cost = 50
+	}
+	SOV_supervising_national_projects = {
+		visible = {
+			has_completed_focus = SOV_Medicine_Distribution
+			has_completed_focus = SOV_Protect_Core_Corps
+		}
+		ai_will_do = {
+			base = 25
+		}
+		modifier = {
+			production_speed_buildings_factor = 0.1
+			production_factory_efficiency_gain_factor = 0.02
+			political_power_gain = -0.05
+			consumer_goods_factor = 0.02
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income = yes
+		}
+		days_remove = 50
+		days_re_enable = 150
+		icon = GFX_SOV_ONF
+		cost = 20
+	}	
+	SOV_expand_anti_corruption_activity = {
+		visible = {
+		}
+		ai_will_do = {
+			base = 5
+		}
+		modifier = {
+			political_power_gain = -0.1
+			consumer_goods_factor = 0.05
+		}
+		remove_effect = {
+			add_stability = 0.01
+			set_temp_variable = {
+				var = income_var_temp
+				value = 100
+			}
+			add_income = yes
+		}
+		days_remove = 100
+		days_re_enable = 100
+		icon = GFX_SOV_ONF
+		cost = 45
+	}
+	SOV_sideline_liberal_members = {
+		visible = {
+			
+		}
+		ai_will_do = {
+			base = 35
+		}
+		modifier = {
+			social_liberal_drift = -0.01
+			conservative_drift = -0.01
+			market_liberal_drift = -0.01
+			authoritarian_democrat_drift = 0.01
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_stability = -0.05
+			}
+		}
+		remove_effect = {
+			add_political_power = 100
+			add_war_support = 0.015
+		}
+		days_remove = 100
+		days_re_enable = 150
+		icon = GFX_SOV_ONF
+		custom_cost_text = 5_stability_cost
+	}
+	SOV_rural_support_programme = {
+		visible = {
+			has_completed_focus = SOV_Focus_on_Infrastructure
+		}
+		ai_will_do = {
+			base = 25
+		}
+		modifier = {
+			consumer_goods_factor = 0.06
+		}
+		remove_effect = {
+			every_owned_state = {
+				limit = {
+					OR = {
+						has_state_category = village
+						has_state_category = rural
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			every_owned_state = {
+				limit = {
+					OR = {
+						has_state_category = village
+						has_state_category = rural
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		days_remove = 100
+		icon = GFX_SOV_ONF
+		cost = 50
+	}
+	SOV_invest_in_state_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_oligarchs_invest_in_state_factory_tt
+				any_owned_state = {
+					has_state_flag = SOV_oligarchs_build_factory
+					check_variable = {
+						factory_goal = industrial_complex_level
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = SOV_oligarchs_build_factory
+			}
+		}
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = SOV_oligarchs_build_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = SOV_oligarchs_build_factory
+				}
+				clr_state_flag = SOV_oligarchs_build_factory
+				clear_variable = factory_goal
+			}
+			add_political_power = -50
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+			clr_country_flag = SOV_oligarchs_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = SOV_oligarchs_build_factory
+				}
+				clr_state_flag = SOV_oligarchs_build_factory
+				clear_variable = factory_goal
+			}
+			ROOT = {
+				add_political_power = 50
+				set_temp_variable = {
+					var = SOV_oligarch_approval_rating_var_temp
+					value = 0.05
+				}
+				SOV_add_oligarch_approval_rating = yes
+				clr_country_flag = SOV_oligarchs_investment
+			}
+		}
+	}
+	SOV_invest_in_state_arms_factory = {
+		icon = generic_construction
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_oligarchs_invest_in_state_factory_tt
+				any_owned_state = {
+					has_state_flag = SOV_oligarchs_build_arms_factory
+					check_variable = {
+						arms_factory_goal = arms_factory_level
+					}
+				}
+			}
+		}
+		highlight_states = {
+			highlight_states_trigger = {
+				has_state_flag = SOV_oligarchs_build_arms_factory
+			}
+		}
+		days_mission_timeout = 360
+		is_good = no
+		activation = {
+			any_owned_state = {
+				has_state_flag = SOV_oligarchs_build_arms_factory
+			}
+		}
+		timeout_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = SOV_oligarchs_build_arms_factory
+				}
+				clr_state_flag = SOV_oligarchs_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			add_political_power = -50
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+			clr_country_flag = SOV_oligarchs_investment
+		}
+		complete_effect = {
+			random_owned_state = {
+				limit = {
+					has_state_flag = SOV_oligarchs_build_arms_factory
+				}
+				clr_state_flag = SOV_oligarchs_build_arms_factory
+				clear_variable = arms_factory_goal
+			}
+			ROOT = {
+				add_political_power = 50
+				set_temp_variable = {
+					var = SOV_oligarch_approval_rating_var_temp
+					value = 0.05
+				}
+				SOV_add_oligarch_approval_rating = yes
+				clr_country_flag = SOV_oligarchs_investment
+			}
+		}
+	}
+	SOV_murmansk_railway_decision = {
+		priority = 1
+		icon = GFX_SOV_decision_nato_war_deadline
+		available = {
+			has_railway_connection = {
+				start_province = 3134
+				target_province = 9041
+			}
+		}
+		days_mission_timeout = 100
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		is_good = no
+		timeout_effect = {
+			add_political_power = -50
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+			clr_country_flag = SOV_oligarchs_investment
+		}
+		complete_effect = {
+			ROOT = {
+				add_political_power = 50
+				set_temp_variable = {
+					var = SOV_oligarch_approval_rating_var_temp
+					value = 0.05
+				}
+				SOV_add_oligarch_approval_rating = yes
+				clr_country_flag = SOV_oligarchs_investment
+			}
+		}
+	}	
+	SOV_rebuilding_syria_mission = {
+		icon = GFX_SOV_decision_SOV_syria_mission
+		priority = -1
+		available = {
+			hidden_trigger = {
+				always = no
+			}
+		}
+		fire_only_once = yes
+		is_good = yes
+		days_mission_timeout = 120
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		timeout_effect = {
+			SYR = {
+				add_political_power = 100
+				swap_ideas = {
+					remove_idea = SYR_devistated_economy
+					add_idea = SYR_syrian_economic_renewal
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.1
+				}
+			}
+		}
+	}
+	SOV_novorossiyisk_railway_decision = {
+		priority = 1
+		icon = GFX_SOV_decision_nato_war_deadline
+		available = {
+			has_railway_connection = {
+				start_province = 3686
+				target_province = 719
+			}
+		}
+		days_mission_timeout = 100
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = no
+		cancel_if_not_visible = yes
+		is_good = no
+		timeout_effect = {
+			add_political_power = -50
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+			clr_country_flag = SOV_oligarchs_investment
+		}
+		complete_effect = {
+			ROOT = {
+				add_political_power = 50
+				set_temp_variable = {
+					var = SOV_oligarch_approval_rating_var_temp
+					value = 0.05
+				}
+				SOV_add_oligarch_approval_rating = yes
+				clr_country_flag = SOV_oligarchs_investment
+			}
+		}
+	}
+	SOV_wrangle_oligarchs = {
+		visible = {
+			tag = SOV
+			NOT = { 
+				OR = { 
+					has_country_flag = SOV_medve_oligarchs_disabled
+				}
+			}
+		}
+		icon = GFX_SOV_decision_SOV_wrangle_oligarchs
+		fire_only_once = no
+		days_remove = 20
+		days_re_enable = 30
+		complete_effect = {
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.05
+			}
+			add_industrial_development = yes
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+		}
+		cost = 50
+	}
+	SOV_conscript_railways = {
+		visible = {
+			tag = SOV
+			NOT = { 
+				OR = { 
+					has_country_flag = SOV_medve_oligarchs_disabled
+				}
+			}
+		}
+		icon = GFX_SOV_decision_SOV_conscript_railway
+		fire_only_once = no
+		days_remove = 60
+		days_re_enable = 30
+		modifier = {
+			production_speed_rail_way_factor = 0.1
+		}
+		complete_effect = {
+			add_manpower = -1000
+		}
+		remove_effect = {
+			add_manpower = 1000
+		}
+		cost = 50
+	}
+	SOV_oligarch_support = {
+		visible = {
+			tag = SOV
+			NOT = { 
+				OR = { 
+					has_country_flag = SOV_medve_oligarchs_disabled
+				}
+			}
+		}
+		icon = GFX_SOV_decision_SOV_oligarch_support
+		fire_only_once = no
+		days_remove = 30
+		days_re_enable = 60
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -45
+			}
+			add_income = yes
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = 0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = -0.03
+			}
+			add_industrial_development = yes
+			set_temp_variable = {
+				var = SOV_oligarch_approval_factory_temp
+				value = 1
+			}
+			SOV_add_oligarch_factory = yes
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 45
+			}
+		}
+		custom_cost_text = dx_more_than_45B
+	}
+	SOV_utilize_the_church_authority = {
+		visible = {
+			tag = SOV
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_idea_roc_tt
+				OR = {
+					has_idea = SOV_Russian_Orthodox_Church
+					has_idea = SOV_Russian_Orthodox_Church2
+					has_idea = SOV_Russian_Orthodox_Church3
+				}
+			}
+		}
+		icon = GFX_SOV_decision_draw_support_from_church
+		fire_only_once = no
+		days_remove = 70
+		days_re_enable = 70
+		modifier = {
+			stability_weekly = 0.001
+			political_power_factor = -0.1
+			personal_value_factor = 0.1
+			personal_expense_factor = 0.025
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			add_stability = 0.05
+			add_manpower = 400
+			set_temp_variable = {
+				var = income_var_temp
+				value = 10
+			}
+			add_income = yes
+			set_temp_variable = {
+				var = society_development_var_temp
+				value = 0.01
+			}
+			add_society_development = yes
+		}
+		cost = 50
+	}	
+	SOV_use_church_for_war_propaganda = {
+		visible = {
+			tag = SOV
+			has_war_with = GER
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = SOV_idea_roc_tt
+				OR = {
+					has_idea = SOV_Russian_Orthodox_Church
+					has_idea = SOV_Russian_Orthodox_Church2
+					has_idea = SOV_Russian_Orthodox_Church3
+				}
+			}
+		}
+		icon = GFX_SOV_decision_draw_support_from_church
+		fire_only_once = yes
+		days_remove = 30
+		modifier = {
+			war_support_weekly = 0.0015
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = SOV_use_church_for_war_propaganda_tt
+			show_ideas_tooltip = SOV_militarized_church_idea
+			hidden_effect = {
+				remove_ideas = SOV_Russian_Orthodox_Church2
+				add_timed_idea = {
+					idea = SOV_militarized_church_idea
+					days = 175
+				}
+			}
+		}
+		cost = 50
+	}	
+	SOV_increase_moscow_budget = {
+		visible = {
+			tag = SOV
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_increase_moscow_budget
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			income_growth_factor = -0.05
+			business_value_factor = 0.15
+		}
+		complete_effect = {
+			1339 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			hidden_effect ={
+				set_temp_variable = {
+					var = income_var_temp
+					value = -25
+				}
+				add_income = yes
+			}
+		}
+		remove_effect = {
+			random_list = {
+				50 = {
+					1339 = {
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				50 = {
+					1339 = {
+						add_building_construction = {
+							type = office_park
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_25B
+	}	
+	SOV_fund_chechnya_republic = {
+		visible = {
+			tag = SOV
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_fund_chechen_republic
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			income_growth_factor = -0.05
+			business_value_factor = 0.15
+		}
+		complete_effect = {
+			828 = {
+				add_extra_state_shared_building_slots = 1
+			}
+			hidden_effect ={
+				set_temp_variable = {
+					var = income_var_temp
+					value = -25
+				}
+				add_income = yes
+			}
+		}
+		remove_effect = {
+			random_list = {
+				50 = {
+					828 = {
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+				50 = {
+					828 = {
+						add_building_construction = {
+							type = office_park
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_25B
+	}		
+	SOV_improve_crimea_infrastructure = {
+		visible = {
+			tag = SOV
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		available = {
+			has_country_leader = {
+				character = SOV_vladimir_putin
+				ruling_only = yes
+			}
+		}
+		icon = GFX_SOV_decision_improve_crimea_infrastructure
+		fire_only_once = yes
+		days_remove = 100
+		modifier = {
+			income_growth_factor = -0.02
+			business_value_factor = 0.05
+		}
+		complete_effect = {
+			137 = {
+				add_extra_state_shared_building_slots = 2
+			}
+			hidden_effect = {
+				set_temp_variable = {
+					var = income_var_temp
+					value = -10
+				}
+				add_income = yes
+			}
+		}
+		remove_effect = {
+			137 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_10B
+	}
+	SOV_referendum_in_ossetia = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_pacify_abkhazia_and_south_ossetia
+		}
+		ai_will_do = {
+			base = 100
+		}
+		icon = GFX_SOV_decision_referendum_russia
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+		}
+		remove_effect = {
+			modify_timed_idea = {
+				idea = SOV_litte_russian_spring
+				days = 15
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.015
+			}
+			SOV_add_election_approval_rating_ur = yes
+			annex_country = {
+				target = YAM
+				transfer_troops = yes
+			}
+			797 = {
+				add_dynamic_modifier = {
+					modifier = SOV_republic_of_russia
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						owns_state = 796
+					}
+					news_event = { id = news.365 hours = 7 }
+				}
+			}
+		}
+		cost = 25
+	}
+	SOV_referendum_in_abkhazia = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_pacify_abkhazia_and_south_ossetia
+		}
+		icon = GFX_SOV_decision_referendum_russia
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			base = 100
+		}
+		complete_effect = {	
+		}
+		remove_effect = {
+			modify_timed_idea = {
+				idea = SOV_litte_russian_spring
+				days = 15
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.015
+			}
+			SOV_add_election_approval_rating_ur = yes
+			annex_country = {
+				target = KKP
+				transfer_troops = yes
+			}
+			796 = {
+				add_dynamic_modifier = {
+					modifier = SOV_republic_of_russia
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						owns_state = 797
+					}
+					news_event = { id = news.365 hours = 7 }
+				}
+			}
+		}
+		cost = 25
+	}
+	SOV_sovereign_democracy_book = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_a_new_republic
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		days_remove = 30
+		cost = 35
+		modifier = {
+			political_power_factor = -0.05
+		}
+		available = {
+			has_country_flag = SOV_cprf_sr_merged_flag
+		}
+		remove_effect = {
+			country_event = {
+				id = russia.418
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						has_idea = SOV_putinism_human_face2
+					}
+					swap_ideas = {
+						remove_idea = SOV_putinism_human_face2
+						add_idea = SOV_putinism_human_face2_2
+					}
+				}
+				if = {
+					limit = {
+						has_idea = SOV_putinism_human_face3
+					}
+					swap_ideas = {
+						remove_idea = SOV_putinism_human_face3
+						add_idea = SOV_putinism_human_face3_2
+					}
+				}
+			}
+		}
+	}
+	SOV_strengthen_nat_security_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_stronghold_of_law_and_order
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		days_remove = 30
+		cost = 70
+		modifier = {
+			political_power_factor = -0.1
+			personal_expense_factor = 0.25
+		}
+		available = {
+			
+		}
+		remove_effect = {
+			country_event = {
+				id = russia.575
+				hours = 8
+			}
+			event_option_tooltip = russia.575.a
+			set_country_flag = SOV_strengthen_nat_security_flag
+		}
+	}	
+	SOV_fund_sovereign_internet = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_stronghold_of_law_and_order
+		}
+		available = {
+			has_country_flag = SOV_strengthen_nat_security_flag
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		days_remove = 70
+		cost = 100
+		modifier = {
+			political_power_factor = -0.15
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 70
+			}
+			add_debt = yes	
+		}
+		remove_effect = {
+			set_country_flag = SOV_sovereign_internet_enabled_flag
+			custom_effect_tooltip = change_security_law_tooltip
+			show_ideas_tooltip = SOV_sovereign_internet_law
+			hidden_effect = {
+				add_ideas = SOV_sovereign_internet_law
+			}
+		}
+	}
+	SOV_install_loyal_administrations_rightist = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_lukashenko_constitution
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 35
+		cost = 50
+		ai_will_do = {
+			base = 5
+		}
+		modifier = {
+			political_power_factor = -0.15
+		}
+		remove_effect = {
+			every_controlled_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = SOV_regional_rightist_administartion
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = SOV_regional_rightist_administartion
+				}	
+				add_dynamic_modifier = {
+					modifier = SOV_regional_batyka_adminstration
+				}
+			}
+		}
+	}	
+	SOV_install_loyal_administrations_leftist = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_lukashenko_constitution
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 35
+		cost = 50
+		ai_will_do = {
+			base = 5
+		}
+		modifier = {
+			political_power_factor = -0.15
+		}
+		remove_effect = {
+			every_controlled_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = SOV_regional_leftist_administartion
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = SOV_regional_leftist_administartion
+				}	
+				add_dynamic_modifier = {
+					modifier = SOV_regional_batyka_adminstration
+				}
+			}
+		}
+	}	
+	SOV_install_loyal_administrations_liberal = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_lukashenko_constitution
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 35
+		cost = 50
+		ai_will_do = {
+			base = 5
+		}
+		modifier = {
+			political_power_factor = -0.15
+		}
+		remove_effect = {
+			every_controlled_state = {
+				limit = {
+					has_dynamic_modifier = {
+						modifier = SOV_regional_liberal_administartion
+					}
+				}
+				remove_dynamic_modifier = {
+					modifier = SOV_regional_liberal_administartion
+				}	
+				add_dynamic_modifier = {
+					modifier = SOV_regional_batyka_adminstration
+				}
+			}
+		}
+	}	
+	SOV_crush_far_left_extremists = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_new_opposition_flag
+			NOT ={ has_country_flag = SOV_infiltrate_left_opposition_flag }
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 35
+		cost = 100
+		modifier = {
+			political_power_factor = -0.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		complete_effect = {
+			set_country_flag = SOV_crush_far_left_extremists_flag
+		}
+		remove_effect = {
+			SOV_decrease_new_anti_system_opposition = yes
+			set_party_name = {
+				ideology = totalitarian_socialist
+				name = SOV_outlawed_party
+				long_name = SOV_outlawed_party
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = -1
+			}
+			add_stability = -0.05
+		}
+	}
+	SOV_infiltrate_left_opposition = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_new_opposition_flag
+			NOT ={ has_country_flag = SOV_crush_far_left_extremists_flag }
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 40
+		cost = 200
+		modifier = {
+			political_power_factor = -0.25
+		}
+		ai_will_do = {
+			base = 35
+		}
+		complete_effect = {
+			set_country_flag = SOV_infiltrate_left_opposition_flag
+		}
+		remove_effect = {
+			SOV_decrease_new_anti_system_opposition = yes
+			set_party_name = {
+				ideology = totalitarian_socialist
+				name = SOV_medvedev_apf_socialists_short
+				long_name = SOV_medvedev_apf_socialists_long
+			}
+			set_temp_variable = { coalition_partner_var_temp = token:totalitarian_socialist }
+			add_to_coalition = yes
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = 0.03
+			}
+			add_war_support = 0.02
+		}
+	}	
+	SOV_suppress_liberal_dissent = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_new_opposition_flag
+			NOT ={ has_country_flag = SOV_cooperate_with_liberals_onf_flag }
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 35
+		cost = 100
+		modifier = {
+			political_power_factor = -0.1
+		}
+		ai_will_do = {
+			base = 35
+		}
+		complete_effect = {
+			set_country_flag = SOV_suppress_liberal_dissent_flag
+		}
+		remove_effect = {
+			SOV_decrease_new_anti_system_opposition = yes
+			add_stability = -0.05
+			hidden_effect = {
+				set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+				add_to_coalition = yes
+				set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+				add_to_coalition = yes
+				set_party_name = {
+					ideology = social_liberal
+					name = SOV_medvedev_apf_liberals_short
+					long_name = SOV_medvedev_apf_liberals_long
+				}	
+				set_party_name = {
+					ideology = market_liberal
+					name = SOV_medvedev_apf_liberals_short
+					long_name = SOV_medvedev_apf_liberals_long
+				}
+			}
+		}
+	}
+	SOV_cooperate_with_liberals_onf = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_new_opposition_flag
+			NOT ={ has_country_flag = SOV_suppress_liberal_dissent_flag }
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 40
+		cost = 200
+		modifier = {
+			political_power_factor = -0.25
+		}
+		ai_will_do = {
+			base = 35
+		}
+		complete_effect = {
+			set_country_flag = SOV_cooperate_with_liberals_onf_flag
+		}
+		remove_effect = {
+			SOV_decrease_new_anti_system_opposition = yes
+			add_popularity = {
+				ideology = social_liberal
+				popularity = 0.03
+			}	
+			add_popularity = {
+				ideology = market_liberal
+				popularity = 0.01
+			}
+			add_war_support = 0.02
+			custom_effect_tooltip = unlock_for_minister_tooltip
+			show_ideas_tooltip = SOV_Nadezhdin
+			every_controlled_state = {
+				limit = {
+					OR = {
+						NOT = { has_dynamic_modifier = { modifier = SOV_regional_rightist_administartion } }
+						NOT = { has_dynamic_modifier = { modifier = SOV_regional_leftist_administartion } }
+						NOT = { has_dynamic_modifier = { modifier = SOV_regional_liberal_administartion } }
+					}
+				}
+				random_select_amount  = 1
+				add_dynamic_modifier = {
+					modifier = SOV_regional_liberal_administartion
+				}
+			}
+			set_country_flag = SOV_cooperate_with_liberals_onf_2_flag
+			hidden_effect = {
+				set_temp_variable = { coalition_partner_var_temp = token:social_liberal }
+				add_to_coalition = yes		
+				set_temp_variable = { coalition_partner_var_temp = token:market_liberal }
+				add_to_coalition = yes
+				set_party_name = {
+					ideology = social_liberal
+					name = SOV_medvedev_apf_liberals_short
+					long_name = SOV_medvedev_apf_liberals_long
+				}	
+				set_party_name = {
+					ideology = market_liberal
+					name = SOV_medvedev_apf_liberals_short
+					long_name = SOV_medvedev_apf_liberals_long
+				}
+			}
+		}
+	}
+	SOV_crush_right_extremists = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_new_opposition_flag
+			NOT ={ has_country_flag = SOV_infiltrate_right_opposition_flag }
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 35
+		cost = 100
+		modifier = {
+			political_power_factor = -0.1
+		}
+		ai_will_do = {
+			base = 50
+		}
+		complete_effect = {
+			set_country_flag = SOV_crush_right_extremists_flag
+		}
+		remove_effect = {
+			SOV_decrease_new_anti_system_opposition = yes
+			set_party_name = {
+				ideology = national_socialist
+				name = SOV_outlawed_party
+				long_name = SOV_outlawed_party
+			}
+			add_popularity = {
+				ideology = national_socialist
+				popularity = -1
+			}
+			add_war_support = -0.05
+		}
+	}
+	SOV_infiltrate_right_opposition = {
+		visible = {
+			tag = SOV
+			has_country_flag = SOV_new_opposition_flag
+			NOT ={ has_country_flag = SOV_crush_right_extremists_flag }
+		}
+		icon = GFX_SOV_decision_anti_maidan
+		fire_only_once = yes
+		days_remove = 40
+		cost = 200
+		ai_will_do = {
+			base = 35
+		}
+		modifier = {
+			political_power_factor = -0.25
+		}
+		complete_effect = {
+			set_country_flag = SOV_infiltrate_right_opposition_flag
+		}
+		remove_effect = {
+			SOV_decrease_new_anti_system_opposition = yes
+			set_party_name = {
+				ideology = national_socialist
+				name = SOV_medvedev_apf_national_patriots_short
+				long_name = SOV_medvedev_apf_national_patriots_long
+			}
+			set_temp_variable = { coalition_partner_var_temp = token:national_socialist }
+			add_to_coalition = yes
+			add_popularity = {
+				ideology = national_socialist
+				popularity = 0.02
+			}
+			add_stability = 0.02
+		}
+	}
+	SOV_requisition_oligarch_civilian_factories_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_secure_oligarch_loyalty
+		}
+		icon = GFX_SOV_decision_SOV_oligarch_civ_factory
+		fire_only_once = no
+		days_remove = 70
+		days_re_enable = 35
+		cost = 10
+		available = {
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_trigger_temp
+				value = 0.5
+			}
+			SOV_has_influence_oligarchs_less_than_or_equals = yes
+			NOT = {
+				check_variable = {
+					var = SOV_remove_oligarch_factory_var
+					value = 6
+				}
+			}
+		}
+		complete_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = SOV_oligarch_factory_var
+			}
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = SOV_remove_oligarch_factory_var
+			}
+		}
+	}
+	SOV_requisition_oligarch_military_factories_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_secure_oligarch_loyalty
+		}
+		icon = GFX_SOV_decision_SOV_oligarch_mil_factory
+		fire_only_once = no
+		days_remove = 70
+		days_re_enable = 35
+		cost = 10
+		available = {
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_trigger_temp
+				value = 0.5
+			}
+			SOV_has_influence_oligarchs_less_than_or_equals = yes
+			NOT = {
+				check_variable = {
+					var = SOV_remove_oligarch_factory_var
+					value = 6
+				}
+			}
+		}
+		complete_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = SOV_oligarch_factory_var
+			}
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = arms_factory
+				level = SOV_remove_oligarch_factory_var
+			}
+		}
+	}
+	SOV_requisition_oligarch_dockyards_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_secure_oligarch_loyalty
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = no
+		days_remove = 70
+		days_re_enable = 35
+		cost = 10
+		available = {
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_trigger_temp
+				value = 0.5
+			}
+			SOV_has_influence_oligarchs_less_than_or_equals = yes
+			NOT = {
+				check_variable = {
+					var = SOV_remove_oligarch_factory_var
+					value = 6
+				}
+			}
+		}
+		complete_effect = {
+			add_offsite_building = {
+				type = dockyard
+				level = SOV_oligarch_factory_var
+			}
+			set_temp_variable = {
+				var = SOV_oligarch_approval_rating_var_temp
+				value = -0.05
+			}
+			SOV_add_oligarch_approval_rating = yes
+		}
+		remove_effect = {
+			add_offsite_building = {
+				type = dockyard
+				level = SOV_remove_oligarch_factory_var
+			}
+		}
+	}
+	SOV_infiltrate_CPRF_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			communist_drift = -0.025
+			libertarian_socialist_drift = -0.015
+			authoritarian_democrat_drift = 0.02
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			custom_effect_tooltip = SOV_end_cprf_criticism_tt
+			set_country_flag = SOV_infiltrated_CPRF
+			SOV_decrease_reforming_the_system = yes
+			if = {
+				limit = {
+					has_completed_focus = SOV_
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_amend_the_constitution
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.02
+				}
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_infiltrate_LDPR_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_LDPR
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			fascist_drift = -0.025
+			authoritarian_democrat_drift = 0.02
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			custom_effect_tooltip = SOV_end_ldpr_criticism_tt
+			set_country_flag = SOV_infiltrated_LDPR
+			SOV_decrease_reforming_the_system = yes
+			if = {
+				limit = {
+					has_completed_focus = SOV_
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_amend_the_constitution
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.02
+				}
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_destroy_CPRF_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_destroy_CPFR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+			has_country_flag = SOV_infiltrated_CPRF
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			set_country_flag = SOV_destroyed_CPRF
+			country_event = {
+				id = russia.158
+			}
+			SOV_decrease_reforming_the_system = yes
+			add_popularity = {
+				ideology = communist
+				popularity = -0.05
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.05
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_amend_the_constitution
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.02
+				}
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_destroy_LDPR_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_destroy_LDPR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+			has_country_flag = SOV_infiltrated_LDPR
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			set_country_flag = SOV_destroyed_LDPR
+			country_event = {
+				id = russia.163
+			}
+			SOV_decrease_reforming_the_system = yes
+			add_popularity = {
+				ideology = fascist
+				popularity = -0.05
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.02
+				}
+			}
+			if = {
+				limit = {
+					has_completed_focus = SOV_amend_the_constitution
+				}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.01
+				}
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_support_SR_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		modifier = {
+			social_democrat_drift = 0.025
+			conservative_drift = 0.01
+			authoritarian_democrat_drift = 0.01
+		}
+		remove_effect = {
+			add_stability = 0.025
+			SOV_decrease_reforming_the_system = yes
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.02
+			}
+			add_popularity = {
+				ideology = social_democrat
+				popularity = 0.025
+			}
+			set_country_flag = SOV_supported_SR
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_merge_CPRF_and_SR_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_sponsor_communists
+		fire_only_once = yes
+		days_remove = 100
+		cost = 100
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_destroyed_CPRF
+			has_country_flag = SOV_destroyed_LDPR
+			has_country_flag = SOV_supported_SR
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			social_democrat_drift = 0.015
+			libertarian_socialist_drift = 0.01
+			authoritarian_democrat_drift = 0.01
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			add_war_support = 0.015
+			SOV_decrease_reforming_the_system = yes
+			country_event = {
+				id = russia.160
+			}
+			set_country_flag = SOV_cprf_sr_merged_flag
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_United_Russia_question_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_support_two_party_system
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		days_remove = 30
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_destroyed_CPRF
+			has_country_flag = SOV_destroyed_LDPR
+			has_country_flag = SOV_supported_SR
+			has_global_flag = SOV_first_nato_war_victory
+		}
+		remove_effect = {
+			add_political_power = 25
+			country_event = {
+				id = russia.161
+			}
+		}
+	}
+	SOV_empower_apf_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_ONF
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			authoritarian_democrat_drift = 0.02
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			add_stability = 0.05
+			SOV_decrease_centralizing_the_system = yes
+			set_country_flag = SOV_empowered_apf
+			country_event = {
+				id = russia.338
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_infiltrate_CPRF_decision2 = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_empowered_apf
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			social_democrat_drift = 0.015
+			communist_drift = -0.015
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			custom_effect_tooltip = SOV_end_cprf_criticism_tt
+			SOV_decrease_centralizing_the_system = yes
+			set_country_flag = SOV_infiltrated_CPRF2
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_get_in_contact_LDPR_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_LDPR
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_empowered_apf
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			fascist_drift = 0.01
+			authoritarian_democrat_drift = 0.015
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			custom_effect_tooltip = SOV_end_ldpr_criticism_tt
+			SOV_decrease_centralizing_the_system = yes
+			set_country_flag = SOV_LDPR_in_contact
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_destroy_socialists_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_destroy_CPFR
+		fire_only_once = yes
+		days_remove = 40
+		cost = 50
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_empowered_apf
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			communist_drift = -0.015
+			totalitarian_socialist_drift = -0.015
+			libertarian_socialist_drift = -0.015
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			set_country_flag = SOV_destroyed_socialists
+			SOV_decrease_centralizing_the_system = yes
+			country_event = {
+				id = russia.196
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_CPRF_coalition_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_CPFR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_destroyed_socialists
+			has_country_flag = SOV_infiltrated_CPRF2
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			social_democrat_drift = 0.015
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			set_country_flag = SOV_united_with_CPRF
+			SOV_decrease_centralizing_the_system = yes
+			country_event = {
+				id = russia.198
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_unite_with_LDPR_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_LDPR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_LDPR_in_contact
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			fascist_drift = 0.005
+			authoritarian_democrat_drift = 0.01
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			set_country_flag = SOV_united_with_LDPR
+			SOV_decrease_centralizing_the_system = yes
+			country_event = {
+				id = russia.197
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_unite_with_JRFT_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_destroyed_socialists
+			NOT = {
+				has_country_flag = SOV_political_action
+			}
+		}
+		modifier = {
+			conservative_drift = 0.01
+			authoritarian_democrat_drift = 0.01
+		}
+		complete_effect = {
+			set_country_flag = SOV_political_action
+		}
+		remove_effect = {
+			set_country_flag = SOV_united_with_JRFT
+			SOV_decrease_centralizing_the_system = yes
+			country_event = {
+				id = russia.199
+			}
+			hidden_effect = {
+				clr_country_flag = SOV_political_action
+			}
+		}
+	}
+	SOV_oligarchs_question_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_centralize_power
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		days_remove = 25
+		ai_will_do = {
+			base = 100
+		}
+		available = {
+			has_country_flag = SOV_united_with_CPRF
+			has_country_flag = SOV_united_with_LDPR
+			has_country_flag = SOV_united_with_JRFT
+			has_country_flag = SOV_empowered_apf
+			has_global_flag = SOV_first_nato_war_victory
+		}
+		modifier = {
+			stability_weekly = 0.002
+		}
+		remove_effect = {
+			add_political_power = 25
+			country_event = {
+				id = russia.195
+			}
+		}
+	}
+	SOV_deal_with_reactionaries_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_uphold_two_party_system
+		}
+		icon = GFX_SOV_decision_United_Russia
+		fire_only_once = yes
+		days_remove = 100
+		ai_will_do = {
+			base = 100
+		}
+		modifier = {
+			stability_weekly = 0.002
+		}
+		complete_effect = {
+			add_stability = -0.05
+		}
+		remove_effect = {
+			add_political_power = 25
+			country_event = {
+				id = russia.754
+			}
+		}
+	}
+	SOV_support_united_russia_platform = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_strength_in_discussion
+				has_completed_focus = SOV_homogeneous_government
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_supported_platform
+			}
+		}
+		ai_will_do = {
+			base = 35
+		}
+		modifier = {
+			business_value_factor = 0.125
+			personal_value_factor = 0.125
+			industrial_capacity_factory  = 0.07
+			political_power_gain = -0.25
+			consumer_goods_factor = -0.10
+			conservative_drift = 0.05
+			industrial_development_monthly = 0.03
+		}
+		complete_effect = {
+			set_country_flag = SOV_supported_platform
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income = yes
+			clr_country_flag = SOV_supported_platform
+		}
+		days_remove = 90
+		icon = GFX_SOV_ONF
+		cost = 100
+	}
+	SOV_support_people_russia_platform = {
+		visible = {
+			OR = {
+				has_completed_focus = SOV_strength_in_discussion
+				has_completed_focus = SOV_homogeneous_government
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_supported_platform
+			}
+		}
+		ai_will_do = {
+			base = 35
+		}
+		modifier = {
+			poverty_development_monthly = 0.03
+			personal_value_factor = 0.25
+			production_speed_buildings_factor = 0.07
+			production_factory_max_efficiency_factor = 0.07
+			political_power_gain = -0.15
+			consumer_goods_factor = 0.10
+			social_democrat_drift = 0.05
+		}
+		complete_effect = {
+			set_country_flag = SOV_supported_platform
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income = yes
+			clr_country_flag = SOV_supported_platform
+		}
+		days_remove = 90
+		icon = GFX_SOV_ONF
+		cost = 100
+	}
+	SOV_working_man_mission = {
+		icon = GFX_SOV_decision_CPFR
+		available = {
+			OR = {
+				has_idea = high_safety
+				has_idea = higher_safety
+			}
+			OR = {
+				has_idea = high_welfare
+				has_idea = higher_welfare
+			}
+		}
+		days_mission_timeout = 80
+		activation = {
+			always = no
+		}
+		visible = {
+		}
+		fire_only_once = yes
+		cancel_if_not_visible = yes
+		is_good = no
+		selectable_mission = no
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05	
+		}
+		ai_will_do = {
+			base = 50
+		}
+		timeout_effect = {
+			remove_ideas = SOV_country_working_men_idea
+		}
+	}
+	SOV_corporate_compensation_tax_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_slash_business_influence
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 150
+		ai_will_do = {
+			base = 35
+		}
+		available = {
+		}
+		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = SOV_reforms_social_justice_dynamic
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_reforms_social_justice_dynamic
+					}
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SOV_reforms_social_justice_dummy
+					add_idea = SOV_reforms_social_justice_corporate_compensation
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = SOV_social_justice_consumer_goods_factor_dynamic
+					value = 0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_business_value_factor_dynamic
+					value = -0.05
+				}
+				add_to_variable = {
+					var = SOV_social_justice_income_growth_factor_dynamic
+					value = 0.05
+				}
+				add_to_variable = {
+					var = SOV_social_justice_production_factory_efficiency_gain_factor_dynamic
+					value = 0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_industrial_development_monthly_dynamic
+					value = 0.01
+				}
+			}
+		}
+	}
+	SOV_improve_local_self_governance_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_fair_commonwealth
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = no
+		days_remove = 70
+		days_re_enable = 60
+		cost = 75
+		ai_will_do = {
+			base = 35
+		}
+		available = {
+		}
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SOV_reforms_social_justice_dummy
+					add_idea = SOV_reforms_social_justice_self_government
+				}
+			}
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = SOV_reforms_social_justice_dynamic
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_reforms_social_justice_dynamic
+					}
+				}
+				add_to_variable = {
+					var = SOV_social_justice_consumer_goods_factor_dynamic
+					value = 0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_production_speed_infrastructure_dynamic
+					value = 0.10
+				}
+				add_to_variable = {
+					var = SOV_social_justice_political_power_dynamic
+					value = 0.10
+				}
+				add_to_variable = {
+					var = SOV_social_justice_society_development_monthly_dynamic
+					value = 0.01
+				}
+			}
+		}
+		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = SOV_reforms_social_justice_dynamic
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_reforms_social_justice_dynamic
+					}
+				}
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SOV_reforms_social_justice_self_government
+					add_idea = SOV_reforms_social_justice_dummy
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = SOV_social_justice_consumer_goods_factor_dynamic
+					value = -0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_production_speed_infrastructure_dynamic
+					value = -0.10
+				}
+				add_to_variable = {
+					var = SOV_social_justice_political_power_dynamic
+					value = -0.10
+				}
+				add_to_variable = {
+					var = SOV_social_justice_society_development_monthly_dynamic
+					value = -0.01
+				}
+			}
+		}
+	}
+	SOV_education_reforms_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_harmonize_the_society
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 100
+		ai_will_do = {
+			base = 35
+		}
+		available = {
+		}
+		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = SOV_reforms_social_justice_dynamic
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_reforms_social_justice_dynamic
+					}
+				}
+			}
+			set_temp_variable = {
+				var = academic_development_var_temp
+				value = -0.10
+			}
+			add_academic_development = yes
+			set_temp_variable = {
+				var = poverty_development_var_temp
+				value = 0.05
+			}
+			add_poverty_development = yes
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SOV_reforms_social_justice_dummy
+					add_idea = SOV_reforms_social_justice_education_reform
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = SOV_social_justice_consumer_goods_factor_dynamic
+					value = 0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_academic_development_monthly_dynamic
+					value = 0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_personal_value_factor_dynamic
+					value = 0.05
+				}
+			}
+		}
+	}
+	SOV_small_business_compensations_decision = {
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_work_with_ur
+		}
+		icon = GFX_SOV_decision_SR
+		fire_only_once = yes
+		days_remove = 30
+		cost = 75
+		ai_will_do = {
+			base = 35
+		}
+		available = {
+		}
+		remove_effect = {
+			hidden_effect = {
+				if = {
+					limit = {
+						NOT = {
+							has_dynamic_modifier = {
+								modifier = SOV_reforms_social_justice_dynamic
+							}
+						}
+					}
+					add_dynamic_modifier = {
+						modifier = SOV_reforms_social_justice_dynamic
+					}
+				}
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = 0.025
+			}
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = SOV_reforms_social_justice_dummy
+					add_idea = SOV_reforms_social_justice_small_business
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = SOV_social_justice_business_value_factor_dynamic
+					value = 0.025
+				}
+				add_to_variable = {
+					var = SOV_social_justice_production_speed_buildings_factor_dynamic
+					value = 0.05
+				}
+				add_to_variable = {
+					var = SOV_social_justice_society_development_monthly_dynamic
+					value = 0.005
+				}
+			}
+		}
+	}
+	SOV_state_for_working_man_decision = {
+		visible = {
+			has_completed_focus = SOV_glorify_the_common_man
+		}
+		ai_will_do = {
+			base = 25
+		}
+		modifier = {
+			stability_factor = 0.10
+			consumer_goods_factor = 0.05
+			personal_value_factor = 0.10
+			production_speed_buildings_factor = 0.025
+			poverty_development_monthly = 0.02
+			society_development_monthly = 0.02
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -30
+			}
+			add_income = yes
+		}
+		days_remove = 100
+		days_re_enable = 150
+		icon = GFX_SOV_decision_SR
+		cost = 75
+	}
+	SOV_donbass_mil_investment = {
+		icon = GFX_SOV_decision_SOV_invest_Mil_Donbass
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_invest_in_donbas
+		}
+		ai_will_do = {
+			base = 35
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+		}
+		remove_effect = {
+			228 = {
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 0.1
+			}
+			add_debt = yes
+			if = {
+				limit = { country_exists = DPR }
+				DPR = {
+					add_ideas = SOV_russian_investment_transnistria
+					set_temp_variable = {
+						var = military_development_var_temp
+						value = 0.05
+					}
+					add_military_development = yes
+				}
+			}
+			else = {
+				NOV = {
+					add_ideas = SOV_russian_investment_transnistria
+					set_temp_variable = {
+						var = military_development_var_temp
+						value = 0.05
+					}
+					add_military_development = yes
+				}
+			}
+		}
+		cost = 50
+	}
+	SOV_donbass_civ_investment = {
+		icon = GFX_SOV_decision_SOV_invest_Civ_Donbass
+		visible = {
+			tag = SOV
+			has_completed_focus = SOV_invest_in_donbas
+		}
+		ai_will_do = {
+			base = 35	
+		}
+		days_remove = 30
+		fire_only_once = yes
+		complete_effect = {
+		}
+		remove_effect = {
+			227 = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 0.15
+			}
+			add_debt = yes
+			NOV = {
+				add_ideas = SOV_russian_civilian_investment_transnistria
+				set_temp_variable = {
+					var = poverty_development_var_temp
+					value = 0.1
+				}
+				add_poverty_development = yes
+			}
+		}
+		cost = 50
+	}
+	SOV_develop_donbass_army = {
+		icon = GFX_SOV_decision_SOV_Donbass_Militia
+		highlight_states = {
+			highlight_state_targets = {
+				state = 227
+			}
+		}
+		on_map_mode = map_and_decisions_view
+		custom_cost_trigger = {
+			check_variable = {
+				var = income_var
+				value = 25
+				compare = greater_than_or_equals
+			}
+		}
+		custom_cost_text = dx_more_than_25B
+		days_remove = 60
+		fire_only_once = yes
+		ai_will_do = {
+			base = 35
+		}
+		visible = {
+			has_completed_focus = SOV_invest_in_donbas
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -25
+			}
+			add_income = yes
+		}
+		remove_effect = {
+			NOV = {
+				division_template = {
+					name = "Motor-Rifle Brigade"
+					is_locked = yes
+					priority = 0
+					template_counter = 0
+					regiments = {
+						motorized = {
+							x = 0
+							y = 0
+						}
+						motorized = {
+							x = 0
+							y = 1
+						}
+						motorized = {
+							x = 0
+							y = 2
+						}
+						mechanized = {
+							x = 0
+							y = 3
+						}
+						modern_armor = {
+							x = 1
+							y = 0
+						}
+						modern_sp_artillery_brigade = {
+							x = 2
+							y = 0
+						}
+						spaa_brigade = {
+							x = 2
+							y = 1
+						}
+					}
+					support = {
+						signal_company = {
+							x = 0
+							y = 0
+						}
+						mot_recon = {
+							x = 0
+							y = 1
+						}
+					}
+				}
+				random_owned_controlled_state = {
+					create_unit = {
+						division = "name = \"82ya Motostrelkovaya Brigada\" division_template = \"Motor-Rifle Brigade\" start_experience_factor = 0.2"
+						owner = NOV
+					}
+					create_unit = {
+						division = "name = \"87ya Motostrelkovaya Brigada\" division_template = \"Motor-Rifle Brigade\" start_experience_factor = 0.2"
+						owner = NOV
+					}
+					create_unit = {
+						division = "name = \"97ya Motostrelkovaya Brigada\" division_template = \"Motor-Rifle Brigade\" start_experience_factor = 0.2"
+						owner = NOV
+					}
+				}
+			}	
+			if = {
+				limit = { country_exists = DPR }
+				DPR = {
+					division_template = {
+						name = "Motor-Rifle Brigade"
+						is_locked = yes
+						priority = 0
+						template_counter = 0
+						regiments = {
+							motorized = {
+								x = 0
+								y = 0
+							}
+							motorized = {
+								x = 0
+								y = 1
+							}
+							motorized = {
+								x = 0
+								y = 2
+							}
+							mechanized = {
+								x = 0
+								y = 3
+							}
+							modern_armor = {
+								x = 1
+								y = 0
+							}
+							modern_sp_artillery_brigade = {
+								x = 2
+								y = 0
+							}
+							spaa_brigade = {
+								x = 2
+								y = 1
+							}
+						}
+						support = {
+							signal_company = {
+								x = 0
+								y = 0
+							}
+							mot_recon = {
+								x = 0
+								y = 1
+							}
+						}
+					}
+					random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"90ya Motostrelkovaya Brigada\" division_template = \"Motor-Rifle Brigade\" start_experience_factor = 0.2"
+							owner = NOV
+						}
+						create_unit = {
+							division = "name = \"54ya Motostrelkovaya Brigada\" division_template = \"Motor-Rifle Brigade\" start_experience_factor = 0.2"
+							owner = NOV
+						}
+						create_unit = {
+							division = "name = \"77ya Motostrelkovaya Brigada\" division_template = \"Motor-Rifle Brigade\" start_experience_factor = 0.2"
+							owner = NOV
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	SOV_permit_wagner_forces_into_congo = {
+		icon = GFX_decision_SOV_wagner_decision
+		cost = 25
+		days_remove = 7
+		fire_only_once = yes
+		ai_will_do = {
+			base = 35
+		}
+		visible = {
+			COG = {
+				exists = yes
+				has_war = yes
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -45
+			}
+			add_income = yes
+		}
+		remove_effect = {
+			COG = {
+				add_timed_idea = {
+					idea = SOV_wagner_mercs
+					days = 100
+				}
+				hidden_effect = {
+					division_template = {
+						name = "CHVK Wagner"
+						is_locked = yes
+						priority = 0
+						template_counter = 0
+						regiments = {
+							motorized = {
+								x = 0
+								y = 0
+							}
+							motorized = {
+								x = 0
+								y = 1
+							}
+							motorized = {
+								x = 0
+								y = 2
+							}
+							mechanized = {
+								x = 0
+								y = 3
+							}
+							modern_armor = {
+								x = 1
+								y = 0
+							}
+							modern_sp_artillery_brigade = {
+								x = 2
+								y = 0
+							}
+							spaa_brigade = {
+								x = 2
+								y = 1
+							}
+						}
+						support = {
+							signal_company = {
+								x = 0
+								y = 0
+							}
+							mot_recon = {
+								x = 0
+								y = 1
+							}
+						}
+					}
+					random_owned_controlled_state = {
+						create_unit = {
+							division = "name = \"Wagner-Brigade\" division_template = \"CHVK Wagner\" start_experience_factor = 0.3"
+							owner = COG
+						}
+						create_unit = {
+							division = "name = \"Wagner-Brigade\" division_template = \"CHVK Wagner\" start_experience_factor = 0.2"
+							owner = COG
+						}
+					}
+				}
+				hidden_effect = {
+					COG = {
+						add_equipment_to_stockpile = {
+							type = infantry_equipment_2
+							amount = 1000
+							producer = SOV
+						}
+						add_equipment_to_stockpile = {
+							type = support_equipment
+							amount = 300
+							producer = SOV
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 15
+		}
+	}
+	SOV_initiate_operation_otel_moskva = {
+		icon = GFX_decision_SOV_colombia_operation
+		cost = 75
+		days_remove = 7
+		available = {
+		}
+		fire_only_once = yes
+		selectable_mission = yes
+		days_mission_timeout = 30
+		ai_will_do = {
+			base = 35
+		}
+		activation = {
+			always = no
+		}
+		cancel_trigger = {
+			COL = {
+				exists = no
+			}
+		}
+		priority = -1
+		is_good = no
+		complete_effect = {
+			custom_effect_tooltip = SOV_initiate_operation_otel_moskva_tt
+			hidden_effect = {
+				COL = {
+					add_stability = 0.15
+					set_politics = {
+						ruling_party = social_democrat
+					}
+					add_timed_idea = {
+						idea = SOV_wagner_mercs
+						days = 75
+					}
+				}
+				country_event = { id = russia.719 hours = 10 }
+			}
+		}
+		timeout_effect = {
+			custom_effect_tooltip = SOV_initiate_operation_otel_moskva_2_tt
+		}
+	}
+	SOV_fix_arabia_iran_relations = {
+		icon = GFX_SOV_decision_SOV_arabia_russia
+		cost = 100
+		days_remove = 30
+		fire_only_once = yes
+		ai_will_do = {
+			base = 35
+		}
+		visible = {
+			SAU = {
+				exists = yes
+				has_war = yes
+			}	
+			SAR = {
+				exists = yes
+				has_war = yes
+			}
+		}
+		cancel_if_not_visible = yes
+		complete_effect = {
+		}
+		remove_effect = {
+			random_list = {
+				50 = {
+					modifier = {
+						factor = 10
+						SOV = {
+							has_completed_focus = SOV_anti_globalist_bulwark
+						}
+					}
+					SAU = {
+						annex_country = {
+							target = SAR
+							transfer_troops = yes
+						}
+						add_opinion_modifier = {
+							target = SOV
+							modifier = took_stand_for_us
+						}				
+						add_opinion_modifier = {
+							target = PER
+							modifier = iranian_ally
+						}
+					}
+				}
+				50 = {
+					SAU = {
+						add_war_support = -0.05
+						add_political_power = -25
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 15
+		}
+	}
+}

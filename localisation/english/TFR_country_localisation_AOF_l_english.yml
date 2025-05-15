@@ -1,0 +1,114 @@
+﻿l_english:
+ AOF_Formalize_Association_Councils: "Formalize Associative Councils"
+ AOF_Anti_State_Focus: "All Against the State"
+ AOF_Reform_Militia_Standards: "Reform Militia Standards"
+ AOF_Reign_in_the_Opposition: "Reign in the Opposition"
+ AOF_Force_Association_Leadership_Change: "[AOF_get_Association_leadership_name]"
+ AOF_Failed_Leadership_Change: "Remove Ideological Enemies"
+ AOF_Successful_Leadership_Change: "Request the Torch"
+ AOF_RESTRICTED_Leadership_Change: "Federalize the Association"
+ AOF_Teach_Modern_Military_Tactics: "Teach Modern Military Tactics"
+ AOF_Flames_of_Revolution: "Flames of Revolution"
+ AOF_Live_Free_or_Die: "Live Free or Die"
+ AOF_Raise_Militias: "Raise Revolutionary Militias"
+ AOF_Convert_Abandoned_Factories: "Convert Abandoned Factories"
+ AOF_Standardize_Weapon_Production: "Standardize Weapon Production"
+ AOF_Implement_Economic_System: "[AOF_get_Economy_leadership_name]"
+ AOF_Free_Market_Capitalism_AOF_Change: "Implement a Truly Free Market"
+ AOF_Redistribution_AOF_Change: "Implement Collectivism"
+ AOF_Strenghten_Anti_Capitalist_Sentiments: "Strengthen Anti-Capitalist Sentiments"
+ AOF_Strenghten_Anti_Communist_Sentiments: "Strengthen Anti-Communist Sentiments"
+
+
+
+ AOF_GMA_Develop_Anarchist_Collectives: "Develop Anarchist Collectives"
+ AOF_GMA_Buffalo_Gambit: "The Buffalo Gambit"
+ AOF_GMA_Embolden_our_Ranks: "Embolden our Ranks"
+ AOF_GMA_The_Interests_of_All: "Flowers in Antarctica"
+ AOF_GMA_Concessions_to_the_Vanguard: "Recognize Vanguard Representatives"
+ AOF_GMA_Cultivate_Local_Production: "Cultivate Eco-Friendly Production"
+ AOF_GMA_Contact_the_Hermit: "Contact the ''Hermit''"
+ AOF_GMA_Isolate_the_Apoists: "Isolate the Apoists"
+ AOF_GMA_American_Apoism: "Introduce American Apoism"
+ AOF_GMA_Ode_to_Rojova: "Ode to Rojava"
+ AOF_GMA_An_Anarchist_State: "An Anarchist State?"
+ AOF_GMA_Quiet_Extremists_in_the_Collective: "Quiet the Green Fascists"
+ AOF_GMA_Our_Founding_Revolutionary: "The Founding Father"
+ AOF_GMA_Command_the_AFL_CIO: "Expand the AFL-CIO"
+ AOF_GMA_Form_AntiFascist_Brigades: "Raise Anti-Fascist Brigades"
+ AOF_GMA_Preach_Against_APLA_Domination: "Take a Stance on the Western Experiment"
+ AOF_GMA_A_Truly_Equal_Collective: "Redistribute Deusen's Power"
+ AOF_GMA_Power_to_the_People: "Power to the People!"
+ AOF_GMA_The_American_Makhno: "The Commander-in-Chief"
+ AOF_GMA_Demand_Farmer_Submission: "Form the Revolutionary Insurgent Army"
+
+ AOF_FAA_Integrate_the_GMC: "Invite the Green Mountain Company"
+ AOF_FAA_Renew_the_Free_State_Project: "Renew the Free State Project"
+ AOF_FAA_Entrench_American_Freedoms: "Promise American Freedoms"
+ AOF_FAA_Life: "Life"
+ AOF_FAA_Distance_ourselves_from_Bootlickers: "Distance Ourselves from the Bootlickers"
+ AOF_FAA_Promote_Free_Entrepenuership: "Promote Free Entrepenuership"
+ AOF_FAA_Reignite_the_American_Spirit: "Reclaim the True American Spirit"
+ AOF_FAA_Profit_over_People: "Victory through Profit"
+ AOF_FAA_Entrench_Jeffersonian_Beliefs: "Entrench Jeffersonian Beliefs"
+ AOF_FAA_Appoint_Johnson: "Balance the Budget"
+ AOF_FAA_Liberty: "Liberty"
+ AOF_FAA_Empower_Boogaloo_Militias: "Empower the Boogaloo Movement"
+ AOF_FAA_Weaken_the_President: "Weaken the President"
+ AOF_FAA_Replace_President_Gericke: "Replace the President Emeritus"
+ AOF_FAA_Property: "Property"
+ AOF_FAA_Full_Integration_of_the_GMC: "Integrate the Green Mountain Company"
+ AOF_FAA_Utilize_the_Second_Amendment: "Utilize the Second Amendment"
+ AOF_FAA_Concessions_to_GMC: "Concessions to the Green Mountain Company"
+ AOF_FAA_Velvet_Glove_Iron_Fist: "[AOF_get_Green_Shadow_name]"
+ AOF_GREEN_SHADOW_Inactive_Change: "Build a Healthy Relationship"
+ AOF_GREEN_SHADOW_Active_Change: "§GOPERATION:§! VELVET GLOVE"
+ AOF_FAA_Enact_Concord_Defensive_Pact: "Establish the Continental Congress"
+ AOF_FAA_Enact_Concord_Defensive_Pact_desc: "Since the beginning of the Free State project, many American Libertarians across America have moved to New Hampshire in the goal to turn it into a Libertarian paradise. With Libertarian representatives from almost every state flooding into our ranks, we can establish a new Continental Congress to coordinate our army to victory against the authoritarians that now plague the continent."
+
+ Private_Military_Command_spirit: "Private Military Command"
+ Private_Military_Command_spirit_desc: "Why cultivate officers when we can just buy experienced ones?"
+ spirit_of_allen_spirit: "Spirit of Allen"
+ spirit_of_allen_spirit_desc: "Ethan Allen led the famous Green Mountain Boys to many victories, and eventually, led them to the annals of History as the legendary status as the protectors of the State of Vermont."
+
+ AOF_BOP: "Associative Council of Free Cities"
+ AOF_BOP_desc: "The Associative Council of Free Cities, or Association of the Freed, is a representative body of self-governed cities stationed within Vermont and New Hampshire, these ''cities'' vary from small town governments to self-righteous groups of farmers and mayors with near dictatorial powers. The largest of these groups are the Green Mountain Anarchist Collective, a vast swathe of Anarchist Communes in Vermont under the leadership of David Van Deusen. In opposition to the Anarchist ways of the G.M.A.C, many towns have pledged loyalty to the Sons of Liberty, a large militia group fighting for Libertarian values based largely out of New Hampshire.  \n\nThe representatives are sent to vote on legislature put forward by any town, but with the consolidation of power between the two groups, the divides within the Association grow ever more present, and the political neutrality of small towns are being ever questioned by larger forces."
+ AOF_Anarchism_side: "Green Mountain Anarchist Collective"
+ AOF_Libertarianism_side: "Sons of Liberty"
+ AOF_Anarchism_total_control_range: "Empowered Anarchists"
+ AOF_Anarchism_dominant_range: "Anarchist Influence"
+ AOF_Middle_balance_range: "Local Neutrality"
+ AOF_Libertarianism_dominant_range: "Libertarian Influence"
+ AOF_Libertarianism_total_control_range: "Empowered Libertarians"
+
+ completion_reward_joint_originator: "§YEffect for Focus Originator when completed:§!"
+ completion_reward_joint_member: "§YEffect for Faction Member when completed:§!"
+
+ GMC_Spirit_of_the_GMB: "Spirit of the Green Mountain Boys"
+ GMC_Spirit_of_the_GMB_desc: ""
+ GMC_Duality_of_the_GMC: "Duality of our Company"
+ GMC_Concord_Pact_idea: "Concord Pact"
+ GMC_Concord_Pact_idea_desc: ""
+ AOF_Association_of_the_Freed_idea: "Association of the Freed"
+ AOF_Association_of_the_Freed_idea_desc: "The Associative Council of Free Cities, or Association of the Freed, is a representative body of self-governed cities stationed within Vermont and New Hampshire, these ''cities'' vary from small town governments to self-righteous groups of farmers and mayors with near dictatorial powers. The largest of these groups are the Green Mountain Anarchist Collective, a vast swathe of Anarchist Communes in Vermont under the leadership of David Van Deusen. In opposition to the Anarchist ways of the G.M.A.C, many towns have pledged loyalty to the Sons of Liberty, a large militia group fighting for Libertarian values based largely out of New Hampshire.  \n\nThe representatives are sent to vote on legislature put forward by any town, but with the consolidation of power between the two groups, the divides within the Association grow ever more present, and the political neutrality of small towns are being ever questioned by larger forces."
+ AOF_Memories_of_the_old_GMAC_idea: "Pre-Existing Collectives"
+ AOF_Memories_of_the_old_GMAC_idea_desc: "Tracing the history of our collectives to the early 70s, the core ideas of the Green Mountain Anarchist Collective have existed for decades and have long affected Vermont politics as a whole."
+ AOF_Anarchist_Occupation_idea: "Borderline Occupation"
+ AOF_Anarchist_Occupation_idea_desc: "Our band of Anarchists hold a large portion of land, but as with any Anarchist group, our authority is mostly reliant on the stationing of local armies, without these armies to ensure peace, a petty tyrant would easily scrounge up enough corruptable strongmen to enforce their will over the will of the people."
+ FAA_Memories_of_Grafton_idea: "Memories of Grafton"
+ FAA_Memories_of_Grafton_idea_desc: "In Grafton, because of government intervention, the entirety of the ideals of a truly Libertarian government were squandered to the public."
+ FAA_Concord_Pact_idea: "Concord Pact"
+ FAA_Concord_Pact_idea_desc: ""
+
+
+
+
+
+
+
+
+
+
+
+
+

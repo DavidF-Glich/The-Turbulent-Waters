@@ -1,0 +1,23 @@
+characters={
+	BHU_jigme_wangchuck_char = {
+		portraits = {
+			civilian = {
+				large=GFX_portrait_BHU_jigme_wangchuck
+			}
+		}
+		country_leader={
+			ideology=social_democracy
+			expire="1.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+		country_leader={
+			ideology=constitutionalist
+			expire="1.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+	}
+}

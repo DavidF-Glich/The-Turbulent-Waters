@@ -1,0 +1,16 @@
+	ideas = {
+		country = {
+			INS_jungle_warfare = { #dummy idea, actual effects given through hidden tech
+				picture = JAP_Improved_Type10s
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				modifier = {
+					custom_modifier_tooltip = INS_jungle_warfare_tt
+				}
+			}
+		}
+	}

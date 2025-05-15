@@ -1,0 +1,80 @@
+	characters={
+		SWE_charles_xvi_char = {
+			portraits={
+				civilian={
+					large = "gfx/Leaders/SWE/Charles_XVI.png"
+				}
+			}
+			country_leader={
+				ideology = totalism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = marxism_leninism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = reformist_socialism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = progressivism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = neoliberalism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = classical_liberalism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = neoconservative
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = ultra_conservatism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = military_junta
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = neonazism
+				expire = "1.1.1.1"
+				id=-1
+			}
+			country_leader={
+				ideology = classical_fascism
+				expire = "1.1.1.1"
+				id=-1
+			}
+		}
+		SWE_one_punch_man_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/Leaders/SWE/SWE_OPM.png"
+				}
+			}
+			country_leader = {
+				ideology = market_socialism
+				expire = "1.1.1.1"
+				id = -1
+				desc = SWE_one_punch_man_desc
+				traits = {
+					hos_enlightened_gentleman
+				}
+			}
+		}
+	}

@@ -1,0 +1,3566 @@
+PRC_coronavirus_pandemic_category = { 
+	
+	PRC_control_the_coronavirus_mission = {
+		icon = generic_coronavirus
+		allowed = { 
+			tag = PRC
+		}
+		activation = {
+			always = no
+		}
+		available = { 
+			always = no
+		}
+		visible = {
+			has_completed_focus = PRC_TV_Address
+		
+		}
+		is_good = no
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = PRC_Spread_Time
+		fixed_random_seed = no
+		timeout_effect = { 
+			custom_effect_tooltip = PRC_control_the_coronavirus_tooltip
+			activate_mission = PRC_control_the_coronavirus_mission
+			add_to_variable = {PRC_Current_cases = PRC_New_cases}
+			if = {
+				limit = { 
+					check_variable = {
+						PRC_New_cases < 0
+					}
+					check_variable = {
+						PRC_Current_cases = 0
+					}
+				}
+				set_variable = {
+					PRC_New_cases = 0
+				}
+			}
+			
+			if = {
+				limit = {
+					has_country_flag = PRC_Second_Success
+			}
+			random_list = {
+				60 = {
+					if = {
+						limit = {check_variable= {PRC_New_cases > 0}} 
+						multiply_variable = { PRC_New_cases = 1.1 }
+					}
+				}
+				10 = {country_event= china.6}
+				30 = {
+				if = {
+					limit = {
+						OR = {
+							check_variable = {PRC_Current_cases = 0}
+							check_variable = {PRC_Current_cases < 0}
+							}
+						
+					}
+					else = {country_event = china.12}
+					}
+				}
+				
+			}
+			clamp_variable = {
+				var = PRC_Current_cases
+				min = 0
+			}
+
+			}
+			
+			else = {
+			random_list = {
+				60 = {
+					if = {
+						limit = {check_variable= {PRC_New_cases > 0}} 
+						multiply_variable = { PRC_New_cases = 1.1 }
+						}
+					}
+				20 = {country_event = china.6}
+				20 = { 
+					if = {
+						limit = {
+							OR = {
+									check_variable = {PRC_Current_cases = 0}
+									check_variable = {PRC_Current_cases < 0}
+								}
+								
+							}
+						}	
+					else = {country_event = china.12 }
+					}
+			}
+			clamp_variable = {
+				var = PRC_Current_cases
+				min = 0
+			}
+
+			}
+		}
+	}
+	PRC_Mask_Consumption_mission = {
+		icon = generic_mask
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_completed_focus = PRC_TV_Address
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 7
+		timeout_effect = {
+			custom_effect_tooltip = PRC_Mask_Consumption_tooltip
+			add_to_variable = {PRC_Mask_Supply = PRC_Mask_Production}
+			subtract_from_variable = {PRC_Mask_Production = PRC_Current_cases}
+			subtract_from_variable = {PRC_Mask_Production = PRC_Current_cases}
+			subtract_from_variable = {PRC_Mask_Production = PRC_Current_cases}
+			activate_mission = PRC_Mask_Consumption_mission
+		}
+	}
+	PRC_Reopen_Hubei_decision = {
+		icon = generic_coronavirus
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = Hubei_Locked_tt
+				has_country_flag = {
+					flag = Hubei_Locked
+					days > 74
+				}
+			}
+		}
+		visible = {
+			has_completed_focus = PRC_Lockdown_Hubei
+			has_country_flag = Hubei_Locked
+		}
+		ai_will_do = {
+			base = 100
+		}
+		fire_only_once = yes
+		cost = var:PRC_COVID_Cost
+		days_remove = 1
+		complete_effect = {
+			country_event = china.4
+		}
+	}
+	PRC_Respect_Li_Wenliang_decision = {
+		icon = generic_mask
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_TV_Address
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		remove_effect = {
+			custom_effect_tooltip = PRC_Respect_Li_Wenliang_tooltip
+			hidden_effect = {
+				add_to_variable = { var = PRC_COVID_Cost	value = -80 }
+			}
+		}
+	}
+
+	PRC_Organize_Companies_decision = {
+		icon = generic_mask
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_TV_Address
+		}
+		cost = var:PRC_COVID_Cost
+		days_remove = 7
+		days_re_enable = 10
+		ai_will_do = {
+			base = 15
+			modifier = {
+				factor = 0.1
+				check_variable = {
+					PRC_Mask_Supply > 200000
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Organize_Companies_tooltip
+			
+			add_to_variable = {
+				PRC_Mask_Production = PRC_Production_Bonus
+			}
+			add_to_variable = {
+				PRC_Production_Bonus = 1000
+			}
+			
+		}
+	}
+	
+	PRC_Purchase_Equipment_decision = {
+		icon = GMA_Healing_AOF
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_TV_Address
+		}
+		ai_will_do = {
+			base = 20
+		}
+		cost = PRC_COVID_Cost
+		days_remove = 10
+		days_re_enable = 30
+		complete_effect = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 1
+			}
+			add_debt = yes
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Purchase_Equipment_tt
+			add_to_variable = {PRC_Mask_Supply = 10000}
+		}
+		
+	}
+
+	PRC_Lift_Spirit_decision = {
+		icon = GMA_Healing_AOF
+		allowed = {
+			tag = PRC
+		}
+		cost = PRC_COVID_Cost
+		days_remove = 30
+		days_re_enable = 50
+		ai_will_do = {
+			base = 1
+			modifier = {
+				factor = 20
+				OR = {
+					has_stability < 0.8
+					has_war_support < 0.6
+				}
+			}
+		}
+		modifier = {
+			stability_weekly = 0.02
+			war_support_weekly = 0.01
+		}
+		remove_effect = {
+			add_war_support = 0.02
+		}
+	}
+	PRC_Medicine_Development_mission = {
+		icon = GMA_Healing_AOF
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_completed_focus = PRC_Bio_lab
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 100
+		timeout_effect = {
+			custom_effect_tooltip = PRC_Medicine_Ready_tooltip
+			set_country_flag = PRC_Second_Success
+		}
+	}
+	PRC_Medicine_Distribution_decision = {
+		icon = GMA_Healing_AOF
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			has_country_flag = PRC_Second_Success
+		}
+		visible = {
+			has_completed_focus = PRC_New_Hospital
+		}
+		cost = PRC_COVID_Cost
+		days_remove = 7
+		remove_effect = {
+			custom_effect_tooltip = PRC_Medicine_Distribution_tooltip
+			multiply_variable = { PRC_Current_cases = 0.8 }
+			multiply_variable = { PRC_New_cases = 0.25 }
+		}
+	}
+	PRC_vaccine_development_mission = {
+		icon = generic_vaccine
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_completed_focus = PRC_Bio_lab
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 400
+		timeout_effect = {
+			custom_effect_tooltip = PRC_vaccine_tooltip
+			set_country_flag = PRC_Third_Success
+			activate_mission = PRC_Injection
+		}
+	}
+
+	PRC_Injection = {
+		icon = generic_vaccine
+		allowed = {
+			tag = PRC
+		}
+		available = {
+			always = no
+		}
+		visible = {
+			has_country_flag = PRC_Third_Success
+		}
+		activation = {
+			always = no
+		}
+		is_good = no
+		selectable_mission = no
+		cancel_if_not_visible = yes
+		days_mission_timeout = 500
+		timeout_effect = {
+			custom_effect_tooltip = PRC_vaccine_tooltip
+			set_country_flag = COVID_Dealt
+		}
+	}
+	PRC_Injection_Propaganda_decision = {
+		icon = generic_vaccine
+		allowed = {
+			tag = PRC
+		}
+		available = {
+		}
+		visible = {
+			has_country_flag = PRC_Third_Success
+			has_completed_focus = PRC_Vaccine_Injection
+			NOT = {
+				has_country_flag = COVID_Dealt
+			}
+		}
+		cost = var:PRC_COVID_Cost
+		days_remove = 7
+		days_re_enable = 3
+		remove_effect= {
+			add_stability = 0.01
+			add_war_support = 0.01
+			add_days_mission_timeout = {
+				mission = PRC_Injection
+				days = -14
+			}
+		}
+	}
+
+}
+PRC_Taiwan_Unification_category = { #统一台湾（台湾、美国、俄罗斯决议未完成）
+	PRC_Remove_Embargo_decision = { #中国视角：解除禁运
+		icon = GFX_decision_generic_shaking_hands
+		visible = {
+			tag = PRC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Preparing_for_Reunification_tt
+				NOT = {
+					PRC_Preparing_for_Reunification = yes
+				}
+			}
+			
+		}
+		cost = 25
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			add_war_support = -0.01
+			set_global_flag = PRC_Unification_action1
+			USA = {
+				activate_mission = PRC_Removing_Embargo_mission
+			}
+			SOV = {
+				activate_mission = PRC_Removing_Embargo_mission
+			}
+			CHI = {
+				activate_mission = PRC_Removing_Embargo_mission
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt1
+			CHI = {
+				add_popularity = {
+					ideology = conservative
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = communist
+					popularity = 0.01
+				}
+				add_war_support = -0.03
+			}
+			add_to_variable = {
+				global.Taiwan_Support = 0.05
+				global.Taiwan_Reunion_Preparation = 0.05
+			}
+			clr_global_flag = PRC_Unification_action1
+			break_embargo = CHI
+		}
+	}
+	PRC_Removing_Embargo_mission = { #他国视角：中国解除禁运
+		icon = GFX_decision_generic_shaking_hands
+		visible = {
+			AND = {
+				NOT = {
+					tag = PRC
+				}
+				has_global_flag = PRC_Unification_action1
+			}
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 14
+		is_good = yes
+		selectable_mission = no
+		timeout_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt1
+		}
+	}
+	PRC_Restore_Market_Exchange_decision = { #中国视角：恢复市场开放
+		icon = GFX_decision_generic_shaking_hands
+		visible = {
+			tag = PRC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Preparing_for_Reunification_tt
+				NOT = {
+					PRC_Preparing_for_Reunification = yes
+				}
+			}
+			
+		}
+		cost = 30
+		days_remove = 14
+		fire_only_once = yes
+		complete_effect = {
+			reverse_add_opinion_modifier = {
+				target = CHI
+				modifier = large_increase
+			}
+			set_global_flag = PRC_Unification_action2
+			USA = {
+				activate_mission = PRC_Restore_Market_Exchange_mission
+			}
+			SOV = {
+				activate_mission = PRC_Restore_Market_Exchange_mission
+			}
+			CHI = {
+				activate_mission = PRC_Restore_Market_Exchange_mission
+			}
+		}
+		modifier = {
+			political_power_factor = -0.2
+		}
+		remove_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt1
+			give_market_access = CHI
+			add_stability = 0.02
+			CHI = {
+				add_stability = 0.02
+			}
+			add_to_variable = {
+				global.Taiwan_Reunion_Preparation = 0.05
+			}
+			add_to_variable = {
+				global.Taiwan_Support = 0.05
+			}
+			clr_global_flag = PRC_Unification_action2
+		}
+	}
+	PRC_Restore_Market_Exchange_mission = { #他国视角：中国恢复市场开放
+		icon = GFX_decision_generic_shaking_hands
+		visible = {
+			NOT = {
+				tag = PRC
+			}
+			has_global_flag = PRC_Unification_action2
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 14
+		timeout_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt1
+		}
+	}
+	PRC_Talk_with_KMT_Member_decision = { #中国视角：接触国民党官员
+		icon = GFX_decision_generic_shaking_hands
+		visible = {
+			tag = PRC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Preparing_for_Reunification_tt
+				NOT = {
+					PRC_Preparing_for_Reunification = yes
+				}
+			}
+			
+		}
+		cost = 20
+		days_remove = 7
+		days_re_enable = 21
+		complete_effect = {
+			add_stability = 0.02
+			set_global_flag = PRC_Unification_action3
+			USA = {
+				activate_mission = PRC_Talk_with_KMT_Member_mission
+			}
+			SOV = {
+				activate_mission = PRC_Talk_with_KMT_Member_mission
+			}
+			CHI = {
+				activate_mission = PRC_Talk_with_KMT_Member_mission
+			}
+		}
+		modifier = {
+			political_power_factor = -0.2
+		}
+		remove_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt2
+			CHI = {
+				add_popularity = {
+					ideology = social_liberal
+					popularity = -0.02
+				}
+			}
+			add_to_variable = {
+				global.Taiwan_Support = 0.02
+			}
+			add_to_variable = {
+				global.Taiwan_Reunion_Preparation = 0.02
+			}
+			clr_global_flag = PRC_Unification_action3
+		}
+	}
+	PRC_Talk_with_KMT_Member_mission = { #世界视角：中共接触国民党官员
+		icon = GFX_decision_generic_shaking_hands
+		visible = {
+			NOT = {
+				tag = PRC
+			}
+			has_global_flag = PRC_Unification_action3
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		is_good = yes
+		selectable_mission = no
+		days_mission_timeout = 7
+		timeout_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt2
+		}
+	}
+	PRC_Displaying_Goodwill_decision = {
+		icon = GFX_PRC_Utilize_Political_Favours
+		visible = {
+			tag = PRC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Preparing_for_Reunification_tt
+				NOT = {
+					PRC_Preparing_for_Reunification = yes
+				}
+			}
+			
+			
+		}
+		cost = 20
+		days_remove = 14
+		days_re_enable = 14
+		complete_effect = {
+			add_war_support = -0.01
+			set_global_flag = PRC_Unification_action4
+			USA = {
+				activate_mission = PRC_Displaying_Goodwill_mission
+			}
+			SOV = {
+				activate_mission = PRC_Displaying_Goodwill_mission
+			}
+			CHI = {
+				activate_mission = PRC_Displaying_Goodwill_mission
+			}
+		}
+		modifier = {
+			political_power_factor = 0.05
+			stability_weekly = 0.008
+		}
+		remove_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt2
+			add_to_variable = {
+				global.Taiwan_Support = 0.02
+			}
+			add_to_variable = {
+				global.Taiwan_Reunion_Preparation = 0.02
+			}
+			CHI = {
+				add_war_support = -0.02
+			}
+		}
+	}
+	PRC_Displaying_Goodwill_mission = {
+		icon = GFX_PRC_Utilize_Political_Favours
+		visible = {
+			NOT = {
+				tag = PRC
+			}
+			has_global_flag = PRC_Unification_action4
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 14
+		is_good = yes
+		selectable_mission = no
+		timeout_effect = {
+			custom_effect_tooltip = Taiwan_Reunion_tt2
+		}
+	}
+	PRC_Inevitable_Takeover = {
+		icon = GFX_decision_generic_assassination
+		visible = {
+			tag = PRC
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Takeover_tt
+				check_variable = {
+					var = global.Taiwan_Reunion_Preparation
+					value = 1
+					compare = greater_than_or_equals 
+				}
+				check_variable = {
+					var = global.Taiwan_Support
+					value = 1
+					compare = greater_than_or_equals 
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = PRC_Preparing_for_Reunification_tt
+				NOT = {
+					PRC_Preparing_for_Reunification = yes
+				}
+			}
+			
+		}
+		cost = 150
+		days_remove = 35
+		fire_only_once = yes
+		remove_effect = {
+			set_variable = {
+				PRC_Civilwar_End_Year = year
+			}
+			subtract_from_variable = {
+				PRC_Civilwar_End_Year = 1949
+			}
+			country_event = {
+				id = china.16
+				days = 7
+			}
+			if = {
+				limit = { 
+					CHI = {
+						is_ai = no
+					}
+				}
+				CHI = {
+					country_event = china.17
+				}
+			}
+		}
+	}
+	CHI_Request_Better_Position_decision = {
+		icon = GFX_decision_generic_protest_peaceful
+		visible = {
+			tag = CHI
+		}
+		available = {
+			
+		}
+		cost = 100
+		fire_only_once = yes
+		days_remove = 30
+		complete_effect = {
+			add_war_support = -0.05
+			add_stability = 0.02
+		}
+		modifier = {
+			opinion_gain_monthly_factor = 0.3
+		}
+		remove_effect = {
+			PRC = {
+				country_event = china.15
+			}
+		}
+	}
+}
+PRC_Food_Reform_category = {
+	PRC_GB31654_2021_standard_decision = {
+		icon = GFX_decision_generic
+		visible = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Food_Reform_action
+				NOT = {has_country_flag = PRC_Food_Reforming_flag}
+			}
+		}
+		cost = 10
+		days_remove = 35
+		fire_only_once = yes
+		modifier = {
+			political_power_factor = 0.2
+		}
+		complete_effect = {
+			set_country_flag = PRC_Food_Reforming_flag
+		}
+		remove_effect = {
+			clr_country_flag = PRC_Food_Reforming_flag
+			custom_effect_tooltip = PRC_Food_Action_Result1
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.1
+			}
+		}
+	}
+	PRC_Ban_Wildlife_Consumption_decision = {
+		icon = GFX_decision_generic
+		visible = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Food_Reform_action
+				NOT = {has_country_flag = PRC_Food_Reforming_flag}
+			}
+			has_completed_focus = PRC_Leave_Wildtype
+		}
+		cost = 50
+		days_remove = 14
+		fire_only_once = yes
+		modifier = {
+			political_power_gain = 0.1
+		}
+		complete_effect = {
+			set_country_flag = PRC_Food_Reforming_flag
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Food_Action_Result1
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.1
+			}
+			clr_country_flag = PRC_Food_Reforming_flag
+		}
+	}
+	PRC_Propagate_New_Law_decision = {
+		icon = GFX_decision_generic_protest_peaceful
+		visible = {
+			
+		}
+		available = {
+			has_completed_focus = PRC_Leave_Wildtype
+		}
+		cost = 30
+		days_remove = 14
+		days_re_enable = 14
+		modifier = {
+			political_power_factor = -0.2
+			communist_drift = 0.01
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Food_Action_Result2
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.03
+			}
+		}
+
+	}
+	PRC_Walk_through_School_decision = {
+		icon = GFX_decision_infiltrate_state
+		visible = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Food_Reform_action
+				NOT = {has_country_flag = PRC_Food_Reforming_flag}
+			}
+			has_completed_focus = PRC_Canteen_Evaluation
+		}
+		cost = 30
+		days_remove = 14
+		days_re_enable = 14
+		complete_effect = {
+			set_country_flag = PRC_Food_Reforming_flag
+		}
+		fixed_random_seed = no
+		remove_effect = {
+			custom_effect_tooltip = PRC_Food_Action_Result2
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.03
+			}
+			clr_country_flag = PRC_Food_Reforming_flag
+			hidden_effect = {
+				random_list = {
+					50 = {}
+					50 = {
+						if = {
+							limit = { 
+								check_variable = {
+									PRC_Food_Corruption_Caught = 0
+								}
+							}
+							country_event = china.18
+							add_to_variable = {
+								PRC_Food_Corruption_Caught = 1
+							}
+						}
+						else_if = {
+							limit = {
+								check_variable = {
+									PRC_Food_Corruption_Caught = 1
+								}
+							}
+							country_event = china.19
+							add_to_variable = {
+								PRC_Food_Corruption_Caught = 1
+							}
+						}
+						else_if = {
+							limit = { 
+								check_variable = {
+									PRC_Food_Corruption_Caught = 2
+								}
+							}
+							country_event = china.20
+							add_to_variable = {
+								PRC_Food_Corruption_Caught = 1
+							}
+						}
+						else_if = {
+							limit = { 
+								check_variable = {
+									PRC_Food_Corruption_Caught = 3
+								}
+							}
+							country_event = china.21
+							add_to_variable = {
+								PRC_Food_Corruption_Caught = 1
+							}
+						}
+					}
+				}
+	
+			}
+		}
+	}
+	PRC_Checkup_Corporation_decision = {
+		icon = GFX_decision_generic_brainwash
+		visible = {
+			
+		}
+		available = {
+			has_completed_focus = PRC_Canteen_Evaluation
+			custom_trigger_tooltip = {
+				tooltip = PRC_Food_Reform_action
+				NOT = {has_country_flag = PRC_Food_Reforming_flag}
+			}
+		}
+		cost = 25
+		days_remove = 30
+		days_re_enable = 30
+		complete_effect = {
+			set_country_flag = PRC_Food_Reforming_flag
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Food_Action_Result2
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.03
+			}
+			clr_country_flag = PRC_Food_Reforming_flag
+		}
+	}
+	PRC_Promote_Public_Discussion_decision = {
+		icon = GFX_decision_generic_protest_peaceful
+		available = {
+			has_completed_focus = PRC_Premade_dish_issue
+		}
+		cost = 30
+		days_remove = 14
+		days_re_enable = 14
+		modifier = {
+			political_power_gain = -0.1
+		}
+		complete_effect = {
+			
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Food_Action_Result2
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.03
+			}
+		}
+	}
+	PRC_Unify_Transparency_decision = {
+		icon = GFX_decision_generic_investment
+		available = {
+			has_completed_focus = PRC_Transparent_Kitchen
+			custom_trigger_tooltip = {
+				tooltip = PRC_Food_Reform_action
+				NOT = {has_country_flag = PRC_Food_Reforming_flag}
+			}
+		}
+		cost = 50
+		days_remove = 35
+		fire_only_once = yes
+		complete_effect = {
+			set_country_flag = PRC_Food_Reforming_flag
+		}
+		remove_effect = {
+			custom_effect_tooltip = PRC_Food_Action_Result1
+			add_to_variable = {
+				PRC_Food_Reform_Progress = 0.1
+			}
+			clr_country_flag = PRC_Food_Reforming_flag
+		}
+	}
+	PRC_announce_triumph_decision = {
+		icon = GFX_decision_generic_protest_peaceful
+		visible = {
+			
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PRC_Food_Reform_action
+				NOT = {has_country_flag = PRC_Food_Reforming_flag}
+			}
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		cost = 100
+		days_remove = 1
+		fire_only_once = yes
+		complete_effect = {
+			country_event = china.23
+		}
+	}
+}
+PRC_Fourteenth_Five_Week_Plan_category = {
+	PRC_Carbon_Neutral_Prospect = {
+		icon = generic
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			has_completed_focus = PRC_Fourteenth_Five
+		}
+		available = {
+			has_completed_focus = PRC_Industry_Branch
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Carbon_Neutral
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Carbon_Neutral
+			complete_national_focus = PRC_Carbon_Neutral
+		}
+	}
+	PRC_Highland_Statics_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Industry_Branch
+		}
+		available = {
+			has_completed_focus = PRC_Carbon_Neutral
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Highland_Statics
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Highland_Statics
+			complete_national_focus = PRC_Highland_Statics
+		}
+	}
+	PRC_Factory_Upgrade_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Industry_Branch
+		}
+		available = {
+			has_completed_focus = PRC_Carbon_Neutral
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Factory_Upgrade
+		}
+		modifier = {
+			political_power_cost = 0.25 
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Factory_Upgrade
+			complete_national_focus = PRC_Factory_Upgrade
+		}
+	}
+	PRC_Intelligenitization_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Carbon_Neutral
+		}
+		available = {
+			has_completed_focus = PRC_Factory_Upgrade
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Intelligentizing
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Intelligentizing
+			complete_national_focus = PRC_Intelligentizing
+		}
+	}
+	PRC_Decrease_Dependence_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Factory_Upgrade
+		}
+		available = {
+			has_completed_focus = PRC_Intelligentizing
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Decrease_Dependence
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Decrease_Dependence
+			complete_national_focus = PRC_Decrease_Dependence
+		}
+	}
+	PRC_Synthesis_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Intelligentizing
+		}
+		available = {
+			has_completed_focus = PRC_Decrease_Dependence
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 35
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Synthesis
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Synthesis
+			complete_national_focus = PRC_Synthesis
+		}
+	}
+	PRC_Grain_Security_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Intelligentizing
+		}
+		available = {
+			has_completed_focus = PRC_Decrease_Dependence
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.25
+		}
+		days_remove = 21
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 21
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Grain_Security
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Grain_Security
+			complete_national_focus = PRC_Grain_Security
+		}
+	}
+	PRC_Three_Agriculture_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Decrease_Dependence
+		}
+		available = {
+			has_completed_focus = PRC_Grain_Security
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.5
+		}
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Three_Agriculture
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Three_Agriculture
+			complete_national_focus = PRC_Three_Agriculture
+		}
+	}
+	PRC_Developed_in_China_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Decrease_Dependence
+		}
+		available = {
+			has_completed_focus = PRC_Synthesis
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.75
+		}
+		days_remove = 70
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Developed_in_China
+		}
+		modifier = {
+			political_power_cost = 0.75
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Developed_in_China
+			complete_national_focus = PRC_Developed_in_China
+		}
+	}
+	PRC_Development_Map_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Grain_Security
+		}
+		available = {
+			has_completed_focus = PRC_Three_Agriculture
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+			political_power_daily > 0.75
+		}
+		days_remove = 14
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 14
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Development_Map
+		}
+		modifier = {
+			political_power_cost = 0.75
+		}
+		remove_effect = {
+			deactivate_shine_on_focus = PRC_Development_Map
+			complete_national_focus = PRC_Development_Map
+		}
+	}
+	PRC_Highland_Statics_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Industry_Branch
+		}
+		available = {
+			has_completed_focus = PRC_Carbon_Neutral
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Highland_Statics
+		}
+		days_remove = 35
+		modifier = {
+			political_power_cost = 0.25
+		}
+		remove_effect = {
+			complete_national_focus = PRC_Highland_Statics
+		}
+	}
+	PRC_Charging_Brick_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Carbon_Neutral
+		}
+		available = {
+			has_completed_focus = PRC_Highland_Statics
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Charging_Brick
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Charging_Brick
+		}
+	}
+	PRC_Review_Toilet_Rev_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Highland_Statics
+		}
+		available = {
+			has_completed_focus = PRC_Charging_Brick
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 21
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Review_Toliet_Rev
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 21
+		remove_effect = {
+			complete_national_focus = PRC_Review_Toliet_Rev
+		}
+	}
+	PRC_Mongolia_Conditions_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Charging_Brick
+		}
+		available = {
+			has_completed_focus = PRC_Review_Toliet_Rev
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 50
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Mongolia_Conditions
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 50
+		remove_effect = {
+			complete_national_focus = PRC_Mongolia_Conditions
+		}
+	}
+	PRC_Upgrade_Railway_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Charging_Brick
+		}
+		available = {
+			has_completed_focus = PRC_Review_Toliet_Rev
+			political_power_daily > 0.5
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Upgrade_Railway
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Upgrade_Railway
+		}
+	}
+	PRC_Satisfying_Sik_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Charging_Brick
+		}
+		available = {
+			has_completed_focus = PRC_Review_Toliet_Rev
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Satisfying_Sik
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Satisfying_Sik
+		}
+	}
+	PRC_No_Absolute_Poverty_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Mongolia_Conditions
+			has_completed_focus = PRC_Upgrade_Railway
+			has_completed_focus = PRC_Satisfying_Sik
+		}
+		available = {
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Generative_AI
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_Generative_AI
+		}
+	}
+	PRC_State_Nursery_focus = {
+		icon = generic_mask
+		visible = {
+			has_completed_focus = PRC_Healthcare
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PRC_Release_Private
+				has_completed_focus = PRC_State_Nursery
+				has_decision = PRC_Release_Private_focus
+			}
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_State_Nursery
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_State_Nursery
+		}
+	}
+	PRC_Release_Private_focus = {
+		icon = generic_mask
+		visible = {
+			has_completed_focus = PRC_Healthcare
+		}
+		available = {
+			NOT = {
+				has_completed_focus = PRC_Release_Private
+				has_completed_focus = PRC_State_Nursery
+				has_decision = PRC_State_Nursery_focus
+			}
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Release_Private
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Release_Private
+		}
+	}
+	PRC_Foreign_Conditions_focus = {
+		icon = generic_mask
+		visible = {
+			has_completed_focus = PRC_Healthcare
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_Release_Private
+				has_completed_focus = PRC_State_Nursery
+			}
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 28
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Foreign_Conditions
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 28
+		remove_effect = {
+			complete_national_focus = PRC_Foreign_Conditions
+		}
+	}
+	PRC_Cope_with_Cuba_focus = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRC_Healthcare
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_Release_Private
+				has_completed_focus = PRC_State_Nursery
+			}
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Cope_with_Cuba
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Cope_with_Cuba
+		}
+	}
+	PRC_Biomedical_Research_focus = {
+		icon = generic_mask
+		visible = {
+			has_completed_focus = PRC_Healthcare
+		}
+		available = {
+			has_completed_focus = PRC_Release_Private
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Biomedical_Research
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 28
+		remove_effect = {
+			complete_national_focus = PRC_Biomedical_Research
+		}
+	}
+	PRC_Welfare_Adjustment_focus = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRC_State_Nursery
+		}
+		available = {
+			has_completed_focus = PRC_Foreign_Conditions
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 28
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Welfare_Adjustment
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 28
+		remove_effect = {
+			complete_national_focus = PRC_Welfare_Adjustment
+		}
+	}
+	PRC_Medical_Unicorn_focus = {
+		icon = generic_mask
+		visible = {
+			has_completed_focus = PRC_Release_Private
+		}
+		available = {
+			has_completed_focus = PRC_Biomedical_Research
+			political_power_daily > 0.25
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 28
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Medical_Unicorn
+		}
+		modifier = {
+			political_power_cost = 0.25
+		}
+		days_remove = 28
+		remove_effect = {
+			complete_national_focus = PRC_Medical_Unicorn
+		}
+	}
+	PRC_Generics_focus = {
+		icon = generic_coronavirus
+		visible = {
+			OR = {
+				has_completed_focus = PRC_Biomedical_Research
+				has_completed_focus = PRC_Foreign_Conditions
+			}
+			has_completed_focus = PRC_Cope_with_Cuba
+		}
+		available = {
+			OR = {
+				has_completed_focus = PRC_Welfare_Adjustment
+				has_completed_focus = PRC_Medical_Unicorn
+			}
+			political_power_daily > 0.5
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 14
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Generics
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		days_remove = 14
+		remove_effect = {
+			complete_national_focus = PRC_Generics
+		}
+	}
+	PRC_No_Piracy_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Generics
+		}
+		available = {
+			has_completed_focus = PRC_Respect_Knowledge
+			political_power_daily > 0.5
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_No_Piracy
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_No_Piracy
+		}
+	}
+	PRC_High_Production_focus = {
+		icon = generic_vaccine
+		visible = {
+			has_completed_focus = PRC_All_for_Health
+		}
+		available = {
+			political_power_daily > 0.5
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_High_Production
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_High_Production
+		}
+	}
+	PRC_Platform_Construction_focus = {
+		icon = generic
+		visible = {
+			OR = {
+				has_completed_focus = PRC_No_Piracy
+				has_completed_focus = PRC_High_Production
+			}
+		}
+		available = {
+			political_power_daily > 0.5
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}	
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Platform_Construction
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Platform_Construction
+		}
+	}
+	PRC_Nourished_focus = {
+		icon = generic
+		visible = {
+			OR = {
+				has_completed_focus = PRC_No_Piracy
+				has_completed_focus = PRC_High_Production
+			}
+		}
+		available = {
+			has_completed_focus = PRC_Platform_Construction
+			political_power_daily > 0.5
+			NOT = {
+				has_country_flag = Executing_focus_14_1
+			}	
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_1
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Nourished
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_Nourished
+		}
+	}
+	PRC_Work_with_Enterprise_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Tech_Branch
+		}
+		available = {
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Work_with_Enterprise
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_Work_with_Enterprise
+		}
+	}
+	PRC_Way_Ahead_focus = {
+		icon = generic_industry
+		visible = {
+			has_completed_focus = PRC_Tech_Branch
+		}
+		available = {
+			has_completed_focus = PRC_Work_with_Enterprise
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Way_Ahead
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_Way_Ahead
+		}
+	}	
+	PRC_Generative_AI_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Work_with_Enterprise
+		}
+		available = {
+			has_completed_focus = PRC_Way_Ahead
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Generative_AI
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Generative_AI
+		}
+	}
+	PRC_Tech_Spring_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Tech_Branch
+		}
+		available = {
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Tech_Spring
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_Tech_Spring
+		}
+	}
+	PRC_Support_Universities_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Tech_Branch
+		}
+		available = {
+			has_completed_focus = PRC_Tech_Spring
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 35
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Support_Universities
+		}
+		days_remove = 35
+		remove_effect = {
+			complete_national_focus = PRC_Support_Universities
+		}
+	}
+	PRC_Purge_Scholar_Tyrant_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Tech_Branch
+		}
+		available = {
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Purge_Scholar_Tryant
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Purge_Scholar_Tryant
+		}
+	}
+	PRC_Reform_Edu_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Tech_Spring
+		}
+		available = {
+			has_completed_focus = PRC_Support_Universities
+			has_completed_focus = PRC_Purge_Scholar_Tryant
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Reform_Edu
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Reform_Edu
+		}
+	}
+	PRC_Learn_with_Gain_focus = {
+		icon = generic
+		visible = {
+			has_completed_focus = PRC_Support_Universities
+			has_completed_focus = PRC_Purge_Scholar_Tryant
+		}
+		available = {
+			has_completed_focus = PRC_Reform_Edu
+			NOT = {
+				has_country_flag = Executing_focus_14_2
+			}
+		}
+		complete_effect = {
+			set_country_flag = {
+				flag = Executing_focus_14_2
+				days = 70
+				value = 1
+			}
+			activate_shine_on_focus = PRC_Learn_with_Gain
+		}
+		days_remove = 70
+		remove_effect = {
+			complete_national_focus = PRC_Learn_with_Gain
+		}
+	}
+}
+PRC_enviromental_policy_category = {
+	PRC_environmental_engineering_acceptance_mission = {
+		icon = GFX_Ecologists
+		allowed = { tag = PRC }
+		activation = { always = no }
+		available = {
+			hidden_trigger = { always = no }
+		}
+		priority = 99
+		is_good = yes
+		fire_only_once = yes
+		selectable_mission = no
+		days_mission_timeout = 2900
+		timeout_effect = { 
+			set_country_flag = PRC_environment_acceptance  
+			custom_effect_tooltip = PRC_environment_acceptance_mission_tt
+		}
+	}
+	PRC_roll_back_harmful_environmental_policies = {
+		available = {
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_environment_acceptance
+				}
+			}
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = -0.075
+			}
+			add_industrial_development = yes
+			add_stability = 0.025
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.05
+			}
+			PRC_add_enviromental_progress = yes
+		}
+		icon = GFX_Ecologists
+		
+		cost = 40
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 180
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	PRC_improve_the_environmental_friendliness_of_military_factories = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_environment_acceptance
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 40
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_enviroment_dummy_idea
+					add_idea = PRC_improve_the_environmental_friendliness_of_military_factories_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_ce_industrial_capacity_factory_dynamic_var
+					value = -0.05
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.05
+			}
+			PRC_add_enviromental_progress = yes
+		}
+	}
+	PRC_improve_the_environmental_friendliness_of_civilian_factories = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			NOT = {
+				OR = {
+					
+					has_country_flag = PRC_environment_acceptance
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 40
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_enviroment_dummy_idea
+					add_idea = PRC_improve_the_environmental_friendliness_of_civilian_factories_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_ce_consumer_goods_factor_dynamic_var
+					value = 0.025
+				}
+				add_to_variable = {
+					var = PRC_ce_production_speed_buildings_factor_dynamic_var
+					value = -0.05
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.05
+			}
+			PRC_add_enviromental_progress = yes
+		}
+	}	
+	PRC_roll_back_harmful_environmental_policies_2 = {
+		available = {
+		}
+		visible = {
+			
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+			
+		}	
+		complete_effect = {
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = -0.075
+			}
+			add_industrial_development = yes
+			add_stability = 0.025
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.05
+			}
+			PRC_add_enviromental_progress = yes
+		}
+		icon = GFX_Ecologists
+		
+		cost = 25
+		days_remove = 30
+		fire_only_once = no
+		days_re_enable = 180
+		
+		ai_will_do = {
+			base = 1
+		}
+	}
+	PRC_improve_the_environmental_friendliness_of_military_factories_2 = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_enviroment_dummy_idea
+					add_idea = PRC_improve_the_environmental_friendliness_of_military_factories_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_ce_industrial_capacity_factory_dynamic_var
+					value = -0.05
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.05
+			}
+			PRC_add_enviromental_progress = yes
+		}
+	}
+	PRC_improve_the_environmental_friendliness_of_civilian_factories_2 = {
+		icon = GFX_decision_generic_factory
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 25
+		fire_only_once = no
+		days_re_enable = 300
+		days_remove = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_enviroment_dummy_idea
+					add_idea = PRC_improve_the_environmental_friendliness_of_civilian_factories_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_ce_consumer_goods_factor_dynamic_var
+					value = 0.025
+				}
+				add_to_variable = {
+					var = PRC_ce_production_speed_buildings_factor_dynamic_var
+					value = -0.05
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.05
+			}
+			PRC_add_enviromental_progress = yes
+		}
+	}
+	PRC_yangtze_river_fishing_ban_law = {
+		icon = GFX_Ecologists
+		allowed = { tag = PRC }
+		visible = {
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+		}
+		available = { has_full_control_of_state = 1211 }
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1211
+			}
+		}
+		ai_will_do = {
+			base = 75
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 3
+		}
+
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.15
+			}
+			PRC_add_enviromental_progress = yes
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 10
+			}
+		}
+	}
+	PRC_establish_green_great_wall = {
+		icon = GFX_Ecologists
+		allowed = { tag = PRC }
+		visible = {
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+		}
+		available = { has_full_control_of_state = 621 }
+		highlight_states = {
+			highlight_state_targets = {
+				state = 621
+			}
+		}
+		ai_will_do = {
+			base = 75
+		}
+		cost = 25
+		fire_only_once = yes
+		days_remove = 180
+		modifier = {
+			civilian_factory_use = 5
+		}
+
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = 0.15
+			}
+			PRC_add_enviromental_progress = yes
+			add_stability = 0.01
+			621 = {
+				increase_state_category = yes
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	PRC_Cancel_redline_for_farm_land = {
+		icon = GFX_decision_generic_investment
+		allowed = { tag = PRC }
+		visible = {
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+		}
+		ai_will_do = {
+			base = 5
+		}
+		cost = 40
+		fire_only_once = no
+		days_remove = 90
+		modifier = {
+			production_speed_industrial_complex_factor = 0.15
+		}
+
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = -0.1
+			}
+			PRC_add_enviromental_progress = yes
+		}
+	}
+	PRC_Develop_reserve_resources = {
+		icon = GFX_decision_generic_exploit_land
+		allowed = { tag = PRC }
+		available = {
+			OR = {
+				has_war = yes
+				has_war_support > 0.5
+			}
+		}
+		visible = {
+			NOT = {
+				has_country_flag = PRC_environment_acceptance
+			}
+		}
+		ai_will_do = {
+			base = 50
+		}
+		cost = 25
+		fire_only_once = no
+		days_remove = 180
+		modifier = {
+			industrial_capacity_factory = 0.075
+			local_resources_factor = 0.25
+		}
+
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = -0.1
+			}
+			PRC_add_enviromental_progress = yes
+		}
+	}
+	PRC_turn_a_blind_eye_to_abuses_of_environmental_laws = {
+		icon = GFX_SOV_china_investment
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_environment_acceptance
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 350
+		days_remove = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_enviroment_dummy_idea
+					add_idea = PRC_turn_a_blind_eye_to_abuses_of_environmental_laws_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_ce_consumer_goods_factor_dynamic_var
+					value = -0.015
+				}
+				add_to_variable = {
+					var = PRC_ce_production_speed_buildings_factor_dynamic_var
+					value = 0.035
+				}
+				add_to_variable = {
+					var = PRC_ce_industrial_capacity_factory_dynamic_var
+					value = 0.025
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = -0.05
+			}
+			PRC_add_enviromental_progress = yes
+			set_temp_variable = {
+				income_var_temp = 50
+			}
+			add_income_with_inflation = yes
+		}
+	}
+	PRC_give_more_freedom_to_corporations = {
+		icon = GFX_SOV_china_investment
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			NOT = {
+				OR = {
+					has_country_flag = PRC_environment_acceptance
+				}
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			base = 100
+		}
+		cost = 75
+		fire_only_once = yes
+		days_remove = 50
+
+		complete_effect = {
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_chinese_enviroment_dummy_idea
+					add_idea = PRC_turn_a_blind_eye_to_abuses_of_environmental_laws_idea
+				}
+			}
+			hidden_effect = {
+				add_to_variable = {
+					var = PRC_ce_consumer_goods_factor_dynamic_var
+					value = -0.015
+				}
+				add_to_variable = {
+					var = PRC_ce_production_speed_buildings_factor_dynamic_var
+					value = 0.035
+				}
+				add_to_variable = {
+					var = PRC_ce_industrial_capacity_factory_dynamic_var
+					value = 0.025
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_enviromental_progress_temp
+				value = -0.05
+			}
+			PRC_add_enviromental_progress = yes
+			every_military_industrial_organization = {
+				add_mio_funds = 750
+			}
+			set_temp_variable = {
+				income_var_temp = 35
+			}
+			add_income_with_inflation = yes
+		}
+	}
+}
+arunachal_war_decisions_category = {
+	attack_434_from_1153 = { # 日喀则袭击藏南
+		days_remove = 10
+		days_re_enable = 60
+		fire_only_once = no
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 434
+			}
+		}
+		visible = {
+			controls_state = 1153
+			NOT = { controls_state = 434 }
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = not_attacking_on_arunachal_TT
+				NOT = { has_country_flag = Attacking_in_Arunachal }
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision attack_434_from_1153"
+			set_country_flag = Attacking_in_Arunachal
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Remove attack_434_from_1153"
+			if = {
+				limit = {
+					has_border_war_between = {
+						attacker = 1153
+						defender = 434
+					}
+				}
+				country_event = arunachal_war.4
+			}
+			else = {
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 1153
+						num_provinces = 1
+						on_win = arunachal_war.20
+						on_lose = arunachal_war.21
+						on_cancel = arunachal_war.22
+					}
+					defender = {
+						state = 434
+						num_provinces = 1
+						on_win = arunachal_war.24
+						on_lose = arunachal_war.23
+						on_cancel = arunachal_war.25
+					}
+				}
+			}
+		}
+
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				threat < 0.5
+			}
+		}
+	}
+
+	attack_434_from_1152 = { # 昌都袭击藏南
+		days_remove = 10
+		days_re_enable = 60
+		fire_only_once = no
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 434
+			}
+		}
+
+		visible = {
+			controls_state = 1152
+			NOT = { controls_state = 434 }
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision attack_434_from_1152"
+			set_country_flag = Attacking_in_Arunachal
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = not_attacking_on_arunachal_TT
+				NOT = { has_country_flag = Attacking_in_Arunachal }
+			}
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Remove attack_434_from_1152"
+			if = {
+				limit = {
+					has_border_war_between = {
+						attacker = 1152
+						defender = 434
+					}
+				}
+				country_event = arunachal_war.4
+			}
+			else = {
+				start_border_war = {
+					change_state_after_war = no
+					attacker = {
+						state = 1152
+						num_provinces = 2
+						on_win = arunachal_war.20
+						on_lose = arunachal_war.21
+						on_cancel = arunachal_war.22
+					}
+					defender = {
+						state = 434
+						num_provinces = 2
+						on_win = arunachal_war.24
+						on_lose = arunachal_war.23
+						on_cancel = arunachal_war.25
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				threat < 0.5
+			}
+		}
+	}
+
+	grab_434 = { # 收复藏南地区
+		days_remove = 10
+		days_re_enable = 100
+		fire_only_once = no
+
+		highlight_states = {
+			highlight_states_trigger = {
+				state = 434
+			}
+		}
+
+		visible = {
+			NOT = { controls_state = 434 }
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = more_than_80_arunachal_progress_TT
+				check_variable = { THIS.Arunachal_war_progress > 79 }
+			}
+		}
+
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: Decision grab_434"
+			subtract_from_variable = { THIS.Arunachal_war_progress = 80 }
+		}
+
+		remove_effect = {
+			log = "[GetDateText]: [Root.GetName]: Remove grab_434"
+			remove_state_claim = 434
+			add_state_core = 434
+			transfer_state = 434
+			RAJ = {
+				remove_state_core = 434
+			}
+		}
+
+		ai_will_do = { factor = 10 }
+	}
+
+}
+PRC_Political_Opinion_category = {
+	PRC_advocate_for_militarization = {
+	
+		icon = GFX_PRC_nationalist_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_nat_flag
+			NOT = {
+				has_country_flag = PRC_nat_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_nat_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_nat_less_than = yes
+			#has_country_flag = PRC_sided_with_nat_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 150
+		days_remove = 35
+		days_re_enable = 35
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 35
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_nat_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_nat = yes
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	PRC_revanchist_propaganda  = {
+	
+		icon = GFX_PRC_nationalist_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_nat_flag
+			NOT = {
+				has_country_flag = PRC_nat_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_nat_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_nat_less_than = yes
+			#has_country_flag = PRC_sided_with_nat_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 100
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_nat_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_nat = yes
+			add_war_support = 0.05
+		}
+	}
+	
+	PRC_attack_opposition_factions  = {
+	
+		icon = GFX_PRC_nationalist_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_nat_flag
+			NOT = {
+				has_country_flag = PRC_nat_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_nat_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_nat_less_than = yes
+			#has_country_flag = PRC_sided_with_nat_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 50
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_cen = yes
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_lib = yes
+			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_new = yes
+			add_stability = -0.03
+		}
+	}
+	
+	PRC_hold_pro_government_rally = {
+	
+		icon = GFX_PRC_centrist_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_cen_flag
+			NOT = {
+				has_country_flag = PRC_cen_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_cen_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_cen_less_than = yes
+			#has_country_flag = PRC_sided_with_cen_flag
+		}
+		
+		ai_will_do = {
+			base = 20
+		}
+		cost = 100
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_cen = yes
+			add_stability = 0.025
+		}
+	}
+	
+	PRC_spread_pro_government_messages = {
+	
+		icon = GFX_PRC_centrist_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_cen_flag
+			NOT = {
+				has_country_flag = PRC_cen_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_cen_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_cen_less_than = yes
+			#has_country_flag = PRC_sided_with_cen_flag
+		}
+		
+		ai_will_do = {
+		base = 100
+		}
+		cost = 75
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_cen = yes
+		}
+	}
+	
+	PRC_censor_opposition_parties = {
+	
+		icon = GFX_PRC_centrist_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_cen_flag
+			NOT = {
+				has_country_flag = PRC_cen_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_cen_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_cen_less_than = yes
+			#has_country_flag = PRC_sided_with_cen_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 75
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_lib = yes
+			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_new = yes
+			set_temp_variable = { 
+				var = PRC_influence_nat_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_nat = yes
+		}
+	}
+	
+	PRC_blackmail_a_critical_politician = {
+	
+		icon = GFX_PRC_liberal_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_lib_flag
+			NOT = {
+				has_country_flag = PRC_lib_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_lib_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_lib_less_than = yes
+			#has_country_flag = PRC_sided_with_lib_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 150
+		days_remove = 50
+		days_re_enable = 350
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = 0.075
+			}
+			PRC_add_influence_lib = yes
+		}
+	}
+	
+	PRC_spread_anti_status_quo_messages = {
+	
+		icon = GFX_PRC_liberal_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_lib_flag
+			NOT = {
+				has_country_flag = PRC_lib_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_lib_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_lib_less_than = yes
+			#has_country_flag = PRC_sided_with_lib_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 100
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_lib = yes
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_cen = yes
+			set_temp_variable = { 
+				var = PRC_influence_nat_var_temp
+				value = -0.05
+			}
+			PRC_add_influence_nat = yes
+			add_war_support = -0.05
+		}
+	}
+	
+	PRC_demand_reforms = {
+	
+		icon = GFX_PRC_liberal_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_lib_flag
+			NOT = {
+				has_country_flag = PRC_lib_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_lib_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_lib_less_than = yes
+			#has_country_flag = PRC_sided_with_lib_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 75
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_lib = yes
+			add_stability = -0.03
+		}
+	}
+	
+	PRC_hold_a_protest = {
+	
+		icon = GFX_PRC_liberal_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_lib_flag
+			NOT = {
+				has_country_flag = PRC_lib_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_lib_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_lib_less_than = yes
+			#has_country_flag = PRC_sided_with_lib_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 50
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_lib = yes
+			add_war_support = -0.025
+			add_stability = -0.025
+		}
+	}
+	PRC_look_for_politburo_sympathisers = {
+	
+		icon = GFX_PRC_new_left_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_side_with_left_flag
+			NOT = {
+				has_country_flag = PRC_new_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_new_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_new_less_than = yes
+			#has_country_flag = PRC_side_with_left_flag
+		}
+		
+		ai_will_do = {
+			base = 20
+		}
+		cost = 100
+		days_remove = 50
+		days_re_enable = 350
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 50
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = 0.075
+			}
+			PRC_add_influence_new = yes
+		}
+	}
+	PRC_discredit_capitalist_roaders = {
+	
+		icon = GFX_PRC_new_left_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_sided_with_left_flag
+			NOT = {
+				has_country_flag = PRC_new_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_new_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_new_less_than = yes
+			#has_country_flag = PRC_sided_with_left_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 75
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_lib_var_temp
+				value = -0.03
+			}
+			PRC_add_influence_lib = yes
+			set_temp_variable = { 
+				var = PRC_influence_cen_var_temp
+				value = -0.03
+			}
+			PRC_add_influence_cen = yes
+			set_temp_variable = { 
+				var = PRC_influence_nat_var_temp
+				value = -0.03
+			}
+			PRC_add_influence_nat = yes
+			add_stability = -0.05
+		}
+	}
+	PRC_organize_a_red_culture_event = {
+	
+		icon = GFX_PRC_new_left_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_side_with_left_flag
+			NOT = {
+				has_country_flag = PRC_new_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_new_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_new_less_than = yes
+			#has_country_flag = PRC_side_with_left_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 50
+		days_remove = 21
+		days_re_enable = 21
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}
+			}
+		}
+		remove_effect = {
+			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = 0.05
+			}
+			PRC_add_influence_new = yes
+			add_stability = -0.03
+		}
+	}
+	PRC_stir_up_the_workers = {
+	
+		icon = GFX_PRC_new_left_decision
+		allowed = {
+			original_tag = PRC
+		}
+		
+		visible = {
+			#has_country_flag = PRC_side_with_left_flag
+			NOT = {
+				has_country_flag = PRC_new_banned_flag
+			}
+		}
+		available = {
+			NOT = {
+				has_country_flag = political_action_flag
+			}
+			set_temp_variable = {
+				var = PRC_influence_new_trigger_temp
+				value = 1
+			}
+			PRC_has_influence_new_less_than = yes
+			#has_country_flag = PRC_side_with_left_flag
+		}
+		
+		ai_will_do = {
+		base = 30
+		}
+		cost = 50
+		days_remove = 50
+		days_re_enable = 350
+		modifier = {
+		}
+		complete_effect = {
+			hidden_effect = {
+				set_country_flag = {
+					flag = political_action_flag
+					days = 21
+					value = 1
+				}									
+			}
+			#add_timed_idea = {
+			#	idea = PRC_new_left_workers_strikes_idea
+			#	days = 70
+			#}
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = -0.05
+			}
+			add_industrial_development = yes
+		}
+		remove_effect = {
+			add_stability = -0.035
+			set_temp_variable = { 
+				var = PRC_influence_new_var_temp
+				value = 0.075
+			}
+			PRC_add_influence_new = yes
+		}
+	}
+	PRC_lobby_for_npc_support = {
+		icon = generic_industry
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			tag = PRC
+		}
+		available = {
+			tag = PRC
+		}
+		fire_only_once = yes
+		cost = 30
+		days_remove = 70
+		complete_effect = {
+		}
+		remove_effect = {
+			set_temp_variable = {
+				var = PRC_approval_rating_nat_var_temp
+				value = 0.05
+			}
+			set_temp_variable = {
+				PRC_approval_rating_newleft_var_temp = 0.05
+			}
+			set_temp_variable = {
+				PRC_approval_rating_lib_var_temp = 0.05 
+			}
+			PRC_add_lib_approval = yes
+			PRC_add_nat_approval = yes
+			PRC_add_nat_approval = yes
+		}
+		ai_will_do = {
+			base = 10
+		}
+	}
+	
+}

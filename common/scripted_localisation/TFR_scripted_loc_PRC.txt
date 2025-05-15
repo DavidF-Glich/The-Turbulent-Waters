@@ -1,0 +1,233 @@
+defined_text = { #Centrists
+	name = PRC_centrist_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_centrist_loc
+	}
+}
+
+defined_text = { #Liberals
+	name = PRC_lib_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_lib_loc
+	}
+}
+
+defined_text = { #Nationalists
+	name = PRC_nat_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_nat_loc
+	}
+}
+
+defined_text = { #New Left
+	name = PRC_newleft_text
+
+	text = {
+		trigger = {
+			original_tag = PRC
+		}
+		localization_key = PRC_newleft_loc
+	}
+}
+
+defined_text = { #Centrists status
+	name = PRC_centrist_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_cen_banned_flag
+			}
+		}
+		localization_key = PRC_centrist_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_cen_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #Liberals status
+	name = PRC_lib_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_lib_banned_flag
+			}
+		}
+		localization_key = PRC_lib_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_lib_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #Nationalists status
+	name = PRC_nat_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_nat_banned_flag
+			}
+		}
+		localization_key = PRC_nat_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_nat_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+defined_text = { #New Left status
+	name = PRC_newleft_status_text
+
+	text = {
+		trigger = {
+			NOT = {
+				has_country_flag = PRC_new_banned_flag
+			}
+		}
+		localization_key = PRC_newleft_status_okay
+	}
+
+	text = {
+		trigger = {
+			has_country_flag = PRC_new_banned_flag
+		}
+		localization_key = PRC_status_banned
+	}
+}
+
+
+defined_text = {
+	name = PRC_Organize_Companies_loc
+	text = {
+		trigger = {
+			check_variable = {
+				PRC_Mask_Production < 0
+			}
+		}
+		localization_key = PRC_Organize_Companies_1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				PRC_Mask_Production = 0
+			}
+		}
+		localization_key = PRC_Organize_Companies_2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				PRC_Mask_Production > 0
+			}
+		}
+		localization_key = PRC_Organize_Companies_3
+	}
+}
+defined_text = {
+	name = PRC_Food_Reform_Progress_loc
+	text = {
+		trigger = {
+			check_variable = {
+				PRC_Food_Reform_Progress < 0.1
+			}
+		}
+		localization_key = PRC_Food_Reforming1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.1
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.25
+				compare = less_than
+			}
+		}
+		localization_key = PRC_Food_Reforming2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.25
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.5
+				compare = less_than
+			}
+		}
+		localization_key = PRC_Food_Reforming3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.5
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.75
+				compare = less_than
+			}
+		}
+		localization_key = PRC_Food_Reforming4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 0.75
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 1
+				compare = less_than
+			}
+		}
+		localization_key = PRC_Food_Reforming5
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = PRC_Food_Reform_Progress
+				value = 1
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = PRC_Food_Reforming6
+	}
+}

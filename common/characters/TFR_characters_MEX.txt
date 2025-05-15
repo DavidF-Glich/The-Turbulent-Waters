@@ -1,0 +1,51 @@
+characters={
+	MEX_andres_manuel_lopez_obrador_char = {
+		portraits = {
+			civilian = {
+				large="gfx/leaders/MEX/Andrés Manuel López Obrador.png"
+			}
+		}
+		country_leader={
+			ideology=social_democracy
+			expire="1.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+		country_leader={
+			ideology=christian_conservatism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	CAS_ulisses_soares_char = {
+		portraits = {
+			civilian = {
+				large="gfx/leaders/CAS/Ulisses Soares.dds"
+			}
+		}
+		country_leader={
+			ideology=christian_conservatism
+			expire="1.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+	}
+	
+	ZAP_subcomandante_marcos_char = {
+		portraits = {
+			civilian = {
+				large="gfx/leaders/ZAP/Subcomandante Marcos.png"
+			}
+		}
+		country_leader={
+			ideology=left_anarchist
+			expire="1.1.1.1"
+			id=-1
+			traits = {
+			}
+		}
+	}
+}

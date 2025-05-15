@@ -1,0 +1,73 @@
+GER_prepare_to_fight_SOV_strategy = {
+	abort_when_not_enabled = yes
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		has_global_flag = Russo_Ukrainian_War
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = contain
+		id = SOV
+		value = 100
+	}
+	ai_strategy = {
+		type = build_army
+		id = armor
+		value = 10
+	}
+	ai_strategy = {
+		type = build_army
+		id = infantry
+		value = 20
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = UKR
+		value = 100
+	}
+}
+
+GER_modern_blitzkrieg = {
+	allowed = {
+		tag = GER
+	}
+	enable = {
+		OR = {
+			has_government = fascist
+			has_government = nationalist
+			has_government = communist
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = front_control
+		tag = MLD
+		tag = CZE
+		tag = SLO
+		tag = HUN
+		tag = ROM
+		tag = BUL
+		tag = SOV
+		tag = PLD
+		tag = BAY
+		execution_type = rush
+		execute_order = yes
+		manual_attack = no
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 500
+	}
+}
+

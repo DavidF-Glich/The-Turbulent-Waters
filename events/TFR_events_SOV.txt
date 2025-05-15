@@ -1,0 +1,260 @@
+add_namespace = russia
+#新年致辞
+country_event = {
+	id = russia.1
+	title = russia.1.t
+	desc = russia.1.d
+	picture = GFX_Putin_Speech
+	trigger = {
+		tag = SOV
+	}
+	fire_only_once = yes
+	option = {
+		name = russia.1.a
+	}
+}
+#新冠远征
+country_event = {
+	id = russia.2
+	title = russia.2.t
+	desc = russia.2.d
+	picture = GFX_Covid-19_Cases_Increase
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = SOV_coronavirus_pandemic_idea4
+		}
+	}
+	
+	option = {
+		name = russia.18.a
+		effect_tooltip = {
+			add_ideas = SOV_coronavirus_pandemic_idea4
+		}
+		activate_mission = SOV_handle_covid_mission
+	}
+}
+#白俄罗斯关系
+country_event = {
+	id = russia.3
+	title = russia.3.t
+	desc = russia.3.d
+	picture = GFX_SOV_BEL_Premier_Meeting
+	is_triggered_only = yes
+	option = {
+		name = russia.3.a
+	}
+}
+
+#特别军事行动
+country_event = {
+	id = russia.4
+	title = russia.4.t
+	desc = russia.4.d
+	picture = GFX_SOV_Russian_Camp
+	
+	fire_only_once = yes  
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	immediate = {
+	}
+	
+	option = {
+		name = russia.4.a
+		focus_unlock = yes
+		load_focus_tree = SOV_2022
+	}
+}
+
+#乌克兰屁颠颠来互不侵犯
+country_event = {
+	id = russia.5
+	title = russia.5.t
+	desc = russia.5.d
+	is_triggered_only = yes
+	option = {
+		name = russia.5.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = 20
+		UKR = {
+			country_event = ukraine.2
+		}
+	}
+	option = {
+		name = russia.5.b
+		diplomatic_relation = {
+			country = UKR
+			relation = non_aggression_pact
+		}
+		add_war_support = 0.02
+		UKR = {
+			country_event = ukraine.1
+		}
+	}
+}
+
+#普京确诊新冠
+country_event = {
+	id = russia.6
+	title = russia.6.t
+	desc = russia.6.d
+	picture = GFX_Putin_coronavirus
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = russia.6.a
+		add_country_leader_trait = hos_covid_positive
+		hidden_effect = {
+			if = {
+				limit = { 
+					is_historical_focus_on = yes
+				}
+				country_event = {
+					id = russia.7
+					days = 14
+				}
+			}
+			else = {
+				country_event = {
+					id = russia.8
+					days = 21
+				}
+			}
+			set_portraits = {
+				character = SOV_vladimir_putin
+				civilian = { large ="GFX_portrait_SOV_vladimir_putin_1" }
+			}
+		}
+	}
+}
+
+#普京回岗
+country_event = {
+	id = russia.7
+	title = russia.7.t
+	desc = russia.7.d
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+	}
+	
+	immediate = {
+	}
+	
+	option = {
+		name = russia.7.a
+		remove_country_leader_trait = hos_covid_positive
+		hidden_effect = {
+			set_portraits = {
+				character = SOV_vladimir_putin
+				civilian = { large ="GFX_portrait_SOV_vladimir_putin_1" }
+			}
+		}
+	}
+}
+
+#普京辞职
+country_event = {
+	id = russia.8
+	title = russia.8.t
+	desc = russia.8.d
+	picture = GFX_Putin_coronavirus_2
+	
+	is_triggered_only = yes
+
+	option = {
+		name = russia.8.a
+		hidden_effect = {
+			set_country_flag = SOV_putin_resigns_flag
+			retire_character = SOV_vladimir_putin
+			promote_character = {
+				character = SOV_dmitry_medvedev
+				ideology = oligarchist
+			}
+			news_event = { 
+				id = news.305
+				hours = 6
+			}
+		}
+		add_stability = -0.1
+		focus_unlock = yes
+	}
+}
+#罗刹纸牌屋
+country_event = {
+	id = russia.9
+	title = russia.9.t
+	desc = russia.9.d
+	picture = GFX_SOV_russian_house_of_cards
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	trigger = {
+		tag = SOV
+	}
+	
+	option = {
+		name = russia.9.a
+		set_country_flag = SOV_house_of_cards_activated_flag
+		unlock_decision_category_tooltip = SOV_the_house_of_cards
+		hidden_effect = {
+			activate_mission = SOV_pawns_making_moves_mission
+			add_dynamic_modifier = { modifier = SOV_liberal_opposition_dynamic }
+			set_variable = { SOV_liberal_opposition_dynamic_dynamic_var = -0.045 }
+			country_event = russia.10
+		}
+	}
+}
+#丰矿的网中（目田派）
+country_event = {
+	id = russia.10
+	title = russia.10.t
+	desc = russia.10.d
+	picture = GFX_Navalny
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.10.a
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.015
+		}
+		SOV_add_election_approval_rating_nav = yes
+		activate_mission = SOV_liberalism_spreads_mission
+	}
+}
+#美俄乌克兰问题——启动谈判
+country_event = {
+	id = russia.11
+	title = russia.11.t
+	desc = russia.11.d
+	is_triggered_only = yes
+	picture = GFX_russia_sanction
+	immediate = {
+		
+	}
+	option = {
+		name = russia.11.a
+		activate_mission = USA_RUS_Negotiation_mission
+	}
+	option = {
+		name = russia.11.b
+		
+	}
+}

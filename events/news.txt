@@ -1,0 +1,348 @@
+add_namespace = news
+#The New Order: Last Days of Europe
+news_event = {
+    id = news.1
+    title = news.1.t
+    desc = news.1.d
+    picture = GFX_TNO_Release
+    
+    major = yes
+    is_triggered_only = yes
+    fire_only_once = yes
+
+
+    option= {
+        name = news.1.a
+        add_popularity = {
+			ideology = fascist
+			popularity = -0.02
+		}
+        hidden_effect = {play_song = "tno_song_toolbox_theory"}
+    }
+}
+#The Fire Rises
+news_event = {
+    id = news.2
+    title = news.2.t
+    desc = news.2.d
+    picture = GFX_TFR_Release
+    
+    major = yes
+
+    fire_only_once = yes
+
+    option= {
+        name = news.2.a
+        trigger = {
+            tag = PRC
+        }
+        add_popularity = {
+			ideology = communist
+			popularity = 0.05
+		}
+    }
+    option= {
+        name = news.2.b
+        trigger = {
+            NOT = {
+                tag = PRC
+            }
+        }
+        add_popularity = {
+			ideology = social_liberal
+			popularity = -0.02
+		}
+        add_popularity = {
+			ideology = market_liberal
+			popularity = -0.02
+		}
+        add_popularity = {
+			ideology = conservative
+			popularity = -0.04
+        }
+    }
+}
+#Jimmy Carter Passes
+news_event = {
+    id = news.3
+    title = news.3.t
+    desc = news.3.d
+    picture = GFX_Jimmy_Carter
+
+    major = yes
+
+    fire_only_once = yes
+    trigger = {
+        date > 2024.12.29
+    }
+    immediate = {
+        hidden_effect = {
+            play_song = tno_song_the_last_light 
+        }
+        
+    }
+    option = {
+        name = news.3.a
+        trigger = {
+            tag = PRC
+        }
+        
+    }
+    option = {
+        name = news.3.b
+        trigger = {
+            tag = USA
+        }
+    }
+    option = {
+        name = news.3.c
+        trigger = {
+            NOT = {
+                tag = PRC
+                tag = USA
+            }
+        }
+    }
+}
+#US Peace with Taliban
+news_event = {
+	id = news.4
+	title = news.4.t
+	desc = news.4.d
+	picture = GFX_Taliban_News
+	is_triggered_only = yes
+	major = yes
+	option = {
+		name = news.4.a
+		trigger = {
+			NOT = {
+				tag = USA
+			}
+		}
+	}
+	option = {
+		name = news.4.b
+		trigger = {
+			tag = USA
+		}
+	}
+}
+#Taiwan peacefully reunited
+news_event = {
+    id = news.5
+    title = news.5.t
+    desc = news.5.d
+    picture = GFX_News_Taiwan_Unification
+    major = yes
+    is_triggered_only = yes
+    option = {
+        name = news.5.a
+        every_country = {
+            set_country_flag = PRC_Taiwan_Regained
+            hidden_effect = {
+                play_song = "PRC_no_communist_no_new_china"
+            }
+            
+        }
+    }
+}
+#George Floyd Murdered
+news_event = {
+    id = news.6
+    title = news.6.t
+    desc = news.6.d
+    picture = GFX_BLM
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = news.6.a
+        trigger = {
+            tag = USA
+        }
+    }
+    option = {
+        name = news.6.b
+        trigger = {
+            NOT = {
+                tag = USA
+            }
+        }
+    }
+}
+#Biden won 2020 US Election
+news_event = {
+    id = news.7
+    title = news.7.t
+    desc = news.7
+    picture = GFX_biden_2020_victory
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = news.7.a
+    }
+}
+#Biden won 2020 US Election
+news_event = {
+    id = news.8
+    title = news.8.t
+    desc = news.8.d
+    picture = GFX_trump_2020_victory
+    is_triggered_only = yes
+    major = yes
+    option = {
+        name = news.8.a
+    }
+}
+#2022 Taiwan Crisis resolved    台海局势结束
+news_event = {
+    id = news.9
+    title = news.9.t
+    desc = news.9.d
+    picture = GFX_chineseships
+    is_triggered_only = yes
+    major = yes
+    immediate = {
+        clr_global_flag = Taiwan_Crisis
+    }
+    option = {
+        name = news.9.a
+        trigger = {
+            tag = PRC
+        }
+    }
+    option = {
+        name = news.9.b
+        trigger = {
+            OR = {
+                tag = CHI
+                tag = USA
+            }
+        }
+    }
+    option = {
+        name = news.9.c
+        trigger = {
+            NOT = {
+                tag = CHI
+                tag = PRC
+                tag = USA
+            }
+        }
+    }
+}
+#DeepSeek Rocked the World
+news_event = {
+    id = news.10
+    title = news.10.t
+    desc = news.10.d
+    picture = GFX_DeepSeek_Strike_World
+    is_triggered_only = yes
+    trigger = {
+        date > 2025.1.10
+    }
+    major = yes
+    option = {
+        name = news.10.a
+        trigger = {
+            tag = USA
+        }
+    }
+    option = {
+        name = news.10.b
+        trigger = {
+            NOT = {
+                tag = USA
+            }
+        }
+        if = {
+            limit = { 
+                tag = PRC
+            }
+            hidden_effect = {
+                country_event = {
+                    id = china.32
+                    random_days = 5
+                }
+            }
+        }
+    }
+}
+#2025 Spring Festival Gala in PRC
+news_event = {
+    id = news.11
+    title = news.11.t
+    desc = news.11.d
+    is_triggered_only = yes
+    picture = GFX_2025_China_Spring_Festival_Gala
+    trigger = {
+        date = 2025.1.28
+    }
+    option = {
+        name = news.11.a
+        trigger = {
+            tag = PRC
+        }
+    }
+    option = {
+        name = news.11.b
+        trigger = {
+            NOT = {
+                tag = PRC
+            }
+        }
+    }
+}
+
+#台海战争——中国胜利
+news_event = {
+    id = news.12
+    title = news.12.t
+    desc = news.12.d
+    is_triggered_only = yes
+    major = yes
+    picture = GFX_event_taiwanwarwin
+    immediate = {
+        play_song = "TFR_mu_tfr_the_dragons_roar"
+    }
+    option = {
+        name = news.12.a
+        trigger = {
+            tag = PRC
+        }
+    }
+    option = {
+        name = news.12.b
+        trigger = {
+            OR = {
+                tag = USA
+                tag = AST
+                tag = PHI
+                tag = JAP
+            }
+        }
+    }
+    option = {
+        name = news.12.c
+        trigger = {
+            NOT = {
+                tag = PRC
+                tag = USA
+                tag = AST
+                tag = PHI
+                tag = JAP               
+            }
+        }
+    }
+}
+#教皇方济各去世
+news_event = {
+    id = news.13
+    title = news.13.t
+    desc = news.13.d
+    is_triggered_only = yes
+    picture = GFX_Pope_Francis_Gone
+    major = yes
+    option = {
+        name = news.13.a
+    }
+}

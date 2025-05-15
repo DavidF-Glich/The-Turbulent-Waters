@@ -1,0 +1,328 @@
+focus_tree = {
+	id = USA_Provisional_Gov
+	country = { 
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = USA_P_Pandemic
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 1
+		y = 0
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = USA_P_Reduce_Loss
+		icon = GFX_surrender_tiny_flag
+		cost = 3
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = USA_P_Pandemic
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = USA_P_Purchase_Masks
+		icon = GFX_surrender_tiny_flag
+		cost = 3
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = USA_P_Reduce_Loss
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = USA_P_Economic_Stability
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = USA_P_Reduce_Loss
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = USA_P_Hard_Landing
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 1
+		y = 3
+		prerequisite = {
+			focus = USA_P_Economic_Stability
+		}
+		prerequisite = {
+			focus = USA_P_Purchase_Masks
+		}
+		completion_reward = {
+			if = {
+				limit = { has_country_flag = USA_MAGA_Communism}
+				create_country_leader = {
+					name = USA_greyson_walker_char
+					picture = "gfx/Leaders/USA/USA_Greyson_Walker.png"
+					ideology = marxism_leninism
+				}
+				add_ideas = APA_jackson_hinkle_hog
+				add_ideas = APA_brian_becker_for
+				add_ideas = APA_ashik_siddique_eco
+				add_ideas = APA_sofia_guimaraes_cutler_sec
+				add_ideas = APA_lily_goldklang_int
+				set_popularities = {
+					communist = 40
+					totalitarian_socialist = 8
+					libertarian_socialist = 7
+					social_democrat = 8
+					social_liberal = 5
+					conservative = 7
+					authoritarian_democrat = 3
+					nationalist = 5
+					national_socialist = 3
+					fascist = 10
+					market_liberal = 4
+				}
+				
+				set_party_name = {
+					ideology = communist
+					long_name = USA_MAGA_Communist_Movement
+					name = USA_MAGA_Communist_Movement_desc
+				}
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = USA_Political_Innovation_Center
+					name = USA_Political_Innovation_Center_short
+				}
+				set_party_name = {
+					ideology = libertarian_socialist
+					long_name = USA_Party_for_Socialism_and_Liberation
+					name = USA_Party_for_Socialism_and_Liberation_short
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = USA_Patriotic_Front_Jackson
+					name = USA_Patriotic_Front_Jackson_short
+				}
+				set_party_name = {
+					ideology = fascist
+					long_name = USA_Patriotic_Front_Hamiliton
+					name = USA_Patriotic_Front_Hamiliton_short
+				}
+				set_politics = {
+					ruling_party = communist
+					elections_allowed = yes
+					last_election = "2020.11.5"
+					election_frequency = 60
+					}
+				end_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:totalitarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:totalitarian_socialist
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:conservative
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:authoritarian_democrat
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+	
+			}
+			else_if = {
+				limit = { has_country_flag = USA_Go_APLA }
+				create_country_leader = {
+					name = USA_gloria_la_riva_char
+					picture = "gfx/Leaders/APA/APA_gloria_la_riva.png"
+					ideology = marxism_leninism
+				}
+				add_ideas = {
+					APA_brace_belden_hog
+					APA_donald_courter_for
+					APA_ashik_siddique_eco
+					APA_mara_verheyden_hilliard_sec
+					APA_michael_prysner_int
+				}
+				set_popularities = {
+					communist = 48
+					totalitarian_socialist = 4
+					libertarian_socialist = 2
+					social_democrat = 4
+					social_liberal = 4
+					conservative = 8
+					nationalist = 6
+					national_socialist = 13
+					fascist = 5
+					market_liberal = 1
+					authoritarian_democrat = 5
+				}
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = USA_Political_Innovation_Center
+					name = USA_Political_Innovation_Center_shorts
+				}
+				promote_character = APA_caleb_maupin_char
+				set_party_name = {
+					ideology = communist
+					long_name = APA_communist_party_long
+					name = APA_communist_party
+				}
+				set_party_name = {
+					ideology = libertarian_socialist
+					long_name = APA_social_democrat_party_long
+					name = APA_social_democrat_party
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = USA_Patriotic_Front_Jackson
+					name = USA_Patriotic_Front_Jackson_short
+				}
+				promote_character = USA_thomas_rousseau_char
+
+				set_party_name = {
+					ideology = fascist
+					long_name = USA_Patriotic_Front_Hamiliton
+					name = USA_Patriotic_Front_Hamiliton_short
+				}
+				set_politics = {
+					ruling_party = communist
+					elections_allowed = yes
+					last_election = "2020.11.5"
+					election_frequency = 60
+				}
+				end_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:totalitarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:totalitarian_socialist
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:libertarian_socialist
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:social_democrat
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+	
+			}
+			else_if = {
+				limit = { has_country_flag = USA_Patriotic_Front }
+				create_country_leader = {
+					name = PTF_thomas_rousseau_char_revolution
+					picture = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+					ideology = classical_fascism
+				}
+				set_popularities = {
+					communist = 18
+					totalitarian_socialist = 1
+					libertarian_socialist = 3
+					social_democrat = 3
+					social_liberal = 2
+					conservative = 6
+					nationalist = 14
+					national_socialist = 5
+					fascist = 39
+					market_liberal = 4
+					authoritarian_democrat = 5
+				}
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = USA_Political_Innovation_Center
+					name = USA_Political_Innovation_Center_shorts
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = APA_communist_party_long
+					name = APA_communist_party
+				}
+				set_party_name = {
+					ideology = libertarian_socialist
+					long_name = APA_social_democrat_party_long
+					name = APA_social_democrat_party
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = USA_Patriotic_Front_Jackson
+					name = USA_Patriotic_Front_Jackson_short
+				}
+				set_party_name = {
+					ideology = fascist
+					long_name = USA_Patriotic_Front_Hamiliton
+					name = USA_Patriotic_Front_Hamiliton_short
+				}
+				set_politics = {
+					ruling_party = fascist
+					elections_allowed = no
+					last_election = "2020.11.5"
+					election_frequency = 48
+				}
+				end_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:national_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:nationalist
+				}
+				add_to_coalition = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:fascist
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:national_socialist
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+	
+			}
+			else = {
+				custom_effect_tooltip = USA_P_Hard_Landing_tt
+			}
+		}
+	}
+}

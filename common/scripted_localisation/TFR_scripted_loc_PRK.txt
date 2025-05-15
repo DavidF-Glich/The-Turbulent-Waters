@@ -1,0 +1,241 @@
+#鸣谢TNO勃艮第灵感：保密国策
+defined_text = {
+	name = Gettext_PRK_New_Year
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_New_Year_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Military_Development
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Military_Development_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Defend_Border
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Defend_Border_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Protect_Kim
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Protect_Kim_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Produce_At_All_Cost
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Produce_At_All_Cost_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Duel_with_USA
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Duel_with_USA_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Inner_Breakthrough
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Inner_Breakthrough_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Setup_Local_Pan_Group
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Setup_Local_Pan_Group_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Recheck_Citizens
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Recheck_Citizens_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_11th_Administration
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_11th_Administration_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Construct_Kim_Street
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Construct_Kim_Street_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Secret_Trade_Deal
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Secret_Trade_Deal_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Five_Year_Plan
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Five_Year_Plan_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Establish_Military_Discipline
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Establish_Military_Discipline_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Send_Little_Kim
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Send_Little_Kim_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Personality_Cult
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Personality_Cult_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Increase_COVID_Censorship
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Increase_COVID_Censorship_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Pretended_March
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Pretended_March_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Get_Escapers_Back
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Get_Escapers_Back_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}
+defined_text = {
+	name = Gettext_PRK_Done_with_Past
+	text = {
+		trigger = {
+			PRK = { is_ai = no}
+		}
+		localization_key = PRK_Done_with_Past_t
+	}
+	text = {
+		localization_key = PRK_Redacted
+	}
+}

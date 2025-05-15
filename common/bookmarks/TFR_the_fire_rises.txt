@@ -1,0 +1,236 @@
+bookmarks = {
+	bookmark = {
+		name = "FIRE_NAME"
+		desc = "FIRE_NAME_DESC"
+		date = 2020.1.1.1
+		picture = "GFX_select_date_2020"
+		default_country = "USA"
+		default = yes
+		
+		"USA" = {
+			history = "USA_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				USA_political_division
+				USA_BLM_campaign_idea
+				USA_political_establishment
+			}
+			focuses = {
+				USA_Bring_Common_Back
+				USA_Out_of_System
+				USA_Side_with_Trump
+			}
+		}
+				
+		"ENG" = {
+			history = "ENG_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				ENG_covid_19_pandemic
+				ENG_nato_eu_leader_idea
+				ENG_sun_sets_idea
+			}
+			focuses = {
+				
+			}
+		}
+
+		"FRA" = {
+			history = "FRA_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				FRA_french_spirit_idea
+				FRA_mass_migration_idea
+				FRA_ENA_idea
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"GER" = {
+			history = "GER_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				GER_german_legacy_idea
+				GER_bundeswehr_shortcomings_idea
+				GER_merkelreich_idea
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"SOV" = {
+			history = "SOV_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				SOV_Putinism_Faltering
+				SOV_heavy_sanctions2
+				SOV_kleptocratic_state
+			}
+			focuses = {
+				SOV_New_Century
+				SOV_SMO
+				SOV_Talk_with_Ministers
+			}
+		}
+		
+		"PRC" = {
+			history = "PRC_GATHERING_STORM_DESC"
+			ideology = communist
+			ideas = {
+				PRC_chinese_communist_party_idea
+				PRC_corrupt_bureaucracy_idea
+				PRC_coronavirus_pandemic_idea4
+			}
+			focuses = {
+				PRC_Adjust_Route
+				PRC_Historic_Checkpoint
+				PRC_Steady_Route
+			}
+		}
+		"---"={
+			history = "OTHER_GATHERING_STORM_DESC"
+		}
+
+		"RAJ" = {
+			minor = yes
+			history = "RAJ_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				RAJ_south_asian_tiger_idea
+				commonwealth_of_nations_member
+				RAJ_religious_sectarianism_idea
+			}
+			focuses = {
+		
+			}
+		}
+		"UKR" = {
+			minor = yes
+			history = "UKR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				UKR_zelensky_growing_authoritarism
+				UKR_government_corruption
+				UKR_embargoed_economy
+			}
+			focuses = {
+			}
+		}
+		"JAP" = {
+			minor = yes
+			history = "JAP_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				JAP_japanese_pacifism_idea
+				JAP_aging_population_idea
+				JAP_keiretsu_control_idea
+			}
+			focuses = {
+				
+			}
+		}
+
+		"PRK" = {
+			minor = yes
+			history = "PRK_GATHERING_STORM_DESC"
+			ideology = totalitarian_socialist
+			ideas = {
+				PRK_Total_Control_idea
+				PRK_for_the_party
+				PRK_heavy_sanctions_idea
+			}
+			focuses = {
+				
+			}
+		}
+
+		"KOR" = {
+			minor = yes
+			history = "KOR_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				KOR_jap_military_advisors
+				KOR_dominance_of_chaebols
+				KOR_aging_population_idea
+			}
+			focuses = {
+				
+			}
+		}
+
+		"CHI" = {
+			minor = yes
+			history = "CHI_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				CHI_american_protection_idea
+				CHI_chinese_blockade
+				CHI_prc_embargo_idea
+			}
+			focuses = {
+				
+			}
+		}
+
+		"POL" = {
+			minor = yes
+			history = "POL_GATHERING_STORM_DESC"
+			ideology = conservative
+			ideas = {
+				POL_nationalism_idea
+				POL_legacy_idea
+				POL_splintered_society_idea
+			}
+			focuses = {
+				
+			}
+		}
+		
+		"ITA" = {
+			minor = yes
+			history = "ITA_GATHERING_STORM_DESC"
+			ideology = social_liberal
+			ideas = {
+				ITA_corruption
+				EU_euro_idea
+				NATO_unity_1
+			}
+		}
+
+		#"ISR" = {
+		#	minor = yes
+		#	history = "ISR_GATHERING_STORM_DESC"
+		#	ideology = conservative
+		#	ideas = {
+		#		ISR_french_funding_idea
+		#		idea_ISR_american_funding
+		#		idea_ISR_vanguard_of_judaism
+		#	}
+		#	focuses = {
+		#		
+		#	}
+		#}
+
+		"BLR" = {
+			minor = yes
+			history = "BLR_GATHERING_STORM_DESC"
+			ideology = authoritarian_democrat
+			ideas = {
+				BLR_Democratization_of_Belarus_idea
+				BLR_Lukashenko_rule_idea
+				BLR_Dawn_of_Red_Belarus_idea
+			}
+			focuses = {
+				
+			}
+		}
+
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

@@ -1,0 +1,120 @@
+#初始国策树—清洗
+focus_tree = {
+	id = SWE_pdx
+	country = { 
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = SWE_Shamefulness
+		icon = GFX_focus_SWE_Shamefulness
+		cost = 4
+		x = 2
+		y = 0
+		cancelable = no
+		completion_reward = { 
+			add_stability = -0.2
+			country_event = {
+				id = paradox.1
+				days = 3
+				random_days = 2
+			}
+			country_event = {
+				id = paradox.2
+				days = 4
+				random_days = 3
+			}
+			country_event = {
+				id = paradox.3
+				days = 7
+			}
+		}
+	}
+	focus = {
+		id = SWE_Quell_the_Protest
+		icon = GFX_focus_SWE_Quell_the_Protest
+		cost = 4
+		x = 1
+		y = 1
+		prerequisite = {
+			focus = SWE_Shamefulness
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = SWE_Salvage_the_Situation
+		icon = GFX_focus_SWE_Savage_the_Situation
+		cost = 3
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = SWE_Shamefulness
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = SWE_Prepare_the_New_Corp
+		icon = GFX_focus_SWE_prepare_the_new_corps
+		cost = 4
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = SWE_Quell_the_Protest
+		}
+		prerequisite = {
+			focus = SWE_Salvage_the_Situation
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = SWE_the_Bell_Rings
+		icon = GFX_focus_PRC_begin_the_session_of_cpc
+		cost = 35.8
+		x = 2
+		y = 3
+		cancelable = no
+		prerequisite = {
+			focus = SWE_Prepare_the_New_Corp
+		}
+		select_effect = {
+			country_event = {
+				id = paradox.4
+				days = 5
+			}
+		}
+		completion_reward = { 
+			custom_effect_tooltip = SWE_Great_Purge_tt
+			custom_override_tooltip = {
+				tooltip = focus_unlock_tooltip
+				load_focus_tree = SWE_pdx_1
+			}
+		}
+	}
+}
+#二阶段国策树—取悦老爷
+focus_tree = {
+	id = SWE_pdx_1
+	country = { 
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = SWE_Most_Difficult_Time
+		icon = GFX_focus_SWE_Quell_the_Protest
+		cost = 3
+		x = 4
+		y = 0
+		completion_reward = { 
+			SWE_one_punch_man_char = {
+				swap_country_leader_traits = {
+					remove = hos_enlightened_gentleman
+					add = hos_hopeful_reformer
+				}	
+			}
+			add_political_power = 30
+			add_command_power = 15
+		}
+	}
+}

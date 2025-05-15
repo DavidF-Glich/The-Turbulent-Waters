@@ -1,0 +1,331 @@
+focus_tree = {
+	id = PRK
+	country = { 
+		factor = 0
+		modifier = {
+			add = 10
+			tag = PRK
+		}
+	}
+	default = no
+
+	focus = {
+		id = PRK_New_Year
+		icon = GFX_goal_unknown
+		dynamic = yes
+		cost = 5
+		x = 6
+		y = 0
+		completion_reward = { 
+			add_political_power = 100
+		}
+	}
+
+	focus = {
+		id = PRK_Military_Development
+		icon = GFX_goal_unknown
+		dynamic = yes
+		cost = 5
+		x = 4
+		y = 1
+		relative_position_id = PRK_New_Year
+		prerequisite = {
+			focus = PRK_New_Year
+		}
+		completion_reward = { 
+			set_temp_variable_to_random = {
+				var = military_development_var_temp
+				min = -0.1
+				max = -0.05
+			}
+			set_temp_variable = {
+				poverty_development_var_temp = 0.05
+			}
+			add_military_development = yes
+			add_poverty_development = yes
+		}
+	}
+
+	focus = {
+		id = PRK_Defend_Border
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -4
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_New_Year
+		prerequisite = {
+			focus = PRK_New_Year
+		}
+		completion_reward = { 
+			custom_effect_tooltip = PRK_NO_COVID_tt
+			
+		}
+	}
+
+	focus = {
+		id = PRK_Send_Little_Kim
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Defend_Border
+		prerequisite = {
+			focus = PRK_Defend_Border
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Setup_Local_Pan_Group
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Defend_Border
+		prerequisite = {
+			focus = PRK_Defend_Border
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Increase_COVID_Censorship
+		icon = GFX_goal_unknown
+		cost = 3
+		dynamic = yes
+		x = 0
+		y = 1
+		relative_position_id = PRK_Setup_Local_Pan_Group
+		prerequisite = {
+			focus = PRK_Setup_Local_Pan_Group
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Get_Escapers_Back
+		icon = GFX_goal_unknown
+		cost = 4
+		dynamic = yes
+		x = 0
+		y = 1
+		relative_position_id = PRK_Increase_COVID_Censorship
+		prerequisite = {
+			focus = PRK_Increase_COVID_Censorship
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Protect_Kim
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 2
+		dynamic = yes
+		relative_position_id = PRK_New_Year
+		prerequisite = {
+			focus = PRK_Defend_Border
+			focus = PRK_Military_Development
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Recheck_Citizens
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -1
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Protect_Kim
+		prerequisite = {
+			focus = PRK_Protect_Kim
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Establish_Military_Discipline
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Recheck_Citizens
+		prerequisite = {
+			focus = PRK_Recheck_Citizens
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Pretended_March
+		icon = GFX_goal_unknown
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = PRK_Establish_Military_Discipline
+		prerequisite = {
+			focus = PRK_Establish_Military_Discipline
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Inner_Breakthrough
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Protect_Kim
+		prerequisite = {
+			focus = PRK_Protect_Kim
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Produce_At_All_Cost
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Military_Development
+		prerequisite = {
+			focus = PRK_Military_Development
+		}
+		completion_reward = { 
+			
+		}
+	}
+
+	focus = {
+		id = PRK_11th_Administration
+		icon = GFX_goal_unknown
+		cost = 10
+		dynamic = yes
+		x = -1
+		y = 1
+		relative_position_id = PRK_Produce_At_All_Cost
+		prerequisite = {
+			focus = PRK_Produce_At_All_Cost
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Construct_Kim_Street
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 1
+		y = 1
+		relative_position_id = PRK_Produce_At_All_Cost
+		prerequisite = {
+			focus = PRK_Produce_At_All_Cost
+		}
+		completion_reward = { 
+			capital_scope = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+				}
+			}
+			set_temp_variable_to_random = {
+				var = society_development_var_temp
+				min = 0.02
+				max = 0.08
+			}
+			add_society_development = yes
+			add_popularity = {
+				ideology = communist
+				popularity = 0.02
+			}
+		}
+	}
+	focus = {
+		id = PRK_Duel_with_USA
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 3
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Military_Development
+		prerequisite = {
+			focus = PRK_Military_Development
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Secret_Trade_Deal
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_Duel_with_USA
+		prerequisite = {
+			focus = PRK_Duel_with_USA
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Five_Year_Plan
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 1
+		dynamic = yes
+		relative_position_id = PRK_11th_Administration
+		prerequisite = {
+			focus = PRK_11th_Administration
+			focus = PRK_Construct_Kim_Street
+		}
+		prerequisite = {
+			focus = PRK_Recheck_Citizens
+			focus = PRK_Inner_Breakthrough
+		}
+		prerequisite = {
+			focus = PRK_Secret_Trade_Deal
+		}
+		completion_reward = { 
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+
+	focus = {
+		id = PRK_Done_with_Past
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 2
+		y = 1
+		relative_position_id = PRK_Five_Year_Plan
+		prerequisite = {
+			focus = PRK_Five_Year_Plan
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = PRK_Personality_Cult
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = 1
+		relative_position_id = PRK_Five_Year_Plan
+		prerequisite = {
+			focus = PRK_Five_Year_Plan
+		}
+		prerequisite = {
+			focus = PRK_Establish_Military_Discipline
+		}
+		completion_reward = { }
+	}
+}

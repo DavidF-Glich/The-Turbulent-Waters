@@ -1,0 +1,480 @@
+### MILITARY ###
+## Army Score ##
+@score_per_battalion      = 0.15  # Num. of points given by each fielded battalion
+
+## Air Force Score ##
+@score_per_plane          = 0.05  # Num. of points given by fielded battalions (UNUSED)
+
+## Naval Score ##
+@score_per_submarine      = 0.4   # Num. of points given by each submarine
+@score_per_corvette       = 0.5   # Num. of points given by each corvette
+@score_per_frigate        = 0.75  # Num. of points given by each frigate
+@score_per_destroyer      = 1     # Num. of points given by each destroyer
+@score_per_cruiser        = 1.5   # Num. of points given by each cruiser
+@score_per_battleship     = 1.75  # Num. of points given by each battleship
+@score_per_carrier        = 2     # Num. of points given by each carrier
+
+@score_per_prof_status    = 0.08  # Num. of points given by each point in the Army Professionalism counter
+@score_per_nuke           = 0.013 # Num. of points given by each nuclear warhead in the stockpile
+## Resource Score ##
+@score_per_oil            = 0.05  # Num. of points given by each unit of oil produced
+@score_per_aluminium      = 0.02  # Num. of points given by each unit of aluminuim produced
+@score_per_rubber         = 0.01  # Num. of points given by each unit of rubber produced
+@score_per_tungsten       = 0.01  # Num. of points given by each unit of tungsten produced
+@score_per_steel          = 0.03  # Num. of points given by each unit of steel produced
+@score_per_chromium       = 0.02  # Num. of points given by each unit of chromium produced
+
+calculate_army_power = {
+	set_variable = { army_power = num_battalions }
+	multiply_variable = { army_power = @score_per_battalion }
+}
+
+calculate_naval_power = {
+
+	set_variable = { SubmarineScore = num_ships_with_type@submarine }
+	multiply_variable = { SubmarineScore = @score_per_submarine }
+	set_variable = { CorvetteScore = num_ships_with_type@corvette }
+	multiply_variable = { CorvetteScore = @score_per_corvette }
+	set_variable = { FrigateScore = num_ships_with_type@frigate }
+	multiply_variable = { FrigateScore = @score_per_frigate }
+	set_variable = { DestroyerScore = num_ships_with_type@destroyer }
+	multiply_variable = { DestroyerScore = @score_per_destroyer }
+	set_variable = { CruiserScore = num_ships_with_type@cruiser }
+	add_to_variable = { CruiserScore = num_ships_with_type@light_cruiser }
+	add_to_variable = { CruiserScore = num_ships_with_type@heavy_cruiser }
+	multiply_variable = { CruiserScore = @score_per_cruiser }
+	set_variable = { BattleshipScore = num_ships_with_type@battleship }
+	multiply_variable = { BattleshipScore = @score_per_battleship }
+	set_variable = { CarrierScore = num_ships_with_type@carrier }
+	multiply_variable = { CarrierScore = @score_per_carrier }
+
+	set_variable = { naval_power = 0 }
+
+	add_to_variable = { naval_power = SubmarineScore }
+	add_to_variable = { naval_power = CorvetteScore }
+	add_to_variable = { naval_power = FrigateScore }
+	add_to_variable = { naval_power = DestroyerScore }
+	add_to_variable = { naval_power = CruiserScore }
+	add_to_variable = { naval_power = BattleshipScore }
+	add_to_variable = { naval_power = CarrierScore }
+
+}
+
+## Adds a specific victory to the target superpower's victory list
+# Arguments: Victory_ID
+# Optional Arguments: Victory_Outcome, Victory_Points
+Cold_War_GUI_AddVictory = {
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Executing"
+
+	if = {
+		limit = { 
+			is_in_array = {
+				array = global.TFR_the_competitors
+			}
+		}
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed non-superpower tag. Breaking."
+	}
+	else_if = {
+		limit = { NOT = { has_variable = Victory_ID } }
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed unset ID. Breaking."
+	}
+	else = {
+		# Checking to ensure that our array is the right size
+		set_temp_variable = { x = Victory_ID }
+		add_to_temp_variable = { x = 1 }
+		if = {
+			limit = { check_variable = { TTW_Cold_War_GUI_Victory_Entry^num < x } }
+			resize_array = { TTW_Cold_War_GUI_Victory_Entry = x }
+			resize_array = { TTW_Cold_War_GUI_Victory_Outcome = x }
+			resize_array = { TTW_Cold_War_GUI_Victory_Points = x }
+		}
+
+		# Conflicts in this array are stored in a way so that their specific index corresponds to their actual victory ID
+		# E.g. the The Aleutians Crisis' victory ID is 1, so it is stored in the array index 1
+		# The German Civil War's victory ID is 14, so it is stored in the array index 14
+		# And so on
+		# This is done so that we can know for sure where a specific conflict is stored if we want to manipulate it later
+		set_variable = { TTW_Cold_War_GUI_Victory_Entry^Victory_ID = 1 }
+		set_variable = { TTW_Cold_War_GUI_Victory_Outcome^Victory_ID = Victory_Outcome }
+		set_variable = { TTW_Cold_War_GUI_Victory_Points^Victory_ID = Victory_Points }
+
+		Cold_War_GUI_CalculateDisplayArrays = yes
+		Cold_War_GUI_Score_Calculation = yes
+	}
+
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Completed execution."
+}
+
+## Edits a specific victory on the target superpower's victory list
+# Arguments: Victory_ID, Victory_Outcome, Victory_Points
+Cold_War_GUI_ManipulateVictory = {
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_ManipulateVictory; Executing"
+
+	if = {
+		limit = { 
+			is_in_array = {
+				array = global.TFR_the_competitors
+			}
+		}
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed non-superpower tag. Breaking."
+	}
+	else_if = {
+		limit = { NOT = { has_variable = Victory_ID } }
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed unset ID. Breaking."
+	}
+	else_if = {
+		limit = { NOT = { has_variable = Victory_Outcome } }
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed unset Outcome. Breaking."
+	}
+	else_if = {
+		limit = { NOT = { has_variable = Victory_Points } }
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed unset Points. Breaking."
+	}
+	else_if = {
+		limit = { check_variable = { TTW_Cold_War_GUI_Victory_Entry^Victory_ID = 0 } }
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed ID does not exist in the target scope."
+		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Executing Cold_War_GUI_AddVictory instead"
+		Cold_War_GUI_AddVictory = yes
+	}
+	else = {
+		set_variable = { TTW_Cold_War_GUI_Victory_Outcome^Victory_ID = Victory_Outcome }
+		set_variable = { TTW_Cold_War_GUI_Victory_Points^Victory_ID = Victory_Points }
+
+		Cold_War_GUI_CalculateDisplayArrays = yes
+		Cold_War_GUI_Score_Calculation = yes
+	}
+
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_ManipulateVictory; Completed execution."
+}
+
+## This command creates a new, display-only array used to populate the gridbox in the GUI, which are based on the ones defined beforehand
+Cold_War_GUI_CalculateDisplayArrays = {
+	clear_array = TTW_Cold_War_GUI_Victory_Entry_Display
+	clear_array = TTW_Cold_War_GUI_Victory_Outcome_Display
+	clear_array = TTW_Cold_War_GUI_Victory_Points_Display
+
+	for_each_loop = {
+		array = TTW_Cold_War_GUI_Victory_Entry
+		if = {
+			limit = { check_variable = { v = 1 } }
+			add_to_array = { TTW_Cold_War_GUI_Victory_Entry_Display = i }
+			add_to_array = { TTW_Cold_War_GUI_Victory_Outcome_Display = TTW_Cold_War_GUI_Victory_Outcome^i }
+			add_to_array = { TTW_Cold_War_GUI_Victory_Points_Display = TTW_Cold_War_GUI_Victory_Points^i }
+		}
+	}
+}
+# To update the score of a cerain country, fire this command on its scope
+# Eg. GER = { Cold_War_GUI_Score_Calculation = yes } updates Germany's score
+Cold_War_GUI_Score_Calculation = {
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; Executing"
+
+	hidden_effect = {
+		# Update econ values
+		# update_economy_tab = yes # If this section is uncommented it breaks the sorting algorithm bellow :funny: :funny: :funny:
+
+		### MILITARY ###
+		## Base array
+		clear_array = military_score1
+		add_to_array = { military_score1 = 0 } # 0; Total
+		add_to_array = { military_score1 = 0 } # 1; Army Size
+		add_to_array = { military_score1 = 0 } # 2; Air Force Size (UNUSED)
+		add_to_array = { military_score1 = 0 } # 3; Navy Size
+		add_to_array = { military_score1 = 0 } # 4; Professionalism
+		add_to_array = { military_score1 = 0 } # 5; Nuclear Stockpile
+
+		## Military size
+		# Army Size score
+		calculate_army_power = yes
+		set_variable = { military_score1^1 = army_power }
+
+		# Air Force Size score
+		set_variable = { military_score1^2 = num_deployed_planes }
+		multiply_variable = { military_score1^2 = @score_per_plane }
+
+		# Naval Size score
+		calculate_naval_power = yes
+		set_variable = { military_score1^3 = naval_power }
+
+		# Professionalism
+		set_variable = { military_score1^4 = army_professionalism_counter }
+		multiply_variable = { military_score1^4 = @score_per_prof_status }
+		clamp_variable = { var = military_score1^4 min = 0 max = 240 }
+		if = {
+			limit = { has_idea = TTW_army_professionalism_untrained }
+			add_to_variable = { military_score1^4 = 20 }
+		}
+		else_if = {
+			limit = { has_idea = TTW_army_professionalism_reluctant_conscripts }
+			add_to_variable = { military_score1^4 = 40 }
+		}
+		else_if = {
+			limit = { has_idea = TTW_army_professionalism_disgruntled_veterans }
+			add_to_variable = { military_score1^4 = 60 }
+		}
+		else_if = {
+			limit = { has_idea = TTW_army_professionalism_cronyism }
+			add_to_variable = { military_score1^4 = 80 }
+		}
+		else_if = {
+			limit = { has_idea = TTW_army_professionalism_political_interference }
+			add_to_variable = { military_score1^4 = 100 }
+		}
+		else_if = {
+			limit = { has_idea = TTW_army_professionalism_professional }
+			add_to_variable = { military_score1^4 = 120 }
+		}
+		else_if = {
+			limit = { has_idea = TTW_army_professionalism_spartan_discipline }
+			add_to_variable = { military_score1^4 = 140 }
+		}
+
+		# Nuclear Stockpile
+		set_variable = { military_score1^5 = num_of_nukes1 }
+		multiply_variable = { military_score1^5 = @score_per_nuke }
+		multiply_variable = { military_score1^5 = nuke_maintenence_ratio }
+		if = {
+			limit = { 
+				has_country_flag = {
+					flag = nuke_num
+					value = 3
+				}
+			}
+			set_temp_variable = {
+				projection = 1
+			}
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = {
+					flag = nuke_num
+					value = 2
+				}
+			}
+			set_temp_variable = {
+				projection = 0.8
+			}
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = {
+					flag = nuke_num
+					value = 1
+				}
+			}
+			set_temp_variable = {
+				projection = 0.6
+			}
+		}
+		multiply_variable = {
+			military_score1^6 = projection
+		}
+		
+		# Rounding up all variables
+		for_each_loop = {
+			array = military_score1
+			round_variable = military_score1^i
+		}
+
+		### ECONOMY ###
+		# Base array
+		clear_array = economy_score1
+		add_to_array = { economy_score1 = 0 } # 0; Total
+		add_to_array = { economy_score1 = 0 } # 1; GDP/Capita
+		add_to_array = { economy_score1 = 0 } # 2; National Debt
+		add_to_array = { economy_score1 = 0 } # 3; Poverty Rate
+		add_to_array = { economy_score1 = 0 } # 4; Stability
+		add_to_array = { economy_score1 = 0 } # 5; Technology
+		add_to_array = { economy_score1 = 0 } # 6; Social Development
+		
+		# GDP/Capita
+		set_variable = { economy_score1^1 = GDP }
+		set_temp_variable = { country_pop = max_manpower_k }
+		divide_temp_variable = { country_pop = 100000 }
+		divide_variable = { economy_score1^1 = country_pop }
+		multiply_variable = { economy_score1^1 = @score_per_gdpc }
+
+		# National Debt
+		set_variable = { economy_score1^2 = national_debt }
+		multiply_variable = { economy_score1^2 = @score_per_debt }
+		multiply_variable = { economy_score1^2 = -1 }
+
+		# Poverty Rate
+		set_variable = { economy_score1^3 = poverty_rate }
+		multiply_variable = { economy_score1^3 = @score_per_poverty }
+		multiply_variable = { economy_score1^3 = -1 }
+
+		# Stability
+		set_variable = { economy_score1^4 = stability }
+		multiply_variable = { economy_score1^4 = 100 }
+		multiply_variable = { economy_score1^4 = @score_per_stability }
+		clamp_variable = { var = economy_score1^4 min = -100 max = 1000 }
+
+		# Tech
+		set_variable = { economy_score1^5 = num_researched_technologies }
+		multiply_variable = { economy_score1^5 = @score_per_tech }
+		## Resource Production
+		set_temp_variable = { OilScore = resource_produced@oil }
+		multiply_temp_variable = { OilScore = @score_per_oil }
+		set_temp_variable = { AluminiumScore = resource_produced@aluminium }
+		multiply_temp_variable = { AluminiumScore = @score_per_aluminium }
+		set_temp_variable = { RubberScore = resource_produced@rubber }
+		multiply_temp_variable = { RubberScore = @score_per_rubber }
+		set_temp_variable = { TungstenScore = resource_produced@tungsten }
+		multiply_temp_variable = { TungstenScore = @score_per_tungsten }
+		set_temp_variable = { SteelScore = resource_produced@steel }
+		multiply_temp_variable = { SteelScore = @score_per_steel }
+		set_temp_variable = { ChromiumScore = resource_produced@chromium }
+		multiply_temp_variable = { ChromiumScore = @score_per_chromium }
+
+		# Social Development
+		set_variable = { economy_score1^6 = modifier@socdev_points }
+
+		# Rounding up all variables
+		for_each_loop = {
+			array = economy_score1
+			round_variable = economy_score1^i
+		}
+
+		### DIPLOMACY ###
+		clear_array = Score_Diplomacy
+		add_to_array = { Score_Diplomacy = 0 } # 0; Total
+		add_to_array = { Score_Diplomacy = 0 } # 1; Faction Size (Display-only)
+		add_to_array = { Score_Diplomacy = 0 } # 2; Independent Members in Faction
+		add_to_array = { Score_Diplomacy = 0 } # 3; Faction Military Score
+		add_to_array = { Score_Diplomacy = 0 } # 4; Faction Economic Score
+		add_to_array = { Score_Diplomacy = 0 } # 5; Economic Bloc Power
+		add_to_array = { Score_Diplomacy = 0 } # 6; Faction Observers
+		add_to_array = { Score_Diplomacy = 0 } # 7; Power Projection
+
+		# Independent members in faction
+		set_variable = { Score_Diplomacy^2 = faction_members^num }
+		for_each_scope_loop = {
+			array = faction_members
+			if = {
+				limit = {
+					OR = {
+						is_subject = yes
+						has_idea = Sphere_Corporate_Dependency
+						has_idea = Sphere_Imp_Protectorate
+						has_idea = Sphere_Fully_Dependent
+						has_idea = Sphere_Economic_Dependent
+						has_idea = Pakt_Mitstreiter
+						has_idea = Pakt_Ordensstaat
+					}
+				}
+				subtract_from_variable = { PREV.Score_Diplomacy^2 = 1 }
+			}
+		}
+		subtract_from_variable = { Score_Diplomacy^2 = 1 } # Subtract another one to remove the faction leader
+		multiply_variable = { Score_Diplomacy^2 = @score_per_ind_member }
+
+		# Faction Observers
+		if = {
+			limit = { tag = PRC }
+			every_other_country = {
+				limit = { has_idea = Pakt_Observer }
+				add_to_variable = { PREV.Score_Diplomacy^6 = @score_per_observer }
+			}
+		}
+		else_if = {
+			limit = { tag = USA }
+			every_other_country = {
+				limit = { has_idea = OFN_Observer }
+				add_to_variable = { PREV.Score_Diplomacy^6 = @score_per_observer }
+			}
+		}
+		else_if = {
+			limit = { tag = SOV }
+			every_other_country = {
+				limit = { has_idea = Sphere_Observer }
+				add_to_variable = { PREV.Score_Diplomacy^6 = @score_per_observer }
+			}
+		}
+
+		# Rounding up all variables
+		for_each_loop = {
+			array = Score_Diplomacy
+			round_variable = Score_Diplomacy^i
+		}
+
+		### TOTAL ###
+		for_each_loop = {
+			array = military_score1
+			add_to_variable = { military_score1^0 = v }
+		}
+		for_each_loop = {
+			array = economy_score1
+			add_to_variable = { economy_score1^0 = v }
+		}
+		for_each_loop = {
+			array = Score_Diplomacy
+			add_to_variable = { Score_Diplomacy^0 = v }
+		}
+
+		clear_variable = Score_Victories
+		for_each_loop = {
+			array = TTW_Cold_War_GUI_Victory_Points
+			add_to_variable = { Score_Victories = v }
+		}
+
+		clear_variable = TotalScore
+		add_to_variable = { TotalScore = military_score1^0 }
+		add_to_variable = { TotalScore = economy_score1^0 }
+		add_to_variable = { TotalScore = Score_Diplomacy^0 }
+		add_to_variable = { TotalScore = Score_Victories }
+		}
+
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; [THIS.GetName] Military Score: [?military_score1^0]"
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; [THIS.GetName] Economic Score: [?economy_score1^0]"
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; [THIS.GetName] Diplomatic Score: [?Score_Diplomacy^0]"
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; [THIS.GetName] Victories Score: [?Score_Victories]"
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; [THIS.GetName] Total Score: [?TotalScore]"
+	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_Score_Calculation; Completed execution."
+}
+# Adds 'conflict_id' to the list of active conflicts
+TTW_add_fopo_conflict_tab = {
+	custom_effect_tooltip = TTW_add_fopo_conflict_tab_tt
+	if = {
+		limit = { NOT = { is_in_array = { TTW_active_conflicts = conflict_id } } }
+		add_to_array = { TTW_active_conflicts = conflict_id }
+
+		set_variable = { selected_conflict_id = conflict_id }
+		clear_array = world_conflict_guis
+		add_to_array = { world_conflict_guis = selected_conflict_id }
+
+		set_variable = { TTW_fopo_selected_front = 1 }
+	}
+}
+# Removes `conflict_id` from the list of active conflicts
+TTW_remove_fopo_conflict_tab = {
+	custom_effect_tooltip = TTW_remove_fopo_conflict_tab_tt
+	if = {
+		limit = { is_in_array = { TTW_active_conflicts = conflict_id } }
+		remove_from_array = { array = TTW_active_conflicts value = conflict_id }
+	}
+
+	if = {
+		limit = { check_variable = { selected_conflict_id = conflict_id } }
+
+		set_variable = { selected_conflict_id = -1 }
+
+		if = {
+			limit = { check_variable = { TTW_active_conflicts^num > 0 } }
+
+			set_temp_variable = { next_conflict_idx = TTW_active_conflicts^num }
+			subtract_from_temp_variable = { next_conflict_idx = 1 }
+			set_variable = { selected_conflict_id = TTW_active_conflicts^next_conflict_idx }
+
+			clear_array = world_conflict_guis
+			add_to_array = { world_conflict_guis = selected_conflict_id }
+		}
+	}
+
+	if = {
+		limit = {
+			check_variable = { TTW_active_conflicts^num = 0 }
+		}
+		set_temp_variable = { alert_id = token:Alert_Proxy_War_Active }
+	}
+
+}

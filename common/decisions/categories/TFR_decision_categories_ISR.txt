@@ -1,0 +1,31 @@
+Israeli_Hamas_war_category = {
+	icon = GFX_decision_category_ISR_samson
+	picture = PRC_covid_19_cat
+	visible_when_empty = yes
+	priority = 3
+
+	allowed = {
+		OR = {
+			tag = ISR
+			tag = ENG
+			tag = ITA
+			tag = SPR
+			tag = JAP
+			tag = USA
+			tag = PRC
+			tag = PAL
+			tag = FRA
+			tag = GER
+		}
+	}
+	visible = {
+		OR = {
+			tag = ISR
+			ISR = {
+				has_war = yes
+			}
+			has_global_flag = Israeli_Hamas_war
+		}
+	}
+	visible_when_empty = yes
+}

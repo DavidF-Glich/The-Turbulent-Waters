@@ -1,0 +1,367 @@
+defined_text = { #Election Decision Category Enabled
+	name = GetPoliticalEnable
+	text = {
+		trigger = {
+			original_tag = USA
+			OR = {
+				has_country_flag = USA_sided_with_trump_flag
+				has_country_flag = USA_sided_with_resistance_flag
+			}
+		}
+		localization_key = USA_political_enable_loc
+	}
+}
+defined_text = { 
+	name = GetCurrentLeader
+	text = {
+		trigger = {
+			original_tag = USA
+			NOT = {
+				OR = {
+					has_country_flag = USA_sided_with_trump_flag
+					has_country_flag = USA_sided_with_resistance_flag
+				}
+			}
+		}
+		localization_key = USA_sided_neither_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		localization_key = USA_sided_resistance_loc
+	}
+	text = {
+		trigger = {
+			original_tag = USA
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		localization_key = USA_sided_trump_loc
+	}
+}
+defined_text = {
+	name = GetTrumpPicture
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 > 50
+			}
+		}
+		localization_key = GFX_Fengyingas_Trump_selected
+	}
+	text = {
+		localization_key = GFX_Fengyingas_Trump
+	}
+}
+defined_text = {
+	name = GetBidenPicture
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 < 50
+			}
+		}
+		localization_key =GFX_Fengyingas_Biden_selected
+	}
+	text = {
+		localization_key = GFX_Fengyingas_Biden
+	}
+}
+defined_text = {
+	name = GetElectionScore
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 < 50
+			}
+		}
+		localization_key = GFX_Fengyingas_compare
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 > 50
+			}
+		}
+		localization_key = GFX_Fengyingas_compare1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 = 50
+			}
+		}
+		localization_key = GFX_Fengyingas_compare2
+	}
+}
+defined_text = {
+	name = GetElectionScoreText
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 < 50
+			}
+		}
+		localization_key = election_score_2020_blue
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 > 50
+			}
+		}
+		localization_key = election_score_2020_red
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 = 50
+			}
+		}
+		localization_key = election_score_2020_yellow
+	}
+}
+defined_text = {
+	name = GetElectionSceneText
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 < 50
+			}
+		}
+		localization_key = USA_joe_biden_char
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 > 50
+			}
+		}
+		localization_key = USA_donald_trump_char
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				election_score_2020 = 50
+			}
+		}
+		localization_key = election_score_2020_yellow
+	}
+}
+defined_text = {
+	name = Real_Caveat_loc
+	text = {
+		trigger = {
+			has_country_flag = USA_Go_Antifa
+		}
+		localization_key = Go_Antifa_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_MAGA_Communism
+		}
+		localization_key = MAGA_Communism_key
+	}
+	text = {
+		trigger = {
+			has_country_flag = USA_Patriotic_Front
+		}
+		localization_key = Patriotic_Front_key
+	}
+	text = {
+		localization_key = Real_Caveat_General
+	}
+}
+defined_text = {
+	name = USA_Riot_Danger_loc
+	text = {
+		trigger = {
+			check_variable = {
+				USA_Riot_Danger < 0.2
+			}
+		}
+		localization_key = USA_Riot_Danger_loc1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Riot_Danger
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				USA_Riot_Danger < 0.4
+			}
+		}
+		localization_key = USA_Riot_Danger_loc2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Riot_Danger
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				USA_Riot_Danger < 0.6
+			}
+		}
+		localization_key = USA_Riot_Danger_loc3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Riot_Danger
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				USA_Riot_Danger < 0.8
+			}
+		}
+		localization_key = USA_Riot_Danger_loc4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Riot_Danger
+				value =  0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USA_Riot_Danger_loc5
+	}
+}
+defined_text = {
+	name = USA_Right_Unity_loc
+	text = {
+		trigger = {
+			check_variable = {
+				USA_Right_Unity < 0.2
+			}
+		}
+		localization_key = USA_Right_Unity_lower
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.4
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = USA_Right_Unity_low
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.4
+				compare = greater_than
+			}
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USA_Right_Unity_med
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.8
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = USA_Right_Unity_high
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = USA_Right_Unity
+				value = 0.8
+				compare = greater_than
+			}
+		}
+		localization_key = USA_Right_Unity_higher
+	}
+}
+defined_text = {
+	name = USA_DOGE_loc
+	text = {
+		trigger = {
+			check_variable = {
+				DOGE_authority < 0.2
+			}
+		}
+		localization_key = USA_DOGE_loc1
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = DOGE_authority
+				value = 0.2
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = DOGE_authority
+				value = 0.4
+				compare = less_than
+			}
+		}
+		localization_key = USA_DOGE_loc2
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = DOGE_authority
+				value = 0.4
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = DOGE_authority
+				value = 0.6
+				compare = less_than
+			}
+		}
+		localization_key = USA_DOGE_loc3
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = DOGE_authority
+				value = 0.6
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = DOGE_authority
+				value = 0.8
+				compare = less_than
+			}
+		}
+		localization_key = USA_DOGE_loc4
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = DOGE_authority
+				value = 0.8
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = USA_DOGE_loc5
+	}
+}

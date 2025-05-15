@@ -1,0 +1,3 @@
+﻿l_simp_chinese:
+     develop_state_button_tooltip: "对§Y[THIS.GetName]§!进行开发\n“在我们追求经济增长和经济发展的同时，我们必须确保这个过程是由每个人参与，为了每个人，并且惠及每个人。保证每个人都能获得机会。” - 贝齐·霍奇斯"   
+     develop_state_button_tooltip_delayed: "§Y先决条件：\n §!\£GFX_dx §C流动金§!至少§Y5.000§!B \n §Y[THIS.GetName]§!:\n    被§Y[ROOT.GetName]§!完全控制。\n    §Y基础设施§!已修建至最高级。\n§Y效果：§!\n §Y[THIS.GetName]§!\n    发展等级得到提升，获得§G1§!§Y建筑槽§!。\n    降低§R2§!§Y基础设施§!等级。 \n 支出对应金额£GFX_dx §C流动金§!。\n"

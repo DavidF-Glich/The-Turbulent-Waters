@@ -1,0 +1,247 @@
+on_action = {
+	on_daily = {
+		effect = {
+			PRC = {
+				add_to_variable = {
+					TFROTL_test_var = 1
+				}
+				if = {
+					limit = { 
+							has_country_flag = Pandemic_Hit_China
+							check_variable = {PRC_Current_cases < 0}
+					}
+					set_variable = {
+						var = PRC_Current_cases
+						value = 0
+					}
+					round_variable = PRC_Current_cases
+					round_variable = PRC_New_cases
+					round_variable = PRC_Mask_Supply
+					round_variable = PRC_Mask_Production
+				}
+			}
+			
+		}
+		effect = {
+			if = {
+				limit = {
+					check_variable = {
+						PRC_Current_cases = 0
+					}
+				}
+				set_variable = {
+					var = PRC_New_cases
+					value = 0
+				}
+			}
+		}
+		
+	}
+	on_weekly = {
+        effect = {
+			PRC = {
+				set_temp_variable = {
+					PRC_temp_covid = PRC_Current_cases
+				}
+				multiply_temp_variable = {
+					PRC_temp_covid = 3
+				}
+            if = {
+				limit = {
+                    has_variable = PRC_Current_cases
+                    check_variable = {PRC_Mask_Supply < PRC_temp_covid}
+                }
+				random = {
+					chance = 20
+					country_event = china.10
+				}
+            }
+			}
+				
+		}
+    }
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = Taiwan_War
+					FROM.FROM = { 
+						OR = {
+							region = 154	#日本
+						}
+					}
+					OR = {
+						FROM = { tag = USA}
+						FROM = { tag = JAP }
+						FROM = { tag = AST }
+						
+					}
+					OR = {
+						ROOT = { tag = PRC }
+						ROOT = { tag = JAP }
+						ROOT = { tag = AST }
+					}
+				}
+				JAP = {
+					country_event = taiwan_war.2
+				}
+				USA = {
+					country_event = taiwan_war.3
+				}
+			}
+			else_if = {
+				limit = { 
+					has_global_flag = Taiwan_War
+					FROM.FROM = {
+						region = 99		#澳大利亚西部地区
+						region = 156	#南澳大利亚
+						region = 193	#北澳大利亚
+						region = 194	#东澳大利亚
+						region = 195	#中澳大利亚
+					}
+					OR = {
+						FROM = { tag = AST }
+						FROM = { tag = JAP }
+						FROM = { tag = USA }
+					}
+					ROOT = { tag = PRC }
+				}
+				AST = {
+					country_event = taiwan_war.2
+				}
+			}
+			else_if = {
+				limit = { 
+					FROM.FROM = {
+						region = 160	#菲律宾
+					}
+					OR = {
+						FROM = { tag = PHI }
+						FROM = { tag = JAP }
+						FROM = { tag = USA }						
+					}
+					ROOT = { tag = PRC }
+				}
+				PHI = {
+					country_event = taiwan_war.2
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = { 
+					has_global_flag = Taiwan_War
+					FROM.FROM = {
+						state = 1148
+					}
+					FROM = { tag = CHI}
+					ROOT = { tag = PRC }
+				}
+				PRC = {
+					country_event = {
+						id = taiwan_war.4
+						random_days = 5
+					}	
+				}
+			}
+		}
+	}
+	on_capitulation = {
+		effect = {
+			if = {
+				limit = { 
+					has_global_flag = Taiwan_War
+					ROOT = { tag = CHI } 
+					FROM = { tag = PRC }
+				}
+				PRC = {
+					white_peace = JAP
+					white_peace = USA
+					white_peace = AST
+					white_peace = PHI
+					annex_country = {
+						target = CHI
+					}
+					transfer_state = 876
+					every_controlled_state = {
+						limit = {
+							is_claimed_by = CHI
+						}
+						remove_claim_by = CHI
+					}
+				}
+				876 = {
+					remove_core_of = JAP
+					add_claim_by = JAP
+				}
+				clr_global_flag = Taiwan_War
+				news_event = news.12
+			}
+		}
+	}
+    on_war_relation_added = {
+		effect = {
+			if = {
+				limit = { 
+					OR = {
+						AND = {
+							ROOT = { tag = PRC }
+							FROM = { tag = CHI }	
+						}
+						AND = {
+							ROOT = { tag = CHI }
+							FROM = { tag = PRC }	
+						}
+					}
+					has_global_flag = PRC_Operation_Slient_Dawn
+				}
+				CHI = {
+					add_political_power = -40
+					damage_units = {
+						state = 1148
+						org_damage = 0.7
+						str_damage = 0.15
+						ratio = yes
+						army = yes
+						navy = no
+					}
+					damage_units = {
+						state = 524
+						org_damage = 0.7
+						str_damage = 0.15
+						ratio = yes
+						army = yes
+						navy = no
+					}
+					random_controlled_state = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+					random_controlled_state = {
+						damage_building = {
+							type = infrastructure
+							damage = 1
+						}
+					}
+					random_controlled_state = {
+						limit = {
+							non_damaged_building_level = {
+								building = arms_factory
+								level > 2
+							}
+						}
+						damage_building = {
+							type = arms_factory
+							damage = 2
+						}
+					}
+					random_allied_country = {
+						add_political_power = -20
+					}
+				}
+			}
+		}	
+	}
+}

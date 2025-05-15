@@ -1,0 +1,659 @@
+focus_tree = {
+	id = USA
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = USA
+		}
+	}
+	default = no
+	#            ⣿⢿⡯⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#      ⣿⣿⣿⠟⠉⠱⡘⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⠏⠙⢋⣉⣉⠉⠛⣿⣿⣿⣿⣿
+	#   ⣿⣿⣿⠟⠁⠀⠀⠀⠀⢀⣚⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣇⠀⠀⠀⠀⠀⠀⠒⠛⢿⣿⣿⣿⣿⣿⣿⣿
+	#  ⣿⣿⣿⠇⠀⠀⠀⠀⠀⠀⠀⠉⠻⡽⠿⢿⣿⣿⣽⢿⣿⣿⣀⠀⠠⢀⡄⠀⠀⠀⠀⠀⠀⠀⠙⠻⣿⣿⣿⣿⣿
+	#  ⣿⣿⡟⠃⠀⠀⠀⠀⢠⣴⡶⠛⣁⣀⣴⣾⠿⢿⣿⣿⣿⣿⣿⣶⣿⣿⣿⣿⣿⣦⣀⠀⠀⠀⠀⠀⢈⣿⣿⣿⣿⣿
+	#  ⣿⡟⠀⠀⠀⣠⣶⣾⣿⣿⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡀⠀⠀⢠⡀⠸⣿⠍⣿⣿⣿
+	#  ⣿⡗⠂⠀⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⣿⣿⣸⣿⡿⣿⡿⠟⢻⣿⣿⡇⠀⠀⠀⠑⡆⠁⠀⣿⣿⣿
+	#  ⣿⡟⡆⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣟⣋⠉⠉⠙⠛⢡⣿⣿⡁⠋⠀⠈⠀⣀⣰⣟⣉⠙⠀⠀⠀⠰⣇⠀⠀⣿⣿⣿
+	#  ⣿⡗⠀⠀⠀⠚⠁⣿⣿⣿⣿⣾⠿⠛⠛⠙⠓⠒⠀⢴⣿⣿⠁⠀⠀⠀⠉⠿⠟⠙⠻⠃⠀⠀⠀⠀⣿⠀⠀⠸⣿⣿
+	#  ⣿⡇⠀⠀⠀⠀⢠⣿⠿⣿⡋⢁⣤⣤⣤⣤⡄⢸⣿⡇⢿⣿⠀⠀⡿⣷⣶⣤⣤⠤⠠⣀⠀⠀⠀⠀⠸⠀⠀⠀⣿⣿
+	#  ⡭⠅⠀⠀⠀⠀⣿⣷⠇⣿⣿⣮⣿⣦⣭⣤⣴⠛⢿⠇⣾⣿⠀⠀⡀⠹⣯⣤⣴⣶⣿⣿⣥⠀⠀⠀⠀⠀⠀⠀⣿⣿
+	#  ⣗⣖⠀⠀⠀⡀⠉⠇⠀⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⣀⣼⣿⣶⠀⠀⢰⣿⣿⣿⣿⣿⣿⡖⠀⠀⠀⠀⠀⠀⠀⣿⣿
+	#  ⣶⣶⠀⢠⢸⠁⢠⠀⠀⣾⣿⣿⣿⣿⣿⡷⠃⠀⠂⠈⠋⠐⠂⠀⠀⠠⡉⠛⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿
+	#  ⠭⠽⢷⠀⠀⣶⡈⠀⠀⢿⣿⣿⠿⠿⠉⢀⣴⣿⣤⣤⣄⠀⠀⠀⠀⠠⣿⣦⡈⠹⠯⠅⠀⠀⠀⠀⠀⠀⠀⠠⣿⣿
+	#  ⣩⣭⣽⡇⠀⠸⣿⡀⠀⢸⣿⣿⣯⠀⣰⣾⣿⣿⣿⣿⣿⣿⠿⠿⠿⠟⠉⠉⠛⠀⣸⣷⠀⠀⠀⠀⠀⠃⠀⣴⣿
+	#   ⣒⣚⣛⣀⠀⠻⠇⠀⠀⢻⣿⣿⣤⣉⣉⣉⣉⣥⣤⣤⣤⡴⠶⠒⠂⢀⡀⢒⣾⣿⡿⠀⠀⠀⠀⠀⠠⣾⣿⣿
+	#⠀⠀⠀⠒⠒⠒⢲⠀⠀⠀⠀⠀⠸⣿⣾⣿⣿⣿⣿⣿⣶⣤⣄⣤⣤⣤⣄⠒⣻⣷⣿⣿⣿⠇⠀⠀⠀⠀⠀⣰⣿⣿
+	#⠀⠀⠀⠀⠀⠬⠭⠄⠀⢀⡀⠀⠀⠹⣿⡿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⠏⠀⠀⠀⠀⠀⣼⣿
+	#⠀⠀⠀⠀   ⠍⢤⡈⠛⠀⠀⠀⠩⣿⡏⠉⠻⣿⣿⣿⣿⣿⡿⠋⠋⣽⣿⠉⠀⢀⡼⠃⠀⠀⠀⣤⣽⣿
+	#⠀⠀⠀⠀⠀⠀⠀⠐⣒⡛⠂⠀⠀⠀⠀⢻⣿⣦⡀⠙⠻⣿⣟⠈⠀⡠⠞⠛⠁⠀⠀⠸⠃⠀⠀⠀⢀⠙⣿⣿
+	#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⢻⣿⣷⣦⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢾⡆⠸⢿⣿
+	#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣆⠰⣄⠀⠈⠭⠽⣿⡯⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⡇⠀⠨
+	#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀   ⣷⣌⠣⠀⠠⣤⣼⣿⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣴⣿⠁⠀⠀
+	#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀    ⣷⣄⠀⠘⢿⡈⠒⠀⠀⢀⣴⣦⠀⠀⠀⢀⣀⣠⣴⣿
+	#⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀        ⣦⡀⠻⢆⣀⠀⠛⢉⣁⣠⣶⣾⣿
+	#I used to lead you on the Long March, but now I'm going to lead you on the Long March again!
+
+	focus = {
+		id = USA_Two_Party_System
+		icon = GFX_focus_USA_trump_speech
+		cost = 5.00
+		mutually_exclusive = {
+			focus = USA_Out_of_System
+		}
+		ai_will_do = {
+			factor = 1
+
+		}
+		x = 12
+		y = 0
+		completion_reward = {
+			add_political_power = 100
+			country_event = {
+				id = usa.29
+			}
+		}
+
+	}
+#非历史
+	focus = {
+		id = USA_Out_of_System
+		icon = GFX_focus_PRC_a_broken_system
+		cost = 3.00
+		mutually_exclusive = {
+			focus = USA_Two_Party_System
+		}
+		x = 5
+		y = 0
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		completion_reward = {
+			add_political_power = 50
+			add_stability = -0.05
+			swap_ideas = {
+				remove_idea = USA_political_establishment
+				add_idea = USA_political_establishment_challenged
+			}
+			country_event = usa.4
+		}
+	}
+	focus = {
+		id = USA_Real_Caveat
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_Out_of_System
+		}
+		x = 5
+		y = 1
+		completion_reward = {
+			set_variable = {
+				USA_APLA_Support = 0.05	
+			}
+			set_variable = {
+				USA_PTF_support = 0.05
+			}
+			set_variable = {
+				USA_Left_Support = 0.1
+			}
+			set_variable = {
+				USA_MAGA_Communism_Support = 0.05
+			}
+			set_variable = {
+				USA_Right_Unity = 0.5
+			}
+			unlock_decision_tooltip = USA_spread_my_idea_decision
+		}
+
+	}
+	focus = {
+		id = USA_Criticize_Corruption
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = USA_Real_Caveat
+		}
+		x = 4
+		y = 2
+		
+	}
+	focus = {
+		id = USA_Fight_COVID
+		icon = GFX_goal_unknown
+		cost = 2.00
+		prerequisite = {
+			focus = USA_Real_Caveat
+		}
+		x = 6
+		y = 2
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = USA_researching_vaccine_flag
+				set_variable = {
+					var = USA_vaccine_research_mission_var
+					value = 400
+				}
+			}
+			activate_mission = USA_vaccine_research_mission
+			unlock_decision_tooltip = USA_mass_mask_production
+			unlock_decision_tooltip = {
+				decision = USA_implement_guidelines
+				show_effect_tooltip = yes
+			}
+			unlock_decision_tooltip = {
+				decision = USA_purchase_masks
+				show_effect_tooltip = yes
+			}
+		}
+	}
+	focus = {
+		id = USA_Two_Tracks
+		icon = GFX_goal_unknown
+		cost = 4.00
+		prerequisite = {
+			focus = USA_Criticize_Corruption
+		}
+		prerequisite = {
+			focus = USA_Fight_COVID
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			add_political_power = 100
+			unlock_decision_tooltip = {
+				decision = USA_minor_lockdown
+				show_effect_tooltip = yes
+			}
+			unlock_decision_tooltip = {
+				decision = USA_mass_lockdowns
+				show_effect_tooltip = yes
+			}
+			if = {
+				limit = { has_country_flag = USA_Go_APLA }
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+				add_popularity = {
+					ideology = libertarian_socialist
+					popularity = 0.04
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = social_liberal
+					popularity = -0.05
+				}
+			}
+			else_if = {
+				limit = { has_country_flag = USA_MAGA_Communism }
+				add_popularity = {
+					ideology = communist
+					popularity = 0.06
+				}
+				add_popularity = {
+					ideology = totalitarian_socialist
+					popularity = 0.03
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.02
+				}
+				add_popularity = {
+					ideology = social_liberal
+					popularity = -0.09
+				}
+			}
+			else_if = {
+				limit = {
+					has_country_flag = USA_Patriotic_Front
+				}
+				add_popularity = {
+					ideology = fascist
+					popularity = 0.1
+				}
+				add_popularity = {
+					ideology = totalitarian_socialist
+					popularity = 0.02
+				}
+				add_popularity = {
+					ideology = conservative
+					popularity = -0.06
+				}
+				add_popularity = {
+					ideology = social_liberal
+					popularity = -0.15
+				}
+			}
+		}
+	}
+	focus = {
+		id = USA_Find_Killer
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = USA_Two_Tracks
+		}
+		x = 5
+		y = 4
+
+	}
+	focus = {
+		id = USA_Constitutional_Crisis
+		icon = GFX_goal_unknown
+		cost = 5.00
+		available = {
+			has_country_flag = USA_Chaotic_Election
+		}
+		prerequisite = {
+			focus = USA_Find_Killer
+		}
+		x = 5
+		y = 5
+		completion_reward = {
+			country_event = usa.5
+		}
+	}
+	focus = {
+		id = USA_Next_Experiment
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_Constitutional_Crisis
+		}
+		x = 5
+		y = 6
+		completion_reward = {
+			country_event = usa.6
+		}
+	}
+#历史线——两党政治线
+	focus = {
+		id = USA_Side_with_Trump
+		icon = GFX_focus_USA_side_with_trump
+		cost = 3.00
+		prerequisite = {
+			focus = USA_Two_Party_System
+		}
+		mutually_exclusive = {
+			focus = USA_Bring_Common_Back
+		}
+		x = 10
+		y = 1
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus USA_Side_with_Trump completion_reward"
+			custom_effect_tooltip = USA_side_with_trump_tooltip
+			hidden_effect = {
+				set_country_flag = USA_sided_with_trump_flag
+				focus_unlock = yes
+			}
+			custom_effect_tooltip = USA_2020_election_race
+
+		}
+	}
+	focus = {
+		id = USA_Bring_Common_Back
+		icon = GFX_focus_USA_side_against_trump
+		cost = 3.00
+		prerequisite = {
+			focus = USA_Two_Party_System
+		}
+		mutually_exclusive = {
+			focus = USA_Side_with_Trump
+		}
+		x = 14
+		y = 1
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus USA_side_against_trump completion_reward"
+			custom_effect_tooltip = USA_side_with_resistance_tooltip
+			hidden_effect = {
+				set_country_flag = USA_sided_with_resistance_flag
+				set_country_leader_portrait = {
+					ideology = conservative
+					portrait = GFX_portrait_USA_donald_trump1
+				}
+				set_variable = {
+					var = political_power_ideology_var
+					value = token:social_liberal
+				}
+				map_party_popularity_PP_gain_to_ideology = yes
+				focus_unlock = yes
+			}
+			custom_effect_tooltip = USA_2020_election_race
+			swap_ruler_traits = {
+				remove = hos_divisive_populist
+				add = hos_divisive_populist1
+			}
+
+		}
+
+	}
+	focus = {
+		id = USA_Medical_Emergency
+		icon = GFX_focus_USA_expand_the_cdc
+		cost = 1
+		available = {
+			has_country_flag = USA_coronavirus_strikes
+		}
+		prerequisite = {
+			focus = USA_Side_with_Trump
+			focus = USA_Bring_Common_Back
+		}
+		x = 12
+		y = 2
+		completion_reward = {
+			hidden_effect = {
+				set_country_flag = USA_researching_vaccine_flag
+				set_variable = {
+					var = USA_vaccine_research_mission_var
+					value = 365
+				}
+			}
+			activate_mission = USA_vaccine_research_mission
+			unlock_decision_tooltip = USA_mass_mask_production
+			unlock_decision_tooltip = {
+				decision = USA_implement_guidelines
+				show_effect_tooltip = yes
+			}
+			unlock_decision_tooltip = {
+				decision = USA_purchase_masks
+				show_effect_tooltip = yes
+			}
+		}
+	}
+	focus = {
+		id = USA_Oppose_Campaign
+		icon = GFX_focus_USA_crush_the_protesters
+		cost = 2
+		x = 8
+		y = 3
+		available = {
+			has_country_flag = USA_2020_Riot
+		}
+		prerequisite = {
+			focus = USA_Side_with_Trump
+		}
+		completion_reward = {
+			add_political_power = 45
+			unlock_decision_category_tooltip = USA_deal_with_movement_category
+			unlock_decision_tooltip = USA_comfort_the_crowd_decision
+			unlock_decision_tooltip = USA_deploy_police_decision
+			unlock_decision_tooltip = USA_deploy_military_decision
+			activate_mission = USA_unify_campaign_mission
+			activate_mission = USA_Situation_Update
+		}
+	}
+	focus = {
+		id = USA_New_Lie
+		icon = GFX_focus_USA_silence_trump
+		cost = 4
+		prerequisite = {
+			focus = USA_Side_with_Trump
+		}
+		prerequisite = {
+			focus = USA_Medical_Emergency
+		}
+		x = 10
+		y = 3
+		completion_reward = {
+			add_political_power = 20
+			set_temp_variable = {
+				var = mask_supply_var
+				value = 5000
+			}
+			add_mask_supply = yes
+			set_temp_variable = {
+				var = USA_coronavirus_outbreak_in_state_mission_var_temp
+				value = 3
+			}
+			USA_add_covid_growth_time = yes
+			add_days_mission_timeout = {
+				mission = USA_vaccine_research_mission
+				days = -30
+			}
+			set_temp_variable = {
+				election_score_2020 = 4
+			}
+			USA_add_election_score = yes
+		}
+
+	}
+	focus = {
+		id = USA_Ask_Fauci
+		icon = GFX_focus_USA_Ask_Fauci
+		cost = 3
+		prerequisite = {
+			focus = USA_Medical_Emergency
+		}
+		x = 12
+		y = 3
+		completion_reward = {
+			set_temp_variable = {
+				var = USA_coronavirus_outbreak_in_state_mission_var_temp
+				value = 2
+			}
+			USA_add_covid_growth_time = yes
+		}
+
+	}
+	focus = {
+		id = USA_Stand_with_Movement
+		icon = GFX_focus_USA_compromise_with_the_protesters
+		cost = 2
+		x = 16
+		y = 3
+		available = {
+			has_country_flag = USA_2020_Riot
+		}
+		prerequisite = {
+			focus = USA_Bring_Common_Back
+		}
+		completion_reward = {
+			add_political_power = 45
+			unlock_decision_category_tooltip = USA_deal_with_movement_category
+			unlock_decision_tooltip = USA_unify_campaign_decision
+			unlock_decision_tooltip = USA_mobilize_antifa_decision
+			activate_mission = USA_comfort_the_crowd_mission
+			activate_mission = USA_Situation_Update
+		}
+	}
+	focus = {
+		id = USA_Criticize_Pence
+		icon = GFX_focus_USA_promise_progress
+		cost = 4
+		prerequisite = {
+			focus = USA_Bring_Common_Back
+		}
+		prerequisite = {
+			focus = USA_Medical_Emergency
+		}
+		x = 14
+		y = 3
+		completion_reward = {
+			add_stability = 0.025
+			set_temp_variable = {
+				var = mask_supply_var
+				value = 10000
+			}
+			add_mask_supply = yes
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 300
+			}
+			add_debt_with_inflation = yes
+			add_days_mission_timeout = {
+				mission = USA_vaccine_research_mission
+				days = -30
+			}
+			set_temp_variable = {
+				election_score_2020 = 4
+			}
+			USA_minus_election_score = yes
+		}
+	}
+	focus = {
+		id = USA_Free_Diagnosis
+		icon = GFX_focus_USA_national_lockdowns
+		cost = 5
+		prerequisite = {
+			focus = USA_New_Lie
+			focus = USA_Criticize_Pence
+		}
+		x = 12
+		y = 4
+		completion_reward = {
+			set_temp_variable = {
+				var = USA_coronavirus_outbreak_in_state_mission_var_temp
+				value = 2
+			}
+			USA_add_covid_growth_time = yes
+		
+		set_temp_variable = {
+			var = debt_var_temp
+			value = 5
+		}
+		add_debt_with_inflation = yes
+	}
+
+	}
+	focus = {
+		id = USA_National_Emergency
+		icon = GFX_focus_USA_executive_order_14066
+		cost = 1.00
+		prerequisite = {
+			focus = USA_Free_Diagnosis
+		}
+		x = 12
+		y = 5
+		completion_reward = {
+			unlock_decision_tooltip = {
+				decision = USA_minor_lockdown
+				show_effect_tooltip = yes
+			}
+			unlock_decision_tooltip = {
+				decision = USA_mass_lockdowns
+				show_effect_tooltip = yes
+			}
+		}
+	}
+	focus = {
+		id = USA_Vaccine_Quick
+		icon = GFX_focus_USA_warp_speed
+		cost = 5.00
+		prerequisite = {
+			focus = USA_National_Emergency
+		}
+		x = 11
+		y = 6
+		completion_reward = {
+			log = "[GetDateText]: [Root.GetName]: focus USA_Vaccine_Quick completion_reward"
+			set_temp_variable = {
+				var = mask_supply_var
+				value = 25000
+			}
+			add_mask_supply = yes
+			add_days_mission_timeout = {
+				mission = USA_vaccine_research_mission
+				days = -30
+			}
+		}
+	}
+	focus = {
+		id = USA_Help_from_China
+		icon = GFX_focus_PRC_introduce_separation_state_economy
+		cost = 5.00
+		prerequisite = {
+			focus = USA_National_Emergency
+		}
+		x = 13
+		y = 6
+		completion_reward = {
+			set_temp_variable = {
+				var = mask_supply_var
+				value = 50000
+			}
+			add_mask_supply = yes
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt_with_inflation = yes
+			USA_reduce_locked_down_economy = yes
+		}
+
+
+	}
+	focus = {
+		id = USA_Save_the_Economy
+		icon = GFX_focus_USA_reinvigorate_the_economy
+		cost = 10
+		prerequisite = {
+			focus = USA_National_Emergency
+		}
+		x = 12
+		y = 7
+		completion_reward = {
+			add_stability = 0.05
+			add_political_power = 125
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 500
+			}
+			add_debt = yes
+			USA_reduce_locked_down_economy = yes
+			remove_opinion_modifier = {
+				target = PRC
+				modifier = banned_travel
+			}
+			remove_opinion_modifier = {
+				target = ENG
+				modifier = banned_travel
+			}
+			remove_opinion_modifier = {
+				target = ITA
+				modifier = banned_travel
+			}
+			remove_opinion_modifier = {
+				target = SPR
+				modifier = banned_travel
+			}
+			remove_opinion_modifier = {
+				target = FRA
+				modifier = banned_travel
+			}
+			remove_opinion_modifier = {
+				target = POR
+				modifier = banned_travel
+			}
+		}
+	}
+	shared_focus = NATO_Transformation_Conference
+	shared_focus = NATO_360
+	shared_focus = NATO_Challenge
+	shared_focus = NATO_Communicator_Conference
+	shared_focus = NATO_Festival
+	shared_focus = NATO_Industry_Forum
+	shared_focus = NATO_Multi_Domain
+	shared_focus = NATO_Resource_Conference
+	shared_focus = NATO_Strategic_Foresight
+	shared_focus = NATO_TIDE
+	shared_focus = NATO_Talk_Military
+	shared_focus = NATO_Technology_Conference
+	shared_focus = NATO_WCC
+	shared_focus = NATO_Wargame
+}

@@ -1,0 +1,22 @@
+nuke_scorer = {
+	targets = {
+		target_array = global.TFR_the_competitors
+		score = {
+			base = 0
+			modifier = {
+				add = nuke_score
+			}
+		}
+	}
+}
+total_scorer = {
+	targets = {
+		target_array = global.TFR_the_competitors
+		score = {
+			base = 0
+			modifier = {
+				add = total_score1
+			}
+		}
+	}
+}

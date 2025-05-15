@@ -1,0 +1,15 @@
+﻿l_english:
+ buy_industrial_complex_action: "§CInvest in Industrial Complex§!"
+ buy_industrial_complex_action_desc: "\"Economics is the art of making the most of life.\"\n– John Maynard Keynes"
+ buy_industrial_complex_action_flag: "Has executed \"$buy_industrial_complex_action$\" action."
+ buy_industrial_complex_action_tooltip: "No cooldown period left (Remaining days: [?buy_industrial_complex_action_flag:days_left|Y0)"
+
+ buy_arms_factory_action: "§CInvest in Arms Factory§!"
+ buy_arms_factory_action_desc: "\"War is a competition of incompetence—the least incompetent usually win.\"\n- Pakistani General A.A.K. Niazi, reflecting on the Bangladesh Liberation War"
+ buy_arms_factory_action_flag: "Has executed \"$buy_arms_factory_action$\" action."
+ buy_arms_factory_action_tooltip: "No cooldown period left (Remaining days: [?buy_arms_factory_action_flag:days_left|Y0])"
+
+ buy_pp_action: "§1Exchange for Political Power§!"
+ buy_pp_action_desc: "\"Money is the greatest tool of freedom invented by mankind. Only money is open to the poor, and power never is.\" - Hayek"
+ buy_pp_action_flag: "Has executed \"$buy_pp_action$\" action."
+ buy_pp_action_tooltip: "No cooldown period left (Remaining days: [?buy_pp_action_flag:days_left|Y0])"

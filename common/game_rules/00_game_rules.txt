@@ -1,0 +1,777 @@
+#AI行为		AI Behavior
+USA_ai_behavior = {
+	name = "USA_AI_BEHAVIOR_2020"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = USA_TRUMP_CHOSEN_AND_WINS
+		text = "RULE_OPTION_USA_TRUMP_CHOSEN_AND_WINS"
+		desc = "RULE_OPTION_USA_TRUMP_CHOSEN_AND_WINS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_TRUMP_CHOSEN_AND_LOSES
+		text = "RULE_OPTION_USA_TRUMP_CHOSEN_AND_LOSES"
+		desc = "RULE_OPTION_USA_TRUMP_CHOSEN_AND_LOSES_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_BIDEN_CHOSEN_AND_WINS
+		text = "RULE_OPTION_USA_BIDEN_CHOSEN_AND_WINS"
+		desc = "RULE_OPTION_USA_BIDEN_CHOSEN_AND_WINS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_BIDEN_CHOSEN_AND_LOSES
+		text = "RULE_OPTION_USA_BIDEN_CHOSEN_AND_LOSES"
+		desc = "RULE_OPTION_USA_BIDEN_CHOSEN_AND_LOSES_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_MAGA_COMMUNISM_CLAIMED_REGIME
+		text = "RULE_USA_MAGA_COMMUNISM_CLAIMED_REGIME"
+		desc = "RULE_USA_MAGA_COMMUNISM_CLAIMED_REGIME_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_APLA_CLAIMED_REGIME
+		text = "RULE_USA_APLA_CLAIMED_REGIME"
+		desc = "RULE_USA_APLA_CLAIMED_REGIME_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = USA_PTF_CLAIMED_REGIME
+		text = "RULE_USA_PTF_CLAIMED_REGIME"
+		desc = "RULE_USA_PTF_CLAIMED_REGIME_DESC"
+		allow_achievements = yes
+	}
+}
+
+GER_ai_behavior = {
+	name = "GER_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CDU_AI_BEHAVIOR
+		text = "CDU_AI_BEHAVIOR_TXT"
+		desc = "CDU_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = FDP_AI_BEHAVIOR
+		text = "FDP_AI_BEHAVIOR_TXT"
+		desc = "FDP_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = AFD_AI_BEHAVIOR
+		text = "AFD_AI_BEHAVIOR_TXT"
+		desc = "AFD_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = GREENS_AI_BEHAVIOR
+		text = "GREENS_AI_BEHAVIOR_TXT"
+		desc = "GREENS_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = SPD_AI_BEHAVIOR
+		text = "SPD_AI_BEHAVIOR_TXT"
+		desc = "SPD_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LEFT_AI_BEHAVIOR
+		text = "LEFT_AI_BEHAVIOR_TXT"
+		desc = "LEFT_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+SOV_ai_behavior = {
+	name = "SOV_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = UNITED_RUSSIA
+		text = "RULE_OPTION_UNITED_RUSSIA"
+		desc = "RULE_OPTION_UNITED_RUSSIA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CPRF
+		text = "RULE_OPTION_CPRF"
+		desc = "RULE_OPTION_CPRF_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LDPR
+		text = "RULE_OPTION_LDPR"
+		desc = "RULE_OPTION_LDPR_DESC"
+		allow_achievements = yes
+	}
+}
+
+FRA_ai_behavior = {
+	name = "FRA_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = MACRON_WIN_AI_BEHAVIOR
+		text = "MACRON_WIN_AI_BEHAVIOR_TXT"
+		desc = "MACRON_WIN_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = MACRON_LOSS_AI_BEHAVIOR
+		text = "MACRON_LOSS_AI_BEHAVIOR_TXT"
+		desc = "MACRON_LOSS_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LE_PEN_WIN_AI_BEHAVIOR
+		text = "LE_PEN_WIN_AI_BEHAVIOR_TXT"
+		desc = "LE_PEN_WIN_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LE_PEN_LOSS_AI_BEHAVIOR
+		text = "LE_PEN_LOSS_AI_BEHAVIOR_TXT"
+		desc = "LE_PEN_LOSS_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = VILLIERS_AI_BEHAVIOR
+		text = "VILLIERS_AI_BEHAVIOR_TXT"
+		desc = "VILLIERS_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = MELENCHON_AI_BEHAVIOR
+		text = "MELENCHON_AI_BEHAVIOR_TXT"
+		desc = "MELENCHON_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ZEMMOUR_AI_BEHAVIOR
+		text = "ZEMMOUR_AI_BEHAVIOR_TXT"
+		desc = "ZEMMOUR_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+PRC_ai_behavior = {
+	name = "PRC_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ESTABLISHMENT_AI_BEHAVIOR
+		text = "ESTABLISHMENT_AI_BEHAVIOR_TXT"
+		desc = "ESTABLISHMENT_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = NATIONALIST_AI_BEHAVIOR
+		text = "NATIONALIST_AI_BEHAVIOR_TXT"
+		desc = "NATIONALIST_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LIBERAL_AI_BEHAVIOR
+		text = "LIBERAL_AI_BEHAVIOR_TXT"
+		desc = "LIBERAL_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = NEW_LEFT_AI_BEHAVIOR
+		text = "NEW_LEFT_AI_BEHAVIOR_TXT"
+		desc = "NEW_LEFT_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+JAP_ai_behavior = {
+	name = "JAP_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = LDP_AI_BEHAVIOR
+		text = "LDP_AI_BEHAVIOR_TXT"
+		desc = "LDP_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = CIVIC_COALITION_AI_BEHAVIOR
+		text = "CIVIC_COALITION_AI_BEHAVIOR_TXT"
+		desc = "CIVIC_COALITION_AI_BEHAVIOR_TXT_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = RANDOM
+		text = "RULE_OPTION_RANDOM"
+		desc = "RULE_OPTION_RANDOM_AI_DESC"
+		allow_achievements = yes
+	}
+}
+
+Russo_Ukrainian_war_ai_behavior = {
+	name = "RUSSO_UKRAINIAN_WAR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = RUSSIA_VICTORY
+		text = "RULE_OPTION_RUSSIA_VICTORY_UKR"
+		desc = "RULE_OPTION_RUSSIA_VICTORY_UKR_DESC"
+	}
+	option = {
+		name = WHITEPEACE
+		text = "RULE_OPTION_FORCED_WHITEPEACE"
+		desc = "RULE_OPTION_FORCED_WHITEPEACE_DESC"
+	}
+	option = {
+		name = RUSSIA_DEFEATED
+		text = "RULE_OPTION_RUSSIA_DEFEATED_UKR"
+		desc = "RULE_OPTION_RUSSIA_DEFEATED_UKR_DESC"
+	}
+}
+
+Pelosi_Taiwan_ai_behavior = {
+	name = "PELOSI_TAIWAN_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = USA_STOP_HER
+		text = "RULE_OPTION_USA_STOP_PELOSI"
+		desc = "RULE_OPTION_USA_STOP_PELOSI_DESC"
+	}
+	option = {
+		name = PRC_SILENT_ABOUT_PELOSI
+		text = "RULE_OPTION_PRC_KEEP_SILENT"
+		desc = "RULE_OPTION_PRC_KEEP_SILENT_DESC"
+	}
+	option = {
+		name = PRC_STRONG_DIPLOMATIC_DO_NOTHING
+		text = "RULE_OPTION_PRC_STRONG_DIPLOMATIC_DO_NOTHING"
+		desc = "RULE_OPTION_PRC_STRONG_DIPLOMATIC_DO_NOTHING_DESC"
+	}
+	option = {
+		name = PRC_MISSILE_WARNING
+		text = "RULE_OPTION_PRC_MISSILE_WARNING"
+		desc = "RULE_OPTION_PRC_MISSILE_WARNING_DESC"
+	}
+	option = {
+		name = PRC_TAIWAN_WAR
+		text = "RULE_OPTION_PRC_TAIWAN_WAR"
+		desc = "RULE_OPTION_PRC_TAIWAN_WAR_DESC"
+	}
+
+}
+
+Israeli_Hamas_war_ai_behavior = {
+	name = "ISRAELI_HAMS_WAR_AI_BEHAVIOR"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PALENTINE_FUCKED
+		text = "RULE_OPTION_PALESTINE_FUCKED"
+		desc = "RULE_OPTION_PALESTINE_FUCKED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PAL_ISR_CHAOS
+		text = "RULE_OPTION_PAL_ISR_CHAOS"
+		desc = "RULE_OPTION_PAL_ISR_CHAOS_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = ISARELI_TORN
+		text = "RULE_OPTION_ISARELI_TORN"
+		desc = "RULE_OPTION_ISARELI_TORN_DESC"
+		allow_achievements = yes
+	}
+}
+
+NATO_ai_behavior = {
+	name = "NATO_AI_BEHAVIOR"
+	required_dlc = "Waking the Tiger"
+	group = "RULE_GROUP_AI_BEHAVIOR"
+	default = {
+		name = DEFAULT
+		text = "RULE_OPTION_DEFAULT"
+		desc = "RULE_OPTION_DEFAULT_AI_DESC"
+	}
+	option = {
+		name = NATO_VICTORY
+		text = "RULE_OPTION_NATO_VICTORY"
+		desc = "RULE_OPTION_NATO_VICTORY_AI_DESC"
+	}
+	option = {
+		name = CSTO_VICTORY
+		text = "RULE_OPTION_CSTO_VICTORY"
+		desc = "RULE_OPTION_CSTO_VICTORY_AI_DESC"
+	}
+}
+
+#游戏规则 Game rules
+allow_wargoals = {
+	name = "RULE_ALLOW_WARGOALS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_wargoals"
+	option = {
+		name = "ALWAYS_FREE"
+		text = RULE_OPTION_ALWAYS_FREE
+		desc = "RULE_ALLOW_WARGOALS_ALWAYS_FREE_DESC"
+	}
+	default = {
+		name = "FOCUSES_ONLY"
+		text = RULE_OPTION_FOCUSES_ONLY
+		desc = "RULE_ALLOW_WARGOALS_FOCUSES_ONLY_DESC"
+	}
+}
+
+allow_access = {
+	name = "RULE_ALLOW_MILITARY_ACCESS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_military_access_docking_rights"
+	default = {
+		name = "FREE"
+		text = RULE_OPTION_FREE
+		desc = "RULE_ALLOW_ACCESS_FREE_DESC"
+	}
+	option = {
+		name = "SAME_IDEOLOGY"
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_ACCESS_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "RULE_ALLOW_ACCESS_BLOCKED_DESC"
+	}
+}
+
+allow_release_nations = {
+	name = "RULE_ALLOW_RELEASE_NATIONS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_release_nations"
+	option = {
+		name = "PEACE_ONLY"
+		text = "RULE_OPTION_PEACE_ONLY"
+		desc = "RULE_ALLOW_RELEASE_NATIONS_PEACE_ONLY_DESC"
+	}
+	default = {
+		name = "BLOCKED"
+		text = RULE_OPTION_BLOCKED
+		desc = "RULE_ALLOW_RELEASE_NATIONS_BLOCKED_DESC"
+	}
+}
+
+allow_licensing = {
+	name = "RULE_ALLOW_LICENSING"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	required_dlc = "Death or Dishonor"
+	icon = "GFX_production_licenses"
+	option = {
+		name = "FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_LICENSING_FREE_DESC"
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_LICENSING_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = SAME_FACTION
+		text = "RULE_OPTION_SAME_FACTION"
+		desc = "RULE_ALLOW_LICENSING_SAME_FACTION_DESC"
+	}
+	option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_LICENSING_BLOCKED_DESC"
+	}
+}
+
+allow_lend_lease = {
+	name = "RULE_ALLOW_LEND_LEASE"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_lend_lease"
+	option = {
+		name = "FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_LEND_LEASE_FREE_DESC"
+	}
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_LEND_LEASE_LIMITED_DESC"
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_LEND_LEASE_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = SAME_FACTION
+		text = "RULE_OPTION_SAME_FACTION"
+		desc = "RULE_ALLOW_LEND_LEASE_SAME_FACTION_DESC"
+	}
+	option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_LEND_LEASE_BLOCKED_DESC"
+	}
+}
+
+allow_volunteers = {
+	name = "RULE_ALLOW_VOLUNTEERS"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_volunteers"
+	option = {
+		name = "ALWAYS_FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_VOLUNTEERS_FREE_DESC"
+	}
+	default = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_VOLUNTEERS_LIMITED_DESC"
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_VOLUNTEERS_SAME_IDEOLOGY_DESC"
+	}
+	option = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_VOLUNTEERS_BLOCKED_DESC"
+	}
+}
+
+allow_guarantees = {
+	name = "RULE_ALLOW_GUARANTEES"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_guarantee_independence"
+	option = {
+		name = "ALWAYS_FREE"
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_GUARANTEES_FREE_DESC"
+	}
+	option = {
+		name = "LIMITED"
+		text = "RULE_OPTION_LIMITED"
+		desc = "RULE_ALLOW_GUARANTEES_LIMITED_DESC"
+	}
+	option = {
+		name = SAME_IDEOLOGY
+		text = "RULE_OPTION_SAME_IDEOLOGY"
+		desc = "RULE_ALLOW_GUARANTEES_SAME_IDEOLOGY_DESC"
+	}
+	default = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_GUARANTEES_BLOCKED_DESC"
+	}
+}
+
+allow_revoke_guarantees = {
+	name = "RULE_ALLOW_REVOKE_GUARANTEES"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_revoke_guarantees"
+	option = {
+		name = "ALLOWED"
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_REVOKE_GUARANTEES_ALLOWED_DESC"
+	}
+	default = {
+		name = "BLOCKED"
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_REVOKE_GUARANTEES_BLOCKED_DESC"
+	}
+}
+
+allow_leave_faction = {
+	name = "RULE_ALLOW_LEAVE_FACTION"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_leave_faction"
+	option = {
+		name = "ALLOWED"
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_LEAVE_FACTION_ALLOWED_DESC"
+	}
+	default = {
+		name = "BLOCKED"
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_LEAVE_FACTION_BLOCKED_DESC"
+	}
+}
+
+allow_kick_faction = {
+	name = "RULE_ALLOW_KICK_FACTION"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	icon = "GFX_kick_from_faction"
+	option = {
+		name = "ALLOWED"
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_KICK_FACTION_ALLOWED_DESC"
+	}
+	default = {
+		name = "BLOCKED"
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_KICK_FACTION_BLOCKED_DESC"
+	}
+}
+
+allow_take_over_faction = {
+	name = "RULE_ALLOW_TAKE_OVER_FACTION"
+	group = "RULE_GROUP_GENERAL_FOREIGN_POLICY"
+	required_dlc = "Man the Guns"
+	icon = "GFX_take_over_faction_leadership"
+	option = {
+		name = "ALLOWED"
+		text = "RULE_OPTION_ALLOWED"
+		desc = "RULE_ALLOW_TAKE_OVER_FACTION_ALLOWED_DESC"
+	}
+	default = {
+		name = "BLOCKED"
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_TAKE_OVER_FACTION_BLOCKED_DESC"
+	}
+}
+
+allow_coups = {
+	name = "RULE_ALLOW_COUPS"
+	group = "RULE_GROUP_COVERT_ACTIONS"
+	icon = "GFX_coups"
+	option = {
+		name = FREE
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_COUPS_FREE_DESC"
+	}
+	option = {
+		name = AI_ONLY
+		text = "RULE_OPTION_AI_ONLY"
+		desc = "RULE_ALLOW_COUPS_AI_ONLY_DESC"
+		allow_achievements = yes
+	}
+	default = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_COUPS_BLOCKED_DESC"
+	}
+}
+
+allow_party_boosting = {
+	name = "RULE_ALLOW_PARTY_BOOSTING"
+	group = "RULE_GROUP_COVERT_ACTIONS"
+	icon = "GFX_boosting_party_popularity"
+	option = {
+		name = FREE
+		text = "RULE_OPTION_FREE"
+		desc = "RULE_ALLOW_PARTY_BOOSTING_FREE_DESC"
+	}
+	option = {
+		name = AI_ONLY
+		text = "RULE_OPTION_AI_ONLY"
+		desc = "RULE_ALLOW_PARTY_BOOSTING_AI_ONLY_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = PLAYER_ONLY
+		text = "RULE_OPTION_PLAYER_ONLY"
+		desc = "RULE_ALLOW_PARTY_BOOSTING_PLAYER_ONLY_DESC"
+	}
+	default = {
+		name = BLOCKED
+		text = "RULE_OPTION_BLOCKED"
+		desc = "RULE_ALLOW_PARTY_BOOSTING_BLOCKED_DESC"
+	}
+}
+
+#杂项游戏设置 Gameplay
+fiction_flavor_event = {
+	name = "RULE_FICTION_FLAVOR_EVENT"
+	group = "RULE_GROUP_GAMEPLAY"
+	option = {
+		name = yes
+		text = "RULE_FICTION_ALLOWED"
+		desc = "RULE_FICTION_ALLOWED_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = no
+		text = "RULE_FICTION_DISABLED"
+		desc = "RULE_FICTION_DISABLED_DESC"
+		allow_achievements = yes
+	}
+}
+
+narrator_tone ={
+	name = "RULE_PRC_NARRATION"
+	group = "RULE_GROUP_GAMEPLAY"
+	default = {
+		name = classic
+		text = "RULE_PRC_PROPAGANDA"
+		desc = "RULE_PRC_PROPAGANDA_DESC"
+		allow_achievements = yes
+	}
+	option = {
+		name = hoi4
+		text = "RULE_PRC_HOI4_STYLE"
+		desc = "RULE_PRC_HOI4_STYLE_DESC"
+		allow_achievements = yes
+	}
+}
+
+#oh_no_sweden = {
+#	name = "RULE_SWEDEN_EASTEREGG"
+#	group = "RULE_GROUP_GAMEPLAY"
+#	default = {
+#		name = no
+#		text = "RULE_SWEDEN_NORMAL"
+#		desc = "RULE_SWEDEN_NORMAL_DESC"
+#		allow_achievements = yes
+#	}
+#	option = {
+#		name = deal_with_IND
+#		text = "RULE_SWEDEN_INDIA_FRIEND"
+#		desc = "RULE_SWEDEN_INDIA_FRIEND_DESC"
+#	}
+#	option = {
+#		name = long_march_israel
+#		text = "RULE_SWEDEN_ISARELI_BASE"
+#		desc = "RULE_SWEDEN_ISARELI_BASE_DESC"
+#	}
+#	option = {
+#		name = people_commissar
+#		text = "RULE_SWEDEN_PUPPET"
+#		desc = "RULE_SWEDEN_PUPPET_DESC"
+#		allow_achievements = no
+#	}
+#	option = {
+#		name = annexed
+#		text = "RULE_SWEDEN_ANNEXED"
+#		desc = "RULE_SWEDEN_ANNEXED_DESC"
+#	}
+#}
+
+
+maximum_fort_level = {
+	name = "RULE_MAXIMUM_FORT_LEVEL"
+	group = "RULE_GROUP_GAMEPLAY"
+	icon = "GFX_maximum_fort_level"
+	option = {
+		name = normal
+		text = "RULE_OPTION_NORMAL"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_NORMAL_DESC"
+	}
+	option = {
+		name = level_1
+		text = "RULE_OPTION_1"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_2
+		text = "RULE_OPTION_2"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_3
+		text = "RULE_OPTION_3"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_4
+		text = "RULE_OPTION_4"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_5
+		text = "RULE_OPTION_5"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_6
+		text = "RULE_OPTION_6"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_7
+		text = "RULE_OPTION_7"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_8
+		text = "RULE_OPTION_8"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+	option = {
+		name = level_9
+		text = "RULE_OPTION_9"
+		desc = "RULE_MAXIMUM_FORT_LEVEL_DESC"
+	}
+}

@@ -1,0 +1,2112 @@
+ideas = {
+	country = {
+		FAF_Full_Latinist_Control_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				non_core_manpower = 0.125
+				improve_relations_maintain_cost_factor = -0.16
+				conscription_factor = 0.04
+				head_minister_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economic_minister_cost_factor = 0.5
+				interior_minister_cost_factor = 0.5
+				intelligence_minister_cost_factor = 0.5
+				theorist_minister_cost_factor = 0.5
+			}
+			equipment_bonus = {
+				
+			}
+		}
+		FAF_religious_vigor_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				breakthrough_factor = 0.05
+				war_support_weekly = 0.02
+				nationalist_acceptance = 25
+				political_power_gain = 0.125
+			}
+		}
+		FAF_culture_war_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				breakthrough_factor = 0.075
+				war_support_weekly = 0.03
+				nationalist_acceptance = 25
+				political_power_gain = 0.15
+				initiative_factor = 0.1
+				army_speed_factor = 0.05
+				army_org_factor = 0.05
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.1
+			}
+		} 
+		FAF_European_Identity = {
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_development_monthly = 0.01
+				line_change_production_efficiency_factor = 0.1
+				research_speed_factor = 0.05
+			}
+		}
+		FAF_European_Preservation_idea = {
+			picture = GER_CAP
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = -0.2
+				tax_business_rate = 0.2
+				tax_personal_rate = -0.1
+				consumer_goods_factor = -0.05
+				income_growth_factor = 0.05
+			}
+		}
+		FAF_European_Preservation_idea2 = {
+			picture = GER_CAP
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = -0.2
+				tax_business_rate = 0.25
+				tax_personal_rate = -0.15
+				consumer_goods_factor = -0.05
+				income_growth_factor = 0.1
+				weekly_manpower = 500
+			}
+		}
+		FAF_European_Preservation_idea3 = {
+			picture = GER_CAP
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				business_value_factor = 0.2
+				tax_business_rate = 0.3
+				tax_personal_rate = -0.15
+				consumer_goods_factor = -0.1
+				income_growth_factor = 0.15
+				weekly_manpower = 750
+				society_development_monthly = 0.05
+			}
+		}
+		FAF_EU = {
+			picture = EU_Fascism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				political_power_gain = -0.1
+				income_growth_factor = 0.2
+				business_value_factor = 0.05
+				trade_opinion_factor = 0.05
+				national_socialist_acceptance = 25
+			}
+		}
+		FAF_EU_leader = {
+			picture = EU_Fascism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				political_power_gain = -0.2
+				trade_opinion_factor = 0.1
+			}
+		}
+		FAF_continental_system_idea = {
+			picture = GER_CAP
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.25
+				naval_defense_factor = 0.125
+				naval_attrition = -0.10
+				naval_coordination = 0.1
+				naval_damage_factor = -0.1
+				national_socialist_acceptance = 25
+				nationalist_acceptance = 25
+				fascist_acceptance = 25
+			}
+		}
+		FAF_legacy_of_the_imperial_era = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				conscription = 0.05
+				conscription_factor = 0.25
+				training_time_army_factor = -0.2
+				political_power_gain = 0.1
+
+			}
+		}
+		FAF_new_imperial_era = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				conscription = 0.1
+				conscription_factor = 0.3
+				training_time_army_factor = -0.25
+				political_power_gain = 0.125
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				academic_development_monthly = 0.05
+				society_development_monthly = 0.05
+			}
+		}
+		FAF_Imperial_Palace_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				consumer_goods_factor = 0.10
+				political_power_cost = 0.05
+				party_popularity_stability_factor = 0.10
+			}
+		}
+		FAF_historical_idols_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				stability_factor = 0.05
+    			fascist_drift = 0.01
+			}
+		}
+		FAF_the_word_of_the_bishop_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				drift_defence_factor = 0.15
+			    war_support_weekly = 0.01
+			    conscription_factor = 0.05
+			}
+		}
+		FAF_dehumanization_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+			    war_support_weekly = 0.02
+			    military_development_monthly = 0.01
+			    society_development_monthly = -0.005
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+		}
+		FAF_criox_de_fau_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+			    resistance_growth_on_our_occupied_states = -0.15
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+		}
+		FAF_criox_de_fau_better_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+			    resistance_growth_on_our_occupied_states = -0.2
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.125
+			}
+		}
+		FAF_imperial_army_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				army_org_factor = 0.05
+				army_attack_factor = 0.05
+				army_speed_factor = 0.05
+				military_development_monthly = 0.02
+			}
+		}
+		FAF_the_crime_of_opinion_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			modifier = {
+				stability_factor = -0.1
+			    fascist_drift = 0.075
+			    drift_defence_factor = 0.075
+			    political_power_factor = 0.1
+			}
+		}
+		FAF_solidarite_latine_idea = {
+			picture = generic_manpower_bonus
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			targeted_modifier = {
+				tag = BSQ
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SER
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = GER
+				attack_bonus_against = 0.1
+			}
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.1
+			}
+		}
+		FAF_lafayette_death_cult_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = 0.10
+				army_defence_factor = 0.05
+				war_support_factor = 0.15
+				initiative_factor = 0.05
+				army_speed_factor = 0.1
+				army_org_factor = 0.1
+			}
+			equipment_bonus = {
+				
+			}
+		}
+		FAF_anti_soviet_pact = {
+			removal_cost = -1 
+
+			available = {
+				is_subject = no
+			}
+			
+			allowed = {
+				always = no 
+			}
+	
+			ai_will_do = {
+				factor = 0
+			}
+
+			picture = Anti_Soviet
+		}
+		FAF_Banned_Inflation_idea = {
+			picture = SOV_stakhanovite_movement
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+			}
+			removal_cost = -1
+			modifier = {
+				inflation_monthly = -0.005
+				consumer_goods_factor = 0.05
+				industrial_development_monthly = 0.02
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		FAF_Full_Fascist_Control_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				war_support_factor = 0.15
+				political_power_factor = 0.15
+				stability_factor = -0.15
+			}
+			equipment_bonus = {
+				
+			}
+		}
+		FAF_Full_Gaullist_Influence_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				command_power_gain = 0.1
+				army_attack_factor = 0.12
+			}
+			equipment_bonus = {
+				
+			}
+		}
+		FAF_Full_Petainist_Control_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.20
+				army_defence_factor = 0.12
+			}
+			equipment_bonus = {
+				
+			}
+		}
+		FAF_Restored_Monarchy_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				max_planning_factor = 0.1
+				experience_gain_army = 0.07
+				experience_gain_air = 0.07
+				experience_gain_navy = 0.07
+				grant_medal_cost_factor = -0.80
+				consumer_goods_factor = 0.15
+			}
+		}
+		FAF_lap_of_luxury_idea = {
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FAF
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				max_planning_factor = 0.1
+				experience_gain_army = 0.07
+				experience_gain_air = 0.07
+				experience_gain_navy = 0.07
+				grant_medal_cost_factor = -0.95
+				consumer_goods_factor = 0.15
+				income_growth_factor = -0.1
+				business_value_factor = 0.05
+			}
+		}
+		FAF_Post_Civil_War_Rebuilding_Nationalist_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				production_speed_buildings_factor = -0.2
+				political_power_gain = -0.2
+				stability_factor = -0.2
+				resistance_activity = 0.5
+				industrial_capacity_dockyard = -0.1
+				industrial_capacity_factory = -0.1
+				social_liberal_drift = 0.05
+				communist_drift = 0.05
+			}
+		}
+		FAF_Rebuilding_convene_gov_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+				stability_factor = 0.1
+			}
+		}
+		FAF_Rebuilding_stability_boost_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_factor = 0.1
+				resistance_activity = -0.25
+				social_liberal_drift = -0.025
+				communist_drift = -0.025
+			}
+		}
+		FAF_Rebuilding_resistance_boost_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				resistance_activity = -0.5
+				social_liberal_drift = -0.05
+				communist_drift = -0.05
+			}
+		}
+		FAF_Rebuilding_vichy_edict_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		FAF_Rebuilding_economy_boost_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		FAF_XIV_Society_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FAF_XIV
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.15
+				consumer_goods_factor = 0.05
+				society_development_monthly = 0.02
+				personal_expense_factor = 0.2
+				decryption = 1
+				encryption = 1
+			}
+		}
+		FAF_National_Rebirth = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.075
+				army_core_attack_factor = 0.075
+			}
+		}
+		FAF_National_Rebirth_Anti_Communist = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.075
+				army_core_attack_factor = 0.075
+			}
+			targeted_modifier = {
+				tag = FPR
+				attack_bonus_against = 0.1
+			}
+		}
+		FAF_Petainist_Defense = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				army_defence_factor = 0.1
+			}
+		}
+		FAF_Imperialist_Sympathies = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				conscription = 0.03
+				conscription_factor = 0.1
+				training_time_army_factor = -0.1
+
+			}
+		}
+		FAF_Stability_and_Authority_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				stability_factor = 0.10
+				political_power_gain = 0.1
+			}
+		}
+		FAF_Honor_and_Glory_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				war_support_factor = 0.10
+				army_morale_factor = 0.15
+			}
+		}
+		FAF_Fascist_Revolts = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				party_popularity_stability_factor = -0.20
+				political_power_gain = -0.1
+			}
+		}
+		FAF_Fascist_Economics_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				party_popularity_stability_factor = -0.20
+				political_power_gain = -0.1
+			}
+		}
+		FAF_Oligarchical_Economics_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_Anti_Islamism
+			
+			modifier = {
+				party_popularity_stability_factor = -0.20
+				political_power_gain = -0.1
+			}
+		}
+		FAF_european_ducat_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_factor = -0.075
+				political_power_gain = -0.15
+				industrial_capacity_factory = -0.125
+				industrial_capacity_dockyard = -0.125
+				production_lack_of_resource_penalty_factor = 0.15
+				income_growth_factor = -0.125
+			}
+		}
+		FAF_european_ducat_stablized_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_factor = -0.025
+				political_power_gain = -0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				income_growth_factor = 0.075
+			}
+		}
+		FAF_european_ducat_stablized_1_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = -0.025
+				industrial_capacity_factory = 0.075
+				industrial_capacity_dockyard = 0.075
+				income_growth_factor = 0.1
+			}
+		}
+		FAF_Shattered_Franc_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				inflation_monthly = 0.005
+				stability_factor = -0.075
+				political_power_gain = -0.025
+				production_factory_efficiency_gain_factor = -0.025
+				production_lack_of_resource_penalty_factor = 0.10
+				income_growth_factor = -0.25
+			}
+		}
+		FAF_Golden_Franc_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_factor = 0.025
+				consumer_goods_factor = 0.10
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				income_growth_factor = 0.1
+				business_value_factor = 0.05
+			}
+		}
+		FAF_building_an_empire_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_weekly = 0.0025
+				disabled_ideas = 1
+			}
+		}
+		FAF_decentralization_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				stability_factor = -0.1
+				production_speed_buildings_factor = -0.20
+				production_factory_max_efficiency_factor = -0.1
+				max_planning_factor = -0.1
+				war_support_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				planning_speed = 0.1
+			}
+		}
+		FAF_Imperial_Bureaecracy = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = -0.10
+				civilian_factory_use = 1
+				head_minister_cost_factor = -0.1
+				foreign_minister_cost_factor = -0.1
+				economic_minister_cost_factor = -0.1
+				interior_minister_cost_factor = -0.1
+				intelligence_minister_cost_factor = -0.1
+				theorist_minister_cost_factor = -0.1
+			}
+		}
+		FAF_Roman_Legacy = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				political_power_gain = 0.25
+				production_speed_buildings_factor = -0.075
+				production_factory_max_efficiency_factor = -0.1
+				max_planning_factor = -0.1
+				war_support_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				planning_speed = 0.1
+				head_minister_cost_factor = -0.2
+				foreign_minister_cost_factor = -0.2
+				economic_minister_cost_factor = -0.2
+				interior_minister_cost_factor = -0.2
+				intelligence_minister_cost_factor = -0.2
+				theorist_minister_cost_factor = -0.2
+				academic_development_monthly = 0.05
+				society_development_monthly = 0.05
+			}
+		}
+		FAF_Roman_Legacy_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				party_popularity_stability_factor = 0.15
+				political_power_gain = 0.3
+				production_speed_buildings_factor = -0.1
+				production_factory_max_efficiency_factor = -0.1
+				max_planning_factor = -0.1
+				war_support_factor = 0.1
+				line_change_production_efficiency_factor = 0.05
+				planning_speed = 0.1
+				head_minister_cost_factor = -0.2
+				foreign_minister_cost_factor = -0.2
+				economic_minister_cost_factor = -0.2
+				interior_minister_cost_factor = -0.2
+				intelligence_minister_cost_factor = -0.2
+				theorist_minister_cost_factor = -0.2
+				academic_development_monthly = 0.05
+				society_development_monthly = 0.05
+			}
+		}
+		FAF_Quadrilingual_Unification_Campaign = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				political_power_factor = -0.15
+				resistance_growth = 2
+				resistance_garrison_penetration_chance = 0.25
+				local_building_slots = 1
+			}
+		}
+		FAF_Strict_Martial_Law_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				war_support_factor = 0.10
+				political_power_factor = -0.1
+				stability_factor = 0.15
+				compliance_growth = 0.10
+				resistance_decay = 0.10
+			}
+		}
+		FAF_national_duty = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				mobilization_speed = 0.05
+				conscription_factor = 0.05
+				war_support_factor = 0.05
+				max_command_power = -20
+			}
+		}
+		FAF_national_duty_defense_1 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				mobilization_speed = 0.075
+				conscription_factor = 0.075
+				war_support_factor = 0.075
+				production_speed_bunker_factor = 0.075
+				ai_focus_defense_factor = 0.5
+				max_command_power = -20
+			}
+		}
+		FAF_national_duty_defense_2 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.1
+				production_speed_bunker_factor = 0.1
+				ai_focus_defense_factor = 0.75
+				army_defence_factor = 0.05
+				max_command_power = -20
+			}
+		}
+		FAF_COS_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				operative_slot = 1
+				own_operative_intel_extraction_rate = 0.05
+				intel_from_operatives_factor = 0.05
+				operative_death_on_capture_chance = 0.25
+			}
+		}
+		FAF_COS_special_forces_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				operative_slot = 2
+				own_operative_intel_extraction_rate = 0.15
+				intel_from_operatives_factor = 0.10
+				intel_from_combat_factor = 0.05
+				army_org_factor = 0.05
+				special_forces_cap = -0.075
+				operative_death_on_capture_chance = 0.25
+			}
+		}
+		FAF_COS_guerilla_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				operative_slot = 2
+				own_operative_intel_extraction_rate = 0.2
+				intel_from_operatives_factor = 0.1
+				intel_from_combat_factor = 0.2
+				operative_death_on_capture_chance = 0.75
+			}
+		}
+		FAF_national_duty_defense_3 = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.1
+				production_speed_bunker_factor = 0.15
+				ai_focus_defense_factor = 1
+				army_defence_factor = 0.1
+				max_command_power = -10
+			}
+		}
+		FAF_national_duty_future_army = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			
+			modifier = {
+				mobilization_speed = 0.075
+				conscription_factor = 0.075
+				war_support_factor = 0.1
+				experience_gain_army = 0.05
+				org_loss_when_moving = -0.05
+				max_command_power = -15
+			}
+		}
+		FAF_national_duty_murder_slavs = {
+			allowed = {
+				always = no
+			}
+			
+			picture = placeholder
+			targeted_modifier = {
+				tag = SOV
+				attack_bonus_against = 0.15
+			}
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				war_support_factor = 0.15
+				experience_gain_army = 0.1
+				org_loss_when_moving = -0.075
+				max_command_power = -10
+			}
+		}
+		FAF_Serfdom_idea = {
+			removal_cost = -1
+
+			picture = generic_pro_worker_reform
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				party_popularity_stability_factor = 0.12
+				drift_defence_factor = 0.25
+			    consumer_goods_factor = -0.10
+				conscription = 0.01
+				tax_business_rate = 0.5
+				research_speed_factor = -0.10
+				poverty_development_monthly = 0.05
+			}
+		}
+		FAF_burgeoning_middle_class_idea = {
+			picture = GFX_idea_SOV_emerging_middle_class
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.05
+				society_development_monthly = 0.015
+				poverty_development_monthly = 0.015
+				income_growth_factor = 0.3
+				personal_value_factor = 0.15
+				inflation_monthly = 0.005
+			}
+		}
+		FAF_republican_officers_movement_idea = {
+			removal_cost = -1
+
+			picture = generic_pro_worker_reform
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+				party_popularity_stability_factor = -0.10
+				social_liberal_drift = 0.05
+				social_democrat_drift = 0.05
+			}
+		}
+		FAF_royal_pretenders_idea = {
+			removal_cost = -1
+
+			picture = generic_pro_worker_reform
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			   stability_weekly = -0.02
+			   political_power_gain = -0.25
+			}
+		}
+		FAF_royal_pretenders_2_idea = {
+			removal_cost = -1
+
+			picture = generic_pro_worker_reform
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			   stability_weekly = -0.04
+			   political_power_gain = -0.3
+			}
+		}
+		FAF_abolish_workers_rights_idea = {
+
+			removal_cost = -1
+
+			picture = generic_pro_worker_reform
+			
+			allowed = {
+				always = no
+			}
+
+			modifier = {
+			    misc_expense = 15
+				personal_value_factor = -0.50
+				tax_business_rate = 0.25
+				consumer_goods_factor = -0.02
+				industrial_development_monthly = 0.05
+				poverty_development_monthly = -0.02
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}	
+		FAF_full_employment_idea = {
+			picture = SOV_Pragmatic_Economy_Idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_factory_start_efficiency_factor = 0.085
+				stability_factor = 0.06
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				poverty_development_monthly = 0.02
+				income_growth_factor = 0.1
+				production_speed_buildings_factor = 0.05
+				conscription = -0.01
+				business_value_factor = -0.15
+				personal_value_factor = 0.05
+			}
+		}	
+		FAF_Worker_Syndicate_Program_idea = { 
+			picture = GFX_idea_PRC_made_in_china
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				inflation_monthly = -0.005
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				production_speed_infrastructure_factor = 0.05
+				poverty_development_monthly = 0.02
+			}
+		}	
+		FAF_Engie_Bills_idea = {
+			picture = GFX_idea_PRC_made_in_china
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.33
+				production_speed_arms_factory_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.15
+				political_power_cost = 0.2
+			}
+		}	
+		FAF_Fascist_Paramilitaries_idea = {
+			allowed = {
+				always = no
+			}
+			
+			picture = French_Nationalist_Militias
+			
+			modifier = {
+				war_support_factor = 0.10
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				out_of_supply_factor = -0.05
+			}
+		}
+	}
+	head_minister = {
+		FAF_Lafayette_HM = {
+			picture = FRA_Edouard_philippe
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_pragmatic_statesman
+			}
+		}	
+		FAF_Damien_Rieu_HM = { #Bardella
+			picture = FAF_damien_rieu
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_naive_optimist
+			}
+		}	
+		FAF_Andre_Villanova_HM = { #Bonaparte
+			picture = FAF_Andre_Villanova
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_radical_financer
+			}
+		}	
+		FAF_Karim_Ouchikh_HM = { #Camus
+			picture = FAF_Karim_Ouchikh
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_smiling_serpent
+			}
+		}	
+		FAF_Paul_Marie_Couteaux_HM = { #Camus
+			picture = FAF_Paul_Marie_Couteaux
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_militant_revolutionary
+			}
+		}	
+		FAF_Alexandre_Gabriac_HM = { #Fascist
+			picture = FAF_Alexandre_Gabriac
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = fascist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = fascist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_backroom_backstabber
+			}
+		}	
+		FAF_Charles_Emmanuel_of_Bourbon_Parma_HM = { #Monarchist
+			picture = FAF_Charles_Emmanuel_of_Bourbon_Parma
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_silent_workhorse
+			}
+		}	
+		FAF_Jean_d_Orleans_HM = { #Monarchist
+			picture = FAF_Jean_d_Orleans
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_old_guard
+			}
+		}	
+		FAF_Victor_Lenta_HM = { #Lafayette
+			picture = FAF_Victor_Lenta
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_old_guard
+			}
+		}	
+
+	}
+	foreign_minister = {
+		FAF_Jean_David_Cattin_FM = {
+			picture = FAF_Jean_David_Cattin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_ideological_crusader
+			}
+		}	
+		FAF_Joachim_Murat_FM = {
+			picture = FAF_Jean_David_Cattin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_loyal_nationalist
+			}
+		}	
+		FAF_Christine_Tasin_FM = { #Camus
+			picture = FAF_Christine_Tasin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_biased_intellectual
+			}
+		}	
+		FAF_Nikola_Perovic_FM = { #Camus
+			picture = FAF_Nikola_Perovic
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.05
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_iron_fisted_brute
+			}
+		}	
+		FAF_Daniel_Conversano_FM = { #Fascist
+			picture = FAF_Daniel_Conversano
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = fascist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = fascist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_fervent_nationalist
+			}
+		}	
+		FAF_Stephane_Bern_FM = { #Monarchist
+			picture = FAF_Stephane_Bern
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_great_compromiser
+			}
+		}	
+	}
+	economic_minister = {
+		FAF_Axel_Loustau_EM = { #Bardella
+			picture = FAF_Axel_Loustau
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 eco_economic_organizer
+			}
+		}	
+		FAF_George_Kuzmanovic_EM = { #Napoleon
+			picture = FAF_George_Kuzmanovic
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = libertarian_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = libertarian_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 eco_mixed_economy
+			}
+		}	
+		FAF_Charles_Gave_EM = { #Camus
+			picture = FAF_Charles_Gave
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 eco_captain_of_industry
+			}
+		}	
+		FAF_Julien_Rochedy_EM = { #Fascist
+			picture = FAF_Julien_Rochedy
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = fascist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = fascist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 eco_war_industrialist
+			}
+		}	
+		FAF_Patrick_de_Seze_EM = { #Monarchist
+			picture = FAF_Patrick_de_Seze
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 eco_corrupt_kleptocrat
+			}
+		}	
+		FAF_Xavier_Maire_EM = { #Lafayette
+			picture = FAF_Patrick_de_Seze
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 eco_military_entrepreneur
+			}
+		}	
+	}
+	interior_minister = {
+		FAF_Fabrice_Robert_IM = { #Bardella
+			picture = FAF_Jean_David_Cattin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = national_socialist
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 sec_prince_of_terror
+			}
+		}	
+		FAF_Charles_Prince_Napoleon_IM = { #Monarchist
+			picture = FAF_Jean_David_Cattin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.10
+		        }
+		        add_stability = -0.1
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.02
+		        }
+		         add_stability = 0.05
+            }
+			traits = { 
+				 sec_damned_liberal
+			}
+		}	
+		FAF_Laurent_Marcangeli_IM = { #Monarchist
+			picture = FAF_Jean_David_Cattin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.05
+		        }
+		        add_stability = -0.05
+		        IF = {
+		        	LIMIT = {
+		        		NOT = {
+		        			has_idea = FAF_royal_pretenders_idea
+		        		}
+		        	}
+		        	country_event = { id = Nationalist_France.24 days = 90 } 
+		        }
+		       
+            }
+			
+            on_remove = {
+		        add_stability = 0.05
+            }
+			traits = { 
+				 sec_efficent_organizer
+			}
+		}	
+		FAF_Marie_Marguerite_of_Bourbon_IM = { #Monarchist
+			picture = FAF_Jean_David_Cattin
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.025
+		        }
+		        add_stability = -0.075
+            }
+			
+            on_remove = {
+		        add_stability = -0.025
+            }
+			traits = { 
+				 sec_queen_of_france
+			}
+		}	
+		FAF_Pope_Innocent_XIV_IM = {
+			picture = FRA_christophe_castaner
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				has_completed_focus = FAF_Puppet_the_Church
+			}
+			on_add = {
+	            add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.05
+		        }
+	        }
+			
+	        on_remove = {
+	            add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.05
+		        }
+	        }
+			traits = { 
+				 sec_anti_pope
+			}
+		}
+		FAF_Julien_Langella_IM = {
+			picture = FAF_Julien_Langella
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+	            add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+	        }
+			
+	        on_remove = {
+	            add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+	        }
+			traits = { 
+				 sec_religious_nationalist
+			}
+		}
+		FAF_Pierre_Cassen_IM = {
+			picture = FAF_Pierre_Cassen
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+	            add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+	        }
+			
+	        on_remove = {
+	            add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+	        }
+			traits = { 
+				 sec_propaganda_master
+			}
+		}
+		FAF_Alain_Escada_IM = {
+			picture = FAF_Alain_Escada
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+	            add_popularity = {
+			        ideology = fascist
+			        popularity = 0.05
+		        }
+	        }
+			
+	        on_remove = {
+	            add_popularity = {
+			        ideology = fascist
+			        popularity = 0.05
+		        }
+	        }
+			traits = { 
+				 sec_prince_of_terror
+			}
+		}
+		FAF_Guillaume_Cuvelier_IM = {
+			picture = FAF_Alain_Escada
+			
+			allowed = {
+				original_tag = FAF
+			}
+			available = {
+				
+			}
+			on_add = {
+	            add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+	        }
+			
+	        on_remove = {
+	            add_popularity = {
+			        ideology = national_socialist
+			        popularity = 0.05
+		        }
+	        }
+			traits = { 
+				 sec_efficent_organizer
+			}
+		}
+	}
+	theorist_minister = {
+
+	}
+	intelligence_minister = {
+	
+	}
+}

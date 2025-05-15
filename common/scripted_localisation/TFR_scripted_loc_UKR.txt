@@ -1,0 +1,12 @@
+defined_text = {
+	name = UKR_East_Border_loc
+	text = {
+		trigger = {
+			tag = UKR
+		}
+		localization_key = UKR_East_Border_loc_UKR
+	}
+	text = {
+		localization_key = UKR_East_Border_loc_SOV
+	}
+}

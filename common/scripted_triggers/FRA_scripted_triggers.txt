@@ -1,0 +1,17 @@
+FRA_is_west_africa_tag = {
+	OR = {
+		tag = DAH
+		tag = TOG
+		tag = GHA
+		tag = VOL
+		tag = IVO
+		tag = MLI
+		tag = LIB
+		tag = GNA
+		tag = SIE
+		tag = GNB
+		tag = SEN
+		tag = GAM
+		tag = MRT
+	}
+}

@@ -1,0 +1,869 @@
+#军改
+technologies = {
+ #空军学说
+	advanced_early_warning_aircraft_detection = { #先进预警机探测
+		air_superiority_detect_factor = 0.1
+		air_mission_efficiency = 0.1
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		xor = {
+			air_superiority
+			formation_flying 
+		}
+		
+		path = {
+			leads_to_tech = Electronic_Warfare_Suppression
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Electronic_Warfare_Suppression = { #电子战压制
+		army_bonus_air_superiority_factor = 0.2
+		air_superiority_efficiency = 0.2
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		doctrine = yes	
+		
+		path = {
+			leads_to_tech = Simulation_Exercises
+			research_cost_coeff = 1
+		}
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Simulation_Exercises = { #模拟对抗演习
+		air_mission_xp_gain_factor = 1
+		experience_gain_air = 0.2
+		air_ace_generation_chance_factor = 0.7
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		allow = {
+			has_country_flag = PRC_Sortie_Of_Eagle_flag
+		}
+		path = {
+			leads_to_tech = Strike_Unmanned_Aerial_Vehicles
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = Next_Generation_Fighter_Aircraft
+			research_cost_coeff = 1
+		}
+
+		path = {
+			leads_to_tech = Anti_Ship_Strike_Tactics
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Strike_Unmanned_Aerial_Vehicles = { #察打一体无人机
+		air_agility_factor = 0.2
+		air_cas_present_factor = 0.2
+		ground_attack_factor = 0.2
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		allow = {
+			has_country_flag = PRC_Sortie_Of_Eagle_flag
+		}
+		
+		path = {
+			leads_to_tech = Comprehensive_Ground_Support
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -2 y = 6 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Comprehensive_Ground_Support = { #综合对地支援
+		ground_attack_factor = 0.3
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		
+		doctrine = yes	
+
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = -2 y = 8 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Next_Generation_Fighter_Aircraft = { #超世代战机作战
+		army_bonus_air_superiority_factor  = 0.2
+		air_superiority_efficiency  = 0.2
+		air_superiority_detect_factor = 0.2
+		air_agility_factor = 0.2
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		
+		path = {
+			leads_to_tech = Stealth_Strategic_Bomber
+			research_cost_coeff = 1
+		}
+		
+		doctrine = yes	
+
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Stealth_Strategic_Bomber = { #隐身战略轰炸
+		air_strategic_bomber_bombing_factor = 0.4
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+		
+		doctrine = yes	
+
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 0 y = 8 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+	Anti_Ship_Strike_Tactics = { #反舰攻击战术
+		air_nav_efficiency = 0.3
+
+		xp_research_type = air
+		xp_unlock_cost = 250
+
+		
+		doctrine = yes	
+
+		
+		categories = {
+			air_doctrine
+		}
+		
+		folder = {
+			name = air_doctrine_folder
+			position = { x = 2 y = 6 }
+		}
+				
+		ai_will_do = {
+			factor = 100
+		}
+		
+	}
+
+ #陆军学说
+	Integrated_Information_and_Firepower = { #信火一体
+		doctrine_name = "INTEGRATED_INFORMATION_AND_FIREPOWER_DESC"
+		xp_research_type = army
+		
+		xp_unlock_cost = 250
+		enable_tactic = tactic_Suppression_by_Firepower #优势火力压制
+		enable_tactic = tactic_Precision_Fire_Support #精准火力支援
+		category_front_line = { #前线部队
+		    hard_attack = 0.1
+			soft_attack = 0.1
+			recon = 0.05
+		}
+		doctrine = yes
+		allow = {
+			
+		}	
+		xor = {
+			mobile_warfare
+			mass_assault
+			asymetrical_warfare
+		}
+
+		path = {
+			leads_to_tech = Comprehensive_Logistical_Support
+			research_cost_coeff = 1
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		categories = {
+			land_doctrine
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Comprehensive_Logistical_Support = { #综合后勤保障
+		xp_research_type = army
+		xp_unlock_cost = 250
+		supply_consumption_factor = -0.10
+		army_fuel_consumption_factor = -0.10
+		category_support_battalions = {
+			max_organisation = 10
+		}
+		doctrine = yes
+		path = {
+			leads_to_tech = Reform_of_the_Combined_Arms_Army
+			research_cost_coeff = 1
+		}
+		doctrine = yes
+		allow = {
+		}	
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 2
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Reform_of_the_Combined_Arms_Army = { #陆军合成化改革
+		xp_research_type = army
+		xp_unlock_cost = 250
+		
+		modern_armor = { #主战坦克
+			combat_width = -1
+		}
+		light_armor = { #侦察坦克
+			combat_width = -1
+		}
+		amphibious_mechanized_exoskeleton_unit = { #两栖机械化外骨骼营
+			combat_width = -1
+		}
+		mechanized_exoskeleton_unit = { #机械化外骨骼
+			combat_width = -1
+		}
+		light_mechanized_exoskeleton_unit = { #轻型机械化外骨骼
+			combat_width = -1
+		}
+		motorized_exoskeleton_unit = { #摩托化外骨骼
+			combat_width = -1
+		}
+		amphibious_mechanized = { #两栖机械化
+			combat_width = -1
+		}
+		mechanized = { #步战
+			combat_width = -1
+		}
+		light_mechanized = {#轻机械化
+			combat_width = -1
+		}
+		motorized = { #摩托化
+			combat_width = -1
+		}
+		additional_brigade_column_size = 1
+		doctrine = yes
+		path = {
+			leads_to_tech = Concentrated_Penetration
+			research_cost_coeff = 1
+		}
+		doctrine = yes
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 4
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Concentrated_Penetration = { #集中穿插
+		xp_research_type = army
+		xp_unlock_cost = 250
+		enable_tactic = tactic_Large_Scale_Penetration #大规模穿插
+		enable_tactic = tactic_Large_Scale_Penetration_defense #防御性穿插
+		army_org_factor = 0.2
+		combat_width = -0.1
+		army_speed_factor = 0.1
+		land_reinforce_rate = 0.05
+		breakthrough_factor = 0.1
+		org_loss_when_moving = -0.2
+		doctrine = yes
+		path = {
+			leads_to_tech = Joint_Staff
+			research_cost_coeff = 1
+		}
+		allow = {
+			has_country_flag = PRC_modernized_army_flag
+		}
+		doctrine = yes
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 6
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Joint_Staff = { #联合参谋部
+		xp_research_type = army
+		xp_unlock_cost = 250
+		max_command_power = 150
+		command_power_gain_mult  = 0.5
+		army_org_factor = 0.1
+		max_planning_factor = 0.15
+		planning_speed = 0.3
+		doctrine = yes
+		path = {
+			leads_to_tech = Precision_Air_Support
+			research_cost_coeff = 1
+		}
+		doctrine = yes
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 8
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Precision_Air_Support = { #精准空军支援
+		xp_research_type = army
+		xp_unlock_cost = 250
+		army_bonus_air_superiority_factor = 0.1
+		ground_attack_factor = 0.1
+		doctrine = yes
+		path = {
+			leads_to_tech = Air_Ground_Integrated_Strike
+			research_cost_coeff = 1
+		}
+		doctrine = yes
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 10
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Air_Ground_Integrated_Strike = { #空地一体化打击
+		xp_research_type = army
+		xp_unlock_cost = 250
+		ground_attack_factor = 0.1
+		modern_tank_destroyer_brigade = { #反坦克
+			hard_attack = 0.2
+		}
+		modern_sp_artillery_brigade = { #自行火炮
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		motorized_rocket_brigade = {
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+	    paratrooper = { #空中突击步兵
+			soft_attack = 0.1
+			hard_attack = 0.1
+			breakthrough = 0.2
+			
+		}
+
+		doctrine = yes
+		path = {
+			leads_to_tech = Armor_Breakthrough
+			research_cost_coeff = 1
+		}
+		doctrine = yes
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 12
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	Armor_Breakthrough = { #装甲冲击
+		xp_research_type = army
+		xp_unlock_cost = 250
+		modern_armor = { #主战坦克
+			max_organisation = 5
+			breakthrough = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		light_armor = { #侦察坦克
+			max_organisation = 5
+			breakthrough = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		mechanized = { #步战
+			max_organisation = 5
+			breakthrough = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		light_mechanized = { #机械化
+			max_organisation = 7
+			breakthrough = 0.1
+			soft_attack = 0.1
+			hard_attack = 0.1
+		}
+		motorized_exoskeleton_unit = { #摩托化外骨骼
+		  max_organisation = 5
+		  breakthrough = 0.1
+		  soft_attack = 0.1
+		  hard_attack = 0.1
+		}
+		mechanized_exoskeleton_unit = { #机械化外骨骼
+		  max_organisation = 7
+		  breakthrough = 0.1
+		  soft_attack = 0.1
+		  hard_attack = 0.1
+		}
+		light_mechanized_exoskeleton_unit = { #轻型机械化外骨骼
+		  max_organisation = 5
+		  breakthrough = 0.1
+		  soft_attack = 0.1
+		  hard_attack = 0.1
+		}
+		amphibious_mechanized_exoskeleton_unit = { #两栖机械化外骨骼营
+		  max_organisation = 5
+		  breakthrough = 0.1
+		  soft_attack = 0.1
+		  hard_attack = 0.1
+		}
+		doctrine = yes
+		doctrine = yes
+		categories = {
+			land_doctrine
+		}
+		folder = {
+			name = land_doctrine_folder
+			position = {
+				x = 0
+				y = 14
+			}
+		}
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+ #海军学说
+	Formation_Navigation = { #编队航行
+		doctrine_name = "TITLE_DUAL_CARRIER_BATTLE_GROUP"
+		
+		battleship = {
+			max_organisation = 60		
+		}
+		battle_cruiser = {
+			max_organisation = 60		
+		}
+		heavy_cruiser = {
+			max_organisation = 60		
+		}
+		submarine = {
+			max_organisation = 60
+		}
+		destroyer = {
+			max_organisation = 60
+		}
+		carrier = {
+			max_organisation = 60
+		}
+
+		path = {
+			leads_to_tech = Stealth_Design
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		
+		xor = {
+			fleet_in_being
+			trade_interdiction
+			base_strike
+		}
+
+		doctrine = yes	
+
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 0 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Stealth_Design = { #隐形设计
+		navy_visibility = -0.3
+
+		path = {
+			leads_to_tech = Advanced_Radar_Systems
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 2 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Advanced_Radar_Systems = { #先进雷达系统
+		battleship = {
+			max_organisation = 40		
+		}
+		battle_cruiser = {
+			max_organisation = 40		
+		}
+		heavy_cruiser = {
+			max_organisation = 40		
+		}
+		carrier = {
+			max_organisation = 40
+		}
+		naval_detection = 0.4
+		navy_submarine_detection_factor = 0.4
+
+		path = {
+			leads_to_tech = Dominance_of_Electromagnetic_Spectrum_at_Sea
+			research_cost_coeff = 1
+		}	
+		
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 4 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Dominance_of_Electromagnetic_Spectrum_at_Sea = { #海上电磁权主导
+		naval_enemy_fleet_size_ratio_penalty_factor = 0.2
+		POSITIONING = 0.25
+		allow = {
+			has_country_flag = PRC_a_blue_water_navy_1_flag
+		}	
+
+
+		path = {
+			leads_to_tech = Chinese_Aegis
+			research_cost_coeff = 1
+		}
+		path = {
+			leads_to_tech = Dual_Carrier_Coordination_Strike
+			research_cost_coeff = 1
+		}
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 0 y = 6 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Chinese_Aegis = { #中华神盾
+		navy_anti_air_attack_factor = 0.2
+		naval_defense_factor = 0.2
+		submarine = {
+			max_strength = 0.2
+		}
+		destroyer = {
+			max_strength = 0.2
+		}
+		light_cruiser = {
+			max_strength = 0.2
+		}
+		battleship = {
+			max_strength = 0.2
+		}
+		heavy_cruiser = {
+			max_strength = 0.2
+		}
+		battle_cruiser = {
+			max_strength = 0.2
+		}
+		carrier = {
+			max_strength = 0.2
+		}
+		path = {
+			leads_to_tech = Arsenal_Ship_Offensive
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Arsenal_Ship_Offensive = { #武库舰攻势
+		navy_capital_ship_attack_factor = 0.2
+		
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = -2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Dual_Carrier_Coordination_Strike = { #双航母协同打击
+		sortie_efficiency = 0.3
+
+		path = {
+			leads_to_tech = Advanced_Electromagnetic_Aircraft_Launch_System
+			research_cost_coeff = 1
+		}
+		
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 8 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Advanced_Electromagnetic_Aircraft_Launch_System = { #先进电磁弹射
+		sortie_efficiency = 0.3
+		navy_carrier_air_agility_factor = 0.2
+		
+		path = {
+			leads_to_tech = Carrier_Based_Aviation_Training
+			research_cost_coeff = 1
+		}
+
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 10 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	Carrier_Based_Aviation_Training = { #舰载航空兵训练
+		navy_carrier_air_agility_factor = 0.2
+		naval_strike_targetting_factor = 0.3
+
+		
+		xp_research_type = navy
+		xp_unlock_cost = 250
+		doctrine = yes	
+		research_cost = 3
+		
+		categories = {
+			naval_doctrine
+		}
+		
+		folder = {
+			name = naval_doctrine_folder
+			position = { x = 2 y = 12 }
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+}

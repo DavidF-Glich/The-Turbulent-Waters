@@ -1,0 +1,17 @@
+﻿l_simp_chinese:
+#民族精神
+ POL_legacy_idea: "波兰的遗产"
+ POL_eurosceptic_divide_idea: "疑欧派分裂"
+ POL_nationalism_idea: "波兰民族主义"
+ POL_splintered_society_idea: "分裂社会"
+ POL_not_yet_lost_idea: "仍未灭亡"
+ POL_border_crisis: "边境危机"
+ POL_spirit_of_the_warsaw_uprising: "抵抗精神"
+#党派
+ PLD_nationalist_association_of_army: "武装斗争联盟(毕苏斯基运动)"
+ PLD_nationalist_association_of_army_long: "武装斗争联盟(毕苏斯基运动)(Association for Armed Struggle (Pilsudski Movement))"
+ PLD_fascist_association_of_army: "武装斗争联盟(重生运动)"
+ PLD_fascist_association_of_army_long: "武装斗争联盟(重生运动)(Association for Armed Struggle (Rebirth Movement))"
+ PLD_authdem_association_of_army: "武装斗争联盟(民主派)"
+ PLD_authdem_association_of_army_long: "武装斗争联盟(民主派)(Association for Armed Struggle (Democratic Caucus))"
+ hos_marshal_of_poland: "波兰元帅"

@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+ buy_industrial_complex_action: "§C投资民用工厂§!"
+ buy_industrial_complex_action_desc: "“我们要争这口气，超过美国。”——毛泽东"
+ buy_industrial_complex_action_flag: "使用过的$buy_industrial_complex_action$经济行动。"
+ buy_industrial_complex_action_tooltip: "无冷却时间剩余（当前天数为：[?buy_industrial_complex_action_flag:days_left|Y0]）"
+
+ buy_arms_factory_action: "§C投资军用工厂§!"
+ buy_arms_factory_action_desc: "“没有现代工业，就没有现代军事力量，就没有国家安全和尊严。”——习近平"
+ buy_arms_factory_action_flag: "使用过的$buy_arms_factory_action$经济行动。"
+ buy_arms_factory_action_tooltip: "无冷却时间剩余（当前天数为：[?buy_arms_factory_action_flag:days_left|Y0]）"
+
+ buy_pp_action: "§1换取政治支持§!"
+ buy_pp_action_desc: "“金钱是人类发明的最伟大的自由工具，只有金钱会向穷人开放，而权力永远不会。”——哈耶克"
+ buy_pp_action_flag: "使用过的$buy_pp_action$经济行动。"
+ buy_pp_action_tooltip: "无冷却时间剩余（当前天数为：[?buy_pp_action_flag:days_left|Y0]）"

@@ -1,0 +1,22 @@
+	ideas = {
+		country = {
+			ARZ_unregulated_border = {
+				picture = USA_border_patrol
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				modifier = {
+					stability_factor = -0.25
+					army_org = -5
+					army_speed_factor = -0.05
+				}
+			}
+		}
+	}

@@ -1,0 +1,97 @@
+USA_america_first_strategy = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		has_country_leader = USA_donald_trump_char
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+	ai_strategy = {
+		type = area_priority
+		id = north_america
+		value = 1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = europe
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = asia
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = south_america
+		value = -1000
+	}
+	ai_strategy = {
+		type = area_priority
+		id = oceania
+		value = -1000
+	}
+	ai_strategy = {
+		type = garrison
+		value = 1000
+	}
+	# ai_strategy = {
+	# 	type = force_defend_ally_borders
+	# 	id = FRA
+	# 	value = -1000
+	# }
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		value = 1000
+		id = 931
+	}
+}
+
+USA_fuck_the_russians = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		has_global_flag = Russo_Ukrainian_War
+		NOT = {
+			has_country_leader = USA_donald_trump_char
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = support
+		id = UKR
+		value = 200
+	}
+	ai_strategy = {
+		type = befriend
+		id = UKR
+		value = 100
+	}
+}
+
+NATO_fuck_the_russians = {
+	allowed = {
+		always = yes
+	}
+	enable = {
+		has_global_flag = Russo_Ukrainian_War
+		NOT = {
+			tag = HUN
+		}
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = UKR
+		value = 50
+	}
+	ai_strategy = {
+		type = befriend
+		id = UKR
+		value = 50
+	}
+}

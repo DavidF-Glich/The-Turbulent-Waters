@@ -1,0 +1,28 @@
+Israeli_Hamas_war_category = {
+	War_Propaganda_decision = {
+		icon = generic_speech
+		visible = {
+			always = yes
+		}
+		available = {
+			OR = {
+				has_war_with = PAK
+				has_war_with = ISR
+			}
+			
+			has_stability < 0.7
+			has_war_support < 0.8
+		}
+		priority = 1
+		cost = 20
+		days_remove = 14
+		days_re_enable = 28
+		modifier = {
+			political_power_factor = -0.2
+		}
+		remove_effect = {
+			add_stability = 0.02
+			add_war_support = 0.03
+		}
+	}
+}

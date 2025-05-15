@@ -1,0 +1,17 @@
+UKR_Eastern_Border_cat = {
+	icon = GFX_SOV_influence_RUS
+	priority = 5
+	visible = {
+		OR = {
+			tag = UKR
+			tag = NOV
+			tag = DPR
+			tag = SOV
+		}
+		NOT = {
+			UKR = {
+				has_war_with = SOV
+			}
+		}		
+	}
+}

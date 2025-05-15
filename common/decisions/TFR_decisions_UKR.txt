@@ -1,0 +1,391 @@
+UKR_Eastern_Border_cat = {
+	UKR_Quick_Deploy_decision = {
+		icon = generic
+		visible = {
+			OR = {
+				tag = NOV
+				tag = UKR
+				tag = DPR
+			}
+		}
+		cost = 10
+		days_remove = 15
+		days_re_enable = 25
+		available = {
+			command_power > 10
+		}
+		complete_effect = {
+			add_command_power = -10
+		}
+		modifier = {
+			army_speed_factor = 0.2
+			org_loss_when_moving = -0.2
+			supply_consumption_factor = 0.05
+		}
+		remove_effect = {
+			add_command_power = 5
+		}
+	}
+	UKR_Launch_a_Strike_decision = {
+		icon = generic
+		visible = {
+			NOT = {
+				tag = SOV
+			}
+		}
+		available = {
+			command_power > 15
+		}
+		cost = 20
+		days_remove = 1
+		days_re_enable = 50
+		complete_effect = {
+			add_command_power = -15
+			country_event = ukr_border.7
+		}
+	}
+	UKR_Launch_a_Strike_1090_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			divisions_in_border_state = {
+				size > 0
+				state = 1090
+				border_state = 228
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = { 
+					state = 1090
+					num_provinces = 3
+					on_win = ukr_border.1
+					on_lose = ukr_border.2
+					on_cancel = ukr_border.3
+				}
+				defender = { 
+					state = 228
+					num_provinces = 3
+					on_win = ukr_border.4
+					on_lose = ukr_border.5
+					on_cancel = ukr_border.6
+				}
+			}
+
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+	UKR_Launch_a_Strike_1091_228_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			divisions_in_border_state = {
+				size > 0
+				state = 1091
+				border_state = 228
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = { 
+					state = 1091
+					num_provinces = 1
+					on_win = ukr_border.1
+					on_lose = ukr_border.2
+					on_cancel = ukr_border.3
+				}
+				defender = { 
+					state = 228
+					num_provinces = 1
+					on_win = ukr_border.4
+					on_lose = ukr_border.5
+					on_cancel = ukr_border.6
+				}
+			}
+
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+	UKR_Launch_a_Strike_1091_227_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			divisions_in_border_state = {
+				size > 0
+				state = 1091
+				border_state = 227
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = { 
+					state = 1091
+					num_provinces = 1
+					on_win = ukr_border.1
+					on_lose = ukr_border.2
+					on_cancel = ukr_border.3
+				}
+				defender = { 
+					state = 227
+					num_provinces = 1
+					on_win = ukr_border.4
+					on_lose = ukr_border.5
+					on_cancel = ukr_border.6
+				}
+			}
+
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+	UKR_Launch_a_Strike_1374_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			divisions_in_border_state = {
+				size > 0
+				state = 1374
+				border_state = 227
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = { 
+					state = 1374
+					num_provinces = 4
+					on_win = ukr_border.1
+					on_lose = ukr_border.2
+					on_cancel = ukr_border.3
+				}
+				defender = { 
+					state = 228
+					num_provinces = 5
+					on_win = ukr_border.4
+					on_lose = ukr_border.5
+					on_cancel = ukr_border.6
+				}
+			}
+
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+	DPR_Launch_a_Strike_1374_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			divisions_in_border_state = {
+				size > 0
+				state = 227
+				border_state = 1374
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = { 
+					state = 227
+					num_provinces = 1
+					on_win = ukr_border.1
+					on_lose = ukr_border.2
+					on_cancel = ukr_border.3
+				}
+				defender = { 
+					state = 1374
+					num_provinces = 1
+					on_win = ukr_border.4
+					on_lose = ukr_border.5
+					on_cancel = ukr_border.6
+				}
+			}
+
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+	NOV_Launch_a_Strike_1090_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			divisions_in_border_state = {
+				size > 0
+				state = 228
+				border_state = 1090
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			start_border_war = {
+				change_state_after_war = no
+				attacker = { 
+					state = 228
+					num_provinces = 1
+					on_win = ukr_border.1
+					on_lose = ukr_border.2
+					on_cancel = ukr_border.3
+				}
+				defender = { 
+					state = 1090
+					num_provinces = 1
+					on_win = ukr_border.4
+					on_lose = ukr_border.5
+					on_cancel = ukr_border.6
+				}
+			}
+
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+	Launch_a_Strike_1091_mission = {
+		icon = generic
+		is_good = yes
+		days_mission_timeout = 14
+		visible = {
+			always = no
+		}
+		activation = {
+			always = no
+		}
+		available = {
+			if = {
+				limit = { 
+					tag = DPR
+				}
+				divisions_in_border_state = {
+					size > 0
+					state = 227
+					border_state = 1091
+				}
+			}
+			else_if = {
+				limit = { 
+					tag = NOV
+				}
+				divisions_in_border_state = {
+					size > 0
+					state = 228
+					border_state = 1091
+				}
+			}
+		}
+		selectable_mission = yes
+		complete_effect = {
+			if = {
+				limit = { 
+					tag = DPR
+				}
+				start_border_war = {
+					change_state_after_war = no
+					attacker = { 
+						state = 227
+						num_provinces = 1
+						on_win = ukr_border.1
+						on_lose = ukr_border.2
+						on_cancel = ukr_border.3
+					}
+					defender = { 
+						state = 1091
+						num_provinces = 1
+						on_win = ukr_border.4
+						on_lose = ukr_border.5
+						on_cancel = ukr_border.6
+					}
+				}
+	
+			}
+			else_if = {
+				limit = { 
+					tag = NOV
+				}
+				start_border_war = {
+					change_state_after_war = no
+					attacker = { 
+						state = 228
+						num_provinces = 1
+						on_win = ukr_border.1
+						on_lose = ukr_border.2
+						on_cancel = ukr_border.3
+					}
+					defender = { 
+						state = 1091
+						num_provinces = 1
+						on_win = ukr_border.4
+						on_lose = ukr_border.5
+						on_cancel = ukr_border.6
+					}
+				}
+	
+			}
+		}
+		timeout_effect = {
+			add_political_power = -20
+			add_war_support = -0.02
+		}
+	}
+}

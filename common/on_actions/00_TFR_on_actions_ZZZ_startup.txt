@@ -1,0 +1,1147 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			ZZZ = {
+				tension_setup = yes
+				Global_Conflicts_Initalize = yes
+			}
+			every_country = {
+				set_variable = {
+					TFR_cold_war_ui_var = 1
+				}
+				if = {
+					limit = {
+						is_ai = no
+						has_content_tag = no
+					}
+					country_event = generic.20
+				}
+			}
+			log = "The Turbulent Waters \"Dev\" May 8th"
+			set_global_flag = TFR_startup_global
+			#国际市场，删掉！
+			every_country = {
+				add_ideas = i_dont_wanna_market
+			}
+			#初始介绍
+			every_country = {
+				limit = {
+					is_ai = no
+				}
+				set_variable = {
+					show_up = 0
+				}
+				set_variable = {
+					show_up_info = 0
+				}
+				set_variable = {
+					show_up_unit = 0
+				}
+				set_variable = {
+					show_up_money = 0
+				}
+				set_variable = {
+					show_up_credit = 0
+				}
+				set_variable = {
+					show_up_country = 1
+				}
+			}
+			every_possible_country = {
+				limit = {
+					is_ai = yes
+				}
+				set_variable = {
+					show_up = 1
+				}
+				set_variable = {
+					show_up_info = 0
+				}
+				set_variable = {
+					show_up_unit = 0
+				}
+				set_variable = {
+					show_up_money = 0
+				}
+				set_variable = {
+					show_up_credit = 0
+				}
+				set_variable = {
+					show_up_country = 1
+				}
+			}
+			#Adds political party political power modifier
+			for_each_scope_loop = {
+				array = countries
+				#Party Popularity Setup
+				set_variable = {
+					coalition_pp_gain = 0
+				}
+				if = {
+					limit = {
+						has_variable = political_power_ideology_var
+					}
+					map_party_popularity_PP_gain_to_ideology = yes
+				}
+				else = {
+					default_party_popularity_PP_gain = yes
+				}
+				add_dynamic_modifier = {
+					modifier = party_popularity_dynamic_modifier
+				}
+			}
+			#Political coalition setup	执政联盟
+			every_country = {
+				limit = {
+					has_country_flag = global_ass_lol
+				}
+				send_embargo = SOV
+				send_embargo = PER
+				send_embargo = PRK
+				send_embargo = VEN
+				send_embargo = TAL
+				send_embargo = HRL
+				send_embargo = SYR
+				send_embargo = PAL
+				send_embargo = HEZ
+				send_embargo = SHB
+			}
+			BUL = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+			}
+			JAP = {
+				scoped_play_song = "tno_song_pacific_hatred"
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+				send_embargo = PAL
+				send_embargo = HEZ
+				send_embargo = SHB
+			}
+			PRK = {
+				scoped_play_song = "tno_song_experiments"
+				set_temp_variable = {
+					coalition_partner_var_temp = token:communist
+				}
+				add_to_coalition = yes
+			}
+			KOR = {
+				scoped_play_song = "tno_song_pulling_strings"
+			}
+			ALB = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+			}
+			IRE = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				send_embargo = PAL
+				send_embargo = HEZ
+				send_embargo = SHB
+			}
+			AST = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				send_embargo = PAL
+				send_embargo = SHB
+				send_embargo = HEZ
+			}
+			NZL = {
+				send_embargo = PAL
+				send_embargo = SHB
+				send_embargo = HEZ
+			}
+			VEN = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:totalitarian_socialist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes
+			}
+			CRO = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			CZE = {
+				add_dynamic_modifier = {
+					modifier = party_popularity_dynamic_modifier_coalition
+				}
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			GER = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			HOL = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			NOR = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+			}
+			SER = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+			}
+			SWI = {
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+			}	
+			SOV = {
+				random_list = {
+					1 = {
+						scoped_play_song = "tno_song_drums_of_hyperborea"
+					}
+					1 = {
+						scoped_play_song = "tno_song_scramble"
+					}
+					1 = {
+						scoped_play_song = "tno_song_remembering_in_moskowien"
+					}
+					1 = {
+						scoped_play_song = "Red_Dusk"
+					}
+				}
+				if = {
+					limit = { 
+						is_historical_focus_on = no
+					}
+					random = {
+						chance = 20
+						country_event = {
+							id = russia.6
+							days = 365
+							random_days = 150
+						}
+					}
+				}
+			}
+			USA = {
+				
+				random_list = {
+					1 = {
+						scoped_play_song = "communist_america"
+					}
+					1 = {
+						scoped_play_song = "confederate_flags"
+					}
+				}
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+				#疫情初始化
+				set_variable = {
+					var = mask_supply_var
+					value = 0
+				}
+				set_variable = {
+					var = mask_weekly_gain_var
+					value = 0
+				}
+				set_variable = {
+					var = USA_the_movement_states_var
+					value = 0
+				}
+				set_variable = {
+					var = USA_the_movement_states_loc_var
+					value = 0
+				}
+				set_variable = {
+					var = USA_covid_states_var
+					value = 0
+				}
+				#两院数字
+				set_variable = {
+					var = USA_house_seats_var
+					value = 435
+				}
+				set_variable = {
+					var = USA_house_support_var
+					value = 197
+				}
+				set_variable = {
+					var = USA_house_seats_gop_var
+					value = 197
+				}
+				set_variable = {
+					var = USA_house_support_gop_var
+					value = 197
+				}
+				set_variable = {
+					var = USA_house_seats_dem_var
+					value = 233
+				}
+				set_variable = {
+					var = USA_house_support_dem_var
+					value = 0
+				}
+				set_variable = {
+					var = USA_house_seats_ind_var
+					value = 5
+				}
+				set_variable = {
+					var = USA_house_support_ind_var
+					value = 0
+				}
+				set_variable = {
+					var = USA_senate_seats_var
+					value = 100
+				}
+				set_variable = {
+					var = USA_senate_support_var
+					value = 51
+				}
+				set_variable = {
+					var = USA_senate_seats_gop_var
+					value = 52
+				}
+				set_variable = {
+					var = USA_senate_support_gop_var
+					value = 51
+				}
+				set_variable = {
+					var = USA_senate_seats_dem_var
+					value = 46
+				}
+				set_variable = {
+					var = USA_senate_support_dem_var
+					value = 0
+				}
+				set_variable = {
+					var = USA_senate_seats_ind_var
+					value = 2
+				}
+				set_variable = {
+					var = USA_senate_support_ind_var
+					value = 0
+				}
+				#新冠
+				set_variable = {
+					var = USA_coronavirus_outbreak_in_state_mission_var
+					value = 6
+				}
+				#反对派（原版TFR）
+				set_variable = {
+					var = USA_opposistion_action_mission_mission_var
+					value = 34
+				}
+
+			}
+			UKR = {
+				scoped_play_song = "tno_song_so_far_from_god"
+			}
+			PRC = {
+				
+				set_temp_variable = {
+					coalition_partner_var_temp = token:market_liberal
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes		
+				set_temp_variable = {
+					coalition_partner_var_temp = token:authoritarian_democrat
+				}
+				add_to_coalition = yes	
+				set_temp_variable = {
+					coalition_partner_var_temp = token:libertarian_socialist
+				}
+				add_to_coalition = yes		
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes		
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_liberal
+				}
+				add_to_coalition = yes
+				#if = {
+					#limit = { 
+						#has_game_rule = {
+						#	rule = oh_no_sweden
+						#	option = people_commissar
+						#}
+					#}
+					#puppet = SWE
+				#}
+				#else_if = {
+					#limit = { 
+						#has_game_rule = {
+							#rule = oh_no_sweden
+							#option = annexed
+						#}
+					#}
+					#annex_country = {
+						#target = SWE
+					#}
+				#}
+			}
+
+			ENG = {
+				scoped_play_song = "tno_song_fall_britannia"
+			}
+
+			PRK = {
+				scoped_play_song = "Red_Dusk"
+			}
+			every_country = {
+				limit = {
+					is_ai = yes
+					is_relavent_tag = no #countries with skeleton content and are important enough that they need to produce their own divisions
+				}
+				add_ideas = ai_disabled_production
+				country_lock_all_division_template = yes
+				set_research_slots = 0
+			}
+
+#		瑞典彩蛋——未启用
+#			SWE = {
+#				if = {
+#					limit = { 
+#						has_game_rule = {
+#							rule = oh_no_sweden
+#							option = no
+#						}
+#					}
+#					set_temp_variable = {
+#						coalition_partner_var_temp = token:social_liberal
+#					}
+#					add_to_coalition = yes	
+#				}
+#				else_if = {
+#					limit = { 
+#						has_game_rule = {
+#							rule = oh_no_sweden
+#							option = people_commissar
+#						}
+#					}
+#					scoped_play_song = "tno_song_burgundian_lullaby"
+#					set_cosmetic_tag = SWE_Paradox
+#					promote_character = SWE_one_punch_man_char
+#					set_party_name = {
+#						ideology = totalitarian_socialist
+#						long_name = SWE_Paradox_totalitarian_socialist_party_long
+#						name = SWE_Paradox_totalitarian_socialist_party
+#					}
+#					set_party_name = {
+#						ideology = communist
+#						long_name = SWE_Paradox_communist_party_long
+#						name = SWE_Paradox_communist_party
+#					}
+#					set_party_name = {
+#						ideology = libertarian_socialist
+#						long_name = SWE_Paradox_libertarian_socialist_party_long
+#						name = SWE_Paradox_libertarian_socialist_party
+#					}
+#					set_party_name = {
+#						ideology = social_democrat
+#						long_name = SWE_Paradox_social_democrat_party_long
+#						name = SWE_Paradox_social_democrat_party
+#					}
+#					set_party_name = {
+#						ideology = social_liberal
+#						long_name = SWE_Paradox_social_liberal_party_long
+#						name = SWE_Paradox_social_liberal_party
+#					}
+#					set_party_name = {
+#						ideology = market_liberal
+#						long_name = SWE_Paradox_market_liberal_party_long
+#						name = SWE_Paradox_market_liberal_party
+#					}
+#					set_party_name = {
+#						ideology = conservative
+#						long_name = SWE_Paradox_conservative_party_long
+#						name = SWE_Paradox_conservative_party
+#					}
+#					set_party_name = {
+#						ideology = authoritarian_democrat
+#						long_name = SWE_Paradox_authoritarian_democrat_party_long
+#						name = SWE_Paradox_authoritarian_democrat_party
+#					}
+#					set_party_name = {
+#						ideology = nationalist
+#						long_name = SWE_Paradox_nationalist_party_long
+#						name = SWE_Paradox_nationalist_party
+#					}
+#					set_party_name = {
+#						ideology = fascist
+#						long_name = SWE_Paradox_fascist_party_long
+#						name = SWE_Paradox_fascist_party
+#					}
+#					set_party_name = {
+#						ideology = national_socialist
+#						long_name = SWE_Paradox_national_socialist_party_long
+#						name = SWE_Paradox_national_socialist_party
+#					}
+#					load_focus_tree = SWE_pdx
+#				}
+#			}	
+#			if = {
+#				limit = { 
+#					has_game_rule = {
+#						rule = oh_no_sweden
+#						option = annexed
+#					}
+#				}
+#				every_state = {
+#					limit = {
+#						is_core_of = SWE
+#					}
+#					remove_core_of = SWE
+#					add_core_of = PRC
+#					random = {
+#						chance = 10
+#						add_claim_by = CHI
+#					}
+#				}				
+#			}
+#			if = {
+#				limit = { 
+#					OR = {
+#						has_game_rule = {
+#							rule = oh_no_sweden
+#							option = annexed
+#						}
+#						has_game_rule = {
+#							rule = oh_no_sweden
+#							option = people_commissar
+#						}
+#					}
+#				}
+#				145 = {
+#					set_demilitarized_zone = no
+#				}
+#			}
+
+		}
+		effect = {
+			#原版TFR的美国内战相关内容
+			every_country = {
+				if = {
+					limit = {
+						tag = USA
+					}
+					set_variable = {
+						var = legit_var
+						value = 0
+					}
+					set_variable = {
+						var = legit_min_var
+						value = -1
+					}
+					set_variable = {
+						var = legit_max_var
+						value = 1
+					}
+					set_variable = {
+						var = legit_dynamic_var
+						value = 0
+					}
+					every_state = {
+						if = {
+							limit = {
+								OR = {
+									state = 936 #Florida Capital
+									state = 357 #Massachusetts Capital
+									state = 360 #Pennsylvania Capital
+									state = 931 #DC Capital
+									state = 1070 #Virginia Capital
+									state = 1246 #Ohio Capital
+									state = 982 #Louisanna Capital
+									state = 372 #Arkansas Capital
+									state = 1013 #Alabama Capital
+									state = 1009 #Missippi Capital
+									state = 1017 #Georgia Capital
+									state = 1024 #South Carolina Capital
+									state = 363 #North Carolina Capital
+									state = 1001 #Kentucky Capital
+									state = 1077 #Connecticut Capital
+									state = 794 #New Hampshire Capital
+									state = 793 #Vermont Capital
+									state = 395 #Illinois Capital
+									state = 1073 #Michigan Capital
+									state = 373 #Missouri Capital
+									state = 1081 #Washington Capital
+									state = 941 #Northern California\California Capital
+									state = 930 #Southern California Capital
+									state = 385 #Oregon Capital
+									state = 387 #Idaho Capital
+									state = 382 #Colorado Capital
+									state = 1100 #Utah Capital
+									state = 1096 #Nevada Capital
+									state = 388 #Montana Capital
+									state = 376 #New Mexico Capital
+									state = 983 #Arizona Capital
+									state = 961 #Southern Texas\Texas Capital
+									state = 956 #Northern Texas Capital
+									state = 383 #Kansas Capital
+									state = 1236 #Okalahoma Capital
+									state = 629 #Hawaii Capital
+									state = 463 #Alasaka Capital
+									state = 1143 #Wyoming Capital
+									state = 384 #Nebraska Capital
+									state = 390 #South Dakota\Dakota Capital
+									#state = 389 #North Dakota Capital
+									state = 1243 #Minnesota Capital
+									state = 392 #Iowa Capital
+									state = 1244 #Wisconsin Capital
+									state = 1151 #Indiana Capital
+									state = 792 #Maine Capital
+									state = 359 #New Jersey
+									state = 361 #Maryland Capital
+									state = 896 #West Virginia Capital
+									state = 1248 #Tennesee Capital
+									state = 1116 #Upstate New York Capital
+									state = 918 #New York City Capital
+									state = 988 #Navajo Capital
+								}
+							}
+							set_state_flag = USA_capital_state
+							add_to_array = {
+								array = USA.coreable_states_capitals
+								value = THIS.id
+							}
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 358
+									state = 357
+									state = 1069
+									state = 1068
+									state = 931
+									state = 1070
+									state = 1246
+									state = 1245
+									state = 1247
+									state = 393
+									state = 1093
+									state = 1099
+									state = 1243
+									state = 1244
+									state = 1036
+									state = 993
+									state = 941
+									state = 932
+									state = 1039
+									state = 930
+									state = 952
+									state = 1097
+									state = 1100
+									state = 382
+									state = 376
+									state = 960
+									state = 959
+									state = 961
+									state = 958
+									state = 957
+									state = 956
+									state = 978
+									state = 1009
+									state = 1012
+									state = 1017
+									state = 937
+									state = 939
+									state = 940
+									state = 1092
+									state = 1005
+									state = 1023
+									state = 1008
+									state = 1248
+									state = 1000
+									state = 1234
+									state = 1235
+								}
+							}
+							set_state_flag = USA_major_city_state
+						}
+						if = {
+							limit = {
+								USA_is_northern_texas_state = yes
+							}
+							set_state_flag = USA_northern_texas_state
+						}
+						if = {
+							limit = {
+								USA_is_southern_texas_state = yes
+							}
+							set_state_flag = USA_southern_texas_state
+						}
+						if = {
+							limit = {
+								USA_is_new_mexico_state = yes
+							}
+							set_state_flag = USA_new_mexico_state
+						}
+						if = {
+							limit = {
+								USA_is_arizona_state = yes
+							}
+							set_state_flag = USA_arizona_state
+						}
+						if = {
+							limit = {
+								USA_is_nevada_state = yes
+							}
+							set_state_flag = USA_nevada_state
+						}
+						if = {
+							limit = {
+								USA_is_utah_state = yes
+							}
+							set_state_flag = USA_utah_state
+						}
+						if = {
+							limit = {
+								USA_is_colorado_state = yes
+							}
+							set_state_flag = USA_colorado_state
+						}
+						if = {
+							limit = {
+								USA_is_montana_state = yes
+							}
+							set_state_flag = USA_montana_state
+						}
+						if = {
+							limit = {
+								USA_is_idaho_state = yes
+							}
+							set_state_flag = USA_idaho_state
+						}
+						if = {
+							limit = {
+								USA_is_oklahoma_state = yes
+							}
+							set_state_flag = USA_oklahoma_state
+						}
+						if = {
+							limit = {
+								USA_is_nebraska_state = yes
+							}
+							set_state_flag = USA_nebraska_state
+						}
+						if = {
+							limit = {
+								USA_is_minnesota_state = yes
+							}
+							set_state_flag = USA_minnesota_state
+						}
+						if = {
+							limit = {
+								USA_is_wisconsin_state = yes
+							}
+							set_state_flag = USA_wisconsin_state
+						}
+						if = {
+							limit = {
+								USA_is_tennessee_state = yes
+							}
+							set_state_flag = USA_tennesse_state
+						}
+						if = {
+							limit = {
+								USA_is_ohio_state = yes
+							}
+							set_state_flag = USA_ohio_state
+						}
+						if = {
+							limit = {
+								USA_is_oregon_state = yes
+							}
+							set_state_flag = USA_oregon_state
+						}
+						if = {
+							limit = {
+								USA_is_northern_california_state = yes
+							}
+							set_state_flag = USA_northern_california_state
+						}
+						if = {
+							limit = {
+								USA_is_southern_california_state = yes
+							}
+							set_state_flag = USA_southern_california_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 386
+									state = 1036
+									state = 1082
+									state = 1083
+									state = 1081									#Washington Capital
+								}
+							}
+							set_state_flag = USA_washington_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1146
+									state = 1147
+									state = 381
+									state = 1143									#Wyoming Capital
+								}
+							}
+							set_state_flag = USA_wyoming_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1093
+									state = 393
+									state = 1074
+									state = 1076
+									state = 1075
+									state = 1072
+									state = 1073									#Michigan Capital
+								}
+							}
+							set_state_flag = USA_michigan_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1071
+									state = 1124
+									state = 1125
+									state = 373									#Missouri Capital
+								}
+							}
+							set_state_flag = USA_missouri_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1099
+									state = 1119
+									state = 1121
+									state = 1120
+									state = 395									#Illinois Capital
+								}
+							}
+							set_state_flag = USA_illinois_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 392
+									state = 1134									#Iowa
+								}
+							}
+							set_state_flag = USA_iowa_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 361
+									state = 931									#Maryland
+								}
+							}
+							set_state_flag = USA_maryland_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1175
+									state = 390									#South Dakota Capital
+								}
+							}
+							set_state_flag = USA_south_dakota_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 389
+									state = 1239									#North Dakota Capital
+								}
+							}
+							set_state_flag = USA_north_dakota_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1068
+									state = 1069
+									state = 1173
+									state = 1174
+									state = 360									#Pennsylvania Capital
+								}
+							}
+							set_state_flag = USA_pennsylvania_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1080
+									state = 1079
+									state = 793									#Vermont Capital
+								}
+							}
+							set_state_flag = USA_vermont_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1078
+									state = 357									#Massachusetts Capital
+								}
+							}
+							set_state_flag = USA_massachusetts_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1077
+									state = 795									#Connecticut Capital
+								}
+							}
+							set_state_flag = USA_connecticut_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 362
+									state = 1122
+									state = 1123
+									state = 1070									#Virginia Capital
+								}
+							}
+							set_state_flag = USA_virginia_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1133
+									state = 934
+									state = 383									#Kansas Capital
+								}
+							}
+							set_state_flag = USA_kansas_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 396
+									state = 1172
+									state = 1171
+									state = 1151									#Indiana Capital
+								}
+							}
+							set_state_flag = USA_indiana_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1004
+									state = 1003
+									state = 369
+									state = 1002
+									state = 1000
+									state = 1001									#Kentucky Capital
+								}
+							}
+							set_state_flag = USA_kentucky_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1107
+									state = 1008
+									state = 1005
+									state = 1007
+									state = 1006
+									state = 363									#North Carolina Capital
+								}
+							}
+							set_state_flag = USA_north_carolina_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1023
+									state = 1025
+									state = 364
+									state = 1026
+									state = 1024									#South Carolina Capital
+								}
+							}
+							set_state_flag = USA_south_carolina_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1019
+									state = 1021
+									state = 1018
+									state = 365
+									state = 1022
+									state = 933
+									state = 1020
+									state = 1017									#Georgia Capital
+								}
+							}
+							set_state_flag = USA_georgia_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1015
+									state = 367
+									state = 1016
+									state = 1014
+									state = 1012
+									state = 1013									#Alabama Capital
+								}
+							}
+							set_state_flag = USA_alabama_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 370
+									state = 1010
+									state = 1011
+									state = 1009									#Mississippi Capital
+								}
+							}
+							set_state_flag = USA_mississippi_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1106
+									state = 1105
+									state = 372									#Arkansas Capital
+								}
+							}
+							set_state_flag = USA_arkansas_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 978
+									state = 979
+									state = 980
+									state = 371
+									state = 981
+									state = 982									#Louisiana Capital
+								}
+							}
+							set_state_flag = USA_louisiana_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 935
+									state = 937
+									state = 938
+									state = 939
+									state = 1060
+									state = 940
+									state = 366
+									state = 1092
+									state = 936									#Florida Capital
+								}
+							}
+							set_state_flag = USA_florida_state
+						}
+						if = {
+							limit = {
+								USA_is_new_york_city_state = yes
+							}
+							set_state_flag = USA_new_york_city_state
+						}
+						if = {
+							limit = {
+								USA_is_upstate_new_york_state = yes
+							}
+							set_state_flag = USA_upstate_new_york_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1114
+									state = 794									#New Hampshire Capital
+								}
+							}
+							set_state_flag = USA_new_hampshire_state
+						}
+						if = {
+							limit = {
+								OR = {
+									state = 1115
+									state = 792									#Maine Capital
+								}
+							}
+							set_state_flag = USA_maine_state
+						}
+					}
+				}
+				#State TAGs
+				every_possible_country = {
+					limit = {
+						USA_is_state_tag = yes
+					}
+					add_to_array = {
+						array = USA.state_tag_array
+						value = THIS.id
+					}
+				}
+			}
+		}
+
+	}
+}

@@ -1,0 +1,498 @@
+focus_tree = {
+	id = UKR
+	country = { 
+		factor = 0
+		modifier = {
+			add = 10
+			tag = UKR
+		}
+	}
+	default = no
+	focus = {
+		id = UKR_Anti_Corruption_Career
+		icon = GFX_focus_UKR_anti_corruption_career
+		cost = 5
+		x = 3
+		y = 0
+		completion_reward = { 
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_Urgent_Tasks
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 3
+		y = 1
+		prerequisite = {
+			focus = UKR_Anti_Corruption_Career
+		}
+
+		completion_reward = { 
+			add_political_power = 50
+		}
+	}
+	focus = {
+		id = UKR_Land_Market_Law
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 2
+		prerequisite = {
+			focus = UKR_Urgent_Tasks
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Continue_Great_Construction
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = UKR_Land_Market_Law
+		}
+		completion_reward = { 
+			
+		}
+	}
+	focus = {
+		id = UKR_Circulation_Law
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 0
+		y = 4
+		prerequisite = {
+			focus = UKR_Continue_Great_Construction
+		}
+		completion_reward = {
+			
+		}
+	}
+
+	focus = {
+		id = UKR_Investment_Nannies
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 3
+		y = 4
+		prerequisite = {
+			focus = UKR_Medical_Reform
+			focus = UKR_Startup_Fund
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_VISA_Liberalization
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 5
+		prerequisite = {
+			focus = UKR_Startup_Fund
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_House_Davos
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 2
+		prerequisite = {
+			focus = UKR_House_Davos
+		}
+		completion_reward = { 
+			set_temp_variable = {
+				income_var_temp = 50
+			}
+			add_income_with_inflation = yes
+		}
+	}
+	focus = {
+		id = UKR_Startup_Fund
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 2
+		y = 3
+		prerequisite = {
+			focus = UKR_House_Davos
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Prep_for_Virus
+		icon = GFX_goal_unknown
+		x = 6
+		y = 2
+		cost = 2
+		prerequisite = {
+			focus = UKR_Urgent_Tasks
+		}
+		
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Fast_Detection
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = UKR_Prep_for_Virus
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Placement_Facility
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = UKR_Fast_Detection
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Out_of_COVID
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 6
+		y = 5
+		prerequisite = {
+			focus = UKR_Placement_Facility
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Open_Up_Position
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 15
+		y = 1
+		prerequisite = {
+			focus = UKR_National_Security_Strategy
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Closer_to_EU
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 14
+		y = 2
+		prerequisite = {
+			focus = UKR_Open_Up_Position
+		}
+		available = {
+			OR = {
+				NOT = {
+					has_completed_focus = UKR_Detente_with_Russia
+				}
+				has_country_flag = {
+					flag = UKR_Friending_Russia
+					days > 105
+				} 
+			}
+		}
+		completion_reward = { 
+			UKR_decrease_embargo = yes
+			set_country_flag = UKR_Friending_EU
+		}
+	}
+	focus = {
+		id = UKR_Detente_with_Russia
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 16
+		y = 2
+		prerequisite = {
+			focus = UKR_Open_Up_Position
+		}
+		available = {
+			OR = {
+				NOT = {
+					has_completed_focus = UKR_Closer_to_EU
+				}
+				has_country_flag = {
+					flag = UKR_Friending_EU
+					days > 175
+				} 
+			}
+		}
+		completion_reward = { 
+			add_stability = 0.03
+			add_political_power = 30
+			add_war_support = -0.02
+			random = {
+				chance = 35
+				UKR_decrease_embargo = yes
+			}
+			set_country_flag = UKR_Friending_Russia
+			SOV = {
+				country_event = russia.5
+			}
+		}
+	}
+	focus = {
+		id = UKR_National_Security_Strategy
+		icon = GFX_focus_UKR_national_defense_strategy
+		cost = 5
+		x = 14
+		y = 0
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_More_Trade
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 13
+		y = 1
+		prerequisite = {
+			focus = UKR_National_Security_Strategy
+		}
+		completion_reward = { 
+			
+		}
+	}
+
+	focus = {
+		id = UKR_Cope_with_IMF
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 12
+		y = 2
+		prerequisite = {
+			focus = UKR_More_Trade
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_DIIA
+		icon = GFX_goal_unknown
+		cost = 10
+		x = 4
+		y = 2
+		prerequisite = {
+			focus = UKR_Urgent_Tasks
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = UKR_Medical_Reform
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = UKR_DIIA
+		}
+		
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Five_Medical_Cities
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 4
+		y = 5
+		prerequisite = {
+			focus = UKR_Medical_Reform
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Trilateral_Contact_Group
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 16
+		y = 3
+		prerequisite = {
+			focus = UKR_Closer_to_EU
+			focus = UKR_Detente_with_Russia
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = UKR_Free_Economic_Zone
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 16
+		y = 4
+		prerequisite = {
+			focus = UKR_Trilateral_Contact_Group
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_All_Failed
+		icon = GFX_focus_UKR_All_Failed
+		cost = 5
+		x = 12
+		y = 5
+		prerequisite = {
+			focus = UKR_Free_Economic_Zone
+		}
+		prerequisite = {
+			focus = UKR_Motivation_Package
+		}
+		prerequisite = {
+			focus = UKR_Purchase_Weapon
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_Security_of_People_Country
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 14
+		y = 3
+		prerequisite = {
+			focus = UKR_Closer_to_EU
+			focus = UKR_Detente_with_Russia
+		}
+		completion_reward = { }
+	}
+
+
+	focus = {
+		id = UKR_Motivation_Package
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 14
+		y = 4
+		prerequisite = {
+			focus = UKR_Security_of_People_Country
+		}
+		completion_reward = { 
+			set_temp_variable = {
+				military_development_var_temp = 0.15
+			}
+			add_military_development = yes
+			swap_ideas = {
+				remove_idea = UKR_far_right_meddling
+				add_idea = UKR_far_right_meddling1
+			}
+		}
+	}
+	focus = {
+		id = UKR_Donbas_Recostruction_Program
+		icon = GFX_goal_unknown
+		cost = 4
+		x = 9
+		y = 2
+		prerequisite = {
+			focus = UKR_Urgent_Tasks
+		}
+		prerequisite = {
+			focus = UKR_Open_Up_Position
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = UKR_East_Naval_Base
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = UKR_Donbas_Recostruction_Program
+		}
+		completion_reward = { 
+			UKR_decrease_embargo = yes
+			random_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_controlled_state = {
+				limit = {
+					is_coastal = yes
+				}
+				add_building_construction = {
+					type = coastal_bunker
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = UKR_Defend_Minsk_Protocol
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = UKR_Donbas_Recostruction_Program
+		}
+		completion_reward = { 
+			swap_ideas = {
+				remove_idea = UKR_mass_insurgency
+				add_idea = UKR_mass_insurgency1
+			}
+		}
+	}
+	focus = {
+		id = UKR_Purchase_Weapon
+		icon = GFX_goal_unknown
+		cost = 3
+		x = 9
+		y = 4
+		prerequisite = {
+			focus = UKR_Defend_Minsk_Protocol
+		}
+		prerequisite = {
+			focus = UKR_Security_of_People_Country
+		}
+		completion_reward = { 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 1000
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 500
+			}
+			add_equipment_to_stockpile = {
+				type = armored_car_equipment
+				amount = 300
+			}
+			set_temp_variable = {
+				debt_var_temp = 100
+			}
+			add_debt_with_inflation = yes
+		}
+	}
+
+}

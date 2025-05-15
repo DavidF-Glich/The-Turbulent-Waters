@@ -1,0 +1,1840 @@
+ideas = {
+	academy_spirit = {
+		FRA_Heirs_to_Napoleon_spirit = {
+			ledger = army
+			picture = Heirs_to_Napoleon
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				tag = FRA
+			}
+			modifier = {
+				army_leader_start_level = 1
+				army_leader_cost_factor = -0.15
+				unit_leader_as_advisor_cp_cost_factor = -0.50
+				trait_naval_invader_xp_gain_factor = 0.1
+				trait_commando_xp_gain_factor = 0.1
+				trait_trickster_xp_gain_factor = 0.1
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	army_spirit = {
+		FRA_Apres_moi_le_deluge_spirit = {
+			ledger = army
+			picture = Apre_mois_le_Deluge
+			allowed = {
+				tag = FRA
+			}
+			visible = {
+				tag = FRA
+			}
+			modifier = {
+				weekly_manpower = 500
+				conscription = 0.015
+			}
+			ai_will_do = {
+				base = 1
+			}
+		}
+	}
+	hidden_ideas = {
+		FRA_Le_Pen_tree_debuff_idea = {
+
+			picture = generic_manpower_bonus
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				political_power_cost = 0.5
+			}
+		}
+		FRA_Invasion_of_Algeria_europe = {
+
+			allowed = {
+			}
+			
+			picture = FRA_yellow_vests
+			
+			modifier = {
+				ai_join_ally_desire_factor = -100
+			}
+		}
+		FRA_Navy_Industry_Complex = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.10
+			}
+			equipment_bonus = {
+				
+			}
+		}
+
+		FRA_Navy_Industry_Complex_1 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.075
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.025 instant = yes
+				}
+			}
+		}
+
+		FRA_Navy_Industry_Complex_2 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.05
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		FRA_Navy_Industry_Complex_3 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				conscription_factor = -0.025
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.075 instant = yes
+				}
+			}
+		}
+
+		FRA_Navy_Industry_Complex_4 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+				military_development_monthly = 0.01
+				industrial_capacity_dockyard = 0.25
+			}
+			equipment_bonus = {
+				ship_hull_heavy = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_carrier = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_cruiser = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_light = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				ship_hull_submarine = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+
+		FRA_Army_Industry_Complex = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = -0.10
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				
+			}
+					
+		}
+
+		FRA_Army_Industry_Complex_1 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = -0.075
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				modern_tank_artillery_chassis = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				modern_tank_chassis = {
+					build_cost_ic = -0.025 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.025 instant = yes
+				}
+			}
+		}
+
+		FRA_Army_Industry_Complex_2 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = -0.05
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				modern_tank_artillery_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				modern_tank_chassis = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+
+		FRA_Army_Industry_Complex_3 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				conscription_factor = -0.025
+			}
+			removal_cost = -1
+
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				modern_tank_artillery_chassis = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				modern_tank_chassis = {
+					build_cost_ic = -0.075 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.075 instant = yes
+				}
+			}
+		}
+
+		FRA_Army_Industry_Complex_4 = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				military_development_monthly = 0.01
+				industrial_capacity_factory = 0.125
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				artillery = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				modern_tank_artillery_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				light_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				modern_tank_chassis = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				mechanized_equipment = {
+					build_cost_ic = -0.1 instant = yes
+				}
+			}
+		}
+		
+		FRA_mass_plane_production_idea = {
+
+			name = FRA_armed_forces_dynamic
+
+			allowed = {
+				tag = FRA
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			modifier = {
+			}
+			equipment_bonus = {
+				air_equipment = {
+					build_cost_ic = -0.05 
+					instant = yes
+				}
+			}
+		}
+	}
+	country = {
+		FRA_french_spirit_idea = {
+			
+			allowed = {
+				tag = FRA
+			}
+			
+			picture = FRA_french_spirit
+			
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.1
+				war_support_factor = 0.1
+				army_core_defence_factor = 0.05
+				army_core_attack_factor = 0.05
+			}
+		}
+
+		FRA_mass_migration_idea = {
+			
+			allowed = {
+				tag = FRA
+			}
+			
+			picture = FRA_mass_migration
+			
+			modifier = {
+				political_power_gain = -0.1
+				monthly_population = 0.2
+				expense_growth_factor = 0.2
+				society_development_monthly = -0.01
+				poverty_development_monthly = -0.01
+			}
+		}
+		FRA_yellow_vests_idea = {
+			
+			allowed = {
+				tag = FRA
+			}
+			
+			picture = FRA_yellow_vests
+			
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		FRA_Generation_of_Slackers_idea = {
+			picture = FRA_slacker_gen
+			allowed = {
+				tag = FRA
+			}
+			modifier = {
+				mobilization_speed = -0.5
+				conscription_factor = -0.5
+				war_support_factor = -0.1
+				land_doctrine_cost_factor = 0.1
+				air_doctrine_cost_factor = 0.1
+				naval_doctrine_cost_factor = 0.1
+			}
+		}
+		FRA_CFA_Franc = {
+			
+			allowed = {
+				tag = FRA
+			}
+			
+			picture = FRA_CFA_Franc
+			
+			modifier = {
+				political_power_gain = -0.1
+				income_growth_factor = 0.10
+				consumer_goods_factor = -0.025
+			}
+		}
+		FRA_ENA_idea = {
+			
+			allowed = {
+				always = no
+			}
+			
+			picture = FRA_ENA
+			
+			modifier = {
+				political_power_gain = 0.50
+				stability_factor = -0.20
+				drift_defence_factor = 1.25
+				civilian_factory_use = 3
+				opinion_gain_monthly = 10
+				head_minister_cost_factor = 0.5
+				foreign_minister_cost_factor = 0.5
+				economic_minister_cost_factor = 0.5
+				interior_minister_cost_factor = 0.5
+				intelligence_minister_cost_factor = 0.5
+				theorist_minister_cost_factor = 0.5
+				society_development_monthly = -0.05
+			}
+		}
+
+	}
+	head_minister = {
+		FRA_Edouard_philippe_HM = {
+			picture = FRA_Edouard_philippe
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = market_liberal
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_pragmatic_statesman
+			}
+		}
+		FRA_Jean_Castex_HM = {
+			picture = FRA_Jean_Castex
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = market_liberal
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_old_guard
+			}
+		}
+		FRA_Nicolas_Dupont_Aignan_HM = {
+			picture = FRA_Nicolas_Dupont_Aignan
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = market_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_patriotic_ideolouge
+			}
+		}
+		FRA_Philippe_de_Villiers_HM = {
+			picture = FRA_Philippe_de_Villiers
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = authoritarian_democrat
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.03
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.03
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_flamboyant_tough_guy
+			}
+		}
+		FRA_elisabeth_borne_HM = {
+			picture = FRA_elisabeth_borne
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_silent_workhorse
+			}
+		}
+		FRA_mathilde_panot_HM = {
+			picture = FRA_mathilde_panot
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = libertarian_socialist
+					has_government = social_democrat
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 hog_happy_amateur
+			}
+		}
+	}
+	foreign_minister = {
+		FRA_jean_yves_le_drian_FM = {
+			picture = FRA_jean_yves_le_drian
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_global_interventionist
+			}
+		}
+		FRA_Catherine_Colonna_FM = {
+			picture = FRA_Catherine_Colonna
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = libertarian_socialist
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = conservative
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_appeaser
+			}
+		}
+		FRA_Francois_Asselineau_FM = {
+			picture = FRA_Francois_Asselineau
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = authoritarian_democrat
+					has_government = nationalist
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_loyal_nationalist
+			}
+		}
+		FRA_Raphael_Gluckmann_FM = {
+			picture = FRA_Raphael_Gluckmann
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = libertarian_socialist
+					has_government = social_democrat
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = -0.02
+		        }
+		         add_stability = -0.05
+            }
+			traits = { 
+				 for_biased_intellectual
+			}
+		}
+	}
+	economic_minister = {
+		FRA_Bruno_le_Maire_EM = { #Starting Economic Minister
+			picture = FRA_Bruno_le_Maire
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = market_liberal
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.01
+		        }
+		        add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.01
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.01
+		        }
+		        add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.01
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 eco_experienced_capitalist
+			}
+		}
+		FRA_Guillaume_Peltier_EM = { #Starting Economic Minister
+			picture = FRA_Guillaume_Peltier
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = authoritarian_democrat
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 eco_corrupt_kleptocrat
+			}
+		}
+		FRA_Eric_Coquerel_EM = { #Starting Economic Minister
+			picture = FRA_Eric_Coquerel
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_liberal
+					has_government = social_democrat
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = -0.02
+		        }
+		        add_popularity = {
+			        ideology = social_democrat
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 eco_reformer
+			}
+		}
+		FRA_Pierre_Gattaz_EM = { #Starting Economic Minister
+			picture = FRA_Pierre_Gattaz
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = market_liberal
+					has_government = conservative
+					has_government = authoritarian_democrat
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 eco_administrative_genius
+			}
+		}
+	}
+	interior_minister = {
+		FRA_christophe_castaner_IM = {
+			picture = FRA_christophe_castaner
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.01
+		        }
+		        add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.01
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.01
+		        }
+		        add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.01
+		        }
+		        add_political_power = 25
+		        add_stability = 0.05
+            }
+			traits = { 
+				 hog_controversial_politican
+			}
+		}
+		FRA_gerald_darmanin_IM = {
+			picture = FRA_gerald_darmanin
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = market_liberal
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+		        add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 sec_prince_of_terror
+			}
+		}
+		FRA_Herve_Gomart_IM = {
+			picture = FRA_Herve_Gomart
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = authoritarian_democrat
+					has_government = nationalist
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.01
+		        }
+		        add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.01
+		        }
+		        add_war_support = 0.02
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = -0.01
+		        }
+		        add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.01
+		        }
+		        add_popularity = {
+			        ideology = nationalist
+			        popularity = -0.01
+		        }
+            }
+			traits = { 
+				 sec_rearmer
+			}
+		}
+		FRA_Jordan_Bardella_IM = {
+			picture = FRA_Jordan_Bardella
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = market_liberal
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = 0.01
+		        }
+		        add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.01
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.01
+		        }
+		        add_popularity = {
+			        ideology = conservative
+			        popularity = -0.01
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 sec_crime_fighter
+			}
+		}
+		FRA_Stephane_Ravier_IM = {
+			picture = FRA_Stephane_Ravier
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = authoritarian_democrat
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 sec_crooked_kleptocrat
+			}
+		}
+		FRA_Ugo_Bernalicis_IM = {
+			picture = FRA_Ugo_Bernalicis
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = libertarian_socialist
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = libertarian_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                add_popularity = {
+			        ideology = libertarian_socialist
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 sec_propaganda_master
+			}
+		}
+	}
+	theorist_minister = {
+		FRA_Florence_Parly_IntelM = { #Starting Defense
+			picture = FRA_Florence_Parly
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = social_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = social_democrat
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 army_chief_political_protege
+			}
+		}
+		FRA_Sebastien_Lecornu_IntelM = { #Macron Defense
+			picture = FRA_Sebastien_Lecornu
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = social_liberal
+					has_government = market_liberal
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = social_liberal
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 int_ideological_enforcer
+			}
+		}
+		FRA_Bertrand_de_La_Chesnais_IntelM = { #Zemmour Defense
+			picture = FRA_Bertrand_de_La_Chesnais
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = authoritarian_democrat
+					has_government = nationalist
+					has_government = conservative
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = nationalist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = nationalist
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 hog_radical_militarist
+			}
+		}
+		FRA_Alexis_Corbiere_IntelM = { #Melenchon Defense
+			picture = FRA_Alexis_Corbiere
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = communist
+					has_government = libertarian_socialist
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = libertarian_socialist
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = libertarian_socialist
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 int_ideological_enforcer
+			}
+		}
+		FRA_Gerard_Longuet_IntelM = { #Villiers Defense
+			picture = FRA_Gerard_Longuet
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = market_liberal
+					has_government = authoritarian_democrat
+					has_government = conservative
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 military_theorist
+			}
+		}
+		FRA_Michele_Alliot_Marie_IntelM = { #Le Pen Defense
+			picture = FRA_Michele_Alliot_Marie
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = market_liberal
+					has_government = authoritarian_democrat
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = market_liberal
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = market_liberal
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 hog_happy_amateur
+			}
+		}
+	}
+	intelligence_minister = { #
+		FRA_Philippe_Olivier = { #Intel LePen
+			picture = FRA_Philippe_Olivier
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = authoritarian_democrat
+					has_government = market_liberal
+					has_government = conservative
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = conservative
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = conservative
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 army_chief_political_protege
+			}
+		}
+		FRA_Bernard_Emie = { #Intel Macron
+			picture = FRA_Bernard_Emie
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = conservative
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_stability = 0.03
+            }
+			
+            on_remove = {
+                add_stability = -0.03
+            }
+			traits = { 
+				 int_balanced_cryptographer
+			}
+		}
+		FRA_Jean_Messiha = { #Intel Zemmour
+			picture = FRA_Jean_Messiha
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = authoritarian_democrat
+					has_government = conservative
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.02
+		        }
+            }
+			traits = { 
+				 int_ideological_enforcer
+			}
+		}
+		FRA_Younous_Omarjee = { #Intel Melench
+			picture = FRA_Younous_Omarjee
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = social_democrat
+					has_government = libertarian_socialist
+					has_country_leader = {
+						character = FRA_emmanuel_macron_char
+						ruling_only = yes
+					}
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = social_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = social_democrat
+			        popularity = -0.02
+		        }
+		        add_stability = -0.05
+            }
+			traits = { 
+				 int_softie
+			}
+		}
+		FRA_Philippe_Susnjara = { #Intel Villier
+			picture = FRA_Philippe_Susnjara
+			
+			allowed = {
+				original_tag = FRA
+			}
+			available = {
+				OR = {
+					has_government = conservative
+					has_government = authoritarian_democrat
+					has_government = nationalist
+				}
+			}
+			on_add = {
+                add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = 0.02
+		        }
+            }
+			
+            on_remove = {
+                 add_popularity = {
+			        ideology = authoritarian_democrat
+			        popularity = -0.02
+		        }
+            }
+			traits = { 
+				 int_encryptor
+			}
+		}
+		FPR_utopia_dummy = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		FPR_utopia_dummy_ministers_good = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				head_minister_cost_factor = -0.25
+				foreign_minister_cost_factor = -0.25
+				economic_minister_cost_factor = -0.25
+				interior_minister_cost_factor = -0.25
+				intelligence_minister_cost_factor = -0.25
+				theorist_minister_cost_factor = -0.25
+			}
+		}
+		FPR_utopia_dummy_ministers_bad = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				head_minister_cost_factor = 0.25
+				foreign_minister_cost_factor = 0.25
+				economic_minister_cost_factor = 0.25
+				interior_minister_cost_factor = 0.25
+				intelligence_minister_cost_factor = 0.25
+				theorist_minister_cost_factor = 0.25
+			}
+		}
+		FPR_utopia_dummy_economic_good = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				tax_laws_cost_factor = -0.25
+				interest_rate_laws_cost_factor = -0.25
+				welfare_laws_cost_factor = -0.25
+				safety_laws_cost_factor = -0.25
+			}
+		}
+		FPR_utopia_dummy_economic_bad = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				economy_cost_factor = 0.25
+				trade_laws_cost_factor = 0.25
+				tax_laws_cost_factor = 0.25
+				interest_rate_laws_cost_factor = 0.25
+				welfare_laws_cost_factor = 0.25
+				safety_laws_cost_factor = 0.25
+			}
+		}
+		FPR_utopia_dummy_manpower_good = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_laws_cost_factor = -0.25
+				female_service_laws_cost_factor = -0.25
+				supervision_laws_cost_factor = -0.25
+				training_laws_cost_factor = -0.25
+				military_racial_integration_laws_cost_factor = -0.25
+				draft_exemption_laws_cost_factor = -0.25
+			}
+		}
+		FPR_utopia_dummy_manpower_bad = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_laws_cost_factor = 0.25
+				female_service_laws_cost_factor = 0.25
+				supervision_laws_cost_factor = 0.25
+				training_laws_cost_factor = 0.25
+				military_racial_integration_laws_cost_factor = 0.25
+				draft_exemption_laws_cost_factor = 0.25
+			}
+		}
+		FPR_utopia_dummy_social_good = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				immigration_laws_cost_factor = -0.25
+				education_laws_cost_factor = -0.25
+				race_laws_cost_factor = -0.25
+				female_laws_cost_factor = -0.25
+				prison_laws_cost_factor = -0.25
+				police_laws_cost_factor = -0.25
+			}
+		}
+		FPR_utopia_dummy_social_bad = {
+			picture = FRA_Battle_for_the_French_Spirit
+			name = FPR_utopia_dynamic
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				immigration_laws_cost_factor = 0.25
+				education_laws_cost_factor = 0.25
+				race_laws_cost_factor = 0.25
+				female_laws_cost_factor = 0.25
+				prison_laws_cost_factor = 0.25
+				police_laws_cost_factor = 0.25
+			}
+		}
+		
+		FPR_The_Art_of_Politics_idea = {
+			picture = FRA_Battle_for_the_French_Spirit
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				hidden_modifier = {
+					head_minister_cost_factor = -0.1
+					foreign_minister_cost_factor = -0.1
+					economic_minister_cost_factor = -0.1
+					interior_minister_cost_factor = -0.1
+					intelligence_minister_cost_factor = -0.1
+					theorist_minister_cost_factor = -0.1
+					economy_cost_factor = -0.1
+					trade_laws_cost_factor = -0.1
+					tax_laws_cost_factor = -0.1
+					interest_rate_laws_cost_factor = -0.1
+					welfare_laws_cost_factor = -0.1
+					safety_laws_cost_factor = -0.1
+					mobilization_laws_cost_factor = -0.1
+					female_service_laws_cost_factor = -0.1
+					supervision_laws_cost_factor = -0.1
+					training_laws_cost_factor = -0.1
+					military_racial_integration_laws_cost_factor = -0.1
+					draft_exemption_laws_cost_factor = -0.1
+					immigration_laws_cost_factor = -0.1
+					education_laws_cost_factor = -0.1
+					race_laws_cost_factor = -0.1
+					female_laws_cost_factor = -0.1
+					prison_laws_cost_factor = -0.1
+					police_laws_cost_factor = -0.1
+				}
+				custom_modifier_tooltip = FPR_The_Art_of_Politics_idea_tt
+			}
+		}
+	}
+}

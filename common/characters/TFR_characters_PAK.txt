@@ -1,0 +1,231 @@
+characters={
+	PAK_arif_alvi_char = {
+		portraits={
+			civilian = {
+				large = GFX_portrait_PAK_arif_alvi
+			}
+			army = {
+				large = GFX_portrait_PAK_arif_alvi
+			}
+		}
+		country_leader={
+			ideology=reformist_socialism
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=social_democracy
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=centrist
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=civic_nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=constitutionalist
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	PAK_Imran_Khan = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PAK/Imran Khan.png" 
+			}
+		}
+		country_leader={
+			ideology=military_democracy
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	PAK_Aurangzaib_Farooqi = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PAK/PAK_Aurangzaib_Farooqi.png" 
+			}
+			army = {
+				large = "gfx/Leaders/PAK/PAK_Aurangzaib_Farooqi.png" 
+			}
+		}
+		country_leader={
+			ideology=ethno_nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+		country_leader={
+			ideology=salafi
+			expire="1.1.1.1"
+			id=-1
+		}
+	}	
+	
+	PAK_Taimur_Rahman = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PAK/Taimur Rahman.png" 
+			}
+		}
+		country_leader={
+			ideology=marxism_leninism 
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+	
+	PAK_Asim_Muni={
+		portraits={
+			army={
+				large="gfx/leaders/PAK/Asim Muni.png"
+			}
+		}
+		corps_commander={
+			skill=1
+			attack_skill=4
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-1
+		}
+	}
+	
+	PAK_Muhammad_Saeed={
+		portraits={
+			army={
+				large="gfx/leaders/PAK/Muhammad Saeed.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=1
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	PAK_Qamar_Javed_Bajwa={
+		portraits={
+			army={
+				large="gfx/leaders/PAK/Qamar Javed Bajwa.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=3
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+	
+	PAK_Sahir_Shamshad_Mirza={
+		portraits={
+			army={
+				large="gfx/leaders/PAK/Sahir Shamshad Mirza.png"
+			}
+		}
+		corps_commander={
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=3
+			logistics_skill=4
+			legacy_id=-1
+		}
+	}
+	
+	PAK_Nadeem_Raza={
+		portraits={
+			army={
+				large="gfx/leaders/PAK/Nadeem Raza.png"
+			}
+		}
+		field_marshal={
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+			legacy_id=-1
+		}
+	}
+
+############### Civil War
+	ISK_Shahab_alMuhajir = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PAK/Civil_War/ISK_Shahab_alMuhajir.png" 
+			}
+			army = {
+				large = "gfx/Leaders/PAK/Civil_War/ISK_Shahab_alMuhajir.png" 
+			}
+		}
+		country_leader={
+			ideology=salafi
+			expire="1.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+			}
+		}
+	}
+
+	BAL_Basheer_Zeb = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PAK/Civil_War/BAL_Basheer_Zeb.png" 
+			}
+			army = {
+				large = "gfx/Leaders/PAK/Civil_War/BAL_Basheer_Zeb.png" 
+			}
+		}
+		country_leader={
+			ideology=left_nationalism
+			expire="1.1.1.1"
+			id=-1
+		}
+		field_marshal={
+			skill=2
+			attack_skill=2
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			traits = {
+			}
+		}
+	}
+
+	SND_Shafi_Muhammad_Burfat = {
+		portraits={
+			civilian = {
+				large = "gfx/Leaders/PAK/Civil_War/SND_Shafi_Muhammad_Burfat.png" 
+			}
+			army = {
+				large = "gfx/Leaders/PAK/Civil_War/SND_Shafi_Muhammad_Burfat.png" 
+			}
+		}
+		country_leader={
+			ideology=left_populism
+			expire="1.1.1.1"
+			id=-1
+		}
+	}
+}

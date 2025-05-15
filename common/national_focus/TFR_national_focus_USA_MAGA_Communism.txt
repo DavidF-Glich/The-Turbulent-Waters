@@ -1,0 +1,404 @@
+focus_tree = {
+	id = USA_MAGA_C
+	country = {
+		factor = 0
+	}
+	default = no
+	focus = {
+		id = USA_MC_Analysis
+		icon = GFX_goal_unknown
+		cost = 4.30
+		x = 10
+		y = 0
+
+	}
+	focus = {
+		id = USA_MC_Capitalist_Bad
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_MC_Analysis
+		}
+		x = 4
+		y = 1
+
+	}
+	focus = {
+		id = USA_MC_Fuck_Wall_Street
+		icon = GFX_goal_unknown
+		cost = 7.20
+		prerequisite = {
+			focus = USA_MC_Capitalist_Bad
+		}
+		x = 2
+		y = 2
+
+	}
+	focus = {
+		id = USA_MC_Whataboutindustry
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Capitalist_Bad
+		}
+		x = 4
+		y = 2
+
+	}
+	focus = {
+		id = USA_MC_Limited_Cooperation
+		icon = GFX_surrender_tiny_flag
+		cost = 1
+		x = 3
+		y = 3
+		prerequisite = {
+			focus = USA_MC_Whataboutindustry
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = USA_MC_Fuck_them_anyway
+		icon = GFX_surrender_tiny_flag
+		cost = 1
+		x = 5
+		y = 3
+		prerequisite = {
+			focus = USA_MC_Whataboutindustry
+		}
+		completion_reward = { 
+
+		}
+	}
+	focus = {
+		id = USA_MC_Cost_of_Manopoly
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Capitalist_Bad
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = USA_MC_State_Enterprise
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 6
+		y = 4
+		prerequisite = {
+			focus = USA_MC_Cost_of_Manopoly
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_MC_Immigrant_Bad
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_MC_Analysis
+		}
+		x = 10
+		y = 1
+
+	}
+	focus = {
+		id = USA_MC_Pause_Equity
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Immigrant_Bad
+		}
+		x = 9
+		y = 2
+
+	}
+	focus = {
+		id = USA_MC_Respect_Tradition
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Immigrant_Bad
+		}
+		x = 11
+		y = 2
+
+	}
+	focus = {
+		id = USA_Try_Our_Best
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = USA_MC_Pause_Equity
+		}
+		prerequisite = {
+			focus = USA_MC_Respect_Tradition
+		}
+		x = 10
+		y = 3
+
+	}
+	focus = {
+		id = USA_MC_Strengthen_the_Wall
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_Try_Our_Best
+		}
+		mutually_exclusive = {
+			focus = USA_MC_Straight_to_Reason
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = USA_MC_Straight_to_Reason
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_Try_Our_Best
+		}
+		mutually_exclusive = {
+			focus = USA_MC_Strengthen_the_Wall
+		}
+		x = 11
+		y = 4
+
+	}
+	focus = {
+		id = USA_MC_Association
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Strengthen_the_Wall
+			focus = USA_MC_Straight_to_Reason
+		}
+		x = 10
+		y = 5
+
+	}
+	focus = {
+		id = USA_MC_True_Union
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = USA_MC_Association
+		}
+		x = 10
+		y = 6
+
+	}
+	focus = {
+		id = USA_MC_Diplomacy
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 15
+		y = 1
+		prerequisite = {
+			focus = USA_MC_Analysis
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = USA_MC_China
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Diplomacy
+		}
+		x = 15
+		y = 2
+
+	}
+	focus = {
+		id = USA_MC_Unwanted_Friend
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_MC_China
+		}
+		x = 13
+		y = 3
+		available = {
+			NOT = {
+				has_completed_focus = USA_MC_Fuck_Revisionism
+			}
+		}
+		completion_reward = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = small_increase
+				days = 60
+			}
+			reverse_add_opinion_modifier = {
+				target = PRC
+				modifier = medium_increase
+			}
+			add_political_power = 50
+		}
+
+	}
+	focus = {
+		id = USA_MC_Special_Visit
+		icon = GFX_goal_unknown
+		cost = 7.20
+		prerequisite = {
+			focus = USA_MC_Unwanted_Friend
+		}
+		x = 13
+		y = 4
+		completion_reward = {
+			reverse_add_opinion_modifier = {
+				target = PRC
+				modifier = small_increase
+			}
+			add_opinion_modifier = {
+				target = PRC
+				modifier = small_increase
+			}
+			add_political_power = 25
+			add_named_threat = {
+				threat = -1
+				name = USA_PRC_Visit
+			}
+		}
+
+	}
+	focus = {
+		id = USA_MC_Fuck_Revisionism
+		icon = GFX_goal_unknown
+		cost = 1.00
+		prerequisite = {
+			focus = USA_MC_China
+		}
+		x = 18
+		y = 3
+	}
+	focus = {
+		id = USA_MC_Terrible_Enemy
+		icon = GFX_goal_unknown
+		cost = 7.20
+		prerequisite = {
+			focus = USA_MC_Unwanted_Friend
+			focus = USA_MC_Fuck_Revisionism
+		}
+		x = 15
+		y = 4
+
+	}
+	focus = {
+		id = USA_MC_New_Spy
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = USA_MC_Terrible_Enemy
+		}
+		x = 15
+		y = 5
+
+	}
+	focus = {
+		id = USA_MC_Ideological_Weapon
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = USA_MC_New_Spy
+		}
+		mutually_exclusive = {
+			focus = USA_MC_American_style
+		}
+		x = 14
+		y = 6
+
+	}
+	focus = {
+		id = USA_MC_American_style
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = USA_MC_New_Spy
+		}
+		mutually_exclusive = {
+			focus = USA_MC_Ideological_Weapon
+		}
+		x = 16
+		y = 6
+
+	}
+	focus = {
+		id = USA_MC_Hold_Grip
+		icon = GFX_goal_unknown
+		cost = 10.00
+		prerequisite = {
+			focus = USA_MC_Unwanted_Friend
+			focus = USA_MC_Fuck_Revisionism
+		}
+		x = 17
+		y = 4
+
+	}
+	focus = {
+		id = USA_MC_Expand_Network
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Hold_Grip
+		}
+		prerequisite = {
+			focus = USA_MC_Association
+		}
+		x = 17
+		y = 7
+
+	}
+	focus = {
+		id = USA_MC_Help_Africa
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Expand_Network
+		}
+		x = 17
+		y = 8
+
+	}
+	focus = {
+		id = USA_MC_Taiwan_Talk
+		icon = GFX_goal_unknown
+		cost = 5.00
+		prerequisite = {
+			focus = USA_MC_Special_Visit
+		}
+		x = 13
+		y = 5
+		completion_reward = {
+			set_global_flag = PRC_USA_Taiwan_talk
+			set_global_flag = PRC_Taiwan_Reunion
+			set_variable = {
+				global.Taiwan_Support = 0.05
+			}
+			set_variable = {
+				global.Taiwan_Reunion_Preparation = 0
+			}
+
+		}
+
+	}
+	focus = {
+		id = USA_MC_Out_of_Imperialism
+		icon = GFX_goal_unknown
+		cost = 3.00
+		prerequisite = {
+			focus = USA_MC_Help_Africa
+		}
+		prerequisite = {
+			focus = USA_MC_True_Union
+		}
+		x = 12
+		y = 9
+
+	}
+}

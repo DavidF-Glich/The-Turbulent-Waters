@@ -1,0 +1,83 @@
+#Index; Search for these names using ctrl+f and you'll find the section they entitle.
+#	Setup
+#		Espionage_Initialize_Global_Vars
+#		Espionage_Initialize_USA_Vars
+#		Espionage_Initialize_GER_Vars
+#
+#	Update Effects
+#		Espionage_Training_Update
+#		Espionage_Research_Update
+#		Espionage_Success_Update
+#		Espionage_Budget_Update
+#
+#	Technology
+#		Espionage_Tech_ApplyEffect
+#		Espionage_Tech_ApplyCost
+#
+#	General
+#		Espionage_Enable
+#		Espionage_AddNetworkStrength
+#		Espionage_AddCapability
+#		Espionage_AddExpertise
+#		Espionage_FailureEffect_Setup
+#		Espionage_FailureEffect
+#		Espionage_SuccessEffect
+#
+#	Specific Effects
+#		See category for details
+#
+#	Old CIA Stuff
+#		USA_CIA_Rewards_Calculation
+#		USA_CIA_AI_startup_flags
+
+#################################################
+#                     Setup                     #
+#################################################
+
+### REGION ARRAY INDEXES ###
+@NorthAmerica = 0
+@CentralAmerica = 1
+@SouthAmerica = 2
+@Europe = 3
+@Russia = 4
+@Africa = 5
+@MiddleEast = 6
+@EastAsia = 7
+@SouthEastAsia = 8
+@Oceania = 9
+
+### VALUE DEFINES ###
+@BaseResearchSpeed   = 2.5 # Base speed for Research
+@BaseExpertiseGrowth = 5   # Base growth of Expertise/week
+@BaseMissionChance   = 45  # Base success chance for an operation
+@BaseEscapeChance    = 70  # Base escape chance for an operative on mission failure
+
+# This system is designed to make it easy for other regional agencies to hook in by unifying a number of variables and scripted effects. All steps will be explained.
+# Every nation gets its own intel variables. NETWORK STRENGTH is a measure of how strong an Agency's presence and operations are in a given region: the larger the number is, the likelier it becomes for the agency to successfully accomplish its mission in the region.
+# CAPABILITY is a measure of how effective the intel agency's efforts as a whole are. Therefore, any intel agency will want to raise its own capabilities by, for example, researching intel technologies.
+
+## Initialize system and global variables, run on game startup
+Espionage_Initialize_Global_Vars = {
+	# Global array of tags with intelligence agencies
+	clear_array = global.TTW_Espionage_CountriesWithAgencies
+	every_other_country = {
+		limit = { TTW_Espionage_AllowedTags = yes }
+		add_to_array = { global.TTW_Espionage_CountriesWithAgencies = THIS }
+		set_variable = { Espionage_SelectedRegion = token:Espionage_Map_EU }
+
+		# Localized Tech array
+		clear_array = TTW_Espionage_TechArray
+		add_to_array = { TTW_Espionage_TechArray = 0  }
+		resize_array = { TTW_Espionage_TechArray = 10 }
+
+	}
+
+
+}
+
+#################################################
+#                    General                    #
+#################################################
+
+## Enables the mechanic
+# Arguments: Agency

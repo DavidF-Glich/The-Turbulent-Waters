@@ -1,0 +1,53 @@
+buy_industrial_complex_action_effect = {
+    set_temp_variable = {
+        var = income_var_temp
+        value = -120
+    }
+    add_income_with_inflation = yes
+    add_offsite_building = {
+        type = industrial_complex
+        level = 1
+    }
+
+    hidden_effect = {
+        set_country_flag = {
+            flag = buy_industrial_complex_action_flag
+            days = 180
+        }
+    }
+}
+
+buy_arms_factory_action_effect = {
+    set_temp_variable = {
+        var = income_var_temp
+        value = -120
+    }
+    add_income_with_inflation = yes
+    add_offsite_building = {
+        type = arms_factory
+        level = 1
+    }
+
+    hidden_effect = {
+        set_country_flag = {
+            flag = buy_arms_factory_action_flag
+            days = 180
+        }
+    }
+}
+
+buy_pp_action_effect = {
+    set_temp_variable = {
+        var = income_var_temp
+        value = -50
+    }
+    add_income_with_inflation = yes
+    add_political_power = 100
+
+    hidden_effect = {
+        set_country_flag = {
+            flag = buy_pp_action_flag
+            days = 90
+        }
+    }
+}

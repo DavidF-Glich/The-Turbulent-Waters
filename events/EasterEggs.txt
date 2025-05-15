@@ -1,0 +1,18 @@
+﻿#If you were expecting something in this file...
+add_namespace = easter
+country_event = {
+	id = easter.1
+	title = easter.1.t
+	desc = easter.1.d
+	is_triggered_only = yes
+	picture = GFX_you_cheated
+	option = {
+		name = easter.1.a
+		set_country_flag = PRC_God_Niu_Return_se_flag
+	}
+	option = {
+		name = easter.1.b
+		set_country_flag = PRC_God_Niu_TNO_flag
+		TFR_Country_Closing_Screen_Show = yes
+	}
+}

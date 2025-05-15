@@ -1,0 +1,54 @@
+﻿l_russian:
+ #Leaders
+ #Focuses
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #Ideas
+ SPR_catalonian_separatism_idea: "Каталонский Сепаратизм"
+ SPR_catalonian_separatism_idea_desc: "В богатом регионе Каталония поддержка независимости от Испании была постоянной на протяжении всей истории Испании и угрожает национальному суверенитету и единству Испании. В последнее время она окрепла, и многие пытались добиться независимости от национального правительства, но пока безуспешно."
+ SPR_the_ghost_of_franco_idea: "Призрак Франко"
+ SPR_basque_nationalism_idea: "Баскский Национализм"
+ SPR_plus_ultra: "Плюс Ультра"
+ #Decision Categories
+ #Missions
+ #Decisions
+ #Country Flag
+ #Tooltips
+ #Faction
+ #Parties
+ SNS_fascist_party: "НА"
+ SNS_fascist_party_long: "Национальный Альянс"
+ GOD_fascist_party: "Католическая Церковь Португалии"
+ LCA_nationalist_party: "Правительство Клана"
+ PRP_communist_party: "ПКП"
+ PRP_communist_party_long: "Португальская Коммунистическая Партия"
+ CAT_social_democrat_party: "РЛК"
+ CAT_social_democrat_party_long: "Республиканские Левые Каталонии"
+ GAL_communist_party: "ГС"
+ GAL_communist_party_long: "Галицийское Сопротивление"
+ RSR_social_democrat_party: "БМ"
+ RSR_social_democrat_party_long: "Больше Мадрида"
+ RSR_communist_party: "РФ"
+ RSR_communist_party_long: "Рабочий Фронт"
+ #Country
+ #Events
+ spain.1.t:0 "Каталония восстает!"
+ spain.1.d:0 "АНАРХИИИИИСТЫЫЫЫЫЫЫЫЫ"
+ spain.1.a:0 "Сокрушите Этих Мятежников!"
+ spain.2.t:0 "Каталонская Революция"
+ spain.2.d:0 ""
+ spain.2.a:0 "Еще одна Гражданская война в Испании?"
+ spain.7.t: "Испания просит нашей помощи"
+ spain.7.d: ""
+ spain.7.a: "У нас другие планы"
+ spain.7.b: "Европа будет свободна от коммунизма!"

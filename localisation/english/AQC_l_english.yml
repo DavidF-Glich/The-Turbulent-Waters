@@ -1,0 +1,145 @@
+﻿l_english:
+ show_build_queue: "Show the batch build interface"
+ show_build_queue_desc: "This decision allows you to batch build multiple selected buildings in different provinces. §Click the button below§!§GShow§!§YThe decision.§!"
+
+ aqc_show_tooltip: "§GOpen§! the batch build interface"
+ aqc_hide_tooltip: "§RClose§! the batch build interface"
+
+ build_queue: "Batch build"
+ build_queue_desc: "This decision allows you to batch build multiple selected buildings or infrastructure in various provinces."
+
+ auto_queue_5: "§G5x§! | §R10x§! | §R25x§! Switches batch build quantity to §Y10x§! items"
+ auto_queue_10: "§R5x§! | §G10x§! | §R25x§! Switches batch build quantity to §Y25x§! items"
+ auto_queue_25: "§R5x§! | §R10x§! | §G25x§! Switches batch build quantity to §Y5x§! units"
+
+ #aqc_building_type: "选择§建筑类别§！"
+ aqc_building_type: "Select a §Building Category§!"
+ #aqc_quantity_construction: "批量建造的数量: "
+ aqc_quantity_construction: "Number of batches to build:"
+
+ aqr_current_quantity: "[GetCurrentQuantity]"
+
+ aqc_factory_current_quantity_5: "§G5x§! | §R10x§! | §R25x§!"
+ aqc_factory_current_quantity_10: "§R5x§! | §G10x§! | §R25x§!"
+ aqc_factory_current_quantity_25: "§R5x§! | §R10x§! | §G25x§!"
+
+ aqc_refineries_current_quantity_3: "§G3x§! | §R6x§! | §R10x§!"
+ aqc_refineries_current_quantity_6: "§R3x§! | §G6x§! | §R10x§!"
+ aqc_refineries_current_quantity_10: "§R3x§! | §R6x§! | §G10x§!"
+
+ aqc_special_current_quantity_2: "§G2x§! | §R4x§! | §R6x§!"
+ aqc_special_current_quantity_4: "§R2x§! | §G4x§! | §R6x§!"
+ aqc_special_current_quantity_6: "§R2x§! | §R4x§! | §G6x§!"
+
+ aqc_infrastructure_current_quantity_3: "§G3x§! | §R6x§! | §R10x§!"
+ aqc_infrastructure_current_quantity_6: "§R3x§! | §G6x§! | §R10x§!"
+ aqc_infrastructure_current_quantity_10: "§R3x§! | §R6x§! | §G10x§!"
+
+ aqc_current_quantity_tooltip: "§Green§! How many buildings are currently needed to build"
+
+ increase_quantity_button: "§GIncrease§! Current quantity"
+
+ decrease_quantity_button: "§RDecrease§! Current quantity"
+
+ hide_aqc_decision_text: "§RHide§! Decision"
+
+ unhide_aqc_decision_text: "£auto_build" # §GOpenT§! Auto-Queue
+
+ select_factory_text: "[GetSelectFactory]"
+
+ selected_factory_text: "§YFactories and Shipyards§!"
+
+ deselect_factory_text: "Factories and Shipyards"
+
+ select_refineries_text: "[GetSelectRefineries]"
+
+ selected_refineries_text: "§YOil Storage Tanks and Refineries§!"
+
+ deselect_refineries_text: "Oil Storage Tanks and Refineries"
+
+ select_special_text: "[GetSelectSpecial]"
+ selected_special_text: "§YSpecial Buildings§!"
+ deselect_special_text: "Special Buildings"
+
+ select_infrastructure_text: "[GetSelectInfrastructure]"
+ selected_infrastructure_text: "§YInfrastructure§!"
+ deselect_infrastructure_text: "Infrastructure"
+
+ # OLD
+ #aqc_select_factory_tooltip: "§YAuto-Queue§! option for: §OCivilian Factory§!, §GMilitary Factory§!, and §3Naval Dockyard§!"
+ #aqc_select_refineries_tooltip: "§YAuto-Queue§! option for §8储油罐§!, and §g合成炼油厂§!"
+ #aqc_select_special_tooltip: "§YAuto-Queue§! option for §9核反应堆§! and §O火箭基地§!"
+ #aqc_select_infrastructure_tooltip: "§YAuto-Queue§! option for §OInfrastructure§!"
+
+ # NEW
+ aqc_select_factory_tooltip: "Queue Options:\n-§HCivilian Factory§!\n-§HMilitary Factory§!\n-§HNavy Dockyard§!"
+ aqc_select_refineries_tooltip: "Queue Options:\n-§HOil Storage Tanks§!\n-§HSynthetic Refinery§!"
+ aqc_select_special_tooltip: "Queue Options:\n-§HNuclear Reactor§!\n-§HRocket Base§!"
+ aqc_select_infrastructure_tooltip: "Queue Options:\n-§HInfrastructure§!\n-§HAd Defense Site§!\n-§HAir Force Base§!\n-§HRadar Station§!"
+
+
+ aqc_tt_queue_industrial_complex: "Begin construction of §YCivilian Factory§!"
+ aqc_tt_queue_arms_factory: "Begin construction of §YArms Factory§!"
+ aqc_tt_queue_dockyard: "Begin construction of §YNavy Dockyard§!"
+ aqc_tt_office_park: "Begin construction of §YOffice Park§!"
+
+ #build_queue_industrial_complex: "Auto-Queue [GetCurrentNumberFactory] §OCivilian Factory§!" # OLD
+ build_queue_industrial_complex: "Mass build [GetCurrentNumberFactory] §HCivilian factories§!" # NEW
+ build_queue_arms_factory: "Mass build [GetCurrentNumberFactory] §GMilitary factories§!"
+ build_queue_dockyard: "Mass build [GetCurrentNumberFactory] §3Naval dockyards§!"
+ build_queue_office_park: "Mass build [GetCurrentNumberFactory] §WOffice parks§!"
+
+ aqc_tt_queue_fuel_silo: "Begin construction of §YFuel Storage Tanks§!"
+ aqc_tt_queue_synthetic_refinery: "Begin construction of §YSynthetic Refinery§!"
+
+ build_queue_fuel_silo: "Built [GetCurrentNumberRefineries] §8 Fuel Storage Tanks§!"
+ build_queue_synthetic_refinery: "Built [GetCurrentNumberRefineries] §8 Synthetic Refineries§!"
+
+ #aqc_tt_queue_nuclear_reactor: "开始建造§Y核反应堆§!"
+ aqc_tt_queue_rocket_site: "Begin construction of §YDrone Launch Site§!" # NEW
+ aqc_tt_queue_nuclear_reactor: "Begin construction of §YNuclear Reactor§!" # NEW
+ aqc_tt_queue_power_plant: "Begin construction of §YNaval Base§!" # NEW
+ aqc_tt_queue_energy_farm: "Begin construction of §3Energy Farm§!" # NEW
+
+ #build_queue_nuclear_reactor: "批量建造[GetCurrentNumberSpecial] §9核反应堆§!"
+ build_queue_rocket_site: "Mass build [GetCurrentNumberSpecial] §9 drone launch sites§!" # NEW
+ build_queue_nuclear_reactor: "Mass build [GetCurrentNumberSpecial] §9 nuclear reactors§!" # NEW
+ build_queue_power_plant: "Mass build [GetCurrentNumberSpecial] §8 power plants§!" # NEW
+ build_queue_energy_farm: "Mass build [GetCurrentNumberSpecial] §3 energy farms§!" # NEW
+
+ aqc_tt_queue_infrastructure: "Start building §YInfrastructure§!"
+ aqc_tt_queue_anti_air_building: "Start building §YAnti-air Position§!"
+ aqc_tt_queue_air_base: "Start building §YAir Force Base§!"
+ aqc_tt_queue_radar_station: "Start building §YRadar Station§!"
+ aqc_tt_queue_infrastructure_resource: "Start building §YInfrastructure§!. However, priority will be given to states with resources."
+
+ build_queue_infrastructure: "Bulk build [GetCurrentNumberInfrastructure] §3 Infrastructure§!"
+ build_queue_anti_air_building: "Bulk build [GetCurrentNumberInfrastructure] §OAnti-air Position§!"
+ build_queue_air_base: "Bulk build [GetCurrentNumberInfrastructure] §OAir Force Base§!"
+ build_queue_radar_station: "Bulk build [GetCurrentNumberInfrastructure] §3 radar stations§!"
+ build_queue_infrastructure_resource: "Bulk build [GetCurrentNumberInfrastructure] §3 infrastructure§!"
+
+ current_number_factory: "[GetCurrentNumberFactory]"
+ current_number_factory_5: "§Y5x§!"
+ current_number_factory_10: "§Y10x§!"
+ current_number_factory_25: "§Y25x§!"
+
+ current_number_refineries: "[GetCurrentNumberRefineries]"
+ current_number_refineries_3: "§Y3x§!"
+ current_number_refineries_6: "§Y6x§!"
+ current_number_refineries_10: "§Y10x§!"
+
+ current_number_special: "[GetCurrentNumberSpecial]"
+ current_number_special_2: "§Y2x§!"
+ current_number_special_4: "§Y4x§!"
+ current_number_special_6: "§Y6x§!"
+
+ current_number_infrastructure: "[GetCurrentNumberInfrastructure]"
+ current_number_infrastructure_3: "§Y3x§!"
+ current_number_infrastructure_6: "§Y6x§!"
+ current_number_infrastructure_10: "§Y10x§!"
+
+ infrastructure_random: "Random State"
+ prior_infrastructure_resource: "Prioritize State with Resources"
+
+

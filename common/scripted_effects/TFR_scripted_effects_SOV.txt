@@ -1,0 +1,494 @@
+SOV_increase_corona = {
+	if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea4
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea4
+			add_idea = SOV_coronavirus_pandemic_idea3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea3
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea3
+			add_idea = SOV_coronavirus_pandemic_idea2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea2
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea2
+			add_idea = SOV_coronavirus_pandemic_idea1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea1
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea1
+			add_idea = SOV_coronavirus_pandemic_idea
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea
+		}
+		add_stability = -0.05
+	}
+	else = {
+		add_ideas = SOV_coronavirus_pandemic_idea4
+	}
+}
+
+SOV_decrease_corona = {
+	if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea4
+		}
+		remove_ideas = SOV_coronavirus_pandemic_idea4
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea3
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea3
+			add_idea = SOV_coronavirus_pandemic_idea4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea2
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea2
+			add_idea = SOV_coronavirus_pandemic_idea3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea1
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea1
+			add_idea = SOV_coronavirus_pandemic_idea2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_coronavirus_pandemic_idea
+		}
+		swap_ideas = {
+			remove_idea = SOV_coronavirus_pandemic_idea
+			add_idea = SOV_coronavirus_pandemic_idea1
+		}
+		set_country_flag = SOV_corona_decision
+	}
+}
+
+SOV_decrease_sanction = {
+	if = {
+		limit = { 
+			has_idea = SOV_heavy_sanctions0
+		}
+		swap_ideas = {
+			remove_idea = SOV_heavy_sanctions0
+			add_idea = SOV_heavy_sanctions
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = SOV_heavy_sanctions
+		}
+		swap_ideas = {
+			remove_idea = SOV_heavy_sanctions
+			add_idea = SOV_heavy_sanctions1
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = SOV_heavy_sanctions1
+		}
+		remove_ideas = SOV_heavy_sanctions1
+	}
+}
+
+SOV_increase_sanction = {
+	if = {
+		limit = { 
+			NOT = {
+				has_idea = SOV_heavy_sanctions
+				has_idea = SOV_heavy_sanctions0
+				has_idea = SOV_heavy_sanctions1
+			}
+		}
+		add_ideas = SOV_heavy_sanctions0
+	}
+	else_if = {
+		limit = { 
+			has_idea = SOV_heavy_sanctions1
+		}
+		swap_ideas = {
+			remove_idea = SOV_heavy_sanctions1
+			add_idea = SOV_heavy_sanctions
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = SOV_heavy_sanctions
+		}
+		swap_ideas = {
+			remove_idea = SOV_heavy_sanctions
+			add_idea = SOV_heavy_sanctions0
+		}
+	}
+}
+
+SOV_add_election_approval_rating_cprf = {
+	custom_effect_tooltip = SOV_add_election_approval_rating_cprf_tooltip
+	set_temp_variable = {
+		target = 1
+	}
+	add_to_variable = {
+		var = SOV_election_approval_rating_cprf_var
+		value = SOV_election_approval_rating_cprf_var_temp
+	}
+	SOV_election_var_balancer = yes
+}
+
+SOV_add_election_approval_rating_ldpr = {
+	custom_effect_tooltip = SOV_add_election_approval_rating_ldpr_tooltip
+	set_temp_variable = {
+		target = 2
+	}
+	add_to_variable = {
+		var = SOV_election_approval_rating_ldpr_var
+		value = SOV_election_approval_rating_ldpr_var_temp
+	}
+	SOV_election_var_balancer = yes
+}
+
+SOV_add_election_approval_rating_ur = {
+	set_temp_variable = {
+		target = 3
+	}
+	custom_effect_tooltip = SOV_add_election_approval_rating_ur_tooltip
+	add_to_variable = {
+		var = SOV_election_approval_rating_ur_var
+		value = SOV_election_approval_rating_ur_var_temp
+	}
+	SOV_election_var_balancer = yes
+}
+
+SOV_add_election_approval_rating_srzp = {
+	custom_effect_tooltip = SOV_add_election_approval_rating_srzp_tooltip
+	add_to_variable = {
+		var = SOV_election_approval_rating_srzp_var
+		value = SOV_election_approval_rating_srzp_var_temp
+	}
+	SOV_election_var_balancer = yes
+}
+
+SOV_add_election_approval_rating_nav = {
+	custom_effect_tooltip = SOV_add_election_approval_rating_nav_tooltip
+	add_to_variable = {
+		var = SOV_election_approval_rating_nav_var
+		value = SOV_election_approval_rating_nav_var_temp
+	}
+	multiply_temp_variable = {
+		var = SOV_election_approval_rating_nav_var_temp
+		value = -0.1
+	}
+	add_to_variable = {
+		var = SOV_liberal_opposition_dynamic_dynamic_var
+		value = SOV_election_approval_rating_nav_var_temp
+	}
+	clamp_variable = {
+		var = SOV_election_approval_rating_nav_var
+		min = 0
+		max = 1
+	}
+}
+
+SOV_add_oligarch_approval_rating = {
+	custom_effect_tooltip = SOV_add_oligarch_approval_rating_tooltip
+	add_to_variable = {
+		var = SOV_oligarch_approval_rating_var
+		value = SOV_oligarch_approval_rating_var_temp
+	}
+	multiply_temp_variable = {
+		var = SOV_oligarch_approval_rating_var_temp
+		value = 0.1
+	}
+	add_to_variable = {
+		var = SOV_oligarch_support_dynamic_var
+		value = SOV_oligarch_approval_rating_var_temp
+	}
+	clamp_variable = {
+		var = SOV_oligarch_approval_rating_var
+		min = 0
+		max = 1
+	}
+	clamp_variable = {
+		var = SOV_oligarch_support_dynamic_var
+		min = 0
+		max = 1
+	}
+}
+
+SOV_add_party_resource = {
+	custom_effect_tooltip = SOV_add_party_resourse_tooltip
+	add_to_variable = {
+		var = SOV_party_resource_var
+		value = SOV_party_resource_var_temp
+	}
+}
+SOV_add_oligarch_factory = {
+	custom_effect_tooltip = SOV_add_oligarch_factory_tooltip
+	add_to_variable = {
+		var = SOV_oligarch_factory_var
+		value = SOV_oligarch_approval_factory_temp
+	}
+	set_variable = {
+		var = SOV_remove_oligarch_factory_var
+		value = SOV_oligarch_factory_var
+	}
+	multiply_variable = {
+		var = SOV_remove_oligarch_factory_var
+		value = -1
+	}
+}
+
+SOV_election_var_balancer = {
+	if = {
+		limit = {
+			check_variable = {
+				target = 1
+			}
+		}
+		divide_temp_variable = {
+			SOV_election_approval_rating_cprf_var_temp = 5
+		}
+		multiply_temp_variable = {
+			SOV_election_approval_rating_cprf_var_temp = -1
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_ldpr_var = SOV_election_approval_rating_cprf_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_ur_var = SOV_election_approval_rating_cprf_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_srzp_var = SOV_election_approval_rating_cprf_var_temp
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				target = 2
+			}
+		}
+		divide_temp_variable = {
+			SOV_election_approval_rating_ldpr_var_temp = 5
+		}
+		multiply_temp_variable = {
+			SOV_election_approval_rating_ldpr_var_temp = -1
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_cprf_var = SOV_election_approval_rating_ldpr_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_ur_var = SOV_election_approval_rating_ldpr_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_srzp_var = SOV_election_approval_rating_ldpr_var_temp
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				target = 3
+			}
+		}
+		divide_temp_variable = {
+			SOV_election_approval_rating_ur_var_temp = 5
+		}
+		multiply_temp_variable = {
+			SOV_election_approval_rating_ur_var_temp = -1
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_ldpr_var = SOV_election_approval_rating_ur_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_cprf_var = SOV_election_approval_rating_ur_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_srzp_var = SOV_election_approval_rating_ur_var_temp
+		}
+	}
+	else = {
+		divide_temp_variable = {
+			SOV_election_approval_rating_srzp_var_temp = 5
+		}
+		multiply_temp_variable = {
+			SOV_election_approval_rating_srzp_var_temp = -1
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_ldpr_var = SOV_election_approval_rating_srzp_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_cprf_var = SOV_election_approval_rating_srzp_var_temp
+		}
+		add_to_variable = {
+			SOV_election_approval_rating_ur_var = SOV_election_approval_rating_srzp_var_temp
+		}
+	}
+	set_temp_variable = {
+		total_popularity = 0
+	}
+	clamp_variable = {
+		var = SOV_election_approval_rating_ur_var
+		min = 0
+		max = 1
+	}
+	add_to_temp_variable = {
+		total_popularity = SOV_election_approval_rating_ur_var
+	}
+	clamp_variable = {
+		var = SOV_election_approval_rating_cprf_var
+		min = 0
+		max = 1
+	}
+	add_to_temp_variable = {
+		total_popularity = SOV_election_approval_rating_cprf_var
+	}
+	clamp_variable = {
+		var = SOV_election_approval_rating_ldpr_var
+		min = 0
+		max = 1
+	}
+	add_to_temp_variable = {
+		total_popularity = SOV_election_approval_rating_ldpr_var
+	}
+	clamp_variable = {
+		var = SOV_election_approval_rating_srzp_var
+		min = 0
+		max = 1
+	}
+	add_to_temp_variable = {
+		total_popularity = SOV_election_approval_rating_srzp_var
+	}
+	if = {
+		limit = {
+			check_variable = {
+				total_popularity > 1
+			}
+		}
+		subtract_from_temp_variable = {
+			total_popularity = 1
+		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					modifier = {
+						factor = 0
+						check_variable = {
+							SOV_election_approval_rating_cprf_var < total_popularity
+						}
+					}
+					subtract_from_variable = {
+						SOV_election_approval_rating_cprf_var = total_popularity
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						check_variable = {
+							SOV_election_approval_rating_ldpr_var < total_popularity
+						}
+					}
+					subtract_from_variable = {
+						SOV_election_approval_rating_ldpr_var = total_popularity
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						check_variable = {
+							SOV_election_approval_rating_ur_var < total_popularity
+						}
+					}
+					subtract_from_variable = {
+						SOV_election_approval_rating_ur_var = total_popularity
+					}
+				}
+				10 = {
+					modifier = {
+						factor = 0
+						check_variable = {
+							SOV_election_approval_rating_srzp_var < total_popularity
+						}
+					}
+					subtract_from_variable = {
+						SOV_election_approval_rating_srzp_var = total_popularity
+					}
+				}
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				total_popularity < 1
+			}
+		}
+		subtract_from_temp_variable = {
+			total_popularity = 1
+		}
+		multiply_temp_variable = {
+			total_popularity = -1
+		}
+		hidden_effect = {
+			random_list = {
+				10 = {
+					add_to_variable = {
+						SOV_election_approval_rating_cprf_var = total_popularity
+					}
+				}
+				10 = {
+					add_to_variable = {
+						SOV_election_approval_rating_ldpr_var = total_popularity
+					}
+				}
+				10 = {
+					add_to_variable = {
+						SOV_election_approval_rating_ur_var = total_popularity
+					}
+				}
+				10 = {
+					add_to_variable = {
+						SOV_election_approval_rating_srzp_var = total_popularity
+					}
+				}
+			}
+		}
+	}
+	set_temp_variable = {
+		SOV_election_approval_rating_ur_var_temp = 0
+	}
+	set_temp_variable = {
+		SOV_election_approval_rating_cprf_var_temp = 0
+	}
+	set_temp_variable = {
+		SOV_election_approval_rating_ldpr_var_temp = 0
+	}
+	set_temp_variable = {
+		SOV_election_approval_rating_srzp_var_temp = 0
+	}
+}

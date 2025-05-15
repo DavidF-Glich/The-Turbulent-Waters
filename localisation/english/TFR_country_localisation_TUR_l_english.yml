@@ -1,0 +1,68 @@
+﻿l_english:
+ #Leaders
+ #Focuses
+ #Ideas
+ TUR_political_cronyism_idea: "Political Cronyism"
+ TUR_kurdish_insurgency_idea: "Kurdish Insurgency"
+ TUR_disjointed_diplomacy_idea: "Disjointed Diplomacy"
+ TUR_currency_crisis_idea: "Currency Crisis"
+ TUR_turkish_nationalism_idea: "Turkish Nationalism"
+ #Ideology
+ TUR_erdoganism: "Erdoğanism"
+ TUR_kemalism_authdem: "Kemalism"
+ TUR_kemalism_con: "Conservative Kemalism"
+ TUR_kemalism_soclib: "Liberal Kemalism"
+ TUR_kemalism_socdem: "Progressive Kemalism"
+ TUR_kemalism_authsoc: "Ulusalism"
+ #Missions
+ #Decision Categories
+ #Decisions
+ #Country Flag
+ #Tooltips
+ #Faction
+ #Parties
+ TUR_national_socialist_party: "Genç Atsızlar"
+ TUR_national_socialist_party_long: "Atsız Youth"
+ TUR_fascist_party: "Bozkurtlar"
+ TUR_fascist_party_long: "Grey Wolves"
+ TUR_authoritarian_democrat_party: "AKP"
+ TUR_authoritarian_democrat_party_long: "Adalet ve Kalkınma Partisi"
+ TUR_nationalist_party: "MHP"
+ TUR_nationalist_party_long: "Milliyetçi Hareket Partisi"
+ TUR_conservative_party: "IP"
+ TUR_conservative_party_long: "İYİ Parti"
+ TUR_market_liberal_party: "DEVA"
+ TUR_market_liberal_party_long: "Demokrasi ve Atılım Partisi"
+ TUR_social_liberal_party: "LDP"
+ TUR_social_liberal_party_long: "Liberal Demokrat Parti"
+ TUR_social_democrat_party: "CHP"
+ TUR_social_democrat_party_long: "Cumhuriyet Halk Partisi"
+ TUR_libertarian_socialist_party: "HDP"
+ TUR_libertarian_socialist_party_long: "Halkların Demokratik Partisi"
+ TUR_communist_party: "TKP"
+ TUR_communist_party_long: "Türkiye Komünist Partisi"
+ TUR_totalitarian_socialist_party: "DHKP-C"
+ TUR_totalitarian_socialist_party_long: "Devrimci Halk Kurtuluş Partisi-Cephesi"
+ PKK_nationalist_party: "TAK"
+ PKK_nationalist_party_long: "Teyrêbazên Azadiya Kurdistan"
+ PKK_authoritarian_democrat_party: "PDK/Bakur"
+ PKK_authoritarian_democrat_party_long: "Partiya Demokrat a Kurdistan/Bakur"
+ PKK_social_democrat_party: "PKK"
+ PKK_social_democrat_party_long: "Partiya Karkerên Kurdistanê"
+ PKK_libertarian_socialist_party: "PKK"
+ PKK_libertarian_socialist_party_long: "Partiya Karkerên Kurdistanê"
+ PKK_communist_party: "HBDH"
+ PKK_communist_party_long: "Halkların Birleşik Devrim Hareketi"
+ TUR_vatan_party: "Vatan Partisi"
+ TUR_victory_party: "Zafer Partisi"
+ #Country
+ #Events
+ turkey.2.t: "Turkey Leaves NATO"
+ turkey.2.d: "In the aftermath of the election that was barely won by Erdogan, he accused NATO countries in meddling in Turkish internal affairs. In his speech Erdogan called NATO a "defunct and de-facto dead organization", also noting that the absence of the United States has affected that, and pledged to withdraw Turkish NATO membership."
+ turkey.2.a: "Is he serious?"
+ turkey.3.t: "Erdogan Re-elected in Turkey"
+ turkey.3.d: "Damn it, he found out we were trying to sack him and now he's leaving NATO!"
+ turkey.3.a: "Scheiße!"
+ turkey.4.t: "Kemal Kilicdaroglu Elected in Turkey"
+ turkey.4.d: "Thankfully, our very democratic incursion into Turkish internal affairs has paid off! Waiting for the Kemalist subideology."
+ turkey.4.a: "No country is free unless it is democratic."

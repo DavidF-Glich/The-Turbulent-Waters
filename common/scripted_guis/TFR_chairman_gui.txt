@@ -1,0 +1,12 @@
+scripted_gui = {
+	Tim_Cook_System = {
+		context_type = decision_category
+		parent_window_name = decision_container
+		window_name = "TFR_USA_Agenda"
+		dirty = dirty_var
+		visible = {
+			always = yes
+		}
+
+	}
+}

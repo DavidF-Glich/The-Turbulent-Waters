@@ -1,0 +1,261 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				add_dynamic_modifier = {
+					modifier = gdp_debt_dynamic
+				}
+				add_dynamic_modifier = {
+					modifier = inflation_dynamic
+				}
+				set_variable = { 
+					debt_var = 0
+				}
+				set_variable = { 
+					gdp_var = 0
+				}
+				set_variable = {
+					inflation_var = 0
+				}
+				set_country_flag = auto_payment_flag
+				set_variable = { 
+					var = auto_payment_var 
+					value = 2
+				}
+				if = {
+					limit = {
+						is_ai = no
+					}
+					set_country_flag = bank_flag
+					set_variable = { 
+						var = bank_var 
+						value = 2
+					}
+				}
+				else = {
+					set_variable = { 
+						var = bank_var 
+						value = 1
+					}
+				}
+			}
+			SYR = {
+				set_variable = {
+					inflation_var = 0.281
+				}
+				set_temp_variable = {
+					debt_var_temp = 1000
+				}
+				add_debt = yes
+			}
+			USA = {
+				set_variable = {
+					inflation_var = 0.012
+				}
+				set_temp_variable = { 
+					debt_var_temp = 23719.2
+				}
+				add_debt = yes
+			}
+			HUN = {
+				set_temp_variable = { 
+					debt_var_temp = 105.4
+				}
+				add_debt = yes
+			}
+			PRC = {
+				set_temp_variable = { 
+					debt_var_temp = 6755
+				}
+				add_debt = yes
+			}
+			ENG = {
+				set_temp_variable = { 
+					debt_var_temp = 2283
+				}
+				add_debt = yes
+			}
+			UKR = {
+				set_temp_variable = { 
+					debt_var_temp = 840
+				}
+				add_debt = yes
+			}
+			GER = {
+				set_temp_variable = {
+					inflation_var_temp = 0.015
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2053
+				}
+				add_debt = yes
+			}
+			FRA = {
+				set_temp_variable = {
+					inflation_var_temp = 0.011
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 2666
+				}
+				add_debt = yes
+			}
+			ITA = {
+				set_temp_variable = { 
+					debt_var_temp = 2700
+				}
+				add_debt = yes
+			}
+			GRE = {
+				set_temp_variable = { 
+					debt_var_temp = 3350
+				}
+				add_debt = yes
+			}
+			POL = {
+				set_temp_variable = { 
+					debt_var_temp = 2700
+				}
+				add_debt = yes
+			}
+			SOV = {
+				set_temp_variable = {
+					inflation_var_temp = 0.024
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 232.31
+				}
+				add_debt = yes
+			}
+			PER = {
+				set_temp_variable = { 
+					debt_var_temp = 1660
+				}
+				add_debt = yes
+			}
+			SAU = {
+				set_temp_variable = { 
+					debt_var_temp = 1180
+				}
+				add_debt = yes
+			}
+			JAP = {
+				set_temp_variable = {
+					inflation_var_temp = 0.008
+				}
+				add_inflation = yes
+				set_temp_variable = { 
+					debt_var_temp = 10640 
+				}
+				add_debt = yes
+			}
+			PRK = {
+				set_temp_variable = { 
+					debt_var_temp = 700
+				}
+				add_debt = yes
+			}
+			MEX = {
+				set_temp_variable = { 
+					debt_var_temp = 1660
+				}
+				add_debt = yes
+			}
+			SER = {
+				set_variable = {
+					inflation_var = 0.015
+				}
+				set_temp_variable = { 
+					debt_var_temp = 28
+				}
+				add_debt = yes
+			}
+			every_country = {
+				add_GDP = yes
+			}
+			every_possible_country = {
+				limit = {
+					is_relavent_tag = yes
+				}
+				add_to_array = {
+					economic_actions_array = token:print_money_economic_action
+			 	}
+				add_to_array = {
+					economic_actions_array = token:quantitative_tightening_economic_action 
+			 	}
+				add_to_array = {
+					economic_actions_array = token:war_taxes_economic_action
+			 	}
+				add_to_array = {
+					economic_actions_array = token:develop_state_economic_action
+			 	}
+			}
+			every_state = {
+				limit = {
+					OR = {
+						nuclear_reactor > 0
+						power_plant > 0
+						energy_farm > 0
+					}
+				}
+				if = {
+					limit = {
+						nuclear_reactor > 0
+					}
+					add_dynamic_modifier = {
+						modifier = generic_nuclear_reactor_state_dynamic
+					}
+				}
+				if = {
+					limit = {
+						power_plant > 0
+					}
+					add_dynamic_modifier = {
+						modifier = generic_power_plant_state_dynamic
+					}
+				}
+				if = {
+					limit = {
+						energy_farm > 0
+					}
+					add_dynamic_modifier = {X
+						modifier = generic_energy_farm_state_dynamic
+					}
+				}
+			}
+			#分数计算-经济
+			every_country = {
+        		limit = {
+                   has_variable = num_of_nukes1  
+            	}
+            	set_variable = {
+                   economic_score1 = THIS.gdp_var
+            	}
+            }
+		}	
+	}
+		
+	on_monthly = {
+		effect = {
+			add_GDP = yes
+			update_power_plants_effect = yes
+		}
+	}
+
+	on_weekly = {
+		effect = {
+			if = {
+				limit = {
+					has_stability < 0.5
+				}
+				set_temp_variable = {
+					var = low_stability_weekly_var_temp
+					value = modifier@low_stability_weekly
+				}
+				add_stability = low_stability_weekly_var_temp
+			}
+		}
+	}
+}

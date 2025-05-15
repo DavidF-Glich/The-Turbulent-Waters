@@ -1,0 +1,75 @@
+﻿l_simp_chinese:
+#民族精神
+ CHI_american_protection_idea: "美国的保护"
+ CHI_taiwanese_independence_movement_idea: "台湾独立运动"
+ CHI_taiwanese_independence_movement_2_idea: "台湾独立运动"
+ CHI_lower_mainland_influence_idea: "极低大陆影响"
+ CHI_low_mainland_influence_idea: "低大陆影响"
+ CHI_medium_mainland_influence_idea: "中等大陆影响"
+ CHI_high_mainland_influence_idea: "高大陆影响"
+ CHI_higher_mainland_influence_idea: "极高大陆影响"
+ CHI_low_international_recognition_idea: "低国际认可度"
+ CHI_prc_embargo_low_idea: "大陆贸易禁运"
+ CHI_prc_embargo_idea: "大陆贸易禁运"
+ CHI_prc_embargo_idea1: "大陆贸易禁运"
+ CHI_american_protection_idea_desc: "仅凭国军自身的武力，明显无法单独抵抗中共，之所以和平得以维持，全依赖于美国的政策，也就是现状不容更改。\n\n第七舰队有如定海神针一般，维系着台海的脆弱稳定，然而坚强的盾牌同时也意味着另一件事：一旦失去依靠，敌人便将袭来。"
+ CHI_taiwanese_independence_movement_idea_desc: "\n\n\n\n£GFX_CHI_taiwanese_independence_movement_banner\n\n\n\n\n\n中华民国，也可称呼为台湾，近几年来则是以中华民国台湾作为称呼，以上描述可见这个地区意识形态的混乱，没错，我们甚至在国际上不被认为是一个国家，这正是台独运动的滥觞。\n\n自从退出联合国，中华民国的国际地位便一落千丈，这也让本土意识开始萌芽，并在之后的民主运动中彻底站上舞台，并获取政权。\n\n尽管如此，认同维持现状的人依旧占据社会上的绝大多数，距离正名之路依然遥远。"
+ CHI_taiwanese_independence_movement_2_idea_desc: "\n\n\n\n£GFX_CHI_taiwanese_independence_movement_banner\n\n\n\n\n\n中华民国，也可称呼为台湾，近几年来则是以中华民国台湾作为称呼，以上描述可见这个地区意识形态的混乱，没错，我们甚至在国际上不被认为是一个国家，这正是台独运动的滥觞。\n\n自从退出联合国，中华民国的国际地位便一落千丈，这也让本土意识开始萌芽，并在之后的民主运动中彻底站上舞台，并获取政权。\n\n尽管如此，认同维持现状的人依旧占据社会上的绝大多数，距离正名之路依然遥远。"
+ CHI_lower_mainland_influence_idea_desc: "\n\n\n\n£GFX_CHI_terrible_mainland_influence_banner\n\n\n\n\n\n在上个世纪，我们曾经屹立于中华大地之上，直到内战爆发，来自各方面因素的失利导致我们不得已播迁来台，也因此失去对大陆的掌控。\n\n时过境迁，如今中华民国在大陆人民的印象中，普遍已经成为历史名词，而稍有知悉的人则会抱有极度负面的看法，而我们的支持者也被认为是网络上的可笑思想。"
+ CHI_low_mainland_influence_idea_desc: "\n\n\n\n£GFX_CHI_terrible_mainland_influence_banner\n\n\n\n\n\n"
+ CHI_medium_mainland_influence_idea_desc: "\n\n\n\n£GFX_CHI_terrible_mainland_influence_banner\n\n\n\n\n\n"
+ CHI_high_mainland_influence_idea_desc: "\n\n\n\n£GFX_CHI_terrible_mainland_influence_banner\n\n\n\n\n\n"
+ CHI_higher_mainland_influence_idea_desc: "\n\n\n\n£GFX_CHI_terrible_mainland_influence_banner\n\n\n\n\n\n"
+ CHI_low_international_recognition_idea_desc: "在国际舞台上，海峡两岸有如水火，无法同时存在，并且我们总是被摒弃的一方，也因此不同于其他国家，对我国而言参加国际组织有如一种奢望。\n\n不过生命自然会找到出路，不论是透过地区名称，抑或民间团体，我国依然能以间接的方式参与多边外交，尽管极其有限。"
+ CHI_prc_embargo_low_idea_desc: "事实证明，蔡总统的模糊战略并没有奏效，北京当局依旧被激怒，而我方政府也不得不做出回应，最后演变成两岸再次终止一切交流，回归蒋介石的时代。\n\n虽然政府积极补救，努力开发替代市场，但依旧缓不济急，岛内绝大多数的人民皆感受到了制裁的苦果。"
+ CHI_prc_embargo_idea_desc: "事实证明，蔡总统的模糊战略并没有奏效，北京当局依旧被激怒，而我方政府也不得不做出回应，最后演变成两岸再次终止一切交流，回归蒋介石的时代。\n\n虽然政府积极补救，努力开发替代市场，但依旧缓不济急，岛内绝大多数的人民皆感受到了制裁的苦果。"
+ CHI_prc_embargo_idea1_desc: "事实证明，蔡总统的模糊战略并没有奏效，北京当局依旧被激怒，而我方政府也不得不做出回应，最后演变成两岸再次终止一切交流，回归蒋介石的时代。\n\n虽然政府积极补救，努力开发替代市场，但依旧缓不济急，岛内绝大多数的人民皆感受到了制裁的苦果。"
+ CHI_destroyed_country: "破败之国"
+
+#启动
+ CHI_country_summary: "§Y国家/政权介绍：§!\n这个介绍的定语十分的特别，因为这里的现状源于§3中国§!过去一百年经历的最动荡的时期：§Y辛亥革命§!、护国战争、北伐战争、§t剿匪§!、中原大战、§8抗日战争§!，以及最后的，决定性的§t解放战争§!。由于§t共党§!当时缺乏海军，蒋介石得以带着他的§3国民党§!军队逃亡至台湾，民国得以持续。\n时过境迁，蒋介石的党国已经§G自由化§!，国军也成为了中华民国的国军，但民国已经彻底失去了在国际舞台的地位；与此同时，§t共产党§!在大陆上经历了一系列混乱后，最后稳定在§Y“社会主义市场经济”§!这一新的集权统治模式之下，并成为了世界体系的关键维护者。令人遗憾又紧张的是：在毛泽东去世后，§t中共§!也没有放弃“解放战争”，甚至在习近平上台后，§t中共§!对“解放”“统一”的诉求愈发热心，并迟早有一天将冲击我们的民主制度。\n此刻，台湾人民必须作出自己的选择：§3争取时间§!还是§Y消极等待§!？§t回归中国§!还是§G彻底斩断羁绊§!？§t大陆§!与§3台湾§!的斗争史，将成为牵动这脆弱世界秩序的关键神经。"
+ CHI_country_paths: "§Y游玩路线：§!\n- §t回家§!\n- §G民主永存§!\n- §3传统不息§!\n- §6新道路§!"
+ CHI_country_other: "§Y游玩前的寄语：§!\n这个世界只是一台手摇风琴，只能由天主亲自弹奏。而我们所有人，都只能跟着风箱拉出的音符起舞。——《新秩序：欧洲末日》"
+ 
+
+#“国”策
+ CHI_TCP: "我们的同胞"
+ CHI_DPP: "民主光大"
+ CHI_KMT: "三民主义"
+ CHI_TPP: "一条新道路"
+ CHI_Avoid_Annex_by_PRC: "选择这条路线意味着你选择了§t再统一§!路线。在中国统一后，§Y台湾不会被大陆的中共政权吞并。§!你可以在统一后选择继续操作§t台湾§!或者切换至§R中国§!中央政府继续游戏。"
+#党派
+ CHI_tsai_ing_wen_desc: "蔡英文，女，1956年8月31日出生，中国台湾省屏东县枋山乡枫港村人，客家人，祖籍福建漳州。台湾大学法律系毕业、美国康奈尔大学法学院法学硕士、英国伦敦政治经济学院法学博士，民主进步党籍。历任台湾省政府大陆委员会主任委员、省立法委员、行政机构副负责人、民进党主席、中国台湾省第14任、15任领导人等职。现任当地“中华文化总会”会长。\n1984-2000年，在台湾多所大学任教，任学者、顾问。2000年，任“台湾陆委会”主委，2004年，加入民主进步党，当选第六届民进党不分区立委 。2012年，代表民进党角逐2012年台湾省领导人选举败选。2016年5月20日，当选中国台湾省领导人，成为台湾省首位女性领导人。2020年1月11日，当选连任中国台湾省领导人。"
+ CHI_nationalist_party_militarists: "国民党(军国派)"
+ CHI_nationalist_party_militarists_long: "国民党(军国派)(Kuomintang (Militarists))"
+ CHI_authoritarian_democrat_party_militarists: "国民党(中央俱乐部)"
+ CHI_authoritarian_democrat_party_militarists_long: "国民党(中央俱乐部)(Kuomintang (Central Club))"
+ CHI_conservative_party_militarists: "国民党(温和派)"
+ CHI_conservative_party_militarists_long: "国民党(温和派)(Kuomintang (Moderates))"
+ CHI_taiwanese_conservatism: "台湾保守主义"
+
+#人物
+ CHI_Su_Zhen_Chang_hog: "苏贞昌"
+ CHI_Chen_Jian_Ren_hog: "陈建仁"
+ CHI_Zhuo_Rong_Tai_hog: "卓荣泰"
+ CHI_Wu_Zhao_xie_for: "吴钊燮"
+ CHI_Lin_Jia_Long_for: "林佳龙"
+ CHI_Shen_Rong_Jin_eco: "沈荣津"
+ CHI_Wang_Mei_Hua_eco: "王美花"
+ CHI_Guo_Zhi_Hui_eco: "郭智辉"
+ CHI_Xu_Guo_Yong_sec: "徐国勇"
+ CHI_Hua_Jing_Qun_sec: "花敬群"
+ CHI_Lin_You_Chang_sec: "林右昌"
+ CHI_Liu_Shi_Fang_sec: "刘世芳"
+ CHI_Qiu_Guo_Zheng_int: "邱国正"
+ CHI_Chen_Ming_Tong_int: "陈明通"
+ CHI_Cai_Ming_Yan_int: "蔡明彦"
+ CHI_Yan_De_Fa_the: "严德发"
+ CHI_Gu_Li_Xiong_the: "顾立雄"
+#事件
+
+
+#城市
+ CHI_gaoxiong: "高雄"
+ CHI_taibei: "台北"
+ CHI_taizhong: "台中"

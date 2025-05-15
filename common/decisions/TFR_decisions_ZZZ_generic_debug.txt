@@ -1,0 +1,1253 @@
+debug_decisions = {
+	generic_form_chadfrica_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+			CHA = {
+				exists = yes
+			}
+			CAR = {
+				exists = yes
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = CPC
+						tag = NMB
+						tag = LES
+						tag = SWZ
+						tag = MZB
+						tag = BOT
+						tag = ZIM
+						tag = MAD
+						tag = MLW
+						tag = ZAM
+						tag = ANG
+						tag = COG
+						tag = TZN
+						tag = BRD
+						tag = RWA
+						tag = UGA
+						tag = RCG
+						tag = GAB
+						tag = EQG
+						tag = CAR
+						tag = CMR
+						tag = SSD
+						tag = ETH
+						tag = SML
+						tag = SOM
+						tag = SHB
+						tag = DJI
+						tag = ERI
+						tag = COM
+						tag = SEY
+						tag = MAU
+						tag = SAF
+						tag = SUD
+						tag = NGA
+						tag = NGR
+						tag = KEN
+						AND = {
+							NOT = {
+								ROOT = {
+									tag = FRA
+								}
+							}
+							FRA_is_west_africa_tag = yes
+						}
+					}
+				}
+				CHA = {
+					annex_country = {
+						target = PREV
+					}
+					every_controlled_state = {
+						remove_core_of = PREV.PREV
+						add_core_of = CHA
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	generic_send_latinx_to_bruhzil_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+			PAR = {
+				exists = yes
+			}
+			BRA = {
+				exists = yes
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = ARG
+						tag = URG
+						tag = CHL
+						tag = BOL
+						tag = PRU
+						tag = ECU
+						tag = COL
+						tag = VEN
+						tag = GYA
+						tag = SUR
+						tag = PAN
+						tag = COS
+						tag = NIC
+						tag = HON
+						tag = ELS
+						tag = GUA
+						tag = BLZ
+						tag = JAM
+						tag = DOM
+						tag = BAS
+						tag = STL
+						tag = GND
+						tag = STV
+						tag = BRB
+						tag = TRI
+						tag = JAM
+						tag = PAR
+					}
+				}
+				BRA = {
+					annex_country = {
+						target = PREV
+					}
+					every_controlled_state = {
+						remove_core_of = PREV.PREV
+						add_core_of = BRA
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	generic_form_titor_slavia_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+			SER = {
+				exists = yes
+			}
+			CRO = {
+				exists = yes
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = ALB
+						tag = MAC
+						tag = KOS
+						tag = MNT
+						tag = BOS
+						tag = CRO
+						tag = SLV
+					}
+				}
+				SER = {
+					annex_country = {
+						target = PREV
+					}
+					every_controlled_state = {
+						remove_core_of = PREV.PREV
+						add_core_of = SER
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	generic_expand_kiwi_farms_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+			NZL = {
+				exists = yes
+			}
+			INS = {
+				exists = yes
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			every_other_country = {
+				limit = {
+					OR = {
+						tag = VAN
+						tag = FIJ
+						tag = TON
+						tag = SAM
+						tag = KIR
+						tag = NAU
+						tag = PLU
+						tag = SOL
+						tag = INS
+						tag = MAL
+						tag = PHI
+						tag = ETI
+						tag = PNG
+						tag = SIG
+					}
+				}
+				NZL = {
+					annex_country = {
+						target = PREV
+					}
+					every_controlled_state = {
+						remove_core_of = PREV.PREV
+						add_core_of = NZL
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	generic_reform_soviet_union = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			always = yes
+			SOV = {
+				exists = yes
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			SOV = {
+				annex_country = {
+					target = KAZ
+				}
+				annex_country = {
+					target = TAJ
+				}
+				annex_country = {
+					target = TMS
+				}
+				annex_country = {
+					target = KYR
+				}
+				annex_country = {
+					target = AZR
+				}
+				annex_country = {
+					target = GEO
+				}
+				annex_country = {
+					target = ARM
+				}
+				annex_country = {
+					target = NGK
+				}
+				annex_country = {
+					target = BLR
+				}
+				annex_country = {
+					target = UKR
+				}
+				annex_country = {
+					target = EST
+				}
+				annex_country = {
+					target = LAT
+				}
+				annex_country = {
+					target = LIT
+				}
+				annex_country = {
+					target = NOV
+				}
+				annex_country = {
+					target = UZB
+				}
+				annex_country = {
+					target = MOL
+				}
+				every_controlled_state = {
+					add_core_of = SOV
+				}
+				set_politics = {
+					ruling_party = communist
+					elections_allowed = no
+				}
+				set_popularities = {
+					communist = 100
+				}
+				dismantle_faction = yes
+				create_faction = "Treaty of Friendship, Cooperation and Mutual Assistance"
+				set_cosmetic_tag = SOV_SovietUnion
+			}
+		}
+		remove_effect = {
+		}
+	}
+	generic_open_the_rift = {
+		icon = generic_ignite_civil_war
+		allowed = {
+			tag = SOV
+		}
+		visible = {
+			always = yes
+			SOV = {
+				exists = yes
+			}
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			TAY = {
+				add_state_core = 215
+				add_state_core = 213
+				add_state_core = 147
+				add_state_core = 722
+				add_state_core = 146
+				add_state_core = 216
+				transfer_state = 215
+				transfer_state = 213
+				transfer_state = 147
+				transfer_state = 722
+				transfer_state = 146
+				transfer_state = 216
+				SOV = {
+					every_controlled_state = {
+						limit = {
+							is_core_of = SOV
+						}
+						add_core_of = TAY
+					}
+				}
+			}
+		}
+		remove_effect = {
+		}
+	}
+	#removing this cringe
+	generic_increase_industrial_development_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = 0.1
+			}
+			add_industrial_development = yes
+		}
+		remove_effect = {
+		}
+	}
+	generic_decrease_industrial_development_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+		}
+		available = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_temp_variable = {
+				var = industrial_development_var_temp
+				value = -0.1
+			}
+			add_industrial_development = yes
+		}
+		remove_effect = {
+		}
+	}
+	generic_update_economy_debug_decision = {
+		icon = generic_ignite_civil_war
+		allowed = {
+		}
+		visible = {
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			hidden_effect = {
+				add_GDP = yes
+			}
+		}
+	}
+	generic_have_sex_debug_decision = {
+		icon = generic_ignite_civil_war
+		days_remove = 270
+		fixed_random_seed = no
+		allowed = {
+		}
+		visible = {
+		}
+		available = {
+			NOT = {
+				has_country_flag = generic_playing_hoi4_flag
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+		}
+		complete_effect = {
+		}
+		remove_effect = {
+			random_list = {
+				50 = {
+					add_manpower = 1
+				}
+				40 = {
+				}
+				10 = {
+					add_manpower = -1
+				}
+			}
+		}
+	}	
+	USA_Go_MAGA_Communism_decision = {
+		icon = generic_reform_soviet_union
+		days_remove = 1
+		allowed = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		available = {
+			
+			NOT= { has_country_flag = generic_playing_hoi4_flag }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			create_country_leader = {
+				name = USA_greyson_walker_char
+				picture = "gfx/Leaders/USA/USA_Greyson_Walker.png"
+				ideology = marxism_leninism
+			}
+			add_ideas = APA_jackson_hinkle_hog
+			add_ideas = APA_brian_becker_for
+			add_ideas = APA_ashik_siddique_eco
+			add_ideas = APA_sofia_guimaraes_cutler_sec
+			add_ideas = APA_lily_goldklang_int
+			set_popularities = {
+				communist = 40
+				totalitarian_socialist = 8
+				libertarian_socialist = 7
+				social_democrat = 8
+				social_liberal = 5
+				conservative = 7
+				authoritarian_democrat = 3
+				nationalist = 5
+				national_socialist = 3
+				fascist = 10
+				market_liberal = 4
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = USA_MAGA_Communist_Movement
+				name = USA_MAGA_Communist_Movement_short
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = USA_Political_Innovation_Center
+				name = USA_Political_Innovation_Center_short
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = USA_Party_for_Socialism_and_Liberation
+				name = USA_Party_for_Socialism_and_Liberation_short
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = USA_Patriotic_Front_Jackson
+				name = USA_Patriotic_Front_Jackson_short
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = USA_Patriotic_Front_Hamiliton
+				name = USA_Patriotic_Front_Hamiliton_short
+			}
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 60
+				}
+			#踢人
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:market_liberal
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:national_socialist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			remove_from_coalition = yes
+			#拉人
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			add_to_coalition = yes
+			#投射
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:totalitarian_socialist
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:conservative
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:authoritarian_democrat
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			load_focus_tree = USA_MAGA_C
+		}
+	}
+	USA_APLA_decision = {
+		icon = generic_reform_soviet_union
+		days_remove = 1
+		allowed = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		available = {
+			NOT= { has_country_flag = generic_playing_hoi4_flag }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			create_country_leader = {
+				name = USA_gloria_la_riva_char
+				picture = "gfx/Leaders/APA/APA_gloria_la_riva.png"
+				ideology = marxism_leninism
+			}
+			add_ideas = {
+				APA_brace_belden_hog
+				APA_donald_courter_for
+				APA_ashik_siddique_eco
+				APA_mara_verheyden_hilliard_sec
+				APA_michael_prysner_int
+			}
+			set_popularities = {
+				communist = 48
+				totalitarian_socialist = 4
+				libertarian_socialist = 2
+				social_democrat = 4
+				social_liberal = 4
+				conservative = 8
+				nationalist = 6
+				national_socialist = 13
+				fascist = 5
+				market_liberal = 1
+				authoritarian_democrat = 5
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = USA_Political_Innovation_Center
+				name = USA_Political_Innovation_Center_shorts
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = APA_communist_party_long
+				name = APA_communist_party
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = APA_social_democrat_party_long
+				name = APA_social_democrat_party
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = USA_Patriotic_Front_Jackson
+				name = USA_Patriotic_Front_Jackson_short
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = USA_Patriotic_Front_Hamiliton
+				name = USA_Patriotic_Front_Hamiliton_short
+			}
+			set_politics = {
+				ruling_party = communist
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 60
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:market_liberal
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:national_socialist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:authoritarian_democrat
+			}
+			remove_from_coalition = yes
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			add_to_coalition = yes
+			#投射
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:totalitarian_socialist
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:libertarian_socialist
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:social_democrat
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			}
+	}
+	USA_Patriotic_Front_decision = {
+		icon = generic_reform_soviet_union
+		days_remove = 1
+		allowed = {
+			
+		}
+		visible = {
+			tag = USA
+		}
+		available = {
+			
+			NOT= { has_country_flag = generic_playing_hoi4_flag }
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			create_country_leader = {
+				name = PTF_thomas_rousseau_char_revolution
+				picture = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+				ideology = hybrid_regime
+			}
+			set_popularities = {
+				communist = 18
+				totalitarian_socialist = 1
+				libertarian_socialist = 3
+				social_democrat = 3
+				social_liberal = 2
+				conservative = 5
+				nationalist = 3
+				national_socialist = 5
+				fascist = 16
+				market_liberal = 4
+				authoritarian_democrat = 40
+			}
+			set_party_name = {
+				ideology = totalitarian_socialist
+				long_name = USA_Political_Innovation_Center
+				name = USA_Political_Innovation_Center_shorts
+			}
+			set_party_name = {
+				ideology = communist
+				long_name = APA_communist_party_long
+				name = APA_communist_party
+			}
+			set_party_name = {
+				ideology = libertarian_socialist
+				long_name = APA_social_democrat_party_long
+				name = APA_social_democrat_party
+			}
+			set_party_name = {
+				ideology = authoritarian_democrat
+				long_name = USA_Patriotic_Front_Jackson
+				name = USA_Patriotic_Front_Jackson_short
+			}
+			set_party_name = {
+				ideology = fascist
+				long_name = USA_Patriotic_Front_Hamiliton
+				name = USA_Patriotic_Front_Hamiliton_short
+			}
+			set_politics = {
+				ruling_party = authoritarian_democrat
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 48
+			}
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_liberal
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:conservative
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:market_liberal
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:totalitarian_socialist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:communist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:libertarian_socialist
+			}
+			remove_from_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:social_democrat
+			}
+			remove_from_coalition = yes
+
+
+			set_temp_variable = {
+				coalition_partner_var_temp = token:fascist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:national_socialist
+			}
+			add_to_coalition = yes
+			set_temp_variable = {
+				coalition_partner_var_temp = token:nationalist
+			}
+			add_to_coalition = yes
+			#投射
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:authoritarian_democrat
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:national_socialist
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			set_variable = {
+				var = political_power_ideology_var
+				value = token:nationalist
+			}
+			map_party_popularity_PP_gain_to_ideology = yes
+			}
+	}
+	USA_Load_Biden2020_Focus_Tree_decision = {
+		icon = GFX_decision_USA_compromise_with_democrats
+		days_remove = 1
+		allowed = {
+			tag = USA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			log = "[GetDateText]: [Root.GetName]: event usa.4 immediate"
+			swap_ideas = {
+				remove_idea = USA_political_division
+				add_idea = USA_political_division1
+			}
+			add_ideas = {
+				USB_kamala_harris_hog
+				USB_antony_blinken_for
+				USB_janet_yellen_eco
+				USB_deb_haaland_sec
+				USB_avril_haines_int
+			}
+			set_politics = {
+				ruling_party = social_liberal
+				elections_allowed = yes
+				last_election = "2020.11.5"
+				election_frequency = 48
+			}
+			add_stability = -0.1
+			set_country_flag = USA_biden_2020_inauguration_flag
+			focus_unlock = yes
+			load_focus_tree = {
+				tree = USA_Biden2020
+				keep_completed = yes
+			}
+			complete_national_focus = USA_Biden_Administation2020
+			clr_country_flag = USA_sided_with_resistance_flag
+			clr_country_flag = USA_sided_with_trump_flag
+		}
+	}
+	USA_Load_Trump2024_Focus_Tree_decision = {
+		icon = GFX_decision_USA_compromise_with_democrats
+		days_remove = 1
+		allowed = {
+			tag = USA
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			add_ideas = USC_jd_vance_hog
+			set_country_flag = DOGE_Reforming
+			load_focus_tree = {
+				tree = USA_Trump2024
+				keep_completed = yes
+			}
+		}
+	}
+	SOV_Russo_Ukraianian_war_decision_category_activation = {
+		icon = generic_reform_soviet_union
+		days_remove = 1
+		allowed = {
+			
+		}
+		visible = {
+			OR = {
+				tag = PRC
+				tag = SOV
+				tag = UKR
+				tag = USA
+			}
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			custom_effect_tooltip = test_Russo_Ukrainian_war
+			set_global_flag = Russo_Ukrainian_War 
+		}
+	}
+	PRC_Reunification_Negotiation_debug_decision = {
+		icon = GFX_decision_generic_shaking_hands
+		days_remove = 1
+		allowed = {
+			
+		}
+		visible = {
+			OR = {
+				tag = PRC
+				tag = CHI
+				tag = JAP
+				tag = SOV
+				tag = USA
+			}
+		}
+		available = {
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			
+		}
+		complete_effect = {
+			set_global_flag = PRC_Taiwan_Reunion
+		}
+	}
+	PRC_Food_Reform_debug_decision = {
+		icon = GFX_decision_generic_protest_peaceful
+		days_remove = 1
+		allowed = {
+			
+		}
+		visible = {
+			tag = PRC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_country_flag = PRC_Food_Reforming
+		}
+	}
+	Isareli_Hamas_War_debug_decision = {
+		icon = GFX_decision_generic_protest_peaceful
+		days_remove = 1
+		allowed = {
+			OR = {
+				tag = ISR
+				tag = PAL
+				tag = USA
+				tag = PRC
+				tag = FRA
+				tag = SOV
+				tag = TUR
+			}
+		}
+		visible = {
+			
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			set_global_flag = Israeli_Hamas_war
+		}
+	}
+	load_Chihong_tree = {
+		icon = generic
+		days_remove = 1
+		allowed = {
+			tag = PRC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			load_focus_tree = {
+				tree = china_new_left_focus
+			}
+		}
+	}
+	load_Chihong_afterwar_tree = {
+		icon = generic
+		days_remove = 1
+		allowed = {
+			tag = PRC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			load_focus_tree = {
+				tree = Post_War
+			}
+		}
+	}
+	load_SWE_tieba_crisis_tree = {
+		icon = generic_ignite_civil_war
+		days_remove = 1
+		allowed = {
+			tag = SWE
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		complete_effect = {
+			load_focus_tree = {
+				tree = SWE_Paradox_TFX
+			}
+		}
+	}
+	Grandpa_Niu_arrive = {
+		icon = generic
+		allowed = {
+			tag = PRC
+		}
+		visible = {
+			
+		}
+		days_remove = 1
+		complete_effect = {
+			promote_character = PRC_god_niu_char
+		}
+	}
+}
+SWE_tieba_crisis = {
+	invite_honglong = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = honglong_join
+		}
+	}
+	invite_chihong = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+		complete_effect = {
+			custom_effect_tooltip = chihong_join
+		}
+	}
+	invite_best_of_china = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = bestchina_join
+		}
+	}
+	discard_authorization_thingy = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = discard_authorization_thingy_tt
+		}
+	
+	}
+	unify_command = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = unify_command_tt
+		}
+
+	}
+
+	take_all_document = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = take_all_document_tt
+		}
+
+	}
+
+	find_a_diplomat = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = find_a_diplomat_tt
+		}	
+	}
+
+	Yelta_conference = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = telta_order
+		}
+	}
+
+	
+}
+SWE_LRD_coup = {
+	invite_honglong = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			has_completed_focus = SWE_Contact_rest_of_modders
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		cost = 50
+		fire_only_once = yes
+		days_remove = 1
+
+		complete_effect = {
+			custom_effect_tooltip = honglong_join
+		}
+	}
+
+}

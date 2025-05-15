@@ -1,0 +1,655 @@
+focus_tree = {
+	id = SOV
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = SOV
+		}
+	}
+	default = no
+	focus = {
+		id = SOV_New_Century
+		icon = GFX_focus_SOV_the_russian_dream
+		cost = 5.00
+		x = 14
+		y = 0
+
+	}
+	focus = {
+		id = SOV_Prevent_Spread
+		icon = GFX_focus_SOV_force_lockdowns
+		cost = 2.00
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		x = 5
+		y = 1
+
+	}
+	focus = {
+		id = SOV_Establish_Tourist_System
+		icon = GFX_focus_SOV_slutsky_economic_agenda
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Prevent_Spread
+		}
+		x = 3
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Remote_Life
+		icon = GFX_focus_SOV_sensible_economic_management
+		cost = 2.00
+		prerequisite = {
+			focus = SOV_Prevent_Spread
+		}
+		x = 6
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Talk_with_Ministers
+		icon = GFX_focus_SOV_pass_the_new_constitution
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		x = 9
+		y = 1
+
+	}
+	focus = {
+		id = SOV_Economic_Stability
+		icon = GFX_focus_SOV_protect_russian_economy
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Prevent_Spread
+		}
+		prerequisite = {
+			focus = SOV_Talk_with_Ministers
+		}
+		x = 8
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Power_of_Friend
+		icon = GFX_focus_SOV_purchase_sinovac_vaccine
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Establish_Tourist_System
+			focus = SOV_Economic_Stability
+		}
+		x = 3
+		y = 3
+		available = {
+			OR = {
+				NOT = {
+					has_completed_focus = SOV_Sputnik_Vaccine
+				}
+				has_country_flag = {
+					flag = SOV_Developing_Vaccine
+					days > 100
+				}
+			}
+			PRC = {
+				has_country_flag = PRC_Third_Success
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Sputnik_Vaccine
+		icon = GFX_focus_SOV_kickstart_vaccine_research
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Economic_Stability
+			focus = SOV_Establish_Tourist_System
+		}
+		x = 5
+		y = 3
+		completion_reward = {
+			set_country_flag = SOV_Developing_Vaccine
+		}
+	}
+	focus = {
+		id = SOV_Hospital_Budgets
+		icon = GFX_focus_SOV_hospital_budget
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Establish_Tourist_System
+			focus = SOV_Economic_Stability
+			focus = SOV_Remote_Life
+		}
+		x = 7
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Medicine_Distribution
+		icon = GFX_focus_SOV_against_chipivization
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Hospital_Budgets
+			focus = SOV_Sputnik_Vaccine
+			focus = SOV_Power_of_Friend
+		}
+		x = 5
+		y = 4
+		available = {
+			has_country_flag = SOV_Medicine_Ready
+		}
+
+	}
+	focus = {
+		id = SOV_Sustain_Building
+		icon = GFX_focus_SOV_restore_public_confidence
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Talk_with_Ministers
+		}
+		x = 10
+		y = 2
+
+	}
+	focus = {
+		id = SOV_Protect_Core_Corps
+		icon = GFX_focus_SOV_secure_oligarch_loyalty
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Economic_Stability
+		}
+		prerequisite = {
+			focus = SOV_Sustain_Building
+		}
+		x = 9
+		y = 3
+
+	}
+	focus = {
+		id = SOV_Focus_on_Infrastructure
+		icon = GFX_focus_SOV_begin_reconstruction_plan
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Protect_Core_Corps
+		}
+		x = 9
+		y = 4
+
+	}
+	focus = {
+		id = SOV_2035_Energy_Principle
+		icon = GFX_focus_SOV_encourage_domestic_production
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_Focus_on_Infrastructure
+		}
+		prerequisite = {
+			focus = SOV_Medicine_Distribution
+		}
+		x = 8
+		y = 5
+		completion_reward = {
+			
+		}
+
+	}
+	focus = {
+		id = SOV_Strategy_for_Timber
+		icon = GFX_focus_SOV_restore_collective_farms
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Focus_on_Infrastructure
+		}
+		x = 10
+		y = 5
+		
+
+	}
+	focus = {
+		id = SOV_One_Stop_Trade_System
+		icon = GFX_focus_SOV_restructure_state_corporations
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_2035_Energy_Principle
+		}
+		x = 8
+		y = 6
+		
+
+	}
+	focus = {
+		id = SOV_Develop_Tourism
+		icon = GFX_focus_SOV_develop_tourism
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Strategy_for_Timber
+			focus = SOV_One_Stop_Trade_System
+		}
+		x = 10
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Break_USA_Propaganda
+		icon = GFX_focus_SOV_the_navalny_fifth_column
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Develop_Tourism
+		}
+		x = 10
+		y = 8
+
+	}
+	focus = {
+		id = SOV_Prevent_Ideological_Influence
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		relative_position_id = SOV_New_Century
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SOV_Prevent_Right_Wing
+		icon = GFX_focus_SOV_fight_against_the_right
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = SOV_Prevent_Ideological_Influence
+		available = {
+			NOT = {
+				has_country_flag = SOV_Preventing_Left
+			}
+		}
+		prerequisite = {
+			focus = SOV_Prevent_Ideological_Influence
+		}
+		completion_reward = { 
+			set_country_flag = {
+				flag = SOV_Preventing_Right
+				days = 50
+				value = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_Prevent_Left_Wing
+		icon = GFX_focus_SOV_fight_against_the_left
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SOV_Prevent_Ideological_Influence
+		prerequisite = {
+			focus = SOV_Prevent_Ideological_Influence
+		}
+		available = {
+			NOT = {
+				has_country_flag = SOV_Preventing_Right
+			}
+		}
+		completion_reward = { 
+			set_country_flag = {
+				flag = SOV_Preventing_Left
+				days = 50
+				value = 1
+			}
+		}
+	}
+
+	focus = {
+		id = SOV_Love_for_Empire
+		icon = GFX_focus_SOV_heirs_of_the_union
+		cost = 3
+		x = 1
+		y = 1
+		relative_position_id = SOV_Prevent_Left_Wing
+		prerequisite = {
+			focus = SOV_Prevent_Left_Wing
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SOV_Love_for_USSR
+		icon = GFX_focus_SOV_utilize_communist_nostalgia
+		cost = 3
+		x = -1
+		y = 1
+		relative_position_id = SOV_Prevent_Right_Wing
+		prerequisite = {
+			focus = SOV_Prevent_Right_Wing
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SOV_United_Russia_focus
+		icon = GFX_focus_SOV_1000_years_of_putinism
+		cost = 5
+		x = 0
+		y = 3
+		relative_position_id = SOV_Prevent_Ideological_Influence
+		prerequisite = {
+			focus = SOV_Love_for_USSR
+		}
+		prerequisite = {
+			focus = SOV_Love_for_Empire
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = SOV_Lavrov_Diplomacy
+		icon = GFX_focus_SOV_international
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		x = 7
+		y = 1
+		relative_position_id = SOV_New_Century
+
+	}
+	focus = {
+		id = SOV_Secure_Belo_Russo_Tie
+		icon = GFX_focus_SOV_prepare_the_union_state
+		cost = 10.00
+		prerequisite = {
+			focus = SOV_Lavrov_Diplomacy
+		}
+		x = -3
+		y = 1
+		relative_position_id = SOV_Lavrov_Diplomacy
+
+	}
+	focus = {
+		id = SOV_Sell_BEL_Oil
+		icon = GFX_focus_SOV_belarusian_spring
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Secure_Belo_Russo_Tie
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Secure_Belo_Russo_Tie
+
+	}
+	focus = {
+		id = SOV_Secure_CSTO_Partner
+		icon = GFX_focus_SOV_secure_csto_allies
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Lavrov_Diplomacy
+		}
+		x = -1
+		y = 1
+		relative_position_id = SOV_Lavrov_Diplomacy
+
+	}
+	focus = {
+		id = SOV_Friendship_with_Former_SSR
+		icon = GFX_focus_SOV_for_the_unity_of_the_peoples
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Secure_Belo_Russo_Tie
+			focus = SOV_Secure_CSTO_Partner
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Secure_CSTO_Partner
+
+	}
+	focus = {
+		id = SOV_Secure_Chinese_Partner
+		icon = GFX_focus_SOV_attract_chinese_investors
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Lavrov_Diplomacy
+		}
+		x = 1
+		y = 1
+		relative_position_id = SOV_Lavrov_Diplomacy
+
+	}
+	focus = {
+		id = SOV_Ukrainian_Strategy
+		icon = GFX_focus_SOV_restore_breadbasket
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Friendship_with_Former_SSR
+			focus = SOV_Secure_Chinese_Partner
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Friendship_with_Former_SSR
+
+	}
+	focus = {
+		id = SOV_Another_Coup
+		icon = GFX_focus_SOV_attack_kuban_traitors
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Ukrainian_Strategy
+		}
+		mutually_exclusive = {
+			focus = SOV_Prep_for_War
+		}
+		x = -2
+		y = 1
+		relative_position_id = SOV_Ukrainian_Strategy
+
+	}
+	focus = {
+		id = SOV_Prep_for_War
+		icon = GFX_focus_SOV_cult_of_combined_arms
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Ukrainian_Strategy
+		}
+		mutually_exclusive = {
+			focus = SOV_Another_Coup
+		}
+		x = 2
+		y = 1
+		relative_position_id = SOV_Ukrainian_Strategy
+
+	}
+	focus = {
+		id = SOV_Stupid_Intelligence
+		icon = GFX_focus_SOV_anti_globalist_bulwark
+		cost = 2.00
+		prerequisite = {
+			focus = SOV_Prep_for_War
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Prep_for_War
+
+	}
+	focus = {
+		id = SOV_Reload_Arms
+		icon = GFX_focus_SOV_anti_ukranian_military_exercizes
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Stupid_Intelligence
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Stupid_Intelligence
+
+	}
+	focus = {
+		id = SOV_Friend_with_IND
+		icon = GFX_focus_SOV_relation_with_IND
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Lavrov_Diplomacy
+		}
+		x = 3
+		y = 1
+		relative_position_id = SOV_Lavrov_Diplomacy
+
+	}
+	focus = {
+		id = SOV_Secure_PRK
+		icon = GFX_focus_SOV_relation_with_PRK
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_Secure_Chinese_Partner
+			focus = SOV_Friend_with_IND
+		}
+		x = 1
+		y = 1
+		relative_position_id = SOV_Secure_Chinese_Partner
+
+	}
+	focus = {
+		id = SOV_Vaccine_Injection
+		icon = GFX_focus_SOV_against_chipivization
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Medicine_Distribution
+		}
+		x = 5
+		y = 5
+
+	}
+	focus = {
+		id = SOV_Trusted_Intelligence
+		icon = GFX_focus_SOV_increase_fsb_funding
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Another_Coup
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Another_Coup
+
+	}
+	focus = {
+		id = SOV_Secure_Airport
+		icon = GFX_focus_SOV_build_up_western_air_bases
+		cost = 4.00
+		prerequisite = {
+			focus = SOV_Trusted_Intelligence
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_Trusted_Intelligence
+
+	}
+
+	focus = {
+		id = SOV_The_Two_Republics
+		icon = GFX_focus_SOV_novorussian_integration
+		cost = 2
+		x = 0
+		y = 4
+		relative_position_id = SOV_Ukrainian_Strategy
+		prerequisite = {
+			focus = SOV_Reload_Arms
+			focus = SOV_Secure_Airport
+		}
+		completion_reward = { }
+	}
+	focus = {
+		id = SOV_SMO
+		icon = GFX_focus_SOV_declare_smo
+		cost = 1.00
+		prerequisite = {
+			focus = SOV_The_Two_Republics
+		}
+		x = 0
+		y = 1
+		relative_position_id = SOV_The_Two_Republics
+		will_lead_to_war_with = UKR
+		completion_reward = {
+			hidden_effect = {
+				play_song = "tno_song_goosestep"
+			}
+			if = {
+				limit = { 
+					has_completed_focus = SOV_Prep_for_War
+				}
+				declare_war_on = {
+					target = UKR
+					type = puppet_wargoal_focus
+				}
+				hidden_effect = {
+					load_focus_tree = SOV_2022
+				}
+				focus_unlock = yes
+			}
+			else = {
+				effect_tooltip = {
+					UKR = {
+						start_civil_war = {
+							ideology = authoritarian_democrat
+							size = 0.5
+							states = all
+						}
+					}
+					create_wargoal = {
+						target = UKR
+						type = liberate_wargoal
+					}
+					focus_unlock = yes
+				}
+				hidden_effect = {
+					UKR = {
+						every_core_state = {
+							add_dynamic_modifier = {
+								modifier = unplanned_offensive
+							}
+						}
+					}
+					declare_war_on = {
+						target = UKR
+						type = annex_everything
+					}
+					load_focus_tree = SOV_2022
+				}
+				
+			}
+		}
+
+	}
+	focus = {
+		id = SOV_Support_Micro_Corps
+		icon = GFX_focus_SOV_restructure_tax_system
+		cost = 3.00
+		prerequisite = {
+			focus = SOV_One_Stop_Trade_System
+		}
+		prerequisite = {
+			focus = SOV_Strategy_for_Timber
+		}
+		x = 8
+		y = 7
+
+	}
+	focus = {
+		id = SOV_Sanction_Resistent
+		icon = GFX_focus_SOV_sanction_proof_economy
+		cost = 5.00
+		prerequisite = {
+			focus = SOV_Support_Micro_Corps
+		}
+		prerequisite = {
+			focus = SOV_Break_USA_Propaganda
+		}
+		prerequisite = {
+			focus = SOV_Vaccine_Injection
+		}
+		x = 8
+		y = 9
+
+	}
+}

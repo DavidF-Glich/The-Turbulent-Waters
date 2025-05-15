@@ -1,0 +1,752 @@
+ideas ={
+	country= {
+		PRC_chinese_communist_party_idea = {
+			picture = PRC_chinese_communist_party
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.15
+				drift_defence_factor = 0.25
+				crypto_strength = 1
+				working_capacity_weekly = 1
+			}
+		}
+				PRC_coronavirus_pandemic_idea = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.5
+				production_factory_max_efficiency_factor = -0.5
+				industrial_capacity_dockyard = -0.5
+				monthly_population = -0.3
+				stability_factor = -0.5
+			}
+		}
+		
+		PRC_coronavirus_pandemic_idea1 = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = -0.4
+				industrial_capacity_dockyard = -0.4
+				monthly_population = -0.24
+				stability_factor = -0.4
+			}
+		}
+		
+		PRC_coronavirus_pandemic_idea2 = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+				production_factory_max_efficiency_factor = -0.3
+				industrial_capacity_dockyard = -0.3
+				monthly_population = -0.18
+				stability_factor = -0.3
+			}
+		}
+		
+		PRC_coronavirus_pandemic_idea3 = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.2
+				industrial_capacity_dockyard = -0.2
+				monthly_population = -0.12
+				stability_factor = -0.2
+			}
+		}
+		
+		PRC_coronavirus_pandemic_idea4 = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.1
+				industrial_capacity_dockyard = -0.1
+				monthly_population = -0.06
+				stability_factor = -0.1
+			}
+		}
+
+		PRC_pla_idea = {
+			picture = PRC_pla
+
+			allowed = {
+				original_tag = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+
+			modifier = {
+				conscription_factor = -0.33
+				mobilization_speed = -0.5
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				army_strength_factor = 0.05
+				army_speed_factor = 0.1
+				army_attack_speed_factor = 0.1
+				experience_gain_army_unit_factor = 0.05
+				experience_gain_army_factor = 0.05
+				battalion_upkeep_factor = 0.05
+			}
+		}
+		PRC_plan_idea = {
+			picture = PRC_plan_dynamic
+			allowed = {
+				original_tag = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				
+			}
+			removal_cost = -1
+		}
+		PRC_plaaf_idea = {
+			picture = PRC_plaaf_dynamic
+			allowed = {
+				original_tag = PRC
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				
+			}
+			removal_cost = -1
+		}
+		PRC_14th_Five_Year_Plan = {
+			picture = PRC_accelerate_local_recovery_idea
+			allowed = {
+				tag = PRC
+			}
+			allowed_civil_war = {
+				always = no
+			}
+			modifier = {
+				business_value_factor = 0.05
+				personal_value_factor = 0.1
+				income_growth_factor = 0.05
+				production_speed_infrastructure_factor = 0.1
+				production_speed_naval_base_factor = 0.1
+				industrial_development_monthly = 0.005
+			}
+		}
+		PRC_corrupt_bureaucracy_idea = {
+			picture = PRC_corrupt_bureaucracy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.30
+				consumer_goods_factor = 0.1
+				foreign_minister_cost_factor = 0.3
+				economic_minister_cost_factor = 0.3
+				interior_minister_cost_factor = 0.3
+				intelligence_minister_cost_factor = 0.3
+				society_development_monthly = 0.005
+			}
+		}
+		PRC_corrupt_bureaucracy_idea1 = {
+			picture = PRC_corrupt_bureaucracy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.10
+				foreign_minister_cost_factor = 0.20
+				economic_minister_cost_factor = 0.20
+				interior_minister_cost_factor = 0.20
+				intelligence_minister_cost_factor = 0.20
+				society_development_monthly = 0.01
+			}
+		}
+		PRC_corrupt_bureaucracy_idea2 = {
+			picture = PRC_corrupt_bureaucracy
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.10
+				foreign_minister_cost_factor = 0.15
+				economic_minister_cost_factor = 0.15
+				interior_minister_cost_factor = 0.15
+				intelligence_minister_cost_factor = 0.15
+				society_development_monthly = 0.03
+			}
+		}
+		PRC_chinese_enviroment_dummy_idea = {	#仅用作展示 Tooltip only
+			picture = GFX_idea_PRC_chinese_enviroment
+			name = PRC_chinese_enviroment_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				
+			}
+		}
+		PRC_improve_the_environmental_friendliness_of_military_factories_idea = {	#仅用作展示	Tooltip only
+			picture = GFX_idea_PRC_chinese_enviroment
+			name = PRC_chinese_enviroment_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = -0.05
+			}
+		}
+
+		PRC_improve_the_environmental_friendliness_of_civilian_factories_idea = {	#仅用作展示	Tooltip only
+			picture = GFX_idea_PRC_chinese_enviroment
+			name = PRC_chinese_enviroment_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.025
+				production_speed_buildings_factor = -0.035
+			}
+		}
+		PRC_turn_a_blind_eye_to_abuses_of_environmental_laws_idea = {	#仅用作展示	Tooltip only
+			picture = GFX_idea_PRC_chinese_enviroment
+			name = PRC_chinese_enviroment_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.015
+				production_speed_buildings_factor = 0.035
+				industrial_capacity_factory = 0.025
+			}
+		}
+		PRC_environmental_reform_success_idea = {	#仅用作展示 Tooltip only
+			picture = GFX_idea_PRC_chinese_enviroment
+			name = PRC_chinese_enviroment_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				society_development_monthly = 0.01
+			}
+		}
+
+		PRC_economic_stabilization_idea = {  #timed for 140 days
+			picture = PRC_economic_stabilization
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = 0.0025
+				income_growth_factor = 0.125
+				industrial_development_monthly = 0.005
+				poverty_development_monthly = 0.005
+			}
+		}
+	 #疯狂的港人
+		PRC_the_separatist_problem = {
+			picture = PRC_the_separatist_problem
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				compliance_growth = -0.2
+				consumer_goods_factor = 0.04
+				battalion_upkeep_factor = 0.2
+				resistance_damage_to_garrison = 0.2
+				stability_factor = -0.05
+			}
+		}
+		PRC_the_separatist_problem1 = {
+			picture = PRC_the_separatist_problem
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				compliance_growth = -0.05
+				consumer_goods_factor = 0.02
+				battalion_upkeep_factor = 0.05
+				resistance_damage_to_garrison = 0.05
+			}
+		}
+
+		PRC_food_safety_reforms_idea = {
+			picture = PRC_food_safety_reforms
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				political_power_gain = 0.20
+				monthly_population = 0.05
+				society_development_monthly = 0.03
+				army_org_regain = 0.1
+				farming_development_monthly = 0.03
+			}
+		}
+	 #临阵磨枪，不快也光
+		PRC_conduct_final_trining_idea = {
+			picture = PRC_conduct_final_trining_idea
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.35
+			}
+		}
+		PRC_plan_high_alert = {
+			picture = PRC_plan_high_alert
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				amphibious_invasion = 0.2
+				invasion_preparation = -0.5
+				naval_damage_factor = 0.2
+			}
+		}
+	}	
+	head_minister ={
+		PRC_li_keqiang_hog = {
+			picture = PRC_li_keqiang
+			name = PRC_li_keqiang_hog
+			allowed = { original_tag = PRC}
+			visible = {
+				NOT = {
+					OR = {
+						has_country_flag = PRC_first_committee_transition_flag
+					}
+				}
+			}
+
+			allowed_to_remove = {
+				head_minister_trigger = yes
+				has_completed_focus = PRC_Historic_Checkpoint
+			}
+			traits = { 
+				hog_pragmatic_statesman
+			}
+		}
+		PRC_li_qiang_hog = {
+			picture = PRC_li_qiang	#还没有他的照片
+			name = PRC_li_qiang_hog
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				has_completed_focus = PRC_Historic_Checkpoint
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				hog_political_protege
+			}
+		}
+	}
+	foreign_minister = {
+		PRC_yang_jiechi_for = {
+			picture = PRC_yang_jiechi
+			name = PRC_yang_jiechi_for
+			allowed = { original_tag = PRC}
+			visible = {
+				NOT = {
+					OR = {
+						has_country_flag = PRC_first_committee_transition_flag
+					}
+				}
+			}
+			allowed_to_remove = {
+				OR = {
+					has_completed_focus = PRC_Historic_Checkpoint
+					hidden_trigger = {
+						has_global_flag = PRC_xx_congress_end
+					}
+				}
+			}
+			traits = { 
+				for_defensive_hawk
+			}
+		}
+		PRC_wang_yi_for = {
+			picture = PRC_wang_yi
+			name = PRC_wang_yi_for
+			allowed = { original_tag = PRC}
+			visible = {
+				has_country_flag = PRC_first_committee_transition_flag
+			}
+			
+			traits = { 
+				for_apologetic_clerk
+				for_wolf_warrior
+			}
+		}
+	}
+	economic_minister = {
+		PRC_liu_he_eco = {
+			picture = PRC_liu_he
+			name = PRC_liu_he_eco
+			allowed = { original_tag = PRC}
+			visible = {
+				NOT = {
+					OR = {
+						has_country_flag = PRC_first_committee_transition_flag
+						has_completed_focus = PRC_Historic_Checkpoint
+					}
+				}
+			}
+			allowed_to_remove = {
+				OR = {
+					has_completed_focus = PRC_Historic_Checkpoint
+					hidden_trigger = {
+						has_global_flag = PRC_xx_congress_end
+					}
+				}
+			}
+			traits = { 
+				eco_mixed_economy
+			}
+		}
+		PRC_he_lifeng_eco = {
+			picture = PRC_he_lifeng
+			name = PRC_he_lifeng_eco
+			allowed = {
+				original_tag = PRC
+			}
+			traits = { 
+				eco_socialist_market_economist
+			}
+		}
+		PRC_zhong_shan_eco = {
+			picture = PRC_zhong_shan
+			name = PRC_zhong_shan_eco
+			allowed = {
+				original_tag = PRC
+			}
+			traits = { 
+				eco_captain_of_industry
+			}
+		}
+	}
+	interior_minister = {
+		PRC_wang_huning_sec = {
+            picture = PRC_wang_huning
+            allowed = { original_tag = PRC }
+            visible = {
+                has_completed_focus = PRC_Steady_Route
+            }
+            traits = {
+                sec_xiism_theorist
+            }
+        }
+		PRC_zhao_leji_sec = {
+			picture = PRC_zhao_leji
+			name = PRC_zhao_leji_sec
+			allowed = { original_tag = PRC}
+			visible = {
+				NOT = {
+					OR = {
+						has_country_flag = PRC_first_committee_transition_flag
+					}
+				}
+			}
+			allowed_to_remove = {
+				OR = {
+					has_completed_focus = PRC_Historic_Checkpoint
+					hidden_trigger = {
+						has_global_flag = PRC_xx_congress_end
+					}
+				}
+			}
+			traits = {
+				sec_efficent_organizer
+			}
+		}
+	}
+	intelligence_minister = {
+		PRC_guo_shengkun_int = {
+			picture = PRC_guo_shengkun
+			name = PRC_guo_shengkun_int
+			allowed = { original_tag = PRC}
+			visible = {
+				NOT = {
+					OR = {
+						has_country_flag = PRC_first_committee_transition_flag
+					}
+				}
+			}
+			allowed_to_remove = {
+				OR = {
+					has_completed_focus = PRC_Historic_Checkpoint
+					hidden_trigger = {
+						has_global_flag = PRC_xx_congress_end
+					}
+				}
+			}
+			traits = { 
+				int_balanced_cryptographer 
+			}
+		}
+		PRC_chen_wenqing_int = {
+			picture = PRC_chen_wenqing
+			name = PRC_chen_wenqing_int
+			allowed = { original_tag = PRC}
+			visible = {
+				OR = {
+					has_country_flag = PRC_first_committee_transition_flag
+				}
+			}
+			traits = { 
+				sec_crime_fighter
+				int_resistance_crusher 
+			}
+		}
+	}
+	theorist_minister = {
+		PRC_wei_fenghe = {
+			picture = Wei_Fenghe
+
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				
+			}
+			allowed_to_remove = {
+				OR = {
+					has_completed_focus = PRC_Historic_Checkpoint
+					hidden_trigger = {
+						has_global_flag = PRC_xx_congress_end
+					}
+				}
+			}
+			traits = {
+				eco_corrupt
+				army_chief_defensive_1
+			}
+		}	
+		PRC_li_shangfu = {
+			picture = PRC_li_shangfu
+
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				NOT = {
+					has_country_flag = PRC_jailed_for_corruption_flag
+				}
+			}
+			traits = {
+				eco_corrupt
+				army_chief_offensive_1
+			}
+		}	
+		PRC_li_qiaoming = {
+			picture = PRC_li_qiaoming
+
+			allowed = {
+				original_tag = PRC
+			}
+			
+			traits = {
+				army_chief_unity_of_party_and_military
+				military_theorist
+			}
+		}
+		PRC_li_zuocheng = {
+			picture = Li_Zuocheng
+			
+			visible = {
+				has_completed_focus = PRC_Historic_Checkpoint
+			}
+			
+			allowed = {
+				original_tag = PRC
+			}
+			
+			allowed_to_remove = {
+				always = no
+			}
+			traits = {
+				for_fervent_nationalist 
+				army_chief_maneuver_1
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+PRC_cetgc_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_PRC_cetgc
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+##tank##
+PRC_norinco_organization = {
+	include = generic_tank_organization
+	icon = GFX_idea_PRC_norinco
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_inner_mongolia_first_machinery_organization = {
+	include = generic_tank_refurbishment_plant_organization
+	icon = GFX_idea_PRC_inner_mongolia_first_machinery
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_norinco_group_organization = {
+	include = generic_infantry_tank_organization
+	icon = GFX_idea_PRC_norinco_group
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+##infantry equipment##
+PRC_csig_organization = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_PRC_csig
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_poly_organization = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_PRC_poly
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+##plan##
+PRC_avic_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_PRC_avic
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_cosic_organization = {
+	include = generic_heavy_aircraft_organization
+	icon = GFX_idea_PRC_cosic
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_casc_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_PRC_casc
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+##ship##
+PRC_csic_organization = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_PRC_csic
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_chsic_organization = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_PRC_csic
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}
+PRC_jiangnan_organization = {
+	include = generic_battle_line_ship_organization
+	icon = GFX_idea_PRC_jiangnan
+	allowed = {	
+		tag = PRC 
+		has_dlc = "Arms Against Tyranny"
+	}
+}

@@ -1,0 +1,88 @@
+focus_tree = {
+	id = SOV_2022
+	country = { 
+		factor = 0
+	}
+	default = no
+	#⣶⣶⣾⣾⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⢟⡭⢻⣿⣿⣿⣿⣿⣿⣿⣿⢟⠋⠉⠉⠈⠉⠉⠉⠉⠉⠉⠛⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⠓⠁⠀⠑⣻⣿⣿⣿⣿⣿⠏⠂⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⡝⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡱⠁⠀⡤⠀⣸⣿⣿⣿⣿⣿⣯⠀⠀⠀⠀⣀⣀⣠⡠⠂⠀⣤⣀⠀⠀⠀⠀⠘⣸⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣇⣁⠰⢢⡝⣿⣿⠿⢿⣿⣿⣏⠀⠀⢀⠚⠻⠿⠟⠓⠀⠀⠨⠻⠟⡢⡄⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢹⣿⣿⣴⣾⡇⠝⡁⠿⣧⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⣤⣾⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣼⣿⣿⣿⣿⣿⣦⣿⣸⣿⣿⣿⣿⣿⡗⠈⢹⡏⢐⡀⠀⢠⡆⠀⠀⠘⣟⡆⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⢻⣿⣿⡿⡻⠿⢿⣷⣿⣿⣿⣿⣿⡿⠈⠠⣿⢏⣶⠖⠪⠿⠻⠀⠶⣖⣿⠃⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⣿⣿⢯⣾⠂⠈⣡⡀⠁⢠⣾⣿⣿⣿⣿⣿⣿⣷⢀⣼⡟⣌⠀⠀⠐⠀⠀⠂⠀⠘⣿⡀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⡿⣱⡿⠋⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣯⡇⣇⠋⠈⣀⡄⠀⠀⠀⠀⠈⡏⢃⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⢟⣼⣿⡆⠀⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠘⣘⠨⠋⠟⠖⠒⠿⠇⠈⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⣿⡷⠈⠀⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠄⠫⠃⠀⠀⠀⠀⠀⠐⠰⡸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⣿⠟⠀⠀⠀⠀⠀⠀⢠⣿⣿⣿⡿⢿⡿⠛⠏⣉⠉⠀⠈⡀⢚⣀⠀⠀⠀⠀⠀⠀⠘⠂⡁⠀⠈⠛⠻⢿⣿⣿⣿⣿⣿⣿⣿
+	#⣿⣿⣿⣿⡿⢀⠂⠀⠀⠀⠀⠀⣸⡿⠫⣤⣥⣴⣶⣿⣿⣿⣆⢀⣶⠙⡀⢻⠇⠀⡤⡀⣤⠄⠀⠒⠁⣠⣿⣦⣀⣀⠉⠛⡿⣿⣿⣿⣿
+	#⣿⣿⣿⠻⠁⠀⠀⠀⠀⠀⢴⠿⡃⡙⠣⢠⢸⣿⣿⣿⣿⣿⣿⣦⣋⢀⠄⠀⣴⣴⣦⣢⠀⣀⣠⣀⣾⣯⠩⡝⣿⣿⣿⣗⠢⢄⡙⣿⣿
+	#⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠉⠀⠀⠀⠀⠀⢺⣿⣿⣿⣿⣿⣶⣶⣮⡔⢠⢸⡿⣛⡛⢻⣿⣿⣿⣿⣽⣛⠀⠒⣿⣿⣿⡿⠁⠉⢙⣾⣿
+	#⣿⣿⡇⡌⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠱⠟⠛⠛⠛⣉⠉⠙⠁⠎⣿⣿⣶⣶⣿⣿⡯⠈⠙⠛⠻⠻⣦⡖⠡⡀⠃⠀⠉⣹⣿⣿
+	#⣿⣿⠎⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠐⠀⢤⣤⣤⣿⣿⣧⣴⣧⣿⠱⠮⣺⣷⣿⣦⡖⠐⠲⣤⡀⢈⡓⠛⠋⠀⡩⡯⢷⣿⣿
+	#这种断语是空洞的吹牛，因为既然这样，人们就不明白，为什么德国人还要求芬兰人、罗马尼亚人、意大利人、匈牙利人帮助他们进攻没有军事外援而全靠自己的力量作战的红军。
+	#Это утверждение является пустой хвастовством, 
+	#потому что в таком случае непонятно, почему немцы просят союзников помочь им атаковать Красную Армию, которая сражается исключительно своими силами без военной иностранной помощи.	
+	focus = {
+		id = SOV_Ease_West_Sanction
+		icon = GFX_goal_unknown
+		cost = 7
+		x = 2
+		y = 0
+
+		completion_reward = { 
+			SOV_decrease_sanction = yes
+			PRC = {
+				increase_trade_influence_by_1 = yes
+			}
+		}
+	}
+   #政治线
+	focus = {
+		id = SOV_Steady_Advance
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 10
+		y = 0
+		mutually_exclusive = {
+			focus = SOV_Heavy_Battle_in_UKR
+		}
+		mutually_exclusive = {
+			focus = SOV_Heavy_Defeat_in_UKR
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SOV_Heavy_Battle_in_UKR
+		icon = GFX_goal_unknown
+		cost = 5
+		x = -2
+		y = 0
+		relative_position_id = SOV_Steady_Advance
+		mutually_exclusive = {
+			focus = SOV_Steady_Advance
+		}
+		mutually_exclusive = {
+			focus = SOV_Heavy_Defeat_in_UKR
+		}
+		completion_reward = { }
+	}
+
+	focus = {
+		id = SOV_Heavy_Defeat_in_UKR
+		icon = GFX_focus_SOV_Heavy_Defeat_in_UKR
+		cost = 6
+		x = 2
+		y = 0
+		mutually_exclusive = {
+			focus = SOV_Steady_Advance
+		}
+		mutually_exclusive = {
+			focus = SOV_Heavy_Battle_in_UKR
+		}
+		relative_position_id = SOV_Steady_Advance
+		completion_reward = { }
+	}
+}

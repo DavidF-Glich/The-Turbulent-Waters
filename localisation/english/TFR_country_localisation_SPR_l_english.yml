@@ -1,0 +1,54 @@
+﻿l_english:
+ #Leaders
+ #Focuses
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #: ""
+ #_desc: ""
+ #Ideas
+ SPR_catalonian_separatism_idea: "Catalonian Separatism"
+ SPR_catalonian_separatism_idea_desc: "In the wealthy region of Catalonia, support for independence from Spain has been constant throughout Spanish history and threatens Spanish national sovereignity and unity. In recent times, it has grown stronger and many have attempted to gain independence from the National government, yet failed so far."
+ SPR_the_ghost_of_franco_idea: "The Ghost Of Franco"
+ SPR_basque_nationalism_idea: "Basque Nationalism"
+ SPR_plus_ultra: "Plus Ultra"
+ #Decision Categories
+ #Missions
+ #Decisions
+ #Country Flag
+ #Tooltips
+ #Faction
+ #Parties
+ SNS_fascist_party: "AN"
+ SNS_fascist_party_long: "Alianza Nacional"
+ GOD_fascist_party: "Igreja Católica em Portugal"
+ LCA_nationalist_party: "Clan Rule"
+ PRP_communist_party: "PCP"
+ PRP_communist_party_long: "Portuguese Communist Party"
+ CAT_social_democrat_party: "ERC"
+ CAT_social_democrat_party_long: "Republican Left of Catalonia"
+ GAL_communist_party: "REGA"
+ GAL_communist_party_long: "Resistência Galega"
+ RSR_social_democrat_party: "MM"
+ RSR_social_democrat_party_long: "Más Madrid"
+ RSR_communist_party: "FO"
+ RSR_communist_party_long: "Workers' Front"
+ #Country
+ #Events
+ spain.1.t:0 "Catalonia Rebels!"
+ spain.1.d:0 "Wholesome Anarchists"
+ spain.1.a:0 "Crush Those Rebels!"
+ spain.2.t:0 "The Catalan Revolution"
+ spain.2.d:0 "The Spanish public and western Europe are in shock with the unilateral declaration of independence of the Spanish province of Catalonia. Spain is no stranger to separatist movements, especially in the last few decades. Out of all the territories of Spain, the Basque region and Catalonia have been the most persistent with calls for independence, with independence parties and movements prominent in local politics. However, it seems that the recent wave of unrest and discontent within Spain has given these regions the opportunity to do what many local activists struggled to do for years. Within the last day, Catalan politicians declared their unilateral independence from Spain to much fanfare by the local population, claiming that the time was right for Catalonia to assert its sovereignty. Madrid has swiftly condemned the act, claiming it to be completely illegal. As much as there is strong will to now act, it may prove impossible as there is very little will by local Spanish authorities to reign in the rouge province, as local Catalans have overwhelmingly joined in on the move for independence along with other issues currently plaguing the Spanish state. Some within Spain and western Europe have also raised the fear that separatism might spread, and that mass anarchy is imminent. Unfortunately, Catalonia’s independence has only fueled those fears to a dangerous extent."
+ spain.2.a:0 "Another Spanish Civil War?"
+ spain.7.t: "Spain Requests Our Help"
+ spain.7.d: ""
+ spain.7.a: "We have other plans"
+ spain.7.b: "Europe shall be free from Communism!"

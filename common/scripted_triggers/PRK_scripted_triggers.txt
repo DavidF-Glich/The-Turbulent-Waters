@@ -1,0 +1,8 @@
+PRK_Know_Something_Trigger = {
+	OR = {
+		tag = PRK
+		PRK = {
+			is_ai = no
+		}
+	}
+}

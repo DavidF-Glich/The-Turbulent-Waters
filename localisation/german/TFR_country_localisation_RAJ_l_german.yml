@@ -1,0 +1,63 @@
+﻿l_german:
+ #Focuses
+
+ #Ideas
+ NAX_insurgency_idea: "Naxalitenaufstand"
+ RAJ_clash_of_the_millions: "Kampf der Millionen"
+ RAJ_clash_of_the_millions2: "Kampf der Millionen"
+ ULF_united_struggle: "Gemeinsamer Kampf"
+ RAJ_south_asian_tiger_idea: "Der Tiger Südasiens"
+ RAJ_south_asian_tiger_idea_desc: "Indien, die Wiege des Hinduismus, eine der größten Nationen der Welt, hat sich endlich von den Jahrhunderten des Kolonialismus und der endlosen Not erholt. Lasst die Feinde Indiens wissen, dass ein Tiger auf der Pirsch ist - vielleicht nicht sichtbar, aber definitiv gefährlich."
+ RAJ_religious_sectarianism_idea: "Religiöse Sektiererei"
+ RAJ_remnant_caste_system_idea: "Überbleibsel des Kastensystems"
+ RAJ_transitioning_economy_idea: "Schwellenländerwirtschaft"
+ RAJ_rising_hindu_nationalism_idea: "Aufkommender Hindu-Nationalismus"
+ RAJ_rising_hindu_nationalism_idea_desc: ""
+ RAJ_chinese_sanctions_idea: "Chinesische Sanktionen"
+ RAJ_chinese_sanctions_idea_desc: ""
+ RAJ_kashmir_road_idea: "Kaschmir-Weg"
+ RAJ_kashmir_road_idea_desc: "
+ RAJ_kashmir_road0_idea: "Kaschmir-Weg"
+ RAJ_kashmir_road0_idea_desc: " 
+
+
+ #Events
+ RAJ.1.t: "Regierungsvakuum"
+ RAJ.1.d: ""
+ RAJ.1.a: "Wer wird einspringen?"
+ RAJ.5.t: "Der Zerfall Indiens"
+ RAJ.5.d: ""
+ RAJ.5.a: "Gandhis Traum, einfach weg"
+ 
+ 
+ RAJ.8.t: "Indische Regierung erobert Dehli zurück"
+ RAJ.8.d: "Nach dem verheerenden thermonuklearen Krieg und der Atomexplosion in Dehli haben die Reste der indischen Regierung versucht, die Ordnung in den Gebieten um die Trümmer von Dehli wiederherzustellen. Da jedoch die Führung auf den Straßen der Trümmer der ehemaligen Hauptstadt weitgehend zerfallen ist, hat sich ein gewaltiges Machtvakuum gebildet."
+ RAJ.8.a: "Es lebe die vorläufige Regierung"
+
+ RAJ.9.t: "Indischer Bürgerkrieg"
+ RAJ.9.d: "Nach der Gründung der Zweiten Republik Indien,"
+ RAJ.9.a: "Totaler Hindutod"
+ RAJ.10.t: "Kriegsrecht ausgerufen"
+ RAJ.10.d: ""
+ RAJ.10.a: "Das Militär wird die Kontrolle übernehmen"
+
+ RAJ.11.t: "Die RSS übernimmt die Kontrolle"
+ RAJ.11.d: ""
+ RAJ.11.a: "Mal sehen, was als Nächstes kommt!"
+ 
+ RAJ.12.t: "SS übernimmt die Kontrolle"
+ RAJ.12.d: ""
+ RAJ.12.a: "Hindustan für die Hindus!"
+
+ RAJ.13.t: "INC füllt das Machtvakuum auf"
+ RAJ.13.d: ""
+ RAJ.13.a: "Modi hat uns in diesen Schlamassel geführt, der Kongress wird uns wieder herausführen!"
+
+ RAJ.14.t: "Konservative Regierung stabilisiert"
+ RAJ.14.d: ""
+ RAJ.14.a: "Momento Mori"
+
+
+ #Cosmetic Tags#
+
+ #Parties#

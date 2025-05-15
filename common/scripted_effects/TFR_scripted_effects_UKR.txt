@@ -1,0 +1,26 @@
+UKR_decrease_embargo = {
+	if = {
+		limit = { 
+			has_idea = UKR_embargoed_economy
+		}
+		swap_ideas = {
+			remove_idea = UKR_embargoed_economy
+			add_idea = UKR_embargoed_economy1
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = UKR_embargoed_economy1
+		}
+		swap_ideas = {
+			remove_idea = UKR_embargoed_economy1
+			add_idea = UKR_embargoed_economy2
+		}
+	}
+	else_if = {
+		limit = { 
+			has_idea = UKR_embargoed_economy2
+		}
+		remove_ideas = UKR_embargoed_economy2
+	}
+}

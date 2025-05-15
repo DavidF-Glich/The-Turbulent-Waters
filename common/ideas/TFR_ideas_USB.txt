@@ -1,0 +1,4321 @@
+ideas = {
+	country = {
+		#Politics
+		USB_technosupremacy_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				poverty_development_monthly = -0.025
+				farming_development_monthly = -0.025
+				society_development_monthly = 0.05
+				production_speed_buildings_factor = 0.05
+				research_speed_factor = 0.25
+			}
+		}
+		USB_HUAC_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				party_popularity_stability_factor = 0.1
+				political_power_gain = 0.12
+				drift_defence_factor = 0.1
+				root_out_resistance_effectiveness_factor = 0.16
+				enemy_operative_forced_into_hiding_time_factor = 0.2
+				enemy_operative_detection_chance_factor = 0.2
+				resistance_growth_on_our_occupied_states = -0.02
+			}
+		}
+		USB_american_media_debate_committee_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				party_popularity_stability_factor = 0.2
+				drift_defence_factor = 0.2
+				compliance_growth_on_our_occupied_states = 0.12
+				resistance_growth_on_our_occupied_states = -0.08
+			}
+		}
+		USB_american_media_debate_committee_2_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				party_popularity_stability_factor = 0.2
+				drift_defence_factor = 0.3
+				compliance_growth_on_our_occupied_states = 0.12
+				resistance_growth_on_our_occupied_states = -0.16
+				production_speed_infrastructure_factor = -0.1
+				industrial_factory_donations = 5
+			}
+		}
+		USB_sanderite_conspiracy_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.2
+				political_power_factor = -0.15
+			}
+		}
+		USB_great_purge_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				unit_leader_as_advisor_cp_cost_factor = 0.15
+				command_power_gain_mult = -0.25
+				promote_cost_factor = 0.25
+				army_leader_cost_factor = 0.25
+				reassignment_duration_factor = 0.25
+				experience_gain_army_factor = -0.15
+				training_time_factor = 0.25
+				land_equipment_upgrade_xp_cost = 0.15
+				unit_leader_as_advisor_cp_cost_factor = 0.15
+				navy_leader_cost_factor = 0.25
+				naval_coordination = -0.1
+				experience_gain_navy_factor = -0.1
+				army_org_factor = -0.1
+				max_dig_in_factor = -0.15
+				supply_consumption_factor = 0.1
+				land_doctrine_cost_factor = 0.2
+			}
+		}
+		USB_foreign_embargos_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.1
+				trade_opinion_factor = -0.75
+				income_growth_factor = -0.25
+				min_export = -0.3
+				consumer_goods_factor = 0.1
+			}
+		}
+		USB_foreign_abandonment_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.1
+				trade_opinion_factor = -1
+				income_growth_factor = -0.4
+				min_export = -0.3
+				consumer_goods_factor = 0.15
+			}
+		}
+		USB_lower_restricted_liberties_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				resistance_activity = 0.12
+			}
+		}
+		USB_low_restricted_liberties_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				war_support_factor = 0.05
+				resistance_activity = 0.05
+			}
+		}
+		USB_medium_restricted_liberties_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				resistance_activity = -0.05
+			}
+		}
+		USB_high_restricted_liberties_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				war_support_factor = -0.1
+				stability_factor = -0.05
+				resistance_activity = -0.15
+			}
+		}
+		USB_higher_restricted_liberties_idea = {
+			picture = USB_restricted_liberties
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				war_support_factor = -0.2
+				stability_factor = -0.1
+				resistance_activity = -0.25
+			}
+		}
+		USB_lower_civilian_unrest_idea = {
+			picture = USB_quelled_civilian_unrest
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.1
+				custom_modifier_tooltip = USB_civilian_unrest_modifier_tooltip
+			}
+		}
+		USB_low_civilian_unrest_idea = {
+			picture = USB_civilian_unrest
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.05
+				political_power_gain = -0.05
+				custom_modifier_tooltip = USB_civilian_unrest_modifier_tooltip
+			}
+		}
+		USB_medium_civilian_unrest_idea = {
+			picture = USB_civilian_unrest
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.1
+				stability_weekly = -0.001
+				political_power_gain = -0.1
+				custom_modifier_tooltip = USB_civilian_unrest_modifier_tooltip
+			}
+		}
+		USB_high_civilian_unrest_idea = {
+			picture = USB_civilian_unrest
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.15
+				stability_weekly = -0.001
+				political_power_gain = -0.2
+				custom_modifier_tooltip = USB_civilian_unrest_modifier_tooltip
+			}
+		}
+		USB_higher_civilian_unrest_idea = {
+			picture = USB_civilian_unrest
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.2
+				stability_weekly = -0.002
+				political_power_gain = -0.3
+				custom_modifier_tooltip = USB_civilian_unrest_modifier_tooltip
+			}
+		}
+		USB_congress_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_congress_dynamic
+			allowed = {
+				tag = USB
+			}
+		}
+		USB_revised_constitution_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_congress_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				war_support_factor = 0.1
+			}
+		}
+		USB_minor_reparations_for_minorities_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_congress_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.15
+				stability_weekly = 0.002
+				#war_support_weekly = 0.00
+			}
+		}
+		USB_war_production_idea = {
+			#Timed Idea, 350 Days
+			picture = man_five_year_plan_tank
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+			}
+		}
+		USB_consumer_revitalization_idea = {
+			#Timed Idea, 350 Days
+			picture = fra_market_dynamism
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_infrastructure_factor = 0.15
+				production_speed_office_park_factor = 0.15
+				production_speed_industrial_complex_factor = 0.15
+			}
+		}
+		USB_revised_civil_rights_act_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_congress_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.05
+			}
+		}
+		USB_equality_act_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.05
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		USB_strengthen_right_to_work_laws_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				poverty_development_monthly = 0.01
+				production_factory_max_efficiency_factor = -0.05
+				consumer_goods_factor = -0.1
+			}
+		}
+		USB_pro_act_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				consumer_goods_factor = 0.1
+			}
+		}
+		USB_seized_trust_assests_idea = {
+			picture = generic_goods_red_bonus
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				consumer_goods_factor = -0.3
+				stability_factor = -0.1
+			}
+		}
+		USB_pro_spending_bill_idea = {
+			#Timed Idea, 35 Days
+			picture = USB_pro_spending_bill_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				tax_business_rate = -0.05
+				tax_personal_rate = -0.05
+				production_speed_office_park_factor = 0.05
+				immigration_laws_type_cost_factor = -0.25
+				education_laws_type_cost_factor = -0.25
+				race_laws_type_cost_factor = -0.25
+				female_laws_type_cost_factor = -0.25
+				prison_laws_type_cost_factor = -0.25
+				poverty_development_monthly = 0.02
+			}
+		}
+		USB_ino_spending_bill_idea = {
+			#Timed Idea, 35 Days
+			picture = USB_ino_spending_bill_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				tax_business_rate = -0.3
+				production_speed_office_park_factor = 0.1
+				academic_development_monthly = 0.02
+			}
+		}
+		USB_neo_spending_bill_idea = {
+			#Timed Idea, 35 Days
+			picture = USB_con_spending_bill_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				industry_repair_factor = 0.2
+				military_development_monthly = 0.02
+			}
+		}
+		USB_con_spending_bill_idea = {
+			#Timed Idea, 35 Days
+			picture = USB_neo_spending_bill_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.2
+				industrial_development_monthly = 0.02
+			}
+		}
+		USB_emergency_presidential_powers_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_congress_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.2
+			}
+		}
+		USB_executive_council_idea = {
+			picture = USB_executive_council
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				inflation_monthly_factor = 0.2
+				consumer_goods_factor = 0.15
+				industry_repair_factor = 0.2
+				research_speed_factor = 0.1
+			}
+		}
+		USB_executive_council2_idea = {
+			picture = USB_executive_council
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.2
+				inflation_monthly = 0.002
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				industry_repair_factor = 0.2
+				research_speed_factor = 0.1
+			}
+		}
+		USB_executive_council3_idea = {
+			picture = USB_executive_council
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.2
+				inflation_monthly = 0.002
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				industry_repair_factor = 0.2
+				research_speed_factor = 0.1
+				industrial_development_monthly = 0.03
+				military_development_monthly = 0.03
+			}
+		}
+		USB_nato_advisors_idea = {
+			picture = NATO_advisors
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				army_org_factor = 0.1
+				training_time_factor = -0.1
+				coordination_bonus = 0.05
+			}
+		}
+		USB_bipartisan_infrastructure_law_idea = {
+			picture = USB_bipartisan_infrastructure_law
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				inflation_monthly_factor = 0.2
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				industry_repair_factor = 0.2
+				research_speed_factor = 0.05
+			}
+		}
+		USB_anti_apla_war_effort_idea = {
+			picture = USB_anti_apla_war_effort
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			targeted_modifier = {
+				tag = APA
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		USB_anti_pf_war_effort_idea = {
+			picture = USB_anti_pf_war_effort
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			targeted_modifier = {
+				tag = PTF
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = NSM
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ATW
+				attack_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}
+		USB_second_great_society_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				inflation_monthly_factor = 0.1
+				consumer_goods_factor = 0.05
+				stability_factor = 0.05
+				production_factory_max_efficiency_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				society_development_monthly = 0.01
+			}
+		}
+		USB_second_great_society_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			name = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+			}
+		}
+		USB_strengthen_american_institutions = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			name = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				compliance_growth = 0.1
+			}
+		}
+		USB_economic_justice = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			name = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.1
+				poverty_development_monthly = 0.01
+				society_development_monthly = 0.02
+				compliance_growth = 0.05
+			}
+		}
+		USB_ban_radical_parties_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			name = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				resistance_growth = -0.1
+				resistance_decay = 0.1
+			}
+		}
+		USB_ban_radical_parties_green_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				resistance_growth = -0.1
+				resistance_decay = 0.1
+			}
+		}
+		USB_the_comprehensive_voter_rights_act = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			name = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.15
+			}
+		}
+		USB_safer_communities_act = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_second_great_society_idea
+			name = USB_second_great_society_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				resistance_growth = -0.1
+				society_development_monthly = 0.03
+			}
+		}
+		USB_green_new_deal_progressive_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				inflation_monthly_factor = 0.1
+				resistance_growth = 0.1
+				stability_factor = -0.1
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+				research_speed_factor = 0.03
+				poverty_development_monthly = 0.01
+			}
+		}
+		USB_green_new_deal_progressive_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+			}
+		}
+		USB_overturn_citizens_united = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		USB_radical_reconstruction = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				resistance_growth = -0.05
+				stability_weekly = 0.001
+				industry_repair_factor = 0.1
+			}
+		}
+		USB_abolish_the_electoral_college = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.1
+				war_support_factor = 0.1
+			}
+		}
+		USB_nationalize_critical_infrastructure_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				inflation_monthly_factor = 0.3
+				consumer_goods_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_speed_rail_way_factor = 0.1
+				research_speed_factor = 0.05
+				industrial_development_monthly = 0.02
+				poverty_development_monthly = 0.02
+			}
+		}
+		USB_tackle_the_military_industrial_complex = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_arms_factory_factor = -0.1
+				war_support_factor = -0.1
+				consumer_goods_factor = -0.1
+				production_speed_industrial_complex_factor = 0.1
+				stability_weekly = 0.002
+				industrial_development_monthly = 0.01
+			}
+		}
+		USB_medicare_for_all_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				personal_expense_factor = 0.2
+				inflation_monthly_factor = 0.3
+				poverty_development_monthly = 0.03
+				society_development_monthly = 0.02
+				monthly_population = 0.15
+				compliance_growth = 0.1
+				resistance_growth = -0.1
+			}
+		}
+		USB_public_option_idea = {
+			picture = USB_public_option_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = -0.1
+				consumer_goods_factor = 0.05
+				personal_expense_factor = 0.1
+				inflation_monthly_factor = 0.1
+				poverty_development_monthly = 0.01
+				society_development_monthly = 0.01
+				monthly_population = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		USB_support_the_intelligence_community_idea = {
+			picture = USB_support_the_intelligence_community
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				intel_network_gain_factor = 0.1
+				root_out_resistance_effectiveness_factor = 0.1
+				operation_risk = -0.1
+			}
+		}
+		USB_support_the_intelligence_community2_idea = {
+			picture = USB_support_the_intelligence_community
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.1
+				root_out_resistance_effectiveness_factor = 0.2
+				operation_risk = -0.2
+				agency_upgrade_time = -0.1
+			}
+		}
+		USB_support_the_intelligence_community3_idea = {
+			picture = USB_support_the_intelligence_community
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				operative_slot = 1
+				intel_network_gain_factor = 0.2
+				root_out_resistance_effectiveness_factor = 0.3
+				operation_risk = -0.2
+				agency_upgrade_time = -0.2
+			}
+		}
+		USB_expedite_military_production_idea = {
+			picture = USC_defense_production_act
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.2
+					reliability = -0.1
+					instant = yes
+				}
+			}
+		}
+		USB_an_economic_revolution = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				poverty_development_monthly = 0.01
+				society_development_monthly = 0.03
+				research_speed_factor = 0.05
+			}
+		}
+		USB_nationalized_railways = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_rail_way_factor = 0.15
+			}
+		}
+		USB_nationalize_construction_industries = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = USB_green_new_deal_progressive_idea
+			name = USB_green_new_deal_progressive_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		USB_rnc_banned_idea = {
+			picture = USB_rnc_banned
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				war_support_factor = 0.1
+				resistance_growth = -0.15
+				compliance_growth = -0.1
+			}
+		}
+		USB_lower_democrat_unity_idea = {
+			picture = USA_lower_democrat_unity
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.3
+				surrender_limit = -0.3
+			}
+		}
+		USB_low_democrat_unity_idea = {
+			picture = USA_low_democrat_unity
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.15
+				surrender_limit = 0.15
+			}
+		}
+		USB_medium_democrat_unity_idea = {
+			picture = USA_medium_democrat_unity
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+			}
+		}
+		USB_high_democrat_unity_idea = {
+			picture = USA_high_democrat_unity
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.15
+				surrender_limit = 0.15
+			}
+		}
+		USB_higher_democrat_unity_idea = {
+			picture = USA_higher_democrat_unity
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.3
+				surrender_limit = 0.3
+			}
+		}
+		#Economic
+		USB_corporate_ties_cut_idea = {
+			picture = USB_non_existent_corporate_infuence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.15
+			}
+		}
+		USB_lower_corporate_influence_idea = {
+			picture = USB_non_existent_corporate_infuence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.05
+				custom_modifier_tooltip = USB_corporate_influence_modifier_tooltip
+			}
+		}
+		USB_low_corporate_influence_idea = {
+			picture = USB_low_corporate_influence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.075
+				production_factory_max_efficiency_factor = 0.025
+				custom_modifier_tooltip = USB_corporate_influence_modifier_tooltip
+			}
+		}
+		USB_medium_corporate_influence_idea = {
+			picture = USB_moderate_corporate_influence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.15
+				production_factory_max_efficiency_factor = 0.05
+				custom_modifier_tooltip = USB_corporate_influence_modifier_tooltip
+			}
+		}
+		USB_high_corporate_influence_idea = {
+			picture = USB_high_corporate_influence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.15
+				consumer_goods_factor = 0.225
+				production_factory_max_efficiency_factor = 0.075
+				custom_modifier_tooltip = USB_corporate_influence_modifier_tooltip
+			}
+		}
+		USB_higher_corporate_influence_idea = {
+			picture = USB_overwhelming_corporate_influence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.3
+				production_factory_max_efficiency_factor = 0.1
+				custom_modifier_tooltip = USB_corporate_influence_modifier_tooltip
+			}
+		}
+		USB_corporate_government_idea = {
+			picture = USB_overwhelming_corporate_influence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = 0.2
+				authoritarian_democrat_drift = 0.05
+			}
+		}
+		USB_embraced_the_board_idea = {
+			picture = USB_overwhelming_corporate_influence
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = 0.2
+			}
+		}
+		USB_clergy_of_finance_and_state_idea = {
+			picture = USB_uncooperative_millitary
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				income_growth_factor = 0.15
+				dtg_threshold = 0.3
+				business_value_factor = 0.2
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		USB_inefficient_economy_idea = {
+			picture = USB_inefficient_economy
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				line_change_production_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				business_value_factor = -0.2
+			}
+		}
+		USB_stakeholder_economy_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+			}
+		}
+		USB_stakeholder_economy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				line_change_production_efficiency_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.2
+				business_value_factor = -0.1
+			}
+		}
+		USB_corporate_agreement_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				tax_business_rate_factor = -0.1
+			}
+		}
+		USB_bolster_the_mic_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		USB_promote_managerial_thought_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				business_value_factor = 0.1
+				academic_development_monthly = 0.005
+				industrial_development_monthly = 0.005
+			}
+		}
+		USB_utilize_artificial_intelligence_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		USB_automated_weapon_production_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				military_factory_upkeep_factor = 0.05
+				dockyard_upkeep_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.1
+			}
+		}
+		USB_force_corporate_compliance_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_office_park_factor = 0.1
+			}
+		}
+		USB_tighten_our_grip_on_the_plutocrats_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.05
+				consumer_goods_factor = -0.15
+				tax_business_rate_factor = 0.1
+			}
+		}
+		USB_provide_economic_incentives_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_factory_max_efficiency_factor = 0.05
+				business_value_factor = 0.05
+			}
+		}
+		USB_crackdown_on_war_profiteering_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				war_support_factor = 0.05
+				conversion_cost_mil_to_civ_factor = -0.2
+				conversion_cost_civ_to_mil_factor = 0.1
+			}
+		}
+		USB_technological_revolution_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				academic_development_monthly = 0.01
+				research_speed_factor = 0.05
+			}
+		}
+		USB_uphold_american_consumerism_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.1
+				consumer_goods_factor = 0.075
+			}
+		}
+		USB_emergency_factory_retooling_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		USB_workers_bill_of_rights_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.05
+				poverty_development_monthly = 0.01
+			}
+		}
+		USB_supercharge_the_war_machine_idea = {
+			#Timed Idea, 525 Days
+			name = USB_supercharge_the_war_machine
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				production_speed_arms_factory_factor = 0.3
+				production_speed_dockyard_factor = 0.3
+				production_speed_industrial_complex_factor = -0.15
+				production_speed_office_park_factor = -0.15
+			}
+		}
+		USB_a_hand_on_our_shoulder_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				#consumer_goods_factor = 0.1
+				business_value_factor = 0.1
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		USB_nationalize_the_war_effort_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_stakeholder_economy_dynamic
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+			}
+		}
+		#Military
+		USB_uncooperative_military_idea = {
+			picture = USB_uncooperative_millitary
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				conscription_factor = -0.4
+				mobilization_speed = -0.4
+				mobilization_laws_cost_factor = 0.5
+			}
+		}
+		USB_fighting_for_democracy_idea = {
+			#Timed Idea, 175 Days
+			picture = USB_fighting_for_democracy
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				army_attack_factor = 0.05
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		USB_defenders_of_democracy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				conscription_factor = -0.35
+				mobilization_speed = -0.35
+				max_command_power = 20
+				mobilization_laws_cost_factor = 0.5
+			}
+		}
+		USB_defenders_of_democracy_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+			}
+		}
+		USB_solve_the_recruitment_crisis_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		USB_crack_down_on_draft_dodgers_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				conscription_factor = 0.1
+				mobilization_speed = 0.1
+				land_reinforce_rate = 0.05
+				mobilization_laws_cost_factor = -0.33
+			}
+		}
+		USB_utilize_online_propaganda_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				war_support_factor = 0.05
+				weekly_casualties_war_support = 0.003
+				weekly_convoys_war_support = 0.003
+				weekly_bombing_war_support = 0.003
+			}
+		}
+		USB_encourage_liberal_warhawks_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		USB_politicize_the_army_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_advisor_cost_factor = -0.25
+			}
+		}
+		USB_discourage_anti_americanism_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_org_factor = 0.05
+				army_defence_factor = 0.1
+			}
+		}
+		USB_militarize_society_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				supply_consumption_factor = -0.1
+			}
+		}
+		USB_incorporate_new_recruits_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				training_time_factor = -0.2
+			}
+		}
+		USB_mandate_female_service_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_strength_factor = 0.1
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				mobilization_laws_cost_factor = -0.33
+			}
+		}
+		USB_trust_in_the_high_command_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				planning_speed = 0.1
+				max_planning_factor = 0.1
+				experience_gain_army_factor = 0.1
+			}
+		}
+		USB_shock_and_awe_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				breakthrough_factor = 0.1
+				army_speed_factor = 0.1
+			}
+		}
+		USB_fuel_the_meat_grinder_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				training_time_factor = -0.1
+				mobilization_laws_cost_factor = -0.33
+			}
+		}
+		USB_blitz_for_the_heartland_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		USB_full_spectrum_operations_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				coordination_bonus = 0.1
+				air_superiority_bonus_in_combat = 0.1
+			}
+		}
+		USB_operation_mirage_idea = {
+			#Timed Idea, 175 Days
+			name = USB_operation_mirage
+			picture = USB_operation_mirage
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				army_attack_factor = 0.3
+				ai_focus_aggressive_factor = 1
+			}
+		}
+		USB_professionalize_the_army_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.1
+				experience_gain_army_factor = 0.1
+				military_development_monthly = 0.005
+			}
+		}
+		USB_caution_over_land_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_defence_factor = 0.15
+				army_org_regain = 0.1
+				army_speed_factor = -0.05
+			}
+		}
+		USB_race_against_the_clock_idea = {
+			#Timed Idea, 175 Days
+			name = USB_race_against_the_clock
+			picture = generic_purge
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				breakthrough_factor = 0.2
+				army_speed_factor = 0.2
+				ai_focus_aggressive_factor = 1
+			}
+		}
+		USB_finish_the_fight_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_defenders_of_democracy_dynamic
+			allowed = {
+				original_tag = USB
+			}
+			modifier = {
+				army_org_factor = 0.1
+				command_power_gain_mult = 0.1
+				max_command_power = 30
+				military_development_monthly = 0.005
+			}
+		}
+		USB_reorganized_army_idea = {
+			picture = USB_uncooperative_millitary
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				conscription_factor = -0.1
+				max_command_power = 10
+				army_org_factor = 0.05
+				army_speed_factor = 0.1
+			}
+		}
+		USB_entrenched_defense_idea = {
+			picture = FRA_fortification_focus
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				conscription_factor = -0.1
+				max_command_power = 10
+				army_org_factor = 0.05
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		USB_entrenched_defense_idea1 = {
+			picture = FRA_fortification_focus
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				conscription_factor = -0.1
+				max_command_power = 10
+				army_org_factor = 0.1
+				dig_in_speed_factor = 0.1
+				max_dig_in_factor = 0.1
+			}
+		}
+		USB_all_out_assault_idea = {
+			picture = FRA_national_mobilization_focus
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				max_command_power = 10
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+			}
+		}
+		USB_all_out_assault_idea1 = {
+			picture = FRA_national_mobilization_focus
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				max_command_power = 10
+				army_org_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		chips_act_idea = {
+			picture = chips_act
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_start_efficiency_factor = 0.1
+				production_speed_industrial_complex_factor = 0.1
+			}
+		}
+		USB_constitutionalism_idea = {
+			picture = USB_constitutionalism
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = 0.1
+			}
+		}
+		USB_constitutionalism_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+			}
+		}
+		USB_new_federalism_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				line_change_production_efficiency_factor = -0.1
+				production_speed_buildings_factor = -0.1
+				political_power_gain = 0.05
+				poverty_development_monthly = 0.01
+				consumer_goods_factor = -0.05
+				production_factory_max_efficiency_factor = 0.1
+			}
+		}
+		USB_defending_the_american_experiment_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+				army_morale_factor = 0.1
+			}
+		}
+		USB_expand_the_charter_school_system_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				academic_development_monthly = 0.02
+				industrial_development_monthly = 0.01
+				research_speed_factor = 0.05
+			}
+		}
+		USB_the_right_to_life_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = -0.1
+				monthly_population = 0.13
+			}
+		}
+		USB_encourage_public_private_partnerships_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				line_change_production_efficiency_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.1
+			}
+		}
+		USB_comprehensive_crime_control_act_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			picture = GFX_idea_USB_constitutionalism_idea
+			name = USB_constitutionalism_idea
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				required_garrison_factor = 0.1
+				resistance_growth = -0.2
+			}
+		}
+		USB_corporate_cooperation_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				production_factory_efficiency_gain_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+			}
+		}
+		USB_anti_misinformation_campaign = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				crypto_strength = 2
+				encryption = 2
+				foreign_subversive_activites = -0.5
+				root_out_resistance_effectiveness_factor = 0.25
+			}
+		}
+		USB_corporate_cooperation_board_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+			}
+		}
+		USB_corporate_rejection_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				political_power_gain = 0.05
+			}
+		}
+		USB_anti_corporatism_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+				production_factory_efficiency_gain_factor = -0.1
+				line_change_production_efficiency_factor = -0.1
+			}
+		}
+		USB_anti_corporatism_idea1 = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		USB_anti_corporatism_board_idea = {
+			picture = man_five_year_plan_industry
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				stability_factor = -0.05
+				conversion_cost_civ_to_mil_factor = -0.2
+			}
+		}
+		USB_air_force_domination_idea = {
+			picture = USB_air_force_domination
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				ai_focus_aviation_factor = 0.5
+				air_accidents_factor = -0.1
+				air_mission_efficiency = 0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		USB_air_force_domination_idea1 = {
+			picture = USB_air_force_domination
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			modifier = {
+				ai_focus_aviation_factor = 0.5
+				air_accidents_factor = -0.1
+				air_mission_efficiency = 0.1
+				air_doctrine_cost_factor = -0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		USB_air_force_domination_quantity_idea = {
+			picture = USB_air_force_domination
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05
+					instant = yes
+				}
+			}
+			modifier = {
+				ai_focus_aviation_factor = 0.5
+				air_mission_efficiency = 0.1
+				air_doctrine_cost_factor = -0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		USB_air_force_domination_quality_idea = {
+			picture = USB_air_force_domination
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+			}
+			modifier = {
+				air_accidents_factor = -0.1
+				air_range_factor = 0.1
+				ai_focus_aviation_factor = 0.5
+				air_mission_efficiency = 0.2
+				air_doctrine_cost_factor = -0.1
+				ai_focus_aggressive_factor = 0.5
+			}
+		}
+		USB_anti_partisan_division_idea = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+			}
+			modifier = {
+				political_power_gain = 0.1
+				resistance_growth = -0.1
+				resistance_decay = 0.1
+			}
+		}
+		USB_anti_partisan_division_idea1 = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+			}
+			modifier = {
+				political_power_gain = 0.1
+				resistance_growth = -0.1
+				resistance_decay = 0.1
+				starting_compliance = 0.05
+				required_garrison_factor = -0.1
+			}
+		}
+		USB_department_of_justice_idea = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+			}
+			modifier = {
+				political_power_gain = 0.1
+				resistance_growth = -0.1
+				resistance_decay = 0.1
+				starting_compliance = 0.05
+				required_garrison_factor = -0.1
+				agency_upgrade_time = -0.1
+				operative_slot = 1
+				new_operative_slot_bonus = 1
+			}
+		}
+		USB_eyes_of_providence_idea = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				OR = {
+					tag = USB
+					tag = USP
+					tag = USG
+				}
+			}
+			equipment_bonus = {
+			}
+			modifier = {
+				political_power_gain = 0.15
+				resistance_growth = -0.2
+				resistance_decay = 0.2
+				required_garrison_factor = -0.1
+				agency_upgrade_time = -0.5
+				command_power_gain_mult = 0.25
+				root_out_resistance_effectiveness_factor = 0.25
+				operative_slot = 2
+				new_operative_slot_bonus = 2
+			}
+		}
+		USB_economic_mobilization_idea = {
+			picture = generic_emerging_economy
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				production_speed_arms_factory_factor = 0.2
+				production_speed_industrial_complex_factor = -0.2
+			}
+		}
+		USB_economic_defense_act_idea = {
+			picture = generic_production_bonus
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				income_growth_factor = 0.05
+			}
+		}
+		USB_technocractic_reforms_idea = {
+			picture = generic_research_bonus
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				research_speed_factor = 0.05
+			}
+		}
+		USB_national_synthesis_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+			}
+		}
+		USB_technocractic_reforms_and_economic_defense_act_dummy_idea = {
+			picture = generic_research_bonus
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				income_growth_factor = 0.05
+				industrial_capacity_factory = 0.05
+				industrial_capacity_dockyard = 0.05
+				research_speed_factor = 0.05
+			}
+		}
+		USB_cooperation_constitution_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				income_growth_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		USB_faltering_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				custom_modifier_tooltip = USB_biden_faltering_tt
+			}
+		}
+		###treason trials dynamics 
+		USB_treason_trial_dummy_idea = {
+			#Just Made For Tooltip, Dynamic Modifier is used instead
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+			}
+		}
+		USB_treason_trial_kill_kamala_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				political_power_gain = 0.025
+				society_development_monthly = 0.01
+				drift_defence_factor = 0.1
+			}
+		}
+		USB_treason_trial_kill_bernie_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				political_power_gain = 0.05
+				social_democrat_drift = -0.02
+				production_speed_office_park_factor = 0.15
+				production_speed_buildings_factor = 0.1
+				production_factory_start_efficiency_factor = 0.05
+			}
+		}
+		USB_treason_trial_kill_romney_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				political_power_gain = 0.01
+				consumer_goods_factor = -0.05
+				mobilization_laws_cost_factor = -0.5
+				tax_business_rate_factor = 0.05
+			}
+		}
+		USB_treason_trial_kill_bloomberg_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				research_speed_factor = 0.05
+				personal_expense_factor = -0.075
+				academic_development_monthly = 0.02
+			}
+		}
+		USB_treason_trial_kill_blinken_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				political_power_gain = 0.05
+				max_planning_factor = 0.1
+				military_factory_upkeep_factor = -0.15
+				mobilization_speed = 0.05
+			}
+		}
+		USB_treason_trial_kill_yellen_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+				inflation_monthly = -0.001
+				income_growth_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.025
+			}
+		}
+		USB_treason_trial_kill_haaland_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				society_development_monthly = 0.02
+				root_out_resistance_effectiveness_factor = 0.15
+				political_power_gain = 0.01
+			}
+		}
+		USB_treason_trial_kill_haines_idea = {
+			name = USB_treason_trial_dynamic
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				intel_network_gain_factor = 0.25
+				agency_upgrade_time = -0.1
+				political_power_gain = 0.025
+				crypto_strength = 0.2
+			}
+		}
+		USB_eternity_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				academic_development_monthly = 0.06
+				society_development_monthly = 0.06
+				nationalist_drift = 0.2
+				political_power_gain = 0.3
+				stability_factor = 0.2
+				war_support_factor = 0.2
+				income_growth_factor = 0.15
+				industrial_capacity_factory = 0.15
+				industrial_capacity_dockyard = 0.15
+				research_speed_factor = 0.15
+			}
+		}
+		USB_NPC_democratic_party_doctrine_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				nationalist_drift = 0.025
+				stability_weekly = 0.002
+			}
+		}
+		USB_speaker_of_the_people_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+				production_speed_buildings_factor = 0.1
+				income_growth_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		USB_savior_of_the_party = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				nationalist_drift = 0.1
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.1
+				production_speed_buildings_factor = 0.1
+				income_growth_factor = 0.1
+				industrial_capacity_factory = 0.1
+				industrial_capacity_dockyard = 0.1
+				research_speed_factor = 0.1
+			}
+		}
+		USB_defenders_of_democracy_caligula_idea = {
+			picture = generic_economic_reinvigoration
+			allowed = {
+				tag = USB
+			}
+			modifier = {
+				conscription_factor = 0.25
+				mobilization_speed = 0.25
+				max_command_power = 40
+				mobilization_laws_cost_factor = 0.5
+				army_morale_factor = 0.1
+				army_org_factor = 0.05
+				army_defence_factor = 0.1
+				army_advisor_cost_factor = -0.25
+				max_dig_in_factor = 0.1
+				land_reinforce_rate = 0.1
+				supply_consumption_factor = -0.1
+				air_range_factor = 0.15
+				air_mission_efficiency = 0.2
+				air_doctrine_cost_factor = -0.25
+				air_superiority_bonus_in_combat = 0.15
+			}
+		}
+	}
+	head_minister = {
+		USB_kamala_harris_hog = {
+			picture = USB_kamala_harris
+			name = USB_kamala_harris_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				hog_smiling_serpent
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USB_joe_biden_hog = {
+			picture = USB_joe_biden_1
+			name = USB_joe_biden_char
+			allowed = {
+				OR = {
+					original_tag = USB
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				NOT = {
+					has_country_leader = USA_joe_biden_char
+				}
+			}
+			traits = {
+				hog_backroom_backstabber
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.05
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.1
+				}
+			}
+		}
+		USA_pete_buttigeg_hog = {
+			picture = USA_pete_buttigeg
+			name = USA_pete_buttigeg_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				hog_pretty_boy
+				openly_gay
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USA_alexandria_ocasio_cortez_hog = {
+			picture = USA_alexandria_ocasio_cortez
+			name = USA_alexandria_ocasio_cortez_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				hog_committed_social_activist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USA_nikki_haley_hog = {
+			picture = USA_nikki_haley
+			name = USA_nikki_haley_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				hog_happy_amateur
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USA_bill_gates_hog = {
+			picture = USA_bill_gates
+			name = USA_bill_gates_char
+			allowed = {
+				original_tag = USB
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				has_country_flag = supercorps
+			}
+			traits = {
+				USB_innovationist_fac
+				hog_ambitious_union_boss
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USA_mitt_romney_hog = {
+			picture = USB_mitt_romney_vp
+			name = USB_mitt_romney_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				hog_backroom_backstabber
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USA_elizabeth_warren_hog = {
+			picture = USB_elizabeth_warren_vp
+			name = USB_elizabeth_warren_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				hog_peaceful_revolutionary
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USB_amy_klobuchar_hog = {
+			picture = USB_amy_klobuchar_vp
+			name = USB_amy_klobuchar_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_unity_figure
+				hog_great_unifier
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.15
+					}
+					
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.15
+					}
+					
+				}
+			}
+			on_remove = {
+			}
+		}
+		USB_nicole_shanahan_hog = {
+			picture = USB_nicole_shanahan
+			name = USB_nicole_shanahan_char
+			allowed = {
+				original_tag = USB
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_populist_fac
+				hos_experienced_lawyer
+			}
+			on_add = {
+			}
+			on_remove = {
+			}
+		}
+		USB_beto_o_rourke_hog = {
+			picture = USB_beto_o_rourke_vp
+			name = USB_beto_o_rourke_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				hog_flamboyant_tough_guy
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USB_tim_walz_hog = {
+			picture = GFX_idea_USB_tim_walz_hog
+			name = USB_tim_walz_char
+			allowed = {
+				original_tag = USB
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				has_country_flag = USB_liberal_enable_flag
+				OR = {
+					has_country_leader = {
+						character = USB_kamala_harris_char
+						ruling_only = yes
+					}
+					has_idea = USB_tim_walz_hog
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				sec_internal_compromiser
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+
+	}
+	foreign_minister = {
+		USB_antony_blinken_for = {
+			picture = USB_anthony_blinken
+			name = USB_antony_blinken_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				for_global_interventionist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_joe_biden_for = {
+			picture = USB_joe_biden
+			name = USB_joe_biden_char_2
+			allowed = {
+				OR = {
+					original_tag = USB
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				NOT = {
+					has_country_leader = USA_joe_biden_char
+				}
+			}
+			traits = {
+				for_fervent_nationalist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.05
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.1
+				}
+			}
+		}
+		USB_jesse_jackson_for = {
+			picture = USA_jesse_jackson
+			name = USB_jesse_jackson_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				for_apologetic_clerk
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_ilhan_omar_for = {
+			picture = USA_ilhan_omar
+			name = USB_ilhan_omar_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				for_ideological_crusader
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_robert_kagan_for = {
+			picture = USA_robert_kagan
+			name = USB_robert_kagan_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				for_expansionist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+		USB_al_gore_for = {
+			picture = USA_al_gore
+			name = USB_al_gore_char
+			allowed = {
+				original_tag = USB
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_innovationist_fac
+				for_connected_businessman
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_john_bolton_for = {
+			picture = USB_john_bolton
+			name = USB_john_bolton_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				for_iron_fisted_brute
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.25
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.25
+					}
+					
+				}
+			}
+		}
+	}
+	economic_minister = {
+		USB_janet_yellen_eco = {
+			picture = USB_janet_yellen
+			name = USB_janet_yellen_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				eco_bank_president
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_joe_biden_eco = {
+			picture = USB_joe_biden_3
+			name = USB_joe_biden_char
+			allowed = {
+				OR = {
+					original_tag = USB
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				NOT = {
+					has_country_leader = USA_joe_biden_char
+				}
+			}
+			traits = {
+				eco_corrupt_kleptocrat
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.05
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.1
+				}
+			}
+		}
+		USB_marillyn_hewson_eco = {
+			picture = USA_marillyn_hewson
+			name = USB_marillyn_hewson_char
+			allowed = {
+				original_tag = USB
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			available = {
+				
+			}
+			traits = {
+				USB_liberal_fac
+				eco_military_entrepreneur
+			}
+			# on_add = {
+			# 	if = {
+			# 		limit = {
+			# 			tag = USB
+			# 		}
+			# 		set_temp_variable = {
+			# 			var = USB_support_neo_var_temp
+			# 			value = 0.1
+			# 		}
+			# 		
+			# 	}
+			# }
+			# on_remove = {
+			# 	if = {
+			# 		limit = {
+			# 			tag = USB
+			# 		}
+			# 		set_temp_variable = {
+			# 			var = USB_support_neo_var_temp
+			# 			value = -0.1
+			# 		}
+			# 		
+			# 	}
+			# }
+		}
+		USB_robert_reich_eco = {
+			picture = USA_robert_reich
+			name = USB_robert_reich_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				eco_labor_specialist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_rashida_tlaib_eco = {
+			picture = USA_rashida_tlaib
+			name = USB_rashida_tlaib_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				eco_radical_redistrubutionist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_joshua_muravchik_eco = {
+			picture = USA_joshua_muravchik
+			name = USB_joshua_muravchik_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				eco_war_industrialist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_larry_fink_eco = {
+			picture = USB_larry_fink
+			name = USB_larry_fink_char
+			allowed = {
+				original_tag = USB
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			available = {
+			
+			}
+			traits = {
+				USB_innovationist_fac
+				eco_experienced_capitalist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USA_keith_ellison_hog = {
+			picture = USA_keith_ellison
+			name = USA_keith_ellison_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			available = {
+				
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				hog_ambitious_union_boss
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USA_adam_kinzinger_hog = {
+			picture = USA_adam_kinzinger
+			name = USA_adam_kinzinger_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			available = {
+				
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				hog_military_statist
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+	}
+	interior_minister = {
+		USB_deb_haaland_sec = {
+			picture = USB_deb_haaland
+			name = USB_deb_haaland_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				sec_reformer
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_joe_biden_sec = {
+			picture = USB_joe_biden_5
+			name = USB_joe_biden_char
+			allowed = {
+				OR = {
+					original_tag = USB
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				NOT = {
+					has_country_leader = USA_joe_biden_char
+				}
+			}
+			traits = {
+				sec_long_lasting_state_ideologue
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.05
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.1
+				}
+			}
+		}
+		USB_julie_chavez_rodriguez_sec = {
+			picture = USA_julie_chavez_rodriguez
+			name = USB_julie_chavez_rodriguez_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				sec_internal_compromiser
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_ayanna_pressley_sec = {
+			picture = USA_ayanna_pressley
+			name = USB_ayanna_pressley_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			traits = {
+				USB_progressive_fac
+				sec_efficent_organizer
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+					has_government = social_democrat
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_pro_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_chris_christie_sec = {
+			picture = USA_chris_christie
+			name = USB_chris_christie_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				sec_silent_lawyer
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_liz_cheney_sec = {
+			picture = USA_liz_cheney
+			name = USB_liz_cheney_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				sec_princess_of_terror
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_con_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USB_anthony_fauci_sec = {
+			picture = USB_anthony_fauci
+			name = USB_anthony_fauci_char
+			allowed = {
+				original_tag = USB
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				has_country_flag = supercorps
+			}
+			available = {
+				
+			}
+			traits = {
+				USB_innovationist_fac
+				sec_health_and_safety
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_ino_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+		USA_jen_o_malley_dillon_hog = {
+			picture = USA_jen_o_malley_dillon
+			name = USA_jen_o_malley_dillon_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				hog_silent_workhorse
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = 0.1
+					}
+					
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					set_temp_variable = {
+						var = USB_support_neo_var_temp
+						value = -0.1
+					}
+					
+				}
+			}
+		}
+	}
+	intelligence_minister = {
+		USB_avril_haines_int = {
+			picture = USB_avril_haines
+			name = USB_avril_haines_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				int_balanced_cryptographer
+			}
+		}
+		USB_joe_biden_int = {
+			picture = USB_joe_biden_6
+			name = USB_joe_biden_char
+			allowed = {
+				OR = {
+					original_tag = USB
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+				NOT = {
+					has_country_flag = USA_joe_biden_char
+				}
+			}
+			traits = {
+				int_resistance_crusher
+			}
+			on_add = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.05
+				}
+			}
+			on_remove = {
+				if = {
+					limit = {
+						tag = USB
+					}
+					add_stability = -0.1
+				}
+			}
+		}
+		USB_john_negroponte_int = {
+			picture = USA_john_negroponte
+			name = USB_john_negroponte_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_conservative_fac
+				int_ideological_enforcer
+			}
+		}
+		USB_lauren_zabierek_int = {
+			picture = USA_lauren_zabierek
+			name = USB_lauren_zabierek_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_innovationist_fac
+				int_resistance_crusher
+			}
+		}
+		USB_william_burns_int = {
+			picture = USB_william_burns
+			name = USB_william_burns_char
+			allowed = {
+				OR = {
+					original_tag = USB
+					original_tag = USA
+				}
+			}
+			visible = {
+				OR = {
+					has_government = social_liberal
+					has_government = market_liberal
+				}
+			}
+			traits = {
+				USB_liberal_fac
+				int_decryptor
+			}
+		}
+	}
+}

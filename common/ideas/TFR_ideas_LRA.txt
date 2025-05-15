@@ -1,0 +1,23 @@
+	ideas = {
+		country = {
+			LRA_harsh_rules_of_engagement = {
+				picture = TRG_Poorly_Trained_Militias 
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					army_attack_factor = -0.5
+					army_defence_factor = -0.5
+					army_org_factor = -0.1
+				}
+			}
+		}
+	}

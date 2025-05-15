@@ -1,0 +1,22 @@
+	ideas = {
+		country = {
+			CAR_gods_kingdom = {
+				picture = "GFX_idea_florida_siege"
+
+				allowed = {
+					always = no
+				}
+
+				allowed_civil_war = {
+					always = yes
+				}
+
+				removal_cost = -1
+				
+				modifier = {
+					stability_factor = 0.05
+					army_attack_factor = 0.05
+				}
+			}
+		}
+	}

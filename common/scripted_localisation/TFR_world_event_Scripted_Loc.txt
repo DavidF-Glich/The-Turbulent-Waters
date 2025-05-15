@@ -1,0 +1,322 @@
+#对俄乌战争的称呼
+defined_text = {
+	name = Russo_Ukrainian_War_loc
+	text = {
+		trigger = {
+			OR = {
+				tag = SOV
+				tag = BEL
+				tag = PRK
+				tag = SYR
+				AND = {
+					tag = PRC
+					NOT = {
+						has_completed_focus = PRC_Price_for_West
+					}
+				}
+			}
+		}
+		localization_key = Russo_Ukrainian_War_justice_league
+	}
+	text = {
+		localization_key = Russo_Ukrainian_War_global
+	}
+}
+#俄乌战争描述
+defined_text = {
+	name = Russo_Ukrainian_War_desc
+	text = {
+		trigger = {
+			tag = SOV
+		}
+		localization_key = Russo_Ukrainian_war1
+	}
+	text = {
+		trigger = {
+			OR = {
+				tag = USA
+				tag = ENG
+				tag = POL
+			}
+		}
+		localization_key = Russo_Ukrainian_war2
+	}
+	text = {
+		trigger = {
+			tag = UKR
+		}
+		localization_key = Russo_Ukrainian_war3
+	}
+	text = {
+		localization_key = Russo_Ukrainian_war4
+	}
+}
+#乌克兰的外交态度
+defined_text = {
+	name = UKR_Diplomacy
+	text = {
+		trigger = {
+			check_variable = {
+				GLOBAL.UKR_Diplomacy_Attitude < 60
+				GLOBAL.UKR_Diplomacy_Attitude > 40
+			}
+		}
+		localization_key = UKR_Diplomacy_Neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 40
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = UKR_Diplomacy_favor_of_USA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 20
+				compare = less_than
+			}
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 0
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = UKR_Diplomacy_love_USA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 0
+				compare = less_than
+			}
+		}
+		localization_key = UKR_Diplomacy_USA_son
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 60
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 80
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = UKR_Diplomacy_favor_of_Russia
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 80
+				compare = greater_than
+			}
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 100
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = UKR_Diplomacy_love_Russia
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.UKR_Diplomacy_Attitude
+				value = 100
+				compare = greater_than
+			}
+			
+		}
+		localization_key = UKR_Diplomacy_Surrender_now
+	}
+}
+#欧洲的外交态度
+defined_text = {
+	name = EUR_Diplomacy
+	text = {
+		trigger = {
+			check_variable = {
+				GLOBAL.EUR_Diplomacy_Attitude < 60
+				GLOBAL.EUR_Diplomacy_Attitude > 40
+			}
+		}
+		localization_key = EUR_Diplomacy_Neutral
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 40
+				compare = less_than_or_equals
+			}
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 20
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EUR_Diplomacy_favor_of_USA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 20
+				compare = less_than
+			}
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 0
+				compare = greater_than_or_equals
+			}
+		}
+		localization_key = EUR_Diplomacy_love_USA
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 0
+				compare = less_than
+			}
+		}
+		localization_key = EUR_Diplomacy_USA_son
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 60
+				compare = greater_than_or_equals
+			}
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 80
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EUR_Diplomacy_favor_of_Russia
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 80
+				compare = greater_than
+			}
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 100
+				compare = less_than_or_equals
+			}
+		}
+		localization_key = EUR_Diplomacy_love_Russia
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				var = GLOBAL.EUR_Diplomacy_Attitude
+				value = 100
+				compare = greater_than
+			}
+			
+		}
+		localization_key = EUR_Diplomacy_Surrender_now
+	}
+}
+#中国重归统一
+defined_text = {
+	name = PRC_CHI_Detente
+	text = {
+		trigger = {
+			OR = {
+				tag = PRC
+				tag = CHI
+			}
+		}
+		localization_key = PRC_CHI_Detente1
+	}
+	text = {
+		localization_key = PRC_CHI_Detente_global
+	}
+}
+defined_text = {
+	name = PRC_CHI_Detente_desc
+	text = {
+		trigger = {
+			OR = {
+				tag = PRC
+				tag = CHI
+			}
+		}
+		localization_key = PRC_CHI_Detente_desc1
+	}
+	text = {
+		localization_key = PRC_CHI_Detente_desc_global
+	}
+}
+defined_text = {
+	name = China_Territory
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = China_Territory_CHI
+	}
+	text = {
+		localization_key = China_Territory_World
+	}
+}
+#巴以冲突
+defined_text = {
+	name = Israeli_Hamas_war
+	text = {
+		trigger = {
+			tag = ISR
+		}
+		localization_key = Israeli_Hamas_war_ISR
+	}
+	text = {
+		localization_key = Israeli_Hamas_war_world
+	}
+}
+#2022台海危机
+defined_text = {
+	name = 2022_Taiwan_Crisis_loc
+	text = {
+		trigger = {
+			tag = USA
+		}
+		localization_key = USA_Taiwan_Crisis_loc
+	}
+	text = {
+		trigger = {
+			tag = PRC
+		}
+		localization_key = PRC_Taiwan_Crisis_loc
+	}
+	text = {
+		trigger = {
+			tag = CHI
+		}
+		localization_key = CHI_Taiwan_Crisis_loc
+	}
+	text = {
+		localization_key = General_Taiwan_Crisis_loc
+	}
+}

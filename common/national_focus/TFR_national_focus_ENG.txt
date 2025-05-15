@@ -1,0 +1,27 @@
+focus_tree = {
+	id = ENG
+	country = { 
+		factor = 0
+		modifier = {
+			add = 10
+			tag = ENG
+		}
+	}
+	default = no
+
+	shared_focus = NATO_Transformation_Conference
+	shared_focus = NATO_360
+	shared_focus = NATO_Challenge
+	shared_focus = NATO_Communicator_Conference
+	shared_focus = NATO_Festival
+	shared_focus = NATO_Industry_Forum
+	shared_focus = NATO_Multi_Domain
+	shared_focus = NATO_Resource_Conference
+	shared_focus = NATO_Strategic_Foresight
+	shared_focus = NATO_TIDE
+	shared_focus = NATO_Talk_Military
+	shared_focus = NATO_Technology_Conference
+	shared_focus = NATO_WCC
+	shared_focus = NATO_Wargame
+
+}

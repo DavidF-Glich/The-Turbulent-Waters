@@ -1,0 +1,195 @@
+add_namespace = ukr_border
+#进攻方——大获全胜
+country_event = {
+	id = ukr_border.1
+	title = ukr_border.1.t
+	desc = ukr_border.1.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.1.a
+		add_war_support = 0.02
+		add_political_power = 20
+		army_experience = 5
+	}
+	
+}
+#进攻方——丢人现眼
+country_event = {
+	id = ukr_border.2
+	title = ukr_border.2.t
+	desc = ukr_border.2.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.2.a
+		add_war_support = -0.02
+		army_experience = 10
+	}
+}
+#进攻方——等通知
+country_event = {
+	id = ukr_border.3
+	title = ukr_border.3.t
+	desc = ukr_border.3.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.3.a
+	}
+}
+#防守方——大获全胜
+country_event = {
+	id = ukr_border.4
+	title = ukr_border.4.t
+	desc = ukr_border.4.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.4.a
+		add_stability = 0.02
+		add_war_support = 0.01
+		army_experience = 5
+	}
+}
+#防守方——丢人现眼
+country_event = {
+	id = ukr_border.5
+	title = ukr_border.5.t
+	desc = ukr_border.5.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.5.a
+		add_war_support = -0.03
+		add_stability = -0.03
+		army_experience = 10
+	}
+}
+#防守方——等通知
+country_event = {
+	id = ukr_border.6
+	title = ukr_border.6.t
+	desc = ukr_border.6.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.6.a
+	}
+}
+#在哪个方向进攻？
+country_event = {
+	id = ukr_border.7
+	title = ukr_border.7.t
+	desc = ukr_border.7.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.7.a
+		trigger = {
+			tag = UKR
+		}
+		activate_mission = UKR_Launch_a_Strike_1090_mission
+	}
+	option = {
+		name = ukr_border.7.b
+		trigger = {
+			tag = UKR
+		}
+		activate_mission = UKR_Launch_a_Strike_1091_227_mission
+	}
+	option = {
+		name = ukr_border.7.c
+		trigger = {
+			tag = UKR
+		}
+		activate_mission = UKR_Launch_a_Strike_1091_228_mission
+	}
+	option = {
+		name = ukr_border.7.e
+		trigger = {
+			tag = UKR
+		}
+		activate_mission = UKR_Launch_a_Strike_1374_mission
+	}
+	option = {
+		name = ukr_border.7.f
+		trigger = {
+			tag = DPR
+		}
+		activate_mission = DPR_Launch_a_Strike_1374_mission
+	}
+	option = {
+		name = ukr_border.7.g
+		trigger = {
+			tag = NOV
+		}
+		activate_mission = NOV_Launch_a_Strike_1090_mission
+	}
+	option = {
+		name = ukr_border.7.h
+		trigger = {
+			OR = {
+				tag = DPR
+				tag = NOV
+			}
+		}
+		activate_mission = Launch_a_Strike_1091_mission
+	}
+}
+#体面退场
+country_event = {
+	id = ukr_border.8
+	title = ukr_border.8.t
+	desc = ukr_border.8.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.8.a
+		effect_tooltip = {
+			UKR = {
+				country_event = ukr_border.9
+			}
+		}
+	}
+}
+#含恨停战/血战到底？
+country_event = {
+	id = ukr_border.9
+	title = ukr_border.9.t
+	desc = ukr_border.9.d
+	is_triggered_only = yes
+	option = {
+		name = ukr_border.9.a
+		play_peace_in_our_time_effect = yes
+		white_peace = SOV
+		add_war_support = -0.2
+		add_stability = 0.2
+		add_political_power = -40
+	}
+	option = {
+		name = ukr_border.9.b
+		add_war_support = -0.05
+		every_country = {
+			limit = {
+				OR = {
+					tag = USA
+					tag = SOV
+				}
+			}
+			country_event = ukr_border.10
+		}
+	}
+}
+#自找苦吃
+country_event = {
+	id = ukr_border.10
+	title = ukr_border.10.t
+	desc = ukr_border.10.d
+	is_triggered_only = yes
+	picture = GFX_SOV_ukraine_talks
+	option = {
+		name = ukr_border.10.a
+		add_war_support = 0.05
+		add_popularity = {
+			ideology = authoritarian_democrat
+			popularity = 0.03
+		}
+		add_popularity = {
+			ideology = fascist
+			popularity = 0.01
+		}
+	}
+}

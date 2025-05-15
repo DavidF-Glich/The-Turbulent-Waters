@@ -1,0 +1,60 @@
+Upgrade_mainland_influence = {
+	if = {
+		limit = { has_idea = CHI_lower_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_lower_mainland_influence_idea
+			add_idea = CHI_low_mainland_influence_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_low_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_low_mainland_influence_idea
+			add_idea = CHI_medium_mainland_influence_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_medium_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_medium_mainland_influence_idea
+			add_idea = CHI_high_mainland_influence_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_high_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_high_mainland_influence_idea
+			add_idea = CHI_higher_mainland_influence_idea
+		}
+	}
+}
+Downgrade_mainland_influence = {
+	if = {
+		limit = { has_idea = CHI_higher_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_higher_mainland_influence_idea
+			add_idea = CHI_high_mainland_influence_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_high_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_high_mainland_influence_idea
+			add_idea = CHI_medium_mainland_influence_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_medium_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_medium_mainland_influence_idea
+			add_idea = CHI_low_mainland_influence_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = CHI_low_mainland_influence_idea }
+		swap_ideas = {
+			remove_idea = CHI_low_mainland_influence_idea
+			add_idea = CHI_lower_mainland_influence_idea
+		}
+	}
+}

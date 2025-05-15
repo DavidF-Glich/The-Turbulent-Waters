@@ -1,0 +1,139 @@
+﻿l_simp_chinese:
+ show_build_queue: "显示批量建造界面"
+ show_build_queue_desc: "此决议允许您批量建造不同省份的多个选定建筑物。§单击下面的按钮§!§G显示§!§Y该决议。§!"
+
+ aqc_show_tooltip: "§G打开§! 批量建造界面"
+ aqc_hide_tooltip: "§R关闭§! 批量建造界面"
+
+ build_queue: "批量建造"
+ build_queue_desc: "此决定允许您批量建造各个省份的多个选定建筑物或基础设施。"
+
+ auto_queue_5: "§G5x§! | §R10x§! | §R25x§! 将批量建造数量切换到 §Y10x§! 个"
+ auto_queue_10: "§R5x§! | §G10x§! | §R25x§! 将批量建造数量切换到 §Y25x§! 个"
+ auto_queue_25: "§R5x§! | §R10x§! | §G25x§! 将批量建造数量切换到 §Y5x§! 个"
+
+ #aqc_building_type: "选择§建筑类别§！"
+ aqc_building_type: "选择§建筑类别§！"
+ #aqc_quantity_construction: "批量建造的数量: "
+ aqc_quantity_construction: "批量建造的数量："
+
+ aqr_current_quantity: "[GetCurrentQuantity]"
+
+ aqc_factory_current_quantity_5: "§G5x§! | §R10x§! | §R25x§!"
+ aqc_factory_current_quantity_10: "§R5x§! | §G10x§! | §R25x§!"
+ aqc_factory_current_quantity_25: "§R5x§! | §R10x§! | §G25x§!"
+
+ aqc_refineries_current_quantity_3: "§G3x§! | §R6x§! | §R10x§!"
+ aqc_refineries_current_quantity_6: "§R3x§! | §G6x§! | §R10x§!"
+ aqc_refineries_current_quantity_10: "§R3x§! | §R6x§! | §G10x§!"
+
+ aqc_special_current_quantity_2: "§G2x§! | §R4x§! | §R6x§!"
+ aqc_special_current_quantity_4: "§R2x§! | §G4x§! | §R6x§!"
+ aqc_special_current_quantity_6: "§R2x§! | §R4x§! | §G6x§!"
+
+ aqc_infrastructure_current_quantity_3: "§G3x§! | §R6x§! | §R10x§!"
+ aqc_infrastructure_current_quantity_6: "§R3x§! | §G6x§! | §R10x§!"
+ aqc_infrastructure_current_quantity_10: "§R3x§! | §R6x§! | §G10x§!"
+
+ aqc_current_quantity_tooltip: "§绿色§！目前有多少建筑物需要建造"
+
+ increase_quantity_button: "§G增加§!目前的数量"
+ decrease_quantity_button: "§R减少§! 目前的数量"
+ 
+ hide_aqc_decision_text: "§R隐藏§! 决议"
+ unhide_aqc_decision_text: "£auto_build" # §GOpenT§! Auto-Queue
+
+ select_factory_text: "[GetSelectFactory]"
+ selected_factory_text: "§Y工厂和造船厂§!"
+ deselect_factory_text: "工厂和造船厂"
+
+ select_refineries_text: "[GetSelectRefineries]"
+ selected_refineries_text: "§Y储油罐和炼油厂§!"
+ deselect_refineries_text: "储油罐和炼油厂"
+
+ select_special_text: "[GetSelectSpecial]"
+ selected_special_text: "§Y特殊建筑§!"
+ deselect_special_text: "特殊建筑"
+
+ select_infrastructure_text: "[GetSelectInfrastructure]"
+ selected_infrastructure_text: "§Y基础设施§!"
+ deselect_infrastructure_text: "基础设施"
+
+ # OLD
+ #aqc_select_factory_tooltip: "§YAuto-Queue§! option for: §OCivilian Factory§!, §GMilitary Factory§!, and §3Naval Dockyard§!"
+ #aqc_select_refineries_tooltip: "§YAuto-Queue§! option for §8储油罐§!, and §g合成炼油厂§!"
+ #aqc_select_special_tooltip: "§YAuto-Queue§! option for §9核反应堆§! and §O火箭基地§!"
+ #aqc_select_infrastructure_tooltip: "§YAuto-Queue§! option for §OInfrastructure§!"
+
+ # NEW
+ aqc_select_factory_tooltip: "队列选项：\n-§H民用工厂§!\n-§H军用工厂§!\n-§H海军船坞§!"
+ aqc_select_refineries_tooltip: "队列选项：\n-§H储油罐§!\n-§H合成炼油厂§!"
+ aqc_select_special_tooltip: "队列选项:\n-§H核反应堆§!\n-§H火箭基地§!"
+ aqc_select_infrastructure_tooltip: "队列选项:\n-§H基础设施§!\n-§H防空阵地§!\n-§H空军基地§!\n-§H雷达站§!"
+
+
+ aqc_tt_queue_industrial_complex: "开始建造§Y民用工厂§!"
+ aqc_tt_queue_arms_factory: "开始建造§Y军工厂§!"
+ aqc_tt_queue_dockyard: "开始建造§Y海军船坞§!"
+ aqc_tt_office_park: "开始建造§Y办公园区§!"
+
+ #build_queue_industrial_complex: "Auto-Queue [GetCurrentNumberFactory] §OCivilian Factory§!" # OLD
+ build_queue_industrial_complex: "批量建造[GetCurrentNumberFactory] §H民用工厂§!" # NEW
+ build_queue_arms_factory: "批量建造[GetCurrentNumberFactory] §G军用工厂§!"
+ build_queue_dockyard: "批量建造[GetCurrentNumberFactory] §3海军船坞§!"
+ build_queue_office_park: "批量建造[GetCurrentNumberFactory] §W办公园区§!"
+
+ aqc_tt_queue_fuel_silo: "开始建造§Y储油罐§!"
+ aqc_tt_queue_synthetic_refinery: "开始建造§Y合成炼油厂§!"
+
+ build_queue_fuel_silo: "批量建造[GetCurrentNumberRefineries] §8储油罐§!"
+ build_queue_synthetic_refinery: "批量建造[GetCurrentNumberRefineries] §8合成炼油厂§!"
+
+ #aqc_tt_queue_nuclear_reactor: "开始建造§Y核反应堆§!"
+ aqc_tt_queue_rocket_site: "开始建造§Y无人机发射基地§!" # NEW
+ aqc_tt_queue_nuclear_reactor: "开始建造§Y核反应堆§!" # NEW
+ aqc_tt_queue_power_plant: "开始建造§Y海军基地§!" # NEW
+ aqc_tt_queue_energy_farm: "开始建造§3能源农场§!" # NEW
+
+ #build_queue_nuclear_reactor: "批量建造[GetCurrentNumberSpecial] §9核反应堆§!"
+ build_queue_rocket_site: "批量建造[GetCurrentNumberSpecial] §9无人机发射基地§!" # NEW
+ build_queue_nuclear_reactor: "批量建造[GetCurrentNumberSpecial] §9核反应堆§!" # NEW
+ build_queue_power_plant: "批量建造[GetCurrentNumberSpecial] §8发电站§!" # NEW
+ build_queue_energy_farm: "批量建造[GetCurrentNumberSpecial] §3能源农场§!" # NEW
+
+ aqc_tt_queue_infrastructure: "开始建造§Y基础设施§!"
+ aqc_tt_queue_anti_air_building: "开始建造§Y防空阵地§!"
+ aqc_tt_queue_air_base: "开始建造§Y空军基地§!"
+ aqc_tt_queue_radar_station: "开始建造§Y雷达站§!"
+ aqc_tt_queue_infrastructure_resource: "开始建造§Y基础设施§!.但是，优先考虑拥有资源的状态。"
+
+ build_queue_infrastructure: "批量建造[GetCurrentNumberInfrastructure] §3基础设施§!"
+ build_queue_anti_air_building: "批量建造[GetCurrentNumberInfrastructure] §O防空阵地§!"
+ build_queue_air_base: "批量建造[GetCurrentNumberInfrastructure] §O空军基地§!"
+ build_queue_radar_station: "批量建造[GetCurrentNumberInfrastructure] §3雷达站§!"
+ build_queue_infrastructure_resource: "批量建造[GetCurrentNumberInfrastructure] §3基础设施§!"
+
+ current_number_factory: "[GetCurrentNumberFactory]"
+ current_number_factory_5: "§Y5x§!"
+ current_number_factory_10: "§Y10x§!"
+ current_number_factory_25: "§Y25x§!"
+
+ current_number_refineries: "[GetCurrentNumberRefineries]"
+ current_number_refineries_3: "§Y3x§!"
+ current_number_refineries_6: "§Y6x§!"
+ current_number_refineries_10: "§Y10x§!"
+
+ current_number_special: "[GetCurrentNumberSpecial]"
+ current_number_special_2: "§Y2x§!"
+ current_number_special_4: "§Y4x§!"
+ current_number_special_6: "§Y6x§!"
+
+ current_number_infrastructure: "[GetCurrentNumberInfrastructure]"
+ current_number_infrastructure_3: "§Y3x§!"
+ current_number_infrastructure_6: "§Y6x§!"
+ current_number_infrastructure_10: "§Y10x§!"
+
+ infrastructure_random: "Random State"
+ prior_infrastructure_resource: "Prioritize State with Resources"
+
+

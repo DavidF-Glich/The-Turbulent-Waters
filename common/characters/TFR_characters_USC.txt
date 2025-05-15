@@ -1,0 +1,280 @@
+characters = {
+	USC_donald_trump_char = {
+		name = USA_donald_trump_char
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USA_donald_trump2.png"
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_DONALD_TRUMP_DESC"
+			ideology = right_populism
+			traits = {
+				hos_vanguard_of_america
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_DONALD_TRUMP_DESC"
+			ideology = right_libertarianism
+			traits = {
+				hos_vanguard_of_america
+			}
+		}
+		country_leader = {
+			desc = "POLITICS_DONALD_TRUMP_DESC"
+			ideology = ultra_conservatism
+			traits = {
+				hos_vanguard_of_america
+			}
+		}
+	}
+	USC_jd_vance_char = {
+		portraits = {
+			army = {
+				small = "gfx/interface/ideas/USA/advisors/USC_jd_vance1.png"
+			}
+			army = {
+				large = "gfx/leaders/USA/generals/USC_Vance.png"
+			}
+			civilian = {
+				large = "gfx/leaders/USA/USC_Vance.png"
+			}
+		}
+		corps_commander = {
+			traits = {
+			}
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = USC_jd_vance_high_command
+			ledger = army
+			traits = {
+				army_chief_political_protege
+			}
+			cost = 50
+			ai_will_do = {
+				base = 1
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_happy_amateur
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_happy_amateur
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_happy_amateur
+			}
+		}
+	}
+	USC_ron_desantis_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_Desantis.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_smiling_serpent
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_smiling_serpent
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_smiling_serpent
+			}
+		}
+	}
+	USC_marco_rubio_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_marco_rubio.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_backroom_backstabber
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_backroom_backstabber
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_backroom_backstabber
+			}
+		}
+	}
+	USC_tucker_carlson_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_Carlson.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				for_ideological_crusader
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				for_ideological_crusader
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				for_ideological_crusader
+			}
+		}
+	}
+	USC_matt_gaetz_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_gaetz.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_flamboyant_tough_guy
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_flamboyant_tough_guy
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_flamboyant_tough_guy
+			}
+		}
+	}
+	USC_mike_johnson_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_mike_johnson.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_distinguished_gentleman
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_distinguished_gentleman
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_distinguished_gentleman
+			}
+		}
+	}
+	USC_vivek_ramaswamy_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_Ramaswamy.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_smiling_serpent
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_smiling_serpent
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_smiling_serpent
+			}
+		}
+	}
+	USC_rand_paul_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USA_rand_paul.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+				hog_naive_optimist
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+				hog_naive_optimist
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+				hog_naive_optimist
+			}
+		}
+	}
+	USC_trump_son_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/USA/USC_trump_jr.png"
+			}
+		}
+		country_leader = {
+			ideology = right_populism
+			traits = {
+			}
+		}
+		country_leader = {
+			ideology = right_libertarianism
+			traits = {
+			}
+		}
+		country_leader = {
+			ideology = ultra_conservatism
+			traits = {
+			}
+		}
+	}
+}

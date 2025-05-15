@@ -1,0 +1,33 @@
+﻿l_english:
+ #Focuses
+ italy.1.t: "Second March on Rome"
+ italy.1.d: ""
+ italy.1.a: "Si!"
+ italy.2.t: ""
+ italy.2.d: ""
+ italy.2.a: ""
+ italy.3.t: "Meeting on the Restoration of the Kingdom of Italy"
+ italy.3.d: ""
+ italy.3.a: "We need to Return to Tradition!"
+ italy.3.b: "We need no King!"
+ italy.4.t: "Direction of the Grand Council"
+ italy.4.d: ""
+ italy.4.a: "Forza Nuova leads the way!"
+ italy.4.b: "Royal Italy takes heed!"
+ italy.4.c: "Latinists will return the ways of old!"
+ italy.4.e: "CasaPound holds dominance!"
+ italy.5.t: ""
+ italy.5.d: ""
+ italy.5.a: ""
+ italy.6.t: "Coronation of Umberto III"
+ italy.6.d: ""
+ italy.6.a: "Foedere et Religione Tenemur"
+
+ hos_man_of_cobbled_stone: "Man of Cobbled Stone"
+
+ ITA_kingdom_of_the_italians: "Kingdom of the Italians"
+ ITA_kingdom_of_the_italians_DEF: "the Kingdom of the Italians"
+ ITA_kingdom_of_the_italians_ADJ: "Italian"
+ 
+ ITA_mafia: "The Mafia"
+ ITA_corruption: "Widespread Corruption"

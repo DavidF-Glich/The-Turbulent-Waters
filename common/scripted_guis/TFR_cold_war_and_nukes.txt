@@ -1,0 +1,373 @@
+scripted_gui = {
+	#冷战-决议切换显示
+	TFR_decision_button_container = {
+		window_name = "TFR_decision_button_container"
+		context_type = player_context
+		parent_window_token = decision_tab
+		
+		visible = {
+			always = yes
+		}
+		properties = {
+			open_decision_button = {
+				frame = decision_button_frame
+			}
+		}
+		effects = {
+			open_decision_button_click = {
+				if = {
+					limit = { NOT = { has_country_flag = TFR_nuclear_tab_open } }
+					set_country_flag = TFR_nuclear_tab_open
+					set_variable = { decision_button_frame = 2 }
+				}
+				else_if = {
+					limit = { has_country_flag = TFR_nuclear_tab_open }
+					clr_country_flag = TFR_nuclear_tab_open
+					set_variable = { decision_button_frame = 1 }
+				}
+			}
+		}
+
+	}
+	#大冷战-核武器-排名-冲突界面选择
+	cold_war_page_gui = {
+		window_name = "cold_war_tab_window"
+		context_type = player_context
+		parent_window_token = decision_tab
+		visible = {
+			has_country_flag = TFR_nuclear_tab_open
+		}
+
+		effects = {
+			Nuclear_button_click = {
+				set_variable = {
+					TFR_cold_war_ui_var = 1
+				}
+				generate_nuke_rank_array = yes
+				add_to_variable = {
+					nuclear_page_gui_dirty_var = 1
+				}
+			}
+			Ranking_button_click = {
+				set_variable = {
+					TFR_cold_war_ui_var = 2
+				}
+				add_to_variable = {
+					nuclear_page_gui_dirty_var = 1
+				}
+				
+			}
+			Tension_button_click = {
+				set_variable = {
+					TFR_cold_war_ui_var = 3
+				}
+				add_to_variable = {
+					nuclear_page_gui_dirty_var = 1
+				}
+			}
+
+		}
+		
+	}
+	#核武器界面-数量-合法性-战略-三战
+	nuclear_tab_ui = {
+		window_name = "nuclear_window"
+		context_type = player_context
+		parent_window_token = decision_tab
+		visible = {
+			has_country_flag = TFR_nuclear_tab_open
+			check_variable = {
+				TFR_cold_war_ui_var = 1
+			}
+		}
+		dynamic_lists = {
+			World_Rank_the_chart = {
+				array = global.TFR_the_competitors
+				index = i
+				change_scope = yes
+				entry_container = TFR_major_competitors_nuke_rank
+			}
+		}
+		effects = {
+			destroy_everything_click = {
+				start_a_third_world_war = yes
+			}
+			#每个结算节点的改变数量
+			ROOT_Nuke_Num_change_MINUS_click = {
+				add_to_variable = {
+					Nuke_change_num = -10
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_change_MINUS_right_click = {
+				add_to_variable = {
+					Nuke_change_num = -1
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_change_ADD_click = {
+				add_to_variable = {
+					Nuke_change_num = 10
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_change_ADD_right_click = {
+				add_to_variable = {
+					Nuke_change_num = 1
+				}
+				calibrate_nuke_production = yes
+			}
+			#最终修正到的数值
+
+			ROOT_Nuke_Num_MINUS_click = {
+				add_to_variable = {
+					Nuke_change_to_num = -50
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_MINUS_right_click = {
+				add_to_variable = {
+					Nuke_change_to_num = -10
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_MINUS_ctrl_click = {
+				add_to_variable = {
+					Nuke_change_to_num = -5
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_MINUS_alt_click = {
+				add_to_variable = {
+					Nuke_change_to_num = -1
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_ADD_click = {
+				add_to_variable = {
+					Nuke_change_to_num = 50
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_ADD_right_click = {
+				add_to_variable = {
+					Nuke_change_to_num = 10
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_ADD_ctrl_click = {
+				add_to_variable = {
+					Nuke_change_to_num = 5
+				}
+				calibrate_nuke_production = yes
+			}
+			ROOT_Nuke_Num_ADD_alt_click = {
+				add_to_variable = {
+					Nuke_change_to_num = 1
+				}
+				calibrate_nuke_production = yes
+			}
+			number_0_click = {
+				add_to_variable = {
+					detonation_alarm = 1
+				}
+			}
+			number_star_click = {
+				clear_variable = detonation_alarm
+			}
+			number_jin_click = {
+				clear_variable = detonation_alarm
+			}
+			#保存更新（两种情况：扩核、核裁军）
+			ROOT_Apply_Adjustment_click = {
+				nuke_apply_adjustment = yes
+			}
+		}
+		triggers = {
+			destroy_everything_click_enabled = {
+				check_variable = {
+					num_of_nukes1 > 0
+				}
+				check_variable = {
+					detonation_alarm > 7
+				}
+			}
+			ROOT_Nuke_Num_change_MINUS_click_enabled = {
+				check_variable = {
+					Nuke_change_num > 0
+				}
+			}
+			ROOT_Nuke_Num_change_ADD_click_enabled = {
+				check_variable = {
+					num_of_nukes1 > 0
+				}
+				check_variable = {
+					Nuke_change_num < 1000
+				}
+			}
+			ROOT_Nuke_Num_MINUS_click_enabled = {
+				check_variable = {
+					num_of_nukes1 > 0
+				}
+				OR = {
+					AND = {
+						tag = SOV
+						check_variable = {
+							var = Nuke_change_to_num
+							value = 3000
+							compare = greater_than
+						}
+					}
+					AND = {
+						tag = USA
+						check_variable = {
+							var = Nuke_change_to_num
+							value = 3000
+							compare = greater_than
+						}
+					}
+					AND = {
+						NOT = {
+							tag = USA
+							tag = SOV
+							tag = PRK
+						}
+						check_variable = {
+							var = Nuke_change_to_num
+							value = 100
+							compare = greater_than
+						}
+					}
+				}
+			}
+			ROOT_Nuke_Num_ADD_click_enabled = {
+				check_variable = {
+					num_of_nukes1 > 0
+				}
+				OR = {
+					AND = {
+						tag = SOV
+						check_variable = {
+							var = Nuke_change_to_num
+							value = 10000
+							compare = less_than
+						}
+					}
+					AND = {
+						tag = USA
+						check_variable = {
+							var = Nuke_change_to_num
+							value = 10000
+							compare = less_than
+						}
+					}
+					AND = {
+						NOT = {
+							tag = USA
+							tag = SOV
+							tag = PRK
+						}
+						check_variable = {
+							var = Nuke_change_to_num
+							value = 1000
+							compare = less_than
+						}
+					}
+				}
+			}
+			ROOT_Apply_Adjustment_click_enabled = {
+				check_variable = {
+					num_of_nukes1 > 0
+				}
+				NOT = {
+					check_variable = {
+						Nuke_change_to_num = num_of_nukes1
+					}	
+					check_variable = {
+						Nuke_change_num = 0
+					}
+				}
+			}
+
+		}
+		properties = {
+			peace_pigeon = {
+				image = "[Nuke_Num_Picture]"
+			}
+			united_nation = {
+				image = "[Nuke_Legitimacy_Picture]"
+			}
+			competitor_flag_nuke = {
+				image = "[THIS.GetFlag]"
+			}
+
+		}
+
+		ai_enabled = {
+			always = no
+		}
+
+	}
+	#总排名-输赢事件一览
+	total_rank_ui = {
+		window_name = "ranking_tab_window"
+		context_type = player_context
+		parent_window_token = decision_tab
+		visible = {
+			has_country_flag = TFR_nuclear_tab_open
+			check_variable = {
+				TFR_cold_war_ui_var = 2
+			}
+		}
+		dynamic_lists = {
+			total_rank = {
+				array = global.TFR_the_competitors2
+				change_scope = yes
+				entry_container = TFR_major_competitors_total_score
+			}
+			incident_score_change = {
+				array = global.TTW_the_incidents1
+				index = OTL_cold_war_incidents_i
+				entry_container = TTW_the_incident_score
+			}
+		}
+		properties = {
+			competitor_flag_total = {
+				image = "[THIS.GetFlag]"
+			}
+		}
+	}
+	#冷战-集团间冲突
+	International_tension_ui = {
+		window_name = "international_relation_tab_window"
+		context_type = player_context
+		parent_window_token = decision_tab
+		visible = {
+			has_country_flag = TFR_nuclear_tab_open
+			check_variable = {
+				TFR_cold_war_ui_var = 3
+			}
+		}
+		dynamic_lists = {
+			Incident_gridbox = {
+				array = global.TTW_the_incidents
+				index = OTL_cold_war_incidents_i
+				entry_container = TTW_the_incident_container
+			}
+		}
+		properties = {
+			TTW_Cold_War_GUI_Tension_Entry_A_Progressbar = {
+				frame = global.USA_PRC_Conflict
+			}
+			TTW_Cold_War_GUI_Tension_Entry_B_Progressbar = {
+				frame = global.USA_RUS_Conflict
+			}
+			TTW_Cold_War_GUI_Tension_Entry_C_Progressbar = {
+				frame = global.RUS_BRS_Conflict
+			}
+			TTW_Cold_War_GUI_Tension_Entry_D_Progressbar = {
+				frame = global.PRC_BRS_Conflict
+			}
+		}
+	}
+}

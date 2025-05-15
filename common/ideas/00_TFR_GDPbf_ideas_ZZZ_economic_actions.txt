@@ -1,0 +1,19 @@
+ideas = {
+	country = {
+		buy_industrial_complex_action = {
+			allowed = {
+				always = no
+			}
+		}
+		buy_arms_factory_action = {
+			allowed = {
+				always = no
+			}
+		}
+		buy_pp_action = {
+			allowed = {
+				always = no
+			}
+		}
+	}
+}

@@ -1,0 +1,23 @@
+buy_industrial_complex_action_trigger = {
+    set_temp_variable = {
+        var = income_trigger_temp_var
+        value = 120
+    }
+    has_income_with_inflation_greater_than_or_equals = yes
+}
+
+buy_arms_factory_action_trigger = {
+    set_temp_variable = {
+        var = income_trigger_temp_var
+        value = 120
+    }
+    has_income_with_inflation_greater_than_or_equals = yes
+}
+
+buy_pp_action_trigger = {
+    set_temp_variable = {
+        var = income_trigger_temp_var
+        value = 50
+    }
+    has_income_with_inflation_greater_than_or_equals = yes
+}

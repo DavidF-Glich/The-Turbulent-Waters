@@ -1,0 +1,90 @@
+Russo_UKrainian_war_category = {
+	icon = United_States
+	picture = PRC_covid_19_cat
+	priority = 3
+	allowed = {
+		OR = {
+		tag = PRC
+		tag = SOV
+		tag = UKR
+		tag = USA
+		tag = ENG
+		tag = FRA
+		tag = POL
+		tag = HUN
+		tag = GER
+		tag = ITA
+		}
+		
+	}
+	visible = {
+		has_global_flag = Russo_Ukrainian_War
+	}
+	visible_when_empty = yes
+	
+}
+SOV_coronavirus_decrease = {
+	icon = politics
+	visible_when_empty = no
+	allowed = {
+		original_tag = SOV
+	}
+	visible = {
+		OR = {
+			has_idea = SOV_coronavirus_pandemic_idea4
+			has_idea = SOV_coronavirus_pandemic_idea3
+			has_idea = SOV_coronavirus_pandemic_idea2
+			has_idea = SOV_coronavirus_pandemic_idea1
+			has_idea = SOV_coronavirus_pandemic_idea
+		}
+		
+	}
+}
+SOV_the_house_of_cards = { 
+	icon = GFX_decision_category_SOV_russian_house_of_cards
+	#picture = GFX_decision_cat_SOV_election_decision_picture 
+	visible_when_empty = yes
+	scripted_gui = TFR_SOV_party_info
+	allowed = {
+		tag = SOV
+	}	
+	priority = 10
+	visible = {
+		tag = SOV
+		has_country_flag = SOV_house_of_cards_activated_flag
+		NOT = {
+			OR = {
+				has_global_flag = SOV_cprf_won
+				has_global_flag = SOV_ldpr_won
+				has_global_flag = SOV_eurasia_won
+				has_global_flag = SOV_medvedev_won
+				has_global_flag = SOV_srzp_won
+			}
+		}
+	}
+}
+SOV_duma_category = {
+	icon = GFX_decision_category_SOV_federal_assembly
+	#picture = GFX_decision_cat_SOV_duma_decision_picture 
+	visible_when_empty = yes
+	scripted_gui = TFR_SOV_oligarch_info
+	allowed = {
+		tag = SOV
+	}	
+	priority = {
+		base = 10
+		modifier = {
+			add = -5
+			has_completed_focus = SOV_The_Two_Republics
+		}
+	}
+	visible = {
+		tag = SOV
+		NOT = {
+			OR = {
+				has_country_flag = SOV_grand_constitutional_reformation_flag
+				has_country_flag = SOV_duma_category_disabled
+			}
+		}
+	}
+}

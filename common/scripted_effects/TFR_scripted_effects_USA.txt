@@ -1,0 +1,2445 @@
+USA_add_to_nato = {
+	add_to_array = {
+		USA.USA_nato_members = THIS
+	}
+}
+
+USA_covid_growth = {
+	add_to_variable = {
+		var = USA_covid_states_var
+		value = 1
+	}
+	if = {
+		limit = {
+			has_country_flag = USA_sided_with_trump_flag
+		}
+		add_political_power = -10
+	}
+	else_if = {
+		limit = {
+			has_country_flag = USA_sided_with_resistance_flag
+		}
+		add_political_power = 10
+	}
+	if = {
+		limit = {
+			check_variable = {
+				var = USA_covid_states_var
+				value = 3
+				compare = equals
+			}
+		}
+		swap_ideas = {
+			remove_idea = lower_covid_cases
+			add_idea = low_covid_cases
+		}
+		country_event = {
+			id = usa.17
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = USA_covid_states_var
+				value = 7
+				compare = equals
+			}
+		}
+		swap_ideas = {
+			remove_idea = low_covid_cases
+			add_idea = medium_covid_cases
+		}
+		country_event = {
+			id = usa.17
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = USA_covid_states_var
+				value = 12
+				compare = equals
+			}
+		}
+		swap_ideas = {
+			remove_idea = medium_covid_cases
+			add_idea = high_covid_cases
+		}
+		country_event = {
+			id = usa.17
+		}
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = USA_covid_states_var
+				value = 18
+				compare = equals
+			}
+		}
+		swap_ideas = {
+			remove_idea = high_covid_cases
+			add_idea = higher_covid_cases
+		}
+		country_event = {
+			id = usa.17
+		}
+	}
+}
+
+USA_covid_reduction = {
+	subtract_from_variable = {
+		var = USA_covid_states_var
+		value = 1
+	}
+	# if = {
+	# 	limit = {
+	# 		has_country_flag = USA_sided_with_resistance_flag
+	# 	}
+	# 	set_temp_variable = {
+	# 		var = USA_election_opposistion_strength_var_temp
+	# 		value = 0.01
+	# 	}
+	# 	USA_add_election_opposistion_strength = yes
+	# }
+	# else = {
+	# 	set_temp_variable = {
+	# 		var = USA_election_opposistion_strength_var_temp
+	# 		value = -0.01
+	# 	}
+	# 	USA_add_election_opposistion_strength = yes
+	# }
+	if = {
+		limit = {
+			has_idea = higher_covid_cases
+			check_variable = {
+				var = USA_covid_states_var
+				value = 18
+				compare = less_than
+			}
+		}
+		swap_ideas = {
+			remove_idea = higher_covid_cases
+			add_idea = high_covid_cases
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = high_covid_cases
+			check_variable = {
+				var = USA_covid_states_var
+				value = 12
+				compare = less_than
+			}
+		}
+		swap_ideas = {
+			remove_idea = high_covid_cases
+			add_idea = medium_covid_cases
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = medium_covid_cases
+			check_variable = {
+				var = USA_covid_states_var
+				value = 7
+				compare = less_than
+			}
+		}
+		swap_ideas = {
+			remove_idea = medium_covid_cases
+			add_idea = low_covid_cases
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = low_covid_cases
+			check_variable = {
+				var = USA_covid_states_var
+				value = 3
+				compare = less_than
+			}
+		}
+		swap_ideas = {
+			remove_idea = low_covid_cases
+			add_idea = lower_covid_cases
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = lower_covid_cases
+			check_variable = {
+				var = USA_covid_states_var
+				value = 0
+				compare = less_than_or_equals
+			}
+		}
+		remove_ideas = lower_covid_cases
+		add_political_power = 20
+		country_event = {
+			id = usa.26
+		}
+	}
+}
+
+USA_add_covid_growth_time = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = USA_coronavirus_eliminated
+			}
+		}
+		custom_effect_tooltip = USA_add_covid_growth_time_tooltip
+		hidden_effect = {
+			add_days_mission_timeout = {
+				mission = USA_coronavirus_outbreak_in_state_mission
+				days = USA_coronavirus_outbreak_in_state_mission_var_temp
+			}
+			add_to_variable = {
+				var = USA_coronavirus_outbreak_in_state_mission_var
+				value = USA_coronavirus_outbreak_in_state_mission_var_temp
+			}
+		}
+	}
+}
+
+USA_reduce_covid_growth_time = {
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = USA_coronavirus_eliminated
+			}
+		}
+		custom_effect_tooltip = USA_reduce_covid_growth_time_tooltip
+		hidden_effect = {
+			add_days_mission_timeout = {
+				mission = USA_coronavirus_outbreak_in_state_mission
+				days = USA_coronavirus_outbreak_in_state_mission_var_temp
+			}
+			subtract_from_variable = {
+				var = USA_coronavirus_outbreak_in_state_mission_var
+				value = USA_coronavirus_outbreak_in_state_mission_var_temp
+			}
+		}
+	}
+}
+
+USA_coronavirus_outbreak_effect = {
+	hidden_effect = {
+		random_controlled_state = {
+			limit = {
+				has_state_flag = USA_capital_state
+				NOT = {
+					has_state_flag = USA_coronavirus_affected_state
+					has_state_flag = USA_coronavirus_protected_state
+				}
+			}
+			set_state_flag = {
+				flag = USA_coronavirus_target_state
+				days = 21
+				value = 1
+			}
+		}
+	}
+	ROOT = {
+		if = {
+			limit = {
+				any_controlled_state = {
+					NOT = {
+						has_state_flag = USA_coronavirus_affected_state
+						has_state_flag = USA_coronavirus_protected_state
+					}
+				}
+			}
+			activate_mission = USA_coronavirus_outbreak_in_state_mission
+		}
+	}
+}
+USA_reduce_locked_down_economy = {
+	if = {
+		limit = {
+			has_idea = USA_locked_down_economy_idea2
+		}
+		remove_ideas = USA_locked_down_economy_idea2
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_locked_down_economy_idea1
+		}
+		swap_ideas = {
+			remove_idea = USA_locked_down_economy_idea1
+			add_idea = USA_locked_down_economy_idea2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = USA_locked_down_economy_idea
+		}
+		swap_ideas = {
+			remove_idea = USA_locked_down_economy_idea
+			add_idea = USA_locked_down_economy_idea1
+		}
+	}
+}
+
+USA_coronavirus_outbreak_in_state_effect = {
+	add_dynamic_modifier = {
+		modifier = USA_coronavirus_state
+		days = 875
+	}
+	set_state_flag = {
+		flag = USA_coronavirus_affected_state
+		days = 875
+		value = 1
+	}
+}
+
+USA_coronavirus_outbreak_in_state_mission_effect = {
+	random_controlled_state = {
+		limit = {
+			has_state_flag = USA_coronavirus_target_state
+			NOT = {
+				has_state_flag = USA_coronavirus_affected_state
+			}
+		}
+		if = {
+			limit = {
+				USA_is_northern_texas_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_northern_texas_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_southern_texas_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_southern_texas_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_new_mexico_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_new_mexico_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_arizona_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_arizona_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_nevada_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_nevada_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_utah_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_utah_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_colorado_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_colorado_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_montana_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_montana_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_idaho_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_idaho_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_oregon_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_oregon_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_northern_california_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_northern_california_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_southern_california_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_southern_california_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_washington_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_washington_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_michigan_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_michigan_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_missouri_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_missouri_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_illinois_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_illinois_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_pennsylvania_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_pennsylvania_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_vermont_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_vermont_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_massachusetts_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_massachusetts_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_connecticut_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_connecticut_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_virginia_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_virginia_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_kentucky_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_kentucky_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_north_carolina_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_north_carolina_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_south_carolina_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_south_carolina_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_georgia_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_georgia_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_alabama_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_alabama_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_mississippi_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_mississippi_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_arkansas_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_arkansas_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_louisiana_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_louisiana_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_florida_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_florida_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_new_york_city_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_new_york_city_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_upstate_new_york_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_upstate_new_york_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_new_hampshire_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_new_hampshire_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_maine_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_maine_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_wyoming_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_wyoming_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_navajo_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_navajo_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_oklahoma_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_oklahoma_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_nebraska_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_nebraska_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_dakota_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_dakota_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_iowa_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_iowa_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_minnesota_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_minnesota_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_tennessee_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_tennessee_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_wisconsin_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_wisconsin_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_indiana_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_indiana_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_ohio_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_ohio_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_arizona_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_arizona_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				USA_is_kansas_state = yes
+			}
+			ROOT = {
+				USA_covid_growth = yes
+				every_controlled_state = {
+					limit = {
+						USA_is_kansas_state = yes
+					}
+					USA_coronavirus_outbreak_in_state_effect = yes
+				}
+			}
+		}
+		else_if = {
+			limit = {
+				has_state_flag = USA_coronavirus_protected_state
+				NOT = {
+					has_state_flag = USA_coronavirus_affected_state
+				}
+			}
+			custom_effect_tooltip = USA_no_outbreak_tooltip
+		}
+		else = {
+			USA_coronavirus_outbreak_in_state_effect = yes
+		}
+		clr_state_flag = USA_coronavirus_target_state
+	}
+}
+
+USA_state_prevention_cost_effect = {
+	set_temp_variable = {
+		var = mask_supply_var
+		value = FROM.state_population_k
+	}
+	multiply_temp_variable = {
+		mask_supply_var = -25
+	}
+	add_mask_supply = yes
+}
+
+USA_state_vaccine_cost_effect = {
+	set_temp_variable = {
+		var = mask_supply_var
+		value = FROM.state_population_k
+	}
+	multiply_temp_variable = {
+		mask_supply_var = -25
+	}
+	if = {
+		limit = {
+			USA = {
+				has_completed_focus = USA_Ask_Fauci
+			}
+		}
+		multiply_temp_variable = {
+			mask_supply_var = 0.75
+		}
+	}
+	else = {
+		multiply_temp_variable = {
+			mask_supply_var = 1.1
+		}
+	}
+	add_mask_supply = yes
+}
+
+USA_state_vaccine_effect = {
+	if = {
+		limit = {
+			FROM = {
+				USA_is_northern_texas_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_northern_texas_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_southern_texas_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_southern_texas_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_new_mexico_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_new_mexico_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_arizona_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_arizona_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_nevada_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_nevada_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_utah_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_utah_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_colorado_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_colorado_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_montana_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_montana_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_idaho_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_idaho_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_oregon_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_oregon_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_northern_california_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_northern_california_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_northern_california_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_southern_california_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_washington_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_washington_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_michigan_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_michigan_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_missouri_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_missouri_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_illinois_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_illinois_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_pennsylvania_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_pennsylvania_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_vermont_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_vermont_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_massachusetts_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_massachusetts_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_connecticut_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_connecticut_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_virginia_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_virginia_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_kentucky_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_kentucky_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_north_carolina_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_north_carolina_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_south_carolina_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_south_carolina_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_georgia_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_georgia_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_alabama_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_alabama_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_mississippi_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_mississippi_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_arkansas_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_arkansas_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_louisiana_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_louisiana_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_florida_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_florida_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_new_york_city_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_new_york_city_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_upstate_new_york_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_upstate_new_york_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_new_hampshire_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_new_hampshire_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_maine_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_maine_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_wyoming_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_wyoming_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_navajo_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_navajo_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_oklahoma_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_oklahoma_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_nebraska_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_nebraska_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_dakota_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_dakota_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_iowa_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_iowa_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_minnesota_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_minnesota_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_tennessee_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_tennessee_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_wisconsin_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_wisconsin_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_indiana_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_indiana_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_georgia_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_georgia_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_ohio_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_ohio_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				USA_is_kansas_state = yes
+			}
+		}
+		every_controlled_state = {
+			limit = {
+				USA_is_kansas_state = yes
+			}
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+	else = {
+		FROM = {
+			remove_dynamic_modifier = {
+				modifier = USA_coronavirus_state
+			}
+			clr_state_flag = USA_coronavirus_affected_state
+			set_state_flag = USA_coronavirus_protected_state
+		}
+	}
+}
+USA_count_down_mission_effect = {
+	#拜登赢-usa.27，川普赢usa.31
+	custom_effect_tooltip = USA_countdown_day_tooltip
+	hidden_effect = {
+		if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_ai = yes
+						OR = {
+							has_game_rule = {
+								rule = USA_ai_behavior
+								option = USA_TRUMP_CHOSEN_AND_WINS
+							}
+							has_game_rule = {
+								rule = USA_ai_behavior
+								option = USA_BIDEN_CHOSEN_AND_LOSES
+							}
+						}
+					}
+					AND = {
+						is_ai = no
+						check_variable = {
+							election_score_2020 > 50
+						}
+					}
+				}
+			}
+			country_event = usa.31
+		}
+		else_if = {
+			limit = { 
+				OR = {
+					AND = {
+						is_ai = yes
+						OR = {
+							has_game_rule = {
+								rule = USA_ai_behavior
+								option = USA_TRUMP_CHOSEN_AND_LOSES
+							}
+							has_game_rule = {
+								rule = USA_ai_behavior
+								option = USA_BIDEN_CHOSEN_AND_WINS
+							}
+						}
+					}
+					AND = {
+						is_ai = no
+						check_variable = {
+							election_score_2020 < 50
+						}
+					}
+				}
+			}
+			country_event = usa.27
+		}
+		else = {
+			random_list = {
+				1 = {
+					country_event = usa.27
+				}
+				1 = {
+					country_event = usa.31
+				}
+			}
+			add_political_power = -50
+		}
+		if = {
+			limit = { 
+				has_country_flag = election_polluted
+				USA_sided_with_trump_trigger = yes
+				check_variable = {
+					election_score_2020 < 50
+				}
+			}
+			add_popularity = {
+				ideology = conservative
+				popularity = -0.05
+			}
+			add_political_power = -50
+			add_stability = -0.05
+		}
+		else_if = {
+			limit = { 
+				has_country_flag = election_polluted
+				USA_sided_with_resistance_trigger = yes
+				check_variable = {
+					election_score_2020 < 50
+				}
+			}
+			add_popularity = {
+				ideology = social_liberal
+				popularity = -0.05
+			}
+			add_political_power = -50
+			add_stability = -0.05
+		}
+
+	}
+}
+USA_add_election_score = {
+	#do this first:
+	#set_temp_variable = {
+	#	election_score_2020_temp = The number set in decisions and events
+	#}
+	custom_effect_tooltip = USA_election_score_change_ptt
+	add_to_variable = {
+		var = election_score_2020
+		value = election_score_2020_temp
+	}
+	#For Trump 2020
+}
+USA_minus_election_score = {
+	#do this first:
+	#set_temp_variable = {
+	#	election_score_2020_temp = The number set in decisions and events
+	#}
+	custom_effect_tooltip = USA_election_score_change_ntt
+	subtract_from_variable = {
+		var = election_score_2020
+		value = election_score_2020_temp
+	}
+	clamp_variable = {
+		var = election_score_2020
+		min = 0
+		max = 100
+	}
+	#For Biden 2020
+}
+
+USA_add_house_support_gop = {
+	custom_effect_tooltip = USA_add_house_support_gop_tt
+	add_to_variable = {
+		USA_house_support_var = USA_new_support_var1
+	}
+	add_to_variable = {
+		USA_house_support_gop_var = USA_new_support_var1
+	}
+	clamp_variable = {
+		var = election_score_2020
+		min = 0
+		max = 100
+	}
+	USA_Total_Calibration = yes
+}
+
+USA_add_senate_support_gop = {
+	custom_effect_tooltip = USA_add_senate_support_gop_tt
+	add_to_variable = {
+		USA_senate_support_var = USA_new_support_var2
+	}
+	add_to_variable = {
+		USA_senate_support_gop_var = USA_new_support_var2
+	}
+	USA_Total_Calibration = yes
+}
+
+USA_add_house_support_dem = {
+	custom_effect_tooltip = USA_add_house_support_dem_tt
+	add_to_variable = {
+		USA_house_support_var = USA_new_support_var3
+	}
+	add_to_variable = {
+		USA_house_support_dem_var = USA_new_support_var3
+	}
+	USA_Total_Calibration = yes
+}
+
+USA_add_senate_support_dem = {
+	custom_effect_tooltip = USA_add_senate_support_dem_tt
+	add_to_variable = {
+		USA_senate_support_dem_var = USA_new_support_var4
+	}
+	add_to_variable = {
+		USA_senate_support_var = USA_new_support_var4
+	}
+	USA_Total_Calibration = yes
+}
+
+USA_Total_Calibration = {
+	clamp_variable = {
+		var = USA_senate_support_dem_var
+		min = 0
+		max = USA_senate_seats_dem_var
+	}
+	clamp_variable = {
+		var = USA_senate_support_gop_var
+		min = 0
+		max = USA_senate_seats_gop_var
+	}
+	clamp_variable = {
+		var = USA_house_support_dem_var
+		min = 0
+		max = USA_house_seats_dem_var
+	}
+	clamp_variable = {
+		var = USA_house_support_gop_var
+		min = 0
+		max = USA_house_seats_gop_var
+	}
+}
+
+USB_decrease_biden_mental_fortitude = {
+	if = {
+		limit = {
+			has_country_leader_with_trait = hos_fit_as_a_fiddle
+		}
+		remove_country_leader_trait = hos_fit_as_a_fiddle
+		add_country_leader_trait = hos_crisp_as_lettuce
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = {
+				var = USB_support_pro_var_temp
+				value = -0.05
+			}
+			
+			set_temp_variable = {
+				var = USB_support_con_var_temp
+				value = -0.05
+			}
+			
+			set_temp_variable = {
+				var = USB_support_neo_var_temp
+				value = -0.05
+			}
+			
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_leader_with_trait = hos_crisp_as_lettuce
+		}
+		remove_country_leader_trait = hos_crisp_as_lettuce
+		add_country_leader_trait = hos_fuzzy_around_the_edges
+		set_portraits = {
+			character = USB_joe_biden_char
+			civilian = {
+				large = "gfx/leaders/USB/USA_joe_biden1.png"
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = {
+				var = USB_support_pro_var_temp
+				value = -0.05
+			}
+			
+			set_temp_variable = {
+				var = USB_support_con_var_temp
+				value = -0.05
+			}
+			
+			set_temp_variable = {
+				var = USB_support_neo_var_temp
+				value = -0.05
+			}
+			
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_leader_with_trait = hos_fuzzy_around_the_edges
+		}
+		remove_country_leader_trait = hos_fuzzy_around_the_edges
+		add_country_leader_trait = hos_foggy_as_a_mirror
+		set_portraits = {
+			character = USB_joe_biden_char
+			civilian = {
+				large = "gfx/leaders/USB/Biden_confused.png"
+			}
+		}
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = {
+				var = USB_support_pro_var_temp
+				value = -0.075
+			}
+			
+			set_temp_variable = {
+				var = USB_support_con_var_temp
+				value = -0.075
+			}
+			
+			set_temp_variable = {
+				var = USB_support_neo_var_temp
+				value = -0.075
+			}
+			
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_leader_with_trait = hos_foggy_as_a_mirror
+		}
+		remove_country_leader_trait = hos_foggy_as_a_mirror
+		add_country_leader_trait = hos_lights_on_nobody_home
+		USB_decrease_biden_health = yes
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = {
+				var = USB_support_pro_var_temp
+				value = -0.075
+			}
+			
+			set_temp_variable = {
+				var = USB_support_con_var_temp
+				value = -0.075
+			}
+			
+			set_temp_variable = {
+				var = USB_support_neo_var_temp
+				value = -0.075
+			}
+			
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_leader_with_trait = hos_lights_on_nobody_home
+		}
+		remove_country_leader_trait = hos_lights_on_nobody_home
+		add_country_leader_trait = hos_present_as_last_years_calendar
+		set_portraits = {
+			character = USB_joe_biden_char
+			civilian = {
+				large = "gfx/leaders/USB/USA_joe_biden3.png"
+			}
+		}
+		USB_decrease_biden_health = yes
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = {
+				var = USB_support_pro_var_temp
+				value = -0.1
+			}
+			
+			set_temp_variable = {
+				var = USB_support_con_var_temp
+				value = -0.1
+			}
+			
+			set_temp_variable = {
+				var = USB_support_neo_var_temp
+				value = -0.1
+			}
+			
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_leader_with_trait = hos_present_as_last_years_calendar
+		}
+		remove_country_leader_trait = hos_present_as_last_years_calendar
+		add_country_leader_trait = hos_blank
+		USB_decrease_biden_health = yes
+		if = {
+			limit = {
+				is_ai = no
+			}
+			set_temp_variable = {
+				var = USB_support_pro_var_temp
+				value = -0.15
+			}
+			set_temp_variable = {
+				var = USB_support_con_var_temp
+				value = -0.15
+			}
+			set_temp_variable = {
+				var = USB_support_neo_var_temp
+				value = -0.15
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			has_country_leader_with_trait = hos_blank
+		}
+		USB_decrease_biden_health = yes
+	}
+}
+
+#Death
+USA_civil_war_outbreak_effect = {
+}
+USA_civil_war_outbreak_effect1 = {
+}
+USA_civil_war_begins = {
+}
+
+USA_remove_country_cores_effect = {
+	every_possible_country = {
+		limit = {
+			NOT = {
+				tag = USN
+				tag = USA
+			}
+			USA_is_civil_war_faction = yes
+			exists = no
+		}
+		every_state = {
+			limit = {
+				OR = {
+					is_core_of = PREV
+					is_claimed_by = PREV
+				}
+			}
+			if = {
+				limit = {
+					is_core_of = PREV
+				}
+				remove_core_of = PREV
+			}
+			if = {
+				limit = {
+					is_claimed_by = PREV
+				}
+				remove_claim_by = PREV
+			}
+		}
+	}
+}
+
+USA_civil_war_divisions = {
+	division_template = {
+		name = "Garrison"
+		regiments = {
+			militia = {
+				x = 0
+				y = 0
+			}
+			militia = {
+				x = 0
+				y = 1
+			}
+			militia = {
+				x = 0
+				y = 2
+			}
+			militia = {
+				x = 1
+				y = 0
+			}
+		}
+		support = {
+			military_police = {
+				x = 0
+				y = 0
+			}
+		}
+	}
+	division_template = {
+		name = "Volunteer Militia"
+		is_locked = yes
+		regiments = {
+			militia = {
+				x = 0
+				y = 0
+			}
+			militia = {
+				x = 0
+				y = 1
+			}
+			militia = {
+				x = 0
+				y = 2
+			}
+			militia = {
+				x = 1
+				y = 0
+			}
+			militia = {
+				x = 1
+				y = 1
+			}
+			militia = {
+				x = 1
+				y = 2
+			}
+		}
+	}
+	division_template = {
+		name = "Motorized Militia"
+		is_locked = yes
+		regiments = {
+			mot_militia = {
+				x = 0
+				y = 0
+			}
+			mot_militia = {
+				x = 0
+				y = 1
+			}
+			mot_militia = {
+				x = 0
+				y = 2
+			}
+			mot_militia = {
+				x = 1
+				y = 0
+			}
+			mot_militia = {
+				x = 1
+				y = 1
+			}
+			mot_militia = {
+				x = 1
+				y = 2
+			}
+		}
+	}
+	division_template = {
+		name = "National Guard"
+		#is_locked = yes
+		regiments = {
+			infantry = {
+				x = 0
+				y = 0
+			}
+			infantry = {
+				x = 0
+				y = 1
+			}
+			infantry = {
+				x = 1
+				y = 0
+			}
+			infantry = {
+				x = 1
+				y = 1
+			}
+			artillery_brigade = {
+				x = 2
+				y = 0
+			}
+		}
+		support = {
+			engineer = {
+				x = 0
+				y = 0
+			}
+			signal_company = {
+				x = 0
+				y = 1
+			}
+			anti_tank = {
+				x = 0
+				y = 2
+			}
+		}
+	}
+}
+
+USA_civil_war_faction = {
+	USA_civil_war_divisions = yes
+	if = {
+		limit = {
+			OR = {
+				USA_is_separatist_tag = yes
+				USA_is_rival_tag = yes
+				USA_is_state_tag = yes
+			}
+		}
+		inherit_technology = USA
+	}
+	if = {
+		limit = {
+			NOT = {
+				original_tag = USC
+				original_tag = USB
+			}
+		}
+		set_research_slots = 3
+		add_equipment_to_stockpile = {
+			type = train_equipment
+			amount = 15
+		}
+	}
+	set_variable = {
+		var = legit_var
+		value = 0
+	}
+	set_variable = {
+		var = legit_dynamic_var
+		value = 0
+	}
+	set_variable = {
+		var = recore_pp_var
+		value = 50
+	}
+	set_variable = {
+		var = recore_time_var
+		value = 70
+	}
+	set_variable = {
+		var = recore_cost_reduction_use_var
+		value = 0
+	}
+	set_variable = {
+		var = recore_cost_reduction_var
+		value = 0
+	}
+	set_variable = {
+		var = recruit_pp_var
+		value = 25
+	}
+	set_variable = {
+		var = recruit_militia_time_var
+		value = 35
+	}
+}
