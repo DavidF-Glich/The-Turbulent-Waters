@@ -1,0 +1,408 @@
+# MAIN THEME
+
+music = {
+	name = "TFR_mu_tfr_the_flames_get_higher"
+	file = "TFR_mu_tfr_the_flames_get_higher.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_our_home"
+	file = "TFR_mu_tfr_our_home.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "bezerk"
+	file = "bezerk.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "dyingsociety"
+	file = "dyingsociety.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "endgame"
+	file = "endgame.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "zone"
+	file = "zone.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_zapad_hero_of_new_world"
+	file = "TFR_mu_zapad_hero_of_new_world.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_zapad_order"
+	file = "TFR_mu_zapad_order.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_zapad_we_will_build_a_better_world_than_before"
+	file = "TFR_mu_zapad_we_will_build_a_better_world_than_before.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_zapad_force_against_force"
+	file = "TFR_mu_zapad_force_against_force.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_xurious_camp_of_the_saints"
+	file = "TFR_mu_xurious_camp_of_the_saints.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_hell_march"
+	file = "TFR_mu_tfr_hell_march.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_atomkrieg"
+	file = "TFR_mu_tfr_atomkrieg.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_cn_atomwaffen_division"
+	file = "TFR_mu_cn_atomwaffen_division.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_unknown_endsieg"
+	file = "TFR_mu_unknown_endsieg.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_apla_march"
+	file = "TFR_mu_tfr_apla_march.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_belgradian_symphony"
+	file = "TFR_mu_tfr_belgradian_symphony.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_tis_for_thee"
+	file = "TFR_mu_tfr_tis_for_thee.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_real_american"
+	file = "TFR_mu_tfr_real_american.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_caligulas_theme"
+	file = "TFR_mu_tfr_caligulas_theme.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_synthesization"
+	file = "TFR_mu_tfr_synthesization.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_liberation_funk"
+	file = "TFR_mu_tfr_liberation_funk.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_cascadia_lives"
+	file = "TFR_mu_tfr_cascadia_lives.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_peril_of_the_new_order"
+	file = "TFR_mu_tfr_peril_of_the_new_order.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_the_peoples_connection"
+	file = "TFR_mu_tfr_the_peoples_connection.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_dark_side_of_freedom"
+	file = "TFR_mu_tfr_dark_side_of_freedom.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_risen_again"
+	file = "TFR_mu_tfr_risen_again.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_march_of_dominance"
+	file = "TFR_mu_tfr_march_of_dominance.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_revenge_of_the_red_spectre"
+	file = "TFR_mu_tfr_revenge_of_the_red_spectre.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_rise_of_the_dimon"
+	file = "TFR_mu_tfr_rise_of_the_dimon.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_the_time_is_now"
+	file = "TFR_mu_tfr_the_time_is_now.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_pulchritudo_europae"
+	file = "TFR_mu_tfr_pulchritudo_europae.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_war_what_is_it_good_for"
+	file = "TFR_mu_tfr_war_what_is_it_good_for.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_daughter_of_russia"
+	file = "TFR_mu_tfr_daughter_of_russia.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_rememberance"
+	file = "TFR_mu_tfr_rememberance.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_isolation"
+	file = "TFR_mu_tfr_isolation.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_fractured_timeline"
+	file = "TFR_mu_tfr_fractured_timeline.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_the_flag_still_waving"
+	file = "TFR_mu_tfr_the_flag_still_waving.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_desespoir"
+	file = "TFR_mu_tfr_desespoir.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_day_of_rage"
+	file = "TFR_mu_tfr_day_of_rage.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_schwarzflammen"
+	file = "TFR_mu_tfr_schwarzflammen.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_the_dragons_roar"
+	file = "TFR_mu_tfr_the_dragons_roar.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_fearless_highway"
+	file = "TFR_mu_tfr_fearless_highway.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_behind_you"
+	file = "TFR_mu_tfr_behind_you.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_dialtone"
+	file = "TFR_mu_tfr_dialtone.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_chained_reaktion"
+	file = "TFR_mu_tfr_chained_reaktion.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_tears_of_aquilon"
+	file = "TFR_mu_tfr_tears_of_aquilon.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_crossing_the_styx"
+	file = "TFR_mu_tfr_crossing_the_styx.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_rivers_of_babylon"
+	file = "TFR_mu_tfr_rivers_of_babylon.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_glimmer_of_chaos"
+	file = "TFR_mu_tfr_glimmer_of_chaos.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_tfr_insurrection"
+	file = "TFR_mu_tfr_insurrection.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_allies_battle"
+	file = "TFR_mu_evw_allies_battle.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_defcon1"
+	file = "TFR_mu_evw_defcon1.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_defcon2"
+	file = "TFR_mu_evw_defcon2.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_russia_battle"
+	file = "TFR_mu_evw_russia_battle.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_ties_are_broken"
+	file = "TFR_mu_evw_ties_are_broken.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_tranquilite"
+	file = "TFR_mu_evw_tranquilite.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_ww3"
+	file = "TFR_mu_evw_ww3.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_defcon3"
+	file = "TFR_mu_evw_defcon3.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_delightful_poetry"
+	file = "TFR_mu_evw_defcon3.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_dilemma"
+	file = "TFR_mu_evw_dilemma.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_diminishment"
+	file = "TFR_mu_evw_diminishment.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_general_battle"
+	file = "TFR_mu_evw_general_battle.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_superpowers"
+	file = "TFR_mu_evw_superpowers.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_responsibilities"
+	file = "TFR_mu_evw_responsibilities.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "TFR_mu_evw_saved_by_the_choppers"
+	file = "TFR_mu_evw_saved_by_the_choppers.ogg"
+	volume = 0.65
+}
+music = {
+	name = "Trump_Returns2024"
+	file = "Trump_2024.ogg"
+	volume = 0.65
+}
+
+music = {
+	name = "Red_Dusk"
+	file = "Red_Dusk.ogg"
+	volume = 0.65
+}

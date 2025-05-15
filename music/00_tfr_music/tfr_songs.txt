@@ -1,0 +1,764 @@
+music_station = "tfr_music"
+
+music = {
+	song = "maintheme"
+	chance = {
+		base = 0.5
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_the_flames_get_higher"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_stabilty < 0.65
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_rememberance"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_isolation"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_tears_of_aquilon"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_crossing_the_styx"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_fractured_timeline"
+	chance = {
+		base = 25
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_day_of_rage"
+	chance = {
+		base = 25
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_behind_you"
+	chance = {
+		base = 25
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_rivers_of_babylon"
+	chance = {
+		base = 25
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_glimmer_of_chaos"
+	chance = {
+		base = 25
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_war_what_is_it_good_for"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			has_war_support > 0.25
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_tis_for_thee"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			has_war = yes
+			NOT = {
+				has_government = totalitarian_socialist
+				has_government = communist
+				has_government = fascist
+				has_government = national_socialist
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_the_flag_still_waving"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = USA
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_real_american"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = USC
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_insurrection"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = USC
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_caligulas_theme"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = USB
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_synthesization"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = USB
+				#has_government = authoritarian_democrat
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_dialtone"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = USB
+		}
+		modifier = {
+			factor = 2
+			tag = USB
+			has_government = authoritarian_democrat
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_our_home"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = PTF
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_the_peoples_connection"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = APA
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				has_government = totalitarian_socialist
+				has_government = communist
+				has_government = libertarian_socialist
+				has_government = social_democrat
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_apla_march"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = APA
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_march_of_dominance"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = NSM
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_dark_side_of_freedom"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = GMA
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_risen_again"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = LOS
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_liberation_funk"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = BLA
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_cascadia_lives"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = CAC
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_atomkrieg"
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			tag = ATW
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_peril_of_the_new_order"
+	chance = {
+		base = 5
+		modifier = {
+			factor = 2
+			tag = ATW
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_belgradian_symphony"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			OR = {
+				tag = SER
+				tag = SOV
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_revenge_of_the_red_spectre"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			OR = {
+				has_government = totalitarian_socialist
+				has_government = communist
+				has_government = libertarian_socialist
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = SOV
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_rise_of_the_dimon"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			OR = {
+				has_government = authoritarian_democrat
+				has_government = conservative
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = SOV
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_the_time_is_now"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			OR = {
+				has_government = fascist
+				has_government = nationalist
+			}
+		}
+		modifier = {
+			factor = 2
+			tag = SOV
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_daughter_of_russia"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 3
+			has_war = no
+			tag = SOV
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_pulchritudo_europae"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_war = no
+			OR = {
+				tag = SER
+				tag = SOV
+				tag = HUN
+				tag = FRA
+				tag = GER
+				tag = ITA
+				tag = SPR
+				tag = POL
+				tag = UKR
+				tag = ROM
+				tag = ENG
+			}
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_desespoir"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			has_war = yes
+			tag = FRA
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_schwarzflammen"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = GER
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_the_dragons_roar"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = PRC
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_tfr_chained_reaktion"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 2
+			tag = SOV
+		}
+	}
+}
+
+
+music = {
+	song = "TFR_mu_tfr_fearless_highway"
+	chance = {
+		base = 10
+		modifier = {
+			factor = 0
+			tag = JAP
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_allies_battle"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_defcon1"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_defcon2"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_defcon3"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_delightful_poetry"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_dilemma"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_diminishment"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_general_battle"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_superpowers"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_responsibilities"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_saved_by_the_choppers"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_ties_are_broken"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_russia_battle"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_tranquilite"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_evw_ww3"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_zapad_hero_of_new_world"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_zapad_order"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_zapad_we_will_build_a_better_world_than_before"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_zapad_force_against_force"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "dyingsociety"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "zone"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_xurious_camp_of_the_saints"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_unknown_endsieg"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "TFR_mu_cn_atomwaffen_division"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "bezerk"
+	chance = {
+		modifier = {
+			factor = 1
+		}
+	}
+}
+
+music = {
+	song = "Trump_Returns2024"
+	chance = {
+		modifier = {
+			factor = 0
+		}
+	}
+}
+
+music = {
+	song = "Red_Dusk"
+	chance = {
+		base = 1
+		modifier = {
+			factor = 1.5
+			has_government = totalitarian_socialist
+		}
+	}
+}
