@@ -12,7 +12,14 @@ focus_tree = {
 		x = 4
 		y = 0
 		completion_reward = { 
-			unlock_decision_category_tooltip = LRD_Coup
+
 		}
 	}
+}
+focus_tree = {
+	id = SWE_LRD_TNO
+	country = { 
+		factor = 0
+	}
+	default = no
 }

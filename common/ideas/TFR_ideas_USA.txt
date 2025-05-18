@@ -232,6 +232,7 @@ ideas = {
 				industrial_capacity_dockyard = 0.1
 				production_speed_buildings_factor = 0.1
 				local_resources_factor = 0.1
+				election_tendency_weekly = 0.2
 			}
 		}
 		USA_america_first_idea = {
@@ -256,6 +257,7 @@ ideas = {
 				production_speed_arms_factory_factor = -0.1
 				production_speed_dockyard_factor = -0.1
 				ai_focus_defense_factor = 0.5
+				election_tendency_weekly = 0.2
 			}
 		}
 		USA_on_the_up = {
@@ -293,7 +295,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.15
 				industrial_capacity_dockyard = -0.3
 				local_resources_factor = -0.3
-
+				election_tendency_weekly = -0.5
 			}
 		}
 		USA_locked_down_economy_idea1 = {
@@ -310,7 +312,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_dockyard = -0.2
 				local_resources_factor = -0.2
-
+				election_tendency_weekly = -0.3
 			}
 		}
 		USA_locked_down_economy_idea2 = {
@@ -327,6 +329,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05
 				industrial_capacity_dockyard = -0.1
 				local_resources_factor = -0.1
+				election_tendency_weekly = -0.2
 
 			}
 		}
@@ -344,6 +347,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 				training_time_factor = -0.1
 				political_power_factor = -0.1
+				election_tendency_weekly = -0.2
 
 			}
 		}
@@ -362,6 +366,8 @@ ideas = {
 				training_time_factor = -0.15
 				political_power_factor = -0.15
 				army_attack_factor = 0.05
+				election_tendency_weekly = -0.5
+
 			}
 		}
 		USA_BLM_campaign_idea2 = {
@@ -379,6 +385,7 @@ ideas = {
 				training_time_factor = -0.5
 				political_power_factor = -0.3
 				army_attack_factor = 0.1
+				election_tendency_weekly = -1
 			}
 		}
 		USA_fear_for_corona_idea = {
@@ -395,6 +402,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.01
 				industrial_capacity_dockyard = -0.05
 				monthly_population = -0.05
+				election_tendency_weekly = -0.2
 			}
 		}
 	}

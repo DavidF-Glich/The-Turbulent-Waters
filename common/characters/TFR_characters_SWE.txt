@@ -77,4 +77,21 @@
 				}
 			}
 		}
+		SWE_Tian_shou_rang_ye = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/SWE/SWE_dalian.png"
+				}
+			}
+			country_leader = {
+				ideology = ultra_liberalism
+				expire = "1.1.1.1"
+				id = -1
+				traits = {
+					#mad_dog
+					duck_wing
+				}
+				desc = SWE_Tian_shou_rang_ye_desc
+			}
+		}
 	}

@@ -29,48 +29,17 @@ red_directors_influence_monthly = {
 	category = country
 }
 
-#USC
-
-rage_weekly = {
-	color_type = good
-	value_type = percentage
-	precision = 1
-	category = country
-}
-
-#ATW
-
-desperation_weekly = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	category = country
-}
-
-devotion_weekly = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	category = country
-}
-
-despair_weekly = {
-	color_type = neutral
-	value_type = percentage
-	precision = 1
-	category = country
-}
-
-suspicion_weekly = {
-	color_type = bad
-	value_type = percentage
-	precision = 1
-	category = country
-}
-
 #PRC
 working_capacity_weekly = {
 	color_type = good
+	value_type = number
+	precision = 1
+	category = country
+}
+
+#USA
+election_tendency_weekly = {
+	color_type = neutral
 	value_type = number
 	precision = 1
 	category = country

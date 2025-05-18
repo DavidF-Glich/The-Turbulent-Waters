@@ -1176,60 +1176,7 @@ USA_influence_competition_category = {
 	} 
 }
 Taiwan_Crisis_category = {
-	Pelosi_Coming_mission = {
-		icon = generic_political_rally
-		activation = {
-			always = no
-		}
-		days_mission_timeout = 100
-		is_good = no
-		selectable_mission = no
-		cancel_trigger = {
-			NOT = {
-				has_global_flag = Taiwan_Crisis
-			}
-		}
-		timeout_effect = {
-			PRC = {
-				if = {
-					limit = { 
-						num_planes_stationed_in_regions = {
-							value > 50
-							regions = { 143 164 75 76 }
-						}		
-					}
-					country_event = china.30
-				}
-				else = {
-					news_event = news.9
-				}
-			}
-		}
-	}
-	USA_Stop_Pelosi_decision = {
-		icon = generic_operation
-		visible = {
-			tag = USA
-			has_global_flag = Taiwan_Crisis
-		}
-		cost = 10
-		ai_will_do = {
-			base = 100
-			modifier = {
-				factor = 0
-				NOT = {
-					has_game_rule = {
-						rule = Pelosi_Taiwan_ai_behavior
-						option = USA_STOP_HER
-					}	
-				}
-			}
-		}
-		days_remove = 20
-		remove_effect = {
-			country_event = usa.12
-		}
-	}
+	
 	CHI_Cancel_the_Trip_decision = {
 		icon = generic_protest_peaceful
 		visible = {
@@ -1248,168 +1195,6 @@ Taiwan_Crisis_category = {
 		}
 	}
 
-	PRC_Prepare_Landing_Craft_decision = {
-		icon = generic_military_support
-		visible = {
-			tag = PRC
-			has_global_flag = Taiwan_Crisis
-		}
-		cost = 10
-		days_remove = 10
-		fire_only_once = yes
-		complete_effect = {
-			add_command_power = 20
-			army_experience = 10
-		}
-		remove_effect = {
-			if = {
-				limit = { 
-					NOT = { 
-						has_dlc = "Man the Guns" 
-					}
-					NOT = {
-						has_tech = landing_craft 
-					}						
-				}
-				set_technology = { 
-					landing_craft = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					NOT = { 
-						has_dlc = "Man the Guns" 
-					}
-					has_tech = landing_craft 
-					NOT = {
-						has_tech = tank_landing_craft 
-					}					
-				}
-				set_technology = { 
-					tank_landing_craft = 1
-				}
-			}
-			if = {
-				limit = {
-					has_dlc = "Man the Guns" 
-					NOT = {
-						has_tech = mtg_landing_craft 
-					}
-				}			
-				set_technology = {
-					mtg_landing_craft = 1
-				}
-			}
-			else_if = {
-				limit = { 
-					has_dlc = "Man the Guns" 
-					has_tech = mtg_landing_craft 
-					NOT = {
-						has_tech = mtg_tank_landing_craft 
-					}					
-				}
-				set_technology = { 
-					mtg_tank_landing_craft = 1
-				}
-			}
-			add_equipment_to_stockpile = {
-				type = amphibious_mechanized_equipment_1
-				amount = 300
-				producer = PRC
-			}
-			army_experience = 80
-			air_experience = 100
-			add_timed_idea = {
-				idea = PRC_conduct_final_trining_idea
-				days = 120
-			}
-			hidden_effect = {
-				if = {
-					limit = {
-						has_dlc = "By Blood Alone"
-					}
-					add_equipment_to_stockpile = {
-						type = small_plane_airframe_2
-						variant_name = "Chengdu J-20"
-						amount = 150
-						producer = PRC
-					}
-				}
-				else = {
-					add_equipment_to_stockpile = {
-						type = fighter_equipment_2
-						amount = 150
-						producer = PRC
-					}
-				}
-			}
-		}
-	}
-
-	PRC_Navy_Ready_decision = {
-		icon = generic_navy
-		visible = {
-			tag = PRC
-			has_global_flag = Taiwan_Crisis
-		}
-		available = {
-			ships_in_area = {
-				area = 75
-				size > 30
-			}
-			ships_in_area = {
-				area = 76
-				size > 30
-			}
-		}
-		cost = 20
-		days_remove = 20
-		fire_only_once = yes
-		remove_effect = {
-			add_timed_idea = {
-				idea = PRC_plan_high_alert
-				days = 250
-			}
-		}
-	}
-
-	PRC_Arms_Ready_decision = {
-		icon = generic_military_support
-		visible = {
-			tag = PRC
-			has_global_flag = Taiwan_Crisis
-		}
-		available = {
-			
-		}
-		cost = 20
-		modifier = {
-			training_time_army_factor = -0.35
-			army_fuel_consumption_factor = 0.2
-		}
-		days_remove = 20
-		fire_only_once = yes
-
-	}
-
-	PRC_Operation_Silent_Dawn = {
-		icon = generic_operation
-		visible = {
-			tag = PRC
-			has_global_flag = {
-				flag = Taiwan_Crisis
-				days > 60
-			}
-		}
-		cost = 25
-		remove_effect = {
-			CHI = {
-				add_political_power = -50
-			}
-			set_global_flag = PRC_Operation_Slient_Dawn
-			custom_effect_tooltip = PRC_Operation_Slient_Dawn_tt
-		}
-	}
 
 	PRC_Taiwan_War_mission = {
 		icon = generic
@@ -1797,30 +1582,22 @@ USA_Biden_Disease_cat = {
 			always = no
 		}
 		timeout_effect = {
+			USB_decrease_biden_mental_fortitude = yes
 			if = {
 				limit = {
-					has_country_leader_with_trait = hos_blank
+					NOT = {
+						has_country_flag = USA_2024_presidential_debate_flag
+					}
+					OR = {
+						has_country_leader_with_trait = hos_foggy_as_a_mirror
+						has_country_leader_with_trait = hos_lights_on_nobody_home
+						has_country_leader_with_trait = hos_present_as_last_years_calendar
+						has_country_leader_with_trait = hos_blank
+					}
 				}
-				USB_decrease_biden_health = yes
-			}
-			else = {
-				USB_decrease_biden_mental_fortitude = yes
-				if = {
-					limit = {
-						NOT = {
-							has_country_flag = USA_2024_presidential_debate_flag
-						}
-						OR = {
-							has_country_leader_with_trait = hos_foggy_as_a_mirror
-							has_country_leader_with_trait = hos_lights_on_nobody_home
-							has_country_leader_with_trait = hos_present_as_last_years_calendar
-							has_country_leader_with_trait = hos_blank
-						}
-					}
-					country_event = {
-						id = usa.35
-						days = 1
-					}
+				country_event = {
+					id = usa.35
+					days = 1
 				}
 			}
 			activate_mission = USB_biden_health_timer_mission

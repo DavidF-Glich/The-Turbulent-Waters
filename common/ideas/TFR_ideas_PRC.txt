@@ -489,9 +489,8 @@ ideas ={
 			allowed = { original_tag = PRC}
 			visible = {
 				NOT = {
-					OR = {
-						has_country_flag = PRC_first_committee_transition_flag
-					}
+					has_country_flag = PRC_first_committee_transition_flag
+					has_country_flag = easteregg_enabled
 				}
 			}
 
@@ -511,6 +510,9 @@ ideas ={
 			}
 			visible = {
 				has_completed_focus = PRC_Historic_Checkpoint
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
 			}
 			allowed_to_remove = {
 				head_minister_trigger = yes
@@ -519,6 +521,21 @@ ideas ={
 				hog_political_protege
 			}
 		}
+		#easter
+		PRC_fengyingas = {
+			picture = PRC_Fengyingas
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				pig_eagle
+				hos_successor
+			}
+		}
+
 	}
 	foreign_minister = {
 		PRC_yang_jiechi_for = {
@@ -527,9 +544,8 @@ ideas ={
 			allowed = { original_tag = PRC}
 			visible = {
 				NOT = {
-					OR = {
-						has_country_flag = PRC_first_committee_transition_flag
-					}
+					has_country_flag = PRC_first_committee_transition_flag
+					has_country_flag = easteregg_enabled
 				}
 			}
 			allowed_to_remove = {
@@ -550,10 +566,37 @@ ideas ={
 			allowed = { original_tag = PRC}
 			visible = {
 				has_country_flag = PRC_first_committee_transition_flag
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
 			}
 			
 			traits = { 
 				for_apologetic_clerk
+				for_wolf_warrior
+			}
+		}
+		PRC_Zhoujia = {
+			picture = PRC_Zhoujia
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				for_defensive_hawk
+			}
+		}
+		PRC_jiang_yuan = {
+			picture = PRC_jiang_yuan
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
 				for_wolf_warrior
 			}
 		}
@@ -565,10 +608,9 @@ ideas ={
 			allowed = { original_tag = PRC}
 			visible = {
 				NOT = {
-					OR = {
-						has_country_flag = PRC_first_committee_transition_flag
-						has_completed_focus = PRC_Historic_Checkpoint
-					}
+					has_country_flag = PRC_first_committee_transition_flag
+					has_completed_focus = PRC_Historic_Checkpoint
+					has_country_flag = easteregg_enabled
 				}
 			}
 			allowed_to_remove = {
@@ -589,6 +631,11 @@ ideas ={
 			allowed = {
 				original_tag = PRC
 			}
+			visible = {
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
+			}
 			traits = { 
 				eco_socialist_market_economist
 			}
@@ -599,8 +646,37 @@ ideas ={
 			allowed = {
 				original_tag = PRC
 			}
+			visible = {
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
+			}
 			traits = { 
 				eco_captain_of_industry
+			}
+		}
+		PRC_Baiquan = {
+			picture = PRC_Baiquan
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				eco_construction_magnate
+			}
+		}
+		PRC_59_tankie = {
+			picture = PRC_59_tankie
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				hog_silent_workhorse
 			}
 		}
 	}
@@ -610,6 +686,9 @@ ideas ={
             allowed = { original_tag = PRC }
             visible = {
                 has_completed_focus = PRC_Steady_Route
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
             }
             traits = {
                 sec_xiism_theorist
@@ -621,9 +700,8 @@ ideas ={
 			allowed = { original_tag = PRC}
 			visible = {
 				NOT = {
-					OR = {
-						has_country_flag = PRC_first_committee_transition_flag
-					}
+					has_country_flag = PRC_first_committee_transition_flag
+					has_country_flag = easteregg_enabled
 				}
 			}
 			allowed_to_remove = {
@@ -638,6 +716,46 @@ ideas ={
 				sec_efficent_organizer
 			}
 		}
+		PRC_lh = {
+			picture = PRC_LH
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				no_wishes
+			}
+		}
+		PRC_lh_big = {
+			picture = PRC_LH_big
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			available = {
+				has_country_flag = LH_brain_damaged
+			}
+			traits = {
+				OUMINISAIYA_appearance
+			}
+		}
+		PRC_dai_dai_artist = {
+			picture = PRC_dai_dai_artist
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				to_the_people
+				eye_fuck
+			}
+		}
 	}
 	intelligence_minister = {
 		PRC_guo_shengkun_int = {
@@ -646,9 +764,8 @@ ideas ={
 			allowed = { original_tag = PRC}
 			visible = {
 				NOT = {
-					OR = {
-						has_country_flag = PRC_first_committee_transition_flag
-					}
+					has_country_flag = PRC_first_committee_transition_flag
+					has_country_flag = easteregg_enabled
 				}
 			}
 			allowed_to_remove = {
@@ -668,8 +785,9 @@ ideas ={
 			name = PRC_chen_wenqing_int
 			allowed = { original_tag = PRC}
 			visible = {
-				OR = {
-					has_country_flag = PRC_first_committee_transition_flag
+				has_country_flag = PRC_first_committee_transition_flag
+				NOT = {
+					has_country_flag = easteregg_enabled
 				}
 			}
 			traits = { 
@@ -677,6 +795,31 @@ ideas ={
 				int_resistance_crusher 
 			}
 		}
+		PRC_Jianchi = {
+			picture = PRC_jianchi
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				int_balanced_cryptographer
+			}
+		}
+		PRC_bu_wenzhong = {
+			picture = PRC_bu_wenzhong
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				sec_crime_fighter
+			}
+		}
+
 	}
 	theorist_minister = {
 		PRC_wei_fenghe = {
@@ -686,7 +829,9 @@ ideas ={
 				original_tag = PRC
 			}
 			visible = {
-				
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
 			}
 			allowed_to_remove = {
 				OR = {
@@ -710,6 +855,7 @@ ideas ={
 			visible = {
 				NOT = {
 					has_country_flag = PRC_jailed_for_corruption_flag
+					has_country_flag = easteregg_enabled
 				}
 			}
 			traits = {
@@ -723,7 +869,11 @@ ideas ={
 			allowed = {
 				original_tag = PRC
 			}
-			
+			visible = {
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
+			}
 			traits = {
 				army_chief_unity_of_party_and_military
 				military_theorist
@@ -734,6 +884,9 @@ ideas ={
 			
 			visible = {
 				has_completed_focus = PRC_Historic_Checkpoint
+				NOT = {
+					has_country_flag = easteregg_enabled
+				}
 			}
 			
 			allowed = {
@@ -746,6 +899,58 @@ ideas ={
 			traits = {
 				for_fervent_nationalist 
 				army_chief_maneuver_1
+			}
+		}
+		PRC_feiyang = {
+			picture = PRC_Feiyang
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				militare
+				military_reformer
+			}
+		}
+		PRC_mo_zheng_ren_the = {
+			name = PRC_mo_zheng_ren
+			picture = PRC_mo_zheng_ren
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				army_chief_planning_3
+			}
+		}
+		PRC_xiao_mo_the = {
+			name = PRC_xiao_mo
+			picture = PRC_xiao_mo
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				army_infantry_2
+			}
+		}
+		PRC_Mia_the = {
+			name = PRC_mia
+			picture = PRC_mia
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				army_entrenchment_1
 			}
 		}
 	}

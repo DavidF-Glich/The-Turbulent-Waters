@@ -24,6 +24,7 @@
  poverty_development_monthly: "£development 月度贫困率变化"
  oligarch_influence_monthly: "£GFX_Gazprom_logo 月度寡头影响力变化"
  working_capacity_weekly: "£political_advisor_cost_texticon 党的每周工作能力变化"
+ election_tendency_weekly: "£political_advisor_cost_texticon 每周选举分数变化"
  industrial_development_monthly: "£development 月度工业发展"
  military_development_monthly: "£development 月度军事发展"
  society_development_monthly: "£development 月度社会发展"
@@ -95,4 +96,3 @@
  modifier_state_production_speed_energy_farm_factor: "§Y$energy_farm$§!建造速度"
  modifier_state_production_speed_energy_farm_factor_desc: "改变这一地区§Y$energy_farm$§!的建造速度。"
  cat_asym_warfare_cost_factor: "非对称作战学说花费"
- suspicion_weekly: "每周怀疑度"

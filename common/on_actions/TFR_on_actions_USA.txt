@@ -1,0 +1,14 @@
+on_action = {
+	on_weekly_USA = {
+		effect = {
+			if = {
+				limit = { 
+					has_variable = election_score_2020
+				}
+				add_to_variable = {
+					election_score_2020 = modifier@election_tendency_weekly
+				}
+			}			
+		}
+	}
+}

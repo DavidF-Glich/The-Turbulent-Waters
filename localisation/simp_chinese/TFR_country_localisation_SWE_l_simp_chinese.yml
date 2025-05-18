@@ -13,6 +13,17 @@
 #领导人
  SWE_one_punch_man_char: "一拳人OPM"
  SWE_one_punch_man_desc: "在P社风波爆发的前夜，一拳人OPM只是一个在加拿大留学的P社的好朋友。然而在八爪鱼印度风波中，他对P社的一厢情愿与对国内论坛的缺乏了解导致了在国内评价的迅速滑坡。在本世界线瑞典遭遇了天外危机几年后，中加矛盾激化。加拿大为了避免与中国爆发战争，决定讨好中国向瑞典派遣管理人才。而一拳人OPM不得不中断他在加拿大的学业，于2019年12月13日被流放到瑞典担任瑞典骑士团国的总委员长。"
+ SWE_Tian_shou_rang_ye: "天手·让叶"
+ SWE_Tian_shou_rang_ye_desc: ""
+ 
+
+#部长内阁
+ SWE_Ba_naijian: "八奈见杏菜"
+ SWE_Sergey_Taboritsky: "谢尔盖·塔博里茨基"
+ SWE_ICED: "Mortis-ICED President"
+ SWE_Sanbone: "三脚骨"
+ SWE_AEQS: "大汀"
+ SWE_Com: "Com"
 
 #国策（非历史）
  SWE_pdx: "瑞典Paradox特色初始国策树"
@@ -139,6 +150,25 @@
 
 
 
+#国家与政党（历史）
+ SWE_fascist_party: "北欧抵抗运动"
+ SWE_fascist_party_long: "北欧抵抗运动(Nordiska Motståndsrörelsen)"
+ SWE_nationalist_party: "瑞典另类选择党"
+ SWE_nationalist_party_long: "瑞典另类选择党(Alternativ för Sverige)"
+ SWE_authoritarian_democrat_party: "瑞典民主党"
+ SWE_authoritarian_democrat_party_long: "瑞典民主党(Sverigedemokraterna)"
+ SWE_conservative_party: "瑞典基督教民主党"
+ SWE_conservative_party_long: "瑞典基督教民主党(Kristdemokraterna)"
+ SWE_market_liberal_party: "温和党/自由党"
+ SWE_market_liberal_party_long: "温和党/自由党(Moderaterna/Liberalerna)"
+ SWE_social_liberal_party: "中间党/环境党"
+ SWE_social_liberal_party_long: "中间党/环境党(Centerpartiet/Milijöpartiet)"
+ SWE_social_democrat_party: "社会民主工人党"
+ SWE_social_democrat_party_long: "社会民主工人党(Socialdemokraterna)"
+ SWE_libertarian_socialist_party: "左翼党"
+ SWE_libertarian_socialist_party_long: "左翼党(Vänsterpartiet)"
+ SWE_communist_party: "瑞典共产党"
+ SWE_communist_party_long: "瑞典共产党(Sveriges Kommunistiska Parti)"
 
 
 #国家&政党（非历史）
@@ -167,6 +197,26 @@
  SWE_Paradox_fascist_party_long: "Artyom反中文盲国际联合会"
  SWE_Paradox_national_socialist_party: "“AGA”运动"
  SWE_Paradox_national_socialist_party_long: "“AGA”蒸汽数据库污染运动"
+
+ SWE_X_ts: "§G联合公报§!派-投降派"
+ SWE_X_ts_long: "§G联合公报§!派（对战线投降派）"
+ SWE_X_c: "§G联合公报§!派-友好派"
+ SWE_X_c_long: "§G联合公报§!派-友好派（对战线友好派）"
+ SWE_X_ls: "§G联合公报§!派-和解派"
+ SWE_X_ls_long: "§G联合公报§!派-和解派（对战线和解派）"
+ SWE_X_sd: "§G联合公报§!派-孤立派"
+ SWE_X_sd_long: "§G联合公报§!派-孤立派（互不侵犯派）"
+ SWE_X_sl: "§Y假谈判§!司令部"
+ SWE_X_ml: "§Y假谈判§!司令部"
+ SWE_X_con: "§2中立§!"
+ SWE_X_ad: "§g中立§!"
+ SWE_X_n: "§O炮击§!司令部-臣服派"
+ SWE_X_n_long: "§O炮击§!战线司令部（要求臣服派）"
+ SWE_X_f: "§O炮击§!司令部"
+ SWE_X_f_long: "§O炮击§!战线司令部"
+ SWE_X_ns: "§O炮击§!司令部-摧毁派"
+ SWE_X_ns_long: "§O炮击§!战线司令部（绝对摧毁派）"
+
 
 #贴吧危机
  SWE_Paradox_TFX: "潜龙腾渊-TFX外交危机"

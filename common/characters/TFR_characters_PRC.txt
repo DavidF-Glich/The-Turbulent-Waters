@@ -1873,11 +1873,11 @@ characters={
 			}
 		}
     }
-
+	#easter
 	PRC_god_niu_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/PRC/PRC_god_niu.png"
+				large = "gfx/leaders/PRC/easteregg/PRC_god_niu.png"
 			}
 		}
 		country_leader = {
@@ -1885,6 +1885,169 @@ characters={
 			desc = PRC_god_niu_desc
 			traits = {
 				hos_god_niu
+			}
+		}
+	}
+	PRC_aguang_char = {
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_aguang.png"
+			}
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_aguang.png"
+			}
+		}
+		country_leader = {
+			ideology = left_nationalism
+			desc = PRC_aguang_char_desc
+			traits = {
+				hos_god_of_the_cause
+			}
+		}
+
+	}
+	PRC_ronald_reagan_char = {
+		name = PRC_ronald_reagan
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/SOV/Dmitry_Medvedev_hardliner.png"
+				small = "gfx/interface/ideas/SOV/advisors/Dmitry_Medvedev.dds"
+			}
+			army = {
+				large = "gfx/leaders/SOV/Dmitry_Medvedev_kombat.png"
+				small = "gfx/interface/ideas/SOV/advisors/Dmitry_Medvedev.dds"
+			}
+		}
+		advisor = {
+			slot = army_chief
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			idea_token = PRC_ronald_reagan_chief
+			ledger = army
+			traits = { 
+				godlike
+			}
+		}
+	}
+	PRC_mo_zhengren_char = {
+		name = PRC_mo_zheng_ren
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_mad_guy.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_mad_guy.png"
+			}
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_mad_guy.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_mad_guy.png"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			skill = 6
+			attack_skill = 0
+			defense_skill = 10
+			planning_skill = 10
+			logistics_skill = 10
+			traits = {
+				thorough_planner
+			}
+		}
+		
+	}
+	PRC_kommst_char = {
+		name = PRC_kommst
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_kommst.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_kommst.png"
+			}
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_kommst.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_kommst.png"
+			}
+		}
+		field_marshal = {
+			skill = 8
+			attack_skill = 10
+			defense_skill = 5
+			planning_skill = 10
+			logistics_skill = 10
+			traits = {
+				brilliant_strategist
+			}
+			legacy_id=-1
+		}
+		advisor = {
+			slot = high_command
+			idea_token = PRC_kommst_high_command
+			ledger = army
+			allowed = {
+				original_tag = PRC
+			}		
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				army_commando_1
+			}
+			cost = 100
+			ai_will_do = {
+				base = 10
+			}
+		}
+	}
+	PRC_xiao_mo_char = {
+		name = PRC_xiao_mo
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_xiaomo.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_xiaomo.png"
+			}
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_xiaomo.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_xiaomo.png"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			skill = 6
+			attack_skill = 10
+			defense_skill = 1
+			planning_skill = 5
+			logistics_skill = 10
+			traits = {
+				infantry_officer
+			}
+		}
+	}
+	PRC_mia_char = {
+		name = PRC_mia
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_Mia.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_Mia.png"
+			}
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_Mia.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_Mia.png"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			skill = 6
+			attack_skill = 2
+			defense_skill = 10
+			planning_skill = 5
+			logistics_skill = 10
+			traits = {
+				fortress_buster
 			}
 		}
 	}

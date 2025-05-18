@@ -1009,36 +1009,6 @@ debug_decisions = {
 			set_global_flag = Israeli_Hamas_war
 		}
 	}
-	load_Chihong_tree = {
-		icon = generic
-		days_remove = 1
-		allowed = {
-			tag = PRC
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			load_focus_tree = {
-				tree = china_new_left_focus
-			}
-		}
-	}
-	load_Chihong_afterwar_tree = {
-		icon = generic
-		days_remove = 1
-		allowed = {
-			tag = PRC
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			load_focus_tree = {
-				tree = Post_War
-			}
-		}
-	}
 	load_SWE_tieba_crisis_tree = {
 		icon = generic_ignite_civil_war
 		days_remove = 1
@@ -1048,6 +1018,7 @@ debug_decisions = {
 		ai_will_do = {
 			factor = 0
 		}
+		ai_hint_pp_cost = 9000
 		complete_effect = {
 			load_focus_tree = {
 				tree = SWE_Paradox_TFX
@@ -1063,8 +1034,163 @@ debug_decisions = {
 			
 		}
 		days_remove = 1
+		ai_will_do = {
+			base = 0
+		}
+		ai_hint_pp_cost = 9000
 		complete_effect = {
 			promote_character = PRC_god_niu_char
+		}
+	}
+	load_LRD_coup = {
+		icon = generic
+		allowed = {
+			tag = SWE
+		}
+		visible = {
+			
+		}
+		days_remove = 1
+		ai_will_do = {
+			base = 0
+		}
+		ai_hint_pp_cost = 9000
+		complete_effect = {
+			load_focus_tree = SWE_LRD_Coup
+			promote_character = SWE_Tian_shou_rang_ye
+			EU_leave_effect = yes
+			hidden_effect = {
+				add_ideas = {
+					SWE_ICED
+					SWE_Ba_naijian
+					SWE_Sergey_Taboritsky
+					SWE_Com
+					SWE_AEQS
+					SWE_Sanbone
+				}
+				set_politics = {
+					ruling_party = social_liberal
+					election_frequency = 120
+					last_election = "2020.1.1"
+					elections_allowed = yes
+				}
+				set_popularities = {
+					totalitarian_socialist = 4
+					communist = 2
+					libertarian_socialist = 1
+					social_democrat = 10
+					social_liberal = 30
+					market_liberal = 10
+					conservative = 20
+					nationalist = 23
+				}
+				set_temp_variable = {
+					coalition_partner_var_temp = token:nationalist
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:conservative
+				}
+				add_to_coalition = yes
+				set_temp_variable = {
+					coalition_partner_var_temp = token:social_democrat
+				}
+				add_to_coalition = yes
+				set_party_name = {
+					ideology = national_socialist
+					long_name = SWE_X_ns_long
+					name = SWE_X_ns
+				}
+				set_party_name = {
+					ideology = fascist
+					long_name = SWE_X_f_long
+					name = SWE_X_f
+				}
+				set_party_name = {
+					ideology = authoritarian_democrat
+					long_name = SWE_X_ad
+					name = SWE_X_ad
+				}
+				set_party_name = {
+					ideology = nationalist
+					long_name = SWE_X_n_long
+					name = SWE_X_n
+				}
+				set_party_name = {
+					ideology = conservative
+					long_name = SWE_X_con
+					name = SWE_X_con
+				}
+				set_party_name = {
+					ideology = market_liberal
+					long_name = SWE_X_ml
+					name = SWE_X_ml
+				}
+				set_party_name = {
+					ideology = social_liberal
+					long_name = SWE_X_sl
+					name = SWE_X_sl
+				}
+				set_party_name = {
+					ideology = social_democrat
+					long_name = SWE_X_sd_long
+					name = SWE_X_sd
+				}
+				set_party_name = {
+					ideology = libertarian_socialist
+					long_name = SWE_X_ls_long
+					name = SWE_X_ls
+				}
+				set_party_name = {
+					ideology = communist
+					long_name = SWE_X_c_long
+					name = SWE_X_c
+				}
+				set_party_name = {
+					ideology = totalitarian_socialist
+					long_name = SWE_X_ts_long
+					name = SWE_X_ts
+				}
+
+			}
+		}
+	}
+	load_LRD_PRC = {
+		icon = generic
+		allowed = {
+			tag = PRC
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		ai_hint_pp_cost = 9000
+		days_remove = 1
+		complete_effect = {
+			promote_character = PRC_aguang_char
+			set_country_flag = easteregg_enabled
+			random = {
+				chance = 50
+				set_country_flag = LH_brain_damaged
+			}
+			add_ideas = {
+				PRC_fengyingas
+				PRC_feiyang
+				PRC_Jianchi
+				PRC_Baiquan
+				PRC_Zhoujia
+				PRC_lh
+			}
+			custom_effect_tooltip = characters_will_be_recruited
+			show_ideas_tooltip = PRC_jiang_yuan
+			show_ideas_tooltip = PRC_lh_big
+			show_ideas_tooltip = PRC_59_tankie
+			show_ideas_tooltip = PRC_bu_wenzhong
+			show_ideas_tooltip = PRC_dai_dai_artist
+			show_unit_leaders_tooltip = PRC_xiao_mo_char
+			show_unit_leaders_tooltip = PRC_mo_zhengren_char
+			show_unit_leaders_tooltip = PRC_ronald_reagan_char
+			show_unit_leaders_tooltip = PRC_kommst_char
+			show_unit_leaders_tooltip = PRC_mia_char			
 		}
 	}
 }

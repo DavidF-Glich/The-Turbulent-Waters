@@ -39,4 +39,159 @@ ideas = {
 			}
 		}
 	}
+	head_minister = {
+		SWE_Com = {
+			picture = SWE_Com
+			allowed = {
+				tag = SWE
+				#has_game_rule = {
+				#	rule = RULE_SWEDEN_EASTEREGG
+				#	option = RULE_SWEDEN_PUPPET
+				#}
+			}
+			visible = {
+				has_focus_tree = SWE_LRD_Coup
+			}
+			cost = 150
+			removal_cost = 100
+			traits = {
+				hos_wrathful
+				FAF_imperator
+			}
+		}
+	}
+	foreign_minister = {
+		SWE_Sergey_Taboritsky = {
+			picture = SWE_sergey_taboritsky
+			allowed = {
+				tag = SWE
+				#has_game_rule = {
+				#	rule = RULE_SWEDEN_EASTEREGG
+				#	option = RULE_SWEDEN_PUPPET
+				#}
+			}
+			visible = {
+				has_focus_tree = SWE_LRD_Coup
+			}
+			cost = 150
+			removal_cost = 50
+			traits = {
+				for_global_interventionist
+				hog_flamboyant_tough_guy
+			}
+		}
+	}
+	interior_minister = {
+		SWE_Ba_naijian = {
+			picture = SWE_Ba_naijian
+			allowed = {
+				tag = SWE
+				#has_game_rule = {
+				#	rule = RULE_SWEDEN_EASTEREGG
+				#	option = RULE_SWEDEN_PUPPET
+				#}
+			}
+			visible = {
+				has_focus_tree = SWE_LRD_Coup
+			}
+			cost = 150
+			removal_cost = 50
+			traits = {
+				sec_compassionate_gentleman
+				sec_man_of_the_people
+			}
+			on_remove = {
+				add_popularity = {
+					ideology = social_liberal
+					popularity = -0.02
+				}
+				add_popularity = {
+					ideology = communist
+					popularity = 0.02
+				}
+			}
+		}
+	}
+	economic_minister = {
+		SWE_AEQS = {
+			picture = SWE_AEQS
+			allowed = {
+				tag = SWE
+				#has_game_rule = {
+				#	rule = RULE_SWEDEN_EASTEREGG
+				#	option = RULE_SWEDEN_PUPPET
+				#}
+			}
+			visible = {
+				has_focus_tree = SWE_LRD_Coup
+			}
+			allowed_to_remove = {
+				NOT = {
+					has_country_leader = SWE_Tian_shou_rang_ye
+				}
+			}
+			cost = 150
+			traits = {
+				hos_calm
+				eco_economic_silent_workhorse
+			}
+		}
+	}
+	intelligence_minister = {
+		SWE_Sanbone = {
+			picture = SWE_sanbone
+			allowed = {
+				tag = SWE
+				#has_game_rule = {
+				#	rule = RULE_SWEDEN_EASTEREGG
+				#	option = RULE_SWEDEN_PUPPET
+				#}
+			}
+			visible = {
+				has_focus_tree = SWE_LRD_Coup
+			}
+			cost = 150
+			traits = {
+				int_psychological_mastermind
+				play_opponent
+			}
+			modifier = {
+				
+			}
+			on_add = {
+
+			}
+		}
+	}
+	theorist_minister = {
+		SWE_ICED = {
+			picture = SWE_ICED
+			allowed = {
+				tag = SWE
+				#has_game_rule = {
+				#	rule = RULE_SWEDEN_EASTEREGG
+				#	option = RULE_SWEDEN_PUPPET
+				#}
+			}
+			visible = {
+				has_focus_tree = SWE_LRD_Coup
+			}
+			cost = 150
+			removal_cost = 500
+			traits = {
+				mad_dog
+			}
+			on_remove = {
+				add_political_power = 150
+				add_popularity = {
+					ideology = social_liberal
+					popularity = -0.05
+				}
+				add_popularity = {
+					ideology = communist
+					popularity = 0.05
+				}
+			}
+		}
+	}
 }
