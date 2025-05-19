@@ -162,7 +162,7 @@ country_event = {
 		hidden_effect = {
 			set_portraits = {
 				character = SOV_vladimir_putin
-				civilian = { large ="GFX_portrait_SOV_vladimir_putin_1" }
+				civilian = { large ="GFX_vladimir_putin1" }
 			}
 		}
 	}
@@ -256,5 +256,24 @@ country_event = {
 	option = {
 		name = russia.11.b
 		
+	}
+}
+#putin speech about constitution reformation 2020
+country_event = {
+	id = russia.12
+	title = russia.12.t
+	desc = russia.12.d
+	picture = GFX_SOV_putin_constitution_referendum
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.12.a
+		activate_mission = SOV_constitution_russian_voting
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.025
+		}
+		SOV_add_election_approval_rating_nav = yes
 	}
 }

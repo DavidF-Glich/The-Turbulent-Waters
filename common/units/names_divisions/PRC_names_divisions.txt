@@ -1,1 +1,764 @@
-﻿
+﻿PRC_CAB_01 = {
+	name = "PRC_Combined_Arms_Brigade"
+
+	for_countries = { PRC XIN }
+
+	can_use = { always = yes }
+
+
+	link_numbering_with = { PRC_AAB_01 }
+	link_numbering_with = { PRC_GAR_02 }
+
+	division_types = { "motorized" "mechanized" "light_mechanized" "modern_armor" "light_armor" "amphibious_mechanized" }
+
+	fallback_name = "Combined Arms Brigade %d"
+
+	ordered = {
+		1= {"Combined Arms Brigade 1 'Helong Brigade'"}
+		2= {"Combined Arms Brigade 2 'Wang Jie Unit'"}
+		3= {"Combined Arms Brigade 3 'Steel Valiant Brigade'"}
+		4= {"Combined Arms Brigade %d"}
+		5= {"Combined Arms Brigade 5 'Amphibious Valiant Brigade'"}
+		6= {"Combined Arms Brigade 6 'Loyal Valiant Brigade'"}
+		7= {"Combined Arms Brigade 7 'Iron Fist Valiant Brigade'"}
+		8= {"Combined Arms Brigade 8 'White Tiger Unit'"}
+		9= {"Combined Arms Brigade %d"}
+		10= {"Combined Arms Brigade 10 'Night Tiger Brigade'"}
+		11= {"Combined Arms Brigade 11 'Red Army Iron Armor Brigade'"}
+		12= {"Combined Arms Brigade 12 'Qilian Iron Brigade'"}
+		13= {"Combined Arms Brigade %d"}
+		14= {"Combined Arms Brigade 14"}
+		15= {"Combined Arms Brigade %d"}
+		16= {"Combined Arms Brigade %d"}
+		17= {"Combined Arms Brigade 17 'Helan Valiant Brigade'"}		
+		18 = { "Combined Arms Brigade %d" }
+		19 = { "Combined Arms Brigade %d" }
+		20 = { "Combined Arms Brigade %d" }
+		21 = { "Combined Arms Brigade %d" }
+		22 = { "Combined Arms Brigade %d" }
+		23 = { "Combined Arms Brigade %d" }
+		24 = { "Combined Arms Brigade %d" }
+		25 = { "Combined Arms Brigade %d" }
+		26 = { "Combined Arms Brigade %d" }
+		27 = { "Combined Arms Brigade %d" }
+		28 = { "Combined Arms Brigade %d" }
+		29 = { "Combined Arms Brigade %d" }
+		30 = { "Combined Arms Brigade %d" }
+		31= {"Combined Arms Brigade 31 'Iron Cavalry Tiger Brigade'"}
+		32= {"Combined Arms Brigade 32 'Mountain Iron Fist Brigade'"}
+		33= {"Combined Arms Brigade %d"}
+		34= {"Combined Arms Brigade 34 'Xiangyang Special Merit Regiment'"}
+		35= {"Combined Arms Brigade 35 'Old Locust Tree Unit'"}
+		36= {"Combined Arms Brigade %d"}
+		37= {"Combined Arms Brigade 37 'Southern Border Great Wall Brigade'"}
+		38= {"Combined Arms Brigade %d"}
+		39= {"Combined Arms Brigade 39 'Iron Blood Red Army Brigade'"}
+		40= {"Combined Arms Brigade 40 'Determined Death Valiant Brigade'"}
+		41= {"Combined Arms Brigade %d"}
+		42= {"Combined Arms Brigade 42 'Southern Border Light Cavalry Brigade'"}
+		43= {"Combined Arms Brigade %d"}
+		44= {"Combined Arms Brigade %d"}
+		45= {"Combined Arms Brigade %d"}
+		46= {"Combined Arms Brigade 46 'Model Red Fifth Regiment'"}
+		47= {"Combined Arms Brigade 47 'Model Red Army Brigade'"}
+		48= {"Combined Arms Brigade 48 'Pioneer Light Cavalry Brigade'"}
+		49= {"Combined Arms Brigade %d"}
+		50= {"Combined Arms Brigade %d"}
+		51= {"Combined Arms Brigade %d"}
+		52= {"Combined Arms Brigade 52 'Baiyun Mountain Unit'"}
+		53= {"Combined Arms Brigade 53"}
+		54= {"Combined Arms Brigade 54 'Plateau Iron Armor Brigade'"}
+		55= {"Combined Arms Brigade 55 'Snowy Region Lion Brigade'"}
+		56= {"Combined Arms Brigade 56 'Qiu Shaoyun Unit'"}
+		57= {"Combined Arms Brigade %d"}
+		58= {"Combined Arms Brigade 58 'Elite of Hundred Brigades/Yang Gensi Unit'"}
+		59= {"Combined Arms Brigade %d"}
+		60= {"Combined Arms Brigade 60 'Yijiangshan Brigade'"}
+		61= {"Combined Arms Brigade %d"}
+		62= {"Combined Arms Brigade 62 'Dawn Pass Valiant Brigade'"}
+		63= {"Combined Arms Brigade %d"}
+		64= {"Combined Arms Brigade %d"}
+		65= {"Combined Arms Brigade %d"}
+		66= {"Combined Arms Brigade %d"}
+		67= {"Combined Arms Brigade %d"}
+		68= {"Combined Arms Brigade 68 'Iron Hammer Regiment'"}
+		69= {"Combined Arms Brigade 69 'Tiger Valiant Brigade'"}
+		70= {"Combined Arms Brigade 70 'Yanshan Lion Brigade'"}		71 = { "Combined Arms Brigade %d" }
+		72 = { "Combined Arms Brigade %d" }
+		73 = { "Combined Arms Brigade %d" }
+		74 = { "Combined Arms Brigade %d" }
+		75 = { "Combined Arms Brigade %d" }
+		76 = { "Combined Arms Brigade %d" }
+		77 = { "Combined Arms Brigade %d" }
+		78 = { "Combined Arms Brigade %d" }
+		79 = { "Combined Arms Brigade %d" }
+		80= {"Combined Arms Brigade 80 'Ever-Victorious Valiant Brigade'"}
+		81= {"Combined Arms Brigade %d"}
+		82= {"Combined Arms Brigade %d"}
+		83= {"Combined Arms Brigade %d"}
+		84= {"Combined Arms Brigade %d"}
+		85= {"Combined Arms Brigade 85 'Steel Blade Valiant Brigade'"}
+		86= {"Combined Arms Brigade 86 'Yimeng Lion Brigade'"}
+		87= {"Combined Arms Brigade %d"}
+		88= {"Combined Arms Brigade %d"}
+		89= {"Combined Arms Brigade %d"}
+		90= {"Combined Arms Brigade 90 'Jianfeng Mountain Valiant Brigade'"}
+		91= {"Combined Arms Brigade 91 'Jinan Second Regiment'"}
+		92= {"Combined Arms Brigade 92 'Bayonet Valiant Brigade'"}		
+		93 = { "Combined Arms Brigade %d" }
+		94 = { "Combined Arms Brigade %d" }
+		95 = { "Combined Arms Brigade %d" }
+		96 = { "Combined Arms Brigade %d" }
+		97 = { "Combined Arms Brigade %d" }
+		98 = { "Combined Arms Brigade %d" }
+		99 = { "Combined Arms Brigade %d" }
+		100 = { "Combined Arms Brigade %d" }
+		101 = { "Combined Arms Brigade %d" }
+		102 = { "Combined Arms Brigade %d" }
+		103 = { "Combined Arms Brigade %d" }
+		104 = { "Combined Arms Brigade %d" }
+		105 = { "Combined Arms Brigade %d" }
+		106 = { "Combined Arms Brigade %d" }
+		107 = { "Combined Arms Brigade %d" }
+		108 = { "Combined Arms Brigade %d" }
+		109 = { "Combined Arms Brigade %d" }
+		110 = { "Combined Arms Brigade %d" }
+		111 = { "Combined Arms Brigade %d" }
+		112=  {"Combined Arms Brigade 112 'Pingjiang Uprising Regiment/Local Tyrant Brigade'"}
+		113=  {"Combined Arms Brigade 113 'Flying Tiger'"}
+		114=  {"Combined Arms Brigade %d"}
+		115=  {"Combined Arms Brigade 115 'Pioneer Valiant Brigade'"}
+		116=  {"Combined Arms Brigade 116 'Premier Main Force'"}
+		117=  {"Combined Arms Brigade %d"}
+		118=  {"Combined Arms Brigade 118 'Storm Troops'"}
+		119=  {"Combined Arms Brigade 119 'Frontier Valiant Brigade'"}
+		120=  {"Combined Arms Brigade %d"}
+		121=  {"Combined Arms Brigade 121 'Tashan Garrison Hero Regiment'"}
+		122=  {"Combined Arms Brigade 122 'Tashan Vanguard'"}
+		123=  {"Combined Arms Brigade 123 'Tashan Valiant Brigade'"}
+		124=  {"Combined Arms Brigade 124 'Huangcaoling Hero Company'"}
+		125=  {"Combined Arms Brigade 125"}
+		126=  {"Combined Arms Brigade %d"}
+		127=  {"Combined Arms Brigade 127 'Iron Army'"}
+		128=  {"Combined Arms Brigade %d"}
+		129=  {"Combined Arms Brigade %d"}
+		130=  {"Combined Arms Brigade %d"}
+		131=  {"Combined Arms Brigade 131 'Autumn Harvest Uprising Red Second Regiment'"}
+		132=  {"Combined Arms Brigade 132"}
+		133=  {"Combined Arms Brigade %d"}
+		134=  {"Combined Arms Brigade %d"}
+		135=  {"Combined Arms Brigade %d"}
+		136=  {"Combined Arms Brigade %d"}
+		137=  {"Combined Arms Brigade %d"}
+		138=  {"Combined Arms Brigade 138 'Iron Fist Valiant Brigade'"}
+		139=  {"Combined Arms Brigade 139 'Hua Mountain Lion Brigade'"}
+		140=  {"Combined Arms Brigade %d"}
+		141=  {"Combined Arms Brigade %d"}
+		142=  {"Combined Arms Brigade %d"}
+		143=  {"Combined Arms Brigade %d"}
+		144=  {"Combined Arms Brigade %d"}
+		145=  {"Combined Arms Brigade 145 'First-Class Merit Regiment'"}
+		146=  {"Combined Arms Brigade %d"}
+		147=  {"Combined Arms Brigade %d"}
+		148=  {"Combined Arms Brigade %d"}
+		149=  {"Combined Arms Brigade 149 'Iron Fist Brigade'"}
+		150=  {"Combined Arms Brigade 150 'Two No-Fears Brigade'"}  # "两不怕" refers to "no fear of hardship no fear of sacrifice"
+		151=  {"Combined Arms Brigade 151"}
+		152=  {"Combined Arms Brigade %d"}
+		153=  {"Combined Arms Brigade %d"}
+		154=  {"Combined Arms Brigade 154 'Baitai Mountain Valiant Brigade'"}		
+		155 = { "Combined Arms Brigade %d" }
+		156 = { "Combined Arms Brigade %d" }
+		157 = { "Combined Arms Brigade %d" }
+		158 = { "Combined Arms Brigade %d" }
+		159 = { "Combined Arms Brigade %d" }
+		160 =  {"Combined Arms Brigade 160"}
+		161 =  {"Combined Arms Brigade 161"}
+		162 =  {"Combined Arms Brigade 162 'Tiger Division'"}
+		163 =  {"Combined Arms Brigade 163 'Eastern Guangdong Lion Brigade'"}		
+		164 = { "Combined Arms Brigade %d" }
+		165 = { "Combined Arms Brigade %d" }
+		166 = { "Combined Arms Brigade %d" }
+		167 = { "Combined Arms Brigade %d" }
+		168 = { "Combined Arms Brigade %d" }
+		169 = { "Combined Arms Brigade %d" }
+		170 = { "Combined Arms Brigade %d" }
+		171 = { "Combined Arms Brigade %d" }
+		172 = { "Combined Arms Brigade %d" }
+		173 = { "Combined Arms Brigade %d" }
+		174 = { "Combined Arms Brigade %d" }
+		175 = { "Combined Arms Brigade %d" }
+		176 = { "Combined Arms Brigade %d" }
+		177 = { "Combined Arms Brigade %d" }
+		178 =  {"Combined Arms Brigade 178 'Iron-Boned Valiant Brigade'"}
+		179 =  {"Combined Arms Brigade 179 'Glorious Linfen Brigade'"}
+		180 =  {"Combined Arms Brigade %d"}
+		181 =  {"Combined Arms Brigade 181 'Diamond Drill'"}
+		182 =  {"Combined Arms Brigade 182 'Iron Hammer Troops'"}
+		183 =  {"Combined Arms Brigade %d"}
+		184 =  {"Combined Arms Brigade %d"}
+		185 =  {"Combined Arms Brigade %d"}
+		186 =  {"Combined Arms Brigade %d"}
+		187 =  {"Combined Arms Brigade %d"}
+		188 =  {"Combined Arms Brigade 188 'Wild Eighth Brigade'"}
+		189 =  {"Combined Arms Brigade 189 'Songgufeng Hero Regiment'"}
+		190 =  {"Combined Arms Brigade 190 'Iron Armor Valiant Brigade'"}
+		191 =  {"Combined Arms Brigade 191"}
+		193 =  {"Combined Arms Brigade 193 'Red First Division'"}
+		195 =  {"Combined Arms Brigade 195 'Steppe Wolf'"}
+		196 =  {"Combined Arms Brigade 196 'Loyal Warriors Brigade'"}
+		199 =  {"Combined Arms Brigade 199 'Founding Ceremony Red First Division'"}
+		202 =  {"Combined Arms Brigade 202 'Blue Star Valiant Brigade'"}
+		204 =  {"Combined Arms Brigade 204 'Changbai Valiant Brigade'"}		
+		205 = { "Combined Arms Brigade %d" }
+		206 = { "Combined Arms Brigade %d" }
+		207 = { "Combined Arms Brigade %d" }
+		208 = { "Combined Arms Brigade %d" }
+		209 = { "Combined Arms Brigade %d" }
+		210 = { "Combined Arms Brigade %d" }
+		211 = { "Combined Arms Brigade %d" }
+		212 = { "Combined Arms Brigade %d" }
+		213 = { "Combined Arms Brigade %d" }
+		214 = { "Combined Arms Brigade %d" }
+		215 = { "Combined Arms Brigade %d" }
+		216 = { "Combined Arms Brigade %d" }
+		217 = { "Combined Arms Brigade %d" }
+		218 = { "Combined Arms Brigade %d" }
+		219 = { "Combined Arms Brigade %d" }
+		220 = { "Combined Arms Brigade %d" }
+		221 = { "Combined Arms Brigade %d" }
+		222 = { "Combined Arms Brigade %d" }
+		223 = { "Combined Arms Brigade %d" }
+		224 = { "Combined Arms Brigade %d" }
+		225 = { "Combined Arms Brigade %d" }
+		226 = { "Combined Arms Brigade %d" }
+		227 = { "Combined Arms Brigade %d" }
+		228 = { "Combined Arms Brigade %d" }
+		229 = { "Combined Arms Brigade %d" }
+		230 = { "Combined Arms Brigade %d" }
+		231 = { "Combined Arms Brigade %d" }
+		232 = { "Combined Arms Brigade %d" }
+		233 = { "Combined Arms Brigade %d" }
+		234 = { "Combined Arms Brigade %d" }
+		235 =  {"Combined Arms Brigade 235 'Jinan First Regiment'"}
+		236 =  {"Combined Arms Brigade of the Hong Kong Garrison"}	
+	}
+}
+
+XIN_CAD_01 = {
+	name = "XIN_Combined_Arms_Division"
+
+	for_countries = { PRC XIN }
+
+	can_use = { has_global_flag = PRC_taiwan_war_lost }
+
+	division_types = { "motorized" "mechanized" "light_mechanized" "modern_armor" "light_armor" "amphibious_mechanized" }
+
+	fallback_name = "Combined Arms Brigade %d"
+
+	ordered = {
+		1 =  {"Guard Division %d"}
+		3 =  {"Guard Division %d 'Imperial Guard'"}
+		4 =  {"Combined Arms Division %d 'Tianshan Lion Division'"}
+		6 =  {"Combined Arms Division %d 'Plateau Valiant Division'"}
+		8 =  {"Combined Arms Division %d 'Tianshan Iron Cavalry Division'"}
+		11 =  {"Combined Arms Division %d 'Red Army Division'"}
+	}
+}
+
+PRC_SOB_01 = {
+	name = "PRC_Special_Operations_Brigade"
+
+	for_countries = { PRC XIN }
+
+	can_use = { always = yes }
+
+	division_types = { "special_forces" "marine" "amphibious_mechanized" "amphibious_armor" "paratrooper" }
+
+	fallback_name = "Special Operations Brigade %d"
+
+	ordered = {
+		1= {"Marine Corps 1st Brigade 'Tiger Brigade'"}
+		2= {"Marine Corps 2nd Brigade 'Fist Force'"}
+		3= {"Marine Corps 3rd Brigade"}
+		4= {"Marine Corps 4th Brigade"}
+		5= {"Marine Corps 5th Brigade"}
+		6= {"Marine Corps 6th Brigade 'Assault Leopard/Yimeng Brigade'"}
+		7= {"Marine Corps 7th Brigade 'Dragon Commando'"}
+		71= {"Special Operations 71st Brigade 'Sea Shark'"}
+		72= {"Special Operations 72nd Brigade 'Thunderbolt'"}
+		73= {"Special Operations 73rd Brigade 'East China Sea Flying Dragon'"}
+		74= {"Special Operations 74th Brigade 'Southern National Sword'"}
+		75= {"Special Operations 75th Brigade 'Jungle Tiger'"}
+		76= {"Special Operations 76th Brigade 'Xuefeng'"}  # "Xuefeng" is a proper noun possibly named after Peng Xuefeng
+		77= {"Special Operations 77th Brigade 'Southwest Cheetah'"}
+		78= {"Special Operations 78th Brigade 'Blood Wolf'"}
+		79= {"Special Operations 79th Brigade 'Lion'"}
+		80= {"Special Operations 80th Brigade 'Eagle'"}
+		81= {"Special Operations 81st Brigade 'Cheetah'"}
+		82= {"Special Operations 82nd Brigade 'Whistling Arrow'"}
+		83= {"Special Operations 83rd Brigade 'Central Plains Tiger'"}
+		84= {"Special Operations 84th Brigade 'Kunlun Blade'"}
+		85= {"Special Operations 85th Brigade 'Plateau Snow Leopard'"}
+		127= {"Airborne Troops %dth Brigade"}
+		128= {"Airborne Troops %dth Brigade"}
+		131= {"Airborne Troops %dth Brigade"}
+		133= {"Airborne Troops %dth Brigade"}
+		134= {"Airborne Troops %dth Brigade"}
+		237= {"Special Operations Brigade 'Thor'"}
+	}
+}
+
+PRC_AAB_01 = {
+	name = "PRC_Air_Assault_Brigade"
+
+	for_countries = { PRC XIN }
+
+	can_use = { always = yes }
+
+	division_types = { "paratrooper" }
+
+	link_numbering_with = { PRC_CAB_01 }
+	link_numbering_with = { PRC_GAR_02 }
+
+	fallback_name = "Airborne Assault Brigade %d"
+
+	ordered = {
+		121 =  {"Air Assault Brigade 121 'Tashan Garrison Hero Regiment'"}
+		161 =  {"Air Assault Brigade 161"}	
+	}
+}
+
+PRC_GAR_02 = {
+	name = "PRC_Coastal_Defense_Brigade"
+
+	for_countries = { PRC XIN }
+
+	can_use = { always = yes }
+
+	division_types = { "militia" "recce" }
+
+	fallback_name = "Coastal Defense Brigade %d"
+
+	link_numbering_with = { PRC_CAB_01 }
+	link_numbering_with = { PRC_AAB_01 }
+	
+	ordered ={
+		300 =  {"Coastal Defense Brigade 300"}
+		301 =  {"Coastal Defense Brigade 301"}
+		302 =  {"Coastal Defense Brigade 302"}
+		303 =  {"Coastal Defense Brigade 303"}
+		304 =  {"Coastal Defense Brigade 304"}
+		305 =  {"Coastal Defense Brigade 305"}
+		306 =  {"Coastal Defense Brigade 306"}
+		307 =  {"Coastal Defense Brigade 307"}
+		308 =  {"Coastal Defense Brigade 308"}
+		309 =  {"Coastal Defense Brigade 309"}
+		310 =  {"Coastal Defense Brigade 310"}
+		311 =  {"Coastal Defense Brigade 311"}
+		312 =  {"Coastal Defense Brigade 312"}
+		313 =  {"Coastal Defense Brigade 313"}
+		314 =  {"Coastal Defense Brigade 314"}
+		315 =  {"Coastal Defense Brigade 315"}
+		316 =  {"Coastal Defense Brigade 316"}
+		317 =  {"Coastal Defense Brigade 317"}
+		318 =  {"Coastal Defense Brigade 318"}
+		319 =  {"Coastal Defense Brigade 319"}
+		320 =  {"Coastal Defense Brigade 320"}
+		321 =  {"Coastal Defense Brigade 321"}
+		322 =  {"Coastal Defense Brigade 322"}
+		323 =  {"Coastal Defense Brigade 323"}
+		324 =  {"Coastal Defense Brigade 324"}
+		325 =  {"Coastal Defense Brigade 325"}
+		326 =  {"Coastal Defense Brigade 326"}
+		327 =  {"Coastal Defense Brigade 327"}
+		328 =  {"Coastal Defense Brigade 328"}
+		329 =  {"Coastal Defense Brigade 329"}
+		330 =  {"Coastal Defense Brigade 330"}
+		331 =  {"Coastal Defense Brigade 331"}
+		332 =  {"Coastal Defense Brigade 332"}
+		333 =  {"Coastal Defense Brigade 333"}
+		334 =  {"Coastal Defense Brigade 334"}
+		335 =  {"Coastal Defense Brigade 335"}
+		336 =  {"Coastal Defense Brigade 336"}
+		337 =  {"Coastal Defense Brigade 337"}
+		338 =  {"Coastal Defense Brigade 338"}
+		339 =  {"Coastal Defense Brigade 339"}
+		340 =  {"Coastal Defense Brigade 340"}
+		341 =  {"Coastal Defense Brigade 341"}
+		342 =  {"Coastal Defense Brigade 342"}
+		343 =  {"Coastal Defense Brigade 343"}
+		344 =  {"Coastal Defense Brigade 344"}
+		345 =  {"Coastal Defense Brigade 345"}
+		346 =  {"Coastal Defense Brigade 346"}
+		347 =  {"Coastal Defense Brigade 347"}
+		348 =  {"Coastal Defense Brigade 348"}
+		349 =  {"Coastal Defense Brigade 349"}
+		350 =  {"Coastal Defense Brigade 350"}
+		351 =  {"Coastal Defense Brigade 351"}
+		352 =  {"Coastal Defense Brigade 352"}
+		353 =  {"Coastal Defense Brigade 353"}
+		354 =  {"Coastal Defense Brigade 354"}
+		355 =  {"Coastal Defense Brigade 355"}
+		356 =  {"Coastal Defense Brigade 356"}
+		357 =  {"Coastal Defense Brigade 357"}
+		358 =  {"Coastal Defense Brigade 358"}
+		359 =  {"Coastal Defense Brigade 359"}
+		360 =  {"Coastal Defense Brigade 360"}
+		361 =  {"Coastal Defense Brigade 361"}
+		362 =  {"Coastal Defense Brigade 362"}
+		363 =  {"Coastal Defense Brigade 363"}
+		364 =  {"Coastal Defense Brigade 364"}
+		365 =  {"Coastal Defense Brigade 365"}
+		366 =  {"Coastal Defense Brigade 366"}
+		367 =  {"Coastal Defense Brigade 367"}
+		368 =  {"Coastal Defense Brigade 368"}
+		369 =  {"Coastal Defense Brigade 369"}
+		370 =  {"Coastal Defense Brigade 370"}
+		371 =  {"Coastal Defense Brigade 371"}
+		372 =  {"Coastal Defense Brigade 372"}
+		373 =  {"Coastal Defense Brigade 373"}
+		374 =  {"Coastal Defense Brigade 374"}
+		375 =  {"Coastal Defense Brigade 375"}
+		376 =  {"Coastal Defense Brigade 376"}
+		377 =  {"Coastal Defense Brigade 377"}
+		378 =  {"Coastal Defense Brigade 378"}
+		379 =  {"Coastal Defense Brigade 379"}
+		380 =  {"Coastal Defense Brigade 380"}
+		381 =  {"Coastal Defense Brigade 381"}
+		382 =  {"Coastal Defense Brigade 382"}
+		383 =  {"Coastal Defense Brigade 383"}
+		384 =  {"Coastal Defense Brigade 384"}
+		385 =  {"Coastal Defense Brigade 385"}
+		386 =  {"Coastal Defense Brigade 386"}
+		387 =  {"Coastal Defense Brigade 387"}
+		388 =  {"Coastal Defense Brigade 388"}
+		389 =  {"Coastal Defense Brigade 389"}
+		390 =  {"Coastal Defense Brigade 390"}
+		391 =  {"Coastal Defense Brigade 391"}
+		392 =  {"Coastal Defense Brigade 392"}
+		393 =  {"Coastal Defense Brigade 393"}
+		394 =  {"Coastal Defense Brigade 394"}
+		395 =  {"Coastal Defense Brigade 395"}
+		396 =  {"Coastal Defense Brigade 396"}
+		397 =  {"Coastal Defense Brigade 397"}
+		398 =  {"Coastal Defense Brigade 398"}
+		399 =  {"Coastal Defense Brigade 399"}
+		400 =  {"Coastal Defense Brigade 400"}
+		401 =  {"Coastal Defense Brigade 401"}
+		402 =  {"Coastal Defense Brigade 402"}
+		403 =  {"Coastal Defense Brigade 403"}
+		404 =  {"Coastal Defense Brigade 404"}
+		405 =  {"Coastal Defense Brigade 405"}
+		406 =  {"Coastal Defense Brigade 406"}
+		407 =  {"Coastal Defense Brigade 407"}
+		408 =  {"Coastal Defense Brigade 408"}
+		409 =  {"Coastal Defense Brigade 409"}
+		410 =  {"Coastal Defense Brigade 410"}
+		411 =  {"Coastal Defense Brigade 411"}
+		412 =  {"Coastal Defense Brigade 412"}
+		413 =  {"Coastal Defense Brigade 413"}
+		414 =  {"Coastal Defense Brigade 414"}
+		415 =  {"Coastal Defense Brigade 415"}
+		416 =  {"Coastal Defense Brigade 416"}
+		417 =  {"Coastal Defense Brigade 417"}
+		418 =  {"Coastal Defense Brigade 418"}
+		419 =  {"Coastal Defense Brigade 419"}
+		420 =  {"Coastal Defense Brigade 420"}
+		421 =  {"Coastal Defense Brigade 421"}
+		422 =  {"Coastal Defense Brigade 422"}
+		423 =  {"Coastal Defense Brigade 423"}
+		424 =  {"Coastal Defense Brigade 424"}
+		425 =  {"Coastal Defense Brigade 425"}
+		426 =  {"Coastal Defense Brigade 426"}
+		427 =  {"Coastal Defense Brigade 427"}
+		428 =  {"Coastal Defense Brigade 428"}
+		429 =  {"Coastal Defense Brigade 429"}
+		430 =  {"Coastal Defense Brigade 430"}
+		431 =  {"Coastal Defense Brigade 431"}
+		432 =  {"Coastal Defense Brigade 432"}
+		433 =  {"Coastal Defense Brigade 433"}
+		434 =  {"Coastal Defense Brigade 434"}
+		435 =  {"Coastal Defense Brigade 435"}
+		436 =  {"Coastal Defense Brigade 436"}
+		437 =  {"Coastal Defense Brigade 437"}
+		438 =  {"Coastal Defense Brigade 438"}
+		439 =  {"Coastal Defense Brigade 439"}
+		440 =  {"Coastal Defense Brigade 440"}
+		441 =  {"Coastal Defense Brigade 441"}
+		442 =  {"Coastal Defense Brigade 442"}
+		443 =  {"Coastal Defense Brigade 443"}
+		444 =  {"Coastal Defense Brigade 444"}
+		445 =  {"Coastal Defense Brigade 445"}
+		446 =  {"Coastal Defense Brigade 446"}
+		447 =  {"Coastal Defense Brigade 447"}
+		448 =  {"Coastal Defense Brigade 448"}
+		449 =  {"Coastal Defense Brigade 449"}
+		450 =  {"Coastal Defense Brigade 450"}
+		451 =  {"Coastal Defense Brigade 451"}
+		452 =  {"Coastal Defense Brigade 452"}
+		453 =  {"Coastal Defense Brigade 453"}
+		454 =  {"Coastal Defense Brigade 454"}
+		455 =  {"Coastal Defense Brigade 455"}
+		456 =  {"Coastal Defense Brigade 456"}
+		457 =  {"Coastal Defense Brigade 457"}
+		458 =  {"Coastal Defense Brigade 458"}
+		459 =  {"Coastal Defense Brigade 459"}
+		460 =  {"Coastal Defense Brigade 460"}
+		461 =  {"Coastal Defense Brigade 461"}
+		462 =  {"Coastal Defense Brigade 462"}
+		463 =  {"Coastal Defense Brigade 463"}
+		464 =  {"Coastal Defense Brigade 464"}
+		465 =  {"Coastal Defense Brigade 465"}
+		466 =  {"Coastal Defense Brigade 466"}
+		467 =  {"Coastal Defense Brigade 467"}
+		468 =  {"Coastal Defense Brigade 468"}
+		469 =  {"Coastal Defense Brigade 469"}
+		470 =  {"Coastal Defense Brigade 470"}
+		471 =  {"Coastal Defense Brigade 471"}
+		472 =  {"Coastal Defense Brigade 472"}
+		473 =  {"Coastal Defense Brigade 473"}
+		474 =  {"Coastal Defense Brigade 474"}
+		475 =  {"Coastal Defense Brigade 475"}
+		476 =  {"Coastal Defense Brigade 476"}
+		477 =  {"Coastal Defense Brigade 477"}
+		478 =  {"Coastal Defense Brigade 478"}
+		479 =  {"Coastal Defense Brigade 479"}
+		480 =  {"Coastal Defense Brigade 480"}
+		481 =  {"Coastal Defense Brigade 481"}
+		482 =  {"Coastal Defense Brigade 482"}
+		483 =  {"Coastal Defense Brigade 483"}
+		484 =  {"Coastal Defense Brigade 484"}
+		485 =  {"Coastal Defense Brigade 485"}
+		486 =  {"Coastal Defense Brigade 486"}
+		487 =  {"Coastal Defense Brigade 487"}
+		488 =  {"Coastal Defense Brigade 488"}
+		489 =  {"Coastal Defense Brigade 489"}
+		490 =  {"Coastal Defense Brigade 490"}
+		491 =  {"Coastal Defense Brigade 491"}
+		492 =  {"Coastal Defense Brigade 492"}
+		493 =  {"Coastal Defense Brigade 493"}
+		494 =  {"Coastal Defense Brigade 494"}
+		495 =  {"Coastal Defense Brigade 495"}
+		496 =  {"Coastal Defense Brigade 496"}
+		497 =  {"Coastal Defense Brigade 497"}
+		498 =  {"Coastal Defense Brigade 498"}
+		499 =  {"Coastal Defense Brigade 499"}
+		500 =  {"Coastal Defense Brigade 500"}
+		501 =  {"Coastal Defense Brigade 501"}
+		502 =  {"Coastal Defense Brigade 502"}
+		503 =  {"Coastal Defense Brigade 503"}
+		504 =  {"Coastal Defense Brigade 504"}
+		505 =  {"Coastal Defense Brigade 505"}
+		506 =  {"Coastal Defense Brigade 506"}
+		507 =  {"Coastal Defense Brigade 507"}
+		508 =  {"Coastal Defense Brigade 508"}
+		509 =  {"Coastal Defense Brigade 509"}
+		510 =  {"Coastal Defense Brigade 510"}
+		511 =  {"Coastal Defense Brigade 511"}
+		512 =  {"Coastal Defense Brigade 512"}
+		513 =  {"Coastal Defense Brigade 513"}
+		514 =  {"Coastal Defense Brigade 514"}
+		515 =  {"Coastal Defense Brigade 515"}
+		516 =  {"Coastal Defense Brigade 516"}
+		517 =  {"Coastal Defense Brigade 517"}
+		518 =  {"Coastal Defense Brigade 518"}
+		519 =  {"Coastal Defense Brigade 519"}
+		520 =  {"Coastal Defense Brigade 520"}
+		521 =  {"Coastal Defense Brigade 521"}
+		522 =  {"Coastal Defense Brigade 522"}
+		523 =  {"Coastal Defense Brigade 523"}
+		524 =  {"Coastal Defense Brigade 524"}
+		525 =  {"Coastal Defense Brigade 525"}
+		526 =  {"Coastal Defense Brigade 526"}
+		527 =  {"Coastal Defense Brigade 527"}
+		528 =  {"Coastal Defense Brigade 528"}
+		529 =  {"Coastal Defense Brigade 529"}
+		530 =  {"Coastal Defense Brigade 530"}
+		531 =  {"Coastal Defense Brigade 531"}
+		532 =  {"Coastal Defense Brigade 532"}
+		533 =  {"Coastal Defense Brigade 533"}
+		534 =  {"Coastal Defense Brigade 534"}
+		535 =  {"Coastal Defense Brigade 535"}
+		536 =  {"Coastal Defense Brigade 536"}
+		537 =  {"Coastal Defense Brigade 537"}
+		538 =  {"Coastal Defense Brigade 538"}
+		539 =  {"Coastal Defense Brigade 539"}
+		540 =  {"Coastal Defense Brigade 540"}
+		541 =  {"Coastal Defense Brigade 541"}
+		542 =  {"Coastal Defense Brigade 542"}
+		543 =  {"Coastal Defense Brigade 543"}
+		544 =  {"Coastal Defense Brigade 544"}
+		545 =  {"Coastal Defense Brigade 545"}
+		546 =  {"Coastal Defense Brigade 546"}
+		547 =  {"Coastal Defense Brigade 547"}
+		548 =  {"Coastal Defense Brigade 548"}
+		549 =  {"Coastal Defense Brigade 549"}
+		550 =  {"Coastal Defense Brigade 550"}
+		551 =  {"Coastal Defense Brigade 551"}
+		552 =  {"Coastal Defense Brigade 552"}
+		553 =  {"Coastal Defense Brigade 553"}
+		554 =  {"Coastal Defense Brigade 554"}
+		555 =  {"Coastal Defense Brigade 555"}
+		556 =  {"Coastal Defense Brigade 556"}
+		557 =  {"Coastal Defense Brigade 557"}
+		558 =  {"Coastal Defense Brigade 558"}
+		559 =  {"Coastal Defense Brigade 559"}
+		560 =  {"Coastal Defense Brigade 560"}
+		561 =  {"Coastal Defense Brigade 561"}
+		562 =  {"Coastal Defense Brigade 562"}
+		563 =  {"Coastal Defense Brigade 563"}
+		564 =  {"Coastal Defense Brigade 564"}
+		565 =  {"Coastal Defense Brigade 565"}
+		566 =  {"Coastal Defense Brigade 566"}
+		567 =  {"Coastal Defense Brigade 567"}
+		568 =  {"Coastal Defense Brigade 568"}
+		569 =  {"Coastal Defense Brigade 569"}
+		570 =  {"Coastal Defense Brigade 570"}
+		571 =  {"Coastal Defense Brigade 571"}
+		572 =  {"Coastal Defense Brigade 572"}
+		573 =  {"Coastal Defense Brigade 573"}
+		574 =  {"Coastal Defense Brigade 574"}
+		575 =  {"Coastal Defense Brigade 575"}
+		576 =  {"Coastal Defense Brigade 576"}
+		577 =  {"Coastal Defense Brigade 577"}
+		578 =  {"Coastal Defense Brigade 578"}
+		579 =  {"Coastal Defense Brigade 579"}
+		580 =  {"Coastal Defense Brigade 580"}
+		581 =  {"Coastal Defense Brigade 581"}
+		582 =  {"Coastal Defense Brigade 582"}
+		583 =  {"Coastal Defense Brigade 583"}
+		584 =  {"Coastal Defense Brigade 584"}
+		585 =  {"Coastal Defense Brigade 585"}
+		586 =  {"Coastal Defense Brigade 586"}
+		587 =  {"Coastal Defense Brigade 587"}
+		588 =  {"Coastal Defense Brigade 588"}
+		589 =  {"Coastal Defense Brigade 589"}
+		590 =  {"Coastal Defense Brigade 590"}
+		591 =  {"Coastal Defense Brigade 591"}
+		592 =  {"Coastal Defense Brigade 592"}
+		593 =  {"Coastal Defense Brigade 593"}
+		594 =  {"Coastal Defense Brigade 594"}
+		595 =  {"Coastal Defense Brigade 595"}
+		596 =  {"Coastal Defense Brigade 596"}
+		597 =  {"Coastal Defense Brigade 597"}
+		598 =  {"Coastal Defense Brigade 598"}
+		599 =  {"Coastal Defense Brigade 599"}
+		600 =  {"Coastal Defense Brigade 600"}
+	}
+}
+
+PRC_GAR_03 = {
+	name = "PRC_militia_Division"
+
+	for_countries = { PRC XIN }
+
+	division_types = { "militia" "recce" }
+
+	fallback_name = "Militia Division %d"
+}
+
+PRC_THE_01 = {
+	
+	name = "PRC_Theater_Command"
+
+	for_countries = { PRC XIN }
+
+	can_use = {
+		always = yes
+	}
+
+	division_types = {
+		"militia" "recce"
+	}
+
+	fallback_name = "The Command Headquarters of the %d Theater Command"
+
+	ordered = {
+		1 =  {"Northern Theater Command"}
+		2 =  {"Southern Theater Command"}
+		3 =  {"Eastern Theater Command"}
+		4 =  {"Western Theater Command"}
+		5 =  {"Central Theater Command"}
+	}
+}
+
+XIN_PCC_01 = {
+	name = "XIN_Production_and_Construction_Corp"
+
+	for_countries = { PRC XIN }
+
+	can_use = { has_global_flag = PRC_taiwan_war_lost }
+
+	division_types = { "infantry" }
+
+	fallback_name = "Division %d of the Xinjiang Production and Construction Corps"
+	ordered = {
+		1 =  {"Division 1 of the Xinjiang Production and Construction Corps"}
+		2 =  {"Division 2 of the Xinjiang Production and Construction Corps"}
+		3 =  {"Division 3 of the Xinjiang Production and Construction Corps"}
+		4 =  {"Division 4 of the Xinjiang Production and Construction Corps"}
+		5 =  {"Division 5 of the Xinjiang Production and Construction Corps"}
+		6 =  {"Division 6 of the Xinjiang Production and Construction Corps"}
+		7 =  {"Division 7 of the Xinjiang Production and Construction Corps"}
+		8 =  {"Division 8 of the Xinjiang Production and Construction Corps"}
+		9 =  {"Division 9 of the Xinjiang Production and Construction Corps"}
+		10 =  {"Division 10 of the Xinjiang Production and Construction Corps"}
+		11 =  {"Division 11 of the Xinjiang Production and Construction Corps 'Construction Engineer Division'"}
+		12 =  {"Division 12 of the Xinjiang Production and Construction Corps"}
+		13 =  {"Division 13 of the Xinjiang Production and Construction Corps"}
+		14 =  {"Division 14 of the Xinjiang Production and Construction Corps"}
+	}
+}
+
+PRC_PAP_01 = {
+	name = "PRC_People's_Armed_Police"
+
+	for_countries = { PRC XIN }
+
+	can_use = { always = yes }
+
+	division_types = { "militia" "recce" }
+
+	fallback_name = "Chinese People's Armed Police Force Mobile Corps %d"
+
+	ordered = {
+		1 =  {"Chinese People's Armed Police Force Mobile Corps %d"}
+		2 =  {"Chinese People's Armed Police Force Mobile Corps %d"}
+	}
+
+	unordered = {
+		1 =  {"Beijing Corps of the Chinese People's Armed Police Force"}
+		2 =  {"Shanghai Corps of the Chinese People's Armed Police Force"}
+		3 =  {"Tianjin Corps of the Chinese People's Armed Police Force"}
+		4 =  {"Chongqing Corps of the Chinese People's Armed Police Force"}
+		5 =  {"Hebei Corps of the Chinese People's Armed Police Force"}
+		6 =  {"Shanxi Corps of the Chinese People's Armed Police Force"}
+		7 =  {"Jilin Corps of the Chinese People's Armed Police Force"}
+		8 =  {"Liaoning Corps of the Chinese People's Armed Police Force"}
+		9 =  {"Heilongjiang Corps of the Chinese People's Armed Police Force"}
+		10 =  {"Shaanxi Corps of the Chinese People's Armed Police Force"}
+		11 =  {"Gansu Corps of the Chinese People's Armed Police Force"}
+		12 =  {"Qinghai Corps of the Chinese People's Armed Police Force"}
+		13 =  {"Shandong Corps of the Chinese People's Armed Police Force"}
+		14 =  {"Fujian Corps of the Chinese People's Armed Police Force"}
+		15 =  {"Zhejiang Corps of the Chinese People's Armed Police Force"}
+		16 =  {"Henan Corps of the Chinese People's Armed Police Force"}
+		17 =  {"Hubei Corps of the Chinese People's Armed Police Force"}
+		18 =  {"Hunan Corps of the Chinese People's Armed Police Force"}
+		19 =  {"Jiangxi Corps of the Chinese People's Armed Police Force"}
+		20 =  {"Jiangsu Corps of the Chinese People's Armed Police Force"}
+		21 =  {"Anhui Corps of the Chinese People's Armed Police Force"}
+		22 =  {"Guangdong Corps of the Chinese People's Armed Police Force"}
+		23 =  {"Hainan Corps of the Chinese People's Armed Police Force"}
+		24 =  {"Sichuan Corps of the Chinese People's Armed Police Force"}
+		25 =  {"Guizhou Corps of the Chinese People's Armed Police Force"}
+		26 =  {"Yunnan Corps of the Chinese People's Armed Police Force"}
+		27 =  {"Inner Mongolia Autonomous Region Corps of the Chinese People's Armed Police Force"}
+		28 =  {"Xinjiang Uygur Autonomous Region Corps of the Chinese People's Armed Police Force"}
+		29 =  {"Ningxia Hui Autonomous Region Corps of the Chinese People's Armed Police Force"}
+		30 =  {"Guangxi Zhuang Autonomous Region Corps of the Chinese People's Armed Police Force"}
+		31 =  {"Tibet Autonomous Region Corps of the Chinese People's Armed Police Force"}
+		32 =  {"Xinjiang Production and Construction Corps Corps of the Chinese People's Armed Police Force"}
+	}
+}

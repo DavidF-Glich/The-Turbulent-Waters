@@ -1168,9 +1168,14 @@ debug_decisions = {
 		complete_effect = {
 			promote_character = PRC_aguang_char
 			set_country_flag = easteregg_enabled
-			random = {
-				chance = 50
-				set_country_flag = LH_brain_damaged
+			hidden_effect = {
+				random = {
+					chance = 50
+					set_country_flag = LH_brain_damaged
+				}
+			}
+			uncomplete_national_focus = {
+				focus = PRC_Wuhan_discovery
 			}
 			add_ideas = {
 				PRC_fengyingas

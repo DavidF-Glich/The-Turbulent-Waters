@@ -22,4 +22,12 @@ focus_tree = {
 		factor = 0
 	}
 	default = no
+	focus = {
+		id = SWE_back_from_civilwar
+		icon = GFX_surrender_tiny_flag
+		cost = 5
+		x = 4
+		y = 0
+		completion_reward = { }
+	}
 }

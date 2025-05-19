@@ -244,191 +244,360 @@ focus_tree = {
 
 	}
 	focus = {
-		id = SOV_Prevent_Ideological_Influence
+		id = SOV_Our_Politic_situation
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = 14
+		y = 1
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_decrease_kprf
+		icon = GFX_focus_SOV_fight_against_the_left
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = SOV_Our_Politic_situation
+		prerequisite = {
+			focus = SOV_Our_Politic_situation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_decrease_lpdr
+		icon = GFX_focus_SOV_fight_against_the_right
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SOV_Our_Politic_situation
+		prerequisite = {
+			focus = SOV_Our_Politic_situation
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_compliment_tsardom
+		icon = GFX_focus_SOV_heirs_of_the_union
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = SOV_decrease_kprf
+		prerequisite = {
+			focus = SOV_decrease_kprf
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_compliment_ussr
+		icon = GFX_focus_SOV_utilize_communist_nostalgia
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SOV_decrease_lpdr
+		prerequisite = {
+			focus = SOV_decrease_lpdr
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_loyalities_in_kprf
+		icon = GFX_focus_SOV_fight_against_the_left
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = SOV_decrease_kprf
+		prerequisite = {
+			focus = SOV_decrease_kprf
+		}
+		prerequisite = {
+			focus = SOV_compliment_tsardom
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_loyalities_in_ldpr
+		icon = GFX_focus_SOV_fight_against_the_right
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = SOV_decrease_lpdr
+		prerequisite = {
+			focus = SOV_decrease_lpdr
+		}
+		prerequisite = {
+			focus = SOV_compliment_ussr
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_political_security
+		icon = GFX_focus_SOV_1000_years_of_putinism
+		cost = 4
+		x = 0
+		y = 4
+		relative_position_id = SOV_Our_Politic_situation
+		prerequisite = {
+			focus = SOV_loyalities_in_ldpr
+		}
+		prerequisite = {
+			focus = SOV_loyalities_in_kprf
+		}
+		completion_reward = {
+		}
+	}
+	focus = {
+		id = SOV_Our_Foreign_Politic
+		icon = GFX_focus_SOV_international
+		cost = 4
+		x = 8
+		y = 1
+		relative_position_id = SOV_New_Century
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.1
+			}
+			SOV_add_election_approval_rating_nav = yes
+			add_political_power = 100
+		}
+	}
+	focus = {
+		id = SOV_Make_New_Deals
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = -3
+		y = 1
+		relative_position_id = SOV_Our_Foreign_Politic
+		prerequisite = {
+			focus = SOV_Our_Foreign_Politic
+		}
+		mutually_exclusive = { focus = SOV_Destroy_NPO }
+		completion_reward = {
+			unlock_decision_category_tooltip = SOV_cooperation_program
+			add_ideas = SOV_anti-globalism_diplomacy
+			add_stability = 0.05
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	}
+	focus = {
+		id = SOV_Destroy_NPO
+		icon = GFX_focus_SOV_spread_anti_western_propaganda
+		cost = 4
+		x = 3
+		y = 1
+		relative_position_id = SOV_Our_Foreign_Politic
+		prerequisite = {
+			focus = SOV_Our_Foreign_Politic
+		}
+		mutually_exclusive = { focus = SOV_Make_New_Deals }
+		completion_reward = {
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = -0.1
+			}
+			SOV_add_election_approval_rating_nav = yes
+		SOV_upgrade_faltering = yes
+		add_stability = 0.02
+		add_war_support = 0.02
+		}
+	}
+	focus = {
+		id = SOV_SCHOS
+		icon = GFX_focus_SOV_anti_globalist_bulwark
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SOV_Make_New_Deals
+		prerequisite = {
+			focus = SOV_Make_New_Deals
+		}
+		mutually_exclusive = { focus = SOV_BRICS }
+		completion_reward = {
+			custom_effect_tooltip = SOV_schos_focus_tt
+			swap_ideas = {
+				remove_idea = SOV_anti-globalism_diplomacy
+				add_idea = SOV_anti-globalism_diplomacy_schos
+			}
+		}
+	}
+	focus = {
+		id = SOV_BRICS
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = SOV_Make_New_Deals
+		prerequisite = {
+			focus = SOV_Make_New_Deals
+		}
+		mutually_exclusive = { focus = SOV_SCHOS }
+		completion_reward = {
+			custom_effect_tooltip = SOV_brics_focus_tt
+			swap_ideas = {
+				remove_idea = SOV_anti-globalism_diplomacy
+				add_idea = SOV_anti-globalism_diplomacy_brics
+			}
+		}
+	}
+	focus = {
+		id = SOV_New_constitution
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = 0
+		y = 2
+		relative_position_id = SOV_Our_Foreign_Politic
+		prerequisite = {
+			focus = SOV_Make_New_Deals
+			focus = SOV_Destroy_NPO
+		}
+		completion_reward = {
+			add_ideas = SOV_putin_2020_constitution
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	}
+	focus = {
+		id = SOV_persecution_leaders
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = 1
+		y = 1
+		relative_position_id = SOV_Destroy_NPO
+		prerequisite = {
+			focus = SOV_Destroy_NPO
+		}
+		mutually_exclusive = { focus = SOV_persecution_majority }
+		completion_reward = {
+		SOV_upgrade_faltering = yes
+		add_political_power = 50
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_nav = yes		
+		}
+	}
+	focus = {
+		id = SOV_persecution_majority
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 4
+		x = -1
+		y = 1
+		relative_position_id = SOV_Destroy_NPO
+		prerequisite = {
+			focus = SOV_Destroy_NPO
+		}
+		mutually_exclusive = { focus = SOV_persecution_leaders }
+		completion_reward = {
+			add_ideas = SOV_potemkin_reforms
+			add_popularity = {
+				ideology = authoritarian_democrat
+				popularity = 0.05
+			}
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	}
+	focus = {
+		id = SOV_Create_Free_Trade_Zone
 		icon = GFX_focus_SOV_crush_western_influence
 		cost = 4
 		x = 0
 		y = 1
+		relative_position_id = SOV_SCHOS
 		prerequisite = {
-			focus = SOV_New_Century
+			focus = SOV_New_constitution
 		}
-		relative_position_id = SOV_New_Century
-		completion_reward = { }
+		prerequisite = {
+			focus = SOV_SCHOS
+			focus = SOV_BRICS
+		}
+		completion_reward = {
+			add_stability = 0.04
+			custom_effect_tooltip = SOV_ftz_focus_tt
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
 	}
-
 	focus = {
-		id = SOV_Prevent_Right_Wing
-		icon = GFX_focus_SOV_fight_against_the_right
+		id = SOV_increase_censore
+		icon = GFX_focus_SOV_increase_online_censorship
 		cost = 4
-		x = -1
+		x = 0
 		y = 1
-		relative_position_id = SOV_Prevent_Ideological_Influence
-		available = {
-			NOT = {
-				has_country_flag = SOV_Preventing_Left
-			}
+		relative_position_id = SOV_persecution_majority
+		prerequisite = {
+			focus = SOV_New_constitution
 		}
 		prerequisite = {
-			focus = SOV_Prevent_Ideological_Influence
+			focus = SOV_persecution_leaders
+			focus = SOV_persecution_majority
 		}
-		completion_reward = { 
-			set_country_flag = {
-				flag = SOV_Preventing_Right
-				days = 50
-				value = 1
+		completion_reward = {
+			custom_effect_tooltip = SOV_censore_focus_tt
+			set_temp_variable = {
+				var = SOV_election_approval_rating_nav_var_temp
+				value = -0.05
 			}
+			SOV_add_election_approval_rating_nav = yes
+			add_stability = -0.07
 		}
 	}
-
 	focus = {
-		id = SOV_Prevent_Left_Wing
-		icon = GFX_focus_SOV_fight_against_the_left
+		id = SOV_Our_internal_security
+		icon = GFX_focus_SOV_crush_western_influence
 		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = SOV_Prevent_Ideological_Influence
+		x = 0
+		y = 2
+		relative_position_id = SOV_New_constitution
 		prerequisite = {
-			focus = SOV_Prevent_Ideological_Influence
+			focus = SOV_Create_Free_Trade_Zone
+			focus = SOV_increase_censore
 		}
-		available = {
-			NOT = {
-				has_country_flag = SOV_Preventing_Right
+		completion_reward = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.05
 			}
+			SOV_add_election_approval_rating_ur = yes
 		}
-		completion_reward = { 
-			set_country_flag = {
-				flag = SOV_Preventing_Left
-				days = 50
-				value = 1
-			}
-		}
-	}
-
-	focus = {
-		id = SOV_Love_for_Empire
-		icon = GFX_focus_SOV_heirs_of_the_union
-		cost = 3
-		x = 1
-		y = 1
-		relative_position_id = SOV_Prevent_Left_Wing
-		prerequisite = {
-			focus = SOV_Prevent_Left_Wing
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = SOV_Love_for_USSR
-		icon = GFX_focus_SOV_utilize_communist_nostalgia
-		cost = 3
-		x = -1
-		y = 1
-		relative_position_id = SOV_Prevent_Right_Wing
-		prerequisite = {
-			focus = SOV_Prevent_Right_Wing
-		}
-		completion_reward = { }
-	}
-
-	focus = {
-		id = SOV_United_Russia_focus
-		icon = GFX_focus_SOV_1000_years_of_putinism
-		cost = 5
-		x = 0
-		y = 3
-		relative_position_id = SOV_Prevent_Ideological_Influence
-		prerequisite = {
-			focus = SOV_Love_for_USSR
-		}
-		prerequisite = {
-			focus = SOV_Love_for_Empire
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = SOV_Lavrov_Diplomacy
-		icon = GFX_focus_SOV_international
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_New_Century
-		}
-		x = 7
-		y = 1
-		relative_position_id = SOV_New_Century
-
-	}
-	focus = {
-		id = SOV_Secure_Belo_Russo_Tie
-		icon = GFX_focus_SOV_prepare_the_union_state
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Lavrov_Diplomacy
-		}
-		x = -3
-		y = 1
-		relative_position_id = SOV_Lavrov_Diplomacy
-
-	}
-	focus = {
-		id = SOV_Sell_BEL_Oil
-		icon = GFX_focus_SOV_belarusian_spring
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Secure_Belo_Russo_Tie
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Secure_Belo_Russo_Tie
-
-	}
-	focus = {
-		id = SOV_Secure_CSTO_Partner
-		icon = GFX_focus_SOV_secure_csto_allies
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Lavrov_Diplomacy
-		}
-		x = -1
-		y = 1
-		relative_position_id = SOV_Lavrov_Diplomacy
-
-	}
-	focus = {
-		id = SOV_Friendship_with_Former_SSR
-		icon = GFX_focus_SOV_for_the_unity_of_the_peoples
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Secure_Belo_Russo_Tie
-			focus = SOV_Secure_CSTO_Partner
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Secure_CSTO_Partner
-
-	}
-	focus = {
-		id = SOV_Secure_Chinese_Partner
-		icon = GFX_focus_SOV_attract_chinese_investors
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Lavrov_Diplomacy
-		}
-		x = 1
-		y = 1
-		relative_position_id = SOV_Lavrov_Diplomacy
-
 	}
 	focus = {
 		id = SOV_Ukrainian_Strategy
 		icon = GFX_focus_SOV_restore_breadbasket
 		cost = 5.00
 		prerequisite = {
-			focus = SOV_Friendship_with_Former_SSR
-			focus = SOV_Secure_Chinese_Partner
+			focus = SOV_Our_internal_security
 		}
 		x = 0
 		y = 1
-		relative_position_id = SOV_Friendship_with_Former_SSR
+		relative_position_id = SOV_Our_internal_security
 
 	}
 	focus = {
@@ -483,31 +652,6 @@ focus_tree = {
 		x = 0
 		y = 1
 		relative_position_id = SOV_Stupid_Intelligence
-
-	}
-	focus = {
-		id = SOV_Friend_with_IND
-		icon = GFX_focus_SOV_relation_with_IND
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Lavrov_Diplomacy
-		}
-		x = 3
-		y = 1
-		relative_position_id = SOV_Lavrov_Diplomacy
-
-	}
-	focus = {
-		id = SOV_Secure_PRK
-		icon = GFX_focus_SOV_relation_with_PRK
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Secure_Chinese_Partner
-			focus = SOV_Friend_with_IND
-		}
-		x = 1
-		y = 1
-		relative_position_id = SOV_Secure_Chinese_Partner
 
 	}
 	focus = {

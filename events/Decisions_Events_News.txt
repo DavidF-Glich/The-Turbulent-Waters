@@ -6,6 +6,7 @@ country_event = {
 	desc = decision_event_news.1.d
 	hidden = yes
 	timeout_days = 1
+	fire_only_once = yes
 	option = {
 		name = decision_event_news.1.a
 		228 = {

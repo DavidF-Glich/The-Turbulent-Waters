@@ -1,0 +1,65 @@
+KOR_daewoo_precision_industries = {
+	include = generic_infantry_equipment_organization
+	icon = GFX_idea_KOR_daewoo
+	allowed = { tag = KOR }
+}
+
+KOR_dasan_machineries_organization = {
+	include = generic_support_equipment_organization
+	icon = GFX_idea_generic_infantry_equipment_manufacturer_1
+	allowed = {	tag = KOR }
+}
+
+KOR_hanwha_defense_organization = {
+	include = generic_artillery_organization
+	icon = GFX_idea_KOR_hanhwa
+	allowed = {	tag = KOR }
+}
+
+KOR_hyundai_wia_manufacturer = {
+	include = generic_motorized_mechanized_organization
+	icon = GFX_idea_KOR_Hyundai_Wia
+	allowed = { tag = KOR }
+}
+
+KOR_hanwha_defense_organization2= {
+	include = generic_tank_organization
+	icon = GFX_idea_KOR_hanhwa
+	allowed = { tag = KOR }
+}
+
+KOR_hyundai_rotem_manufacturer = {
+	include = generic_medium_tank_organization
+	icon = GFX_idea_KOR_Hyundai_Rotem
+	allowed = { tag = KOR }
+}
+
+KOR_hanwha_aerospace_organization = {
+	include = generic_light_aircraft_organization
+	icon = GFX_idea_KOR_hanhwa
+	allowed = { tag = KOR }
+}
+
+KOR_korea_aerospace_industries_organization = {
+	include = generic_medium_aircraft_organization
+	icon = GFX_idea_KOR_kai
+	allowed = { tag = KOR }
+}
+
+KOR_KAL_organization = {
+	include = generic_general_aircraft_organization
+	icon = GFX_idea_KOR_korean_air
+	allowed = { tag = KOR }
+}
+
+KOR_daewoo_shipbuilding_naval_manufacturer = {
+	include = generic_task_force_ship_organization
+	icon = GFX_idea_KOR_dsme
+	allowed = { tag = KOR }
+}
+
+KOR_hyundai_heavy_industries_naval_manufacturer = {
+	include = generic_escort_ship_organization
+	icon = GFX_idea_KOR_hyundai
+	allowed = { tag = KOR }
+}

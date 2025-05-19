@@ -1,0 +1,29 @@
+add_namespace = SOV_SMO_news
+#Kharkov
+news_event = {
+	id = SOV_SMO_news.1
+	title = SOV_SMO_news.1.title
+	desc = SOV_SMO_news.1.desc
+	picture = GFX_Kharkov
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = SOV_SMO_news.1.a
+	}
+}
+#Severodonetsk
+news_event = {
+	id = SOV_SMO_news.2
+	title = SOV_SMO_news.2.t
+	desc = SOV_SMO_news.2.d
+	picture = GFX_Severodonetsk
+	is_triggered_only = yes
+	major = yes
+	trigger = {
+	}
+	option = {
+		name = SOV_SMO_news.2.a
+	}
+}

@@ -1,95 +1,338 @@
 
-## THEME: Chinese CITIES ###
-PRC_CITIES = {
-	name = NAME_THEME_CITIES
+## THEME: Chinese REGIONS ###  
+PRC_REGIONS = {  
+	name = NAME_THEME_PROVINCES  
+	for_countries = { PRC CHI }  
+	type = ship  
+	#ship_types = { ship_hull_heavy ship_hull_cruiser ship_hull_carrier }  
+	fallback_name = "Aircraft Carrier No. %d"  
+	ordered = {  
+		1 = {"Liaoning Ship"}  
+		2 = {"Shandong Ship"}  
+		3 = {"Fujian Ship"}  
+		4 = {"Hainan Ship"}  
+		5 = {"Guangxi Ship"}  
+		6 = {"Anhui Ship"}  
+		7 = {"Sichuan Ship"}  
+		8 = {"Beijing Ship"}  
+		9 = {"Tianjin Ship"}  
+		10 = {"Hebei Ship"}  
+		11 = {"Shanxi Ship"}  
+		12 = {"Inner Mongolia Ship"}  
+		13 = {"Jilin Ship"}  
+		14 = {"Heilongjiang Ship"}  
+		15 = {"Shanghai Ship"}  
+		16 = {"Jiangsu Ship"}  
+		17 = {"Zhejiang Ship"}  
+		18 = {"Jiangxi Ship"}  
+		19 = {"Henan Ship"}  
+		20 = {"Hubei Ship"}  
+		21 = {"Hunan Ship"}  
+		22 = {"Guangdong Ship"}  
+		23 = {"Chongqing Ship"}  
+		24 = {"Guizhou Ship"}  
+		25 = {"Yunnan Ship"}  
+		26 = {"Tibet Ship"}  
+		27 = {"Shaanxi Ship"}  
+		28 = {"Gansu Ship"}  
+		29 = {"Qinghai Ship"}  
+		30 = {"Ningxia Ship"}  
+		31 = {"Xinjiang Ship"}  
+		32 = {"Taiwan Ship"}  
+		33 = {"Hong Kong Ship"}  
+		34 = {"Macau Ship"}  
+		35 = {"Mongolia Ship"}  
+		36 = {"Boli Ship"}  
+		37 = {"Miaojie Ship"}  
+		38 = {"Xing'an Ship"}  
+		39 = {"Qimuni Ship"}  
+		40 = {"Sakhalin Ship"}  
+	}  
+}  
 
-	for_countries = { PRC CHI }
+## THEME: Chinese CITIES ###  
+PRC_CITIES = {  
+	name = NAME_THEME_CITIES  
+	for_countries = { PRC CHI }  
+	type = ship  
+	#ship_types = { ship_hull_heavy ship_hull_light ship_hull_cruiser ship_hull_submarine }  
+	fallback_name = "Missile Destroyer No. %d"  
+	ordered = {  
+		1 = {"Chengdu Ship"}  
+		2 = {"Qiqihar Ship"}  
+		3 = {"Urumqi Ship"}  
+		4 = {"Guiyang Ship"}  
+		5 = {"Changchun Ship"}  
+		6 = {"Jinan Ship"}  
+		7 = {"Nanchang Ship"}  
+		8 = {"Lhasa Ship"}  
+		9 = {"Dalian Ship"}  
+		10 = {"Anshan Ship"}  
+		11 = {"Wuxi Ship"}  
+		12 = {"Xiamen Ship"}  
+		13 = {"Nanjing Ship"}  
+		14 = {"Zibo Ship"}  
+		15 = {"Taiyuan Ship"}  
+		16 = {"Zhengzhou Ship"}  
+		17 = {"Xi'an Ship"}  
+		18 = {"Hangzhou Ship"}  
+		19 = {"Fuzhou Ship"}  
+		20 = {"Taizhou Ship"}  
+		21 = {"Ningbo Ship"}  
+		22 = {"Kunming Ship"}  
+		23 = {"Changsha Ship"}  
+		24 = {"Yinchuan Ship"}  
+		25 = {"Hefei Ship"}  
+		26 = {"Hohhot Ship"}  
+		27 = {"Lanzhou Ship"}  
+		28 = {"Haikou Ship"}  
+		29 = {"Shenzhen Ship"}  
+		30 = {"Zhanjiang Ship"}  
+		31 = {"Xining Ship"}  
+		# The above are ships existing in the game  
+		32 = {"Shenyang Ship"}  
+		33 = {"Shijiazhuang Ship"}  
+		34 = {"Harbin Ship"}  
+		35 = {"Qingdao Ship"}  
+		36 = {"Guangzhou Ship"}  
+		37 = {"Wuhan Ship"}  
+		38 = {"Changchun Ship"}  
+		39 = {"Tangshan Ship"}  
+		40 = {"Huainan Ship"}  
+		41 = {"Kaifeng Ship"}  
+		42 = {"Cangzhou Ship"}  
+		43 = {"Suzhou Ship"}  
+		44 = {"Baotou Ship"}  
+		45 = {"Shaoxing Ship"}  
+		46 = {"Dazhou Ship"}  
+		47 = {"Lishui Ship"}  
+		48 = {"Nanning Ship"}  
+		49 = {"Jiaozuo Ship"}  
+		50 = {"Guilin Ship"}  
+		51 = {"Weinan Ship"}  
+		52 = {"Yan'an Ship"}  
+		53 = {"Zunyi Ship"}  
+		54 = {"Xianyang Ship"}  
+	}  
+}  
 
+## THEME: Chinese small-medium CITIES ###  
+PRC_SMALL_MEDIUM_CITIES = {  
+	name = NAME_THEME_SMALL_MEDIUM_CITIES  
+	for_countries = { PRC CHI }  
+	type = ship  
+	#ship_types = { ship_hull_heavy ship_hull_light ship_hull_cruiser ship_hull_submarine }  
+	fallback_name = "Missile Frigate No. %d"  
+	ordered = {  
+		1 = {"Yantai Ship"}  
+		2 = {"Yancheng Ship"}  
+		3 = {"Linyi Ship"}  
+		4 = {"Daqing Ship"}  
+		5 = {"Hengyang Ship"}  
+		6 = {"Weifang Ship"}  
+		7 = {"Handan Ship"}  
+		8 = {"Wuhu Ship"}  
+		9 = {"Zaozhuang Ship"}  
+		10 = {"Yichang Ship"}  
+		11 = {"Huludao Ship"}  
+		12 = {"Sanmenxia Ship"}  
+		13 = {"Huangshi Ship"}  
+		14 = {"Qinhuangdao Ship"}  
+		15 = {"Wuhai Ship"}  
+		16 = {"Zhangye Ship"}  
+		17 = {"Datong Ship"}  
+		18 = {"Yingkou Ship"}  
+		19 = {"Weihai Ship"}  
+		20 = {"Fushun Ship"}  
+		21 = {"Xinyang Ship"}  
+		22 = {"Zhoushan Ship"}  
+		23 = {"Xuzhou Ship"}  
+		24 = {"Yiyang Ship"}  
+		25 = {"Changzhou Ship"}  
+		26 = {"Huanggang Ship"}  
+		27 = {"Yangzhou Ship"}  
+		28 = {"Jingzhou Ship"}  
+		29 = {"Xiangtan Ship"}  
+		30 = {"Binzhou Ship"}  
+		31 = {"Rizhao Ship"}  
+		32 = {"Anyang Ship"}  
+		33 = {"Nantong Ship"}  
+		34 = {"Jiaxing Ship"}  
+		35 = {"Sanming Ship"}  
+		36 = {"Huaihua Ship"}  
+		37 = {"Xiangyang Ship"}  
+		38 = {"Zhaoqing Ship"}  
+		39 = {"Zhuzhou Ship"}  
+		40 = {"Yiwu Ship"}  
+		41 = {"Xuancheng Ship"}  
+		42 = {"Yichun Ship"}  
+		43 = {"Deyang Ship"}  
+		44 = {"Shuozhou Ship"}  
+		45 = {"Liaocheng Ship"}  
+		46 = {"Bengbu Ship"}  
+		47 = {"Shangrao Ship"}  
+		48 = {"Jian Ship"}  
+		49 = {"Quanzhou Ship"}  
+		50 = {"Suzhou Ship"}  
+		51 = {"Baoding Ship"}  
+		52 = {"Ezhou Ship"}  
+		53 = {"Huangshan Ship"}  
+		54 = {"Xuchang Ship"}  
+		55 = {"Yuncheng Ship"}  
+		56 = {"Yulin Ship"}  
+		57 = {"Hengshui Ship"}  
+		58 = {"Liuzhou Ship"}  
+		59 = {"Sanya Ship"}  
+		60 = {"Yueyang Ship"}  
+		61 = {"Xianning Ship"}  
+		62 = {"Luoyang Ship"}  
+		63 = {"Mianyang Ship"}  
+		64 = {"Beihai Ship"}  
+		65 = {"Dongguan Ship"}  
+		66 = {"Shantou Ship"}  
+		67 = {"Jiangmen Ship"}  
+		68 = {"Foshan Ship"}  
+		69 = {"Suqian Ship"}  
+		70 = {"Hanzhong Ship"}  
+		71 = {"Suining Ship"}  
+		72 = {"Guangyuan Ship"}  
+		73 = {"Nanchong Ship"}  
+		74 = {"Bazhong Ship"}  
+		75 = {"Wuzhou Ship"}  
+		76 = {"Wenshan Ship"}  
+		77 = {"Meizhou Ship"}  
+		78 = {"Baise Ship"}  
+		79 = {"Jieyang Ship"}  
+		80 = {"Qingyuan Ship"}  
+		81 = {"Luzhou Ship"}  
+		82 = {"Jingmen Ship"}  
+		83 = {"Tongren Ship"}  
+		84 = {"Qujing Ship"}  
+		85 = {"Liupanshui Ship"}  
+		# The above are ships existing in the game  
+		86 = {"Shaoguan Ship"}  
+		87 = {"Ma'anshan Ship"}  
+		88 = {"Wenzhou Ship"}  
+		89 = {"Huaibei Ship"}  
+		90 = {"Quzhou 'Model Vessel for Scientific Training' Ship"}  
+		91 = {"Ziyang 'Pioneer Vessel at Sea' Ship"}  
+		92 = {"Honghe 'Tiger Vessel at Sea' Ship"}  
+		93 = {"Zhoushan Ship"}  
+		94 = {"Xuzhou Ship"}  
+		95 = {"Baoji Ship"}  
+		96 = {"Yixing Ship"}  
+		97 = {"Xichang Ship"}  
+		98 = {"Yiyang Ship"}  
+		99 = {"Changzhou Ship"}  
+		100 = {"Bayannur Ship"}  
+		101 = {"Chenzhou Ship"}  
+		102 = {"Dali Ship"}  
+		103 = {"Tongliao Ship"}  
+		104 = {"Songyuan Ship"}  
+		105 = {"Pingdingshan Ship"}  
+		106 = {"Dingzhou Ship"}  
+		107 = {"Mudanjiang Ship"}  
+		108 = {"Zhangjiakou Ship"}  
+		109 = {"Xinji Ship"}  
+		110 = {"Dongying Ship"}  
+		111 = {"Shizuishan Ship"}  
+		112 = {"Liuan Ship"}  
+		113 = {"Xiaogan Ship"}  
+		114 = {"Taian Ship"}  
+		115 = {"Jingdezhen Ship"}  
+		116 = {"Shangqiu Ship"}  
+		117 = {"Nanyang Ship"}  
+		118 = {"Ganzhou Ship"}  
+		119 = {"Panzhihua Ship"}  
+		120 = {"Guang'an Ship"}  
+		121 = {"Suizhou Ship"}  
+		122 = {"Enshi Ship"}  
+		123 = {"Yongzhou Ship"}  
+		124 = {"Tongling Ship"}  
+		125 = {"Aba Ship"}  
+		126 = {"Tianmen Ship"}  
+		127 = {"Jining Ship"}  
+		128 = {"Shiyan Ship"}  
+		129 = {"Huai'an Ship"} # This replaces the bugged Sanmenxia Ship  
+	}  
+}  
+
+PRC_THREE_KINGDOMS = {  
+	name = NAME_THREE_KINGDOMS  
+	for_countries = { PRC }  
+	type = ship  
+	unique = {  
+		# Cao Wei Camp  
+			"Cao Cao Ship" "Sima Yi Ship" "Xiahou Dun Ship" "Guo Jia Ship" "Zhang Liao Ship" "Jia Xu Ship" "Zhong Yao Ship" "Guo Huai Ship" "Wen Yang Ship"  
+		# Shu Han Camp  
+			"Liu Bei Ship" "Guan Yu Ship" "Zhang Fei Ship" "Zhuge Liang Ship" "Zhao Yun Ship" "Jiang Wei Ship" "Jiang Wan Ship" "Fei Yi Ship" "Yan Yan Ship"  
+		# Eastern Wu Camp  
+			"Sun Quan Ship" "Lu Xun Ship" "Zhuge Jin Ship" "Zhou Yu Ship" "Sun Jian Ship" "Xu Sheng Ship" "Gan Ning Ship"  
+		# Others  
+			"Lü Bu Ship 'Model Vessel Loyal to the Party'" "Yuan Shao Ship" "Zhang Xiu Ship" "Xiahou Ba Ship" "Xu Rong Ship"  
+	}  
+}  
+
+PRC_FAMOUS_SCIENTIST = {  
+	name = NAME_FAMOUS_SCIENTIST  
+	for_countries = { PRC }  
+	type = ship  
+	unique = {  
+		"Li Siguang Ship" "Zhu Kezhen Ship" "Qian Sanqiang Ship" "Qian Xuesen Ship" "Deng Jiaxian Ship" "Qian Weichang Ship" "Chen Jingrun Ship" "Wang Ganchang Ship" "Zhu Guangya Ship" "Mao Yisheng Ship" "Bi Sheng Ship" "Hua Luogeng Ship" "Zhan Tianyou Ship" "Wu Yunduo Ship" "Huang Weilu Ship"  
+		"Li Bing Ship" "Cai Lun Ship" "Zhang Heng Ship" "Wang Xuan Ship" "Nan Rendong Ship" "Tang Feifan Ship" "Zeng Chengkui Ship" "Shen Kuo Ship" "Song Yingxing Ship" "Sima Qian Ship"  
+	}  
+}  
+
+PRC_LEADERS = {  
+	name = NAME_FAMOUS_NAVIGATOR_AND_NATIONAL_HERO  
+	for_countries = { PRC }  
+	type = ship  
+	unique = {  
+		"Zheng He Ship 'Meritorious Training Vessel'" "Deng Shichang Ship" "Qi Jiguang Ship" "Xu Xiake Ship" "Soong Ching-ling Ship"  
+		"Sun Yat-sen Ship" "Cai E Ship" "Zuo Baogui Ship" "Lin Yongsheng Ship" "Ding Ruchang Ship" "Zheng Chenggong Ship" "Ban Chao Ship" "Wang Xuance Ship 'Vessel of Single-Handed National Pacification'" "Shi Lang Ship" "Sa Zhenbing Ship" "Guan Tianpei Ship" "Yu Dayou Ship" "Chen Shaokuan Ship" "Wang Dayuan Ship" "Wang Jinghong Ship" "Xu Jing Ship" "Chen Jitong Ship" "Li Bao Ship" "Fa Xian Ship" "Xian Ying Ship" "Qin Liangyu Ship" "Qi Taishi Ship" "Dong Hu Ship" "Zhang Liang Ship" "Su Wu Ship" "Yan Yan Ship" "Ji Kang Ship" "Zhang Xun Ship" "Yan Gaoqing Ship"  
+	}  
+}  
+
+PRC_SS_CHANG_ZHENG_SUBMARINE = {  
+	name = NAME_THEME_HISTORICAL_CHANG_ZHENG  
+	for_countries = { PRC CHI }  
+	type = ship  
+	ship_types = { ship_hull_submarine submarine }  
+	ordered = {  
+		3 = {"Long March 3 'Underwater Vanguard Vessel' Ship"}  
+	}  
+	fallback_name = "Long March No. %d"  
+}  
+
+PRC_SS_YUAN_ZHENG_SUBMARINE = {  
+	name = NAME_THEME_HISTORICAL_YUAN_ZHENG  
+	for_countries = { PRC CHI }  
+	type = ship  
+	ship_types = { ship_hull_submarine submarine }  
+	ordered = {  
+		72 = {"Yuanzheng 72 'Model Vessel for Fulfilling the Strong Army Objective' Ship"}  
+	}  
+	fallback_name = "Yuanzheng No. %d"  
+}  
+
+TFRTE_PRC_LAKES = {
+	name = lakes
+	for_countries = {
+		PRC CHI
+	}
 	type = ship
-	#ship_types = { ship_hull_heavy ship_hull_light ship_hull_cruiser ship_hull_submarine }
-						
 	unique = {
-		"Peking" "Nanking" "Hong Kong" "Macau" "Fuan" "Jianou" "Longhai" "Putian" "Shishi" "Xiamen"
-		"Wuhu" "Tianchang" "Tongling" "Sanming" "Shaowu" "Hezuo" "Linxia" "Lanzhou" "Kaiping" "Lechang"
-		"Puning" "Shantou" "Enping" "Heshan" "Jieyang" "Yunfu" "Baise" "Beihai" "Meizhou" "Shanwei"
-		"Sihui" "Lipu" "Cenxi" "Hechi" "Bijie" "Kaili" "Zunyi" "Haikou" "Duyun" "Botou" "Handan"
-		"Baoding" "Sanhe" "Shahe" "Wu'an" "Jixi" "Nehe" "Qiqihar" "Hebi" "Jiaozuo" "Luohe"
-		"Xuchang" "Xinmi" "Wugang" "Xuchang" "Luohe" "Linzhou" "Hebi" "Yima" "Yanshi" "Xinzheng"
-		"Yongcheng" "Zhoukou" "Anlu" "Chibi" "Daye" "Lichuan" "Shiyan" "Macheng" "Songzi" "Tianmen"
-		"Wuxue" "Yidu" "Xiantao" "Yichang" "Changde" "Zhijiang" "Yiyang" "Jishou" "Liuyang" "Yuanjiang"
-		"Erenhot" "Fengzhen" "Genhe" "Ordos" "Tongliao" "Wuhai" "Ergun" "Zixing" "Gaoyou" "Kunshan"
-		"Nantong" "Pizhou" "Qidong" "Wuxi" "Xinyi" "Danyang" "Zhangjiagang" "Zhenjiang" "Dexing" "Taipei"
+		"Hongze Lake Ship" "Poyang Lake Ship" "Qinghai Lake Ship" "Qiandao Lake 'Oceanic Supply Pacemaker Ship' Ship" "Weishan Lake Ship" "Taihu Lake Ship" "Chaohu Lake Ship" "Dongping Lake Ship" "Gaoyou Lake Ship" "Honghu Lake Ship" "Luoma Lake Ship" "Kekexili Lake Ship" "Hulun Lake Ship" "Chagan Lake Ship" "Dongting Lake Ship" "Jingpo Lake Ship" "Fuxian Lake Ship" "Junshan Lake Ship" "Lugu Lake Ship" "Baima Lake Ship" "Kanas Lake Ship" "Nanyi Lake Ship" "Taiping Lake Ship" "Ulanbuh Sea Ship" "Dongqian Lake Ship" "Sayram Lake Ship" "Xiangyang Lake Ship" "Yangcheng Lake Ship" "West Lake Ship"
 	}
 }
 
-## THEME: Chinese REGIONS ###
-PRC_REGIONS = {
-	name = NAME_THEME_REGIONS
-
-	for_countries = { PRC CHI }
-
-	type = ship
-	#ship_types = { ship_hull_heavy ship_hull_cruiser ship_hull_carrier }
-
-	unique = {
-	"Hebei" "Shandong" "Anhui" "Liaoning" "Andong" "Chahar" "Gansu" "Qinghai" "Sichuan" "Guizhou" "Guangxi"
-	"Guangdong" "Yunnan" "Fujian" "Jiangxi" "Hupei" "Henan" "Shanxi" "Suiyuan" "Rehe" "Xingan" "Heilongjiang" "Heijang"
-	"Xikang" "Ningxia"
+TFRTE_PRC_STARS_AND_CONSTELLATIONS = {
+	name = NAME_STARS_AND_CONSTELLATIONS
+	for_countries = {
+		PRC CHI
 	}
-}
-
-## THEME: Chinese River Mountain ###
-PRC_RIVER_MOUNTAIN = {
-	name = NAME_THEME_RIVER_MOUNTAIN
-
-	for_countries = { PRC CHI }
-
 	type = ship
-
 	unique = {
-	#Rivers
-	"Ussuri" "Muling" "Songacha" "Ashi" "Hulan" "Woken" "Mudan" "Nen" "Huifa" "Gan" "Hailar" "Kherlen" "Buir Lake" "Taizi" "Daliao" "Yantai" "Gou" "Shi" "Luan" "Hai" "Jiujiang" "Chaobai" "Chao" "Wei" "Zhang" 
-	"Yongding" "Sanggan" "Tuhai" "Luo" "Qin" "Qingshui" "Daxia" "Fen" "Wuding" "Huang He" "Xiaoqing" "Zihe" "Tahe" "Yanghe" "Yalu" "Dayang" "Yingna" "Xiaoxi" "Huai" "Shiguan" "Hong" "Jiao" "Xiaoxi" "Yue" "Ming" "Huangpu" "Xitiao" "Qinhuai"
-	"Hongze Lake" "Nanfei" "Qingyi" "Zhaxi" "Machuan" "Gan" "Gongshui" "Fuhe" "She" "Muma" "Du" "Xiang" "Xiaoxui" "Zhengshui" "Lishui" "Qing" "Daning" "Modao" "Min" "Mulan" "Ting" "Xinfeng" "Xinjiang" "Liu" "Rong" "Lancang" "Nandu" "Wanquan" "Nyang" 
-	
-	#Mountains
-	"Amne Machin" "Badaling" "Paekdu" "Baishi" "Baiyun" "Beiwudang" "Bukadaban" "Cangyan" "Changla" "Chakrgil" "Chongtar Kangri" "Danxia" "Dinghu" "Dunhong" "Emei" "Erlang" "Everest" "Gasherbrum" "Gauri Sankar" "Gongga" "Haba Xueshan"
-	"Khuiten Peak" "Jade Dragon Snow Mountain" "Jiangjun" "Jizu" "Jongsong" "K2" "Kangto" "Kawagarbo" "Khumbutse" "Kubi Gangri" "Langtang Ri" "Laojun" "Lao" "Lhotse" "Mount Liang" "Lingtren" "Liushi Shan" "Longhu" "Luofu" "Makalu" "Mazong"
-	"Longmen" "Mogan" "Pan" "Phu Si Lung" "Porong Ri" "Pumori" "Putuo" "Qionglong" "Qixia" "Sanqing" "Shenquang" "Shennong" "Shishapangma" "Taibai" "Tai" "Tavan Bogd" "Tianmu" "Tiantangzhai" "Tiandang" "Wunu" "Wugai" "Wuzhi" "Xiao" "Xiqiao"
-	"Yangmolong" "Yiwulu" "Yun" "Yunlong" "Yuntai" "Yuzhu" "Changbai" "Huangshan"
-	}
-}
-
-## THEME: Chinese Three Kingdoms ###
-PRC_THREE_KINGDOMS = {
-	name = NAME_THREE_KINGDOMS
-
-	for_countries = { PRC CHI }
-
-	type = ship
-	#ship_types = { ship_hull_cruiser  ship_hull_carrier }
-						
-	unique = {
-		"Cao Cao" "Sun Quan" "Liu Bei" "Guan Yu" "Zhang Fei" "Zhuge Liang" "Zhao Yun" "Sima Yi" "Xiahou Dun" "Guo Jia" "Zhang Liao" "Lu Xun" "Zhuge Jin" "Zhou Yu" "Lu Bu"
-	}
-}
-
-PRC_LEADERS = {
-	name = NAME_THEME_LEADERS
-
-	for_countries = { PRC CHI }
-
-	type = ship
-	#ship_types = { ship_hull_heavy ship_hull_carrier }
-						
-	unique = {
-	  #Wuxu Reform
-	  "Kang Youwei"
-	  #Opium Wars
-	  "Lin Zexu"
-	  #Xinhai Revolution
-		"Sun Yat-sen" "Li Yuanhong" "Song Jiaoren" "Huang Xing" "Cai Genyin" "Chen Qimei" "Xiong Bingkun" "Hu Hanmin" "Soong Ching-ling"
-		#Famous writer
-		"Lu Xin"
+		"Neptune Ship" "Polaris Ship" "Uranus Ship" "Sirius Ship" "Megrez Ship" "Mizar Ship" "Dubhe Ship" "Alioth Ship" "Venus Ship" "Merak Ship" "Alkaid Ship"
 	}
 }

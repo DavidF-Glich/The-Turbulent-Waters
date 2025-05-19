@@ -7,8 +7,10 @@
 			}
 			country_leader={
 				ideology = neoliberalism
-				desc = KOR_moon_jae_in_char_desc
 				expire = "1.1.1.1"
+				traits = {
+					hog_naive_optimist
+				}
 			}
 		}
 		
@@ -35,100 +37,506 @@
 				expire = "1.1.1.1"
 			}
 		}
-		
-		KOR_han_min_goo_char = {
-			portraits={
+		#Army
+		KOR_Jo_Jeong_hwan = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/generals/Han_Min_Goo.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Jo_Jeong_hwan.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Jo_Jeong_hwan.png"
 				}
 			}
-
-			corps_commander={
-				skill=2
+			corps_commander = {
+				traits = {
+					adaptable
+					infantry_leader
+				}
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = ryoji_takemoto
+				ledger = army
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+				    army_chief_organizational_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			field_marshal = {
+				traits = {
+					organizer
+					career_officer
+					organisational_leader
+				}
+				skill = 4
+				attack_skill = 3
+				defense_skill = 4
+				planning_skill = 3
+				logistics_skill = 3
 			}
 		}
-	
-		KOR_jang_jun_gyu_char = {
-			portraits={
+		KOR_Kim_Yong_Woo = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/generals/Jang_Jun_Gyu.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Kim_Yong_Woo.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Kim_Yong_Woo.png"
 				}
 			}
-
-			corps_commander={
-				skill=2
+			corps_commander = {
+				traits = {
+					adaptable
+					infantry_leader
+				}
+				skill = 2
+				attack_skill = 3
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = army_chief
+				idea_token = Kim_Yong_Woo
+				ledger = army
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					army_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			field_marshal = {
+				traits = {
+					organizer
+					career_officer
+					organisational_leader
+				}
+				skill = 4
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
 			}
 		}
-		
-		KOR_jeong_seung_jo_char = {
-			portraits={
+		KOR_Nam_Yeong_Shin = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/generals/Chiu_Kuo_Cheng.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Nam_Yeong_Shin.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Nam_Yeong_Shin.png"
 				}
 			}
-
-			corps_commander={
-				skill=1
+			corps_commander = {
+				traits = {
+					adaptable
+					infantry_leader
+				}
+				skill = 2
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = high_command
+				idea_token = Nam_Yeong_Shin
+				ledger = army
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					army_commando_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
-	
-		KOR_kim_kwan_jin_char = {
-			portraits={
+		KOR_Park_Han_Gi = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/generals/Kim_Kwan_Jin.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Park_Han_Gi.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Park_Han_Gi.png"
 				}
 			}
-
-			corps_commander={
-				skill=1
+			corps_commander = {
+				traits = {
+					adaptable
+					infantry_leader
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 3
+			}
+			advisor = {
+				slot = high_command
+				idea_token = Park_Han_Gi
+				ledger = army
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					army_infantry_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
-		
-		KOR_lee_sang_hoon_char = {
-			portraits={
+		KOR_Park_An_Su = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/generals/Lee_Sang_Hoon.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Park_An_Su.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Park_An_Su.png"
 				}
 			}
-
-			corps_commander={
-				skill=1
+			corps_commander = {
+				traits = {
+					army_adaptibility_1
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				planning_skill = 1
+				logistics_skill = 2
+			}
+			advisor = {
+				slot = high_command
+				idea_token = Park_An_Su
+				ledger = army
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					army_infantry_1
+				}
+				cost = 50
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
-	
-		KOR_lee_soon_jin_char = {
-			portraits={
+		KOR_Park_Jeong_Hwan = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/generals/Lee_Soon_Jin.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Park_Jeong_Hwan.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Park_Jeong_Hwan.png"
 				}
 			}
-
-			corps_commander={
-				skill=1
+			corps_commander = {
+				traits = {
+					infantry_leader
+				}
+				skill = 3
+				attack_skill = 2
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			advisor = {
+				slot = high_command
+				idea_token = Park_Jeong_Hwan
+				ledger = army
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					army_chief_morale_1
+				}
+				cost = 50
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
-		
-		KOR_jung_ho_sub_char = {
-			portraits={
+		KOR_Kim_Seung_Kyum = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/admirals/Jung_Ho_Sub.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Kim_Seung_Kyum.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/generals/Kim_Seung_Kyum.png"
 				}
 			}
-
-			navy_leader={
-				skill=2
+			corps_commander = {
+				traits = {
+					infantry_leader
+				}
+				skill = 3
+				attack_skill = 3
+				defense_skill = 2
+				planning_skill = 1
+				logistics_skill = 1
+			}
+			advisor = {
+				slot = high_command
+				idea_token = Kim_Seung_Kyum
+				ledger = air
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					air_airborne_1
+				}
+				cost = 50
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
-		
-		KOR_lee_ki_sik_char = {
-			portraits={
+		KOR_Kim_Myung_Su = {
+			portraits = {
 				army = {
-					large = "gfx/Leaders/KOR/admirals/Lee_Ki_Sik.dds" 
+					small = "gfx/interface/ideas/KOR/advisor/Kim_Myung_Su.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/navy/Kim_Myung_Su.png"
 				}
 			}
-
-			navy_leader={
-				skill=1
+			navy_leader = {
+				skill = 3
+				attack_skill = 2
+				defense_skill = 1
+				maneuvering_skill = 4
+				coordination_skill = 3
+				traits = {
+					bold
+					destroyer_leader
+					loading_drill_master
+					cuts_corners
+				}
+			}
+			advisor = {
+				slot = high_command
+				idea_token = Kim_Myung_Su
+				ledger = navy
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					navy_screen_1
+				}
+				cost = 50
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+		#Navy
+		KOR_Boo_Suk_Jong = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/KOR/advisor/Boo_Suk_Jong.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/admirals/Boo_Suk_Jong.png"
+				}
+			}
+			advisor = {
+				slot = navy_chief
+				idea_token = Boo_Suk_Jong
+				ledger = navy
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					navy_chief_decisive_battle_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			navy_leader = {
+				traits = {
+					crisis_magician
+					marksman
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		KOR_Kim_Jeong_Su = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/KOR/advisor/Kim_Jeong_Su.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/admirals/Kim_Jeong_Su.png"
+				}
+			}
+			advisor = {
+				slot = navy_chief
+				idea_token = Kim_Jeong_Su
+				ledger = navy
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					navy_chief_reform_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			navy_leader = {
+				traits = {
+					navy_career_officer
+					bold
+					blockade_runner
+					green_water_expert
+					destroyer_leader
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		KOR_Shim_Seung_Sub = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/KOR/advisor/Shim_Seung_Sub.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/admirals/Shim_Seung_Sub.png"
+				}
+			}
+			advisor = {
+				slot = navy_chief
+				idea_token = Shim_Seung_Sub
+				ledger = navy
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					navy_chief_maneuver_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+			navy_leader = {
+				traits = {
+					chief_engineer
+					blockade_runner
+					fleet_protector
+					destroyer_leader
+				}
+				skill = 2
+				attack_skill = 2
+				defense_skill = 3
+				planning_skill = 2
+				logistics_skill = 2
+			}
+		}
+		#Air
+		KOR_Park_In_Ho = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/KOR/advisor/Park_In_Ho.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/admirals/Park_In_Ho.png"
+				}
+			}
+			advisor = {
+				slot = air_chief
+				idea_token = Park_In_Ho
+				ledger = air
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					air_air_superiority_2
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+		KOR_Yi_Seong_Yong = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/KOR/advisor/Yi_Seong_Yong.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/admirals/Yi_Seong_Yong.png"
+				}
+			}
+			advisor = {
+				slot = air_chief
+				idea_token = Yi_Seong_Yong
+				ledger = air
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					air_chief_all_weather_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
+			}
+		}
+		KOR_Won_In_Choul = {
+			portraits = {
+				army = {
+					small = "gfx/interface/ideas/KOR/advisor/Won_In_Choul.png"
+				}
+				army = {
+					large = "gfx/leaders/kor/admirals/Won_In_Choul.png"
+				}
+			}
+			advisor = {
+				slot = air_chief
+				idea_token = Won_In_Choul
+				ledger = air
+				allowed = {
+					original_tag = KOR
+				}
+				traits = {
+					air_chief_ground_support_1
+				}
+				cost = 100
+				ai_will_do = {
+					factor = 1
+				}
 			}
 		}
 	}

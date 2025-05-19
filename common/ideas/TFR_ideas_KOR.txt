@@ -1,354 +1,426 @@
-	ideas = {
-		country = {
+ideas = {
+	country = {
+	
+		KOR_recent_cyberattack = {
+			picture = KOR_recent_cyberattack
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				planning_speed = -0.2
+				attrition = 0.1
+				army_org_factor = -0.15
+			}
+		}
 		
-			KOR_recent_cyberattack = {
-			    picture = KOR_recent_cyberattack
-				
-				allowed = {
-				    always = no
-				}
-				modifier = {
-					planning_speed = -0.2
-					attrition = 0.1
-					army_org_factor = -0.15
-				}
+		KOR_dominance_of_chaebols = {
+			picture = KOR_dominance_of_chaebols
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.1
+				production_speed_buildings_factor = -0.05
+				misc_expense = 0.15
+				personal_value_factor = -0.25
+				poverty_development_monthly = -0.02
+				business_value_factor = 0.3
+			}
+		}
+		KOR_dominance_of_chaebols_2 = {
+			name = KOR_dominance_of_chaebols
+			picture = KOR_dominance_of_chaebols
+			
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = 0.025
+				production_speed_buildings_factor = 0.05
+				misc_expense = 0.05
+				personal_value_factor = -0.1
+				poverty_development_monthly = 0.02
+				business_value_factor = 0.1
+			}
+		}
+		KOR_aging_population_idea = {
+			picture = JAP_declining_population
+			
+			allowed = {
+				always = no
 			}
 			
-			KOR_dominance_of_chaebols = {
-			    picture = KOR_dominance_of_chaebols
-				
-				allowed = {
-				    always = no
-				}
-				modifier = {
-					consumer_goods_factor = 0.1
-					production_speed_buildings_factor = -0.05
-					misc_expense = 0.15
-					personal_value_factor = -0.25
-					poverty_development_monthly = -0.02
-					business_value_factor = 0.3
-				}
-			}
-			KOR_dominance_of_chaebols_2 = {
-				name = KOR_dominance_of_chaebols
-			    picture = KOR_dominance_of_chaebols
-				
-				allowed = {
-				    always = no
-				}
-				modifier = {
-					consumer_goods_factor = 0.025
-					production_speed_buildings_factor = 0.05
-					misc_expense = 0.05
-					personal_value_factor = -0.1
-					poverty_development_monthly = 0.02
-					business_value_factor = 0.1
-				}
-			}
-			KOR_aging_population_idea = {
-			    picture = JAP_declining_population
-				
-				allowed = {
-				    always = no
-				}
-				
-				modifier = {
-					monthly_population = -0.85
-					expense_growth_factor = 0.15
-					personal_value_factor = -0.1
-					personal_expense_factor = 0.1
-					inflation_monthly = -0.002
-					society_development_monthly = -0.04
-					poverty_development_monthly = -0.01
-				}
-			}
-			KOR_jap_military_advisors = {
-			    picture = JAP_Military_Exports
-				
-				allowed = {
-				    always = no
-				}
-				modifier = {
-					max_planning_factor = 0.1
-					training_time_factor = -0.1
-					max_command_power = 20
-				}
-			}
-			KOR_unplanned_offensive = {
-				picture = KOR_unplanned_offensive 
-
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				removal_cost = -1
-				
-				modifier = {
-					breakthrough_factor = -0.15
-					army_speed_factor = -0.2
-					army_attack_factor = -0.1
-				}
-			}
-			KOR_korean_neutrality = {
-				picture = KOR_korean_neutrality 
-
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				removal_cost = -1
-				
-				modifier = {
-					stability_factor = 0.10
-					war_support_factor = -0.50
-					production_speed_buildings_factor = 0.1
-					business_value_factor = 0.3
-
-				}
+			modifier = {
+				monthly_population = -0.85
+				expense_growth_factor = 0.15
+				personal_value_factor = -0.1
+				personal_expense_factor = 0.1
+				inflation_monthly = -0.002
+				society_development_monthly = -0.04
+				poverty_development_monthly = -0.01
 			}
 		}
-		head_minister = {
-			KOR_Lee_Nak_yon = {
-				picture = KOR_Lee_Nak_yon
-				name = KOR_Lee_Nak_yon_hog
-				allowed = {
-					original_tag = KOR
-				}
-				visible = {
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				traits = {
-					hog_committed_social_activist
-				}
+		KOR_jap_military_advisors = {
+			picture = JAP_Military_Exports
+			
+			allowed = {
+				always = no
 			}
-			KOR_Chung_Sye_Kyun = {
-				picture = KOR_Chung_Sye_Kyun
-				name = KOR_Chung_Sye_Kyun_hog
-				allowed = {
-					tag = KOR
-				}
-				visible = {
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				traits = {
-					hog_political_protege
-				}
-			}
-			KOR_Hong_Nam_ki_hog = {
-				picture = KOR_Hong_Nam_ki
-				name = KOR_Hong_Nam_ki_hog
-				allowed = {
-					tag = KOR
-				}
-				visible = {
-				}
-				available = {
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				traits = {
-					hog_technocratic_businessman
-				}
-			}
-			KOR_Kim_Boo_Kyum = {
-				picture = KOR_Kim_Boo_Kyum
-				name = KOR_Kim_Boo_Kyum_hog
-				allowed = {
-					tag = KOR
-				}
-				visible = {
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				traits = {
-					for_great_compromiser
-				}
-			}
-			KOR_Han_Duck_soo = {
-				picture = KOR_Han_Duck_soo
-				name = KOR_Han_Duck_soo_hog
-				allowed = {
-					tag = KOR
-				}
-				visible = {
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				traits = {
-					for_connected_businessman
-				}
-			}
-			KOR_Choi_Sang_mok_hog = {
-				picture = KOR_Choi_Sang_mok
-				name = KOR_Choi_Sang_mok_hog
-				allowed = {
-					tag = KOR
-				}
-				allowed_to_remove = {
-					head_minister_trigger = yes
-				}
-				traits = {
-					hog_pragmatic_statesman
-				}
+			modifier = {
+				max_planning_factor = 0.1
+				training_time_factor = -0.1
+				max_command_power = 20
 			}
 		}
-		economic_minister = {
-			KOR_Hong_Nam_ki_eco = {
-				picture = KOR_Hong_Nam_ki
-				name = KOR_Hong_Nam_ki_hog
-				allowed = {
-					tag = KOR
-				}
-				visible = {
-				}
-				available = {
-				}
-				allowed_to_remove = {
-				}
-				traits = {
-					hog_radical_financer
-				}
+		KOR_unplanned_offensive = {
+			picture = KOR_unplanned_offensive 
+
+			allowed = {
+				always = no
 			}
-			KOR_CHOO_Kyungho = {
-				picture = KOR_CHOO_Kyungho
-				name = KOR_CHOO_Kyungho_eco
-				allowed = {
-					tag = KOR
-				}
-				visible = {
-					
-				}
-				available = {
-					
-				}
-				traits = {
-					eco_economic_organizer
-				}
+
+			allowed_civil_war = {
+				always = yes
 			}
-			KOR_Choi_Sang_mok_eco = {
-				picture = KOR_Choi_Sang_mok
-				name = KOR_Choi_Sang_mok_eco
-				allowed = {
-					tag = KOR
-				}
-				allowed_to_remove = {
-				}
-				traits = {
-					eco_economic_populist
-				}
+
+			removal_cost = -1
+			
+			modifier = {
+				breakthrough_factor = -0.15
+				army_speed_factor = -0.2
+				army_attack_factor = -0.1
 			}
 		}
-		intelligence_minister = {
-			KOR_Suh_Hoon = {
-				picture = KOR_Suh_Hoon
-				name = KOR_Suh_Hoon_int
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					int_decryptor
-				}
+		KOR_korean_neutrality = {
+			picture = KOR_korean_neutrality 
+
+			allowed = {
+				always = no
 			}
-			KOR_Park_Jie_won = {
-				picture = KOR_Park_Jie_won
-				name = KOR_Park_Jie_won_int
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					int_encryptor
-				}
+
+			allowed_civil_war = {
+				always = yes
 			}
-			KOR_Kim_Kyoi_hyun = {
-				picture = KOR_Kim_Kyoi_hyun
-				name = KOR_Kim_Kyoi_hyun_int
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					int_balanced_cryptographer
-				}
-			}
-			KOR_Cho_Tae_yong = {
-				picture = KOR_Cho_Tae_yong
-				name = KOR_Cho_Tae_yong_int
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					int_resistance_crusher
-				}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.10
+				war_support_factor = -0.50
+				production_speed_buildings_factor = 0.1
+				business_value_factor = 0.3
+
 			}
 		}
-		theorist_minister = {
-			KOR_Jeong_Kyeong_doo = {
-				picture = KOR_Jeong_Kyeong_doo
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					army_chief_political_protege
+		KOR_surprise_offensive = {
+			name = PRK_surprise_offensive
+			picture = KOR_unplanned_offensive
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_speed_factor = -0.15
+				army_attack_factor = -0.15
+				breakthrough_factor = -0.25
+				army_org_factor = -0.1
+				planning_speed = -0.25
+			}
+		}
+		KOR_the_last_stand = {
+			picture = KOR_unplanned_offensive
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			available = {
+				NOT = {
+					controls_state = 1043
 				}
 			}
-			KOR_Suh_Wook = {
-				picture = KOR_Suh_Wook
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					army_chief_morale_1
-				}
-			}
-			KOR_Lee_Jonng_sup = {
-				picture = KOR_Lee_Jonng_sup
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					for_general_staffer
-				}
-			}
-			KOR_Shin_Won_sik = {
-				picture = KOR_Shin_Won_sik
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					mass_assault_expert
-				}
-			}
-			KOR_Kim_Yong_hyun = {
-				picture = KOR_Kim_Yong_hyun
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					army_chief_unity_of_party_and_military
-				}
-			}
-			KOR_Choi_Byung_hyuk = {
-				picture = KOR_Choi_Byung_hyuk	#需要图片
-				allowed = {
-					tag = KOR
-				}
-				traits = {
-					army_chief_old_guard
-				}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_attack_factor = 0.35
+				army_org_factor = 0.2
+				dig_in_speed_factor = 0.5
+				max_dig_in_factor = 0.5
+				surrender_limit = 1
 			}
 		}
 	}
+	head_minister = {
+		KOR_Jeong_Sye_Kyun = {
+			picture = KOR_Jeong_Sye_Kyun
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				hog_pragmatic_statesman
+			}
+		}
+		KOR_Kim_Boo_kyum = {
+			picture = KOR_Kim_Boo_kyum
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				hog_silent_workhorse
+			}
+		}
+		KOR_Lee_Nak_yon = {
+			picture = KOR_Lee_Nak_yon
+			name = KOR_Lee_Nak_yon_hog
+			allowed = {
+				original_tag = KOR
+			}
+			visible = {
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				hog_committed_social_activist
+			}
+		}
+		KOR_Chung_Sye_Kyun = {
+			picture = KOR_Chung_Sye_Kyun
+			name = KOR_Chung_Sye_Kyun_hog
+			allowed = {
+				tag = KOR
+			}
+			visible = {
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				hog_political_protege
+			}
+		}
+		KOR_Han_Duck_soo = {
+			picture = KOR_Han_Duck_soo
+			name = KOR_Han_Duck_soo_hog
+			allowed = {
+				tag = KOR
+			}
+			visible = {
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				for_connected_businessman
+			}
+		}
+		KOR_Choi_Sang_mok_hog = {
+			picture = KOR_Choi_Sang_mok
+			name = KOR_Choi_Sang_mok_hog
+			allowed = {
+				tag = KOR
+			}
+			allowed_to_remove = {
+				head_minister_trigger = yes
+			}
+			traits = {
+				hog_pragmatic_statesman
+			}
+		}
+
+	}
+	foreign_minister = {	
+		KOR_Gang_Gyung_Hwa = {
+			picture = KOR_Gang_Gyung_Hwa
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				for_great_compromiser
+			}
+		}
+		KOR_Jeong_Eui_Yong = {
+			picture = KOR_Jeong_Eui_Yong
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				for_defensive_hawk
+			}
+		}
+	}
+	economic_minister = {
+		KOR_Hong_Nam_ki = {
+			picture = KOR_Hong_Nam_ki
+			name = KOR_Hong_Nam_ki_hog
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				eco_captain_of_industry
+			}
+		}
+		KOR_CHOO_Kyungho = {
+			picture = KOR_CHOO_Kyungho
+			name = KOR_CHOO_Kyungho_eco
+			allowed = {
+				tag = KOR
+			}
+			visible = {
+				
+			}
+			available = {
+				
+			}
+			traits = {
+				eco_economic_organizer
+			}
+		}
+		KOR_Choi_Sang_mok_eco = {
+			picture = KOR_Choi_Sang_mok
+			name = KOR_Choi_Sang_mok_eco
+			allowed = {
+				tag = KOR
+			}
+			allowed_to_remove = {
+			}
+			traits = {
+				eco_economic_populist
+			}
+		}
+
+	}
+	interior_minister = {
+		KOR_Jeon_Hae_Cheol = {
+			picture = KOR_Jeon_Hae_Cheol
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				sec_crime_fighter		
+			}
+		}
+		KOR_Jin_Young = {
+			picture = KOR_Jin_Young
+			
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				sec_efficent_organizer
+			}
+		}
+	}
+	intelligence_minister = {
+		KOR_Suh_Hoon = {
+			picture = KOR_Suh_Hoon
+			allowed = {
+				original_tag = KOR
+			}
+			traits = {
+				int_balanced_cryptographer
+			}
+		}
+		KOR_Park_Ji_Wong = {
+			picture = KOR_Park_Ji_Won
+			
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				int_resistance_crusher 
+			}
+		}
+		KOR_Kim_Kyoi_hyun = {
+			picture = KOR_Kim_Kyoi_hyun
+			name = KOR_Kim_Kyoi_hyun_int
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				int_balanced_cryptographer
+			}
+		}
+		KOR_Cho_Tae_yong = {
+			picture = KOR_Cho_Tae_yong
+			name = KOR_Cho_Tae_yong_int
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				int_resistance_crusher
+			}
+		}
+	}
+	theorist_minister = {
+		KOR_Jeong_Gyeong_Du = {
+			picture = KOR_Jeong_Gyeong_Du
+			allowed = {
+				original_tag = KOR
+			}
+			traits = { 
+				army_chief_reform_2
+			}
+		}
+		KOR_Suh_Wook = {
+			picture = KOR_Suh_Wook
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				army_chief_morale_1
+			}
+		}
+		KOR_Lee_Jonng_sup = {
+			picture = KOR_Lee_Jonng_sup
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				for_general_staffer
+			}
+		}
+		KOR_Shin_Won_sik = {
+			picture = KOR_Shin_Won_sik
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				mass_assault_expert
+			}
+		}
+		KOR_Kim_Yong_hyun = {
+			picture = KOR_Kim_Yong_hyun
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				army_chief_unity_of_party_and_military
+			}
+		}
+		KOR_Choi_Byung_hyuk = {
+			picture = KOR_Choi_Byung_hyuk	#需要图片
+			allowed = {
+				tag = KOR
+			}
+			traits = {
+				army_chief_old_guard
+			}
+		}
+	}
+}

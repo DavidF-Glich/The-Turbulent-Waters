@@ -2051,4 +2051,63 @@ characters={
 			}
 		}
 	}
+	PRC_mana_char = {
+		name = PRC_mana
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_mana.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_mana.png"
+			}
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_mana.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_mana.png"
+			}
+		}
+		corps_commander = {
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			skill = 6
+			attack_skill = 6
+			defense_skill = 6
+			planning_skill = 6
+			logistics_skill = 6
+		}
+	}
+	PRC_Orc_char = {
+		name = PRC_orc
+		portraits = {
+			army = {
+				large = "gfx/leaders/PRC/easteregg/PRC_orc.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_orc.png"
+			}
+			civilian = {
+				large = "gfx/leaders/PRC/easteregg/PRC_orc.png"
+				small = "gfx/interface/ideas/PRC/easter/PRC_orc.png"
+			}
+		}
+		field_marshal = {
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+		}
+		advisor = {
+			slot = navy_chief
+			idea_token = PRC_Orc_char_idea_token
+			ledger = navy
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			cost = 150
+			traits = {
+				big_south_sea
+			}
+			ai_will_do = {
+				base = 10
+			}
+		}
+		
+	}
 }

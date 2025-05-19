@@ -20,6 +20,66 @@ ideas = {
 				drift_defence_factor = -0.15
 			}
 		}
+		SOV_Putinism_Faltering_2 = {
+
+			picture = SOV_Putinism_Faltering
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = -0.05
+				society_development_monthly = -0.01
+				business_value_factor = -0.05
+				income_growth_factor = -0.1
+				interest_rate_factor = -0.1
+				drift_defence_factor = -0.1
+			}
+		}
+		SOV_Putinism_Faltering_3 = {
+
+			picture = SOV_Putinism_Faltering
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				stability_factor = -0.05
+				society_development_monthly = -0.01
+				business_value_factor = -0.05
+				income_growth_factor = -0.05
+				interest_rate_factor = -0.0
+				drift_defence_factor = -0.05
+			}
+		}
+		SOV_Putinism_Faltering_4 = {
+
+			picture = SOV_Putinism_Faltering
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				stability_factor = -0.05
+				society_development_monthly = 0.00
+				business_value_factor = -0.05
+				income_growth_factor = -0.05
+				interest_rate_factor = 0.0
+				drift_defence_factor = 0.00
+			}
+		}
 		SOV_heavy_sanctions0 = {
 			picture = SOV_heavy_sanctions
 			allowed = {
@@ -68,6 +128,78 @@ ideas = {
 				consumer_goods_factor = 0.05
 				business_value_factor = -0.2
 				personal_value_factor = -0.2
+			}
+		}
+		SOV_heavy_sanctions_SMO = {
+			picture = SOV_heavy_sanctions
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = -0.15
+				consumer_goods_factor = 0.1
+				business_value_factor = -0.2
+				personal_value_factor = -0.2
+				income_growth_factor = -0.1
+				stability_factor = -0.05
+			}
+		}
+		SOV_heavy_sanctions_SMO_2 = {
+			picture = SOV_heavy_sanctions
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = -0.12
+				consumer_goods_factor = 0.12
+				business_value_factor = -0.22.5
+				personal_value_factor = -0.22.5
+				income_growth_factor = -0.12.5
+				stability_factor = -0.06
+			}
+		}
+		SOV_heavy_sanctions_SMO_3 = {
+			picture = SOV_heavy_sanctions
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = -0.15
+				consumer_goods_factor = 0.15
+				business_value_factor = -0.25
+				personal_value_factor = -0.25
+				income_growth_factor = -0.15
+				stability_factor = -0.1
+			}
+		}
+		SOV_heavy_sanctions_SMO_4 = {
+			picture = SOV_heavy_sanctions
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				min_export = -0.2
+				consumer_goods_factor = 0.2
+				business_value_factor = -0.3
+				personal_value_factor = -0.3
+				income_growth_factor = -0.2
+				stability_factor = -0.15
 			}
 		}
 		SOV_kleptocratic_state = {
@@ -296,7 +428,127 @@ ideas = {
 				stability_factor = -0.1
 			}
 		}
+		SOV_economic_assistance_idea = {
+			picture = SOV_brics
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.025
+				income_growth_factor = 0.05
+				business_value_factor = 0.05
+			}
+		}
+		SOV_anti-globalism_diplomacy = {
+			picture = SOV_kremlin_democracy_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = 0.05
+				min_export = 0.05
+				business_value_factor = 0.05		
+			}
+		}
+		SOV_anti-globalism_diplomacy_brics = {
+			picture = SOV_kremlin_democracy_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.12
+				stability_factor = 0.07
+				min_export = 0.1
+				business_value_factor = 0.05
+				income_growth_factor = 0.05
+			}
+		}
+		SOV_anti-globalism_diplomacy_schos = {
+			picture = SOV_kremlin_democracy_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+				modifier = {
+				political_power_gain = 0.15
+				stability_factor = 0.05
+				min_export = 0.07
+				business_value_factor = 0.08
+				production_factory_efficiency_gain_factor = 0.04
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		SOV_putin_2020_constitution = {
+			picture = SOV_putin_constitution_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = 0.1
+				stability_factor = -0.05
+				income_growth_factor = 0.15
+				tax_personal_rate = 0.05
+				min_export = -0.05
+			}
+		}
 		
+		SOV_potemkin_reforms = {
+			picture = SOV_Putinism
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.15
+				stability_factor = 0.07
+				war_support_factor = 0.05
+				income_growth_factor = -0.1
+				academic_development_monthly = 0.01
+				society_development_monthly = 0.015
+				business_value_factor = 0.1
+			}
+		}
+		SOV_economic_development_idea = {
+		picture = SOV_brics
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+			consumer_goods_factor = 0.05
+			production_speed_buildings_factor = 0.1
+			income_growth_factor = 0.1
+			business_value_factor = -0.05
+			}
+		}
 	}
 	head_minister = {
 		SOV_Medvedev = {

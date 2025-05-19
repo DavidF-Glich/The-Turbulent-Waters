@@ -48,6 +48,11 @@ focus_tree = {
 				}
 			}
 		}
+		cancel = {
+			hidden_trigger = {
+				has_country_flag = easteregg_enabled
+			}
+		}
 		completion_reward = {
 			custom_effect_tooltip = PRC_Wuhan_discovery_reward
 			hidden_effect = {

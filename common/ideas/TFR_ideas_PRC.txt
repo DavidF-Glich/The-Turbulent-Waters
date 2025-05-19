@@ -600,6 +600,33 @@ ideas ={
 				for_wolf_warrior
 			}
 		}
+		PRC_jiang_yuan_big = {
+			picture = PRC_canzhi_zhengshi
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			available = {
+				has_completed_focus = SWE_back_from_civilwar
+			}
+			traits = {
+				paradox_legacy
+			}
+		}
+		PRC_lu_mou = {
+			picture = PRC_lu_mouren
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				ultra_nationalist
+			}
+		}
 	}
 	economic_minister = {
 		PRC_liu_he_eco = {
@@ -679,6 +706,42 @@ ideas ={
 				hog_silent_workhorse
 			}
 		}
+		PRC_du_xiao_yuan = {
+			picture = PRC_du_xiaoyuan
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				bad_ass_idea
+			}
+		}
+		PRC_KAISER = {
+			picture = PRC_KAISER
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				cityizer
+			}
+		}
+		PRC_mude = {
+			picture = PRC_mude
+			allowed = {
+				original_tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				sec_rearmer
+			}
+		}
 	}
 	interior_minister = {
 		PRC_wang_huning_sec = {
@@ -756,6 +819,44 @@ ideas ={
 				eye_fuck
 			}
 		}
+		PRC_ying_xingze = {
+			picture = PRC_ying_xingze
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				eye_of_people
+			}
+		}
+		PRC_crossing_the_styx = {
+			picture = PRC_crossing_the_styx
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				zhouli_dead_fan
+			}
+
+		}
+		PRC_quan_douhuan = {
+			picture = PRC_quan_douhuan
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				mass_constuct_acre
+			}
+
+		}
 	}
 	intelligence_minister = {
 		PRC_guo_shengkun_int = {
@@ -819,7 +920,18 @@ ideas ={
 				sec_crime_fighter
 			}
 		}
-
+		PRC_sliver_wolf = {
+			picture = PRC_sliver_wolf
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				top_hacker
+			}
+		}
 	}
 	theorist_minister = {
 		PRC_wei_fenghe = {
@@ -951,6 +1063,19 @@ ideas ={
 			}
 			traits = {
 				army_entrenchment_1
+			}
+		}
+		PRC_Mana_the = {
+			name = PRC_mana
+			picture = PRC_mana
+			allowed = {
+				tag = PRC
+			}
+			visible = {
+				has_country_flag = easteregg_enabled
+			}
+			traits = {
+				band_solution
 			}
 		}
 	}

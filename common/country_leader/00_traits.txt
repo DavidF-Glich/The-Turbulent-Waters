@@ -90,4 +90,75 @@ leader_traits = {
 		intel_from_combat_factor = 0.07
 		intel_from_operatives_factor = 0.05
 	}
+	#乐队克星
+	band_solution = {
+		ai_focus_peaceful_factor = 0.2
+		boost_ideology_mission_factor = 0.1
+		opinion_gain_monthly_factor = 0.1
+	}
+	#鬼点子制造机
+	bad_ass_idea = {
+		consumer_goods_factor = 0.05
+		research_speed_factor = 0.07
+		political_power_gain = 0.5
+	}
+	#顶尖黑客
+	top_hacker = {
+		decryption_power_factor = 0.25
+		crypto_strength = 3
+	}
+	#人民之眼
+	eye_of_people = {
+		stability_weekly = 0.009
+		communist_drift = 0.03
+	}
+	#周礼维护者
+	zhouli_dead_fan = {
+		monthly_population = 0.05
+		stability_factor = 0.1
+	}
+	#城市化院主席
+	cityizer = {
+		production_speed_energy_farm_factor = 0.05
+		production_speed_nuclear_reactor_factor = 0.08
+		production_speed_power_plant_factor = 0.03
+		production_speed_rail_way_factor = 0.05 
+		production_speed_supply_node_factor = 0.1
+		production_speed_naval_base_factor = 0.05
+	}
+	#大南海理论
+	big_south_sea = {
+		convoy_escort_efficiency = 0.05
+		convoy_retreat_speed = 0.05
+		naval_coordination = 0.05
+		naval_detection = 0.05
+	}
+	#拜年祭的遗产
+	paradox_legacy = {
+		political_power_factor = 0.1
+		production_factory_max_efficiency_factor = 0.05
+		breakthrough_factor = 0.08
+	}
+	#超级民族主义
+	ultra_nationalist = {
+		surrender_limit = 0.1
+		ground_attack_factor = 0.05
+		air_bombing_targetting = 0.05
+		targeted_modifier = {
+			tag = USA
+			attack_bonus_against = 0.05
+		}
+		targeted_modifier = {
+			tag = JAP
+			attack_bonus_against = 0.1
+		}
+	}
+	#爱看京观的笨蛋
+	mass_constuct_acre = {
+		random = no
+		non_core_manpower = -0.3
+		stability_factor = -0.1
+		war_support_factor = 0.2
+	}
 }
+

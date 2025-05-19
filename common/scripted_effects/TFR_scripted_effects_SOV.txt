@@ -492,3 +492,38 @@ SOV_election_var_balancer = {
 		SOV_election_approval_rating_srzp_var_temp = 0
 	}
 }
+SOV_upgrade_faltering = {
+		if = {
+			limit = {
+				has_idea = SOV_Putinism_Faltering
+			}
+			swap_ideas = {
+				remove_idea = SOV_Putinism_Faltering
+				add_idea = SOV_Putinism_Faltering_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_Putinism_Faltering_2
+			}
+			swap_ideas = {
+				remove_idea = SOV_Putinism_Faltering_2
+				add_idea = SOV_Putinism_Faltering_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_Putinism_Faltering_3
+			}
+			swap_ideas = {
+				remove_idea = SOV_Putinism_Faltering_3
+				add_idea = SOV_Putinism_Faltering_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_Putinism_Faltering_4
+			}
+				remove_ideas = SOV_Putinism_Faltering_4
+			}
+		}
