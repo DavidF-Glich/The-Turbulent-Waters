@@ -6,6 +6,7 @@ Also before you update the branch, notify me and the all code members who has ac
 Dev Principle:
 1. Add Powerful Ai strategies > Mars equipments > Mars manpower > Mars Divisions > Hidden Buffs
 2. Develop it as an individual mod, NOT a submod. We'll try to fit it into a TFR submod again when a near-official version is ready. However, don't expect a success from such adaptations since too much modifications exist between TTW and TFR.
+3. Make sth. new. Don't just stay in the TFR framework. Embrace GUIs.
 
 Powerful tools recommended (possibly required) for developers:
 Draw.io - Content Designer
