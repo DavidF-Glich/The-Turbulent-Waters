@@ -2,10 +2,10 @@ characters={
 	POR_marcelo_rebelo_de_sousa_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/POR/POR_marcelo_rebelo_de_sousa.png" 
+				large = "gfx/leaders/POR/POR_marcelo_rebelo_de_sousa.png" 
 			}
 			army = {
-				large = "gfx/Leaders/POR/POR_marcelo_rebelo_de_sousa.png" 
+				large = "gfx/leaders/POR/POR_marcelo_rebelo_de_sousa.png" 
 			}
 		}
 		country_leader={
@@ -17,10 +17,10 @@ characters={
 	POR_Eugenio_Francisco_Nunes_Henriques_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
+				large = "gfx/leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
 			}
 			army = {
-				large = "gfx/Leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
+				large = "gfx/leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
 			}
 		}
 		corps_commander={
@@ -35,10 +35,10 @@ characters={
 	POR_Jose_Nunes_da_Fonseca_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/POR/Jose_Nunes_da_Fonseca.png" 
+				large = "gfx/leaders/POR/Jose_Nunes_da_Fonseca.png" 
 			}
 			army = {
-				large = "gfx/Leaders/POR/Jose_Nunes_da_Fonseca.png" 
+				large = "gfx/leaders/POR/Jose_Nunes_da_Fonseca.png" 
 			}
 		}
 		corps_commander={
@@ -54,10 +54,10 @@ characters={
 	PRP_Paula_Santos = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/POR/Paula Santos.png" 
+				large = "gfx/leaders/POR/Paula Santos.png" 
 			}
 			army = {
-				large = "gfx/Leaders/POR/Paula Santos.png" 
+				large = "gfx/leaders/POR/Paula Santos.png" 
 			}
 		}
 		country_leader={
@@ -70,10 +70,10 @@ characters={
 	GOD_Pelagius = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/POR/Pelagius.png" 
+				large = "gfx/leaders/POR/Pelagius.png" 
 			}
 			army = {
-				large = "gfx/Leaders/POR/Pelagius.png" 
+				large = "gfx/leaders/POR/Pelagius.png" 
 			}
 		}
 		country_leader={
@@ -95,10 +95,10 @@ characters={
 	GOD_Eugenio_Francisco_Nunes_Henriques_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
+				large = "gfx/leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
 			}
 			army = {
-				large = "gfx/Leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
+				large = "gfx/leaders/POR/Eugenio_Francisco_Nunes_Henriques.png" 
 			}
 		}
 		country_leader={

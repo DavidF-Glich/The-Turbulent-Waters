@@ -22,10 +22,6 @@
 	set_research_slots = 5
 	set_convoys = 470
 	set_stability = 0.55
-	country_event = {
-		id = asean.5
-		days = 1339
-	}
 
 	set_country_flag = country_language_chinese
 	set_country_flag = country_language_english
@@ -185,6 +181,5 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 	}

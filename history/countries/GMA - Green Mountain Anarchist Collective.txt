@@ -1,6 +1,6 @@
 	capital = 793
 
-#	oob = ""
+#
 	
 	recruit_character = GMA_david_van_deusen_char #Anarchist
 	recruit_character = GMA_Ted_Kaczynski_char
@@ -25,7 +25,7 @@
 	recruit_character = GMA_Lacey_Phillabaum_char
 	recruit_character = GMA_Rebecca_Rubin_char
 	recruit_character = GMA_Lierre_Keith_char
-	recruit_character = GMA_Pamelyn_Ferdin_char
+	#recruit_character = GMA_Pamelyn_Ferdin_char
   	recruit_character = GMA_Laura_Whitehorn_char
   	recruit_character = GMA_Jane_Alpert_char  
 

@@ -1,0 +1,31 @@
+on_action = {
+	on_declare_war = {
+		effect = {
+			if = {
+				limit = { 
+					FROM = {
+						original_tag = PAL
+					}
+					ROOT = {
+						original_tag = ISR
+					}
+				}
+				every_character = {
+					limit = {
+						OR = {
+							tag = USA
+							tag = PRC
+							tag = SOV
+							tag = FRA
+							tag = ENG
+						}
+					}
+					set_temp_variable = {
+						conflict_id = token:israeli_palestine_conflict
+					}
+					TTW_add_fopo_conflict_tab = yes
+				}
+			}
+		}
+	}
+}

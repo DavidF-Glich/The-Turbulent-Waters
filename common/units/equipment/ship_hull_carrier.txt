@@ -121,7 +121,7 @@ equipments = {
 		module_slots = inherit
 
 		default_modules = {
-			fixed_ship_engine_slot = carrier_ship_engine_n1
+			fixed_ship_engine_slot = carrier_ship_engine_1
 		}
 	}
 
@@ -159,7 +159,7 @@ equipments = {
 		default_modules = {
 			front_1_custom_slot = empty
 			mid_1_custom_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_n1
+			fixed_ship_engine_slot = carrier_ship_engine_2
 		}
 		naval_range = 4000
 		reliability = 0.75
@@ -581,7 +581,7 @@ equipments = {
 			fixed_ship_radar_slot = empty
 			fixed_ship_engine_slot = carrier_ship_engine_1
 			fixed_ship_secondaries_slot = empty
-			front_1_custom_slot = ship_airplane_launcher
+			front_1_custom_slot = ship_airplane_launcher_1
 		}
 		
 		lg_armor_piercing = 0
@@ -909,7 +909,7 @@ equipments = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_4
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_n1
+			fixed_ship_engine_slot = carrier_ship_engine_2
 			fixed_ship_secondaries_slot = ship_secondaries_1
 			front_1_custom_slot = ship_anti_air_4
 		}
@@ -955,7 +955,7 @@ equipments = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_4
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_n1
+			fixed_ship_engine_slot = carrier_ship_engine_3
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			front_1_custom_slot = ship_deck_space
 		}
@@ -1001,7 +1001,7 @@ equipments = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_4
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_n2
+			fixed_ship_engine_slot = carrier_ship_engine_4
 			fixed_ship_secondaries_slot = ship_secondaries_2
 			front_1_custom_slot = ship_deck_space
 		}
@@ -1047,8 +1047,8 @@ equipments = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_4
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_n3
-			fixed_ship_secondaries_slot = ship_secondaries_3
+			fixed_ship_engine_slot = carrier_ship_engine_4
+			fixed_ship_secondaries_slot = ship_secondaries_2
 			front_1_custom_slot = ship_deck_space
 		}
 		lg_armor_piercing = 0
@@ -1093,8 +1093,8 @@ equipments = {
 			fixed_ship_deck_slot_2 = ship_deck_space
 			fixed_ship_anti_air_slot = ship_anti_air_4
 			fixed_ship_radar_slot = empty
-			fixed_ship_engine_slot = carrier_ship_engine_n4
-			fixed_ship_secondaries_slot = ship_secondaries_3
+			fixed_ship_engine_slot = carrier_ship_engine_4
+			fixed_ship_secondaries_slot = ship_secondaries_2
 			front_1_custom_slot = ship_deck_space
 		}
 		lg_armor_piercing = 0

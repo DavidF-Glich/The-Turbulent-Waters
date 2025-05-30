@@ -56,11 +56,92 @@ scripted_map_modes = {
 			}
 
 			thickness = yes
-
-			targets = {
-				target_array = global.countries
-			}
-		
+			
 		}
+		far_text = country
 	}
+
+	TFR_international_organizations_mapmode = {
+		top = { type = none }
+		bottom = {
+			type = country
+			color = {
+				FROM = {
+					set_temp_variable = { alpha = 0.95 }
+					if = {
+						limit = {
+							has_dynamic_modifier = {
+								modifier = EU_member_dynamic
+							}
+						}
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0 }
+						set_temp_variable = { blue = 0.8 }
+					}
+					else_if = {
+						limit = {
+							has_idea = arab_league_member
+						}
+						set_temp_variable = { red = 0.45 }
+						set_temp_variable = { green = 0.65 }
+						set_temp_variable = { blue = 0.2 }
+					}
+					else_if = {
+						limit = {
+							has_idea = ASEAN_member
+						}
+						set_temp_variable = { red = 0.125 }
+						set_temp_variable = { green = 0.35 }
+						set_temp_variable = { blue = 0.65 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_dynamic_modifier = {
+									modifier = SOV_TMC_dynamic
+								}
+								has_idea = SOV_tmca_member
+							}
+						}
+						set_temp_variable = { red = 0.35 }
+						set_temp_variable = { green = 0.65 }
+						set_temp_variable = { blue = 0.75 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_dynamic_modifier = {
+									modifier = SOV_brics_dynamic
+								}
+								has_idea = SOV_brics_member
+							}
+						}
+						set_temp_variable = { red = 0 }
+						set_temp_variable = { green = 0.8 }
+						set_temp_variable = { blue = 0 }
+					}
+					else_if = {
+						limit = {
+							OR = {
+								has_idea = SOV_EEC_Member
+								has_idea = SOV_EEC_leader
+							}
+						}
+						set_temp_variable = { red = 0.425 }
+						set_temp_variable = { green = 0.55 }
+						set_temp_variable = { blue = 0.65 }
+					}
+					else = {
+						set_temp_variable = { red = 0.47 }
+						set_temp_variable = { green = 0.47 }
+						set_temp_variable = { blue = 0.47 }
+					}	
+				}
+			}
+		}
+		far_text = country
+		near_text = none
+		update_daily = yes
+	}
+
 }

@@ -1,6 +1,6 @@
 	capital = 327
 
-	oob = ""
+
 	
 	
 	if = {
@@ -60,9 +60,6 @@
 
 	set_country_flag = shithole_country
 
-	set_technology = {
-		
-	}
 
 	set_politics = {	
 		ruling_party = communist

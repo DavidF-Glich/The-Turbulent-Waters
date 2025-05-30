@@ -1,0 +1,19 @@
+﻿### Air OOB ###
+air_wings = {
+	525 = {
+		#KF-16
+		small_plane_airframe_1 =  {
+			owner = "KOR" 
+			amount = 84
+			version_name = "KF-16"
+		}
+	}
+	1041 = {
+		#KF-16
+		small_plane_airframe_1 =  {
+			owner = "KOR" 
+			amount = 52
+			version_name = "KF-16"
+		}
+	}
+}

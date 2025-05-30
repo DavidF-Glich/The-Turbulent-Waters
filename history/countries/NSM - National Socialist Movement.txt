@@ -1,6 +1,5 @@
 ﻿capital = 924
-#oob = ""
-#recruit_character = HUM_david_brian_stone_char
+##recruit_character = HUM_david_brian_stone_char
 recruit_character = NSM_burt_colucci_char
 recruit_character = NSM_jeff_schoep_char
 recruit_character = NSM_paul_mullet_char
@@ -898,7 +897,6 @@ if = {
 			special_type_slot_2 = lmg_defense_turret_2x
 			special_type_slot_3 = empty
 		}
-		icon = "GFX_GER_tactical_bomber1_medium"
 	}
 	create_equipment_variant = {
 		name = "F-15E"

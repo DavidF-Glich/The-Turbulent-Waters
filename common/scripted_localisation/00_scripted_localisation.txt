@@ -85,21 +85,30 @@ defined_text = {
 		}
 		localization_key = "PRK_country_summary"
 	}
-	text = {
-		trigger = {
-			tag = SWE
-			has_game_rule = {
-				rule = oh_no_sweden
-				option = people_commissar
-			}
-		}
-		localization_key = "SWE_country_sunnary"
-	}
+	#text = {
+		#trigger = {
+		#	tag = SWE
+		#	has_game_rule = {
+		#		rule = oh_no_sweden
+		#		option = people_commissar
+		#	}
+		#}
+		#localization_key = "SWE_country_sunnary"
+	#}
 	text = {
 		trigger = {
 			tag = CHI
 		}
 		localization_key = "CHI_country_summary"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = "KOR_country_summary"
+	}
+	text = {
+		localization_key = "generic.20.d"
 	}
 }
 
@@ -160,21 +169,27 @@ defined_text = {
 		}
 		localization_key = "PRK_country_paths"
 	}
-	text = {
-		trigger = {
-			tag = SWE
-			has_game_rule = {
-				rule = oh_no_sweden
-				option = people_commissar
-			}
-		}
-		localization_key = "SWE_country_pass"
-	}
+	#text = {
+	#	trigger = {
+	#		tag = SWE
+	#		has_game_rule = {
+	#			rule = oh_no_sweden
+	#			option = people_commissar
+	#		}
+	#	}
+	#	localization_key = "SWE_country_pass"
+	#}
 	text = {
 		trigger = {
 			tag = CHI
 		}
 		localization_key = "CHI_country_paths"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = "KOR_country_paths"
 	}
 }
 
@@ -229,21 +244,27 @@ defined_text = {
 		}
 		localization_key = "PRK_country_other"
 	}
-	text = {
-		trigger = {
-			tag = SWE
-			has_game_rule = {
-				rule = oh_no_sweden
-				option = people_commissar
-			}
-		}
-		localization_key = "SWE_country_never"
-	}
+	#text = {
+	#	trigger = {
+	#		tag = SWE
+	#		has_game_rule = {
+	#			rule = oh_no_sweden
+	#			option = people_commissar
+	#		}
+	#	}
+	#	localization_key = "SWE_country_never"
+	#}
 	text = {
 		trigger = {
 			tag = CHI
 		}
 		localization_key = "CHI_country_other"
+	}
+	text = {
+		trigger = {
+			tag = KOR
+		}
+		localization_key = "KOR_country_other"
 	}
 }	
 
@@ -286,9 +307,37 @@ defined_text = {
 		}
 		localization_key = "GFX_China_BG"
 	}
+	text = { 
+		trigger = {
+			tag = PRK
+		}
+		localization_key = "GFX_North_Korea_BG"
+	}
+	text = { 
+		trigger = {
+			tag = KOR
+		}
+		localization_key = "GFX_South_Korea_BG"
+	}
+	text = { 
+		trigger = {
+			tag = RAJ
+		}
+		localization_key = "GFX_India_BG"
+	}
+
 	text = {
 		trigger = {
-			NOT = { tag = SOV tag = USA tag = FRA tag = JAP tag = PRC tag = GER }
+			NOT = { 
+				tag = SOV 
+				tag = USA
+				tag = FRA 
+				tag = JAP 
+				tag = PRC
+				tag = GER
+				tag = PRK
+				tag = KOR
+			}
 		}
 		localization_key = "GFX_World_Map_BG"
 	}

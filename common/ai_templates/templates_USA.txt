@@ -6,9 +6,7 @@ infantry_USA = {
 		USC
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -82,9 +80,7 @@ infantry_USA = {
 
 paratrooper_USA = {
 
-	roles = {
-		paratrooper
-	}
+	role = paratrooper
 	
 	available_for = {
 		USA
@@ -133,9 +129,7 @@ armored_USA = {
 		USC
 	}
 	
-	roles = {
-		armor
-	}
+	role = armor
 	
 	#match_to_count = 0.5
 	

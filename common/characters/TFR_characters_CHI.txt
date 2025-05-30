@@ -78,7 +78,7 @@
 		CHI_yen_teh_fa_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/Yen_Teh_Fa.dds" 
+					large = "gfx/leaders/CHI/generals/Yen_Teh_Fa.dds" 
 				}
 			}
 
@@ -90,7 +90,7 @@
 		CHI_chen_chuan_kuan_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/Chen_Chuan_Kuan.dds" 
+					large = "gfx/leaders/CHI/generals/Chen_Chuan_Kuan.dds" 
 				}
 			}
 
@@ -102,7 +102,7 @@
 		CHI_chiu_kuo_cheng_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
+					large = "gfx/leaders/CHI/generals/Chiu_Kuo_Cheng.png" 
 				}
 			}
 			
@@ -121,7 +121,7 @@
 		CHI_Taipei_Demon = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/CHI/TaipeiDemon.png" 
+					large = "gfx/leaders/CHI/TaipeiDemon.png" 
 				}
 			}
 			
@@ -138,7 +138,7 @@
 		CHI_lee_shying_jow_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/Lee_Shying_Jow.dds" 
+					large = "gfx/leaders/CHI/generals/Lee_Shying_Jow.dds" 
 				}
 			}
 
@@ -150,7 +150,7 @@
 		CHI_huoh_shoou_yeh_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/CHI_huoh_shoou_yeh.png" 
+					large = "gfx/leaders/CHI/generals/CHI_huoh_shoou_yeh.png" 
 				}
 			}
 
@@ -167,7 +167,7 @@
 		CHI_hsu_yen_pu_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/CHI_hsu_yen_pu.png" 
+					large = "gfx/leaders/CHI/generals/CHI_hsu_yen_pu.png" 
 				}
 			}
 
@@ -184,7 +184,7 @@
 		CHI_chen_pao_yu_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/CHI_chen_pao_yu.png" 
+					large = "gfx/leaders/CHI/generals/CHI_chen_pao_yu.png" 
 				}
 			}
 
@@ -201,7 +201,7 @@
 		CHI_chang_guan_chung_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/CHI_chang_guan_chung.png" 
+					large = "gfx/leaders/CHI/generals/CHI_chang_guan_chung.png" 
 				}
 			}
 
@@ -218,7 +218,7 @@
 		CHI_wang_shin_lung_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/CHI_wang_shin_lung.png" 
+					large = "gfx/leaders/CHI/generals/CHI_wang_shin_lung.png" 
 				}
 			}
 
@@ -235,7 +235,7 @@
 		CHI_chai_hui_chen_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/generals/Chai_Hui_Chen.dds" 
+					large = "gfx/leaders/CHI/generals/Chai_Hui_Chen.dds" 
 				}
 			}
 
@@ -247,7 +247,7 @@
 		CHI_kao_kuang_chi_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/admirals/Kao_Kuang_Chi.dds" 
+					large = "gfx/leaders/CHI/admirals/Kao_Kuang_Chi.dds" 
 				}
 			}
 
@@ -259,7 +259,7 @@
 		CHI_lee_hsi_min_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/admirals/Lee_Hsi_Min.dds" 
+					large = "gfx/leaders/CHI/admirals/Lee_Hsi_Min.dds" 
 				}
 			}
 
@@ -271,7 +271,7 @@
 		CHI_lin_chen_yi_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/CHI/admirals/Lin_Chen_Yi.dds" 
+					large = "gfx/leaders/CHI/admirals/Lin_Chen_Yi.dds" 
 				}
 			}
 

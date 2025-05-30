@@ -1,388 +1,5 @@
 	ideas = {
 		country = {
-			JAP_north_korean_intervention = {
-				picture = PRK_anarchy
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					send_volunteer_size = 7
-					air_volunteer_cap = 350
-				}
-			}
-			JAP_seoul_pyongyang_operation_idea = {
-				name = JAP_seoul_pyongyang_operation_dec
-				picture = PRC_hong_kong_protests
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = PRK
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.15
-					coordination_bonus = 0.1
-					army_org_factor = 0.1
-				}
-			}
-			JAP_operation_full_moon_idea = {
-				name = JAP_operation_full_moon_dec
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				targeted_modifier = {
-					tag = PRK
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.2
-					amphibious_invasion = 0.2
-					invasion_preparation = -0.5
-					naval_damage_factor = 0.2
-					initiative_factor  = 0.15
-				}
-			}
-			JAP_amnok_operation_idea = {
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				targeted_modifier = {
-					tag = PRC
-					attack_bonus_against = 0.1
-				}
-
-				modifier = {
-					army_org_factor = 0.05
-					terrain_penalty_reduction  = 0.2
-					invasion_preparation = -0.35
-					river_crossing_factor = -0.15
-					initiative_factor  = 0.1
-				}
-			}
-			JAP_operation_hideyoshi_idea = {
-				name = JAP_operation_hideyoshi_dec
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				targeted_modifier = {
-					tag = PRC
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.2
-					amphibious_invasion = 0.2
-					invasion_preparation = -0.5
-					naval_damage_factor = 0.2
-					initiative_factor  = 0.15
-				}
-			}
-			JAP_operation_summer_palace_idea = {
-				name = JAP_operation_summer_palace_dec
-				picture = JAP_Taiwan_Intervention
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = PRC
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.15
-					coordination_bonus = 0.1
-					army_org_factor = 0.1
-				}
-			}
-			JAP_burma_offensive_idea = {
-				name = JAP_take_burma
-				picture = PRC_hong_kong_protests
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = BRM
-					attack_bonus_against = 0.15
-				}
-			}
-			JAP_operation_white_sun_idea = {
-				name = JAP_operation_white_sun_dec
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				targeted_modifier = {
-					tag = PRC
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.2
-					amphibious_invasion = 0.2
-					invasion_preparation = -0.5
-					naval_damage_factor = 0.2
-					initiative_factor  = 0.15
-				}
-			}
-			JAP_ketsugo_idea = {
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				targeted_modifier = {
-					tag = PRC
-					defense_bonus_against = 0.15
-				}
-				
-				modifier = {
-					cas_damage_reduction  = 0.15
-					dig_in_speed_factor = 0.1
-					army_org_factor = 0.1
-					army_speed_factor = 0.15
-				}
-			}
-			JAP_build_fortress_japan_idea = {
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					production_speed_anti_air_building_factor = 0.15
-					production_speed_bunker_factor = 0.1
-					consumer_goods_factor = -0.025
-				}
-			}
-			JAP_operation_wajo_idea = {
-				name = JAP_wajo_operation_dec
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				targeted_modifier = {
-					tag = PRK
-					defense_bonus_against = 0.15
-				}
-				
-				targeted_modifier = {
-					tag = PRC
-					defense_bonus_against = 0.15
-				}
-				
-				modifier = {
-					cas_damage_reduction  = 0.15
-					dig_in_speed_factor = 0.1
-					army_org_factor = 0.1
-				}
-			}
-			PDO_taiwan_intervention_idea = {
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					planning_speed = 0.05
-					army_speed_factor = 0.1
-					mobilization_speed = 0.15
-				}
-			}
-			PDO_taiwan_intervention_2_idea = {
-				name = PDO_taiwan_intervention_idea
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					planning_speed = 0.1
-					breakthrough_factor = 0.025
-					army_attack_factor = 0.025
-					army_speed_factor = 0.1
-					mobilization_speed = 0.15
-				}
-			}
-			PDO_taiwan_counter_attack_idea = {
-				picture = JAP_Taiwan_Intervention
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					breakthrough_factor = 0.05
-					army_attack_factor = 0.15
-				}
-			}
-			JAP_operation_tsuki_shigure_idea = {
-				name = JAP_operation_tsuki_shigure_dec
-				picture = JAP_Taiwan_Intervention
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = VIN
-					attack_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = LAO
-					attack_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = CAM
-					attack_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = SIA
-					attack_bonus_against = 0.1
-				}
-
-				modifier = {
-					max_planning_factor = 0.1
-					invasion_preparation = -0.35
-					army_speed_factor = 0.1
-					army_org_factor  = 0.15
-				}
-			}
-			JAP_malaya_offensive_idea = {
-				name = JAP_malaya_offensive_dec
-				picture = JAP_Taiwan_Intervention
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = SIA
-					attack_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = MAL
-					attack_bonus_against = 0.1
-				}
-				targeted_modifier = {
-					tag = SIG
-					attack_bonus_against = 0.1
-				}
-				
-				modifier = {
-					invasion_preparation = -0.35
-					amphibious_invasion = 0.15
-				}
-			}
-			JAP_indonesia_offensive_idea = {
-				name = JAP_indonesia_offensive_dec		
-				picture = JAP_Taiwan_Intervention
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = INS
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.15
-					amphibious_invasion = 0.15
-					invasion_preparation = -0.35
-					naval_damage_factor = 0.15
-					initiative_factor  = 0.1
-				}
-			}
-			JAP_philippine_offensive_idea = {
-				name = JAP_philippine_offensive_dec
-				picture = JAP_Taiwan_Intervention
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				targeted_modifier = {
-					tag = PHI
-					attack_bonus_against = 0.15
-				}
-
-				modifier = {
-					max_planning_factor = 0.15
-					amphibious_invasion = 0.15
-					invasion_preparation = -0.35
-					naval_damage_factor = 0.15
-					initiative_factor  = 0.1
-				}
-			}
-			JAP_occupation_administrations = {
-				picture = JAP_japanese_pacificism
-
-				allowed = {
-					always = no
-				}
-
-				allowed_civil_war = {
-					always = yes
-				}
-
-				removal_cost = -1
-				
-				modifier = {
-					compliance_growth = 0.2
-					resistance_activity = -0.2
-					required_garrison_factor = -0.3
-				}
-			}
 			JAP_japanese_pacifism_idea = {
 				picture = JAP_japanese_pacificism
 				
@@ -391,20 +8,21 @@
 				}
 				
 				modifier = {
-					war_support_factor = -0.25
-					justify_war_goal_time = 1
+					war_support_factor = -0.15
 					industrial_capacity_dockyard = -0.5
 					industrial_capacity_factory = -0.5
-					conscription_factor = -0.5
-					land_doctrine_cost_factor = 0.5
-					air_doctrine_cost_factor = 0.5
-					naval_doctrine_cost_factor = 0.5
-					
+					conscription_factor = -0.25
+					production_speed_arms_factory_factor = -0.5
+					production_speed_dockyard_factor = -0.5
 					
 					production_cost_max_ship_hull_submarine = 700
 					production_cost_max_ship_hull_cruiser = 5000
 					production_cost_max_ship_hull_heavy = 8000
 					production_cost_max_ship_hull_carrier = 4500
+				}
+				rule = {
+					can_not_declare_war = yes
+					can_be_called_to_war = no
 				}
 			}
 			
@@ -417,18 +35,18 @@
 				
 				modifier = {
 					war_support_factor = -0.15
-					justify_war_goal_time = 1
-					industrial_capacity_dockyard = -0.25
-					industrial_capacity_factory = -0.25
+					industrial_capacity_dockyard = -0.3
+					industrial_capacity_factory = -0.3
 					conscription_factor = -0.25
-					land_doctrine_cost_factor = 0.25
-					air_doctrine_cost_factor = 0.25
-					naval_doctrine_cost_factor = 0.25
 					
 					production_cost_max_ship_hull_submarine = 800
 					production_cost_max_ship_hull_cruiser = 6500
 					production_cost_max_ship_hull_heavy = 9000
 					production_cost_max_ship_hull_carrier = 6500
+				}
+				rule = {
+					can_not_declare_war = yes
+					can_be_called_to_war = no
 				}
 			}
 			
@@ -441,15 +59,15 @@
 				
 				modifier = {
 					war_support_factor = -0.075
-					justify_war_goal_time = 1
 					conscription_factor = -0.1
-					land_doctrine_cost_factor = 0.125
-					air_doctrine_cost_factor = 0.125
-					naval_doctrine_cost_factor = 0.125
+
 					production_cost_max_ship_hull_submarine = 1200
 					production_cost_max_ship_hull_cruiser = 7500
 					production_cost_max_ship_hull_heavy = 10000
 					production_cost_max_ship_hull_carrier = 7500
+				}
+				rule = {
+					can_not_declare_war = yes
 				}
 			}
 			
@@ -572,41 +190,7 @@
 					production_speed_buildings_factor = 0.015
 				}
 			}
-			
-			JAP_PDTO_member_1 = {
-				name = JAP_PDTO_member
-				picture = JAP_japanese_pacificism
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					army_attack_factor = 0.05
-					army_defence_factor = 0.05
-					army_org_factor = 0.1
-					army_morale_factor = 0.075
-				}
-			}
-			
-			JAP_PDTO_member_2 = {
-				name = JAP_PDTO_member
-				picture = JAP_japanese_pacificism
-				
-				allowed = {
-					tag = JAP
-				}
-				
-				modifier = {
-					army_attack_factor = 0.075
-					army_defence_factor = 0.075
-					army_org_factor = 0.15
-					army_morale_factor = 0.1
-					war_support_factor = 0.05
-					military_development_monthly = 0.01
-				}
-			}
-			
+						
 			JAP_PEC_member = {
 			    picture = JAP_PEC_member
 				

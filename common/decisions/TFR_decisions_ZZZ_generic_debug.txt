@@ -479,7 +479,7 @@ debug_decisions = {
 		complete_effect = {
 			create_country_leader = {
 				name = USA_greyson_walker_char
-				picture = "gfx/Leaders/USA/USA_Greyson_Walker.png"
+				picture = "gfx/leaders/USA/USA_Greyson_Walker.png"
 				ideology = marxism_leninism
 			}
 			add_ideas = APA_jackson_hinkle_hog
@@ -613,7 +613,7 @@ debug_decisions = {
 		complete_effect = {
 			create_country_leader = {
 				name = USA_gloria_la_riva_char
-				picture = "gfx/Leaders/APA/APA_gloria_la_riva.png"
+				picture = "gfx/leaders/APA/APA_gloria_la_riva.png"
 				ideology = marxism_leninism
 			}
 			add_ideas = {
@@ -748,7 +748,7 @@ debug_decisions = {
 		complete_effect = {
 			create_country_leader = {
 				name = PTF_thomas_rousseau_char_revolution
-				picture = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+				picture = "gfx/leaders/PTF/PTF_thomas_rousseau_revolution.png"
 				ideology = hybrid_regime
 			}
 			set_popularities = {
@@ -1020,9 +1020,8 @@ debug_decisions = {
 		}
 		ai_hint_pp_cost = 9000
 		complete_effect = {
-			load_focus_tree = {
-				tree = SWE_Paradox_TFX
-			}
+			load_focus_tree = SWE_LRD_Coup
+			
 		}
 	}
 	Grandpa_Niu_arrive = {
@@ -1056,10 +1055,29 @@ debug_decisions = {
 		}
 		ai_hint_pp_cost = 9000
 		complete_effect = {
-			load_focus_tree = SWE_LRD_Coup
+			load_focus_tree = {
+				tree = SWE_Paradox_TFX
+			}
 			promote_character = SWE_Tian_shou_rang_ye
 			EU_leave_effect = yes
 			hidden_effect = {
+				set_temp_variable = { TabName = token:BoP_Tab_GlobalConflicts }
+				TTW_BoP_AddTab = yes
+				set_power_balance = {
+					id = BoP_Decisions_SWE
+				}
+				set_temp_variable = {
+					conflict_id = token:TBC_CR
+				}
+				TTW_add_fopo_conflict_tab = yes
+				set_temp_variable = {
+					conflict_id = token:RDA_VOV
+				}
+				TTW_add_fopo_conflict_tab = yes
+				set_temp_variable = {
+					conflict_id = token:unity_front
+				}
+				TTW_add_fopo_conflict_tab = yes
 				add_ideas = {
 					SWE_ICED
 					SWE_Ba_naijian
@@ -1151,8 +1169,11 @@ debug_decisions = {
 					long_name = SWE_X_ts_long
 					name = SWE_X_ts
 				}
-
 			}
+			effect_tooltip = {
+				TTW_add_fopo_conflict_tab = yes
+			}
+
 		}
 	}
 	load_LRD_PRC = {
@@ -1199,7 +1220,7 @@ debug_decisions = {
 		}
 	}
 }
-SWE_tieba_crisis = {
+SWE_BoP_category = {
 	invite_honglong = {
 		icon = generic
 		allowed = {
@@ -1207,6 +1228,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1226,6 +1250,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1244,6 +1271,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1263,6 +1293,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1283,6 +1316,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1304,6 +1340,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1325,6 +1364,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1345,6 +1387,9 @@ SWE_tieba_crisis = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0
@@ -1368,6 +1413,9 @@ SWE_LRD_coup = {
 		}
 		visible = {
 			has_completed_focus = SWE_Contact_rest_of_modders
+			check_variable = {
+				selected_conflict_id = token:unity_front
+			}
 		}
 		ai_will_do = {
 			factor = 0

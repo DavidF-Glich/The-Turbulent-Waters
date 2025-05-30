@@ -187,8 +187,3 @@ units = {
 	
 }
 
-add_equipment_to_stockpile = {
-		type = infantry_equipment_2
-		amount = 8000
-		producer = SAF
-	}

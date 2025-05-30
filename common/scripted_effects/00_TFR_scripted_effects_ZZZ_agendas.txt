@@ -247,12 +247,8 @@ start_a_third_world_war = {
 }
 calculate_cold_war_score = {
 	#分数计算-核弹
-	every_country = {
-		limit = {
-			has_country_flag = nuke_num
-		}
 		set_variable = {
-			nuke_score = num_of_nukes1
+			THIS.nuke_score = THIS.num_of_nukes1
 		}
 		if = {
 			limit = { 
@@ -262,7 +258,7 @@ calculate_cold_war_score = {
 				}
 			}
 			multiply_variable = {
-				nuke_score = @nuke_triad
+				THIS.nuke_score = 1
 			}
 		}
 		else_if = {
@@ -273,66 +269,56 @@ calculate_cold_war_score = {
 				}
 			}
 			multiply_variable = {
-				nuke_score = @nuke_semi_triad
+				THIS.nuke_score = 0.8
 			}
 		}
 		else = {
 			multiply_variable = {
-				nuke_score = @nuke_regional_deployment 
+				THIS.nuke_score = 0.5
 			}
 		}
 		multiply_variable = {
-			nuke_score = nuke_maintenence_ratio
-		}
-	}
-	#分数计算-经济
-	every_country = {
-		limit = {
-			is_in_array = {
-				array = global.TFR_the_competitors
-			}  
-		}
-		set_variable = {
-			economic_score1 = gdp_billion_var
+			THIS.nuke_score = THIS.nuke_maintenence_ratio
 		}
 		multiply_variable = {
-			economic_score1 = 0.01
+			THIS.nuke_score = 0.05
 		}
-	}
+	#分数计算-经济
+		set_variable = {
+			THIS.economic_score1 = THIS.gdp_var
+		}
+		multiply_variable = {
+			THIS.economic_score1 = 0.01
+		}
 	#分数计算-军事
-	every_country = {
-		limit = {
-			is_in_array = {
-				array = global.TFR_the_competitors
-			} 
-		}
 		set_variable = {
-			military_score1 = num_armies
+			THIS.military_score1 = THIS.num_armies
 		}
 		add_to_variable = {
-			military_score1 = num_ships
+			THIS.military_score1 = THIS.num_ships
 		}
 		add_to_variable = {
-			military_score1 = num_deployed_planes
+			THIS.military_score1 = THIS.num_deployed_planes
 		}
-	}
+		multiply_variable = {
+			THIS.military_score1 = 0.5
+		}
 	#分数计算-总分
-	every_country = {
-		limit = {
-			is_in_array = {
-				array = global.TFR_the_competitors
-			}  
+		set_variable = {
+			THIS.military_score1 = THIS.nuke_score
+		}
+		add_to_variable = {
+			THIS.total_score1 = THIS.military_score1
 		}
 		set_variable = {
-			total_score1 = military_score
+			THIS.total_score1 = THIS.military_score1
 		}
 		add_to_variable = {
-			total_score1 = economic_score
+			THIS.total_score1 = THIS.economic_score1
 		}
 		add_to_variable = {
-			total_score1 = nuke_score
+			THIS.total_score1 = THIS.diplo_score
 		}
-	}
 
 }
 generic_weekly_agenda_check = {

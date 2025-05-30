@@ -2,7 +2,7 @@
 		TUR_recep_tayyip_erdogan_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Recep Tayyip Erdogan.png"
+					large = "gfx/leaders/TUR/Recep Tayyip Erdogan.png"
 				}
 			}
 			country_leader={
@@ -17,7 +17,7 @@
 		TUR_Sinan_Ogan_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Sinan_Ogan.png"
+					large = "gfx/leaders/TUR/Sinan_Ogan.png"
 				}
 			}
 			country_leader={
@@ -31,7 +31,7 @@
 		TUR_hulusi_akar_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Hulusi Akar.dds"
+					large = "gfx/leaders/TUR/Hulusi Akar.dds"
 				}
 			}
 			country_leader={
@@ -51,7 +51,7 @@
 		TUR_Kemal_Kilicdaroglu_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Kemal_Kilicdaroglu.png"
+					large = "gfx/leaders/TUR/Kemal_Kilicdaroglu.png"
 				}
 			}
 			country_leader={
@@ -68,7 +68,7 @@
 		TUR_Fehriye_Erdal_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/fahriye_erdal.png"
+					large = "gfx/leaders/TUR/fahriye_erdal.png"
 				}
 			}
 			gender = female
@@ -81,21 +81,21 @@
 		TUR_Sureyyya_Evren_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Sureyyya_Evren.png"
+					large = "gfx/leaders/TUR/Sureyyya_Evren.png"
 				}
 			}
 		}
 		TUR_senol_Karakas_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Senol_Karakas.png"
+					large = "gfx/leaders/TUR/Senol_Karakas.png"
 				}
 			}
 		}
 		TUR_Gultekin_Tirpanci_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Gultekin_Tirpanci.png"
+					large = "gfx/leaders/TUR/Gultekin_Tirpanci.png"
 				}
 			}
 			country_leader={
@@ -107,7 +107,7 @@
 		TUR_umit_ozdag_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Umit_Ozdag.png"
+					large = "gfx/leaders/TUR/Umit_Ozdag.png"
 				}
 			}
 			country_leader={
@@ -119,7 +119,7 @@
 		TUR_Ahmet_Yigit_Yildirim_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Ahmet_Yigit_Yildirim.png"
+					large = "gfx/leaders/TUR/Ahmet_Yigit_Yildirim.png"
 				}
 			}
 			country_leader={
@@ -131,7 +131,7 @@
 		TUR_Ozgur_Bursali_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Ozgur_Bursali.png"
+					large = "gfx/leaders/TUR/Ozgur_Bursali.png"
 				}
 			}
 			country_leader={
@@ -143,7 +143,7 @@
 		TUR_Kemal_Okuyan_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Kemal_Okuyan.png"
+					large = "gfx/leaders/TUR/Kemal_Okuyan.png"
 				}
 			}
 			country_leader={
@@ -155,7 +155,7 @@
 		TUR_Adnan_Ozbal = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Adnan Ozbal.png"
+					large = "gfx/leaders/TUR/Adnan Ozbal.png"
 				}
 			}
 			navy_leader={
@@ -169,7 +169,7 @@
 		TUR_Metin_Gurak = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Metin Gurak.png"
+					large = "gfx/leaders/TUR/Metin Gurak.png"
 				}
 			}
 			corps_commander={
@@ -184,7 +184,7 @@
 		TUR_Selcuk_Bayraktaroglu = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Selcuk Bayraktaroglu.png"
+					large = "gfx/leaders/TUR/Selcuk Bayraktaroglu.png"
 				}
 			}
 			corps_commander={
@@ -198,7 +198,7 @@
 		TUR_Sinan_Yayla = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Sinan Yayla.png"
+					large = "gfx/leaders/TUR/Sinan Yayla.png"
 				}
 			}
 			corps_commander={
@@ -212,7 +212,7 @@
 		TUR_Yasar_Guler = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Yasar Guler.png"
+					large = "gfx/leaders/TUR/Yasar Guler.png"
 				}
 			}
 			field_marshal={
@@ -226,7 +226,7 @@
 		TUR_Musa_Avsever = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/Musa_Avsever.png"
+					large = "gfx/leaders/TUR/Musa_Avsever.png"
 				}
 			}
 			corps_commander={
@@ -240,14 +240,14 @@
 		OTO_Sehzade_Orhan_Osmanoglu = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/OTO_Sehzade_Orhan_Osmanoglu.png"
+					large = "gfx/leaders/TUR/OTO_Sehzade_Orhan_Osmanoglu.png"
 				}
 			}
 		}
 		KUR_Murat_Karayilan = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/KUR_Murat_Karayilan.png"
+					large = "gfx/leaders/TUR/KUR_Murat_Karayilan.png"
 				}
 			}
 			country_leader = {
@@ -269,49 +269,49 @@
 		TUR_Marc_de_cacqueray_Valmenier = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FRA/FAF_Marc_de_Cacqueray.png"
+					large = "gfx/leaders/FRA/FAF_Marc_de_Cacqueray.png"
 				}
 			}
 		}
 		LAZ_Aydemir_Guler_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/LAZ_Aydemir_Guler.png"
+					large = "gfx/leaders/TUR/LAZ_Aydemir_Guler.png"
 				}
 			}
 		}
 		LAZ_Ismail_Bucaklisi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/LAZ_Ismail_Bucaklisi.png"
+					large = "gfx/leaders/TUR/LAZ_Ismail_Bucaklisi.png"
 				}
 			}
 		}
 		ADA_Erkan_Bas_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUR/ADA_Erkan_Bas.png"
+					large = "gfx/leaders/TUR/ADA_Erkan_Bas.png"
 				}
 			}
 		}
 		LAZ_Salvatore_Farina = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ITA/Salvatore Farina.png"
+					large = "gfx/leaders/ITA/Salvatore Farina.png"
 				}
 			}
 		}
 		ADA_Anne_Cecile_Ortemann_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FRA/Anne_Cecile_Ortemann.png"
+					large = "gfx/leaders/FRA/Anne_Cecile_Ortemann.png"
 				}
 			}
 		}
 		PKK_Etienne_du_Peyroux = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FRA/Etienne du Peyroux.png"
+					large = "gfx/leaders/FRA/Etienne du Peyroux.png"
 				}
 			}
 		}

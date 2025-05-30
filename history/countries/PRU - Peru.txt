@@ -164,12 +164,6 @@
 		communist = 7
 	}
 
-	PRU = {
-		country_event = {
-			id = latin_america.12
-			days = 29
-		}
-	}
 
 	### VARIANTS ###
 	# 2000 Start #
@@ -194,7 +188,6 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 		## Frigates ##
 		create_equipment_variant = { #Frigate 1
@@ -213,7 +206,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		## Destroyers ##
 		create_equipment_variant = { #Destroyer 1
@@ -231,7 +223,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_medium_battery_1
 			}
-			obsolete = no
 		}
 		## Missile Cruisers ##
 		create_equipment_variant = { #Missile Cruiser 1
@@ -251,7 +242,6 @@
 				mid_2_custom_slot = ship_secondaries_1
 				rear_1_custom_slot = ship_heavy_battery_1
 			}
-			obsolete = no
 		}
 		## Submarines ##
 		create_equipment_variant = { #Nuclear Sub 2
@@ -263,6 +253,5 @@
 				fixed_ship_engine_slot = sub_ship_engine_2
 				rear_1_custom_slot = ship_torpedo_sub_2
 			}
-			obsolete = no
 		}
 	}

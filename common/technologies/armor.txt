@@ -278,7 +278,6 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = main_battle_tank7
 			research_cost_coeff = 1
 		}
 		
@@ -473,7 +472,6 @@ technologies = {
 		}
 		
 		path = {
-			leads_to_tech = light_tank5
 			research_cost_coeff = 1
 		}
 		
@@ -620,7 +618,6 @@ technologies = {
 	amphibious_tank3 = {
 
 		enable_equipments = {
-			amphibious_tank_equipment_3
 		}
 		
 		dependencies = {

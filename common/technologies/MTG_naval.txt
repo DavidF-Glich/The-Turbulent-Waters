@@ -1899,9 +1899,6 @@ technologies = {
 	}
 	midget_submarines = {
 
-		enable_equipments = {
-			ship_hull_midget_submarine
-		}
 		research_cost = 1
 		start_year = 2020
 

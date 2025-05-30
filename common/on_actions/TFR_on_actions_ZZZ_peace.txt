@@ -15,6 +15,7 @@ on_actions = {
 				save_global_event_target_as = losing_country
 			}
 			log = "[GetDateText]: winner/loser: FROM: [winning_country.GetName] ROOT: [losing_country.GetName] on_capitulation"
+			#第一层——
 			if = {
 				limit = {
 					event_target:losing_country = {

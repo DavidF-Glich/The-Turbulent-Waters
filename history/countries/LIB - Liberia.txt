@@ -99,10 +99,6 @@ add_ideas = {
 }
 	
 #Events
-country_event = {
-	id = africa.5
-	days = 1413
-}
 
 set_politics = {	
 	ruling_party = conservative

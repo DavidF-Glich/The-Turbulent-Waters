@@ -285,7 +285,6 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 		## Frigates ##
 		create_equipment_variant = { #Frigate 1
@@ -323,7 +322,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		## Submarines ##
 		create_equipment_variant = { #Diesel Sub 1
@@ -346,7 +344,6 @@
 				fixed_ship_engine_slot = sub_ship_engine_2
 				rear_1_custom_slot = ship_torpedo_sub_2
 			}
-			obsolete = no
 		}
 	}
 	

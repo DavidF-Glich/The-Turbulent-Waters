@@ -272,9 +272,7 @@ characters={
 			ledger = air
 			allowed = { original_tag = PRC }
 			available = {
-				NOT = {
-					has_completed_focus = PRC_next_generation_airforce
-				}
+
 			}
 			traits = {
 				air_chief_safety_1
@@ -352,11 +350,7 @@ characters={
 			ledger = army
 			allowed = { tag = PRC}
 			available = {
-				has_completed_focus = PRC_tank_primacy_nat
-				OR = {
-					has_country_flag = PRC_centrist_win
-					has_country_flag = PRC_nationalist_win
-				}
+
 			}
 			traits = {
 				army_armored_2

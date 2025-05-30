@@ -2,10 +2,10 @@ characters={
 	AFG_ashraf_ghani_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/AFG/Ashraf Ghani.png" 
+				large = "gfx/leaders/AFG/Ashraf Ghani.png" 
 			}
 			army = {
-				large = "gfx/Leaders/AFG/Ashraf Ghani.png" 
+				large = "gfx/leaders/AFG/Ashraf Ghani.png" 
 			}
 		}
 
@@ -19,10 +19,10 @@ characters={
 	AFG_alexander_cheremenov_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/AFG/Alexander_Cheremenov.png" 
+				large = "gfx/leaders/AFG/Alexander_Cheremenov.png" 
 			}
 			army = {
-				large = "gfx/Leaders/AFG/Alexander_Cheremenov.png" 
+				large = "gfx/leaders/AFG/Alexander_Cheremenov.png" 
 			}
 		}
 
@@ -35,10 +35,10 @@ characters={
 	AFG_abdul_dostum_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/AFG/Abdul_Rashid_Dostum.png" 
+				large = "gfx/leaders/AFG/Abdul_Rashid_Dostum.png" 
 			}
 			army = {
-				large = "gfx/Leaders/AFG/Abdul_Rashid_Dostum.png" 
+				large = "gfx/leaders/AFG/Abdul_Rashid_Dostum.png" 
 			}
 		}
 
@@ -51,10 +51,10 @@ characters={
 	AFG_nur_ulumi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/AFG/Nur_ul_Haq_Ulumi.png" 
+				large = "gfx/leaders/AFG/Nur_ul_Haq_Ulumi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/AFG/Nur_ul_Haq_Ulumi.png" 
+				large = "gfx/leaders/AFG/Nur_ul_Haq_Ulumi.png" 
 			}
 		}
 
@@ -68,10 +68,10 @@ characters={
 	TAL_hibatullah_akhundzada_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/TAL/Hibatullah Akhundzada.png" 
+				large = "gfx/leaders/TAL/Hibatullah Akhundzada.png" 
 			}
 			army = {
-				large = "gfx/Leaders/TAL/Hibatullah Akhundzada.png" 
+				large = "gfx/leaders/TAL/Hibatullah Akhundzada.png" 
 			}
 		}
 
@@ -85,10 +85,10 @@ characters={
 	TAL_Sirajuddin_Haqqani = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
+				large = "gfx/leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
 			}
 			army = {
-				large = "gfx/Leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
+				large = "gfx/leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
 			}
 		}
 
@@ -106,10 +106,10 @@ characters={
 	PER_Sirajuddin_Haqqani = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
+				large = "gfx/leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
 			}
 			army = {
-				large = "gfx/Leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
+				large = "gfx/leaders/TAL/TAL_Sirajuddin_Haqqani.png" 
 			}
 		}
 
@@ -123,10 +123,10 @@ characters={
 	TPK_Noor_Wali_Mehsud = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/TAL/TPK_Noor_Wali_Mehsud.png" 
+				large = "gfx/leaders/TAL/TPK_Noor_Wali_Mehsud.png" 
 			}
 			army = {
-				large = "gfx/Leaders/TAL/TPK_Noor_Wali_Mehsud.png" 
+				large = "gfx/leaders/TAL/TPK_Noor_Wali_Mehsud.png" 
 			}
 		}
 

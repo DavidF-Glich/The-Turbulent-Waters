@@ -100,11 +100,6 @@ set_politics = {
 	elections_allowed = no
 }
 
-add_ideas = {
-		#Country Ideas
-		PRC_nationalist_insurgency
-}
-
 set_popularities = {
 	social_liberal = 10
 	conservative = 33

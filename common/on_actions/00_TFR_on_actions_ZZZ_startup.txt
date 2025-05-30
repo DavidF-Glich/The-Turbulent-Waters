@@ -9,15 +9,8 @@ on_actions = {
 				set_variable = {
 					TFR_cold_war_ui_var = 1
 				}
-				if = {
-					limit = {
-						is_ai = no
-						has_content_tag = no
-					}
-					country_event = generic.20
-				}
 			}
-			log = "The Turbulent Waters \"Dev\" May 8th"
+			log = "The Turbulent Waters \"Dev\" May 27th"
 			set_global_flag = TFR_startup_global
 			#国际市场，删掉！
 			every_country = {
@@ -264,6 +257,9 @@ on_actions = {
 						}
 					}
 				}
+				set_temp_variable = { conflict_id = token:Russo_Ukrainian_conflict }
+				TTW_add_fopo_conflict_tab = yes
+			
 			}
 			USA = {
 				
@@ -379,9 +375,14 @@ on_actions = {
 			}
 			UKR = {
 				scoped_play_song = "tno_song_so_far_from_god"
+				set_temp_variable = { conflict_id = token:Russo_Ukrainian_conflict }
+				TTW_add_fopo_conflict_tab = yes
 			}
 			PRC = {
-				
+				set_temp_variable = { conflict_id = token:TaiwanCrisis }
+				TTW_add_fopo_conflict_tab = yes
+				set_temp_variable = { conflict_id = token:arunachal_war }
+				TTW_add_fopo_conflict_tab = yes
 				set_temp_variable = {
 					coalition_partner_var_temp = token:market_liberal
 				}

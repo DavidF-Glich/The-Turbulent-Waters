@@ -2,7 +2,7 @@
 		MRT_Mohamed_Ould_Ghazouani_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MRT/Mohamed Ould Ghazouani.png"
+					large = "gfx/leaders/MRT/Mohamed Ould Ghazouani.png"
 				}
 			}
 			country_leader={
@@ -25,7 +25,7 @@
 		MRT_Hanena_Ould_Sidi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MRT/Hanena Ould Sidi.png"
+					large = "gfx/leaders/MRT/Hanena Ould Sidi.png"
 				}
 			}
 			country_leader = {
@@ -47,7 +47,7 @@
 		MRT_Mohamed_Bamba_Meguett_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MRT/Mohamed Bamba Meguett.png"
+					large = "gfx/leaders/MRT/Mohamed Bamba Meguett.png"
 				}
 			}
 			corps_commander={
@@ -63,7 +63,7 @@
 		MRT_Mohamed_Cheikh_Mohamed_Lemine_Elemine_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MRT/Mohamed Cheikh Mohamed Lemine Elemine.png"
+					large = "gfx/leaders/MRT/Mohamed Cheikh Mohamed Lemine Elemine.png"
 				}
 			}
 			corps_commander={

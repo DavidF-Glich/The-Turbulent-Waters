@@ -90,10 +90,6 @@ if = {
 }
 
 add_ideas = {
-	USA_political_chaos
-	USA_low_morale_idea
-	NCY_imperial_legacy_idea
-	NCY_unionist_aid_idea
 	#Laws
 	high_interest_rates
 	higher_safety

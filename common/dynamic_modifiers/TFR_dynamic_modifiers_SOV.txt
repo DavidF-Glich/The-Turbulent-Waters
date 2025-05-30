@@ -1213,3 +1213,14 @@
 		state_production_speed_buildings_factor = -0.1
 	    local_factory_sabotage = 0.30
 	}
+
+	SOV_shortage_of_workers = {
+		icon = GFX_idea_SOV_economic_instability
+		production_speed_buildings_factor = SOV_shortage_of_workers_production_speed_buildings_factor_dynamic
+		poverty_development_monthly = SOV_shortage_of_workers_poverty_development_monthly_dynamic
+		industrial_capacity_factory = SOV_shortage_of_workers_industrial_capacity_factory_dynamic
+		society_development_monthly = SOV_shortage_of_workers_society_development_monthly_dynamic
+		production_factory_max_efficiency_factor = SOV_shortage_of_workers_factory_max_efficiency_factor_dynamic
+		income_growth_factor = SOV_shortage_of_workers_income_growth_factor_dynamic
+		industrial_development_monthly = SOV_shortage_of_workers_industrial_development_monthly_dynamic
+	}

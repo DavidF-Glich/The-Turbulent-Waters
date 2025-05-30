@@ -1,22 +1,10 @@
 ﻿	capital = 301
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 10
 	set_stability = 0.4
-	country_event = {
-		id = latin_america.12
-		days = 1215
-	}
-
-	set_variable = { Russian_Influence = 0.00 }
-	set_variable = { Chinese_Influence = 0.05 }
-	set_variable = { American_Influence = 0.65 }
-	set_variable = { European_Influence = 0.0 }
-	set_variable = { PDO_Influence = 0.00 }
-	set_variable = { Sovereign_Influence = 0.30 }
-
 	recruit_character = PAR_mario_abdo_benitez_char
 	recruit_character = PAR_santiago_pena_char
 

@@ -1,4 +1,5 @@
-#AI行为		AI Behavior
+#AI行为		AI Behavior、
+#美国2020大选	USA 2020 Election
 USA_ai_behavior = {
 	name = "USA_AI_BEHAVIOR_2020"
 	group = "RULE_GROUP_AI_BEHAVIOR"

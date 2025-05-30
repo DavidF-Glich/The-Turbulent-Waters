@@ -2,7 +2,7 @@
 		HOL_Wilelm_Alexander_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HOL/Willem_Alexander.png"
+					large = "gfx/leaders/HOL/Willem_Alexander.png"
 				}
 			}
 			country_leader={
@@ -45,7 +45,7 @@
 		HOL_Catharine_of_Orange_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HOL/Catharina_Amalia.png"
+					large = "gfx/leaders/HOL/Catharina_Amalia.png"
 				}
 			}
 			country_leader={
@@ -141,7 +141,7 @@
 		HOL_Thierry_Baudet_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HOL/HOL_Thierry_Baudet.png"
+					large = "gfx/leaders/HOL/HOL_Thierry_Baudet.png"
 				}
 			}
 		}

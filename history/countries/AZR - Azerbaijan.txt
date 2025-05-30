@@ -141,7 +141,6 @@
 		create_equipment_variant = {
 			name = "Mig-21"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
@@ -155,7 +154,6 @@
 		create_equipment_variant = {
 			name = "Su-25"
 			type = small_plane_cas_airframe_1
-			model = "SOV_CAS_equipment_2_entity"
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay

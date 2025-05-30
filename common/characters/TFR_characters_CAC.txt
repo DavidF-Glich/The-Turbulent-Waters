@@ -2,11 +2,11 @@ characters = {
 	CAC_mike_ma = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_mike_ma_national.png"
+				large = "gfx/leaders/CAC/CAC_mike_ma_national.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_mike_ma_general.png"
+				large = "gfx/leaders/CAC/CAC_mike_ma_general.png"
 			}
 		}
 		country_leader = {
@@ -27,11 +27,11 @@ characters = {
 	CAC_brandon_letsinger = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_brandon_letsinger.png"
+				large = "gfx/leaders/CAC/CAC_brandon_letsinger.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_brandon_letsinger.png"
+				large = "gfx/leaders/CAC/CAC_brandon_letsinger.png"
 			}
 		}
 		country_leader = {
@@ -42,11 +42,11 @@ characters = {
 	CAC_bob_avakian = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_bob_avakian.png"
+				large = "gfx/leaders/CAC/CAC_bob_avakian.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_bob_avakian.png"
+				large = "gfx/leaders/CAC/CAC_bob_avakian.png"
 			}
 		}
 		country_leader = {
@@ -57,11 +57,11 @@ characters = {
 	CAC_rinaldo_nazzaro = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_rinaldo_nazzaro.png"
+				large = "gfx/leaders/CAC/CAC_rinaldo_nazzaro.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_rinaldo_nazzaro.png"
+				large = "gfx/leaders/CAC/CAC_rinaldo_nazzaro.png"
 			}
 		}
 		country_leader = {
@@ -76,7 +76,7 @@ characters = {
 	CAC_provisional_government = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_provisional_government.png"
+				large = "gfx/leaders/CAC/CAC_provisional_government.png"
 			}
 		}
 		country_leader = {
@@ -87,10 +87,10 @@ characters = {
 	CAC_OUTLAWED_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_artyom.png"
+				large = "gfx/leaders/PTF/PTF_artyom.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_artyom.png"
+				large = "gfx/leaders/PTF/PTF_artyom.png"
 			}
 		}
 		country_leader = {
@@ -112,11 +112,11 @@ characters = {
 	CAC_paul_harrell_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_paul_harell.png"
+				large = "gfx/leaders/CAC/CAC_paul_harell.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_paul_harell.png"
+				large = "gfx/leaders/CAC/CAC_paul_harell.png"
 			}
 		}
 		corps_commander = {
@@ -133,11 +133,11 @@ characters = {
 	CAC_greg_walsh_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_greg_walsh.png"
+				large = "gfx/leaders/CAC/CAC_greg_walsh.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_greg_walsh.png"
+				large = "gfx/leaders/CAC/CAC_greg_walsh.png"
 			}
 		}
 		corps_commander = {
@@ -154,11 +154,11 @@ characters = {
 	CAC_luke_kenna_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/CAC/CAC_luke_kenna.png"
+				large = "gfx/leaders/CAC/CAC_luke_kenna.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/generic/advisors/generic_vacant.png"
-				large = "gfx/Leaders/CAC/CAC_luke_kenna.png"
+				large = "gfx/leaders/CAC/CAC_luke_kenna.png"
 			}
 		}
 		corps_commander = {

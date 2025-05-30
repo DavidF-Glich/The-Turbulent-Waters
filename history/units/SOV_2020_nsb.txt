@@ -237,7 +237,6 @@ division_template = {
 division_template = {
 	name = "Morskaya Brigada"
 	division_names_group = SOV_MAR_01
-	override_model = "SOV_amphibious_armor_entity"
 	
 	regiments = {
 		amphibious_mechanized = { x = 0 y = 0 }

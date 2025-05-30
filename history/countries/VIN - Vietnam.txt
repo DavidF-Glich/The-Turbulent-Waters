@@ -5,14 +5,6 @@
 	set_research_slots = 3
 	set_convoys = 600
 	set_stability = 0.4
-	country_event = {
-		id = vietnam.1
-		days = 460
-	}
-	country_event = {
-		id = vietnam.6
-		days = 1661
-	}
 
 	set_variable = { Russian_Influence = 0.00 }
 	set_variable = { Chinese_Influence = 0.20 }

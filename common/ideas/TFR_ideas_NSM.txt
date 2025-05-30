@@ -456,8 +456,7 @@ ideas = {
 				civilian_factory_use = 3
 				stability_factor = -0.1
 				society_development_monthly = -0.1
-				farming_development_monthly
-				-0.2
+				farming_development_monthly = -0.2
 			}
 		}
 		NSM_medium_flooding_idea = {
@@ -1944,7 +1943,6 @@ ideas = {
 				original_tag = NSM
 			}
 			available = {
-				has_completed_focus = NSM_Segregate_Businesses
 			}
 			traits = {
 				ide_nat_soc
@@ -1958,7 +1956,6 @@ ideas = {
 				original_tag = NSM
 			}
 			available = {
-				has_completed_focus = NSM_Remove_Foreign_Markets
 			}
 			traits = {
 				eco_keynesian_economy

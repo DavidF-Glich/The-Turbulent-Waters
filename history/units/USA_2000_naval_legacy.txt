@@ -100,10 +100,10 @@
 	}
 	fleet = {
 		name = "Carrier Group 7" #San Diego, CA
+		naval_base = 1562
 		task_force = {
 			name = "Carrier Group 7" #San Diego, CA
 			location = 1562
-		naval_base = 1562
 			ship = { name = "USS John C. Stennis (CVN-74)" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } }
 			ship = { name = "USS George Washington (CVN-73)" definition = carrier equipment = { carrier_2 = { amount = 1 owner = USA } } }
 			ship = { name = "USS Lake Champlain (CG-57)" definition = battleship equipment = { battleship_2 = { amount = 1 owner = USA } } }

@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Spetsnaz Brigada"
-	override_model = SOV_special_forces_2_entity
 	
 	regiments = {
 		special_forces = { x = 0 y = 0 }

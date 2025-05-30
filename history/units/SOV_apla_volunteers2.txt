@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Motostrelkovaya Brigada"
-	override_model = SOV_light_mechanized_entity
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }

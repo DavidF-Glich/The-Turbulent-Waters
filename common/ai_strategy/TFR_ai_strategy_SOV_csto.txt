@@ -9,7 +9,6 @@ seek_CSTO_membership = {
 		OR = {		#These countries should always desire membership
 			tag = BLR
 			tag = KAZ
-			tag = TJI
 			tag = KYR
 			tag = ARM
 			tag = NGK

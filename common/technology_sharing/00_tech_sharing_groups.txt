@@ -81,9 +81,6 @@ technology_sharing_group = {
 			tag = PRC
 			is_in_faction_with = PRC
 		}
-		JAP = {
-			has_completed_focus = JAP_scientific_collaboration
-		}
     }
 
 }

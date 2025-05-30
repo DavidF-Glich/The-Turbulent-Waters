@@ -94,11 +94,6 @@ if = {
 	}
 }
 
-add_ideas = {
-		#Country Ideas
-		PRC_nationalist_insurgency
-}
-
 set_politics = {	
 	ruling_party = nationalist 
 	elections_allowed = no

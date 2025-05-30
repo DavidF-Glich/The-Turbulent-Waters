@@ -2,10 +2,10 @@ characters={
 	CUB_raul_castro_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CUB/Raul_Castro.dds" 
+				large = "gfx/leaders/CUB/Raul_Castro.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/CUB/Raul_Castro.dds" 
+				large = "gfx/leaders/CUB/Raul_Castro.dds" 
 			}
 		}
 		country_leader = {
@@ -17,7 +17,7 @@ characters={
 	CUB_magiel_diaz_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CUB/CUB_Miguel_Diaz.png" 
+				large = "gfx/leaders/CUB/CUB_Miguel_Diaz.png" 
 			}
 		}
 		country_leader = {
@@ -42,10 +42,10 @@ characters={
 	HAI_Babekyou_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/HAI/HAI_Babekyou.png" 
+				large = "gfx/leaders/HAI/HAI_Babekyou.png" 
 			}
 			army = {
-				large = "gfx/Leaders/HAI/HAI_Babekyou.png" 
+				large = "gfx/leaders/HAI/HAI_Babekyou.png" 
 			}
 		}
 		country_leader = {
@@ -56,10 +56,10 @@ characters={
 	HAI_Jovenel_Moise_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/HAI/HAI_Jovenel_Moïse.png" 
+				large = "gfx/leaders/HAI/HAI_Jovenel_Moïse.png" 
 			}
 			army = {
-				large = "gfx/Leaders/HAI/HAI_Jovenel_Moïse.png" 
+				large = "gfx/leaders/HAI/HAI_Jovenel_Moïse.png" 
 			}
 		}
 		country_leader = {
@@ -70,10 +70,10 @@ characters={
 	HAI_nicolas_duvalier = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/HAI/HAI_Nicolas_Duvalier.png" 
+				large = "gfx/leaders/HAI/HAI_Nicolas_Duvalier.png" 
 			}
 			army = {
-				large = "gfx/Leaders/HAI/HAI_Nicolas_Duvalier.png" 
+				large = "gfx/leaders/HAI/HAI_Nicolas_Duvalier.png" 
 			}
 		}
 		country_leader = {
@@ -84,10 +84,10 @@ characters={
 	JAM_andrew_holness = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/JAM/JAM_andrew_holness.png" 
+				large = "gfx/leaders/JAM/JAM_andrew_holness.png" 
 			}
 			army = {
-				large = "gfx/Leaders/JAM/JAM_andrew_holness.png" 
+				large = "gfx/leaders/JAM/JAM_andrew_holness.png" 
 			}
 		}
 		country_leader = {

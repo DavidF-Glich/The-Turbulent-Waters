@@ -150,17 +150,14 @@ technologies = {
 
 	improved_light_tank_chassis = { #Panzer II
 	
-		on_research_complete = {
-			if = {
-				limit = {
-					tag = SOV
-				}
-				custom_effect_tooltip = unmanned_tech_tt
-				SOV = {
-					country_event = { id = russia.136 }
-				}
-			}
-		}
+		#on_research_complete = {
+		#	if = {
+		#		limit = {
+		#			tag = SOV
+		#		}
+		#		custom_effect_tooltip = unmanned_tech_tt
+		#	}
+		#}
 		show_effect_as_desc = yes
 
 		enable_equipments = {

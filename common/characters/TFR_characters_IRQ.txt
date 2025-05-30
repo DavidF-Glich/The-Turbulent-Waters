@@ -2,10 +2,10 @@ characters={
 	IRQ_barham_salih_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/IRQ/Barham Salih.png" 
+				large = "gfx/leaders/IRQ/Barham Salih.png" 
 			}
 			army = {
-				large = "gfx/Leaders/IRQ/Barham Salih.png" 
+				large = "gfx/leaders/IRQ/Barham Salih.png" 
 			}
 		}
 
@@ -19,10 +19,10 @@ characters={
 	IRQ_muqtada_sadr_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/IRQ/Muqtada al-Sadr.png" 
+				large = "gfx/leaders/IRQ/Muqtada al-Sadr.png" 
 			}
 			army = {
-				large = "gfx/Leaders/IRQ/Muqtada al-Sadr.png" 
+				large = "gfx/leaders/IRQ/Muqtada al-Sadr.png" 
 			}
 		}
 
@@ -35,10 +35,10 @@ characters={
 	IRQ_juba_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/IRQ/Juba.png" 
+				large = "gfx/leaders/IRQ/Juba.png" 
 			}
 			army = {
-				large = "gfx/Leaders/IRQ/Juba.png" 
+				large = "gfx/leaders/IRQ/Juba.png" 
 			}
 		}
 
@@ -55,7 +55,7 @@ characters={
 	IRQ_abdul_amir_rashid_yarallah_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/IRQ/Abdul Amir Rashid Yarallah.png" 
+				large = "gfx/leaders/IRQ/Abdul Amir Rashid Yarallah.png" 
 			}
 		}
 
@@ -71,10 +71,10 @@ characters={
 	IRQ_Izzat_Ibrahim_Douri = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/BUK/IRQ_Izzat_Ibrahim_Douri.png" 
+				large = "gfx/leaders/BUK/IRQ_Izzat_Ibrahim_Douri.png" 
 			}
 			army = {
-				large = "gfx/Leaders/BUK/IRQ_Izzat_Ibrahim_Douri.png" 
+				large = "gfx/leaders/BUK/IRQ_Izzat_Ibrahim_Douri.png" 
 			}
 		}
 
@@ -102,10 +102,10 @@ characters={
 	IRQ_Salah_Mukhtar = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/BUK/IRQ_Salah_Mukhtar.png" 
+				large = "gfx/leaders/BUK/IRQ_Salah_Mukhtar.png" 
 			}
 			army = {
-				large = "gfx/Leaders/BUK/IRQ_Salah_Mukhtar.png" 
+				large = "gfx/leaders/BUK/IRQ_Salah_Mukhtar.png" 
 			}
 		}
 
@@ -129,10 +129,10 @@ characters={
 	IRQ_Hamza_Molsul = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/BUK/IRQ_Hamza_Molsul.png" 
+				large = "gfx/leaders/BUK/IRQ_Hamza_Molsul.png" 
 			}
 			army = {
-				large = "gfx/Leaders/BUK/IRQ_Hamza_Molsul.png" 
+				large = "gfx/leaders/BUK/IRQ_Hamza_Molsul.png" 
 			}
 		}
 
@@ -152,10 +152,10 @@ characters={
 	ABK_ahmad_hassan_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ABK/Ahmad al-Hassan.dds" 
+				large = "gfx/leaders/ABK/Ahmad al-Hassan.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ABK/Ahmad al-Hassan.dds" 
+				large = "gfx/leaders/ABK/Ahmad al-Hassan.dds" 
 			}
 		}
 
@@ -187,7 +187,7 @@ characters={
 	KUR_hussein_mansor_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUR/generals/Hussein_Mansor.dds" 
+				large = "gfx/leaders/KUR/generals/Hussein_Mansor.dds" 
 			}
 		}
 			
@@ -202,7 +202,7 @@ characters={
 	KUR_abdula_musla_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUR/generals/Abdula_Musla.dds" 
+				large = "gfx/leaders/KUR/generals/Abdula_Musla.dds" 
 			}
 		}
 			
@@ -217,7 +217,7 @@ characters={
 	KUR_hossein_yazdan_bna_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUR/generals/Hossein_Yazdan_Bna.dds" 
+				large = "gfx/leaders/KUR/generals/Hossein_Yazdan_Bna.dds" 
 			}
 		}
 			
@@ -232,7 +232,7 @@ characters={
 	KUR_sirwan_barzani_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUR/generals/Sirwan_Barzani.dds" 
+				large = "gfx/leaders/KUR/generals/Sirwan_Barzani.dds" 
 			}
 		}
 			
@@ -247,7 +247,7 @@ characters={
 	KUR_karzan_mahmoud_ahmed_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUR/generals/Karzan.dds" 
+				large = "gfx/leaders/KUR/generals/Karzan.dds" 
 			}
 		}
 			
@@ -262,7 +262,7 @@ characters={
 	KUR_sherko_hwani_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUR/generals/Sherko.dds" 
+				large = "gfx/leaders/KUR/generals/Sherko.dds" 
 			}
 		}
 			
@@ -278,10 +278,10 @@ characters={
 	IRQ_Abdul_Yarallah = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/FIA/IRQ_Abdul_Yarallah.png" 
+				large = "gfx/leaders/FIA/IRQ_Abdul_Yarallah.png" 
 			}
 			army = {
-				large = "gfx/Leaders/FIA/IRQ_Abdul_Yarallah.png" 
+				large = "gfx/leaders/FIA/IRQ_Abdul_Yarallah.png" 
 			}
 		}
 	
@@ -309,10 +309,10 @@ characters={
 	ISS_abu_ibrahim_hashimi_qurashi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ISS/Abu Ibrahim al-Hashimi al-Qurashi.png" 
+				large = "gfx/leaders/ISS/Abu Ibrahim al-Hashimi al-Qurashi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/ISS/Abu Ibrahim al-Hashimi al-Qurashi.png" 
+				large = "gfx/leaders/ISS/Abu Ibrahim al-Hashimi al-Qurashi.png" 
 			}
 		}
 
@@ -326,7 +326,7 @@ characters={
 	ISS_abu_saleh_obaidi_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/ISS/generals/Abu Saleh al-Obaidi.dds" 
+				large = "gfx/leaders/ISS/generals/Abu Saleh al-Obaidi.dds" 
 			}
 		}
 			
@@ -341,10 +341,10 @@ characters={
 	IRQ_abdul_rashid_char = {
 		portraits= {
 			civilian = {
-				large = "gfx/Leaders/IRQ/Abdul Rashid.png" 
+				large = "gfx/leaders/IRQ/Abdul Rashid.png" 
 			}
 			army = {
-				large = "gfx/Leaders/IRQ/Abdul Rashid.png" 
+				large = "gfx/leaders/IRQ/Abdul Rashid.png" 
 			}
 		}
 
@@ -357,10 +357,10 @@ characters={
 	IRQ_qais_khazali_char = {
 		portraits= {
 			civilian = {
-				large = "gfx/Leaders/IRQ/Qais Khazali.png" 
+				large = "gfx/leaders/IRQ/Qais Khazali.png" 
 			}
 			army = {
-				large = "gfx/Leaders/IRQ/Qais Khazali.png" 
+				large = "gfx/leaders/IRQ/Qais Khazali.png" 
 			}
 		}
 
@@ -373,10 +373,10 @@ characters={
 	IRQ_raghad_hussein_char = {
 		portraits= {
 			civilian = {
-				large = "gfx/Leaders/BUK/Raghad Hussein.png" 
+				large = "gfx/leaders/BUK/Raghad Hussein.png" 
 			}
 			army = {
-				large = "gfx/Leaders/BUK/Raghad Hussein.png" 
+				large = "gfx/leaders/BUK/Raghad Hussein.png" 
 			}
 		}
 

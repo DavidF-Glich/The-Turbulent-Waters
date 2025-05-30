@@ -1,4 +1,5 @@
-﻿
+﻿	capital = 3
+
 	recruit_character = AN3_anarchy_char
 
 	set_technology = {

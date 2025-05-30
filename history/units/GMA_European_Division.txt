@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Euro Environmentalist Brigade"
-	override_model = SOV_light_mechanized_entity
 	is_locked = yes
 	
 	regiments = {

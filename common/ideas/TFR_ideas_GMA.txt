@@ -1383,7 +1383,6 @@ ideas = {
 			picture = GMA_Rebecca_Rubin_Minister
 			allowed = {
 				original_tag = GMA
-				has_completed_focus = GMA_post_scarcity_anarchism
 				has_government = libertarian_socialist
 			}
 			traits = {
@@ -1534,7 +1533,6 @@ ideas = {
 			picture = GMA_Andrew_Milburn_Minister
 			allowed = {
 				original_tag = GMA
-				has_completed_focus = GMA_post_scarcity_anarchism
 				has_government = libertarian_socialist
 			}
 			traits = {
@@ -1586,7 +1584,6 @@ ideas = {
 			picture = GMA_Lacey_Phillabaum_Minister
 			allowed = {
 				original_tag = GMA
-				has_completed_focus = GMA_post_scarcity_anarchism
 				has_government = libertarian_socialist
 			}
 			traits = {

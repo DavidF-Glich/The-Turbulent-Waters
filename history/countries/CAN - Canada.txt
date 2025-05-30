@@ -38,10 +38,6 @@ recruit_character = CAN_julie_payette_char
 recruit_character = CAN_Mary_Simon_char
 recruit_character = CAN_Joshua_Leakey_char
 recruit_character = CAN_justin_trudeau
-country_event = {
-	id = canada.4
-	days = 572
-}
 
 set_research_slots = 5
 set_convoys = 400

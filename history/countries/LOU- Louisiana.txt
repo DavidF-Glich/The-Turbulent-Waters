@@ -103,7 +103,6 @@ if = {
 
 add_ideas = {
 	sympathetic_soldiers
-	USA_low_morale_idea
 	high_interest_rates
 	higher_safety
 	high_female_service

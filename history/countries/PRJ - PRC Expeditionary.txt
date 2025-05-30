@@ -2,7 +2,7 @@
 	
 	recruit_character = PRJ_zhao_zongqi_char
 
-#	oob = ""
+#
 	
 	set_research_slots = 2
 	set_convoys = 30

@@ -1319,7 +1319,6 @@
 				}
 				
 				available = {
-					has_completed_focus = LOS_embrace_southern_populism
 				}
 				
 				traits = {
@@ -1341,7 +1340,6 @@
 				}
 
 				available = {
-					has_completed_focus = LOS_a_pure_south
 				}
 				
 				traits = {
@@ -1361,10 +1359,6 @@
 				}
 				
 				available = {
-					OR = {
-						has_completed_focus = LOS_the_peoples_hand
-						has_completed_focus = LOS_embrace_southern_populism
-					}
 				}
 
 				traits = {
@@ -1382,10 +1376,6 @@
 				}
 				
 				available = {
-					OR = {
-						has_completed_focus = LOS_the_free_hand
-						has_completed_focus = LOS_a_pure_south
-					}
 				}
 
 				traits = {
@@ -1405,7 +1395,6 @@
 				}
 				
 				available = {
-					has_completed_focus = LOS_embrace_southern_populism
 				}
 				
 				traits = {
@@ -1427,7 +1416,6 @@
 				}
 
 				available = {
-					has_completed_focus = LOS_a_pure_south
 				}
 				
 				traits = {
@@ -1447,7 +1435,6 @@
 				}
 				
 				available = {
-					has_completed_focus = LOS_a_pure_south
 				}
 
 				traits = {
@@ -1465,7 +1452,6 @@
 				}
 				
 				available = {
-					has_completed_focus = LOS_a_pure_south
 				}
 
 				traits = {

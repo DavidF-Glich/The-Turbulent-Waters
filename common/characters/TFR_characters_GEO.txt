@@ -67,7 +67,7 @@ characters={
 	GEO_vladimer_chachibaia_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/GEO/generals/Vladimer_Chachigbaia.dds" 
+				large = "gfx/leaders/GEO/generals/Vladimer_Chachigbaia.dds" 
 			}
 		}
 
@@ -79,7 +79,7 @@ characters={
 	GEO_vakhtang_kapanadze_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/GEO/generals/Vakhtang_Kapanadze.dds" 
+				large = "gfx/leaders/GEO/generals/Vakhtang_Kapanadze.dds" 
 			}
 		}
 
@@ -91,7 +91,7 @@ characters={
 	GEO_zaza_chkhaidze_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/GEO/generals/Zaza_Chkhaidze.dds" 
+				large = "gfx/leaders/GEO/generals/Zaza_Chkhaidze.dds" 
 			}
 		}
 
@@ -103,7 +103,7 @@ characters={
 	GEO_shalva_jabakhidze_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/GEO/generals/Shalva_Jabakhidze.dds" 
+				large = "gfx/leaders/GEO/generals/Shalva_Jabakhidze.dds" 
 			}
 		}
 
@@ -115,7 +115,7 @@ characters={
 	GEO_dimitri_kiknadze_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/GEO/generals/Dimitri_Kiknadze.dds" 
+				large = "gfx/leaders/GEO/generals/Dimitri_Kiknadze.dds" 
 			}
 		}
 
@@ -127,7 +127,7 @@ characters={
 	GEO_nikoloz_janjgava_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/GEO/generals/Nikoloz_Janjgava.dds" 
+				large = "gfx/leaders/GEO/generals/Nikoloz_Janjgava.dds" 
 			}
 		}
 

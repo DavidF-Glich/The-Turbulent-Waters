@@ -130,9 +130,3 @@
 		social_democrat = 5
 	}
 	
-	SOM = {
-		country_event = {
-			id = ethiopia.16
-			days = 865
-		}
-	}

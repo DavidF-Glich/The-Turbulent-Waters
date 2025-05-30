@@ -2,7 +2,7 @@
 
 	#recruit_character = RAJ_Anil_Chauhan
 
-#	oob = ""
+#
 	
 	set_research_slots = 2
 	set_convoys = 30

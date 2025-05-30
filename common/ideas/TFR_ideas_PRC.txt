@@ -20,7 +20,7 @@ ideas ={
 				working_capacity_weekly = 1
 			}
 		}
-				PRC_coronavirus_pandemic_idea = {
+		PRC_coronavirus_pandemic_idea = {
 			picture = generic_covid
 
 			allowed = {
@@ -56,11 +56,11 @@ ideas ={
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.4
-				production_factory_max_efficiency_factor = -0.4
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_dockyard = -0.4
-				monthly_population = -0.24
-				stability_factor = -0.4
+				monthly_population = -0.05
+				stability_factor = -0.05
 			}
 		}
 		
@@ -78,11 +78,11 @@ ideas ={
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.3
+				consumer_goods_expected_value = 0.4
 				production_factory_max_efficiency_factor = -0.3
-				industrial_capacity_dockyard = -0.3
-				monthly_population = -0.18
-				stability_factor = -0.3
+				industrial_capacity_dockyard = -0.5
+				industrial_capacity_factory = -0.5
+				stability_factor = 0.1
 			}
 		}
 		
@@ -100,11 +100,11 @@ ideas ={
 			removal_cost = -1
 			
 			modifier = {
-				consumer_goods_factor = 0.2
-				production_factory_max_efficiency_factor = -0.2
-				industrial_capacity_dockyard = -0.2
-				monthly_population = -0.12
-				stability_factor = -0.2
+				consumer_goods_factor = 0.1
+				production_factory_max_efficiency_factor = -0.05
+				industrial_capacity_dockyard = -0.05
+				industrial_capacity_factory = -0.05
+				monthly_population = -0.05
 			}
 		}
 		
@@ -125,11 +125,55 @@ ideas ={
 				consumer_goods_factor = 0.1
 				production_factory_max_efficiency_factor = -0.1
 				industrial_capacity_dockyard = -0.1
-				monthly_population = -0.06
+				industrial_capacity_factory = -0.1
+				monthly_population = -0.1
+				stability_factor = -0.05
+			}
+		}
+		PRC_coronavirus_pandemic_idea5 = {
+			picture = generic_covid
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				production_factory_max_efficiency_factor = -0.15
+				industrial_capacity_dockyard = -0.15
+				industrial_capacity_factory = -0.15
+				monthly_population = -0.15
 				stability_factor = -0.1
 			}
 		}
+		PRC_coronavirus_pandemic_idea6 = {
+			picture = generic_covid
 
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.4
+				production_factory_max_efficiency_factor = -0.3
+				industrial_capacity_dockyard = -0.3
+				industrial_capacity_factory = -0.3
+				monthly_population = -0.5
+				stability_factor = -0.2
+			}
+		}
 		PRC_pla_idea = {
 			picture = PRC_pla
 

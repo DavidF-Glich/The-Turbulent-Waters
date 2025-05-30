@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Mechanized Brigade"
-	override_model = APA_mechanized_entity
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }

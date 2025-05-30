@@ -165,14 +165,15 @@ units = {
 		start_experience_factor = 0.1
 	}
 }
-
-add_equipment_to_stockpile = {
+instant_effect = {
+	add_equipment_to_stockpile = {
 		type = infantry_equipment_2
 		amount = 5000
 		producer = SAF
 	}
-add_equipment_to_stockpile = {
+	add_equipment_to_stockpile = {
 		type = support_equipment
 		amount = 200
 		producer = SAF
 	}
+}

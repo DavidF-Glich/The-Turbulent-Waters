@@ -63,10 +63,6 @@
 					production_factory_max_efficiency_factor = 0.1
 				}
 				on_remove = {
-					swap_ideas = {
-						remove_idea = PRK_Total_Control_idea
-						add_idea = PRK_Total_Control_idea2
-					}
 				}
 			}	
 			PRK_chinese_economic_investment_idea = {

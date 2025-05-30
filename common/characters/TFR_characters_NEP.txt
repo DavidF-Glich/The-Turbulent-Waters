@@ -16,7 +16,7 @@ characters={
 	NEP_ram_chandra_poudel_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/NEP/NEP_Ram_Chandra_Poudel.png"
+				large="gfx/leaders/NEP/NEP_Ram_Chandra_Poudel.png"
 			}
 		}
 		country_leader={

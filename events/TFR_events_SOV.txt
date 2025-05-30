@@ -49,24 +49,49 @@ country_event = {
 }
 
 #特别军事行动
-country_event = {
+news_event = {
 	id = russia.4
 	title = russia.4.t
 	desc = russia.4.d
 	picture = GFX_SOV_Russian_Camp
-	
-	fire_only_once = yes  
+	major = yes
+
 	is_triggered_only = yes
-	
-	trigger = {
-	}
+
 	immediate = {
+		every_country = {
+			limit = {
+				OR  = {
+					tag = PRC
+					tag = FRA
+					tag = GER
+					tag = ENG
+					tag = PLD
+					tag = JAP
+					tag = KOR
+					tag = PRK
+				}
+			}
+			set_temp_variable = { conflict_id = token:Russo_Ukrainian_conflict }
+			TTW_add_fopo_conflict_tab = yes
+		}
 	}
 	
 	option = {
 		name = russia.4.a
-		focus_unlock = yes
-		load_focus_tree = SOV_2022
+		trigger = {
+			has_content_tag = yes
+		}
+		effect_tooltip = {
+			set_temp_variable = { conflict_id = token:Russo_Ukrainian_conflict }
+			TTW_add_fopo_conflict_tab = yes
+		}
+	}
+	option = {
+		name = russia.4.b
+		trigger = {
+			has_content_tag = no
+		}
 	}
 }
 
@@ -162,7 +187,7 @@ country_event = {
 		hidden_effect = {
 			set_portraits = {
 				character = SOV_vladimir_putin
-				civilian = { large ="GFX_vladimir_putin1" }
+				civilian = { large ="gfx/leaders/SOV/SOV_vladimir_putin.png" }
 			}
 		}
 	}
@@ -277,3 +302,570 @@ country_event = {
 		SOV_add_election_approval_rating_nav = yes
 	}
 }
+#Samara-Orenburg highway
+country_event = {
+	id = russia.13
+	title = russia.13.t
+	desc = russia.13.d
+	picture = GFX_russia_econ
+	is_triggered_only = yes
+	trigger = {
+	}
+	option = {
+		name = russia.13.a
+	activate_mission = SOV_highway_Meridian
+	}
+}
+#Covid-infection
+country_event = {
+	id = russia.14
+	title = russia.14.t
+	desc = russia.14.d
+	picture = GFX_Covid-19_Cases_Increase
+	is_triggered_only = yes
+	immediate = {
+		hidden_effect = {
+			add_ideas = SOV_coronavirus_pandemic_idea4
+		}
+	}
+	option = {
+		name = russia.14.a
+		effect_tooltip = {
+			add_ideas = SOV_coronavirus_pandemic_idea4
+		}
+		activate_mission = SOV_handle_covid_mission
+		hidden_effect = {
+		country_event = {
+		id = russia.15
+		days = 31
+			}
+		}
+	}
+}
+#Minzdrav say "We need vaccine"
+country_event = {
+	id = russia.15
+	title = russia.15.t
+	desc = russia.15.d
+	picture = GFX_Covid-19_Cases_Increase
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.15.a
+		activate_mission = SOV_vaccine_development
+	}
+}
+country_event = {
+	id = russia.16
+	title = russia.16.t
+	desc = russia.16.d
+	picture = GFX_Sputnik
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.16.a
+		hidden_effect = {
+		country_event = {
+		id = russia.17
+		days = 90
+			}
+		}
+	}
+}
+country_event = {
+	id = russia.17
+	title = russia.17.t
+	desc = russia.17.d
+	picture = GFX_Sputnik
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.17.a
+		custom_effect_tooltip = SOV_destroy_covid_tt
+		add_stability = 0.05
+		SOV_decrease_corruption = yes
+		hidden_effect = {
+		remove_ideas = SOV_coronavirus_pandemic_idea
+		remove_ideas = SOV_coronavirus_pandemic_idea1
+		remove_ideas = SOV_coronavirus_pandemic_idea2
+		remove_ideas = SOV_coronavirus_pandemic_idea3
+		remove_ideas = SOV_coronavirus_pandemic_idea4
+		}
+	}
+}
+#lack of specialists
+country_event = {
+	id = russia.18
+	title = russia.18.t
+	desc = russia.18.d
+	picture = GFX_SOV_bednya_rossiya
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.18.a
+		effect_tooltip = {
+		add_ideas = SOV_shortage_of_workers
+		}
+		hidden_effect = {
+		add_dynamic_modifier = {
+		modifier = SOV_shortage_of_workers
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_production_speed_buildings_factor_dynamic
+			value = -0.1
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_poverty_development_monthly_dynamic
+			value = -0.01
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_industrial_capacity_factory_dynamic
+			value = -0.08
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_society_development_monthly_dynamic
+			value = -0.01
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_factory_max_efficiency_factor_dynamic
+			value = -0.1
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_income_growth_factor_dynamic
+			value = -0.15
+		}
+		set_variable = {
+			var = SOV_shortage_of_workers_industrial_development_monthly_dynamic
+			value = -0.01
+				}
+			}
+		}
+	}
+#A small birth rate
+country_event = {
+	id = russia.19
+	title = russia.19.t
+	desc = russia.19.d
+	picture = SOV_graffiti
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.19.a
+		add_ideas = SOV_bad_birth_rate_6
+	}
+}
+#Tesak death
+country_event = {
+	id = russia.20
+	title = russia.20.t
+	desc = russia.20.d
+	picture = GFX_tesak
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.20.a
+			add_popularity = {
+				ideology = national_socialist
+				popularity = -0.02
+		}
+	}
+}
+#Maddyson LPDR
+country_event = {
+	id = russia.21
+	title = russia.21.t
+	desc = russia.21.d
+	picture = GFX_tesak
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.21.a
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+	}
+#Khovanskyy Arest
+country_event = {
+	id = russia.22
+	title = russia.22.t
+	desc = russia.22.d
+	picture = GFX_Khovanskyy
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.22.a
+		add_stability = -0.005
+		hidden_effect = {
+		country_event = {
+		id = russia.23
+		days = 203
+			}
+		}
+	}
+}
+#Khovanskyy No internet
+country_event = {
+	id = russia.23
+	title = russia.23.t
+	desc = russia.23.d
+	picture = GFX_Khovanskyy_free
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.23.a
+		hidden_effect = {
+		country_event = {
+		id = russia.24
+		days = 99
+			}
+		}
+	}
+}
+#Khovanskyy thank you
+country_event = {
+	id = russia.24
+	title = russia.24.t
+	desc = russia.24.d
+	picture = GFX_Khovanskyy_free
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.24.a
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+	}
+#CPRF Metro
+country_event = {
+	id = russia.25
+	title = russia.25.t
+	desc = russia.25.d
+	picture = GFX_Metro_CPRF
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.25.a
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.015
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+	}
+#Prepare war Focuses
+country_event = {
+	id = russia.26
+	title = russia.26.t
+	desc = russia.26.d
+	picture = GFX_War_prepare
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+	custom_effect_tooltip = new_focuses_tree_tt
+		name = russia.26.a
+		hidden_effect = {
+		load_focus_tree = SOV_2022
+		}
+	}
+}
+#Zapad-2021
+country_event = {
+	id = russia.27
+	title = russia.27.t
+	desc = russia.27.d
+	picture = GFX_Zapad_2021
+	is_triggered_only = yes
+	immediate = {
+	set_country_flag = SOV_Zapad_2021
+	}
+	option = {
+		name = russia.27.a
+		add_war_support = 0.05
+		army_experience = 25
+		add_stability = 0.01
+		}
+	}
+#КУШТАУ 
+country_event = {
+	id = russia.28
+	title = russia.28.t
+	desc = russia.28.d
+	picture = GFX_Kushtau
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.28.a
+		add_political_power = -25
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.005
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	option = {
+		name = russia.28.b
+		add_stability = -0.02
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	}
+#Norilsk_Oil
+country_event = {
+	id = russia.29
+	title = russia.29.t
+	desc = russia.29.d
+	picture = GFX_Norilsk
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.29.a
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	}
+#Kazan shot
+country_event = {
+	id = russia.30
+	title = russia.30.t
+	desc = russia.30.d
+	picture = GFX_Kazan
+	is_triggered_only = yes
+	immediate = {
+	}
+	option = {
+		name = russia.30.a
+		add_stability = -0.015
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = -0.01
+			}
+			SOV_add_election_approval_rating_ur = yes
+		}
+	}
+#sergei furgal arrested
+country_event = {
+	id = russia.31
+	title = russia.31.t
+	desc = russia.31.d
+	picture = GFX_furgal_arrested 
+	
+	is_triggered_only = yes
+	
+		immediate = {
+			hidden_effect = {
+				country_event = {
+    				id = russia.32
+    				days = 20
+				}
+			}
+		}
+	
+	option = {
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ur_var_temp
+			value = -0.01
+		}
+		SOV_add_election_approval_rating_ur = yes
+		name = russia.31.a
+	}
+}
+
+#protests over furgals arrest
+country_event = {
+	id = russia.32
+	title = russia.32.t
+	desc = russia.32.d
+	picture = GFX_furgal_protests 
+	
+	is_triggered_only = yes
+	
+		immediate = {
+			hidden_effect = {
+				country_event = {
+    				id = russia.33
+    				days = 5
+				}		
+			}
+		}
+	
+	option = {
+		name = russia.32.a
+		add_stability = -0.05
+	}
+}
+
+#UR rating falls on Far East
+country_event = {
+	id = russia.33
+	title = russia.33.t
+	desc = russia.33.d
+	picture = GFX_report_event_worker_protests
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	}
+	
+	option = {
+		name = russia.33.a
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ur_var_temp
+			value = -0.04
+		}
+		SOV_add_election_approval_rating_ur = yes		
+	}
+}
+#Navalny Otravlenie
+country_event = {
+	id = russia.34
+	title = russia.34.t
+	desc = russia.34.d
+	picture = GFX_Navalny
+	
+	is_triggered_only = yes
+	
+	option = {
+		hidden_effect = {
+		country_event = {
+		id = russia.35
+		days = 49
+			}
+		}
+		name = russia.34.a
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.02
+		}
+		SOV_add_election_approval_rating_nav = yes
+	}
+}
+#Navalny Comeback
+country_event = {
+	id = russia.35
+	title = russia.35.t
+	desc = russia.35.d
+	picture = GFX_Navalny
+	
+	is_triggered_only = yes
+	
+	option = {
+		hidden_effect = {
+		country_event = {
+		id = russia.37
+		days = 101 
+			}
+		}
+		name = russia.35.a
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.025
+		}
+		SOV_add_election_approval_rating_nav = yes
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ur_var_temp
+			value = -0.03
+		}
+		SOV_add_election_approval_rating_ur = yes	
+	}
+}
+#Navalny arrest
+country_event = {
+	id = russia.36
+	title = russia.36.t
+	desc = russia.36.d
+	picture = GFX_Navalny_Protests_Country
+	
+	is_triggered_only = yes
+	immediate = {
+	set_country_flag = SOV_navalny_protest
+		}
+	option = {
+	activate_mission = SOV_navalny_mitings
+		name = russia.36.a
+		add_stability = -0.05
+		add_political_power = -50
+		add_war_support = -0.075
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.05
+		}
+		SOV_add_election_approval_rating_nav = yes
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ur_var_temp
+			value = -0.05
+		}
+		SOV_add_election_approval_rating_ur = yes	
+		set_temp_variable = {
+			var = SOV_election_approval_rating_cprf_var_temp
+			value = 0.03
+		}
+		SOV_add_election_approval_rating_cprf = yes
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ldpr_var_temp
+			value = 0.025
+		}
+		SOV_add_election_approval_rating_ldpr = yes
+	}
+}
+#Navalny Film
+country_event = {
+	id = russia.37
+	title = russia.37.t
+	desc = russia.37.d
+	picture = GFX_Palacw
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = russia.37.a
+		hidden_effect = {
+			country_event = {
+			id = russia.36
+			days = 1
+			}
+		}		
+		add_stability = -0.03
+		add_political_power = -25
+		set_temp_variable = {
+			var = SOV_election_approval_rating_nav_var_temp
+			value = 0.05
+		}
+		SOV_add_election_approval_rating_nav = yes
+		set_temp_variable = {
+			var = SOV_election_approval_rating_ur_var_temp
+			value = -0.03
+		}
+		SOV_add_election_approval_rating_ur = yes	
+			set_temp_variable = {
+				var = income_var_temp
+				value = -112.42
+			}
+				add_income_with_inflation = yes
+		}
+	}

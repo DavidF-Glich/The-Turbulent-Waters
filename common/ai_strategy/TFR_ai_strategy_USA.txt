@@ -95,3 +95,16 @@ NATO_fuck_the_russians = {
 		value = 50
 	}
 }
+
+USA_we_love_israelis = {
+	allowed = {
+		tag = USA
+	}
+	enable = {
+		has_opinion = {
+			target = ISR
+			value > -10
+		}
+	}
+	abort_when_not_enabled = yes
+}

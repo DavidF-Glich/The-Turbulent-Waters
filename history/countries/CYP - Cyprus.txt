@@ -5,10 +5,7 @@
 	set_research_slots = 3
 	set_convoys = 100
 	set_stability = 0.5
-	country_event = {
-		id = cyprus.1
-		days = 1138
-	}
+
 
 	set_country_flag = country_language_greek
 

@@ -2,10 +2,10 @@ characters={
 	RAJ_Ram_Nath_Kovind = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/Ram Nath Kovind.png" 
+				large = "gfx/leaders/RAJ/Ram Nath Kovind.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/Ram Nath Kovind.png" 
+				large = "gfx/leaders/RAJ/Ram Nath Kovind.png" 
 			}
 		}
 		country_leader={
@@ -17,10 +17,10 @@ characters={
 	RAJ_Droupadi_Murmu = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/Droupadi Murmu.png" 
+				large = "gfx/leaders/RAJ/Droupadi Murmu.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/Droupadi Murmu.png" 
+				large = "gfx/leaders/RAJ/Droupadi Murmu.png" 
 			}
 		}
 		country_leader={
@@ -32,10 +32,10 @@ characters={
 	RAJ_Modi = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Modi.png" 
+				large = "gfx/leaders/RAJ/RAJ_Modi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Modi.png" 
+				large = "gfx/leaders/RAJ/RAJ_Modi.png" 
 			}
 		}
 	}
@@ -43,10 +43,10 @@ characters={
 	RAJ_Mohan_Bhagwat = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Mohan_Bhagwat.png" 
+				large = "gfx/leaders/RAJ/RAJ_Mohan_Bhagwat.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Mohan_Bhagwat.png" 
+				large = "gfx/leaders/RAJ/RAJ_Mohan_Bhagwat.png" 
 			}
 		}
 		country_leader={
@@ -59,10 +59,10 @@ characters={
 	RAJ_Anil_Chauhan = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/General_Anil_Chauhan.png" 
+				large = "gfx/leaders/RAJ/General_Anil_Chauhan.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/General_Anil_Chauhan.png" 
+				large = "gfx/leaders/RAJ/General_Anil_Chauhan.png" 
 			}
 		}
 		country_leader={
@@ -84,10 +84,10 @@ characters={
 	RAJ_Rahul_Ghandi = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Rahul_Ghandi.png" 
+				large = "gfx/leaders/RAJ/RAJ_Rahul_Ghandi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Rahul_Ghandi.png" 
+				large = "gfx/leaders/RAJ/RAJ_Rahul_Ghandi.png" 
 			}
 		}
 		country_leader={
@@ -100,10 +100,10 @@ characters={
 	RAJ_Eknath_Shinde = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Eknath_Shinde.png" 
+				large = "gfx/leaders/RAJ/RAJ_Eknath_Shinde.png" 
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Eknath_Shinde.png" 
+				large = "gfx/leaders/RAJ/RAJ_Eknath_Shinde.png" 
 			}
 		}
 		country_leader={
@@ -115,10 +115,10 @@ characters={
 	RAJ_Suchindra_Kumar = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Suchindra_Kumar.png"  
+				large = "gfx/leaders/RAJ/RAJ_Suchindra_Kumar.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Suchindra_Kumar.png"  
+				large = "gfx/leaders/RAJ/RAJ_Suchindra_Kumar.png"  
 			}
 		}
 		field_marshal={
@@ -134,10 +134,10 @@ characters={
 	RAJ_Amardeep_Singh_Bhinder = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Amardeep_Singh_Bhinder.png"  
+				large = "gfx/leaders/RAJ/RAJ_Amardeep_Singh_Bhinder.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Amardeep_Singh_Bhinder.png"  
+				large = "gfx/leaders/RAJ/RAJ_Amardeep_Singh_Bhinder.png"  
 			}
 		}
 		corps_commander={
@@ -147,10 +147,10 @@ characters={
 	RAJ_Manoj_Mukund_Naravane = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Manoj_Mukund_Naravane.png"  
+				large = "gfx/leaders/RAJ/RAJ_Manoj_Mukund_Naravane.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Manoj_Mukund_Naravane.png"  
+				large = "gfx/leaders/RAJ/RAJ_Manoj_Mukund_Naravane.png"  
 			}
 		}
 		corps_commander={
@@ -160,10 +160,10 @@ characters={
 	RAJ_Yogendra_Dimri = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Yogendra_Dimri.png"  
+				large = "gfx/leaders/RAJ/RAJ_Yogendra_Dimri.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Yogendra_Dimri.png"  
+				large = "gfx/leaders/RAJ/RAJ_Yogendra_Dimri.png"  
 			}
 		}
 		corps_commander={
@@ -173,10 +173,10 @@ characters={
 	RAJ_Karambir_Singh = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Karambir_Singh.png"  
+				large = "gfx/leaders/RAJ/RAJ_Karambir_Singh.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Karambir_Singh.png"  
+				large = "gfx/leaders/RAJ/RAJ_Karambir_Singh.png"  
 			}
 		}
 		navy_leader={
@@ -186,10 +186,10 @@ characters={
 	RAJ_Sanjay_Jasjit_Singh = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/RAJ_Sanjay_Jasjit_Singh.png"  
+				large = "gfx/leaders/RAJ/RAJ_Sanjay_Jasjit_Singh.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/RAJ_Sanjay_Jasjit_Singh.png"  
+				large = "gfx/leaders/RAJ/RAJ_Sanjay_Jasjit_Singh.png"  
 			}
 		}
 		navy_leader={
@@ -201,10 +201,10 @@ characters={
 	NAX_Nambala_Keshava_Rao = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/NAX_Nambala_Keshava_Rao.png"  
+				large = "gfx/leaders/RAJ/NAX_Nambala_Keshava_Rao.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/NAX_Nambala_Keshava_Rao.png"  
+				large = "gfx/leaders/RAJ/NAX_Nambala_Keshava_Rao.png"  
 			}
 		}
 		country_leader={
@@ -226,10 +226,10 @@ characters={
 	ULF_Paresh_Baruah = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/ULF_Paresh_Baruah.png"  
+				large = "gfx/leaders/RAJ/ULF_Paresh_Baruah.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/ULF_Paresh_Baruah.png"  
+				large = "gfx/leaders/RAJ/ULF_Paresh_Baruah.png"  
 			}
 		}
 		country_leader={
@@ -251,10 +251,10 @@ characters={
 	HUL_Fazlur_Rehman_Khalil = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/HUL_Fazlur_Rehman_Khalil.png"  
+				large = "gfx/leaders/RAJ/HUL_Fazlur_Rehman_Khalil.png"  
 			}
 			army = {
-				large = "gfx/Leaders/RAJ/HUL_Fazlur_Rehman_Khalil.png"  
+				large = "gfx/leaders/RAJ/HUL_Fazlur_Rehman_Khalil.png"  
 			}
 		}
 		country_leader={
@@ -276,7 +276,7 @@ characters={
 	DRV_MK_Stalin = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/RAJ/DRV_M.K_Stalin.png" 
+				large = "gfx/leaders/RAJ/DRV_M.K_Stalin.png" 
 			}
 		}
 		country_leader={

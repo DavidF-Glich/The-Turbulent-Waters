@@ -1,6 +1,20 @@
 ﻿	capital = 1041 #Seoul
 
-	oob = "KOR_2020"
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_oob = "KOR_2020"
+	}
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_oob = "KOR_2020_nsb"
+	}
+
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 			set_naval_oob = "KOR_2000_naval_mtg"
@@ -24,15 +38,30 @@
 	send_embargo = PRK
 	recruit_character = KOR_moon_jae_in_char
 	recruit_character = KOR_lee_jae_myung_char
-	recruit_character = KOR_yoon_suk_yeol_char
-	recruit_character = KOR_han_min_goo_char
-	recruit_character = KOR_jang_jun_gyu_char
-	recruit_character = KOR_jeong_seung_jo_char
-	recruit_character = KOR_kim_kwan_jin_char
-	recruit_character = KOR_lee_sang_hoon_char
-	recruit_character = KOR_lee_soon_jin_char
-	recruit_character = KOR_jung_ho_sub_char
-	recruit_character = KOR_lee_ki_sik_char
+	#recruit_character = KOR_yoon_suk_yeol_charee
+	#recruit_character = KOR_han_min_goo_char
+	##recruit_character = KOR_jang_jun_gyu_char
+	#recruit_character = KOR_jeong_seung_jo_char
+	#recruit_character = KOR_kim_kwan_jin_char
+	#recruit_character = KOR_lee_sang_hoon_char
+	#recruit_character = KOR_lee_soon_jin_char
+	#recruit_character = KOR_jung_ho_sub_char
+	#recruit_character = KOR_lee_ki_sik_char
+	recruit_character = KOR_Jo_Jeong_hwan
+	recruit_character = KOR_Boo_Suk_Jong
+	recruit_character = KOR_Kim_Jeong_Su
+	recruit_character = KOR_Shim_Seung_Sub
+	recruit_character = KOR_Park_In_Ho
+	recruit_character = KOR_Won_In_Choul
+	recruit_character = KOR_Yi_Seong_Yong
+	recruit_character = KOR_Jo_Jeong_hwan
+	recruit_character = KOR_Kim_Yong_Woo
+	recruit_character = KOR_Nam_Yeong_Shin
+	recruit_character = KOR_Park_Han_Gi
+	recruit_character = KOR_Kim_Myung_Su
+	recruit_character = KOR_Kim_Seung_Kyum
+	recruit_character = KOR_Park_Jeong_Hwan
+	recruit_character = KOR_Park_An_Su
 
 	set_technology = {
 		## Infantry ##
@@ -49,6 +78,7 @@
 		tech_mountaineers = 1
 		tech_rangers = 1
 		paratroopers = 1
+		basic_train = 1
 		
 		## Support Companies ##
 		tech_support = 1
@@ -61,14 +91,13 @@
 		tech_maintenance_company = 1
 		
 		## Armor ##
-		main_battle_tank1 = 1
-		main_battle_tank2 = 1
-		main_battle_tank3 = 1
-		light_tank1 = 1
 		mechanised_infantry1 = 1
 		mechanised_infantry2 = 1
+		mechanised_infantry3 = 1
 		light_mechanized_infantry1 = 1
 		light_mechanized_infantry2 = 1
+		light_mechanized_infantry3 = 1
+		self_propelled_aa1 = 1
 		
 		## Artillery ##
 		gw_artillery = 1
@@ -81,6 +110,12 @@
 		self_propelled_aa1 = 1
 		amphibious_tank1 = 1
 		amphibious_mechanized_infantry1 = 1
+		artillery1 = 1
+		antitank1 = 1
+		antitank2 = 1
+		antiair1 = 1
+		antiair2 = 1
+		antiair3 = 1
 		
 		## Air ##
 		attack_helicopter_1 = 1
@@ -89,11 +124,16 @@
 		## Engineering ##
 		electronic_mechanical_engineering = 1
 		radio = 1
+	    power_plants = 1
+	    power_plants1 = 1
+		nuclear_reactors = 1
+		energy_farms = 1
 		
 		## Industry ##
 		basic_machine_tools = 1
 		fuel_silos = 1
 		fuel_refining = 1
+		synth_oil_experiments = 1
 		
 		## Doctrines ##
 		mobile_warfare = 1
@@ -101,8 +141,69 @@
 		formation_flying = 1
 	}
 	
+	add_ideas = {
+		KOR_Jeong_Sye_Kyun
+		KOR_Gang_Gyung_Hwa
+		KOR_Hong_Nam_ki
+		KOR_Jeon_Hae_Cheol
+		KOR_Suh_Hoon
+		KOR_Jeong_Gyeong_Du
+		#Laws
+		high_education
+		high_prison
+		#Development
+		high_society
+		higher_academic
+		higher_farming
+		high_poverty
+		higher_industry
+		high_military
+	}
+
+	if = {
+		limit = {
+			NOT = {
+				has_dlc = "No Step Back"
+			}
+		}
+		set_technology = {
+			main_battle_tank1 = 1
+			main_battle_tank2 = 1
+			main_battle_tank3 = 1
+			light_tank1 = 1
+			light_tank2 = 1
+			amphibious_tank1 = 1
+			amphibious_mechanized_infantry1 = 1
+		}
+	}
+
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		set_technology = {
+			gwtank_chassis = 1
+			basic_light_tank_chassis = 1
+			basic_medium_tank_chassis = 1
+			improved_medium_tank_chassis = 1
+			engine_tech_1 = 1
+			apds_tech = 1
+			turret_mounted_mg_tech = 1
+			heat_tech = 1
+			turret_mounted_atgm_tech = 1
+			apfsds_tech = 1
+			blow_out_compartment_tech = 1
+			auto_cannon_tech = 1
+			legacy_armor_designs = 1
+			armor_tech_1 = 1
+			armor_tech_2 = 1
+			auto_loader_tech = 1
+		}
+	}
+
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
+			set_air_oob = "KOR_2020_air_bba"
 			set_technology = {
 				aa_lmg = 1
 				aa_cannon_1 = 1
@@ -121,6 +222,7 @@
 				basic_large_airframe = 1
 			}
 		else = {
+			set_air_oob = "KOR_2020_air_legacy"
 			set_technology = {
 				CAS1 = 1
 				CAS2 = 1
@@ -183,11 +285,6 @@
 	}
 
 	add_ideas = {
-		#部长会议	Ministers
-		KOR_Lee_Nak_yon
-		KOR_Hong_Nam_ki_eco
-		KOR_Suh_Hoon
-		KOR_Jeong_Kyeong_doo
 		KOR_dominance_of_chaebols
 		KOR_aging_population_idea
 	
@@ -236,15 +333,15 @@
 	if = {
 		limit = { has_dlc = "Man the Guns" }
 		## Corvettes ##
-		create_equipment_variant = { #Corvette 2
-			name = "Donghae-class"
-			type = ship_hull_light_2
+		create_equipment_variant = { #Corvette 1
+			name = "Pohang-class"
+			type = ship_hull_light_1
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_battery_2
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
+				fixed_ship_radar_slot = ship_radar_1
 				fixed_ship_engine_slot = light_ship_engine_2
 				fixed_ship_torpedo_slot = ship_torpedo_1
 				mid_1_custom_slot = ship_torpedo_1
@@ -252,15 +349,33 @@
 			}
 		}
 		## Frigates ##
-		create_equipment_variant = { #Frigate 2
+		create_equipment_variant = { #Frigate 1
 			name = "Ulsan-class"
+			type = ship_hull_cruiser_1
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_1
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = 	ship_radar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_1
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_light_medium_battery_1
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = empty
+			}
+		}
+		create_equipment_variant = { #Frigate 2
+			name = "Incheon-class"
 			type = ship_hull_cruiser_2
 			parent_version = 0
 			modules = {
 				fixed_ship_battery_slot = ship_light_medium_battery_2
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
-				fixed_ship_radar_slot = empty
+				fixed_ship_radar_slot = 	ship_radar_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
 				fixed_ship_secondaries_slot = ship_secondaries_1
@@ -270,9 +385,29 @@
 				rear_1_custom_slot = empty
 			}
 		}
+
+		create_equipment_variant = { #Frigate 3
+			name = "Daegu-class"
+			type = ship_hull_cruiser_3
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_light_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = 	ship_radar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				fixed_ship_secondaries_slot = ship_secondaries_1
+				front_1_custom_slot = ship_light_medium_battery_2
+				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = empty
+			}
+		}
+
 		## Destroyers ##
 		create_equipment_variant = { #Destroyer 1
-			name = "Chungbuk-class"
+			name = "Gwanggaeto the Great-class"
 			type = ship_hull_cruiser_1
 			parent_version = 0
 			modules = {
@@ -288,8 +423,24 @@
 			}
 			obsolete = yes
 		}
-		create_equipment_variant = {
-			name = "Gwanggaeto the Great-class"
+		create_equipment_variant = { #Destroyer 2
+			name = "Chungmugong Yi Sunsin-class"
+			type = ship_hull_cruiser_2
+			parent_version = 0
+			modules = {
+				fixed_ship_battery_slot = ship_medium_battery_2
+				fixed_ship_anti_air_slot = ship_anti_air_1
+				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
+				fixed_ship_radar_slot = ship_radar_1
+				fixed_ship_engine_slot = cruiser_ship_engine_2
+				fixed_ship_armor_slot = ship_armor_cruiser_2
+				mid_1_custom_slot = ship_light_medium_battery_1
+				mid_2_custom_slot = ship_anti_air_1
+				rear_1_custom_slot = ship_airplane_launcher_1
+			}
+		}
+		create_equipment_variant = { #Destroyer 3
+			name = "Sejong the Great-class"
 			type = ship_hull_cruiser_3
 			parent_version = 0
 			modules = {
@@ -299,20 +450,116 @@
 				fixed_ship_radar_slot = ship_radar_1
 				fixed_ship_engine_slot = cruiser_ship_engine_2
 				fixed_ship_armor_slot = ship_armor_cruiser_2
-				mid_1_custom_slot = ship_airplane_launcher_1
+				mid_1_custom_slot = ship_light_medium_battery_2
 				mid_2_custom_slot = ship_anti_air_1
-				rear_1_custom_slot = empty
+				rear_1_custom_slot = ship_airplane_launcher_1
 			}
 		}
 		## Submarines ##
+		create_equipment_variant = { #Nuclear Sub 1
+			name = "Jang Bogo-class"
+			type = ship_hull_submarine_1
+			parent_version = 0
+			modules = {
+				fixed_ship_torpedo_slot = ship_torpedo_sub_1
+				fixed_ship_engine_slot = sub_ship_engine_1
+				rear_1_custom_slot = ship_torpedo_sub_1
+			}
+		}
 		create_equipment_variant = { #Nuclear Sub 2
-			name = "Chang Bogo-class"
+			name = "Son Won il-class"
 			type = ship_hull_submarine_2
 			parent_version = 0
 			modules = {
 				fixed_ship_torpedo_slot = ship_torpedo_sub_2
 				fixed_ship_engine_slot = sub_ship_engine_2
 				rear_1_custom_slot = ship_torpedo_sub_2
+			}
+		}
+
+	}
+
+	
+	if = {
+		limit = {
+			has_dlc = "No Step Back"
+		}
+		create_equipment_variant = {
+			name = "K-21"
+			type = light_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_auto_cannon_2
+				turret_type_slot = tank_light_three_man_tank_turret
+				suspension_type_slot = tank_interleaved_suspension
+				armor_type_slot = tank_riveted_armor
+				engine_type_slot = tank_gasoline_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = extra_ammo_storage
+				special_type_slot_3 = smoke_launchers
+				special_type_slot_4 = wet_ammo_storage
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 5
+				tank_nsb_armor_upgrade = 1
+			}
+		}
+		create_equipment_variant = {
+			name = "K-2 Black Panther"
+			type = modern_tank_chassis_2
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon_2
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+				armor_type_slot = tank_cast_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = wet_ammo_storage
+				special_type_slot_4 = auto_loader
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 3
+			}
+		}
+		create_equipment_variant = {
+			name = "K-1A1"
+			type = modern_tank_chassis_1
+			parent_version = 0
+			modules = {
+				main_armament_slot = tank_high_velocity_cannon
+				turret_type_slot = tank_modern_tank_turret
+				suspension_type_slot = tank_torsion_bar_suspension
+
+				armor_type_slot = tank_welded_armor
+				engine_type_slot = tank_diesel_engine
+				special_type_slot_1 = tank_radio_1
+				special_type_slot_2 = smoke_launchers
+				special_type_slot_3 = wet_ammo_storage
+				special_type_slot_4 = auto_loader
+			}
+			upgrades = {
+				tank_nsb_engine_upgrade = 9
+				tank_nsb_armor_upgrade = 3
+			}
+		}
+}
+	## AIR ##
+	if = {
+		limit = {
+			has_dlc = "By Blood Alone"
+		}
+		create_equipment_variant = {
+			name = "KF-16"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_2 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = hmg_defense_turret
 			}
 		}
 	}

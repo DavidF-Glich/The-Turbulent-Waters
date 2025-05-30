@@ -116,7 +116,6 @@
 	
 		text = {
 			trigger = {
-				check_variable = { Indian_Influence > 0.5 }
 				NOT = { 	
 					tag = RAJ
 					tag = SOV
@@ -137,7 +136,6 @@
 				check_variable = { Russian_Influence < 0.5 }
 				check_variable = { Chinese_Influence < 0.5 }
 				check_variable = { American_Influence < 0.5 }
-				check_variable = { Indian_Influence < 0.5 }
 				check_variable = { European_Influence < 0.5 }
 				NOT = { 	
 					tag = RAJ
@@ -161,7 +159,6 @@
 					check_variable = { Chinese_Influence = 0.5 }
 					check_variable = { American_Influence = 0.5 }
 					check_variable = { European_Influence = 0.5 }
-					check_variable = { Indian_Influence = 0.5 }
 					check_variable = { Sovereign_Influence = 0.5 }
 				} 
 			}

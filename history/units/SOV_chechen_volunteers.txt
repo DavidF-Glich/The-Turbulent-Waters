@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Motostrelkovaya Brigada Natsional'noy Gvardii"
-	override_model = SOV_akhmat_motorized_entity
 
 	regiments = {						
 		motorized = { x = 0 y = 0 }

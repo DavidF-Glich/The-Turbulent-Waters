@@ -260,7 +260,6 @@
 				fixed_ship_engine_slot = sub_ship_engine_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 	}
 	

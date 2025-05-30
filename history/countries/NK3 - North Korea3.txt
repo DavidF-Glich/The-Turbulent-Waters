@@ -1,6 +1,6 @@
 ﻿	capital = 924
 
-#	oob = ""
+#
 	
 	recruit_character = NK3_hwang_pakin 
 	recruit_character = NK3_ri_yong_gil  

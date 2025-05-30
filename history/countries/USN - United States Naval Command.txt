@@ -1,7 +1,6 @@
 ﻿	capital = 629
 
-	#oob = ""
-
+	#
 	set_research_slots = 3
 	set_convoys = 60
 	set_stability = 0.4
@@ -101,7 +100,6 @@
 
 	add_ideas = {
 		USN_naval_dictatorship_idea
-		USA_american_neutrality_idea
 	}
 
 	if = {

@@ -74,7 +74,6 @@ NVX_has_government_ideology_authoritarian = {
 
 NVX_break_up_countries_trigger = {
 	OR = {
-		any_owned_state = { is_core_of = BAV }
 		any_owned_state = { is_core_of = TIB }
 		any_owned_state = { is_core_of = SIK }
 		any_owned_state = { is_core_of = XSM }

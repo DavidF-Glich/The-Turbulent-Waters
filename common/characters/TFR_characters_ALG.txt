@@ -2,7 +2,7 @@
 		ALG_Abdelmadjid_Tebboune_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Abdelmadjid_Tebboune.png"
+					large = "gfx/leaders/ALG/Abdelmadjid_Tebboune.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		ALG_Karim_Tabbou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Karim Tabbou.png"
+					large = "gfx/leaders/ALG/Karim Tabbou.png"
 				}
 			}
 			country_leader={
@@ -28,7 +28,7 @@
 		ALG_Abdelhak_Layada_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Abdelhak Layada.png"
+					large = "gfx/leaders/ALG/Abdelhak Layada.png"
 				}
 			}
 			country_leader={
@@ -41,7 +41,7 @@
 		ALG_Abderrazak_Makri_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Abderrazak Makri.png"
+					large = "gfx/leaders/ALG/Abderrazak Makri.png"
 				}
 			}
 			country_leader={
@@ -60,7 +60,7 @@
 		ALG_Jacques_Villard_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Jacques_Villard.png"
+					large = "gfx/leaders/ALG/Jacques_Villard.png"
 				}
 			}
 			country_leader={
@@ -73,7 +73,7 @@
 		ALG_Fatima_Boudouani_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Fatima Boudouani.png"
+					large = "gfx/leaders/ALG/Fatima Boudouani.png"
 				}
 			}
 			gender = female
@@ -90,7 +90,7 @@
 		ALG_Fatima_Zohra_Ardjoune_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Fatima Zohra Ardjoune.png"
+					large = "gfx/leaders/ALG/Fatima Zohra Ardjoune.png"
 				}
 			}
 			gender = female
@@ -107,7 +107,7 @@
 		ALG_Mohamed_Kaidi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Mohamed Kaidi.png"
+					large = "gfx/leaders/ALG/Mohamed Kaidi.png"
 				}
 			}
 			corps_commander = {
@@ -129,7 +129,7 @@
 		ALG_Said_Chengriha_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Said Chengriha.png"
+					large = "gfx/leaders/ALG/Said Chengriha.png"
 				}
 			}
 			field_marshal = {
@@ -146,7 +146,7 @@
 		TAH_abu_ubaidah_youssef_annabi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Abu Ubaidah Youssef al-Annabi.png"
+					large = "gfx/leaders/ALG/Abu Ubaidah Youssef al-Annabi.png"
 				}
 			}
 			country_leader={

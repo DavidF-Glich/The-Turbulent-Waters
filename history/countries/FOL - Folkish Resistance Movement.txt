@@ -1,7 +1,6 @@
 ﻿	capital = 924
 
-	#oob = ""
-	
+	#	
 	set_country_flag = shithole_country
 
 	set_research_slots = 3

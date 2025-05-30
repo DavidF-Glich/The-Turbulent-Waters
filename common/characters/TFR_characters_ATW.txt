@@ -2,11 +2,11 @@ characters = {
 	ATW_brandon_russell_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/ATW/ATW_brandon_russell.png"
+				large = "gfx/leaders/ATW/ATW_brandon_russell.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_brandon_russell.png"
-				large = "gfx/Leaders/ATW/ATW_brandon_russell.png"
+				large = "gfx/leaders/ATW/ATW_brandon_russell.png"
 			}
 		}
 		country_leader = {
@@ -48,11 +48,11 @@ characters = {
 	ATW_james_mason_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/ATW/ATW_james_mason.png"
+				large = "gfx/leaders/ATW/ATW_james_mason.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_james_mason.png"
-				large = "gfx/Leaders/ATW/ATW_james_mason3.png"
+				large = "gfx/leaders/ATW/ATW_james_mason3.png"
 			}
 		}
 		country_leader = {
@@ -100,11 +100,11 @@ characters = {
 	ATW_joshua_sutter_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/ATW/ATW_joshua_sutter.png"
+				large = "gfx/leaders/ATW/ATW_joshua_sutter.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_joshua_sutter.png"
-				large = "gfx/Leaders/ATW/ATW_joshua_sutter.png"
+				large = "gfx/leaders/ATW/ATW_joshua_sutter.png"
 			}
 		}
 		country_leader = {
@@ -119,7 +119,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_john_cameron_denton.png"
-				large = "gfx/Leaders/ATW/ATW_john_cameron_denton.png"
+				large = "gfx/leaders/ATW/ATW_john_cameron_denton.png"
 			}
 		}
 		country_leader = {
@@ -159,7 +159,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_jordan_jereb.png"
-				large = "gfx/Leaders/ATW/ATW_jordan_jereb.png"
+				large = "gfx/leaders/ATW/ATW_jordan_jereb.png"
 			}
 		}
 		country_leader = {
@@ -335,7 +335,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_craig_lang.png"
-				large = "gfx/Leaders/ATW/ATW_craig_lang.png"
+				large = "gfx/leaders/ATW/ATW_craig_lang.png"
 			}
 		}
 		corps_commander = {
@@ -359,7 +359,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_ethan_melzer.png"
-				large = "gfx/Leaders/ATW/ATW_ethan_melzer.png"
+				large = "gfx/leaders/ATW/ATW_ethan_melzer.png"
 			}
 		}
 		corps_commander = {
@@ -378,7 +378,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_corwyn_carver.png"
-				large = "gfx/Leaders/ATW/ATW_corwyn_carver.png"
+				large = "gfx/leaders/ATW/ATW_corwyn_carver.png"
 			}
 		}
 		corps_commander = {
@@ -411,7 +411,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_jordan_duncan.png"
-				large = "gfx/Leaders/ATW/ATW_jordan_duncan.png"
+				large = "gfx/leaders/ATW/ATW_jordan_duncan.png"
 			}
 		}
 		corps_commander = {
@@ -429,7 +429,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_sarah_clendaniel.png"
-				large = "gfx/Leaders/ATW/ATW_sarah_clendaniel.png"
+				large = "gfx/leaders/ATW/ATW_sarah_clendaniel.png"
 			}
 		}
 		corps_commander = {
@@ -448,7 +448,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_aiden_bruce_umbaugh.png"
-				large = "gfx/Leaders/ATW/ATW_aiden_bruce_umbaugh.png"
+				large = "gfx/leaders/ATW/ATW_aiden_bruce_umbaugh.png"
 			}
 		}
 		corps_commander = {
@@ -467,7 +467,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_alex_zwiefelhofer.png"
-				large = "gfx/Leaders/ATW/ATW_alex_zwiefelhofer.png"
+				large = "gfx/leaders/ATW/ATW_alex_zwiefelhofer.png"
 			}
 		}
 		corps_commander = {
@@ -486,7 +486,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_beau_merryman.png"
-				large = "gfx/Leaders/ATW/ATW_beau_merryman.png"
+				large = "gfx/leaders/ATW/ATW_beau_merryman.png"
 			}
 		}
 		corps_commander = {
@@ -504,7 +504,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_conor_climo.png"
-				large = "gfx/Leaders/ATW/ATW_conor_climo.png"
+				large = "gfx/leaders/ATW/ATW_conor_climo.png"
 			}
 		}
 		corps_commander = {
@@ -521,7 +521,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_timothy_wilson.png"
-				large = "gfx/Leaders/ATW/ATW_timothy_wilson.png"
+				large = "gfx/leaders/ATW/ATW_timothy_wilson.png"
 			}
 		}
 		corps_commander = {
@@ -538,7 +538,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_ali_gator.png"
-				large = "gfx/Leaders/ATW/ATW_ali_gator.png"
+				large = "gfx/leaders/ATW/ATW_ali_gator.png"
 			}
 		}
 		corps_commander = {
@@ -558,7 +558,7 @@ characters = {
 	ATW_joel_mingleton_char = {
 		portraits = {
 			army = {
-				large = "gfx/Leaders/ATW/ATW_joel_mingleton.png"
+				large = "gfx/leaders/ATW/ATW_joel_mingleton.png"
 			}
 		}
 		corps_commander = {
@@ -579,7 +579,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_kane.png"
-				large = "gfx/Leaders/ATW/ATW_kane.png"
+				large = "gfx/leaders/ATW/ATW_kane.png"
 			}
 		}
 		field_marshal = {
@@ -605,7 +605,7 @@ characters = {
 		portraits = {
 			army = {
 				small = "gfx/interface/ideas/ATW/advisors/ATW_masked_man.png"
-				large = "gfx/Leaders/ATW/ATW_masked_man.png"
+				large = "gfx/leaders/ATW/ATW_masked_man.png"
 			}
 		}
 		corps_commander = {

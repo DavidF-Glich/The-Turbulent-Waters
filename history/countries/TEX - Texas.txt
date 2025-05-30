@@ -1,6 +1,5 @@
 ﻿capital = 956
 
-oob = ""
 
 set_research_slots = 4
 set_convoys = 250

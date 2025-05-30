@@ -2,7 +2,7 @@ characters={
 	SPR_felipe_vi_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SPR/Felipe_VI.png"
+				large = "gfx/leaders/SPR/Felipe_VI.png"
 			}
 		}
 		country_leader={
@@ -55,14 +55,14 @@ characters={
 	SPR_leonor_I_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SPR/leonor_i.png"
+				large = "gfx/leaders/SPR/leonor_i.png"
 			}
 		}
 	}
 	SPR_Juan_Carlos_I_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SPR/juan_carlos_i.png"
+				large = "gfx/leaders/SPR/juan_carlos_i.png"
 			}
 		}
 	}
@@ -70,10 +70,10 @@ characters={
 	BSQ_Arnaldo_Otegi = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Arnaldo Otegi.png" 
+				large = "gfx/leaders/SPR/Civil_War/Arnaldo Otegi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Arnaldo Otegi.png" 
+				large = "gfx/leaders/SPR/Civil_War/Arnaldo Otegi.png" 
 			}
 		}
 		country_leader={
@@ -97,10 +97,10 @@ characters={
 	SNS_Pedro_Pablo_Pena = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Pedro Pablo Pena.png" 
+				large = "gfx/leaders/SPR/Civil_War/Pedro Pablo Pena.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Pedro Pablo Pena.png" 
+				large = "gfx/leaders/SPR/Civil_War/Pedro Pablo Pena.png" 
 			}
 		}
 		country_leader={
@@ -113,10 +113,10 @@ characters={
 	BAR_GCL = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/General Confederation of Labor.png" 
+				large = "gfx/leaders/SPR/Civil_War/General Confederation of Labor.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/General Confederation of Labor.png" 
+				large = "gfx/leaders/SPR/Civil_War/General Confederation of Labor.png" 
 			}
 		}
 		country_leader={
@@ -129,10 +129,10 @@ characters={
 	GAL_Anton_Garcia_Matos = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Anton García Matos.png" 
+				large = "gfx/leaders/SPR/Civil_War/Anton García Matos.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Anton García Matos.png" 
+				large = "gfx/leaders/SPR/Civil_War/Anton García Matos.png" 
 			}
 		}
 		country_leader={
@@ -156,10 +156,10 @@ characters={
 	RSR_Inigo_Errejon = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Íñigo Errejón.png" 
+				large = "gfx/leaders/SPR/Civil_War/Íñigo Errejón.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Íñigo Errejón.png" 
+				large = "gfx/leaders/SPR/Civil_War/Íñigo Errejón.png" 
 			}
 		}
 		country_leader={
@@ -172,10 +172,10 @@ characters={
 	CAT_Gabriel_Rufian = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Gabriel Rufián.png" 
+				large = "gfx/leaders/SPR/Civil_War/Gabriel Rufián.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Gabriel Rufián.png" 
+				large = "gfx/leaders/SPR/Civil_War/Gabriel Rufián.png" 
 			}
 		}
 		country_leader={
@@ -187,10 +187,10 @@ characters={
 	CAT_Enric_Ravello = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/FRA/Latinists/SPR_Enric_Ravello.png" 
+				large = "gfx/leaders/FRA/Latinists/SPR_Enric_Ravello.png" 
 			}
 			army = {
-				large = "gfx/Leaders/FRA/Latinists/SPR_Enric_Ravello.png" 
+				large = "gfx/leaders/FRA/Latinists/SPR_Enric_Ravello.png" 
 			}
 		}
 		country_leader={
@@ -203,10 +203,10 @@ characters={
 	PRS_Roberto_Vaquero = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Roberto Vaquero.png" 
+				large = "gfx/leaders/SPR/Civil_War/Roberto Vaquero.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Roberto Vaquero.png" 
+				large = "gfx/leaders/SPR/Civil_War/Roberto Vaquero.png" 
 			}
 		}
 		country_leader={
@@ -219,10 +219,10 @@ characters={
 	LCA_Manuel_Charlin = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Manuel Charlin.png" 
+				large = "gfx/leaders/SPR/Civil_War/Manuel Charlin.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Manuel Charlin.png" 
+				large = "gfx/leaders/SPR/Civil_War/Manuel Charlin.png" 
 			}
 		}
 		country_leader={
@@ -235,10 +235,10 @@ characters={
 	GOL_Supporters_Gol_Sur = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Civil_War/Supporters Gol Sur.png" 
+				large = "gfx/leaders/SPR/Civil_War/Supporters Gol Sur.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Civil_War/Supporters Gol Sur.png" 
+				large = "gfx/leaders/SPR/Civil_War/Supporters Gol Sur.png" 
 			}
 		}
 		country_leader={
@@ -251,10 +251,10 @@ characters={
 	ADU_Teodoro_E_Lopez_Calderon = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Teodoro E. Lopez Calderon.png" 
+				large = "gfx/leaders/SPR/Teodoro E. Lopez Calderon.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Teodoro E. Lopez Calderon.png" 
+				large = "gfx/leaders/SPR/Teodoro E. Lopez Calderon.png" 
 			}
 		}
 		country_leader={
@@ -280,10 +280,10 @@ characters={
 	SPR_Teodoro_E_Lopez_Calderon = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Teodoro E. Lopez Calderon.png" 
+				large = "gfx/leaders/SPR/Teodoro E. Lopez Calderon.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Teodoro E. Lopez Calderon.png" 
+				large = "gfx/leaders/SPR/Teodoro E. Lopez Calderon.png" 
 			}
 		}
 		country_leader={
@@ -307,10 +307,10 @@ characters={
 	SPR_Fernando_Alejandre_Martinez = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Fernando Alejandre Martínez.png" 
+				large = "gfx/leaders/SPR/Fernando Alejandre Martínez.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Fernando Alejandre Martínez.png" 
+				large = "gfx/leaders/SPR/Fernando Alejandre Martínez.png" 
 			}
 		}
 		field_marshal={
@@ -326,10 +326,10 @@ characters={
 	SPR_Miguel_Angel_Jimenez_Merida = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Miguel_Angel_Jimenez_Merida.png" 
+				large = "gfx/leaders/SPR/Miguel_Angel_Jimenez_Merida.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Miguel_Angel_Jimenez_Merida.png" 
+				large = "gfx/leaders/SPR/Miguel_Angel_Jimenez_Merida.png" 
 			}
 		}
 		corps_commander={
@@ -345,10 +345,10 @@ characters={
 	SPR_Juan_Montenegro = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Juan_Montenegro.png" 
+				large = "gfx/leaders/SPR/Juan_Montenegro.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Juan_Montenegro.png" 
+				large = "gfx/leaders/SPR/Juan_Montenegro.png" 
 			}
 		}
 		corps_commander={
@@ -364,10 +364,10 @@ characters={
 	SPR_Francisco_Javier_Varela_Salas = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Francisco_Javier_Varela_Salas.png" 
+				large = "gfx/leaders/SPR/Francisco_Javier_Varela_Salas.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Francisco_Javier_Varela_Salas.png" 
+				large = "gfx/leaders/SPR/Francisco_Javier_Varela_Salas.png" 
 			}
 		}
 		corps_commander={
@@ -383,10 +383,10 @@ characters={
 	SPR_FERNANDO_LOPEZ_DEL_POZO = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/FERNANDO_LOPEZ_DEL_POZO.png" 
+				large = "gfx/leaders/SPR/FERNANDO_LOPEZ_DEL_POZO.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/FERNANDO_LOPEZ_DEL_POZO.png" 
+				large = "gfx/leaders/SPR/FERNANDO_LOPEZ_DEL_POZO.png" 
 			}
 		}
 		corps_commander={
@@ -402,10 +402,10 @@ characters={
 	SPR_Amador_Fernando_Ensenat_y_Berea = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SPR/Amador_Fernando_Ensenat_y_Berea.png" 
+				large = "gfx/leaders/SPR/Amador_Fernando_Ensenat_y_Berea.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SPR/Amador_Fernando_Ensenat_y_Berea.png" 
+				large = "gfx/leaders/SPR/Amador_Fernando_Ensenat_y_Berea.png" 
 			}
 		}
 		corps_commander={

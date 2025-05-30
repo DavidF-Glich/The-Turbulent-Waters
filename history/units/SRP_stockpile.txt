@@ -23,7 +23,7 @@ units = {
 instant_effect = {
 
 	add_equipment_to_stockpile = {
-		type = modern_tank_equipment
+		type = modern_tank_equipment_1
 		amount = 80
 		producer = SOV
 	}

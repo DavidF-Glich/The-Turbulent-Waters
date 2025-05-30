@@ -1,6 +1,6 @@
 	capital = 924
 
-	oob = ""
+
 
 	set_research_slots = 2
 	set_convoys = 10
@@ -182,7 +182,6 @@
 				special_type_slot_2 = sloped_armor
 				special_type_slot_3 = empty
 				special_type_slot_4 = empty
-				special_type_slot_5 = gunner_optical_sights
 			}
 			upgrades = {
 				tank_nsb_engine_upgrade = 9

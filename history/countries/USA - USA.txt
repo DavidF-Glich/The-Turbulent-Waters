@@ -764,7 +764,6 @@ if = {
 			special_type_slot_2 = lmg_defense_turret_2x
 			special_type_slot_3 = empty
 		}
-		icon = "GFX_GER_tactical_bomber1_medium"
 	}
 	create_equipment_variant = {
 		name = "F-15E"

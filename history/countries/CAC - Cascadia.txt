@@ -1,6 +1,5 @@
 ﻿capital = 1036
-#oob = ""
-recruit_character = CAC_provisional_government
+#recruit_character = CAC_provisional_government
 recruit_character = CAC_mike_ma
 recruit_character = CAC_paul_harrell_char
 recruit_character = CAC_rinaldo_nazzaro

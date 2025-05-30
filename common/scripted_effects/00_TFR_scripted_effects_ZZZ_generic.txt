@@ -2199,6 +2199,7 @@ add_GDP = {
 		var = gdp_total_million_var
 		value = 1000
 	}
+	
 	check_gdp = yes
 }
 
@@ -2888,21 +2889,6 @@ decrease_economy_law = {
 	else_if = {
 		limit = {
 			has_idea = total_mobilization
-			OR = {
-				AND = {
-					tag = SOV
-					has_completed_focus = SOV_state_of_permanent_mobilization
-				}
-				tag = ATW
-				AND = {
-					tag = GMA
-					has_completed_focus = GMA_Privatize_Mobilization
-				}
-				AND = {
-					tag = GER
-					has_completed_focus = GER_economy_fueld_by_war
-				}
-			}
 		}
 		add_ideas = permanent_mobilization
 	}
@@ -2954,21 +2940,6 @@ upgrade_economy_law = {
 	else_if = {
 		limit = {
 			has_idea = total_mobilization
-			OR = {
-				AND = {
-					tag = SOV
-					has_completed_focus = SOV_state_of_permanent_mobilization
-				}
-				tag = ATW
-				AND = {
-					tag = GMA
-					has_completed_focus = GMA_Privatize_Mobilization
-				}
-				AND = {
-					tag = GER
-					has_completed_focus = GER_economy_fueld_by_war
-				}
-			}
 		}
 		add_ideas = permanent_mobilization
 	}
@@ -4627,26 +4598,6 @@ add_legit = {
 		min = -1
 		max = 1
 	}
-	if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = USA_legitimacy_dynamic
-			}
-		}
-		multiply_temp_variable = {
-			var = legit_var_temp
-			value = 0.2
-		}
-		add_to_variable = {
-			var = legit_dynamic_var
-			value = legit_var_temp
-		}
-		clamp_variable = {
-			var = legit_dynamic_var
-			min = -0.2
-			max = 0.2
-		}
-	}
 }
 
 new_country = {
@@ -5649,174 +5600,205 @@ gain_random_agency_upgrade = {
 		else = {
 			random_list = {
 				1 = {
-					upgrade_intelligence_agency = upgrade_economy_civilian
+					upgrade_intelligence_agency = upgrade_foreign_intelligence
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_economy_civilian
+						has_done_agency_upgrade = upgrade_foreign_intelligence
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_army_department
+					upgrade_intelligence_agency = upgrade_domestic_intelligence
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_army_department
+						has_done_agency_upgrade = upgrade_domestic_intelligence
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_naval_department
+					upgrade_intelligence_agency = upgrade_military_intelligence
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_naval_department
+						has_done_agency_upgrade = upgrade_military_intelligence
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_airforce_department
+					upgrade_intelligence_agency = upgrade_planning_and_direction
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_airforce_department
+						has_done_agency_upgrade = upgrade_planning_and_direction
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_passive_defense
+					upgrade_intelligence_agency = upgrade_collection
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_passive_defense
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+						}
+						has_done_agency_upgrade = upgrade_collection
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_anti_partisan
+					upgrade_intelligence_agency = upgrade_processing_and_exploitation
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_anti_partisan
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+							has_done_agency_upgrade = upgrade_collection
+						}
+						has_done_agency_upgrade = upgrade_processing_and_exploitation
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_blueprint_stealing
+					upgrade_intelligence_agency = upgrade_analysis
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_blueprint_stealing
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+							has_done_agency_upgrade = upgrade_collection
+							has_done_agency_upgrade = upgrade_processing_and_exploitation
+						}
+						has_done_agency_upgrade = upgrade_analysis
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_portable_radios
+					upgrade_intelligence_agency = upgrade_dissemination
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_portable_radios
+						NOT = {
+							has_done_agency_upgrade = upgrade_planning_and_direction
+							has_done_agency_upgrade = upgrade_collection
+							has_done_agency_upgrade = upgrade_processing_and_exploitation
+							has_done_agency_upgrade = upgrade_analysis
+						}
+						has_done_agency_upgrade = upgrade_dissemination
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_invisible_ink
+					upgrade_intelligence_agency = upgrade_humint
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_invisible_ink
+						has_done_agency_upgrade = upgrade_humint
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_plastic_explosives
+					upgrade_intelligence_agency = upgrade_sigint
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_plastic_explosives
+						has_done_agency_upgrade = upgrade_sigint
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_suicide_pills
+					upgrade_intelligence_agency = upgrade_masint
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_suicide_pills
+						NOT = {
+							has_tech = radio_detection
+						}
+						has_done_agency_upgrade = upgrade_masint
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_training_centers
+					upgrade_intelligence_agency = upgrade_osint
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_training_centers
+						has_done_agency_upgrade = upgrade_osint
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_commando_training
+					upgrade_intelligence_agency = upgrade_geoint
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_commando_training
+						has_done_agency_upgrade = upgrade_geoint
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_interrogation_techniques
+					upgrade_intelligence_agency = upgrade_cell_system
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_interrogation_techniques
+						has_done_agency_upgrade = upgrade_cell_system
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_diplo_training
+					upgrade_intelligence_agency = upgrade_communication_security
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_diplo_training
+						has_done_agency_upgrade = upgrade_communication_security
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_psycho_warfare
+					upgrade_intelligence_agency = upgrade_support_services
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_psycho_warfare
+						has_done_agency_upgrade = upgrade_support_services
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_form_department
+					upgrade_intelligence_agency = upgrade_enhanced_interrogation_techniques
 					modifier = {
 						factor = 0
-						has_done_agency_upgrade = upgrade_form_department
+						has_done_agency_upgrade = upgrade_enhanced_interrogation_techniques
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_decryption_boost
+					upgrade_intelligence_agency = upgrade_termination
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_decryption_boost
-							NOT = {
-								has_done_agency_upgrade = upgrade_form_department
+						has_done_agency_upgrade = upgrade_termination
+					}
+				}
+				1 = {
+					upgrade_intelligence_agency = upgrade_comint
+					modifier = {
+						factor = 0
+						has_done_agency_upgrade = upgrade_comint
+						NOT = {
+							has_done_agency_upgrade = upgrade_sigint
+							has_done_agency_upgrade = upgrade_humint
+							has_done_agency_upgrade = upgrade_elint
+						}
+					}
+				}
+				1 = {
+					upgrade_intelligence_agency = upgrade_advanced_cryptoanalytical_attack_models
+					modifier = {
+						factor = 0
+						has_done_agency_upgrade = upgrade_advanced_cryptoanalytical_attack_models
+						NOT = {
+							has_done_agency_upgrade = upgrade_sigint
+							has_done_agency_upgrade = upgrade_elint
+							OR = {
+								has_tech = petascale_computing
+								has_tech = early_quantum_computing
 							}
 						}
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_decryption_boost_2
+					upgrade_intelligence_agency = upgrade_cryptosystem_algorithm_upgrade
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_decryption_boost_2
-							NOT = {
-								has_done_agency_upgrade = upgrade_form_department
-							}
-							NOT = {
-								has_done_agency_upgrade = upgrade_decryption_boost
+						has_done_agency_upgrade = upgrade_cryptosystem_algorithm_upgrade
+						NOT = {
+							has_done_agency_upgrade = upgrade_sigint
+							has_done_agency_upgrade = upgrade_elint
+							OR = {
+								has_tech = petascale_computing
+								has_tech = early_quantum_computing
 							}
 						}
 					}
 				}
 				1 = {
-					upgrade_intelligence_agency = upgrade_crypto_strength
+					upgrade_intelligence_agency = upgrade_quantum_cryptography
 					modifier = {
 						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_crypto_strength
-							NOT = {
-								has_done_agency_upgrade = upgrade_form_department
-							}
-						}
-					}
-				}
-				1 = {
-					upgrade_intelligence_agency = upgrade_crypto_strength_2
-					modifier = {
-						factor = 0
-						OR = {
-							has_done_agency_upgrade = upgrade_crypto_strength_2
-							NOT = {
-								has_done_agency_upgrade = upgrade_form_department
-							}
-							NOT = {
-								has_done_agency_upgrade = upgrade_crypto_strength
+						has_done_agency_upgrade = upgrade_quantum_cryptography
+						NOT = {
+							has_done_agency_upgrade = upgrade_advanced_cryptoanalytical_attack_models
+							has_done_agency_upgrade = upgrade_cryptosystem_algorithm_upgrade
+							OR = {
+								has_tech = modern_supercomputers
+								has_tech = quantum_supremacy
 							}
 						}
 					}
@@ -6750,7 +6732,7 @@ get_current_government_type = {
 	get_current_popularities = yes
 
 	if = {
-		limit = { has_coalition = yes }
+		limit = { is_in_coalition = yes }
 		for_each_loop = {
 			array = coalition_partners
 			add_to_array = { original_coalitions = v }
@@ -6758,23 +6740,23 @@ get_current_government_type = {
 	}
 
 	if = {
-		limit = { has_autonomy_state = colonial_government }
+		limit = { has_autonomy_state = autonomy_colony }
 		set_country_flag = colonial_government
 	}
 	else_if = {
-		limit = { has_autonomy_state = integrated_puppet }
+		limit = { has_autonomy_state = autonomy_integrated_puppet }
 		set_country_flag = integrated_puppet
 	}
 	else_if = {
-		limit = { has_autonomy_state = occupied_puppet }
+		limit = { has_autonomy_state = autonomy_collaboration_government }
 		set_country_flag = occupied_puppet
 	}
 	else_if = {
-		limit = { has_autonomy_state = autonomous_puppet }
+		limit = { has_autonomy_state = autonomy_dominion }
 		set_country_flag = autonomous_puppet
 	}
 	else_if = {
-		limit = { has_autonomy_state = nominal_puppet }
+		limit = { has_autonomy_state = autonomy_supervised_state }
 		set_country_flag = nominal_puppet
 	}
 	else_if = {

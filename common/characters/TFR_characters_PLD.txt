@@ -2,7 +2,7 @@
 		PLD_andrzej_duda_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/Andrzej_Duda.png"
+					large = "gfx/leaders/PLD/Andrzej_Duda.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		PLD_krzysztof_szwej_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/Krzysztof Szwej.png"
+					large = "gfx/leaders/PLD/Krzysztof Szwej.png"
 				}
 			}
 			country_leader={
@@ -28,7 +28,7 @@
 		PLD_Dariusz_Lewandowski_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/generals/Dariusz Lewandowski.dds"
+					large = "gfx/leaders/PLD/generals/Dariusz Lewandowski.dds"
 				}
 			}
 			corps_commander = {
@@ -45,7 +45,7 @@
 		PLD_Krzysztof_Krol_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/generals/Krzysztof Król.dds"
+					large = "gfx/leaders/PLD/generals/Krzysztof Król.dds"
 				}
 			}
 			corps_commander = {
@@ -62,7 +62,7 @@
 		PLD_Piotr_Blazeusz_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/generals/Piotr Błazeusz.dds"
+					large = "gfx/leaders/PLD/generals/Piotr Błazeusz.dds"
 				}
 			}
 			corps_commander = {
@@ -79,7 +79,7 @@
 		PLD_Mieczyslaw_Gocul_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/generals/Mieczysław Gocuł.dds"
+					large = "gfx/leaders/PLD/generals/Mieczysław Gocuł.dds"
 				}
 			}
 			field_marshal = {
@@ -106,7 +106,7 @@
 		PLD_Michal_Sikora_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/generals/Michał Sikora.dds"
+					large = "gfx/leaders/PLD/generals/Michał Sikora.dds"
 				}
 			}
 			corps_commander = {
@@ -123,7 +123,7 @@
 		PLD_Leszek_Surawski_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/PLD/generals/Leszek Surawski.dds"
+					large = "gfx/leaders/PLD/generals/Leszek Surawski.dds"
 				}
 			}
 			field_marshal = {
@@ -141,7 +141,7 @@
 		POL_andrzej_duda_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/POL/Andrzej_Duda.dds"
+					large = "gfx/leaders/POL/Andrzej_Duda.dds"
 				}
 			}
 			country_leader={
@@ -154,7 +154,7 @@
 		POL_krzysztof_szwej_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/POL/Krzysztof Szwej.png"
+					large = "gfx/leaders/POL/Krzysztof Szwej.png"
 				}
 			}
 			country_leader={

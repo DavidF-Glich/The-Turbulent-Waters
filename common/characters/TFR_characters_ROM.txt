@@ -2,7 +2,7 @@ characters={
 	ROM_klaus_iohannis_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROM/Klaus_Iohannis.png" 
+				large = "gfx/leaders/ROM/Klaus_Iohannis.png" 
 			}
 		}
 		country_leader = {
@@ -22,7 +22,7 @@ characters={
 	ROM_tudor_ionescu_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROM/Tudor_Ionescu.dds" 
+				large = "gfx/leaders/ROM/Tudor_Ionescu.dds" 
 			}
 		}
 		country_leader = {
@@ -32,7 +32,7 @@ characters={
 	WLC_Nicholas_Medforth_Mills = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/HUN/Nicholas_Medforth_Mills.png" 
+				large = "gfx/leaders/HUN/Nicholas_Medforth_Mills.png" 
 			}
 		}
 		country_leader = {
@@ -48,7 +48,7 @@ characters={
 	ROM_mircea_chelaru_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROM/Mircea_Chelaru.dds" 
+				large = "gfx/leaders/ROM/Mircea_Chelaru.dds" 
 			}
 		}
 		country_leader = {
@@ -65,7 +65,7 @@ characters={
 	ROM_constantin_rotaru_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROM/Constantin Rotaru.png" 
+				large = "gfx/leaders/ROM/Constantin Rotaru.png" 
 			}
 		}
 		country_leader = {
@@ -78,7 +78,7 @@ characters={
 	ROM_gigi_becali_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROM/Gigi Becali.png" 
+				large = "gfx/leaders/ROM/Gigi Becali.png" 
 			}
 		}
 		country_leader = {
@@ -88,7 +88,7 @@ characters={
 	ROM_Corneliu_Postu = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/ROM/Corneliu Postu.png"
+				large = "gfx/leaders/ROM/Corneliu Postu.png"
 			}
 		}
 		corps_commander={
@@ -102,7 +102,7 @@ characters={
 	ROM_Daniel_Petrescu = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/ROM/Daniel Petrescu.png"
+				large = "gfx/leaders/ROM/Daniel Petrescu.png"
 			}
 		}
 		field_marshal={
@@ -116,7 +116,7 @@ characters={
 	ROM_Florea_Sas = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/ROM/Florea Sas.png"
+				large = "gfx/leaders/ROM/Florea Sas.png"
 			}
 		}
 		corps_commander={
@@ -130,7 +130,7 @@ characters={
 	ROM_Gheorghita_Vlad = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/ROM/Gheorghita Vlad.png"
+				large = "gfx/leaders/ROM/Gheorghita Vlad.png"
 			}
 		}
 		corps_commander={
@@ -144,7 +144,7 @@ characters={
 	ROM_Iulian_Berdila = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/ROM/Iulian Berdila.png"
+				large = "gfx/leaders/ROM/Iulian Berdila.png"
 			}
 		}
 		corps_commander={

@@ -2,7 +2,7 @@
 		HUN_Janos_Ader_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/János_Áder.dds"
+					large = "gfx/leaders/HUN/János_Áder.dds"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		HUN_Katalin_Novak_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Katalin_Novak.png"
+					large = "gfx/leaders/HUN/Katalin_Novak.png"
 				}
 			}
 			country_leader={
@@ -34,7 +34,7 @@
 		HUN_Viktor_Orban_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Viktor Orbán.png"
+					large = "gfx/leaders/HUN/Viktor Orbán.png"
 				}
 			}
 			country_leader={
@@ -47,7 +47,7 @@
 		HUN_Kunhalmi_Agnes_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Kunhalmi Agnes.dds"
+					large = "gfx/leaders/HUN/Kunhalmi Agnes.dds"
 				}
 			}
 			country_leader={
@@ -60,7 +60,7 @@
 		HNG_Kunhalmi_Agnes_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Kunhalmi Agnes.dds"
+					large = "gfx/leaders/HUN/Kunhalmi Agnes.dds"
 				}
 			}
 			country_leader={
@@ -73,7 +73,7 @@
 		HUN_Laszlo_Toroczkai_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Toroczkai_Laszlo.png"
+					large = "gfx/leaders/HUN/Toroczkai_Laszlo.png"
 				}
 			}
 			country_leader={
@@ -92,7 +92,7 @@
 		HNG_Laszlo_Toroczkai_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Toroczkai_Laszlo.png"
+					large = "gfx/leaders/HUN/Toroczkai_Laszlo.png"
 				}
 			}
 			country_leader={
@@ -111,7 +111,7 @@
 		HUN_Peter_Jakab_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Peter_Jakab.png"
+					large = "gfx/leaders/HUN/Peter_Jakab.png"
 				}
 			}
 			country_leader={
@@ -124,7 +124,7 @@
 		HUN_Ferenc_Gyurcsany_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Ferenc_Gyurcsany.png"
+					large = "gfx/leaders/HUN/Ferenc_Gyurcsany.png"
 				}
 			}
 			country_leader={
@@ -137,7 +137,7 @@
 		HUN_Peter_Marki_Zay_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Peter_Marki_Zay.png"
+					large = "gfx/leaders/HUN/Peter_Marki_Zay.png"
 				}
 			}
 			country_leader={
@@ -150,7 +150,7 @@
 		HUN_Gyula_Thurmer = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Gyula_Thurmer.png"
+					large = "gfx/leaders/HUN/Gyula_Thurmer.png"
 				}
 			}
 			country_leader={
@@ -169,7 +169,7 @@
 		HNG_Gyula_Thurmer = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Gyula_Thurmer.png"
+					large = "gfx/leaders/HUN/Gyula_Thurmer.png"
 				}
 			}
 			country_leader={
@@ -421,14 +421,14 @@
 		HUN_Ferdinand_Habsburg_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Ferdinand_Habsburg.png"
+					large = "gfx/leaders/HUN/Ferdinand_Habsburg.png"
 				}
 			}
 		}
 		HUN_Eduard_Habsburg_Lothringen_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Eduard_Habsburg_Lothringen.png"
+					large = "gfx/leaders/HUN/Eduard_Habsburg_Lothringen.png"
 				}
 			}
 		}
@@ -436,7 +436,7 @@
 			name = HNG_Rafael_Lusvarghi
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Rafael_Lusvarghi.png"
+					large = "gfx/leaders/HUN/Rafael_Lusvarghi.png"
 				}
 				army = {
 					large = "gfx/leaders/HUN/Rafael_Lusvarghi.png"
@@ -456,7 +456,7 @@
 		HNG_Rafael_Lusvarghi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Rafael_Lusvarghi.png"
+					large = "gfx/leaders/HUN/Rafael_Lusvarghi.png"
 				}
 				army = {
 					large = "gfx/leaders/HUN/Rafael_Lusvarghi.png"
@@ -476,7 +476,7 @@
 		HUN_Rafael_Lusvarghi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Rafael_Lusvarghi.png"
+					large = "gfx/leaders/HUN/Rafael_Lusvarghi.png"
 				}
 				army = {
 					large = "gfx/leaders/HUN/Rafael_Lusvarghi.png"
@@ -487,28 +487,28 @@
 		HUN_Gyorgy_Gyula_Zagyva_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Gyorgy_Gyula_Zagyva.png"
+					large = "gfx/leaders/HUN/Gyorgy_Gyula_Zagyva.png"
 				}
 			}
 		}
 		HNG_Gyorgy_Gyula_Zagyva_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Gyorgy_Gyula_Zagyva.png"
+					large = "gfx/leaders/HUN/Gyorgy_Gyula_Zagyva.png"
 				}
 			}
 		}
 		HUN_Margareta_of_Romania_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Margareta_of_Romania.png"
+					large = "gfx/leaders/HUN/Margareta_of_Romania.png"
 				}
 			}
 		}
 		HUN_Nicholas_Medforth_Mills_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/HUN/Nicholas_Medforth_Mills.png"
+					large = "gfx/leaders/HUN/Nicholas_Medforth_Mills.png"
 				}
 			}
 		}

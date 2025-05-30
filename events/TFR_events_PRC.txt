@@ -156,10 +156,16 @@ country_event = {
 	immediate = {
 		random_list = {
 			1 = {
-				country_event = china.15101
+				country_event = { 
+					id = china.15101 
+					days = 7
+				}
 			}
 			1 = {
-				country_event = china.15102
+				country_event = { 
+					id = china.15102 
+					days = 7
+				}
 			}
 		}
 	}
@@ -235,6 +241,8 @@ country_event = {
 				days = PRC_Struggle_time
 			}
 		}
+		set_country_flag = NO_COVID_2020
+		mark_focus_tree_layout_dirty = yes
 	}
 }
 #疫情时的小机灵倒霉蛋
@@ -872,7 +880,7 @@ country_event = {
 		}
 		custom_effect_tooltip = 2022_Taiwan_Crisis_tt1
 		effect_tooltip = {
-			set_temp_variable = { conflict_id = token:TaiwanCrisis2022 }
+			set_temp_variable = { conflict_id = token:TaiwanCrisis }
 			TTW_add_fopo_conflict_tab = yes	
 		}
 	}
@@ -883,7 +891,7 @@ country_event = {
 		}
 		custom_effect_tooltip = 2022_Taiwan_Crisis_tt2
 		effect_tooltip = {
-			set_temp_variable = { conflict_id = token:TaiwanCrisis2022 }
+			set_temp_variable = { conflict_id = token:TaiwanCrisis }
 			TTW_add_fopo_conflict_tab = yes	
 		}
 	}

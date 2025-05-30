@@ -198,8 +198,8 @@
 
 	ISR = {
 		country_event = {
-			id = israel.10
-			days = 553
+			id = israel.1
+			days = 850
 		}
 	}
 	send_embargo = PAL

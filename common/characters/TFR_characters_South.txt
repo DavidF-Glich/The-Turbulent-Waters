@@ -2,10 +2,10 @@ characters = {
 	ALA_Kay_Ivey_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/South/ALA_Kay_Ivey.png" 
+				large = "gfx/leaders/South/ALA_Kay_Ivey.png" 
 			}
 			army = {
-				large = "gfx/Leaders/South/ALA_Kay_Ivey.png" 
+				large = "gfx/leaders/South/ALA_Kay_Ivey.png" 
 			}
 		}
 		country_leader={
@@ -43,10 +43,10 @@ characters = {
 	MSS_Tate_Reeves_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/South/MSS_Tate_Reeves.png" 
+				large = "gfx/leaders/South/MSS_Tate_Reeves.png" 
 			}
 			army = {
-				large = "gfx/Leaders/South/MSS_Tate_Reeves.png" 
+				large = "gfx/leaders/South/MSS_Tate_Reeves.png" 
 			}
 		}
 		country_leader={
@@ -57,10 +57,10 @@ characters = {
 	GRA_Brian_Kemp_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/South/GRA_Brian_Kemp.png" 
+				large = "gfx/leaders/South/GRA_Brian_Kemp.png" 
 			}
 			army = {
-				large = "gfx/Leaders/South/GRA_Brian_Kemp.png" 
+				large = "gfx/leaders/South/GRA_Brian_Kemp.png" 
 			}
 		}
 		country_leader={
@@ -71,10 +71,10 @@ characters = {
 	LOU_John_Bel_Edward_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/South/LOU_John_Bel_Edward.png" 
+				large = "gfx/leaders/South/LOU_John_Bel_Edward.png" 
 			}
 			army = {
-				large = "gfx/Leaders/South/LOU_John_Bel_Edward.png" 
+				large = "gfx/leaders/South/LOU_John_Bel_Edward.png" 
 			}
 		}
 		country_leader={
@@ -112,7 +112,7 @@ characters = {
 	FLA_grady_judd_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/FLA/Grady Judd.png" 
+				large = "gfx/leaders/FLA/Grady Judd.png" 
 			}
 		}
 
@@ -207,7 +207,7 @@ characters = {
 	TEX_zach_cooper_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/TEX/Zach Cooper.png" 
+				large = "gfx/leaders/TEX/Zach Cooper.png" 
 			}
 		}
 
@@ -232,7 +232,7 @@ characters = {
 	TRG_Dallas = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/2ACW/Red Generals/Jarrod Patton Roark.png" 
+				large = "gfx/leaders/2ACW/Red Generals/Jarrod Patton Roark.png" 
 			}
 		}
 

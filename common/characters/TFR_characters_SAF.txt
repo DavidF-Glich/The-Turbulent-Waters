@@ -2,10 +2,10 @@ characters={
 	SAF_cyril_ramaphosa_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_cyril_ramaphosa.png" 
+				large = "gfx/leaders/SAF/SAF_cyril_ramaphosa.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_cyril_ramaphosa.png" 
+				large = "gfx/leaders/SAF/SAF_cyril_ramaphosa.png" 
 			}
 		}
 		country_leader = {
@@ -17,10 +17,10 @@ characters={
 	SAF_dark_cyril_ramaphosa_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_cyril_ramaphosa.png" 
+				large = "gfx/leaders/SAF/SAF_cyril_ramaphosa.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_cyril_ramaphosa.png" 
+				large = "gfx/leaders/SAF/SAF_cyril_ramaphosa.png" 
 			}
 		}
 		country_leader = {
@@ -31,10 +31,10 @@ characters={
 	SAF_Charles_Alan_Laubscher_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Charles_Alan_Laubscher.png" 
+				large = "gfx/leaders/SAF/SAF_Charles_Alan_Laubscher.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Charles_Alan_Laubscher.png" 
+				large = "gfx/leaders/SAF/SAF_Charles_Alan_Laubscher.png" 
 			}
 		}
 		country_leader = {
@@ -55,10 +55,10 @@ characters={
 	SAF_Julius_Malema_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Julius_Malema.png" 
+				large = "gfx/leaders/SAF/SAF_Julius_Malema.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Julius_Malema.png" 
+				large = "gfx/leaders/SAF/SAF_Julius_Malema.png" 
 			}
 		}
 		country_leader = {
@@ -69,10 +69,10 @@ characters={
 	SAF_Misuzulu_Zulu_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Misuzulu_Zulu.png" 
+				large = "gfx/leaders/SAF/SAF_Misuzulu_Zulu.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Misuzulu_Zulu.png" 
+				large = "gfx/leaders/SAF/SAF_Misuzulu_Zulu.png" 
 			}
 		}
 		country_leader = {
@@ -83,10 +83,10 @@ characters={
 	SAF_John_Steenhuisen_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_John_Steenhuisen.png" 
+				large = "gfx/leaders/SAF/SAF_John_Steenhuisen.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_John_Steenhuisen.png" 
+				large = "gfx/leaders/SAF/SAF_John_Steenhuisen.png" 
 			}
 		}
 		country_leader = {
@@ -97,10 +97,10 @@ characters={
 		name = SAF_John_Steenhuisen_char
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_John_Steenhuisen.png" 
+				large = "gfx/leaders/SAF/SAF_John_Steenhuisen.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_John_Steenhuisen.png" 
+				large = "gfx/leaders/SAF/SAF_John_Steenhuisen.png" 
 			}
 		}
 		country_leader = {
@@ -111,10 +111,10 @@ characters={
 	SAF_Herman_Mashaba_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Herman_Mashaba.png" 
+				large = "gfx/leaders/SAF/SAF_Herman_Mashaba.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Herman_Mashaba.png" 
+				large = "gfx/leaders/SAF/SAF_Herman_Mashaba.png" 
 			}
 		}
 		country_leader = {
@@ -126,10 +126,10 @@ characters={
 		name = SAF_Herman_Mashaba_char
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Herman_Mashaba.png" 
+				large = "gfx/leaders/SAF/SAF_Herman_Mashaba.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Herman_Mashaba.png" 
+				large = "gfx/leaders/SAF/SAF_Herman_Mashaba.png" 
 			}
 		}
 		country_leader = {
@@ -140,10 +140,10 @@ characters={
 	SAF_Blade_Nzimande_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Blade_Nzimande.png" 
+				large = "gfx/leaders/SAF/SAF_Blade_Nzimande.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Blade_Nzimande.png" 
+				large = "gfx/leaders/SAF/SAF_Blade_Nzimande.png" 
 			}
 		}
 		country_leader = {
@@ -154,10 +154,10 @@ characters={
 	SAF_Blade_Nzimande_communist_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Blade_Nzimande.png" 
+				large = "gfx/leaders/SAF/SAF_Blade_Nzimande.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Blade_Nzimande.png" 
+				large = "gfx/leaders/SAF/SAF_Blade_Nzimande.png" 
 			}
 		}
 		country_leader = {
@@ -168,10 +168,10 @@ characters={
 	SAF_Pieter_Groenewald_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Pieter_Groenewald.png" 
+				large = "gfx/leaders/SAF/SAF_Pieter_Groenewald.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Pieter_Groenewald.png" 
+				large = "gfx/leaders/SAF/SAF_Pieter_Groenewald.png" 
 			}
 		}
 		country_leader = {
@@ -182,10 +182,10 @@ characters={
 	SAF_Steyn_von_Ronge_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAF/SAF_Steyn_von_Rönge.png" 
+				large = "gfx/leaders/SAF/SAF_Steyn_von_Rönge.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Steyn_von_Rönge.png" 
+				large = "gfx/leaders/SAF/SAF_Steyn_von_Rönge.png" 
 			}
 		}
 		country_leader = {
@@ -195,7 +195,7 @@ characters={
 	SAF_Fabian_Msimang_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Fabian_Msimang.png"
+				large = "gfx/leaders/SAF/SAF_Fabian_Msimang.png"
 			}
 		}
 		corps_commander={
@@ -211,7 +211,7 @@ characters={
 	SAF_Jongile_Maso_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Jongile_Maso.png"
+				large = "gfx/leaders/SAF/SAF_Jongile_Maso.png"
 			}
 		}
 		corps_commander={
@@ -227,7 +227,7 @@ characters={
 	SAF_Mzayifani_Buthelezi_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Mzayifani_Buthelezi.png"
+				large = "gfx/leaders/SAF/SAF_Mzayifani_Buthelezi.png"
 			}
 		}
 		corps_commander={
@@ -243,7 +243,7 @@ characters={
 	SAF_Ncedakele_Mtshatsheni_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Ncedakele_Mtshatsheni.png"
+				large = "gfx/leaders/SAF/SAF_Ncedakele_Mtshatsheni.png"
 			}
 		}
 		corps_commander={
@@ -259,7 +259,7 @@ characters={
 	SAF_Rudzani_Maphwanya_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Rudzani_Maphwanya.png"
+				large = "gfx/leaders/SAF/SAF_Rudzani_Maphwanya.png"
 			}
 		}
 		corps_commander={
@@ -275,7 +275,7 @@ characters={
 	SAF_Solly_Shoke_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Solly_Shoke.png"
+				large = "gfx/leaders/SAF/SAF_Solly_Shoke.png"
 			}
 		}
 		corps_commander={
@@ -291,7 +291,7 @@ characters={
 	SAF_Wiseman_Mbambo_char = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/SAF/SAF_Wiseman_Mbambo.png"
+				large = "gfx/leaders/SAF/SAF_Wiseman_Mbambo.png"
 			}
 		}
 		corps_commander={
@@ -307,7 +307,7 @@ characters={
 	SAF_Bubele_Mhlana_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Bubele_Mhlana.png" 
+				large = "gfx/leaders/SAF/SAF_Bubele_Mhlana.png" 
 			}
 		}
 
@@ -318,7 +318,7 @@ characters={
 	SAF_Monde_Lobese_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Monde_Lobese.png" 
+				large = "gfx/leaders/SAF/SAF_Monde_Lobese.png" 
 			}
 		}
 
@@ -329,7 +329,7 @@ characters={
 	SAF_Samuel_Hlongwane_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAF/SAF_Samuel_Hlongwane.png" 
+				large = "gfx/leaders/SAF/SAF_Samuel_Hlongwane.png" 
 			}
 		}
 

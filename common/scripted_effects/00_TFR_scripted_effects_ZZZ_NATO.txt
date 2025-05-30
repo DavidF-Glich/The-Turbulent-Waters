@@ -578,11 +578,3 @@ UNN_add_kaliningrad = {
 	}
 }
 
-NATO_join_faction_effect = {
-	random_other_country = {
-		limit = {
-			has_country_flag = NATO_current_leader
-		}
-		country_event = nato.4
-	}
-}

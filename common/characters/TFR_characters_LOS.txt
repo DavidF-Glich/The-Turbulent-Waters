@@ -431,10 +431,10 @@ characters={
 	LWK_Chris_Barker_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/LOS/LWK_Chris_Barker.png" 
+				large = "gfx/leaders/LOS/LWK_Chris_Barker.png" 
 			}
 			army = {
-				large = "gfx/Leaders/LOS/LWK_Chris_Barker.png" 
+				large = "gfx/leaders/LOS/LWK_Chris_Barker.png" 
 			}
 		}
 		country_leader={

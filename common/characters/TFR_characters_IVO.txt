@@ -2,7 +2,7 @@
 		IVO_Alassane_Ouattara_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/IVO_alassane_ouattara.png"
+					large = "gfx/leaders/IVO/IVO_alassane_ouattara.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		IVO_Lassina_Doumbia_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Lassina Doumbia.png"
+					large = "gfx/leaders/IVO/Lassina Doumbia.png"
 				}
 			}
 			field_marshal={
@@ -37,14 +37,14 @@
 		IVO_Kwame_Adinkra_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Kwame Adinkra.png"
+					large = "gfx/leaders/IVO/Kwame Adinkra.png"
 				}
 			}
 		}
 		IVO_Achy_Ekissi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Achy Ekissi.png"
+					large = "gfx/leaders/IVO/Achy Ekissi.png"
 				}
 			}
 			country_leader={
@@ -57,7 +57,7 @@
 		IVO_Tene_Birahima_Ouattara_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Tene Birahima Ouattara.png"
+					large = "gfx/leaders/IVO/Tene Birahima Ouattara.png"
 				}
 			}
 			corps_commander={
@@ -73,7 +73,7 @@
 		IVO_Firmin_Detoh_Letoh_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Firmin Detoh Letoh.png"
+					large = "gfx/leaders/IVO/Firmin Detoh Letoh.png"
 				}
 			}
 			corps_commander={
@@ -89,7 +89,7 @@
 		IVO_Georges_Guiai_Bi_Poin_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Georges Guiai Bi Poin.png"
+					large = "gfx/leaders/IVO/Georges Guiai Bi Poin.png"
 				}
 			}
 			corps_commander={
@@ -105,7 +105,7 @@
 		IVO_Philippe_Mangou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Philippe Mangou.png"
+					large = "gfx/leaders/IVO/Philippe Mangou.png"
 				}
 			}
 			corps_commander={
@@ -121,7 +121,7 @@
 		IVO_Bleoue_Ehui_Roger_Kacian_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Bleoue Ehui Roger Kacian.png"
+					large = "gfx/leaders/IVO/Bleoue Ehui Roger Kacian.png"
 				}
 			}
 			corps_commander={
@@ -137,7 +137,7 @@
 		IVO_Cherif_Ousmane_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Cherif Ousmane.png"
+					large = "gfx/leaders/IVO/Cherif Ousmane.png"
 				}
 			}
 			corps_commander={
@@ -153,7 +153,7 @@
 		IVO_Koffi_Nguessan_Alfred_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Koffi Nguessan Alfred.png"
+					large = "gfx/leaders/IVO/Koffi Nguessan Alfred.png"
 				}
 			}
 			corps_commander={
@@ -169,7 +169,7 @@
 		IVO_Traore_Zanan_Hamed_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Traore Zanan Hamed.png"
+					large = "gfx/leaders/IVO/Traore Zanan Hamed.png"
 				}
 			}
 			corps_commander={
@@ -185,7 +185,7 @@
 		IVO_Vagondo_Diomande_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Vagondo Diomande.png"
+					large = "gfx/leaders/IVO/Vagondo Diomande.png"
 				}
 			}
 			corps_commander={
@@ -201,7 +201,7 @@
 		IVO_Apalo_Toure_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Apalo Toure.png"
+					large = "gfx/leaders/IVO/Apalo Toure.png"
 				}
 			}
 			corps_commander={
@@ -217,7 +217,7 @@
 		IVO_Dem_Aly_Justin_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/IVO/Dem Aly Justin.png"
+					large = "gfx/leaders/IVO/Dem Aly Justin.png"
 				}
 			}
 			corps_commander={
@@ -233,7 +233,7 @@
 		IVO_Djakaridja_Konate_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/IVO/Djakaridja Konate.png" 
+					large = "gfx/leaders/IVO/Djakaridja Konate.png" 
 				}
 			}
 
@@ -244,7 +244,7 @@
 		IVO_Nguessan_Kouame_Celestin_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/IVO/Nguessan Kouame Celestin.png" 
+					large = "gfx/leaders/IVO/Nguessan Kouame Celestin.png" 
 				}
 			}
 

@@ -425,9 +425,8 @@ ideas = {
 			modifier = {
 			}
 			equipment_bonus = {
-				air_equipment = {
-					build_cost_ic = -0.05 
-					instant = yes
+				small_plane_airframe = {
+					build_cost_ic = -0.05
 				}
 			}
 		}

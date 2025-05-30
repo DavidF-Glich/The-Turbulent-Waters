@@ -2,7 +2,7 @@
 		AN1_anarchy_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/Anarchy/Anarchy.png"
+					large = "gfx/leaders/Anarchy/Anarchy.png"
 				}
 			}
 			country_leader={
@@ -16,7 +16,7 @@
 		AN2_anarchy_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/Anarchy/Anarchy.png"
+					large = "gfx/leaders/Anarchy/Anarchy.png"
 				}
 			}
 			country_leader={
@@ -30,7 +30,7 @@
 		AN3_anarchy_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/Anarchy/Anarchy.png"
+					large = "gfx/leaders/Anarchy/Anarchy.png"
 				}
 			}
 			country_leader={
@@ -44,7 +44,7 @@
 		PDX_anarchy_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/Anarchy/Anarchy.png"
+					large = "gfx/leaders/Anarchy/Anarchy.png"
 				}
 			}
 			country_leader={

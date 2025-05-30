@@ -318,14 +318,8 @@ scripted_gui = {
 			#}
 		}
 		properties = {
-			economic_sphere_icon = {
-				image = "[GetNatoIcon]"
-			}
 			country_flag = {
 				image = "[This.GetFlag]"
-			}
-			economic_sphere_bonus_icon = {
-				image = ""				#WIP
 			}
 		}
 	}

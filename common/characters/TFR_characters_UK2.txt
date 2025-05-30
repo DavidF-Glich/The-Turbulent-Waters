@@ -2,7 +2,7 @@
 		UK1_Jeremy_Corbyn = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ENG/Jeremy_Corbyn.png"
+					large = "gfx/leaders/ENG/Jeremy_Corbyn.png"
 				}
 			}
 			country_leader={
@@ -27,7 +27,7 @@
 		UK1_Mark_Drakeford = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ENG/Mark_Drakeford.png"
+					large = "gfx/leaders/ENG/Mark_Drakeford.png"
 				}
 			}
 			country_leader={
@@ -40,7 +40,7 @@
 		UK1_Leander_Ots = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ENG/Leander_Ots.png"
+					large = "gfx/leaders/ENG/Leander_Ots.png"
 				}
 			}
 			country_leader={

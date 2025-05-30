@@ -320,23 +320,18 @@ default_air_unit_production = {
 	allowed = {
 		OR = {
 			tag = SOV
-			tag = USC
-			tag = USB
-			tag = APA
-			tag = PTF
-			tag = NSM
-			tag = ATW
-			tag = CAL
-			tag = TEX
-			tag = CAC
-			tag = BRN
+			tag = USA
 			tag = PRC
 			tag = JAP
 			tag = GER
 			tag = FRA
 			tag = ITA
 			tag = ENG
-			tag = FAF
+			tag = PLD
+			tag = PRK
+			tag = KOR
+			tag = RAJ
+			tag = PAK
 		}
 		# Custom AI
 		NOT = {
@@ -378,6 +373,31 @@ default_air_unit_production = {
 		id = scout_plane
 		value = 0
 	}
+	ai_strategy = {
+		type = air_factory_balance
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = cas
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 5
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = tactical_bomber
+		value = 2
+	}
+	ai_strategy = {
+		type = equipment_production_factor
+		id = strategic_bomber
+		value = 0
+	}
+
 }
 
 default_garrison_strategy = {

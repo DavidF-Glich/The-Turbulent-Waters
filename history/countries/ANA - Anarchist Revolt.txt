@@ -1,6 +1,6 @@
 ﻿	capital = 993
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 60
@@ -167,6 +167,6 @@
 	
 	create_country_leader = {
 		name = "Anarchist Council"
-		picture = "gfx/Leaders/ATS/Anarchist Council.dds"
+		picture = "gfx/leaders/ATS/Anarchist Council.dds"
 		ideology = left_anarchist
 	}

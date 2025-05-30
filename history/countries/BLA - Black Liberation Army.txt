@@ -1,6 +1,6 @@
 	capital = 978
 
-#	oob = ""
+#
 	
 	recruit_character = BLA_john_jay_johnson_char
 	recruit_character = BLA_Louis_Farrakhan
@@ -69,9 +69,6 @@
 
 	set_country_flag = shithole_country
 
-	set_technology = {
-		
-	}
 
 	set_politics = {	
 		ruling_party = nationalist

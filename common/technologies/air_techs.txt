@@ -612,10 +612,8 @@ technologies = {
 	
 	cv_fighter7 = {
 		
-		enable_equipments = {
-			cv_fighter_equipment_7
-		}
-		
+		air_defence_factor = 0.05
+		air_attack = 0.05
 		research_cost = 3
 		start_year = 2040
 		
@@ -657,9 +655,8 @@ technologies = {
 	
 	cv_fighter8 = {
 		
-		enable_equipments = {
-			cv_fighter_equipment_8
-		}
+		air_attack = 0.05
+		air_defence_factor = 0.05
 		
 		research_cost = 3
 		start_year = 2044
@@ -1607,10 +1604,8 @@ technologies = {
 			strat_bomber_equipment_4
 		}
 		
-		path = {
-			leads_to_tech = strategic_bomber5
-			research_cost_coeff = 1
-		}
+		air_bombing_targetting = 0.05
+		ground_attack_factor = 0.05
 		
 		research_cost = 3
 		start_year = 2032

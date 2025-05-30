@@ -22,10 +22,6 @@
 	set_research_slots = 4
 	set_convoys = 350
 	set_stability = 0.55
-	country_event = { #2022 Election
-		id = Australia.11
-		days = 871
-	}
 	add_timed_idea = {
 		idea = AST_ongoing_wildfires
 		days = 150
@@ -247,7 +243,7 @@
 		high_farming
 		high_poverty
 		high_industry
-		higher_military
+		medium_military
 		higher_society
 		# Ministers #
 		AST_scott_morrison_hog

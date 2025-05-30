@@ -15,7 +15,7 @@ characters={
 	UAE_mohamed_bin_zayed_al_nahyan_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/UAE/UAE_Mohamed bin_Zayed_Al_Nahyan.png"
+				large = "gfx/leaders/UAE/UAE_Mohamed bin_Zayed_Al_Nahyan.png"
 			}
 		}
 

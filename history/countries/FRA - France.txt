@@ -682,35 +682,7 @@ set_popularities = {
 
 # EVENTS #
 
-country_event = {
-	id = france.15
-	days = 40
-}
 
-country_event = {
-	id = france.16
-	days = 15
-}
-
-country_event = {
-	id = france.17
-	days = 82
-}
-
-country_event = {
-	id = france.5
-	days = 488
-}
-
-country_event = {
-	id = france.3
-	days = 843
-}
-
-country_event = {
-	id = france.47
-	days = 790
-}
 
 
 ### VARIANTS ###
@@ -736,7 +708,6 @@ if = {
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Corvette 1
 		name = "Eridan class"
@@ -752,7 +723,6 @@ if = {
 			mid_1_custom_slot = ship_torpedo_1
 			rear_1_custom_slot = ship_depth_charge_1
 		}
-		obsolete = no
 	}
 	## Frigates ##
 	create_equipment_variant = { #Frigate 1
@@ -790,7 +760,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Frigate 2
 		name = "Amiral Ronarc'h class"
@@ -809,7 +778,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Frigate 2
 		name = "Aquitaine class"
@@ -828,7 +796,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Frigate 2
 		name = "Horizon class"
@@ -847,7 +814,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Frigate 2
 		name = "La Fayette class"
@@ -866,7 +832,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	## Destroyers ##
 	create_equipment_variant = { #Destroyer 1
@@ -901,7 +866,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Destroyer 2
 		name = "D'Estienne d'Orves class"
@@ -918,7 +882,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Destroyer 2
 		name = "Confiance class"
@@ -935,7 +898,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Destroyer 2
 		name = "Félix Éboué class"
@@ -952,7 +914,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Destroyer 2
 		name = "L'Audacieuse class"
@@ -969,7 +930,6 @@ if = {
 			mid_2_custom_slot = ship_anti_air_1
 			rear_1_custom_slot = empty
 		}
-		obsolete = no
 	}
 	## Missile Cruisers ##
 	create_equipment_variant = { #Missile Cruiser 1
@@ -989,7 +949,6 @@ if = {
 			mid_2_custom_slot = ship_secondaries_1
 			rear_1_custom_slot = ship_heavy_battery_1
 		}
-		obsolete = no
 	}
 	## Carriers ##
 	create_equipment_variant = { #Carrier 1 #Not needed for variant, just use type
@@ -1021,7 +980,6 @@ if = {
 			front_1_custom_slot = ship_deck_space
 			
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Carrier 2
 		name = "Mistral class"
@@ -1037,7 +995,6 @@ if = {
 			front_1_custom_slot = ship_deck_space
 			
 		}
-		obsolete = no
 	}
 	## Submarines ##
 	create_equipment_variant = { #Diesel Sub 1A
@@ -1061,7 +1018,6 @@ if = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_torpedo_sub_2
 		}
-		obsolete = no
 	}
 	create_equipment_variant = { #Nuclear Sub 2
 		name = "Barracuda class"
@@ -1072,7 +1028,6 @@ if = {
 			fixed_ship_engine_slot = sub_ship_engine_2
 			rear_1_custom_slot = ship_torpedo_sub_2
 		}
-		obsolete = no
 	}
 }
 

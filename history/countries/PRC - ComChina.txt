@@ -977,6 +977,14 @@
 	recruit_character = PRC_Ding_Zhongli
 	recruit_character = PRC_Xie_Fuzhan
 	recruit_character = PRC_Liu_Qibao
+	recruit_character = PRC_aguang_char
+	recruit_character = PRC_ronald_reagan_char
+	recruit_character = PRC_mo_zhengren_char
+	recruit_character = PRC_kommst_char
+	recruit_character = PRC_xiao_mo_char
+	recruit_character = PRC_mia_char
+	recruit_character = PRC_mana_char
+	recruit_character = PRC_Orc_char
 
 	activate_advisor = PRC_Xu_Qiliang_air_chief
 	
@@ -1004,7 +1012,6 @@
 				fixed_ship_secondaries_slot = empty
 				mid_1_custom_slot = ship_deck_space
 			}
-			obsolete = no
 			icon = "GFX_PRC_carrier_1"
 		}
 		create_equipment_variant = { #Carrier Shandong
@@ -1020,7 +1027,6 @@
 				fixed_ship_secondaries_slot = empty
 				mid_1_custom_slot = ship_deck_space
 			}
-			obsolete = no
 			icon = "GFX_PRC_carrier_1"
 		}
 		create_equipment_variant = { #Carrier Fujian
@@ -1036,7 +1042,6 @@
 				fixed_ship_secondaries_slot = empty
 				mid_1_custom_slot = ship_deck_space
 			}
-			obsolete = no
 			icon = "GFX_PRC_carrier_2"
 		}
 

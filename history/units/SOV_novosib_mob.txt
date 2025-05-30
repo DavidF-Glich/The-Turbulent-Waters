@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Narodnoe Opolcheniye"
-	override_model = SOV_civilian_militia_infantry_entity
 	
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -18,7 +17,6 @@
 
 division_template = {
 	name = "Motorizirovannoe Narodnoe Opolcheniye"
-	override_model = SOV_civilian_militia_motorized_entity
 	
 	regiments = {
 		mot_militia = { x = 0 y = 0 }

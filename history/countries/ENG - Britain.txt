@@ -189,7 +189,6 @@
 			improved_ship_hull_cruiser = 1
 			early_ship_hull_heavy = 1
 			basic_ship_hull_heavy = 1
-			escort_ship_hull_carrier = 1
 			early_ship_hull_carrier = 1
 			basic_ship_hull_carrier = 1
 			early_ship_hull_submarine = 1
@@ -290,29 +289,7 @@
 
 	
 
-	country_event = {
-		id = uk.2
-		days = 1080
-	}
-
-	country_event = {
-		id = canada.4
-		days = 572
-	}
-	country_event = {
-		id = NZL.4
-		days = 659
-	}
-	country_event = {
-		id = Australia.10
-		days = 1709
-	}
-
-	country_event = {
-		id = uk.3
-		days = 463
-	}
-
+	recruit_character = ENG_borris_johnson_char
 	recruit_character = ENG_elizabeth_ii_char
 	recruit_character = ENG_charles_iii_char
 	recruit_character = ENG_nicholas_carter_char
@@ -394,7 +371,6 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 		create_equipment_variant = { #Corvette 2
 			name = "Sandown class"
@@ -410,7 +386,6 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 		## Frigates ##
 		create_equipment_variant = { #Frigate 2
@@ -430,7 +405,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		## Destroyers ##
 		create_equipment_variant = { #Destroyer 1
@@ -448,7 +422,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_medium_battery_1
 			}
-			obsolete = no
 		}
 		## Carriers ##
 		create_equipment_variant = { #Carrier 2
@@ -465,7 +438,6 @@
 				front_1_custom_slot = ship_deck_space
 				
 			}
-			obsolete = no
 		}
 		## Submarines ##
 		create_equipment_variant = { #Diesel Sub 1A
@@ -490,7 +462,6 @@
 				fixed_ship_engine_slot = sub_ship_engine_2
 				rear_1_custom_slot = ship_torpedo_sub_2
 			}
-			obsolete = no
 		}
 	}
 	

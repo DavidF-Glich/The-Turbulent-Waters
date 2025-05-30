@@ -2,7 +2,7 @@ characters = {
 	NEG_janet_mills_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/NEG/NEG_janet_mils.png"
+				large = "gfx/leaders/NEG/NEG_janet_mils.png"
 			}
 		}
 		country_leader={
@@ -37,11 +37,11 @@ characters = {
 	VER_Gary_W_Keefe = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/VER/VER_Gary_W_Keefe.png" 
+				large = "gfx/leaders/VER/VER_Gary_W_Keefe.png" 
 			}
 			army = {
 				small = "gfx/interface/ideas/VER/advisors/VER_Gary_W_Keefe.png"
-				large = "gfx/Leaders/VER/VER_Gary_W_Keefe.png" 
+				large = "gfx/leaders/VER/VER_Gary_W_Keefe.png" 
 			}
 		}
 		country_leader={
@@ -127,11 +127,11 @@ characters = {
 	NYP_Dermont_Shea = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/NYP/NYP_Dermont_Shea.png" 
+				large = "gfx/leaders/NYP/NYP_Dermont_Shea.png" 
 			}
 			army = {
 				small = "gfx/interface/ideas/NYP/advisors/NYP_Dermont_Shea.png"
-				large = "gfx/Leaders/NYP/NYP_Dermont_Shea.png" 
+				large = "gfx/leaders/NYP/NYP_Dermont_Shea.png" 
 			}
 		}
 		country_leader={
@@ -154,7 +154,7 @@ characters = {
 	NYP_rodney_harrison_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/NYP/NYP_rodney_harrison.png" 
+				large = "gfx/leaders/NYP/NYP_rodney_harrison.png" 
 			}
 		}
 		corps_commander={
@@ -165,7 +165,7 @@ characters = {
 	ATP_anarchist_council_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ATS/Anarchist Council.dds" 
+				large = "gfx/leaders/ATS/Anarchist Council.dds" 
 			}
 		}
 		country_leader={
@@ -178,7 +178,7 @@ characters = {
 	WUR_joe_sims_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/WUR/WUR_joe_sims.dds" 
+				large = "gfx/leaders/WUR/WUR_joe_sims.dds" 
 			}
 		}
 		country_leader={

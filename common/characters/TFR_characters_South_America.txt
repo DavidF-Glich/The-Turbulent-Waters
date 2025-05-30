@@ -53,7 +53,7 @@ characters={
 	BOL_luis_arce_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BOL/BOL_Luis_Arce.png"
+				large="gfx/leaders/BOL/BOL_Luis_Arce.png"
 			}
 		}
 		country_leader={
@@ -89,7 +89,7 @@ characters={
 	CHL_gabriel_boric_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/CHL/CHL_gabriel_boric.png"
+				large="gfx/leaders/CHL/CHL_gabriel_boric.png"
 			}
 		}
 		country_leader={
@@ -110,7 +110,7 @@ characters={
 	CHL_Jose_Antonio_Kast_char = {
 		portraits = {
 			civilian = {
-				large= "gfx/Leaders/CHL/CHL_Jose_Antonio_Kast.png"
+				large= "gfx/leaders/CHL/CHL_Jose_Antonio_Kast.png"
 			}
 		}
 		country_leader={
@@ -144,7 +144,7 @@ characters={
 	ECU_guillermo_lasso_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/ECU/ECU_guillermo_lasso.png"
+				large="gfx/leaders/ECU/ECU_guillermo_lasso.png"
 			}
 		}
 		country_leader={
@@ -159,7 +159,7 @@ characters={
 	ECU_mery_zamora_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/ECU/ECU_Mery_Zamora.png"
+				large="gfx/leaders/ECU/ECU_Mery_Zamora.png"
 			}
 		}
 		country_leader={
@@ -247,7 +247,7 @@ characters={
 	PRU_keiko_fujimori_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PRU/PRU_keiko_fujimori.png"
+				large="gfx/leaders/PRU/PRU_keiko_fujimori.png"
 			}
 		}
 		country_leader={
@@ -268,7 +268,7 @@ characters={
 	PRU_alberto_fujimori_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PRU/PRU_alberto_fujimori.png"
+				large="gfx/leaders/PRU/PRU_alberto_fujimori.png"
 			}
 		}
 		
@@ -297,7 +297,7 @@ characters={
 	PRU_pedro_castillo_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PRU/PRU_pedro_castillo.png"
+				large="gfx/leaders/PRU/PRU_pedro_castillo.png"
 			}
 		}
 		country_leader={
@@ -318,7 +318,7 @@ characters={
 	PRU_manuel_merino_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PRU/PRU_manuel_merino.png"
+				large="gfx/leaders/PRU/PRU_manuel_merino.png"
 			}
 		}
 		country_leader={
@@ -335,7 +335,7 @@ characters={
 	PRU_francisco_sagasti_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PRU/PRU_francisco_sagasti.png"
+				large="gfx/leaders/PRU/PRU_francisco_sagasti.png"
 			}
 		}
 		country_leader={
@@ -347,7 +347,7 @@ characters={
 	PRU_dina_boluarte_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PRU/PRU_dina_boluarte.png"
+				large="gfx/leaders/PRU/PRU_dina_boluarte.png"
 			}
 		}
 		country_leader={
@@ -412,7 +412,7 @@ characters={
 	URG_luis_lacalle_pou_char = {
 		portraits = {
 			civilian = {
-				large= "gfx/Leaders/URG/URG_Luis_Lacalle_Pou.png"
+				large= "gfx/leaders/URG/URG_Luis_Lacalle_Pou.png"
 			}
 		}
 		country_leader={
@@ -441,7 +441,7 @@ characters={
 	VEN_vladimir_Lopez_char = {
 		portraits = {
 			army = {
-				large="gfx/Leaders/VEN/VEN_Vladimir_Lopez.png"
+				large="gfx/leaders/VEN/VEN_Vladimir_Lopez.png"
 			}
 		}
 		corps_commander = {
@@ -459,7 +459,7 @@ characters={
 	VEN_alexis_cabello_char = {
 		portraits = {
 			army = {
-				large="gfx/Leaders/VEN/VEN_Alexis_Cabello.png"
+				large="gfx/leaders/VEN/VEN_Alexis_Cabello.png"
 			}
 		}
 		corps_commander = {
@@ -476,7 +476,7 @@ characters={
 	VEN_elio_paredes_char = {
 		portraits = {
 			army = {
-				large="gfx/Leaders/VEN/VEN_Elio_Paredes.png"
+				large="gfx/leaders/VEN/VEN_Elio_Paredes.png"
 			}
 		}
 		corps_commander = {
@@ -493,7 +493,7 @@ characters={
 	VEN_jose_baptista_char = {
 		portraits = {
 			army = {
-				large="gfx/Leaders/VEN/VEN_Jose_baptista.png"
+				large="gfx/leaders/VEN/VEN_Jose_baptista.png"
 			}
 		}
 		corps_commander = {

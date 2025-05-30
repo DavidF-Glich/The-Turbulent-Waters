@@ -210,26 +210,6 @@ EU_leave_effect = {
 	remove_dynamic_modifier = {
 		modifier = EU_member_dynamic
 	}
-	if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = GER_sepratism_dynamic
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = GER_sepratism_dynamic
-		}
-	}
-	if = {
-		limit = {
-			has_dynamic_modifier = {
-				modifier = GER_federalization_dynamic
-			}
-		}
-		remove_dynamic_modifier = {
-			modifier = GER_federalization_dynamic
-		}
-	}
 	#Conditional Effects
 	if = {
 		limit = {

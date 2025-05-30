@@ -178,235 +178,235 @@ spriteTypes = {
 	#ISR
 	spriteType = {
 		name = "GFX_ISR_hog_benjamin_netanyahu_por"
-		texturefile = "gfx/Leaders/ISR/ISR_benjamin_netanyahu.png"
+		texturefile = "gfx/leaders/ISR/ISR_benjamin_netanyahu.png"
 		legacy_lazy_load = no
 	}
 	#Commonwealth
 	spriteType = {
 		name = "GFX_AST_hog_scott_morrison_por"
-		texturefile = "gfx/Leaders/AST/Scott_Morrison.png"
+		texturefile = "gfx/leaders/AST/Scott_Morrison.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_AST_hog_anthony_albanese_por"
-		texturefile = "gfx/Leaders/AST/Anthony_Albanese.png"
+		texturefile = "gfx/leaders/AST/Anthony_Albanese.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_NZL_hog_jacinda_por"
-		texturefile = "gfx/Leaders/NZL/Jacinda_Ardern.png"
+		texturefile = "gfx/leaders/NZL/Jacinda_Ardern.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_NZL_hog_chris_hipkins_por"
-		texturefile = "gfx/Leaders/NZL/Chris_Hipkins.png"
+		texturefile = "gfx/leaders/NZL/Chris_Hipkins.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_NZL_hog_christopher_luxon_por"
-		texturefile = "gfx/Leaders/NZL/Christopher_Luxon.png"
+		texturefile = "gfx/leaders/NZL/Christopher_Luxon.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CAN_hog_justin_trudeau_por"
-		texturefile = "gfx/Leaders/CAN/CAN_justin_trudeau.png"
+		texturefile = "gfx/leaders/CAN/CAN_justin_trudeau.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CAN_hog_justin_trudeau_defeat_por"
-		texturefile = "gfx/Leaders/CAN/CAN_justin_trudeau_beard.png"
+		texturefile = "gfx/leaders/CAN/CAN_justin_trudeau_beard.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CAN_hog_pierre_poilievre_por"
-		texturefile = "gfx/Leaders/CAN/CAN_Pierre_Poilievre.png"
+		texturefile = "gfx/leaders/CAN/CAN_Pierre_Poilievre.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_RAJ_hog_modi_por"
-		texturefile = "gfx/Leaders/RAJ/RAJ_Modi.png"
+		texturefile = "gfx/leaders/RAJ/RAJ_Modi.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_PAK_hog_imran_khan_por"
-		texturefile = "gfx/Leaders/PAK/Imran Khan.png"
+		texturefile = "gfx/leaders/PAK/Imran Khan.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_PAK_hog_shehbaz_sharif_por"
-		texturefile = "gfx/Leaders/PAK/Shehbaz Sharif.png"
+		texturefile = "gfx/leaders/PAK/Shehbaz Sharif.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_BAN_hog_sheikh_hasina_por"
-		texturefile = "gfx/Leaders/BAN/BAN_Sheikh_Hasina.png"
+		texturefile = "gfx/leaders/BAN/BAN_Sheikh_Hasina.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_BAN_hog_muhammad_yunus_por"
-		texturefile = "gfx/Leaders/BAN/BAN_Muhammad_Yunus.png"
+		texturefile = "gfx/leaders/BAN/BAN_Muhammad_Yunus.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SRL_hog_mahinda_rajapaksa_por"
-		texturefile = "gfx/Leaders/SRL/Mahinda Rajapaksa.png"
+		texturefile = "gfx/leaders/SRL/Mahinda Rajapaksa.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SRL_hog_dinesh_gunawardena_por"
-		texturefile = "gfx/Leaders/SRL/Dinesh Gunawardena.png"
+		texturefile = "gfx/leaders/SRL/Dinesh Gunawardena.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SRL_hog_harini_amarasuriya_por"
-		texturefile = "gfx/Leaders/SRL/Harini Amarasuriya.png"
+		texturefile = "gfx/leaders/SRL/Harini Amarasuriya.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_PNG_hog_james_marape_por"
-		texturefile = "gfx/Leaders/PNG/James_Marape.png"
+		texturefile = "gfx/leaders/PNG/James_Marape.png"
 		legacy_lazy_load = no
 	}
 	#ASEAN
 	spriteType = {
 		name = "GFX_BRM_hog_aung_suu_kyi_por"
-		texturefile = "gfx/Leaders/BRM/Aung_San_Suu_Kyi.png"
+		texturefile = "gfx/leaders/BRM/Aung_San_Suu_Kyi.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_BRM_hog_min_aung_hlaing_por"
-		texturefile = "gfx/Leaders/BRM/Min_Aung_Hlaing.png"
+		texturefile = "gfx/leaders/BRM/Min_Aung_Hlaing.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_prayut_chan_por"
-		texturefile = "gfx/Leaders/SIA/SIA_prayut_chan-o-cha.png"
+		texturefile = "gfx/leaders/SIA/SIA_prayut_chan-o-cha.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_apirat_kongsompong_por"
-		texturefile = "gfx/Leaders/SIA/SIA_apirat_kongsompong.png"
+		texturefile = "gfx/leaders/SIA/SIA_apirat_kongsompong.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_sereepisuth_temeeyaves_por"
-		texturefile = "gfx/Leaders/SIA/SIA_sereepisuth_temeeyaves.png"
+		texturefile = "gfx/leaders/SIA/SIA_sereepisuth_temeeyaves.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_sretta_thavisin_por"
-		texturefile = "gfx/Leaders/SIA/SIA_sretta_thavisin.png"
+		texturefile = "gfx/leaders/SIA/SIA_sretta_thavisin.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_thaksin_shinawatra_por"
-		texturefile = "gfx/Leaders/SIA/SIA_thaksin_shinawatra.png"
+		texturefile = "gfx/leaders/SIA/SIA_thaksin_shinawatra.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_thanathorn_juangroongruangkit_por"
-		texturefile = "gfx/Leaders/SIA/SIA_thanathorn_juangroongruangkit.png"
+		texturefile = "gfx/leaders/SIA/SIA_thanathorn_juangroongruangkit.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_jurin_lakasanawisit_por"
-		texturefile = "gfx/Leaders/SIA/SIA_jurin_lakasanawisit.png"
+		texturefile = "gfx/leaders/SIA/SIA_jurin_lakasanawisit.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIA_hog_dhanin_chearavanont_por"
-		texturefile = "gfx/Leaders/SIA/SIA_dhanin_chearavanont.png"
+		texturefile = "gfx/leaders/SIA/SIA_dhanin_chearavanont.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CAM_hog_hun_sen_por"
-		texturefile = "gfx/Leaders/CAM/CAM_hun_sen.png"
+		texturefile = "gfx/leaders/CAM/CAM_hun_sen.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_CAM_hog_hun_manet_por"
-		texturefile = "gfx/Leaders/CAM/CAM_hun_manet.png"
+		texturefile = "gfx/leaders/CAM/CAM_hun_manet.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_MAL_hog_mohamad_por"
-		texturefile = "gfx/Leaders/MAL/MAL_mahathir_mohamad.png"
+		texturefile = "gfx/leaders/MAL/MAL_mahathir_mohamad.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_MAL_hog_yassin_por"
-		texturefile = "gfx/Leaders/MAL/MAL_muhyiddin_yassin.png"
+		texturefile = "gfx/leaders/MAL/MAL_muhyiddin_yassin.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_MAL_hog_yaakob_por"
-		texturefile = "gfx/Leaders/MAL/MAL_ismail_sabri_yaakob.png"
+		texturefile = "gfx/leaders/MAL/MAL_ismail_sabri_yaakob.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_MAL_hog_ibrahim_por"
-		texturefile = "gfx/Leaders/MAL/MAL_anwar_ibrahim.png"
+		texturefile = "gfx/leaders/MAL/MAL_anwar_ibrahim.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIG_hog_lee_por"
-		texturefile = "gfx/Leaders/SIG/SIG_lee_hsien_loong.png"
+		texturefile = "gfx/leaders/SIG/SIG_lee_hsien_loong.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SIG_hog_lawrence_wong_por"
-		texturefile = "gfx/Leaders/SIG/SIG_lawrence_wong.png"
+		texturefile = "gfx/leaders/SIG/SIG_lawrence_wong.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_VIN_hog_nguyen_xuan_phuc_por"
-		texturefile = "gfx/Leaders/VIN/VIN_nguyen_xuan_phuc.png"
+		texturefile = "gfx/leaders/VIN/VIN_nguyen_xuan_phuc.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_VIN_hog_pham_minh_chinh_por"
-		texturefile = "gfx/Leaders/VIN/VIN_pham_minh_chinh.png"
+		texturefile = "gfx/leaders/VIN/VIN_pham_minh_chinh.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LAO_hog_thongloun_sisoulith_por"
-		texturefile = "gfx/Leaders/LAO/LAO_thongloun_sisoulith.png"
+		texturefile = "gfx/leaders/LAO/LAO_thongloun_sisoulith.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LAO_hog_phankham_viphavanh_por"
-		texturefile = "gfx/Leaders/LAO/LAO_phankham_viphavanh.png"
+		texturefile = "gfx/leaders/LAO/LAO_phankham_viphavanh.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_LAO_hog_sonexay_siphandone_por"
-		texturefile = "gfx/Leaders/LAO/LAO_sonexay_siphandone.png"
+		texturefile = "gfx/leaders/LAO/LAO_sonexay_siphandone.png"
 		legacy_lazy_load = no
 	}
 	#EU
 	spriteType = {
 		name = "GFX_HUN_hog_orban_por"
-		texturefile = "gfx/Leaders/HUN/Viktor Orbán.png"
+		texturefile = "gfx/leaders/HUN/Viktor Orbán.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_HOL_hog_mark_rutte_por"
-		texturefile = "gfx/Leaders/HOL/Mark_Rutte.png"
+		texturefile = "gfx/leaders/HOL/Mark_Rutte.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_ITA_hog_conte_por"
-		texturefile = "gfx/Leaders/ITA/Giuseppe Conte.png"
+		texturefile = "gfx/leaders/ITA/Giuseppe Conte.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_AUS_hog_kurz_por"
-		texturefile = "gfx/Leaders/AUS/Sebastian_Kurz.png"
+		texturefile = "gfx/leaders/AUS/Sebastian_Kurz.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_SPR_hog_pedro_sanchez_por"
-		texturefile = "gfx/Leaders/SPR/Pedro_Sanchez.png"
+		texturefile = "gfx/leaders/SPR/Pedro_Sanchez.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
@@ -422,57 +422,57 @@ spriteTypes = {
 	#Africa
 	spriteType = {
 		name = "GFX_ETH_hog_ahmed_por"
-		texturefile = "gfx/Leaders/ETH/ETH_abiy_ahmed.png"
+		texturefile = "gfx/leaders/ETH/ETH_abiy_ahmed.png"
 		legacy_lazy_load = no
 	}
 	#MON
 	spriteType = {
 		name = "GFX_MON_hog_khurelsukh_por"
-		texturefile = "gfx/Leaders/MON/MON_Ukhnaagiin_Khurelsukh.png"
+		texturefile = "gfx/leaders/MON/MON_Ukhnaagiin_Khurelsukh.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_BLR_hog_naumchik_por"
-		texturefile = "gfx/Leaders/BLR/BLR_hog_naumchik.png"
+		texturefile = "gfx/leaders/BLR/BLR_hog_naumchik.png"
 		legacy_lazy_load = no
 	}
 	#NEP
 	spriteType = {
 		name = "GFX_NEP_hog_kp_sharma_oli_por"
-		texturefile = "gfx/Leaders/NEP/KP Sharma Oli.png"
+		texturefile = "gfx/leaders/NEP/KP Sharma Oli.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_NEP_hog_sher_bahadur_deuba_por"
-		texturefile = "gfx/Leaders/NEP/Sher Bahadur Deuba.png"
+		texturefile = "gfx/leaders/NEP/Sher Bahadur Deuba.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_NEP_hog_pushpa_kamal_dahal_por"
-		texturefile = "gfx/Leaders/NEP/Pushpa Kamal Dahal.png"
+		texturefile = "gfx/leaders/NEP/Pushpa Kamal Dahal.png"
 		legacy_lazy_load = no
 	}
 	#BHU
 	spriteType = {
 		name = "GFX_BHU_hog_lotay_tshering_por"
-		texturefile = "gfx/Leaders/BHU/Lotay Tshering.png"
+		texturefile = "gfx/leaders/BHU/Lotay Tshering.png"
 		legacy_lazy_load = no
 	}
 	#MLI
 	spriteType = {
 		name = "GFX_MLI_hog_boubou_cisse_por"
-		texturefile = "gfx/Leaders/MLI/Boubou_Cisse.png"
+		texturefile = "gfx/leaders/MLI/Boubou_Cisse.png"
 		legacy_lazy_load = no
 	}
 	#MLT
 	spriteType = {
 		name = "GFX_MLT_hog_moctar_ouane_por"
-		texturefile = "gfx/Leaders/MLI/Moctar_Ouane.png"
+		texturefile = "gfx/leaders/MLI/Moctar_Ouane.png"
 		legacy_lazy_load = no
 	}
 	spriteType = {
 		name = "GFX_MLT_hog_maiga_chogel_por"
-		texturefile = "gfx/Leaders/MLI/Maiga Chogel.png"
+		texturefile = "gfx/leaders/MLI/Maiga Chogel.png"
 		legacy_lazy_load = no
 	}
 	#ideologies

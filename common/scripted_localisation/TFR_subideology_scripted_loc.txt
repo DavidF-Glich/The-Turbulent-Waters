@@ -165,12 +165,6 @@ defined_text = {
 		}
 		localization_key = neo_stalinism
 	}	
-	text = {
-		trigger = {
-			has_country_leader_ideology = digital_totalitarianism
-		}
-		localization_key = digital_totalitarianism
-	}
 }
 
 	#Authoritarian Socialist
@@ -206,9 +200,6 @@ defined_text = {
 				}
 			}
 			has_country_leader_ideology = market_socialism
-			NOT = {
-				has_completed_focus = SOV_enshrine_democratic_centralism
-			}
 		}
 		localization_key = SOV_soviet_communism		
 	}
@@ -229,7 +220,6 @@ defined_text = {
 				}
 			}
 			has_country_leader_ideology = marxism_leninism
-			has_completed_focus = SOV_enshrine_democratic_centralism
 		}
 		localization_key = marxism_leninism	
 	}
@@ -369,9 +359,6 @@ defined_text = {
 				}
 			}
 			has_country_leader_ideology = marxism_leninism
-			NOT = {
-				has_completed_focus = SOV_enshrine_democratic_centralism
-			}
 		}
 		localization_key = SOV_soviet_communism		
 	}
@@ -1339,16 +1326,6 @@ defined_text = {
 			has_country_leader_ideology = corporatocracy
 		}
 		localization_key = CAR_merc_state
-	}	
-	text = {
-		trigger = {
-			tag = FRA
-			OR = {
-				has_country_leader_trait = hos_The_Second_De_Gaulle
-			}
-			has_country_leader_ideology = sovereign_democracy
-		}
-		localization_key = FAF_gaullism_auth_dem
 	}	
 	text = {
 		trigger = {

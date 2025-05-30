@@ -4,9 +4,7 @@ infantry_HRL = {
 		HRL
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -50,9 +48,7 @@ armor_HRL = {
 		HRL
 	}
 	
-	roles = {
-		armor
-	}
+	role = armor
 	
 	upgrade_prio = {
 		factor = 20

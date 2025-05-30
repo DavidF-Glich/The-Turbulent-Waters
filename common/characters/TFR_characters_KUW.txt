@@ -16,7 +16,7 @@ characters={
 	KUW_mohammad_kheder_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/KUW/generals/Mohammad_Al-Kheder.dds" 
+				large = "gfx/leaders/KUW/generals/Mohammad_Al-Kheder.dds" 
 			}
 		}
 			
@@ -27,7 +27,7 @@ characters={
 	KUW_nawaf_i_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/KUW/KUW_Nawaf_Al-Ahmad_Al-Jaber_Al-Sabah.png"
+				large = "gfx/leaders/KUW/KUW_Nawaf_Al-Ahmad_Al-Jaber_Al-Sabah.png"
 			}
 		}
 		country_leader={

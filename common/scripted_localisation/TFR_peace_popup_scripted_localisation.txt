@@ -325,17 +325,7 @@ defined_text = {
 		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_LCN
 	}
 
-	text = {
-		trigger = {
-			event_target:winning_country = {
-				tag = PTF
-			}
-			event_target:losing_country = {
-				tag = UOA
-			}
-		}
-		localization_key = TFR_PEACE_POPUP_FLAVOR_PTF_UOA
-	}
+
 
 	text = {
 		trigger = {

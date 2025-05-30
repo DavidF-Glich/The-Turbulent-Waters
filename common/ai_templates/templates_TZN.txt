@@ -4,9 +4,7 @@ infantry_TZN = {
 		TZN
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -28,7 +26,7 @@ infantry_TZN = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 15
 		}
 
@@ -52,9 +50,7 @@ modern_armor_TZN = {
 		TZN
 	}
 	
-	roles = {
-		armor
-	}
+	role = armor
 	
 	upgrade_prio = {
 		factor = 10
@@ -76,7 +72,7 @@ modern_armor_TZN = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 30
 		}
 

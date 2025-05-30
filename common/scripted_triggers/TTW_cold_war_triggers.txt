@@ -1,25 +1,7 @@
 TTW_fopo_should_display_homefront = {
-	OR = {
-		AND = {
-			tag = USA
-			OR = {
-				check_variable = { selected_conflict_id = token:GC_SAW }
-				check_variable = { selected_conflict_id = token:GC_WAC }
-			}
-		}
-		AND = {
-			tag = SOV
-			OR = {
-				check_variable = { selected_conflict_id = token:GC_SAW }
-				check_variable = { selected_conflict_id = token:GC_WAC }
-			}
-		}
-		AND = {
-			tag = PRC
-			OR = {
-				check_variable = { selected_conflict_id = token:GC_SAW }
-				check_variable = { selected_conflict_id = token:GC_WAC }
-			}
+	NOT = {
+		check_variable = {
+			selected_conflict_id = 0
 		}
 	}
 }

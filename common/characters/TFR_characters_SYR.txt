@@ -2,10 +2,10 @@ characters={
 #	SYR_maher_al_assad_char = {
 #		portraits={
 #			civilian = {
-#				large = "gfx/Leaders/SYR/Maher al-Assad.png" 
+#				large = "gfx/leaders/SYR/Maher al-Assad.png" 
 #			}
 #			army = {
-#				large = "gfx/Leaders/SYR/Maher al-Assad.png" 
+#				large = "gfx/leaders/SYR/Maher al-Assad.png" 
 #			}
 #		}
 #
@@ -18,10 +18,10 @@ characters={
 	SYR_bashar_al_assad_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Bashar_Al_Assad_political.png" 
+				large = "gfx/leaders/SYR/Bashar_Al_Assad_political.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Bashar al-Assad.dds" 
+				large = "gfx/leaders/SYR/Bashar al-Assad.dds" 
 			}
 		}
 
@@ -44,10 +44,10 @@ characters={
 	SYR_ali_haidar_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Ali_Haidar.dds" 
+				large = "gfx/leaders/SYR/Ali_Haidar.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Ali_Haidar.dds" 
+				large = "gfx/leaders/SYR/Ali_Haidar.dds" 
 			}
 		}
 
@@ -60,10 +60,10 @@ characters={
 	SYR_anas_abdah_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Anas_al_Abdah.dds" 
+				large = "gfx/leaders/SYR/Anas_al_Abdah.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Anas_al_Abdah.dds" 
+				large = "gfx/leaders/SYR/Anas_al_Abdah.dds" 
 			}
 		}
 
@@ -76,10 +76,10 @@ characters={
 	SYR_hassan_abdul_azim_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Hassan_Abdul_Azim.dds" 
+				large = "gfx/leaders/SYR/Hassan_Abdul_Azim.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Hassan_Abdul_Azim.dds" 
+				large = "gfx/leaders/SYR/Hassan_Abdul_Azim.dds" 
 			}
 		}
 
@@ -92,10 +92,10 @@ characters={
 	SYR_riad_turk_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Riad_al_Turk.dds" 
+				large = "gfx/leaders/SYR/Riad_al_Turk.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Riad_al_Turk.dds" 
+				large = "gfx/leaders/SYR/Riad_al_Turk.dds" 
 			}
 		}
 
@@ -108,10 +108,10 @@ characters={
 	SYR_farid_ghadry_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Farid_Ghadry.dds" 
+				large = "gfx/leaders/SYR/Farid_Ghadry.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Farid_Ghadry.dds" 
+				large = "gfx/leaders/SYR/Farid_Ghadry.dds" 
 			}
 		}
 
@@ -124,10 +124,10 @@ characters={
 	SYR_ibrahim_makhous_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Ibrahim_Makhous.dds" 
+				large = "gfx/leaders/SYR/Ibrahim_Makhous.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Ibrahim_Makhous.dds" 
+				large = "gfx/leaders/SYR/Ibrahim_Makhous.dds" 
 			}
 		}
 
@@ -140,10 +140,10 @@ characters={
 	SYR_hanin_nimir_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Hanin_Nimir.dds" 
+				large = "gfx/leaders/SYR/Hanin_Nimir.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Hanin_Nimir.dds" 
+				large = "gfx/leaders/SYR/Hanin_Nimir.dds" 
 			}
 		}
 
@@ -156,10 +156,10 @@ characters={
 	SYR_khaled_khoja_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SYR/Khaled_Khoja.dds" 
+				large = "gfx/leaders/SYR/Khaled_Khoja.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/SYR/Khaled_Khoja.dds" 
+				large = "gfx/leaders/SYR/Khaled_Khoja.dds" 
 			}
 		}
 
@@ -172,7 +172,7 @@ characters={
 	SYR_fahd_jassem_al_frej_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SYR/Portrait_Al_Frej.png" 
+				large = "gfx/leaders/SYR/Portrait_Al_Frej.png" 
 			}
 		}
 
@@ -187,7 +187,7 @@ characters={
 	SYR_ali_ayyoub_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SYR/Portrait_Ali_Ayyoub.png" 
+				large = "gfx/leaders/SYR/Portrait_Ali_Ayyoub.png" 
 			}
 		}
 
@@ -206,7 +206,7 @@ characters={
 	SYR_maher_al_assad_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SYR/Portrait_Maher_Al_Assad.png" 
+				large = "gfx/leaders/SYR/Portrait_Maher_Al_Assad.png" 
 			}
 		}
 
@@ -226,7 +226,7 @@ characters={
 	SYR_suheil_salman_al_hassan_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SYR/Portrait_Suheil_Salman_Al_Hassan.png" 
+				large = "gfx/leaders/SYR/Portrait_Suheil_Salman_Al_Hassan.png" 
 			}
 		}
 
@@ -245,7 +245,7 @@ characters={
 	SYR_mohamed_khaddour_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SYR/Portrait_Mohamed_Khaddour.dds" 
+				large = "gfx/leaders/SYR/Portrait_Mohamed_Khaddour.dds" 
 			}
 		}
 
@@ -263,7 +263,7 @@ characters={
 	SYR_mohamad_jabir_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SYR/Portrait_Mohamad_Jabir.png" 
+				large = "gfx/leaders/SYR/Portrait_Mohamad_Jabir.png" 
 			}
 		}
 
@@ -296,7 +296,7 @@ characters={
 	ROJ_mansur_selum_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROJ/Mansur_Selum.png" 
+				large = "gfx/leaders/ROJ/Mansur_Selum.png" 
 			}
 		}
 
@@ -315,7 +315,7 @@ characters={
 	CRC_hikmat_hijri_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CRC/Hikmat Al-Hijri.dds" 
+				large = "gfx/leaders/CRC/Hikmat Al-Hijri.dds" 
 			}
 		}
 

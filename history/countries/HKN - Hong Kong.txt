@@ -123,6 +123,3 @@
 		nationalist = 10
 	}
 
-	add_ideas = {
-		HKN_spirit_of_hk
-	}

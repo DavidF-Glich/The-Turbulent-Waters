@@ -12,10 +12,6 @@
 	set_research_slots = 4
 	set_convoys = 80
 	set_stability = 0.55
-	country_event = {
-		id = denmark.2
-		days = 1474
-	}
 
 	set_country_flag = country_language_danish
 	set_country_flag = global_ass_lol

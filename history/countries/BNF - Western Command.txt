@@ -1,6 +1,6 @@
 ﻿	capital = 1100
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 10

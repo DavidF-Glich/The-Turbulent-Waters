@@ -148,7 +148,6 @@
 		create_equipment_variant = {
 			name = "MiG-25"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
@@ -162,7 +161,6 @@
 		create_equipment_variant = {
 			name = "MiG-21"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
@@ -189,7 +187,6 @@
 		create_equipment_variant = {
 			name = "MiG-23"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks

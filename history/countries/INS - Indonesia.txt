@@ -161,7 +161,6 @@
 	}
 
 	add_ideas = {
-		PRC_personal_expense_factor_fix
 		lower_poverty
 		ETH_chinese_investments
 		INS_jungle_warfare
@@ -273,7 +272,6 @@
 		create_equipment_variant = {
 			name = "EMB 314"
 			type = small_plane_cas_airframe_0
-			model = "INS_light_cas_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x

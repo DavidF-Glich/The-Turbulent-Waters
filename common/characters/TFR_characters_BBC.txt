@@ -2,7 +2,7 @@ characters={
 		BBC_kevin_macdonald = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/BBC/BBC_Kevin_MacDonald.png" 
+				large = "gfx/leaders/BBC/BBC_Kevin_MacDonald.png" 
 			}
 		}
 

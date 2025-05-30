@@ -5,7 +5,6 @@
 
 division_template = {
 	name = "Armed Police Force"
-	division_names_group = PRC_MIL_00
 	regiments = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
@@ -24,7 +23,6 @@ division_template = {
 }
 division_template = {
 	name = "Theater Command Headquarters"
-	division_names_group = PRC_BUS_01
 	is_locked = no 
 	regiments = {
 		bus = { x = 0 y = 0 }
@@ -37,7 +35,6 @@ division_template = {
 
 division_template = {
 	name = "Special Operations Brigade"
-	division_names_group = PRC_SOF_01
 	regiments = {
 		special_forces = { x = 0 y = 0 }
 		special_forces = { x = 0 y = 1 }
@@ -52,7 +49,6 @@ division_template = {
 
 division_template = {
 	name = "Marine Corps" 
-	division_names_group = PRC_MAR_01
 	regiments = {
 		marine = { x = 0 y = 0 }
 		marine = { x = 0 y = 1 }
@@ -73,7 +69,6 @@ division_template = {
 division_template = {
 	name = "Heavy Combined Arms Brigade"
 	
-	division_names_group = PRC_HMEC_02
 
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
@@ -94,17 +89,13 @@ division_template = {
 		spa_company = { x = 0 y = 1 }
 		light_tank_recon = { x = 0 y = 2 }
 		engineer = { x = 0 y = 3 }
-		logistics_company = { x = 1 y = 0 }
-		maintenance_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		signal_company = { x = 1 y = 3 }
+		logistics_company = { x = 0 y = 4 }
 	}
 }
 
 division_template = {
 	name = "Medium Combined Arms Brigade"
 	
-	division_names_group = PRC_MEC_02
 
 	regiments = {
 		light_armor = { x = 0 y = 0 }
@@ -125,10 +116,6 @@ division_template = {
 		spa_company = { x = 0 y = 1 }
 		light_tank_recon = { x = 0 y = 2 }
 		engineer = { x = 0 y = 3 }
-		logistics_company = { x = 1 y = 0 }
-		maintenance_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		signal_company = { x = 1 y = 3 }
 	}
 		
 }
@@ -136,7 +123,6 @@ division_template = {
 division_template = {
 	name = "Light Combined Arms Brigade"
 	
-	division_names_group = PRC_MOT_02
 
 	regiments = {
 		light_mechanized = { x = 0 y = 0 }
@@ -155,10 +141,6 @@ division_template = {
 		spa_company = { x = 0 y = 1 }
 		light_tank_recon = { x = 0 y = 2 }
 		engineer = { x = 0 y = 3 }
-		logistics_company = { x = 1 y = 0 }
-		maintenance_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		signal_company = { x = 1 y = 3 }
 	}
 		
 }
@@ -166,7 +148,6 @@ division_template = {
 division_template = {
 	name = "Amphibious Combined Arms Brigade"
 	
-	division_names_group = PRC_MAR_02
 
 	regiments = {
 		amphibious_armor = { x = 0 y = 0 }
@@ -187,10 +168,6 @@ division_template = {
 		spa_company = { x = 0 y = 1 }
 		light_tank_recon = { x = 0 y = 2 }
 		engineer = { x = 0 y = 3 }
-		logistics_company = { x = 1 y = 0 }
-		maintenance_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		signal_company = { x = 1 y = 3 }
 	}
 		
 }
@@ -198,7 +175,6 @@ division_template = {
 division_template = {
 	name = "Air Assault Brigade"
 	
-	division_names_group = PRC_AIR_01
 
 	regiments = {
 		paratrooper = { x = 0 y = 0 }
@@ -220,7 +196,6 @@ division_template = {
 
 division_template = {
 	name = "Border Defense Brigade"
-	division_names_group = PRC_MIL_04
 	regiments = {
 		motorized = { x = 0 y = 0 }
 		motorized = { x = 0 y = 1 }
@@ -235,18 +210,15 @@ division_template = {
 	
 	support = {
 		artillery = { x = 0 y = 0 }
-		helicopter_recon = { x = 0 y = 1 }
 		engineer = { x = 0 y = 2 }
-		logistics_company = { x = 1 y = 0 }
-		maintenance_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		signal_company = { x = 1 y = 3 }
+		logistics_company = { x = 0 y = 1 }
+		maintenance_company = { x = 0 y = 3 }
+		field_hospital = { x = 0 y = 4 }
 	}
 }
 
 division_template = {
 	name = "Combined Arms Division"
-	division_names_group = PRC_ARM_01
 	regiments = {
 		modern_armor = { x = 0 y = 0 }
 		modern_armor = { x = 0 y = 1 }
@@ -275,12 +247,9 @@ division_template = {
 	support = {
 		artillery = { x = 0 y = 0 }
 		spa_company = { x = 0 y = 1 }
-		light_tank_recon = { x = 0 y = 2 }
 		engineer = { x = 0 y = 3 }
-		logistics_company = { x = 1 y = 0 }
-		maintenance_company = { x = 1 y = 1 }
-		field_hospital = { x = 1 y = 2 }
-		signal_company = { x = 1 y = 3 }
+		logistics_company = { x = 0 y = 2 }
+		field_hospital = { x = 0 y = 4 }
 	}
 	priority = 2	
 }
@@ -1338,33 +1307,33 @@ units = {
 			producer = PRC
 		}
 		add_equipment_to_stockpile = {
-		type = modern_tank_chassis_3
-		amount = 2000
-		producer = PRC
-		variant_name = "ZTZ-96B"
+			type = modern_tank_chassis_3
+			amount = 2000
+			producer = PRC
+			variant_name = "ZTZ-96B"
 		}
 		add_equipment_to_stockpile = {
-		type = modern_tank_chassis_3
-		amount = 500
-		producer = PRC
-		variant_name = "ZTZ-99"
+			type = modern_tank_chassis_3
+			amount = 500
+			producer = PRC
+			variant_name = "ZTZ-99"
 		}
 		add_equipment_to_stockpile = {
-		type = modern_tank_chassis_4
-		amount = 250
-		producer = PRC
-		variant_name = "ZTZ-99A"
+			type = modern_tank_chassis_4
+			amount = 250
+			producer = PRC
+			variant_name = "ZTZ-99A"
 		}
 		add_equipment_to_stockpile = {
-		type = light_tank_chassis_4
-		amount = 1000
-		producer = PRC
-		variant_name = "ZTQ-15"
+			type = light_tank_chassis_3
+			amount = 1000
+			producer = PRC
+			variant_name = "ZTQ-15"
 		}
 		add_equipment_to_stockpile = {
-		type = modern_tank_artillery_equipment_1
-		amount = 300
-		producer = PRC
-		variant_name = "PLZ-05"
+			type = modern_tank_artillery_equipment_1
+			amount = 300
+			producer = PRC
+			variant_name = "PLZ-05"
 		}
 	}

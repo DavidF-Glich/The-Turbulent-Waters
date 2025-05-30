@@ -1,5 +1,50 @@
 ideas = {
 	country = {
+		SOV_economic_assistance_china_better_idea = {
+			name = SOV_economic_assistance_idea
+			picture = SOV_brics
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.025
+				production_speed_buildings_factor = 0.075
+				production_factory_efficiency_gain_factor = 0.075
+				industrial_capacity_factory = 0.05
+				income_growth_factor = 0.05
+				business_value_factor = 0.05
+			}
+		}
+
+		SOV_EEC_leader = {
+			removal_cost = -1
+			picture = SOV_EEC_Member
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.05
+				industrial_capacity_factory = 0.05
+				income_growth_factor = 0.04
+			}
+		}
+		SOV_EEC_Member = {
+			removal_cost = -1
+			picture = SOV_EEC_Member
+			allowed = {
+				always = no
+			}
+			modifier = {
+				consumer_goods_factor = -0.025
+				industrial_capacity_factory = 0.025
+				income_growth_factor = 0.04
+			}
+		}
+
 		SOV_Putinism_Faltering = {
 
 			picture = SOV_Putinism_Faltering
@@ -160,9 +205,9 @@ ideas = {
 			modifier = {
 				min_export = -0.12
 				consumer_goods_factor = 0.12
-				business_value_factor = -0.22.5
-				personal_value_factor = -0.22.5
-				income_growth_factor = -0.12.5
+				business_value_factor = -0.225
+				personal_value_factor = -0.225
+				income_growth_factor = -0.125
 				stability_factor = -0.06
 			}
 		}
@@ -223,6 +268,69 @@ ideas = {
 				oligarch_influence_monthly = 0.02
 			}
 		}
+				SOV_kleptocratic_state_2 = {
+			picture = GFX_idea_SOV_kleptocratic_state
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.2
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.1
+				research_speed_factor = -0.05
+				business_value_factor = -0.15
+				personal_value_factor = -0.15
+				industrial_development_monthly = -0.01
+				poverty_development_monthly = -0.01
+			}
+		}
+		SOV_kleptocratic_state_3 = {
+			picture = GFX_idea_SOV_kleptocratic_state
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.1
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.05
+				research_speed_factor = -0.05
+				business_value_factor = -0.1
+				personal_value_factor = -0.1
+				industrial_development_monthly = -0.01
+				poverty_development_monthly = 0.00
+				oligarch_influence_monthly = 0.00
+			}
+		}
+		SOV_kleptocratic_state_3 = {
+			picture = GFX_idea_SOV_kleptocratic_state
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				political_power_gain = -0.05
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = 0.00
+				research_speed_factor = 0.00
+				business_value_factor = -0.05
+				personal_value_factor = -0.05
+				industrial_development_monthly = 0.00
+				poverty_development_monthly = 0.00
+				oligarch_influence_monthly = 0.00
+			}
+		}
+
 		SOV_Russian_Orthodox_Church = {
 			picture = GFX_idea_SOV_russian_orthodox_church
 			allowed = {
@@ -314,6 +422,23 @@ ideas = {
 				trade_opinion_factor = 0.2
 				production_speed_buildings_factor = -0.05
 				income_growth_factor = 0.35
+				dtg_threshold = 0.1
+			}
+		}
+		SOV_The_Petrol_Economy_2 = {
+			picture = SOV_the_petrol_economy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				local_resources_factor = 0.2
+				trade_opinion_factor = 0.2
+				production_speed_buildings_factor = 0.05
+				income_growth_factor = 0.45
 				dtg_threshold = 0.1
 			}
 		}
@@ -549,6 +674,289 @@ ideas = {
 			business_value_factor = -0.05
 			}
 		}
+		SOV_save_economy_covid = {
+			picture = SOV_russian_era_of_capitalism_idea
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				removal_cost = -1
+				modifier = {
+				consumer_goods_factor = 0.1
+				income_growth_factor = -0.15
+				business_value_factor = -0.05
+				stability_factor = 0.1
+				personal_value_factor = 0.1
+			}
+		}
+		SOV_ignored_people = {
+			picture = SOV_own_peoples_hate_idea
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				consumer_goods_factor = -0.02
+				income_growth_factor = 0.07
+				business_value_factor = -0.15
+				stability_factor = -0.1
+				personal_expense_factor = -0.15			
+			}
+		}
+		SOV_shortage_of_workers = {
+			picture = SOV_economic_instability
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				removal_cost = -1
+				modifier = {
+					production_speed_buildings_factor = -0.05
+					poverty_development_monthly = -0.01
+					industrial_capacity_factory = -0.03
+					society_development_monthly = -0.01
+					production_factory_max_efficiency_factor = -0.05
+					income_growth_factor = -0.08
+					industrial_development_monthly = -0.01
+				}
+		}
+		SOV_Russian_Internet_Companies = {
+			picture = SOV_funding_digital_economy
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = 0.05
+					income_growth_factor = 0.1
+					business_value_factor = -0.05
+					stability_factor = 0.07
+					personal_value_factor = 0.15
+				}
+	}
+		SOV_New_Russian_Economy = {
+			picture = SOV_funding_digital_economy
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = -0.05
+					income_growth_factor = 0.1
+					business_value_factor = 0.05
+					production_speed_buildings_factor = 0.1
+				}
+		}
+		SOV_Navalny_protest = {
+			picture = navalny_protests
+				allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				removal_cost = -1
+				modifier = {
+					consumer_goods_factor = 0.05
+					business_value_factor = -0.1
+					stability_factor = -0.1
+					war_support_weekly = -0.002
+					income_growth_factor = -0.1
+			}
+		}
+		SOV_bad_birth_rate_1 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.01
+				monthly_population = -0.025
+				personal_value_factor = -0.01
+			}
+		}
+		SOV_bad_birth_rate_2 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.02
+				monthly_population = -0.5
+				personal_value_factor = -0.02
+			}
+		}
+		SOV_bad_birth_rate_3 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.03
+				monthly_population = -0.075
+				personal_value_factor = -0.03
+			}
+		}
+		SOV_bad_birth_rate_4 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.04
+				monthly_population = -0.10
+				personal_value_factor = -0.04
+			}
+		}
+		SOV_bad_birth_rate_5 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.125
+				personal_value_factor = -0.05
+			}
+		}
+		#First Idea
+		SOV_bad_birth_rate_6 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05
+				monthly_population = -0.15
+				personal_value_factor = -0.05
+			}
+		}
+		SOV_bad_birth_rate_7 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.06
+				monthly_population = -0.175
+				personal_value_factor = -0.06
+			}
+		}
+		SOV_bad_birth_rate_8 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.07
+				monthly_population = -0.20
+				personal_value_factor = -0.07
+			}
+		}
+		SOV_bad_birth_rate_9 = {
+		picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.08
+				monthly_population = -0.225
+				personal_value_factor = -0.08
+			}
+		}
+		SOV_bad_birth_rate_10 = {
+			picture = SOV_pension_benefits
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.1
+				monthly_population = -0.25
+				personal_value_factor = -0.1
+			}
+		}
+
+		SOV_brics_member = {
+			removal_cost = -1
+			picture = SOV_brics_member
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = 0.02
+				income_growth_factor = 0.02
+				trade_opinion_factor = 0.02
+				trade_cost_for_target_factor = -0.02
+			}
+		}
+		SOV_tmca_member = {
+			removal_cost = -1
+			picture = SOV_TMC_idea
+			allowed = {
+				always = no
+			}
+			modifier = {
+				political_power_factor = 0.25
+				income_growth_factor = 0.1
+				trade_opinion_factor = 0.1
+				lend_lease_tension = -0.1
+				trade_cost_for_target_factor = -0.1
+			}
+		}
+
 	}
 	head_minister = {
 		SOV_Medvedev = {
@@ -1000,17 +1408,6 @@ ideas = {
 			visible = {
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						has_idea = SOV_Mishustin
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = SOV_notgovernment
-					NOT = {
-						has_idea = SOV_Mishustin
-					}
-				}
 			}
 			traits = {
 				eco_balanced_budget_economy
@@ -1022,10 +1419,9 @@ ideas = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_election_victory
+				always = no
 			}
 			available = {
-				has_country_flag = SOV_Kashin_Gosplan
 			}
 			traits = {
 				eco_kosyginist_economics
@@ -1333,16 +1729,12 @@ ideas = {
 				OR = {
 					has_government = totalitarian_socialist
 					has_government = national_socialist
-					has_completed_focus = SOV_social_market_economy
-					has_completed_focus = SOV_radical_reforms
 				}
 			}
 			available = {
 				OR = {
 					has_government = totalitarian_socialist
 					has_government = national_socialist
-					has_completed_focus = SOV_social_market_economy
-					has_completed_focus = SOV_radical_reforms
 				}
 			}
 			traits = {
@@ -1361,7 +1753,6 @@ ideas = {
 				}
 			}
 			available = {
-				has_completed_focus = SOV_national_goals_over_profit_motives
 				OR = {
 					has_government = totalitarian_socialist
 					has_government = national_socialist
@@ -1433,7 +1824,6 @@ ideas = {
 				OR = {
 					NOT = {
 						has_country_flag = SOV_nav_purge
-						has_completed_focus = SOV_the_best_of_two_systems
 					}
 				}
 			}
@@ -1459,7 +1849,6 @@ ideas = {
 			}
 			available = {
 				has_global_flag = SOV_zimin
-				has_completed_focus = SOV_the_best_of_two_systems
 			}
 			traits = {
 				eco_experienced_capitalist
@@ -1539,7 +1928,7 @@ ideas = {
 				NOT = {
 					OR = {
 						has_completed_focus = SOV_election_victory
-						has_completed_focus = SOV_triumph_of_zhirinovsky
+						has_country_leader = SOV_igor_zhirinovsky
 						has_country_flag = SOV_pr_radical_victory
 						has_country_flag = SOV_pr_moderate_victory
 					}
@@ -1622,7 +2011,7 @@ ideas = {
 				NOT = {
 					OR = {
 						has_completed_focus = SOV_election_victory
-						has_completed_focus = SOV_triumph_of_zhirinovsky
+						has_country_leader = SOV_igor_zhirinovsky
 						has_completed_focus = SOV_russian_spring
 					}
 				}
@@ -1797,7 +2186,8 @@ ideas = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_triumph_of_zhirinovsky
+				
+				has_country_leader = SOV_igor_zhirinovsky
 			}
 			available = {
 				has_country_flag = SOV_Zhirinovsky_Ministers
@@ -1866,7 +2256,7 @@ ideas = {
 				original_tag = SOV
 			}
 			visible = {
-				has_completed_focus = SOV_triumph_of_zhirinovsky
+				has_country_leader = SOV_igor_zhirinovsky
 			}
 			available = {
 				has_country_flag = SOV_Council_Ministers

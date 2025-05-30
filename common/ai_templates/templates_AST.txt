@@ -4,9 +4,7 @@ infantry_AST = {
 		AST
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -28,13 +26,11 @@ infantry_AST = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 15
 		}
 
 		target_template = {
-			weight = 0.9
-			match_value = 3000.0
 			support = {
 				mot_recon = 1
 				engineer = 1
@@ -56,9 +52,7 @@ amphibious_mechanized_AST = {
 		AST
 	}
 	
-	roles = {
-		marines
-	}
+	role = marines
 	
 	upgrade_prio = {
 		factor = 40
@@ -80,7 +74,7 @@ amphibious_mechanized_AST = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 20
 		}
 

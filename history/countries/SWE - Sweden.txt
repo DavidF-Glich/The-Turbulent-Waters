@@ -24,6 +24,7 @@
 
 	recruit_character = SWE_charles_xvi_char
 	recruit_character = SWE_one_punch_man_char
+	recruit_character = SWE_Tian_shou_rang_ye
 
 	set_technology = {
 		## Infantry ##
@@ -156,15 +157,15 @@
 		}
 	}
 
-	if = {
-		limit = { 
-			has_game_rule = {
-				rule = oh_no_sweden
-				option = deal_with_IND
-			}
-		}
-		add_ideas = SWE_Indi_Immigrant_spirit
-	}
+	#if = {
+	#	limit = { 
+	#		has_game_rule = {
+	#			rule = oh_no_sweden
+	#			option = deal_with_IND
+	#		}
+	#	}
+	#	add_ideas = SWE_Indi_Immigrant_spirit
+	#}
 	add_ideas = {
 		neutrality_idea
 		higher_poverty

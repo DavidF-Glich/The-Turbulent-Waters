@@ -14,7 +14,6 @@
 
 division_template = {
 	name = "Special Security Division"
-	override_model = ATW_mason_entity
 	is_locked = yes
 	regiments = {
 		motorized = {

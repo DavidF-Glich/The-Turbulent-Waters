@@ -5,10 +5,6 @@
 	set_research_slots = 3
 	set_convoys = 120
 	set_stability = 0.3
-	country_event = {
-		id = africa.1
-		days = 951
-	}
 
 	set_country_flag = developed_country
 

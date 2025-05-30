@@ -220,20 +220,39 @@ on_actions = {
 					limit = {
 						energy_farm > 0
 					}
-					add_dynamic_modifier = {X
+					add_dynamic_modifier = {
 						modifier = generic_energy_farm_state_dynamic
 					}
 				}
 			}
-			#分数计算-经济
 			every_country = {
-        		limit = {
-                   has_variable = num_of_nukes1  
-            	}
-            	set_variable = {
-                   economic_score1 = THIS.gdp_var
-            	}
+				limit = {
+					has_variable = num_of_nukes1
+				}
+				calculate_cold_war_score = yes
+			}
+			ZZZ = {
+                get_sorted_scored_countries = {
+                    scorer = nuke_scorer
+                    array = global.TFR_the_competitors
+                }
+                for_each_scope_loop = {
+                    array = global.TFR_the_competitors
+                    add_to_variable = {
+                        global.TFR_the_competitors_index = 1
+                    }
+                    set_variable = {
+                        nuke_ranking = global.TFR_the_competitors_index
+                    }
+                }
+                clear_array = global.TFR_the_competitors_index
+                get_sorted_scored_countries = {
+                    scorer = total_scorer
+                    array = global.TFR_the_competitors2
+                }
+				tension_outcome_setup = yes
             }
+
 		}	
 	}
 		
@@ -241,6 +260,33 @@ on_actions = {
 		effect = {
 			add_GDP = yes
 			update_power_plants_effect = yes
+			every_country = {
+				limit = {
+					has_variable = num_of_nukes1
+				}
+				calculate_cold_war_score = yes
+			}
+			ZZZ = {
+                get_sorted_scored_countries = {
+                    scorer = nuke_scorer
+                    array = global.TFR_the_competitors
+                }
+                for_each_scope_loop = {
+                    array = global.TFR_the_competitors
+                    add_to_variable = {
+                        global.TFR_the_competitors_index = 1
+                    }
+                    set_variable = {
+                        nuke_ranking = global.TFR_the_competitors_index
+                    }
+                }
+                clear_array = global.TFR_the_competitors_index
+                get_sorted_scored_countries = {
+                    scorer = total_scorer
+                    array = global.TFR_the_competitors2
+                }
+            }
+
 		}
 	}
 

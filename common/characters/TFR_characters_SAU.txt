@@ -2,10 +2,10 @@ characters={
 	SAU_salman_bin_abdulaziz_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAU/Salman bin Abdulaziz Al Saud.png" 
+				large = "gfx/leaders/SAU/Salman bin Abdulaziz Al Saud.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAU/Salman bin Abdulaziz Al Saud.png" 
+				large = "gfx/leaders/SAU/Salman bin Abdulaziz Al Saud.png" 
 			}
 		}
 		country_leader = {
@@ -16,10 +16,10 @@ characters={
 	SAU_mohammed_bin_salman_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAU/Mohammed bin Salman.png" 
+				large = "gfx/leaders/SAU/Mohammed bin Salman.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAU/Mohammed bin Salman.png" 
+				large = "gfx/leaders/SAU/Mohammed bin Salman.png" 
 			}
 		}
 		country_leader = {
@@ -29,10 +29,10 @@ characters={
 	SAU_Fayyadh_Al_Ruwaili_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAU/Fayyadh_Al_Ruwaili.png" 
+				large = "gfx/leaders/SAU/Fayyadh_Al_Ruwaili.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAU/Fayyadh_Al_Ruwaili.png" 
+				large = "gfx/leaders/SAU/Fayyadh_Al_Ruwaili.png" 
 			}
 		}
 
@@ -48,10 +48,10 @@ characters={
 	ARR_yahya_assiri_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ARR/Yahya Assiri.png" 
+				large = "gfx/leaders/ARR/Yahya Assiri.png" 
 			}
 			army = {
-				large = "gfx/Leaders/ARR/Yahya Assiri.png" 
+				large = "gfx/leaders/ARR/Yahya Assiri.png" 
 			}
 		}
 		country_leader = {
@@ -61,10 +61,10 @@ characters={
 	ARR_musa_bin_dhaher_balawi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ARR/Musa Bin Dhaher Al-Balawi.dds" 
+				large = "gfx/leaders/ARR/Musa Bin Dhaher Al-Balawi.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ARR/Musa Bin Dhaher Al-Balawi.dds" 
+				large = "gfx/leaders/ARR/Musa Bin Dhaher Al-Balawi.dds" 
 			}
 		}
 
@@ -81,10 +81,10 @@ characters={
 	ARR_turki_bin_bandar_bin_abdul_aziz_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ARR/Turki bin Bandar bin Abdul Aziz.png" 
+				large = "gfx/leaders/ARR/Turki bin Bandar bin Abdul Aziz.png" 
 			}
 			army = {
-				large = "gfx/Leaders/ARR/Turki bin Bandar bin Abdul Aziz.png" 
+				large = "gfx/leaders/ARR/Turki bin Bandar bin Abdul Aziz.png" 
 			}
 		}
 
@@ -101,10 +101,10 @@ characters={
 	ARR_sulaiman_amro_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ARR/Sulaiman al-Amro.dds" 
+				large = "gfx/leaders/ARR/Sulaiman al-Amro.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ARR/Sulaiman al-Amro.dds" 
+				large = "gfx/leaders/ARR/Sulaiman al-Amro.dds" 
 			}
 		}
 
@@ -122,10 +122,10 @@ characters={
 	JAH_ata_abu_rashta_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/JAH/Ata Abu Rashta.png" 
+				large = "gfx/leaders/JAH/Ata Abu Rashta.png" 
 			}
 			army = {
-				large = "gfx/Leaders/JAH/Ata Abu Rashta.png" 
+				large = "gfx/leaders/JAH/Ata Abu Rashta.png" 
 			}
 		}
 		country_leader = {
@@ -135,10 +135,10 @@ characters={
 	JAH_khalid_bin_faisal_al_saud_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/JAH/Khalid bin Faisal Al Saud.png" 
+				large = "gfx/leaders/JAH/Khalid bin Faisal Al Saud.png" 
 			}
 			army = {
-				large = "gfx/Leaders/JAH/Khalid bin Faisal Al Saud.png" 
+				large = "gfx/leaders/JAH/Khalid bin Faisal Al Saud.png" 
 			}
 		}
 		country_leader = {
@@ -149,10 +149,10 @@ characters={
 	ROC_mutaib_bin_abdullah_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROC/Mutaib bin Abdullah.png" 
+				large = "gfx/leaders/ROC/Mutaib bin Abdullah.png" 
 			}
 			army = {
-				large = "gfx/Leaders/ROC/Mutaib bin Abdullah.png" 
+				large = "gfx/leaders/ROC/Mutaib bin Abdullah.png" 
 			}
 		}
 		country_leader = {
@@ -162,10 +162,10 @@ characters={
 	ROC_mansour_turki_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROC/Mansour al-Turki.dds" 
+				large = "gfx/leaders/ROC/Mansour al-Turki.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ROC/Mansour al-Turki.dds" 
+				large = "gfx/leaders/ROC/Mansour al-Turki.dds" 
 			}
 		}
 
@@ -182,10 +182,10 @@ characters={
 	ROC_fayyad_bin_hamed_ruwaili_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROC/Fayyad bin Hamed al-Ruwaili.dds" 
+				large = "gfx/leaders/ROC/Fayyad bin Hamed al-Ruwaili.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ROC/Fayyad bin Hamed al-Ruwaili.dds" 
+				large = "gfx/leaders/ROC/Fayyad bin Hamed al-Ruwaili.dds" 
 			}
 		}
 
@@ -202,10 +202,10 @@ characters={
 	ROC_mutlaq_bin_salem_azima_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROC/Mutlaq bin Salem al-Azima.dds" 
+				large = "gfx/leaders/ROC/Mutlaq bin Salem al-Azima.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ROC/Mutlaq bin Salem al-Azima.dds" 
+				large = "gfx/leaders/ROC/Mutlaq bin Salem al-Azima.dds" 
 			}
 		}
 
@@ -222,10 +222,10 @@ characters={
 	ROC_awad_balawi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ROC/Awad Al-Balawi.dds" 
+				large = "gfx/leaders/ROC/Awad Al-Balawi.dds" 
 			}
 			army = {
-				large = "gfx/Leaders/ROC/Awad Al-Balawi.dds" 
+				large = "gfx/leaders/ROC/Awad Al-Balawi.dds" 
 			}
 		}
 
@@ -243,10 +243,10 @@ characters={
 	SAR_ahmed_ibrahim_mughassil_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/SAR/Ahmed Ibrahim Al-Mughassil.png" 
+				large = "gfx/leaders/SAR/Ahmed Ibrahim Al-Mughassil.png" 
 			}
 			army = {
-				large = "gfx/Leaders/SAR/Ahmed Ibrahim Al-Mughassil.png" 
+				large = "gfx/leaders/SAR/Ahmed Ibrahim Al-Mughassil.png" 
 			}
 		}
 		country_leader = {

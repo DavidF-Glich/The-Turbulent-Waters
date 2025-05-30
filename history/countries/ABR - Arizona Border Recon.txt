@@ -1,6 +1,6 @@
 ﻿	capital = 987
 
-#	oob = ""
+#
 	
 	set_country_flag = shithole_country
 

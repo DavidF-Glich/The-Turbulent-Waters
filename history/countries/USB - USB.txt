@@ -288,10 +288,6 @@ if = {
 
 add_ideas = {
 	#Hidden Ideas
-	USB_medium_ino_support_idea
-	USB_medium_con_support_idea
-	USB_higher_neo_support_idea
-	USB_high_pro_support_idea
 	#National Spirits
 	USB_uncooperative_military_idea
 	USB_inefficient_economy_idea
@@ -1189,7 +1185,6 @@ if = {
 			special_type_slot_2 = lmg_defense_turret_2x
 			special_type_slot_3 = empty
 		}
-		icon = "GFX_GER_tactical_bomber1_medium"
 	}
 
 	create_equipment_variant = {

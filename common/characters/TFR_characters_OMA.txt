@@ -25,7 +25,7 @@ characters={
 	OMA_haitham_bin_tariq_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/OMA/OMA_Haitham_bin_Tariq.png"
+				large = "gfx/leaders/OMA/OMA_Haitham_bin_Tariq.png"
 			}
 		}
 		country_leader={

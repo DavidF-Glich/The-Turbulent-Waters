@@ -68,9 +68,9 @@ Cold_War_GUI_AddVictory = {
 
 	if = {
 		limit = { 
-			is_in_array = {
-				array = global.TFR_the_competitors
-			}
+			NOT = {
+				has_variable = nuke_score
+			}	
 		}
 		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed non-superpower tag. Breaking."
 	}
@@ -97,7 +97,7 @@ Cold_War_GUI_AddVictory = {
 		set_variable = { TTW_Cold_War_GUI_Victory_Entry^Victory_ID = 1 }
 		set_variable = { TTW_Cold_War_GUI_Victory_Outcome^Victory_ID = Victory_Outcome }
 		set_variable = { TTW_Cold_War_GUI_Victory_Points^Victory_ID = Victory_Points }
-
+		add_to_variable = { diplo_score1 = Victory_Points }
 		Cold_War_GUI_CalculateDisplayArrays = yes
 		Cold_War_GUI_Score_Calculation = yes
 	}
@@ -111,11 +111,7 @@ Cold_War_GUI_ManipulateVictory = {
 	log = "[GetDateText]: [THIS.GetName]: Cold_War_GUI_ManipulateVictory; Executing"
 
 	if = {
-		limit = { 
-			is_in_array = {
-				array = global.TFR_the_competitors
-			}
-		}
+		limit = { NOT = { has_variable = nuke_score } }
 		log = "(ERROR): [GetDateText]: [THIS.GetName]: Cold_War_GUI_AddVictory; Handed non-superpower tag. Breaking."
 	}
 	else_if = {
@@ -139,7 +135,7 @@ Cold_War_GUI_ManipulateVictory = {
 	else = {
 		set_variable = { TTW_Cold_War_GUI_Victory_Outcome^Victory_ID = Victory_Outcome }
 		set_variable = { TTW_Cold_War_GUI_Victory_Points^Victory_ID = Victory_Points }
-
+		add_to_variable = { diplo_score1 = Victory_Points }
 		Cold_War_GUI_CalculateDisplayArrays = yes
 		Cold_War_GUI_Score_Calculation = yes
 	}
@@ -347,50 +343,6 @@ Cold_War_GUI_Score_Calculation = {
 		add_to_array = { Score_Diplomacy = 0 } # 7; Power Projection
 
 		# Independent members in faction
-		set_variable = { Score_Diplomacy^2 = faction_members^num }
-		for_each_scope_loop = {
-			array = faction_members
-			if = {
-				limit = {
-					OR = {
-						is_subject = yes
-						has_idea = Sphere_Corporate_Dependency
-						has_idea = Sphere_Imp_Protectorate
-						has_idea = Sphere_Fully_Dependent
-						has_idea = Sphere_Economic_Dependent
-						has_idea = Pakt_Mitstreiter
-						has_idea = Pakt_Ordensstaat
-					}
-				}
-				subtract_from_variable = { PREV.Score_Diplomacy^2 = 1 }
-			}
-		}
-		subtract_from_variable = { Score_Diplomacy^2 = 1 } # Subtract another one to remove the faction leader
-		multiply_variable = { Score_Diplomacy^2 = @score_per_ind_member }
-
-		# Faction Observers
-		if = {
-			limit = { tag = PRC }
-			every_other_country = {
-				limit = { has_idea = Pakt_Observer }
-				add_to_variable = { PREV.Score_Diplomacy^6 = @score_per_observer }
-			}
-		}
-		else_if = {
-			limit = { tag = USA }
-			every_other_country = {
-				limit = { has_idea = OFN_Observer }
-				add_to_variable = { PREV.Score_Diplomacy^6 = @score_per_observer }
-			}
-		}
-		else_if = {
-			limit = { tag = SOV }
-			every_other_country = {
-				limit = { has_idea = Sphere_Observer }
-				add_to_variable = { PREV.Score_Diplomacy^6 = @score_per_observer }
-			}
-		}
-
 		# Rounding up all variables
 		for_each_loop = {
 			array = Score_Diplomacy

@@ -48,6 +48,11 @@ focus_tree = {
 				}
 			}
 		}
+		allow_branch = {
+			NOT = {
+				has_country_flag = NO_COVID_2020
+			}
+		}
 		cancel = {
 			hidden_trigger = {
 				has_country_flag = easteregg_enabled
@@ -153,6 +158,12 @@ focus_tree = {
 		cost = 3.00
 		x = 23
 		y = 0
+		offset = {
+			x = -7
+			trigger = {
+				has_country_flag = NO_COVID_2020
+			}
+		}
 		available = {
 			has_country_flag = PRC_First_Success
 			is_at_peace_exiled_countries_excluded = yes
@@ -170,14 +181,15 @@ focus_tree = {
 	}
 
 	focus = {
-		id = PRC_Fourteenth_Five	#需要严肃的14数字图片
-		icon = GFX_goal_unknown
+		id = PRC_Fourteenth_Five
+		icon = GFX_focus_PRC_Fourteenth_Five
 		cost = 5.00
 		prerequisite = {
 			focus = PRC_Out_Poverty
 		}
-		x = 23
+		x = 0
 		y = 1
+		relative_position_id= PRC_Out_Poverty
 		available = {
 			has_country_flag = PRC_First_Success
 		}
@@ -200,8 +212,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Fourteenth_Five
 		}
-		x = 15
-		y = 2
+		x = -8
+		y = 1
+		relative_position_id = PRC_Fourteenth_Five
 
 		completion_reward = {
 			random_controlled_state = {
@@ -581,8 +594,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Fourteenth_Five
 		}
-		x = 18
-		y = 2
+		x = -5
+		y = 1
+		relative_position_id = PRC_Fourteenth_Five
 		completion_reward = {
 			set_country_flag = PRC_Space
 		}
@@ -653,8 +667,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Fourteenth_Five
 		}
-		x = 23
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = PRC_Fourteenth_Five
 
 	}
 	focus = {
@@ -680,9 +695,6 @@ focus_tree = {
 			focus = PRC_Healthcare
 		}
 		available = {
-			NOT = {
-				has_completed_focus = PRC_Adjust_Route
-			}
 		}
 		mutually_exclusive = {
 			focus = PRC_State_Nursery
@@ -855,8 +867,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Fourteenth_Five
 		}
-		x = 28
-		y = 2
+		x = 5
+		y = 1
+		relative_position_id = PRC_Fourteenth_Five
 
 	}
 	focus = {
@@ -1020,7 +1033,13 @@ focus_tree = {
 				has_completed_focus = PRC_Steady_Route
 			}
 		}
-		x = 47
+		offset = {
+			x = -6
+			trigger = {
+				has_country_flag = NO_COVID_2020
+			}
+		}
+		x = 43
 		y = 0
 		available = {
 			date > 2022.8.1
@@ -1040,22 +1059,15 @@ focus_tree = {
 		id = PRC_Steady_Route
 		icon = GFX_focus_PRC_strengthen_auhority_of_the_chairman
 		cost = 5.00
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRC_Adjust_Route
-			}
-		}
 		prerequisite = {
 			focus = PRC_Historic_Checkpoint
-		}
-		mutually_exclusive = {
-			focus = PRC_Adjust_Route
 		}
 		available = {
 			
 		}
-		x = 40
+		x = -4
 		y = 1
+		relative_position_id = PRC_Historic_Checkpoint
 		completion_reward = {
 			mark_focus_tree_layout_dirty = yes
 		}
@@ -1068,8 +1080,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Steady_Route
 		}
-		x = 38
-		y = 2
+		x = -2
+		y = 1
+		relative_position_id = PRC_Steady_Route
 
 	}
 	focus = {
@@ -1079,8 +1092,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Steady_Route
 		}
-		x = 40
-		y = 2
+		x = 0
+		y = 1
+		relative_position_id = PRC_Steady_Route
 
 	}
 	focus = {
@@ -1090,8 +1104,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Steady_Route
 		}
-		x = 42
-		y = 2
+		x = 2
+		y = 1
+		relative_position_id = PRC_Steady_Route
 
 	}
 	focus = {
@@ -1107,8 +1122,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Fourteen_Follows
 		}
-		x = 39
-		y = 3
+		x = 0
+		y = 1
+		relative_position_id = PRC_Ten_Points
 		completion_reward = {
 			hidden_effect = {
 				scoped_play_song = "SOV_Bulganin"
@@ -1123,7 +1139,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_New_Era_Socialism
 		}
-		x = 0
+		x = -2
 		y = 1
 		relative_position_id = PRC_New_Era_Socialism
 
@@ -1147,20 +1163,14 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Historic_Checkpoint
 		}
-		x = 74
+		x = 5
 		y = 1
+		relative_position_id = PRC_Historic_Checkpoint
 		offset = {
 			x = -25
 			y = 0
 			trigger = {
 				has_completed_focus = PRC_Steady_Route
-			}
-		}
-		offset = {
-			x = -10
-			y = 0
-			trigger = {
-				has_completed_focus = PRC_Adjust_Route
 			}
 		}
 	}
@@ -1172,7 +1182,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Humanitarism
 		}
-		x = 2
+		x = 3
 		y = 1
 		relative_position_id = PRC_Humanitarism
 
@@ -1267,7 +1277,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Humanitarism
 		}
-		x = 0
+		x = -1
 		y = 1
 		relative_position_id = PRC_Humanitarism
 		available = {
@@ -1335,7 +1345,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Humanitarism
 		}
-		x = 4
+		x = 1
 		y = 1
 		relative_position_id = PRC_Humanitarism
 
@@ -1347,7 +1357,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Humanitarism
 		}
-		x = -2
+		x = -3
 		y = 1
 		relative_position_id = PRC_Humanitarism
 
@@ -1359,8 +1369,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_New_Era_Socialism
 		}
-		x = 44
-		y = 4
+		x = 4
+		y = 1
+		relative_position_id = PRC_New_Era_Socialism
 
 	}
 	focus = {
@@ -1900,7 +1911,7 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_New_Era_Socialism
 		}
-		x = -2
+		x = -4
 		y = 1
 		relative_position_id = PRC_New_Era_Socialism
 
@@ -1953,8 +1964,8 @@ focus_tree = {
 			focus = PRC_Network
 		}
 		x = 0
-		y = 3
-		relative_position_id = PRC_Socialist_Law
+		y = 4
+		relative_position_id = PRC_New_Era_Socialism
 
 	}
 	focus = {
@@ -2021,52 +2032,6 @@ focus_tree = {
 		x = 0
 		y = 5
 		relative_position_id = PRC_Preserve_Heritage
-
-	}
-	focus = {
-		id = PRC_Adjust_Route
-		icon = GFX_focus_PRC_comprehensive_deepening_of_reforms
-		cost = 5.00
-		allow_branch = {
-			NOT = {
-				has_completed_focus = PRC_Steady_Route
-			}
-		}
-		prerequisite = {
-			focus = PRC_Historic_Checkpoint
-		}
-		mutually_exclusive = {
-			focus = PRC_Steady_Route
-		}
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = PRC_Adjust_Route_Trigger
-				check_variable = {
-					WRS_Akhromeyev_Balance > 50
-				}
-				check_variable = {
-					WRS_Ryzhkov_Balance < 30
-				}
-				check_variable = {
-					WRS_Yakovlev_Balance < 50
-				}
-			}
-		}
-		x = 58
-		y = 1
-		offset = {
-			x = -13
-			y = 0
-			trigger = {
-				has_completed_focus = PRC_Adjust_Route
-			}
-		}
-		completion_reward = {
-			hidden_effect = {
-				scoped_play_song = "SOV_Khrushchev"
-			}
-			mark_focus_tree_layout_dirty = yes
-		}
 
 	}
 	focus = {
@@ -2155,8 +2120,8 @@ focus_tree = {
 			focus = PRC_Security_Opinion
 		}
 		x = 0
-		y = 5
-		relative_position_id = PRC_Socialist_Law
+		y = 1
+		relative_position_id = PRC_Security_Opinion
 
 	}
 	focus = {
@@ -2172,8 +2137,9 @@ focus_tree = {
 		prerequisite = {
 			focus = PRC_Historical_Confidence
 		}
-		x = 40
-		y = 10
+		x = 0
+		y = 1
+		relative_position_id = PRC_Rule_Confidence
 
 	}
 	focus = {
@@ -2187,346 +2153,8 @@ focus_tree = {
 			focus = PRC_Authority_of_Constitution
 		}
 		x = 0
-		y = 4
-		relative_position_id = PRC_Socialist_Law
-
-	}
-	focus = {
-		id = PRC_People_Democracy
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Adjust_Route
-		}
-		x = -7
 		y = 1
-		relative_position_id = PRC_Adjust_Route
-
-	}
-	focus = {
-		id = PRC_Interaction_with_Representative
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_People_Democracy
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_People_Democracy
-
-	}
-	focus = {
-		id = PRC_Analysis_Video
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Interaction_with_Representative
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_Interaction_with_Representative
-	}
-	focus = {
-		id = PRC_Scale_of_Base_Election
-		icon = GFX_focus_PRC_overall_process_peoples_demorcracy
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_Interaction_with_Representative
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_Interaction_with_Representative
-
-	}
-	focus = {
-		id = PRC_Bring_to_the_Desk
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_People_Democracy
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_People_Democracy
-	}
-	focus = {
-		id = PRC_Crack_Myself
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_Bring_to_the_Desk
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Bring_to_the_Desk
-	}
-	focus = {
-		id = PRC_Leninist_Party
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_Crack_Myself
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Crack_Myself
-	}
-	focus = {
-		id = PRC_New_Faces
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Leninist_Party
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Leninist_Party
-
-	}
-	focus = {
-		id = PRC_People_Welfare
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Adjust_Route
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Adjust_Route
-
-	}
-	focus = {
-		id = PRC_Modern_Landlords
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_People_Welfare
-		}
-		x = -2
-		y = 1
-		relative_position_id = PRC_People_Welfare
-
-	}
-	focus = {
-		id = PRC_String_on_Corps
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_People_Welfare
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_People_Welfare
-
-	}
-	focus = {
-		id = PRC_Labor_Law
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_String_on_Corps
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_String_on_Corps
-
-	}
-	focus = {
-		id = PRC_State_Most_Hated
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_String_on_Corps
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_String_on_Corps
-
-	}
-	focus = {
-		id = PRC_Collectivize_Enterprise
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_State_Most_Hated
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_State_Most_Hated
-
-	}
-	focus = {
-		id = PRC_Constituational_Modification
-		icon = GFX_goal_unknown
-		cost = 10.00
-		prerequisite = {
-			focus = PRC_String_on_Corps
-		}
-		x = 2
-		y = 0
-		relative_position_id = PRC_State_Most_Hated
-
-	}
-	focus = {
-		id = PRC_People_Culture
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Adjust_Route
-		}
-		x = 8
-		y = 1
-		relative_position_id = PRC_Adjust_Route
-
-	}
-	focus = {
-		id = PRC_Remeet_Mao
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_People_Culture
-		}
-		x = -1
-		y = 1
-		relative_position_id = PRC_People_Culture
-
-	}
-	focus = {
-		id = PRC_Eternal_Revolutioneer
-		icon = GFX_goal_unknown
-		cost = 3.00
-		prerequisite = {
-			focus = PRC_Remeet_Mao
-		}
-		prerequisite = {
-			focus = PRC_Constituational_Modification
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_Remeet_Mao
-
-	}
-	focus = {
-		id = PRC_GPCR_Opinion
-		icon = GFX_goal_unknown
-		cost = 7.00
-		prerequisite = {
-			focus = PRC_Eternal_Revolutioneer
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Eternal_Revolutioneer
-
-	}
-	focus = {
-		id = PRC_Nation_Defender
-		icon = GFX_goal_unknown
-		cost = 2.00
-		prerequisite = {
-			focus = PRC_Remeet_Mao
-		}
-		x = 1
-		y = 1
-		relative_position_id = PRC_Remeet_Mao
-
-	}
-	focus = {
-		id = PRC_Tradition_Attitude
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_People_Culture
-		}
-		x = 2
-		y = 1
-		relative_position_id = PRC_People_Culture
-
-	}
-	focus = {
-		id = PRC_Dont_Mimic
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_Tradition_Attitude
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Tradition_Attitude
-
-	}
-	focus = {
-		id = PRC_Active_Agency
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Interaction_with_Representative
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Interaction_with_Representative
-
-	}
-	focus = {
-		id = PRC_Front_to_Front
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Analysis_Video
-		}
-		prerequisite = {
-			focus = PRC_Active_Agency
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Analysis_Video
-
-	}
-	focus = {
-		id = PRC_Citizen_Education
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_Active_Agency
-		}
-		prerequisite = {
-			focus = PRC_Analysis_Video
-		}
-		x = 0
-		y = 1
-		relative_position_id = PRC_Active_Agency
-
-	}
-	focus = {
-		id = PRC_Election_Program
-		icon = GFX_goal_unknown
-		cost = 5.00
-		prerequisite = {
-			focus = PRC_Scale_of_Base_Election
-		}
-		prerequisite = {
-			focus = PRC_Citizen_Education
-		}
-		x = 0
-		y = 2
-		relative_position_id = PRC_Scale_of_Base_Election
-
-	}
-	focus = {
-		id = PRC_Refreshed_Democracy
-		icon = GFX_goal_unknown
-		cost = 4.00
-		prerequisite = {
-			focus = PRC_Election_Program
-		}
-		prerequisite = {
-			focus = PRC_New_Faces
-		}
-		prerequisite = {
-			focus = PRC_Front_to_Front
-		}
-		x = 0
-		y = 6
-		relative_position_id = PRC_People_Democracy
+		relative_position_id = PRC_Authority_of_Constitution
 
 	}
 }

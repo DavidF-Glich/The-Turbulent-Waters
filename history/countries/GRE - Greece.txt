@@ -166,7 +166,6 @@
 		GRE_recovering_economy_idea
 		GRE_anti_austerity_idea
 		GRE_political_disillusionment_idea
-		GRE_flexible_foreign_policy_idea
 		EU_euro_idea
 		#Ministers
 		GRE_mitsotakis

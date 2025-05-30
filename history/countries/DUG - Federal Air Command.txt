@@ -1,6 +1,6 @@
 ﻿	capital = 1097
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 10
@@ -85,7 +85,6 @@
 	}
 
 	add_ideas = {
-		USA_aerial_dictatorship_idea
 		low_poverty
 	}
 

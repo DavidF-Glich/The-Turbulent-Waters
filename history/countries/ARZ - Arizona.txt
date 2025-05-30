@@ -1,6 +1,6 @@
 ﻿	capital = 983
 
-#	oob = ""
+#
 
 	set_research_slots = 5
 	set_convoys = 60
@@ -125,8 +125,7 @@
 
 	add_ideas = {
 		ARZ_unregulated_border
-		USA_low_morale_idea
-		high_interest_rates
+			high_interest_rates
 		higher_safety
 		high_female_service
 		high_supervision

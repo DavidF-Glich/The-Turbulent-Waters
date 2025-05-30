@@ -1,7 +1,6 @@
 ﻿	capital = 1036
 
-	#oob = ""
-
+	#
 	recruit_character = BBC_kevin_macdonald
 	#recruit_character = BBC_OUTLAWED_char
 

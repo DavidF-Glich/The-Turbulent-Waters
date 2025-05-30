@@ -326,8 +326,8 @@ scripted_gui = {
 				entry_container = TFR_major_competitors_total_score
 			}
 			incident_score_change = {
-				array = global.TTW_the_incidents1
-				index = OTL_cold_war_incidents_i
+				array = root.TTW_Cold_War_GUI_Victory_Entry_Display
+				index = TTW_Cold_War_GUI_Victories_i
 				entry_container = TTW_the_incident_score
 			}
 		}

@@ -76,7 +76,7 @@
 					large="gfx/leaders/CHA/Mahamat_deby_mil.png"
 				}
 				army = {
-					large="gfx/Leaders/CHA/Mahamat_deby_mil.png" 
+					large="gfx/leaders/CHA/Mahamat_deby_mil.png" 
 				}
 			}
 			country_leader={
@@ -350,7 +350,7 @@
 		ETH_birhanu_julla_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ETH/generals/Birhanu_Julla.dds" 
+					large = "gfx/leaders/ETH/generals/Birhanu_Julla.dds" 
 				}
 			}
 
@@ -361,7 +361,7 @@
 		ETH_samora_yunis_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ETH/generals/Samora_Yunis.dds" 
+					large = "gfx/leaders/ETH/generals/Samora_Yunis.dds" 
 				}
 			}
 
@@ -437,7 +437,7 @@
 		GNB_Umaro_Sissoco_Embalo = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Umaro_Sissoco_Embalo.png"
+					large = "gfx/leaders/NGA/Umaro_Sissoco_Embalo.png"
 				}
 			}
 			country_leader={
@@ -449,7 +449,7 @@
 		GNB_Domingos_Simoes_Pereira = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Domingos_Simoes_Pereira.png"
+					large = "gfx/leaders/NGA/Domingos_Simoes_Pereira.png"
 				}
 			}
 			country_leader={
@@ -555,7 +555,7 @@
 		MZB_graca_chongo_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/MZB/generals/Graca_Chongo.dds" 
+					large = "gfx/leaders/MZB/generals/Graca_Chongo.dds" 
 				}
 			}
 
@@ -605,7 +605,7 @@
 		RCO_guy_kolelas_char = {
 			portraits = {
 				civilian = {
-					large= "gfx/Leaders/RCG/Guy_Brice_Parfait_Kolelas.png" 
+					large= "gfx/leaders/RCG/Guy_Brice_Parfait_Kolelas.png" 
 				}
 			}
 			country_leader={
@@ -631,7 +631,7 @@
 		SHB_ahmad_umar_char = {
 			portraits = {
 				civilian = {
-					large="gfx/Leaders/SHB/Ahmad Umar.png" 
+					large="gfx/leaders/SHB/Ahmad Umar.png" 
 				}
 			}
 			country_leader={
@@ -695,7 +695,7 @@
 		TDF_debretsion_gebremichael_char = {
 			portraits = {
 				civilian = {
-					large="gfx/Leaders/TDF/Debretsion Gebremichael.png"
+					large="gfx/leaders/TDF/Debretsion Gebremichael.png"
 				}
 			}
 			country_leader={
@@ -1012,7 +1012,7 @@
 		ZIM_constantine_chiwenga_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ETH/generals/Constantine_Chiwenga.dds" 
+					large = "gfx/leaders/ETH/generals/Constantine_Chiwenga.dds" 
 				}
 			}
 

@@ -1,7 +1,5 @@
 ﻿capital = 691
 
-oob = "TRI_2000"
-
 set_research_slots = 2
 set_convoys = 20
 set_stability = 0.45

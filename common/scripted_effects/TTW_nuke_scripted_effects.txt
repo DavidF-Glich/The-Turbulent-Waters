@@ -189,6 +189,60 @@ tension_setup = {
 	}
 
 }
+tension_outcome_setup = {
+	#2014 Crimea crisis
+	SOV = {
+		set_temp_variable = { Victory_ID = 1 }
+		set_temp_variable = { Victory_Outcome = 4 }
+		set_temp_variable = { Victory_Points = 50 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	USA = {
+		set_temp_variable = { Victory_ID = 1 }
+		set_temp_variable = { Victory_Outcome = 2 }
+		set_temp_variable = { Victory_Points = -50 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	#Syria civil war
+	SOV = {
+		set_temp_variable = { Victory_ID = 2 }
+		set_temp_variable = { Victory_Outcome = 3 }
+		set_temp_variable = { Victory_Points = 0 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	USA = {
+		set_temp_variable = { Victory_ID = 2 }
+		set_temp_variable = { Victory_Outcome = 3 }
+		set_temp_variable = { Victory_Points = 0 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	#2016 Taiwan Crisis
+	PRC = {
+		set_temp_variable = { Victory_ID = 3 }
+		set_temp_variable = { Victory_Outcome = 4 }
+		set_temp_variable = { Victory_Points = 50 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	USA = {
+		set_temp_variable = { Victory_ID = 3 }
+		set_temp_variable = { Victory_Outcome = 2 }
+		set_temp_variable = { Victory_Points = -50 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	#2018 Trade War Ongoing...
+	PRC = {
+		set_temp_variable = { Victory_ID = 4 }
+		set_temp_variable = { Victory_Outcome = 0 }
+		set_temp_variable = { Victory_Points = 0 }
+		Cold_War_GUI_AddVictory = yes
+	}
+	USA = {
+		set_temp_variable = { Victory_ID = 4 }
+		set_temp_variable = { Victory_Outcome = 0 }
+		set_temp_variable = { Victory_Points = 0 }
+		Cold_War_GUI_AddVictory = yes
+	}
+}
 generate_nuke_rank_array = {
 	get_sorted_scored_countries = {
 		scorer = nuke_scorer

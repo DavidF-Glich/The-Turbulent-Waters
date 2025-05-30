@@ -2,7 +2,7 @@
 		SEN_Macky_Sall_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SEN/Macky Sall.png"
+					large = "gfx/leaders/SEN/Macky Sall.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		SEN_Cheikh_Wade_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SEN/Cheikh Wade.png"
+					large = "gfx/leaders/SEN/Cheikh Wade.png"
 				}
 			}
 			country_leader = {
@@ -37,7 +37,7 @@
 		SEN_Bassirou_Diomaye_Faye = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Bassirou_Diomaye_Faye.png"
+					large = "gfx/leaders/NGA/Bassirou_Diomaye_Faye.png"
 				}
 			}
 			country_leader={

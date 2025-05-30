@@ -35,33 +35,5 @@ SOV_Historical_plan = {
 
 	ai_national_focuses = {
 		#785天引爆俄乌战争
-		SOV_New_Century	#28
-		SOV_Prevent_Spread #14
-		SOV_Talk_with_Ministers #28
-		SOV_Establish_Tourist_System #35
-		SOV_Remote_Life #14
-		SOV_Sputnik_Vaccine #21
-		SOV_Economic_Stability #21
-		SOV_Sustain_Building #28
-		SOV_Hospital_Budgets #35
-		SOV_Protect_Core_Corps #28
-		SOV_Prevent_Ideological_Influence #28
-		SOV_Lavrov #70
-		SOV_Secure_Chinese_Partner #28
-		SOV_Power_of_Friend #21
-		SOV_Medicine_Distribution #21
-		SOV_Focus_on_Infrastructure #35
-		SOV_Prevent_Right_Wing #28
-		SOV_Love_for_USSR #21
-		SOV_Strategy_for_Timber #21
-		SOV_Secure_Belo_Russo_Tie #70
-		SOV_Secure_CSTO_Partner #28
-		SOV_Love_for_Empire #21
-		SOV_Ukrainian_Strategy #35
-		SOV_Another_Coup #28
-		SOV_Trusted_Intelligence #28
-		SOV_Secure_Airport #28
-		SOV_The_Two_Republics #14
-		SOV_SMO #7
 	}
 }

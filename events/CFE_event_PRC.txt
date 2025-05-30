@@ -16,11 +16,11 @@ country_event = {
 		}
 	}	
     immediate = {
-     hidden_effect = {
+		hidden_effect = {
             country_event = { 
-             id = china.1504 days = 45         
-            }
-     }
+    	         id = china.1504 days = 45         
+		    }
+     	}
     }
    option = {
 		name = china.1500.a

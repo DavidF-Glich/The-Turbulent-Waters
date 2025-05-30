@@ -15,7 +15,7 @@
 		FIN_alexander_stubb_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FIN/FIN_Alexander_Stubb.png"
+					large = "gfx/leaders/FIN/FIN_Alexander_Stubb.png"
 				}
 			}
 			country_leader={
@@ -28,7 +28,7 @@
 		FIN_pekka_haavisto_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FIN/FIN_Pekka_Haavisto.png"
+					large = "gfx/leaders/FIN/FIN_Pekka_Haavisto.png"
 				}
 			}
 			country_leader={
@@ -41,7 +41,7 @@
 		FIN_ossi_tiihonen_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FIN/FIN_Ossi_Tiihonen.png"
+					large = "gfx/leaders/FIN/FIN_Ossi_Tiihonen.png"
 				}
 			}
 			country_leader={
@@ -54,7 +54,7 @@
 		FIN_ano_turtiainen_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FIN/FIN_Ano_Turtiainen.png"
+					large = "gfx/leaders/FIN/FIN_Ano_Turtiainen.png"
 				}
 			}
 			country_leader={
@@ -67,7 +67,7 @@
 		FIN_liisa_taskinen_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/FIN/FIN_liisa_taskinen.png"
+					large = "gfx/leaders/FIN/FIN_liisa_taskinen.png"
 				}
 			}
 			country_leader={

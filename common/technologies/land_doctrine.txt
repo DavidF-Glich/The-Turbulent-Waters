@@ -347,10 +347,6 @@ technologies = {
 			max_organisation = 3
 		}
 		path = {
-			leads_to_tech = night_operations
-			research_cost_coeff = 1
-		}
-		path = {
 			leads_to_tech = raiding_parties
 			research_cost_coeff = 1
 		}
@@ -786,9 +782,6 @@ technologies = {
 	mechanized_ = {
 		xp_research_type = army
 		xp_unlock_cost = 100
-		xor = {
-			motorized_offensive
-		}
 		equipment_capture_factor = 0.12
 		mbt_company = {
 			max_organisation = 2
@@ -1793,7 +1786,10 @@ technologies = {
 			soft_attack = 0.1
 		}
 		enable_tactic = tactic_elastic_defense
-		leads_to_tech = elastic_defence
+		path = {
+			leads_to_tech = elastic_defence
+			research_cost_coeff = 1
+		}
 		path = {
 			leads_to_tech = deep_operations
 			research_cost_coeff = 1

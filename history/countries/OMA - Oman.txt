@@ -123,9 +123,3 @@
 		social_democrat = 15
 	}
 
-	OMA = {
-		country_event = {
-			id = arab.2 
-			days = 9
-		}
-	}

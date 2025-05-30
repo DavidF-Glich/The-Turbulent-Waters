@@ -33,7 +33,7 @@ characters={
 	YEM_rashad_muhammad_alimi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/YEM/YEM_Rashad_Muhammad_al-Alimi.png"
+				large = "gfx/leaders/YEM/YEM_Rashad_Muhammad_al-Alimi.png"
 			}
 		}
 		country_leader={
@@ -46,10 +46,10 @@ characters={
 	HOU_abdul_malik_houthi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/HOU/Abdul-Malik al-Houthi.png" 
+				large = "gfx/leaders/HOU/Abdul-Malik al-Houthi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/HOU/Abdul-Malik al-Houthi.png" 
+				large = "gfx/leaders/HOU/Abdul-Malik al-Houthi.png" 
 			}
 		}
 
@@ -68,10 +68,10 @@ characters={
 	AAS_aidarus_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/AAS/Aidarus_al-Zoubaidi.png" 
+				large = "gfx/leaders/AAS/Aidarus_al-Zoubaidi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/AAS/Aidarus_al-Zoubaidi.png" 
+				large = "gfx/leaders/AAS/Aidarus_al-Zoubaidi.png" 
 			}
 		}
 

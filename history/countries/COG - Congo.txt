@@ -102,7 +102,6 @@
 		low_military
 		lower_society
 		lower_poverty
-		low_army
 		low_training
 		lower_female_service
 		higher_immigration

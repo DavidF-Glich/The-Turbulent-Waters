@@ -2,7 +2,70 @@
 defined_text = {
 	name = Get_fopo_tab_name
 
-
+	text = {
+		trigger = {
+			check_variable = {
+				selected_conflict_id = token:Russo_Ukrainian_conflict
+			}
+		}
+		localization_key = Russo_Ukrainian_War_justice_league
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				selected_conflict_id = token:TaiwanCrisis
+			}
+		}
+		localization_key = Taiwan_Crisis2022_name
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				selected_conflict_id = token:israeli_palestine_conflict
+			}
+		}
+		localization_key = israeli_palestine_conflict
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				selected_conflict_id = token:arunachal_war
+			}
+		}
+		localization_key = arunachal_war
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:TBC_CR
+			}
+		}
+		localization_key = TBC_CR
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:RDA_VOV
+			}
+		}
+		localization_key = RDA_VOV
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:unity_front
+			}
+		}
+		localization_key = fopo_unity
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:hell_diver
+			}
+		}
+		localization_key = hell_diver
+	}
 	### NORMAL TITLES ###
 	text = {
 		localization_key = "[?conflict_id.GetTokenLocalizedKey]"
@@ -77,6 +140,71 @@ defined_text = {
 defined_text = {
 	name = Get_fopo_icon
 	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:Russo_Ukrainian_conflict
+			}
+		}
+		localization_key = "GFX_fopo_Russo_Ukrainian_conflict"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:TaiwanCrisis
+			}
+		}
+		localization_key = "GFX_fopo_Taiwan"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:israeli_palestine_conflict
+			}
+		}
+		localization_key = "GFX_fopo_israel_palestine"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:arunachal_war
+			}
+		}
+		localization_key = "GFX_fopo_arunachal_war"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:TBC_CR
+			}
+		}
+		localization_key = "GFX_fopo_TBC_CR"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:RDA_VOV
+			}
+		}
+		localization_key = "GFX_fopo_RDA_VOV"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:unity_front
+			}
+		}
+		localization_key = "GFX_fopo_unity"
+	}
+	text = {
+		trigger = {
+			check_variable = {
+				conflict_id = token:hell_diver
+			}
+		}
+		localization_key = "GFX_fopo_hell_diver"
+	}
+
+	text = {
 		localization_key = "GFX_fopo_blank_icon"
 	}
 }
@@ -115,3 +243,44 @@ defined_text = {
 	}
 }
 
+defined_text = {
+	name = TTW_GlobalConflicts_GUI_Titlereal
+	text = {
+		trigger = {
+			tag = SWE
+			has_focus_tree = SWE_Paradox_TFX
+		}
+		localization_key = TTW_GlobalConflicts_GUI_Title_2
+	}
+	text = {
+		localization_key = TTW_GlobalConflicts_GUI_Title_1
+	}
+}
+defined_text = {
+	name = TTW_fopo_into_icon_tt_delayedreal
+	text = {
+		trigger = {
+			tag = SWE
+			has_focus_tree = SWE_Paradox_TFX
+		}
+		localization_key = TTW_fopo_into_icon_tt_delayed_2
+	}
+	text = {
+		localization_key = TTW_fopo_into_icon_tt_delayed_1
+	}
+
+}
+defined_text = {
+	name = TTW_fopo_into_icon_ttreal
+	text = {
+		trigger = {
+			tag = SWE
+			has_focus_tree = SWE_Paradox_TFX
+		}
+		localization_key = TTW_fopo_into_icon_tt_2
+	}
+	text = {
+		localization_key = TTW_fopo_into_icon_tt_1
+	}
+
+}

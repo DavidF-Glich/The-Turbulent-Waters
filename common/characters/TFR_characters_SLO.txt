@@ -2,7 +2,7 @@
 		SLO_zuzana_caputova_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SLO/Zuzana Čaputová.png"
+					large = "gfx/leaders/SLO/Zuzana Čaputová.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		SLO_marian_kotleba_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SLO/Marian_Kotleba.png"
+					large = "gfx/leaders/SLO/Marian_Kotleba.png"
 				}
 			}
 			country_leader={
@@ -28,7 +28,7 @@
 		SLO_jozef_hrdlicka_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SLO/Jozef Hrdlička.png"
+					large = "gfx/leaders/SLO/Jozef Hrdlička.png"
 				}
 			}
 			country_leader={
@@ -47,7 +47,7 @@
 		SLO_robert_fico_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SLO/Robert Fico.png"
+					large = "gfx/leaders/SLO/Robert Fico.png"
 				}
 			}
 			country_leader={

@@ -81,7 +81,12 @@ scripted_gui = {
 					set_temp_variable = { fopo_button_tab_frame = 1 }
 				}
 			}
-
+			conflict_status_visible = {
+				TTW_fopo_should_display_homefront = no
+			}
+			conflict_title_visible = {
+				TTW_fopo_should_display_homefront = no
+			}
 			info_tab_visible = {
 				TTW_fopo_show_info_tab = yes
 			}

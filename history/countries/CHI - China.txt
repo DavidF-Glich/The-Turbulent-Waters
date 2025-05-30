@@ -201,10 +201,6 @@
 	}
 	
 	#Events
-	country_event = {
-		id = taiwan.1
-		days = 1
-	}
 
 	set_politics = {
 		ruling_party = social_liberal

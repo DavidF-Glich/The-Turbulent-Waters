@@ -2,6 +2,7 @@
 	NDefines.NGame.END_DATE = "2050.1.1.1";
 	
 	NDefines.NDiplomacy.WARGOAL_JUSTIFY_TENSION_FROM_PRODUCTION = 20.0;
+	NDefines.NDiplomacy.VOLUNTEERS_TRANSFER_SPEED = 7; -- days to transfer a unit to another nation
 	NDefines.NDiplomacy.VOLUNTEERS_DIVISIONS_REQUIRED = 3; -- This many divisons are required for the country to be able to send volunteers.
 	
 
@@ -28,10 +29,10 @@
 	NDefines.NMilitary.HOURLY_ORG_MOVEMENT_IMPACT = -0.1 -- -0.2
 	NDefines.NMilitary.ZERO_ORG_MOVEMENT_MODIFIER = -0.2 -- -0.8
 	NDefines.NMilitary.INFRASTRUCTURE_MOVEMENT_SPEED_IMPACT = -0.03 -- -0.05
-	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 18 --24
+	NDefines.NMilitary.CORPS_COMMANDER_DIVISIONS_CAP = 24 --24
 	NDefines.NMilitary.FIELD_MARSHAL_DIVISIONS_CAP = 24 --24
 	NDefines.NMilitary.FIELD_MARSHAL_ARMIES_CAP = 5 --5
-	NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 1.0	-- 3.0, armies gets increased cap when they are garrisoned
+	NDefines.NMilitary.GARRISON_ORDER_ARMY_CAP_FACTOR = 3.0	-- 3.0, armies gets increased cap when they are garrisoned
 	NDefines.NMilitary.BASE_DIVISION_SUPPORT_SLOT_COST = 5 -- 10
 	NDefines.NMilitary.ATTRITION_DAMAGE_ORG = 0.04 -- 0.1
 	NDefines.NMilitary.ATTRITION_EQUIPMENT_LOSS_CHANCE = 0.05 -- 0.1
@@ -597,7 +598,7 @@
 
 	NDefines.NIndustrialOrganisation.ASSIGN_DESIGN_TEAM_PP_COST_PER_DAY = 0.05 -- 0.1
 
-	NDefines.NBuildings.MAX_SHARED_SLOTS = 72 -- 25
+	NDefines.NBuildings.MAX_SHARED_SLOTS = 25 -- 25
 	NDefines.NBuildings.INFRASTRUCTURE_RESOURCE_BONUS = 0.2 -- 0.2
 	NDefines.NBuildings.SUPPLY_ROUTE_RESOURCE_BONUS = 0.1   -- 0.2
 

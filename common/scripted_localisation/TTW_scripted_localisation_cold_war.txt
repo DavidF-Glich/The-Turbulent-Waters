@@ -392,34 +392,34 @@ defined_text = {
 defined_text = {
 	name = Cold_War_GUI_GetVictoryName
 	text = {
-		localization_key = "TTW_Cold_War_Victory_ID_[?global.TTW_Cold_War_GUI_Victory_Entry_Display^TTW_Cold_War_GUI_Victories_i]"
+		localization_key = "TTW_Cold_War_Victory_ID_[?ROOT.TTW_Cold_War_GUI_Victory_Entry_Display^TTW_Cold_War_GUI_Victories_i]"
 	}
 }
 
 defined_text = {
 	name = Cold_War_GUI_GetVictoryOutcome
 	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 0 } }
+		trigger = { check_variable = { root.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 0 } }
 		localization_key = "TTW_Cold_War_Victory_Outcome_Ongoing"
 	}
 	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 1 } }
+		trigger = { check_variable = { root.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 1 } }
 		localization_key = "TTW_Cold_War_Victory_Outcome_Total_Defeat"
 	}
 	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 2 } }
+		trigger = { check_variable = { root.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 2 } }
 		localization_key = "TTW_Cold_War_Victory_Outcome_Defeat"
 	}
 	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 3 } }
+		trigger = { check_variable = { root.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 3 } }
 		localization_key = "TTW_Cold_War_Victory_Outcome_Stalemate"
 	}
 	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 4 } }
+		trigger = { check_variable = { root.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 4 } }
 		localization_key = "TTW_Cold_War_Victory_Outcome_Victory"
 	}
 	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 5 } }
+		trigger = { check_variable = { root.TTW_Cold_War_GUI_Victory_Outcome_Display^TTW_Cold_War_GUI_Victories_i = 5 } }
 		localization_key = "TTW_Cold_War_Victory_Outcome_Total_Victory"
 	}
 	text = {
@@ -446,7 +446,7 @@ defined_text = {
 		localization_key = "TTW_global_ITA"
 	}
 	text = {
-		trigger = { event_target:global = { tag = RUS } }
+		trigger = { event_target:global = { tag = SOV } }
 		localization_key = "TTW_global_RUS"
 	}
 	text = {
@@ -454,18 +454,8 @@ defined_text = {
 		localization_key = "TTW_global_CHI"
 	}
 	text = {
-		trigger = { event_target:global = { tag = IND } }
+		trigger = { event_target:global = { tag = RAJ } }
 		localization_key = "TTW_global_IND"
 	}
 }
 
-defined_text = {
-	name = Cold_War_GUI_Superpower_Amount
-	text = {
-		trigger = { check_variable = { global.TTW_Cold_War_GUI_Tension_Incidents_Involved_Superpower_1^TTW_Cold_War_GUI_Tension_Incidents_i = ALL } }
-		localization_key = "CWGUIIncidents_All"
-	}
-	text = {
-		localization_key = "CWGUIIncidents"
-	}
-}

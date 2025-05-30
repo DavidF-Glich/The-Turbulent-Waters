@@ -30,7 +30,7 @@
  nuclear_regional_deployment: "单一投送平台"
  nuclear_regional_deployment_tt: "§3单一投送平台核能力§!指一个国家仅具备§Y一种方式§!来投送核武器，常见的有陆基导弹（最常见，例如中程弹道导弹）、空投核弹（如战斗机挂载）或者非常初步的海基平台（如水面舰艇发射或简易潜艇）。"
  Other_country_nuke_maintainence_text: "维护状态：[?THIS.nuke_maintenence_ratio|.0%]"
- Other_country_nuke_score_text: "核分数：[?THIS.nuke_score]"
+ Other_country_nuke_score_text: "外交分数：[?THIS.diplo_score1]"
  ROOT_Thermo_Plan_location_text: "[ROOT.nuclear_target_location]"
  nuclear_target_location_EU: "莫斯科\n圣彼得堡\n伏尔加格勒\n明斯克\n……"
  nuclear_target_location_USA: "莫斯科\n北京\n圣彼得堡\n上海\n沃罗涅日\n……"

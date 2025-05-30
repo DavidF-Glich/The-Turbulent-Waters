@@ -580,6 +580,10 @@ spriteTypes = {
 		name = "GFX_portrait_PRC_God_Niu_leader"
 		texturefile = "gfx/leaders/PRC/PRC_god_niu.png"
 	}
+	spriteType = {
+		name = "GFX_portrait_PRC_aguang"
+		textureFile = "gfx/leaders/PRC/easteregg/PRC_aguang.png"
+	}
 	#SEN
 	spriteType = {
 		name = "GFX_portrait_Bassirou_Diomaye_Faye_2"
@@ -1133,27 +1137,27 @@ spriteTypes = {
 	
 	spriteType = {
 		name = "GFX_portrait_NSM_paul_mullet"
-		texturefile = "gfx/Leaders/NSM/NSM_paul_mullet.png"
+		texturefile = "gfx/leaders/NSM/NSM_paul_mullet.png"
 	}
 	
 	spriteType = {
 		name = "GFX_portrait_NSM_andrew_anglin"
-		texturefile = "gfx/Leaders/NSM/NSM_Andrew_Anglin.png"
+		texturefile = "gfx/leaders/NSM/NSM_Andrew_Anglin.png"
 	}
 	
 	spriteType = {
 		name = "GFX_portrait_NSM_stephen_mason"
-		texturefile = "gfx/Leaders/NSM/NSM_stephen_mason.png"
+		texturefile = "gfx/leaders/NSM/NSM_stephen_mason.png"
 	}
 	
 	spriteType = {
 		name = "GFX_portrait_NSM_kenny_eastridge"
-		texturefile = "gfx/Leaders/NSM/NSM_kenny_eastridge.png"
+		texturefile = "gfx/leaders/NSM/NSM_kenny_eastridge.png"
 	}
 	
 	##PLD
 	spriteType = {
 		name = "GFX_portrait_POL_duda_sad"
-		texturefile = "gfx/Leaders/POL/Duda_depressed.dds"
+		texturefile = "gfx/leaders/POL/Duda_depressed.dds"
 	}
 }

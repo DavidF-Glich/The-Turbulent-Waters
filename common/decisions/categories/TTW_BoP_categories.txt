@@ -47,3 +47,17 @@ FRA_BoP_category = {
 	icon = GFX_USA_decision_category_state_dept
 	allowed = { original_tag = FRA }
 }
+
+UKR_BoP_category = {
+	icon = GFX_decision_category_BRA_itamaraty
+	allowed = { original_tag = UKR }
+}
+RAJ_BoP_category = {
+	icon = GFX_decision_category_BRA_itamaraty
+	allowed = { original_tag = RAJ }
+}
+
+SWE_BoP_category = {
+	icon = GFX_decision_category_BRA_itamaraty
+	allowed = { original_tag = SWE }
+}

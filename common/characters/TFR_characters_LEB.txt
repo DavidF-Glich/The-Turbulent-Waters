@@ -13,7 +13,7 @@ characters={
 	HEZ_hassan_nashrallah_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/HEZ/Hassan Nasrallah.png" 
+				large = "gfx/leaders/HEZ/Hassan Nasrallah.png" 
 			}
 		}
 		country_leader = {

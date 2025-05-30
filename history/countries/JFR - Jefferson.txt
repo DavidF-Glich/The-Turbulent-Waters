@@ -1,7 +1,6 @@
 ﻿	capital = 1081
 
-	#oob = ""
-
+	#
 #	recruit_character = JFR_independence_council
 	set_country_flag = shithole_country
 	

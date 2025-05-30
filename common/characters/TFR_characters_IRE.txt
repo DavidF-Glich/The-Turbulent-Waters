@@ -58,7 +58,7 @@
 		IRE_Rossa_Mulcahy_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/IRE/IRE_Rossa_Mulcahy.png" 
+					large = "gfx/leaders/IRE/IRE_Rossa_Mulcahy.png" 
 				}
 			}
 
@@ -76,7 +76,7 @@
 		IRE_Sean_Clancy_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/IRE/IRE_Sean_Clancy.png" 
+					large = "gfx/leaders/IRE/IRE_Sean_Clancy.png" 
 				}
 			}
 
@@ -88,7 +88,7 @@
 		NIR_William_V_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/William_V_autocrat.png" 
+					large = "gfx/leaders/ENG/William_V_autocrat.png" 
 				}
 			}
 		}
@@ -97,7 +97,7 @@
 		IRE_Maureen_O_Brien_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/IRE/IRE_Maureen_O_Brien.png" 
+					large = "gfx/leaders/IRE/IRE_Maureen_O_Brien.png" 
 				}
 			}
 

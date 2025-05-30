@@ -2,7 +2,7 @@ characters = {
 	AST_Ben_Roberts_Smith_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/AST/AST_Ben_Roberts_Smith.png"
+				large = "gfx/leaders/AST/AST_Ben_Roberts_Smith.png"
 			}
 		}
 		corps_commander = {
@@ -45,7 +45,7 @@ characters = {
 	AST_david_hurley_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/AST/David_Hurley.png"
+				large = "gfx/leaders/AST/David_Hurley.png"
 			}
 		}
 		country_leader = {
@@ -80,14 +80,14 @@ characters = {
 	AST_Jim_Saleam_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/AST/AST_Jim_Saleam.png"
+				large = "gfx/leaders/AST/AST_Jim_Saleam.png"
 			}
 		}
 	}
 	AST_Margaret_Beazley_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/AST/AST_Margaret_Beazley.png"
+				large = "gfx/leaders/AST/AST_Margaret_Beazley.png"
 			}
 		}
 	}

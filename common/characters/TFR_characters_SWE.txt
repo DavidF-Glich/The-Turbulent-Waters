@@ -2,7 +2,7 @@
 		SWE_charles_xvi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SWE/Charles_XVI.png"
+					large = "gfx/leaders/SWE/Charles_XVI.png"
 				}
 			}
 			country_leader={
@@ -64,7 +64,7 @@
 		SWE_one_punch_man_char = {
 			portraits = {
 				civilian = {
-					large = "gfx/Leaders/SWE/SWE_OPM.png"
+					large = "gfx/leaders/SWE/SWE_OPM.png"
 				}
 			}
 			country_leader = {

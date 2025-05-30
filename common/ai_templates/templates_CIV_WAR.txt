@@ -4,9 +4,7 @@ armor_NSM = {
 		NSM
 	}
 	
-	roles = {
-		armor
-	}
+	role = armor
 	
 	upgrade_prio = {
 		factor = 20
@@ -24,7 +22,7 @@ armor_NSM = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 5
 		}
 		
@@ -51,9 +49,7 @@ infantry_NSM = {
 		NSM
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -71,7 +67,7 @@ infantry_NSM = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 5
 		}
 	
@@ -97,9 +93,7 @@ militia_LOS = {
 		LOS
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -121,7 +115,7 @@ militia_LOS = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 40
 		}
 	
@@ -145,9 +139,7 @@ militia_TRG = {
 		BSK
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	blocked_for = {
 		SOV
@@ -185,7 +177,7 @@ militia_TRG = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 40
 		}
 
@@ -211,7 +203,7 @@ militia_TRG = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 20
 		}
 	
@@ -241,9 +233,7 @@ militia_ATW_BLA_ATH = {
 		DAG
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	blocked_for = {
 		SOV
@@ -280,7 +270,7 @@ militia_ATW_BLA_ATH = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 40
 		}
 
@@ -306,7 +296,7 @@ militia_ATW_BLA_ATH = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 20
 		}
 
@@ -330,9 +320,7 @@ armored_PTF = {
 		PTF
 	}
 	
-	roles = {
-		armor
-	}
+	role = armor
 	
 	#match_to_count = 0.5
 	
@@ -377,9 +365,7 @@ infantry_CAC = {
 		CAC
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -401,7 +387,7 @@ infantry_CAC = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 20
 		}
 	
@@ -427,9 +413,7 @@ infantry_PTF = {
 		PTF
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -451,7 +435,7 @@ infantry_PTF = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 40
 		}
 
@@ -478,9 +462,7 @@ armor_ATW_BRN = {
 		BRN
 	}
 	
-	roles = {
-		armor
-	}
+	role = armor
 	
 	upgrade_prio = {
 		factor = 20
@@ -498,7 +480,7 @@ armor_ATW_BRN = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 25
 		}
 	
@@ -521,9 +503,7 @@ infantry_BRN = {
 		BRN
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -545,7 +525,7 @@ infantry_BRN = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 20
 		}
 
@@ -569,9 +549,7 @@ infantry_GMA = {
 		GMA
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20
@@ -593,7 +571,7 @@ infantry_GMA = {
 			}
 		}
 		
-		production_prio = {
+		upgrade_prio = {
 			factor = 20
 		}
 

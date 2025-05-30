@@ -210,10 +210,26 @@
 			}
 		}
 		
+		ENG_borris_johnson_char = {
+			portraits = {
+				civilian = {
+					large = "gfx/leaders/ENG/ENG_boris_johnson_por.png"
+				}
+			}
+			country_leader = {
+				ideology = constitutionalist
+				expire = "1.1.1.1"
+				id=-1
+				traits = {
+					hos_divisive_populist
+				}
+			}
+		}
+
 		ENG_nicholas_carter_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Nicholas Carter.dds" 
+					large = "gfx/leaders/ENG/generals/Nicholas Carter.dds" 
 				}
 			}
 
@@ -225,7 +241,7 @@
 		ENG_colin_weir_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Colin Weir.dds" 
+					large = "gfx/leaders/ENG/generals/Colin Weir.dds" 
 				}
 			}
 
@@ -237,7 +253,7 @@
 		ENG_paul_nanson_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Paul Nanson.dds" 
+					large = "gfx/leaders/ENG/generals/Paul Nanson.dds" 
 				}
 			}
 
@@ -249,7 +265,7 @@
 		ENG_ralph_wooddisse_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Raplh Wooddisse.dds" 
+					large = "gfx/leaders/ENG/generals/Raplh Wooddisse.dds" 
 				}
 			}
 
@@ -261,7 +277,7 @@
 		ENG_patrick_sanders_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Patrick Sanders.dds" 
+					large = "gfx/leaders/ENG/generals/Patrick Sanders.dds" 
 				}
 			}
 
@@ -273,7 +289,7 @@
 		ENG_charlie_herbert_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Charlie Herbert.dds" 
+					large = "gfx/leaders/ENG/generals/Charlie Herbert.dds" 
 				}
 			}
 
@@ -285,7 +301,7 @@
 		ENG_robert_bruce_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/ENG/generals/Robert Bruce.dds" 
+					large = "gfx/leaders/ENG/generals/Robert Bruce.dds" 
 				}
 			}
 

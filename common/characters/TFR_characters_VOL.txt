@@ -2,7 +2,7 @@
 		VOL_roch_marc_christian_kabore_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/VOL_roch_marc_christian_kabore.png"
+					large = "gfx/leaders/VOL/VOL_roch_marc_christian_kabore.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		VOL_Zephirin_Diabre_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Zephirin Diabre.png"
+					large = "gfx/leaders/VOL/Zephirin Diabre.png"
 				}
 			}
 			country_leader={
@@ -28,7 +28,7 @@
 		VOL_Paul_Henri_Sandaogo_Damiba_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Paul-Henri Sandaogo Damiba.png"
+					large = "gfx/leaders/VOL/Paul-Henri Sandaogo Damiba.png"
 				}
 			}
 			field_marshal={
@@ -49,7 +49,7 @@
 		VOL_David_Kabre_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/David Kabre.png"
+					large = "gfx/leaders/VOL/David Kabre.png"
 				}
 			}
 			field_marshal={
@@ -65,7 +65,7 @@
 		VOL_Moussa_Diallo_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Moussa Diallo.png"
+					large = "gfx/leaders/VOL/Moussa Diallo.png"
 				}
 			}
 			field_marshal={
@@ -81,7 +81,7 @@
 		VOL_Theophile_Nikiema_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Theophile Nikiema.png"
+					large = "gfx/leaders/VOL/Theophile Nikiema.png"
 				}
 			}
 			field_marshal={
@@ -97,7 +97,7 @@
 		VOL_Yves_Didier_Bamouni_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Yves Didier Bamouni.png"
+					large = "gfx/leaders/VOL/Yves Didier Bamouni.png"
 				}
 			}
 			field_marshal={
@@ -113,7 +113,7 @@
 		VOL_Ibrahim_Traore_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Ibrahim Traore.png"
+					large = "gfx/leaders/VOL/Ibrahim Traore.png"
 				}
 			}
 			corps_commander={
@@ -129,7 +129,7 @@
 		VOL_Arnaud_Sie_Sib_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Arnaud Sie Sib.png"
+					large = "gfx/leaders/VOL/Arnaud Sie Sib.png"
 				}
 			}
 			corps_commander={
@@ -145,7 +145,7 @@
 		VOL_Azaria_Sorgho_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Azaria Sorgho.png"
+					large = "gfx/leaders/VOL/Azaria Sorgho.png"
 				}
 			}
 			corps_commander={
@@ -161,7 +161,7 @@
 		VOL_Bapan_Niangao_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Bapan Niangao.png"
+					large = "gfx/leaders/VOL/Bapan Niangao.png"
 				}
 			}
 			corps_commander={
@@ -177,7 +177,7 @@
 		VOL_Barthelemy_Simpore_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Barthelemy Simpore.png"
+					large = "gfx/leaders/VOL/Barthelemy Simpore.png"
 				}
 			}
 			corps_commander={
@@ -193,7 +193,7 @@
 		VOL_Boukare_Zoungrana_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Boukare Zoungrana.png"
+					large = "gfx/leaders/VOL/Boukare Zoungrana.png"
 				}
 			}
 			corps_commander={
@@ -209,7 +209,7 @@
 		VOL_Celestin_Simpore_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Celestin Simpore.png"
+					large = "gfx/leaders/VOL/Celestin Simpore.png"
 				}
 			}
 			corps_commander={
@@ -225,7 +225,7 @@
 		VOL_Cheick_Hamza_Ouattara_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Cheick Hamza Ouattara.png"
+					large = "gfx/leaders/VOL/Cheick Hamza Ouattara.png"
 				}
 			}
 			corps_commander={
@@ -241,7 +241,7 @@
 		VOL_Evrard_Somda_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Evrard Somda.png"
+					large = "gfx/leaders/VOL/Evrard Somda.png"
 				}
 			}
 			corps_commander={
@@ -257,7 +257,7 @@
 		VOL_Issa_Yaguibou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Issa Yaguibou.png"
+					large = "gfx/leaders/VOL/Issa Yaguibou.png"
 				}
 			}
 			corps_commander={
@@ -273,7 +273,7 @@
 		VOL_Kassoum_Coulibaly_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Kassoum Coulibaly.png"
+					large = "gfx/leaders/VOL/Kassoum Coulibaly.png"
 				}
 			}
 			corps_commander={
@@ -289,7 +289,7 @@
 		VOL_Kiswendsida_Wilfried_Taoko_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Kiswendsida Wilfried Taoko.png"
+					large = "gfx/leaders/VOL/Kiswendsida Wilfried Taoko.png"
 				}
 			}
 			corps_commander={
@@ -305,7 +305,7 @@
 		VOL_Kouagri_Natama_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Kouagri Natama.png"
+					large = "gfx/leaders/VOL/Kouagri Natama.png"
 				}
 			}
 			corps_commander={
@@ -321,7 +321,7 @@
 		VOL_Koudbi_Florian_Theophile_Tago_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Koudbi Florian Theophile Tago.png"
+					large = "gfx/leaders/VOL/Koudbi Florian Theophile Tago.png"
 				}
 			}
 			corps_commander={
@@ -337,7 +337,7 @@
 		VOL_Rakiswende_Leonid_Diabri_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Rakiswende Leonid Diabri.png"
+					large = "gfx/leaders/VOL/Rakiswende Leonid Diabri.png"
 				}
 			}
 			corps_commander={
@@ -353,7 +353,7 @@
 		VOL_Sidsore_Abdoul_Kader_Ouedraogo_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/VOL/Sidsore Abdoul Kader Ouedraogo.png"
+					large = "gfx/leaders/VOL/Sidsore Abdoul Kader Ouedraogo.png"
 				}
 			}
 			corps_commander={

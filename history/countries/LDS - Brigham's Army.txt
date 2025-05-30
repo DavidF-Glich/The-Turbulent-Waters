@@ -1,20 +1,12 @@
 ﻿	capital = 1101
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 10
 	set_stability = 0.5
 
 	set_country_flag = shithole_country
-	country_event = {
-		id = LDS.1
-		days = 20
-	}
-	country_event = { 
-		id = LDS.2
-		days = 10
-	}
 	set_technology = {
 		## Infantry ##
 		

@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Dobrovol'cheskaya Brigada Kokusa"
-	override_model = SOV_t72_ossetia_entity
 	
 	regiments = {
 		modern_armor = { x = 0 y = 0 }

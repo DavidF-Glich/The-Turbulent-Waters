@@ -1,7 +1,6 @@
 ﻿capital = 100 #Iceland
 
-#oob = ""
-
+#
 set_research_slots = 3
 set_convoys = 30
 set_stability = 0.55
@@ -15,14 +14,6 @@ recruit_character = ICE_guthni_thorlacius_johannesson_char
 recruit_character = ICE_Simon_Lindberg_char
 recruit_character = ICE_Gudmundur_Ingi_Gudbrandsson_char
 recruit_character = ICE_Ingthor_Vatnarsson_char
-country_event = {
-	id = Iceland.1
-	days = 40
-}
-country_event = { #election
-	id = Iceland.9
-	days = 633
-}
 set_technology = {
 	## Infantry ##
 	infantry_weapons1 = 1

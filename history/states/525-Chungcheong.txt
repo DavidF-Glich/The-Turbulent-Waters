@@ -12,10 +12,10 @@ state={
 		buildings = {
 			infrastructure = 5
 			air_base = 4
-			industrial_complex = 8
+			industrial_complex = 5
 			arms_factory = 2
-			dockyard = 1
 			anti_air_building = 4
+			power_plant = 3
 		}
 		add_claim_by = PRK
 		add_core_of = KOR

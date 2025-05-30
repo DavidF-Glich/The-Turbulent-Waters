@@ -1,6 +1,6 @@
 ﻿	capital = 387
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 10
@@ -88,7 +88,6 @@
 
 	add_ideas = {
 		#National Ideas
-		USA_american_neutrality_idea
 		#Laws
 		high_interest_rates
 		higher_safety

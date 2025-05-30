@@ -103,8 +103,7 @@
 	}
 
 	add_ideas = {
-		USA_low_morale_idea
-		high_interest_rates
+			high_interest_rates
 		higher_safety
 		high_female_service
 		high_supervision

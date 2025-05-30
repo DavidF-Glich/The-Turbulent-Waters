@@ -2,7 +2,7 @@
 		COG_Felix_Tshisekedi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/COG_felix_tshisekedi.png"
+					large = "gfx/leaders/COG/COG_felix_tshisekedi.png"
 				}
 			}
 			country_leader={
@@ -23,7 +23,7 @@
 		COG_Bertrand_Bisimwa_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Bertrand Bisimwa.png"
+					large = "gfx/leaders/COG/Bertrand Bisimwa.png"
 				}
 			}
 			country_leader={
@@ -44,7 +44,7 @@
 		COG_Sultani_Makenga_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Sultani Makenga.png"
+					large = "gfx/leaders/COG/Sultani Makenga.png"
 				}
 			}
 			field_marshal={
@@ -59,7 +59,7 @@
 		BDK_Ne_Muanda_Nsemi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Ne Muanda Nsemi.png"
+					large = "gfx/leaders/COG/Ne Muanda Nsemi.png"
 				}
 			}
 			country_leader={
@@ -80,7 +80,7 @@
 		DRO_Martin_Fayulu_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Martin Fayulu.png"
+					large = "gfx/leaders/COG/Martin Fayulu.png"
 				}
 			}
 			country_leader={
@@ -101,7 +101,7 @@
 		MMK_Gedeon_Kyungu_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Gedeon Kyungu.png"
+					large = "gfx/leaders/COG/Gedeon Kyungu.png"
 				}
 			}
 			country_leader={
@@ -122,7 +122,7 @@
 		NDC_Shimiray_Mwissa_Guidon_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Shimiray Mwissa Guidon.png"
+					large = "gfx/leaders/COG/Shimiray Mwissa Guidon.png"
 				}
 			}
 			country_leader={
@@ -143,7 +143,7 @@
 		NDC_Musa_Baluku_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/COG/Musa Baluku.png"
+					large = "gfx/leaders/COG/Musa Baluku.png"
 				}
 			}
 			

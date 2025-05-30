@@ -102,9 +102,6 @@ set_popularities = {
 }
 
 add_ideas = {
-	FRA_Crown_Jewel_of_Mediterranean_trade
-	FRA_Treaty_Port
-	FRA_Treaty_of_Malta_member_idea
 	lowest_conscription
 	mass_consumerism
 	higher_trade

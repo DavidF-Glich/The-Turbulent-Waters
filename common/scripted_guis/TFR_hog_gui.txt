@@ -7,14 +7,11 @@ scripted_gui = {
 		
 		visible = {
 			has_country_flag = head_of_gov_ui_enabled
-			NOT ={
+			NOT = {
 				OR = {
 					has_government = totalitarian_socialist
 					has_government = national_socialist
 					is_puppet = yes
-					has_completed_focus = GER_facit_omnia_voluntas
-					has_completed_focus = GER_a_new_october
-					has_completed_focus = GER_convene_the_european_parliament
 				}
 			}
 		}

@@ -2,7 +2,7 @@
 		MOR_Mohammed_VI = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MOR/Mohammed_VI.png"
+					large = "gfx/leaders/MOR/Mohammed_VI.png"
 				}
 			}
 			country_leader={
@@ -21,7 +21,7 @@
 		MOR_Nabil_Benabdall = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MOR/Nabil_Benabdall.png"
+					large = "gfx/leaders/MOR/Nabil_Benabdall.png"
 				}
 			}
 			country_leader={
@@ -124,7 +124,7 @@
 		MOR_Nasser_Zefzafi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MOR/Nasser_Zefzafi.png"
+					large = "gfx/leaders/MOR/Nasser_Zefzafi.png"
 				}
 			}
 			country_leader={
@@ -137,7 +137,7 @@
 		WES_Bouchraya_Hammoudi_Bayoun = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MOR/Bouchraya_Hammoudi_Bayoun.png"
+					large = "gfx/leaders/MOR/Bouchraya_Hammoudi_Bayoun.png"
 				}
 			}
 			country_leader = {
@@ -162,7 +162,7 @@
 		WES_Brahim_Ghali = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MOR/Brahim Ghali.png"
+					large = "gfx/leaders/MOR/Brahim Ghali.png"
 				}
 			}
 			field_marshal = {

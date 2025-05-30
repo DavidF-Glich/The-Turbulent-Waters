@@ -2,10 +2,10 @@ characters={
 	CAR_Gleb = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CAR/CAR_Gleb.png" 
+				large = "gfx/leaders/CAR/CAR_Gleb.png" 
 			}
 			army = {
-				large = "gfx/Leaders/CAR/CAR_Gleb.png" 
+				large = "gfx/leaders/CAR/CAR_Gleb.png" 
 			}
 		}
 		country_leader={
@@ -26,10 +26,10 @@ characters={
 	CAR_Bokassa_II = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CAR/CAR_Bokassa_II.png" 
+				large = "gfx/leaders/CAR/CAR_Bokassa_II.png" 
 			}
 			army = {
-				large = "gfx/Leaders/CAR/CAR_Bokassa_II.png" 
+				large = "gfx/leaders/CAR/CAR_Bokassa_II.png" 
 			}
 		}
 		country_leader={
@@ -41,7 +41,7 @@ characters={
 	WAG_Konstantin_Pikalov = {
 		portraits={
 			civilian={
-				large = "gfx/Leaders/CAR/WAG_Konstantin_Pikalov.png"
+				large = "gfx/leaders/CAR/WAG_Konstantin_Pikalov.png"
 			}
 		}
 		field_marshal={
@@ -58,10 +58,10 @@ characters={
 	CAR_faustin_archange_touadera = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CAR/CAR_faustin_archange_touadera.png" 
+				large = "gfx/leaders/CAR/CAR_faustin_archange_touadera.png" 
 			}
 			army = {
-				large = "gfx/Leaders/CAR/CAR_faustin_archange_touadera.png" 
+				large = "gfx/leaders/CAR/CAR_faustin_archange_touadera.png" 
 			}
 		}
 		country_leader={
@@ -74,7 +74,7 @@ characters={
 	CAR_marcel_mombeka_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/CAR/generals/Marcel_Mombeka.dds" 
+				large = "gfx/leaders/CAR/generals/Marcel_Mombeka.dds" 
 			}
 		}
 
@@ -86,10 +86,10 @@ characters={
 	CPC_Francois_Bozize = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CAR/CPC_Francois_Bozize.png" 
+				large = "gfx/leaders/CAR/CPC_Francois_Bozize.png" 
 			}
 			army = {
-				large = "gfx/Leaders/CAR/CPC_Francois_Bozize.png" 
+				large = "gfx/leaders/CAR/CPC_Francois_Bozize.png" 
 			}
 		}
 		country_leader={
@@ -102,10 +102,10 @@ characters={
 	CPC_Joseph_Kony = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/CAR/CPC_Joseph_Kony.png" 
+				large = "gfx/leaders/CAR/CPC_Joseph_Kony.png" 
 			}
 			army = {
-				large = "gfx/Leaders/CAR/CPC_Joseph_Kony.png" 
+				large = "gfx/leaders/CAR/CPC_Joseph_Kony.png" 
 			}
 		}
 		country_leader={

@@ -2,10 +2,10 @@ characters={
 	PER_ali_hosseini_khamenei_char = {
 		portraits = {
 			civilian={
-				large = "gfx/Leaders/PER/PER_ali_hosseini_khamenei.png"
+				large = "gfx/leaders/PER/PER_ali_hosseini_khamenei.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_ali_hosseini_khamenei.png"
+				large = "gfx/leaders/PER/PER_ali_hosseini_khamenei.png"
 			}
 		}
 		country_leader = {
@@ -25,7 +25,7 @@ characters={
 	PER_qasem_soleimani_char = {
 		portraits = {
 			army = {
-				large = "gfx/Leaders/PER/PER_qasem_soleimani.png"
+				large = "gfx/leaders/PER/PER_qasem_soleimani.png"
 			}
 		}
 		field_marshal = {
@@ -48,10 +48,10 @@ characters={
 	PER_mohammad_ali_jafari_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/PER_mohammad_ali_jafari.png"
+				large = "gfx/leaders/PER/PER_mohammad_ali_jafari.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_mohammad_ali_jafari.png"
+				large = "gfx/leaders/PER/PER_mohammad_ali_jafari.png"
 			}
 		}
 		field_marshal = {
@@ -71,10 +71,10 @@ characters={
 	PER_Yahya_Rahim_Safavi_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+				large = "gfx/leaders/PER/PER_Yahya_Rahim_Safavi.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+				large = "gfx/leaders/PER/PER_Yahya_Rahim_Safavi.png"
 			}
 		}
 		field_marshal = {
@@ -92,10 +92,10 @@ characters={
 	PER_Gholamhossein_Gheybparvar_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+				large = "gfx/leaders/PER/PER_Gholamhossein_Gheybparvar.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+				large = "gfx/leaders/PER/PER_Gholamhossein_Gheybparvar.png"
 			}
 		}
 		corps_commander={
@@ -110,10 +110,10 @@ characters={
 	PER_Esmail_Qaani_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+				large = "gfx/leaders/PER/PER_Esmail_Qaani.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+				large = "gfx/leaders/PER/PER_Esmail_Qaani.png"
 			}
 		}
 		corps_commander={
@@ -128,10 +128,10 @@ characters={
 	IRB_Yahya_Rahim_Safavi_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+				large = "gfx/leaders/PER/PER_Yahya_Rahim_Safavi.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Yahya_Rahim_Safavi.png"
+				large = "gfx/leaders/PER/PER_Yahya_Rahim_Safavi.png"
 			}
 		}
 		country_leader = {
@@ -154,10 +154,10 @@ characters={
 	PER_mohammad_bagheri_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/Mohammad_Bagheri.png"
+				large = "gfx/leaders/PER/Mohammad_Bagheri.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/Mohammad_Bagheri.png"
+				large = "gfx/leaders/PER/Mohammad_Bagheri.png"
 			}
 		}
 		corps_commander={
@@ -172,10 +172,10 @@ characters={
 	PER_hossein_salami_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/Hossein_Salami.dds"
+				large = "gfx/leaders/PER/Hossein_Salami.dds"
 			}
 			army = {
-				large = "gfx/Leaders/PER/Hossein_Salami.dds"
+				large = "gfx/leaders/PER/Hossein_Salami.dds"
 			}
 		}
 		corps_commander={
@@ -190,10 +190,10 @@ characters={
 	PER_amir_ali_hajizadeh_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/Amir_Ali_Hajizadeh.dds"
+				large = "gfx/leaders/PER/Amir_Ali_Hajizadeh.dds"
 			}
 			army = {
-				large = "gfx/Leaders/PER/Amir_Ali_Hajizadeh.dds"
+				large = "gfx/leaders/PER/Amir_Ali_Hajizadeh.dds"
 			}
 		}
 		corps_commander={
@@ -208,10 +208,10 @@ characters={
 	PER_abdolrahim_mousavi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/Abdolrahim_Mousavi.dds"
+				large = "gfx/leaders/PER/Abdolrahim_Mousavi.dds"
 			}
 			army = {
-				large = "gfx/Leaders/PER/Abdolrahim_Mousavi.dds"
+				large = "gfx/leaders/PER/Abdolrahim_Mousavi.dds"
 			}
 		}
 		corps_commander={
@@ -226,10 +226,10 @@ characters={
 	PER_kioumars_heydari_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/Kioumars_Heydari.dds"
+				large = "gfx/leaders/PER/Kioumars_Heydari.dds"
 			}
 			army = {
-				large = "gfx/Leaders/PER/Kioumars_Heydari.dds"
+				large = "gfx/leaders/PER/Kioumars_Heydari.dds"
 			}
 		}
 		corps_commander={
@@ -244,7 +244,7 @@ characters={
 	HRZ_tawhid_ibrahim_begli_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/HRZ_tawhid_ibrahim_begli.png"
+				large = "gfx/leaders/PER/HRZ_tawhid_ibrahim_begli.png"
 			}
 		}
 		country_leader = {
@@ -255,10 +255,10 @@ characters={
 	AFG_Gholamhossein_Gheybparvar_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+				large = "gfx/leaders/PER/PER_Gholamhossein_Gheybparvar.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Gholamhossein_Gheybparvar.png"
+				large = "gfx/leaders/PER/PER_Gholamhossein_Gheybparvar.png"
 			}
 		}
 		country_leader = {
@@ -276,10 +276,10 @@ characters={
 	IRQ_Esmail_Qaani_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+				large = "gfx/leaders/PER/PER_Esmail_Qaani.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+				large = "gfx/leaders/PER/PER_Esmail_Qaani.png"
 			}
 		}
 		country_leader = {
@@ -297,10 +297,10 @@ characters={
 	AFA_mohammad_bagheri_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PER/Mohammad Bagheri.png"
+				large = "gfx/leaders/PER/Mohammad Bagheri.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/Mohammad Bagheri.png"
+				large = "gfx/leaders/PER/Mohammad Bagheri.png"
 			}
 		}
 		country_leader = {
@@ -319,10 +319,10 @@ characters={
 	VLA_esmail_qaani_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+				large = "gfx/leaders/PER/PER_Esmail_Qaani.png"
 			}
 			army = {
-				large = "gfx/Leaders/PER/PER_Esmail_Qaani.png"
+				large = "gfx/leaders/PER/PER_Esmail_Qaani.png"
 			}
 		}
 		country_leader = {
@@ -340,10 +340,10 @@ characters={
 	ZET_ali_fadavi_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ZET/Ali Fadavi.dds"
+				large = "gfx/leaders/ZET/Ali Fadavi.dds"
 			}
 			army = {
-				large = "gfx/Leaders/ZET/Ali Fadavi.dds"
+				large = "gfx/leaders/ZET/Ali Fadavi.dds"
 			}
 		}
 		country_leader = {
@@ -354,7 +354,7 @@ characters={
 	AOI_sabuhi_mammadov_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/AOI/Sabuhi Mammadov.dds"
+				large = "gfx/leaders/AOI/Sabuhi Mammadov.dds"
 			}
 		}
 		country_leader = {
@@ -365,7 +365,7 @@ characters={
 	QEM_habib_chaab_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/QEM/Habib Chaab.dds"
+				large = "gfx/leaders/QEM/Habib Chaab.dds"
 			}
 		}
 		country_leader = {
@@ -376,7 +376,7 @@ characters={
 	RIF_lur_provisional_council_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/RIF/Lurs.dds"
+				large = "gfx/leaders/RIF/Lurs.dds"
 			}
 		}
 		country_leader = {

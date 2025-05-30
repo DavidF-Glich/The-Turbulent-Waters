@@ -100,11 +100,6 @@
 		FRA_CFA_Franc
 	}
 	
-	add_timed_idea = {
-		idea = SOV_wagner_mercs
-		days = 100
-	}
-
 	recruit_character = CAR_faustin_archange_touadera
 	recruit_character = CAR_Gleb
 	recruit_character = WAG_Konstantin_Pikalov

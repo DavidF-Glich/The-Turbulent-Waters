@@ -1129,21 +1129,6 @@ set_variable = {
 	value = -0.2
 }
 
-add_dynamic_modifier = {
-	modifier = ATW_doctrine_of_destruction_dynamic
-}
-
-add_dynamic_modifier = {
-	modifier = ATW_industrial_anarchy_dynamic
-}
-
-add_dynamic_modifier = {
-	modifier = ATW_heralds_of_the_apocalypse_dynamic
-}
-
-add_dynamic_modifier = {
-	modifier = ATW_desperation_dynamic
-}
 
 add_ideas = {
 	#National Spirits
@@ -1153,10 +1138,6 @@ add_ideas = {
 	#ATW_doctrine_of_destruction_idea
 	#Ministers
 	#ATW_brandon_russell_hog
-	ATW_craig_lang_for
-	ATW_liam_j_collins_eco
-	ATW_john_cameron_denton_sec
-	ATW_jordan_duncan_int
 	#Laws
 	lower_immigration
 	lower_education

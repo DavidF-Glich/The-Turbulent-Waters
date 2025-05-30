@@ -135,38 +135,3 @@ defined_text = {
 	}
 }
 
-defined_text = {
-	name = SOV_LRD_activity_scripted_loc
-
-	text = {
-		trigger = {
-			SOV = {
-				OR = {
-					has_idea = SOV_league_of_russian_democracy_0_idea
-					has_idea = SOV_league_of_russian_democracy_idea
-					has_idea = SOV_league_of_russian_democracy_2_idea
-					has_idea = SOV_league_of_russian_democracy_3_idea
-					has_idea = SOV_league_of_russian_democracy_4_idea
-				}
-			}
-		}
-		localization_key = "SOV_lrd_active_dynamic"
-	}
-	text = {
-		trigger = {
-			SOV = {
-				NOT = { 
-					OR = {
-						has_idea = SOV_league_of_russian_democracy_0_idea
-						has_idea = SOV_league_of_russian_democracy_idea
-						has_idea = SOV_league_of_russian_democracy_2_idea
-						has_idea = SOV_league_of_russian_democracy_3_idea
-						has_idea = SOV_league_of_russian_democracy_4_idea
-					}
-				}
-			}
-		}
-		localization_key = "SOV_lrd_eliminated_dynamic"
-	}
-}	
-

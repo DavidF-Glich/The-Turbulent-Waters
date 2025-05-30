@@ -10,7 +10,9 @@ state={
 		add_claim_by = PRK
 		buildings = {
 			infrastructure = 3
+			dockyard = 2
 			industrial_complex = 1
+			nuclear_reactor = 1
 		}
 		victory_points = {
 			14235 5

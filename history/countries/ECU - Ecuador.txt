@@ -115,9 +115,3 @@
 		authoritarian_democrat = 4
 	}
 
-	ECU = {
-		country_event = {
-			id = latin_america.10
-			days = 466
-		}
-	}

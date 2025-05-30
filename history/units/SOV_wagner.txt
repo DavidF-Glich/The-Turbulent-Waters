@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Chastnaya Voyennaya Kompaniya"
-	override_model = SOV_wagner_entity
 
 	regiments = {
 		motorized = { x = 0 y = 0 }

@@ -2081,7 +2081,7 @@ characters = {
 	SOV_valery_rashkin = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/Valery Rashkin.png"
+				large = "gfx/leaders/SOV/Valery Rashkin.png"
 			}
 		}
 		country_leader = {
@@ -2095,7 +2095,7 @@ characters = {
 	SOV_yuri_afonin = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/Yuri_Afonin.png"
+				large = "gfx/leaders/SOV/Yuri_Afonin.png"
 			}
 		}
 		country_leader = {
@@ -2109,7 +2109,7 @@ characters = {
 	SOV_leonid_zyuganov = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/Leonid_Zyuganov.png"
+				large = "gfx/leaders/SOV/Leonid_Zyuganov.png"
 			}
 		}
 		country_leader = {
@@ -2122,7 +2122,7 @@ characters = {
 	SOV_dmitry_patrushev = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/SOV_Dmitry_Patrushev.png"
+				large = "gfx/leaders/SOV/SOV_Dmitry_Patrushev.png"
 			}
 		}
 		country_leader = {
@@ -2135,7 +2135,7 @@ characters = {
 	SOV_alexander_belousov = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/Alexander_Belousov.png"
+				large = "gfx/leaders/SOV/Alexander_Belousov.png"
 			}
 		}
 		country_leader = {
@@ -2149,7 +2149,7 @@ characters = {
 	SOV_denis_parfenov = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/Denis_Parfenov.png"
+				large = "gfx/leaders/SOV/Denis_Parfenov.png"
 			}
 		}
 		country_leader = {
@@ -2177,7 +2177,7 @@ characters = {
 	SOV_sergey_levchenko = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/Sergey_Levchenko.png"
+				large = "gfx/leaders/SOV/Sergey_Levchenko.png"
 			}
 		}
 		country_leader = {
@@ -2190,7 +2190,7 @@ characters = {
 	SOV_pavel_grudinin = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/SOV/SOV_pavel_grudinin.png"
+				large = "gfx/leaders/SOV/SOV_pavel_grudinin.png"
 			}
 		}
 		country_leader = {
@@ -2508,7 +2508,7 @@ characters = {
 				large = "gfx/leaders/TRA/Vadim_Krasnoselsky_1.png"
 			}
 			army = {
-				large = "gfx/Leaders/TRA/Vadim_Krasnoselsky_2.png"
+				large = "gfx/leaders/TRA/Vadim_Krasnoselsky_2.png"
 			}
 		}
 		country_leader = {
@@ -2955,7 +2955,7 @@ characters = {
 	KIS_gorshok_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/Post_Russia/Gorshok.png"
+				large = "gfx/leaders/Post_Russia/Gorshok.png"
 			}
 		}
 		country_leader = {
@@ -2967,7 +2967,7 @@ characters = {
 	KRA_vladislav_zhmilevsky_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/Post_Russia/Vladislav_Zhmilevsky.png"
+				large = "gfx/leaders/Post_Russia/Vladislav_Zhmilevsky.png"
 			}
 		}
 		country_leader = {
@@ -2979,7 +2979,7 @@ characters = {
 	SEY_aysen_nikolayev_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/Post_Russia/Aysen_Nikolayev.png"
+				large = "gfx/leaders/Post_Russia/Aysen_Nikolayev.png"
 			}
 		}
 		country_leader = {

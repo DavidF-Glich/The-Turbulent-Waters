@@ -2,7 +2,7 @@
 		MLI_Ibrahim_Keita_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Ibrahim Boubacar Keita.png"
+					large = "gfx/leaders/MLI/Ibrahim Boubacar Keita.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		MLI_Bah_Ndaw_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Bah_Ndaw.png"
+					large = "gfx/leaders/MLI/Bah_Ndaw.png"
 				}
 			}
 			field_marshal={
@@ -30,35 +30,35 @@
 		MLI_Moctar_Ouane_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Moctar_Ouane.png"
+					large = "gfx/leaders/MLI/Moctar_Ouane.png"
 				}
 			}
 		}
 		MLI_Maiga_Chogel_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Maiga Chogel.png"
+					large = "gfx/leaders/MLI/Maiga Chogel.png"
 				}
 			}
 		}
 		MLI_Bourema_Kansaye_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Bourema Kansaye.png"
+					large = "gfx/leaders/MLI/Bourema Kansaye.png"
 				}
 			}
 		}
 		MLI_Boubou_Cisse_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Boubou_Cisse.png"
+					large = "gfx/leaders/MLI/Boubou_Cisse.png"
 				}
 			}
 		}
 		MLI_Assimi_Goita_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Assimi_Goita.png"
+					large = "gfx/leaders/MLI/Assimi_Goita.png"
 				}
 			}
 			field_marshal={
@@ -73,7 +73,7 @@
 		MLI_Ismael_Wague_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Ismael_Wague.png"
+					large = "gfx/leaders/MLI/Ismael_Wague.png"
 				}
 			}
 			corps_commander={
@@ -89,7 +89,7 @@
 		MLI_Cheick_Fanta_Mady_Dembele_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Cheick Fanta Mady Dembele.png"
+					large = "gfx/leaders/MLI/Cheick Fanta Mady Dembele.png"
 				}
 			}
 			corps_commander={
@@ -105,7 +105,7 @@
 		MLI_Malick_Diaw_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Malick Diaw.png"
+					large = "gfx/leaders/MLI/Malick Diaw.png"
 				}
 			}
 			field_marshal={
@@ -121,7 +121,7 @@
 		MLI_Sadio_Camara_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Sadio Camara.png"
+					large = "gfx/leaders/MLI/Sadio Camara.png"
 				}
 			}
 			corps_commander={
@@ -137,7 +137,7 @@
 		MLI_Brehima_Diabate_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Brehima Diabate.png"
+					large = "gfx/leaders/MLI/Brehima Diabate.png"
 				}
 			}
 			field_marshal={
@@ -153,7 +153,7 @@
 		MLI_El_Hadj_Gamou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/El Hadj Gamou.png"
+					large = "gfx/leaders/MLI/El Hadj Gamou.png"
 				}
 			}
 			field_marshal={
@@ -169,7 +169,7 @@
 		MLI_Famouke_Camara_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Famouke Camara.png"
+					large = "gfx/leaders/MLI/Famouke Camara.png"
 				}
 			}
 			corps_commander={
@@ -185,7 +185,7 @@
 		MLI_Felix_Diallo_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Felix Diallo.png"
+					large = "gfx/leaders/MLI/Felix Diallo.png"
 				}
 			}
 			corps_commander={
@@ -201,7 +201,7 @@
 		MLI_Harouna_Samake_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Harouna Samake.png"
+					large = "gfx/leaders/MLI/Harouna Samake.png"
 				}
 			}
 			corps_commander={
@@ -217,7 +217,7 @@
 		MLI_Issa_Bagayoko_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Issa Bagayoko.png"
+					large = "gfx/leaders/MLI/Issa Bagayoko.png"
 				}
 			}
 			corps_commander = {
@@ -233,7 +233,7 @@
 		MLI_Keba_Sangare_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Keba Sangare.png"
+					large = "gfx/leaders/MLI/Keba Sangare.png"
 				}
 			}
 			corps_commander={
@@ -249,7 +249,7 @@
 		MLI_Lassina_Togola_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Lassina Togola.png"
+					large = "gfx/leaders/MLI/Lassina Togola.png"
 				}
 			}
 			corps_commander={
@@ -265,7 +265,7 @@
 		MLI_Mamadou_Massaoule_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Mamadou Massaoule.png"
+					large = "gfx/leaders/MLI/Mamadou Massaoule.png"
 				}
 			}
 			corps_commander={
@@ -281,7 +281,7 @@
 		MLI_Moustaph_Sangare_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Moustaph Sangare.png"
+					large = "gfx/leaders/MLI/Moustaph Sangare.png"
 				}
 			}
 			corps_commander={
@@ -300,7 +300,7 @@
 		MLI_Abass_Dembele_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Abass Dembele.png"
+					large = "gfx/leaders/MLI/Abass Dembele.png"
 				}
 			}
 			corps_commander={
@@ -318,7 +318,7 @@
 		MLI_Abdoulaye_Coulibaly_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Abdoulaye Coulibaly.png"
+					large = "gfx/leaders/MLI/Abdoulaye Coulibaly.png"
 				}
 			}
 			field_marshal={
@@ -334,7 +334,7 @@
 		MLI_Abdoulaye_Maiga_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Abdoulaye Maiga.png"
+					large = "gfx/leaders/MLI/Abdoulaye Maiga.png"
 				}
 			}
 			corps_commander={
@@ -350,7 +350,7 @@
 		MLI_Alou_Boi_Diarra_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Alou Boi Diarra.png"
+					large = "gfx/leaders/MLI/Alou Boi Diarra.png"
 				}
 			}
 			corps_commander={
@@ -366,7 +366,7 @@
 		MLI_Modibo_Kone_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Modibo Kone.png"
+					large = "gfx/leaders/MLI/Modibo Kone.png"
 				}
 			}
 			corps_commander={
@@ -384,7 +384,7 @@
 		MLI_Oumar_Diarra_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Oumar Diarra.png"
+					large = "gfx/leaders/MLI/Oumar Diarra.png"
 				}
 			}
 			corps_commander={
@@ -400,7 +400,7 @@
 		MLI_Tiebile_Drame_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Tiebile Drame.png"
+					large = "gfx/leaders/MLI/Tiebile Drame.png"
 				}
 			}
 			country_leader={
@@ -413,7 +413,7 @@
 		MLI_Tiemoko_Sangare_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLI/Tiemoko Sangare.png"
+					large = "gfx/leaders/MLI/Tiemoko Sangare.png"
 				}
 			}
 			country_leader={
@@ -426,7 +426,7 @@
 		MLT_Bilal_Ag_Acherif_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLT/Bilal Ag Acherif.png"
+					large = "gfx/leaders/MLT/Bilal Ag Acherif.png"
 				}
 			}
 			country_leader={
@@ -439,7 +439,7 @@
 		MLT_Hassan_Ag_Fagaga_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLT/Hassan Ag Fagaga.png"
+					large = "gfx/leaders/MLT/Hassan Ag Fagaga.png"
 				}
 			}
 			field_marshal={
@@ -454,7 +454,7 @@
 		MLT_Mohamed_Ag_Najem_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLT/Mohamed Ag Najem.png"
+					large = "gfx/leaders/MLT/Mohamed Ag Najem.png"
 				}
 			}
 			corps_commander={
@@ -470,7 +470,7 @@
 		MLT_Moussa_Ag_Acharatoumane_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/MLT/Moussa Ag Acharatoumane.png"
+					large = "gfx/leaders/MLT/Moussa Ag Acharatoumane.png"
 				}
 			}
 			corps_commander={

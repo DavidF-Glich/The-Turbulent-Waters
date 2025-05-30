@@ -1,6 +1,6 @@
 ﻿	capital = 924
 
-#	oob = ""
+#
 	
 	recruit_character = BRN_david_sanchez_char
 	recruit_character = BRN_juan_carlos_lee_char

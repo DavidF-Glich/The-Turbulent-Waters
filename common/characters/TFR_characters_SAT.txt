@@ -15,7 +15,7 @@ characters={
 	SAT_technate_council_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/2ACW/general6.png"
+				large="gfx/leaders/2ACW/general6.png"
 			}
 		}
 		country_leader={
@@ -49,7 +49,7 @@ characters={
 	SAT_John_Zack_Ortiz_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAT/John Zack Ortiz.png" 
+				large = "gfx/leaders/SAT/John Zack Ortiz.png" 
 			}
 		}
 
@@ -61,7 +61,7 @@ characters={
 	SAT_Jordan_Gabriel_Silverstein_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAT/Jordan Gabriel Silverstein.png" 
+				large = "gfx/leaders/SAT/Jordan Gabriel Silverstein.png" 
 			}
 		}
 
@@ -73,7 +73,7 @@ characters={
 	SAT_Nathan_Edward_Shelley_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAT/Nathan Edward Shelley.png" 
+				large = "gfx/leaders/SAT/Nathan Edward Shelley.png" 
 			}
 		}
 
@@ -85,7 +85,7 @@ characters={
 	SAT_Sean_Thomas_Kratovil_Lavelle_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/SAT/Sean Thomas Kratovil-Lavelle.png" 
+				large = "gfx/leaders/SAT/Sean Thomas Kratovil-Lavelle.png" 
 			}
 		}
 

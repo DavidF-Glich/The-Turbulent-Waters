@@ -2,7 +2,7 @@ characters = {
 	APA_caleb_maupin_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_caleb_maupin.png"
+				large = "gfx/leaders/APA/APA_caleb_maupin.png"
 			}
 		}
 		country_leader = {
@@ -30,7 +30,7 @@ characters = {
 	APA_mark_bray_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_mark_bray.png"
+				large = "gfx/leaders/APA/APA_mark_bray.png"
 			}
 		}
 		country_leader = {
@@ -43,7 +43,7 @@ characters = {
 	APA_anarchism_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/UKR/Collapsed Government.dds"
+				large = "gfx/leaders/UKR/Collapsed Government.dds"
 			}
 		}
 		country_leader = {
@@ -57,7 +57,7 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_julia_salazar.png"
+				large = "gfx/leaders/APA/APA_julia_salazar.png"
 			}
 		}
 		country_leader = {
@@ -70,7 +70,7 @@ characters = {
 	APA_howie_hawkins_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_howie_hawkins.png"
+				large = "gfx/leaders/APA/APA_howie_hawkins.png"
 			}
 		}
 		country_leader = {
@@ -119,7 +119,7 @@ characters = {
 		gender = female
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_gloria_la_riva.png"
+				large = "gfx/leaders/APA/APA_gloria_la_riva.png"
 			}
 		}
 		country_leader = {
@@ -132,10 +132,10 @@ characters = {
 	APA_jackson_hinkle_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_jackson_hinkle.png"
+				large = "gfx/leaders/APA/APA_jackson_hinkle.png"
 			}	
 			army = {
-				large = "gfx/Leaders/APA/generals/Jackson_Hinkle_general.png"
+				large = "gfx/leaders/APA/generals/Jackson_Hinkle_general.png"
 			}
 		}
 		country_leader = {

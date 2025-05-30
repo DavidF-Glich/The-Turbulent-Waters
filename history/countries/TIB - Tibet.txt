@@ -98,11 +98,6 @@
 		}
 	}
 
-	add_ideas = {
-		#Country Ideas
-		PRC_nationalist_insurgency
-    }
-
 	set_politics = {	
 		ruling_party = nationalist
 		last_election = "2016.3.20"

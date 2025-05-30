@@ -163,13 +163,6 @@
 		market_liberal = 17
 	}
 
-	FIN = {
-		country_event = {
-			id = FIN.1
-			days = 1502
-		}
-	}
-
 	### VARIANTS ###
 	# 2000 Start #
 	if = {

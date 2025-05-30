@@ -16,3 +16,30 @@ country_event = {
 		TFR_Country_Closing_Screen_Show = yes
 	}
 }
+
+country_event = {
+	id = easter.2
+	title = easter.2.t
+	desc = easter.2.d
+	is_triggered_only = yes
+	picture = GFX_PRC_Utilize_Political_Favours
+	option = {
+		name = easter.2.a
+		set_variable = {
+			shanghai_hd_var = 100
+		}
+		set_variable = {
+			brussel_hd_var = 100
+		}
+		set_variable = {
+			singapore_hd_var = 100
+		}
+		set_variable = {
+			new_york_hd_var = 100
+		}
+		set_temp_variable = {
+			conflict_id = token:hell_diver
+		}
+		TTW_add_fopo_conflict_tab = yes
+	}
+}

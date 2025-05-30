@@ -5,10 +5,6 @@
 	set_research_slots = 2
 	set_convoys = 120
 	set_stability = 0.55
-	country_event = {
-		id = africa.2
-		days = 1495
-	}
 
 	set_variable = { Russian_Influence = 0.00 }
 	set_variable = { Chinese_Influence = 0.25 }
@@ -109,7 +105,6 @@
 		create_equipment_variant = {
 			name = "MiG-21"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = heavy_mg_4x
 				fixed_auxiliary_weapon_slot_1 = light_mg_4x

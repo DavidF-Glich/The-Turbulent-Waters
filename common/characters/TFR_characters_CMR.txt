@@ -2,7 +2,7 @@
 		CMR_Paul_Biya_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/CMR/CMR_paul_biya.png"
+					large = "gfx/leaders/CMR/CMR_paul_biya.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		CMR_Samuel_Ikome_Sako_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/CMR/Samuel Ikome Sako.png"
+					large = "gfx/leaders/CMR/Samuel Ikome Sako.png"
 				}
 			}
 			country_leader={

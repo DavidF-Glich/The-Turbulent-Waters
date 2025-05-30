@@ -109,7 +109,7 @@
 		WLF_james_mitchell_char = {
 			portraits = {
 				civilian = {
-					large = "gfx/Leaders/2ACW/general2.png"
+					large = "gfx/leaders/2ACW/general2.png"
 				}
 			}
 			country_leader = {

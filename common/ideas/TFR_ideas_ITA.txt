@@ -170,7 +170,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				misc_expense = 0.04
-				income_growth_factor -0.025
+				income_growth_factor = -0.025
 				consumer_goods_factor = 0.1
 				production_speed_buildings_factor = -0.15
                 political_power_gain = -0.15

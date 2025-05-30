@@ -2,7 +2,7 @@
 
 	recruit_character = BND_Clifton_Roberts
 
-#	oob = ""
+#
 
 	set_research_slots = 3
 	set_convoys = 10

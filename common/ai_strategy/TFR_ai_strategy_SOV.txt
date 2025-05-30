@@ -6,6 +6,9 @@ SOV_boost_economy_strategy = {
 	enable = {
 		date < 2024.1.1
 	}
+	abort = {
+		has_war = yes
+	}
 	ai_strategy = {
 		type = building_target
 		id = industrial_complex
@@ -185,44 +188,6 @@ SOV_upgrade_tanks_god_damnit = {
 	}
 }
 
-#First NATO War
-SOV_defend_important_cities_strategy = {
-	abort_when_not_enabled = yes
-	allowed = {
-		original_tag = SOV
-	}
-	enable = {
-		OR = {
-			has_war_with = UKR
-			has_war_with = FRA
-			has_war_with = GER
-			has_war_with = ENG
-		}
-	}
-	ai_strategy = {
-		type = put_unit_buffers
-		ratio = 0.15
-		states = {
-			853
-			1396
-			217
-			196
-			219
-			1339
-			260
-		}
-		subtract_fronts_from_need = yes
-	}
-	ai_strategy = {
-		type = garrison
-		value = 100
-	}
-	ai_strategy = {
-		type = garrison_reinforcement_priority
-		value = 100
-	}
-}
-
 
 Justice_League_Fuck_Nato = {
 	allowed = {
@@ -251,22 +216,3 @@ Justice_League_Fuck_Nato = {
 		value = 50
 	}
 }
-#SOV_lancets_lancets_lancets = {
-#	allowed = {
-#		original_tag = SOV
-#	}
-#	enable = {
-#		always = yes
-#	}
-#	abort = {
-#		always = no
-#	}
-#	ai_strategy = {
-#		type = building_target
-#		id = rocket_site
-#		value = 1
-#	}
-#}
-
-### SECOND NATO WAR ###
-###GO GO GO###

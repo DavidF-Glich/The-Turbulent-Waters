@@ -126,9 +126,3 @@
 		social_liberal = 5
 	}
 
-	UAE = {
-		country_event = {
-			id = arab.3
-			days = 863
-		}
-	}

@@ -115,9 +115,3 @@
 		communist = 2
 	}
 
-	SUR = {
-		country_event = {
-			id = latin_america.9
-			days = 145
-		}
-	}

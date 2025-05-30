@@ -2,7 +2,7 @@
 		NGR_Mahamadou_Issoufou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Mahamadou_Issoufou.png"
+					large = "gfx/leaders/NGR/Mahamadou_Issoufou.png"
 				}
 			}
 			country_leader={
@@ -19,7 +19,7 @@
 		NGR_Mohamed_Bazoum_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Mohamed_Bazoum.png"
+					large = "gfx/leaders/NGR/Mohamed_Bazoum.png"
 				}
 			}
 			country_leader={
@@ -36,7 +36,7 @@
 		NGR_Abdourahamane_Tchiani_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Abdourahamane Tchiani.png"
+					large = "gfx/leaders/NGR/Abdourahamane Tchiani.png"
 				}
 			}
 			corps_commander={
@@ -52,7 +52,7 @@
 		NGR_Alkassoum_Indatou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Alkassoum Indatou.png"
+					large = "gfx/leaders/NGR/Alkassoum Indatou.png"
 				}
 			}
 			country_leader = {
@@ -74,7 +74,7 @@
 		NGR_Abdou_Sidikou_Issa_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Abdou Sidikou Issa.png"
+					large = "gfx/leaders/NGR/Abdou Sidikou Issa.png"
 				}
 			}
 			corps_commander={
@@ -90,7 +90,7 @@
 		NGR_Amadou_Ibro_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Amadou Ibro.png"
+					large = "gfx/leaders/NGR/Amadou Ibro.png"
 				}
 			}
 			corps_commander={
@@ -106,7 +106,7 @@
 		NGR_Chekou_Kore_Lawel_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Chekou Kore Lawel.png"
+					large = "gfx/leaders/NGR/Chekou Kore Lawel.png"
 				}
 			}
 			corps_commander={
@@ -122,7 +122,7 @@
 		NGR_Garba_Hakimi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Garba Hakimi.png"
+					large = "gfx/leaders/NGR/Garba Hakimi.png"
 				}
 			}
 			corps_commander={
@@ -138,7 +138,7 @@
 		NGR_Mahaman_Elhadj_Ousmane_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Mahaman Elhadj Ousmane.png"
+					large = "gfx/leaders/NGR/Mahaman Elhadj Ousmane.png"
 				}
 			}
 			corps_commander={
@@ -154,7 +154,7 @@
 		NGR_Maizama_Abdoulaye_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Maizama Abdoulaye.png"
+					large = "gfx/leaders/NGR/Maizama Abdoulaye.png"
 				}
 			}
 			corps_commander={
@@ -170,7 +170,7 @@
 		NGR_Mohamed_Toumba_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Mohamed Toumba.png"
+					large = "gfx/leaders/NGR/Mohamed Toumba.png"
 				}
 			}
 			corps_commander={
@@ -186,7 +186,7 @@
 		NGR_Moussa_Salaou_Barmou_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Moussa Salaou Barmou.png"
+					large = "gfx/leaders/NGR/Moussa Salaou Barmou.png"
 				}
 			}
 			corps_commander={
@@ -202,7 +202,7 @@
 		NGR_Oumarou_Namata_Gazama_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Oumarou Namata Gazama.png"
+					large = "gfx/leaders/NGR/Oumarou Namata Gazama.png"
 				}
 			}
 			corps_commander={
@@ -218,7 +218,7 @@
 		NGR_Salifou_Modi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Salifou Modi.png"
+					large = "gfx/leaders/NGR/Salifou Modi.png"
 				}
 			}
 			corps_commander={
@@ -234,7 +234,7 @@
 		NGR_Salifou_Wakasso_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Salifou Wakasso.png"
+					large = "gfx/leaders/NGR/Salifou Wakasso.png"
 				}
 			}
 			corps_commander={
@@ -250,7 +250,7 @@
 		NGR_Sidi_Ahmed_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGR/Sidi Ahmed.png"
+					large = "gfx/leaders/NGR/Sidi Ahmed.png"
 				}
 			}
 			corps_commander={

@@ -2,7 +2,7 @@ characters={
 	NCY_Andrew_Cuomo={
 		portraits={
 			civilian={
-				large="gfx/Leaders/NCY/NCY_Andrew_Cuomo.png"
+				large="gfx/leaders/NCY/NCY_Andrew_Cuomo.png"
 			}
 		}
 		country_leader={

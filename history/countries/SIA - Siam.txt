@@ -194,23 +194,6 @@
 		ASEAN_member
 	}
 	
-	#Events
-	country_event = {
-		id = thailand.1
-		days = 8
-	}
-	country_event = {
-		id = thailand.2
-		days = 51
-	}
-	country_event = {
-		id = thailand.4
-		days = 90
-	}
-	country_event = {
-		id = thailand.18
-		days = 1
-	}
 	
 	set_party_name = {
 		ideology = authoritarian_democrat
@@ -257,7 +240,6 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 		## Frigates ##
 		create_equipment_variant = { #Frigate 1
@@ -295,7 +277,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		## Carriers ##
 		create_equipment_variant = { #Carrier 1 #Not needed for variant, just use type
@@ -311,6 +292,5 @@
 				fixed_ship_secondaries_slot = empty
 				
 			}
-			obsolete = no
 		}
 	}

@@ -71,7 +71,7 @@ characters={
 	RSF_mohamed_hamdan_dagalo_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/RSF/Mohamed Hamdan Dagalo.png" 
+				large="gfx/leaders/RSF/Mohamed Hamdan Dagalo.png" 
 			}
 		}
 		country_leader={
@@ -84,7 +84,7 @@ characters={
 	SAO_musa_hilal_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/Terrorists/terror3.dds" 
+				large="gfx/leaders/Terrorists/terror3.dds" 
 			}
 		}
 		country_leader={

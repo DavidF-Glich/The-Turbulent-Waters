@@ -6,9 +6,6 @@ APA_collective_tank_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-		has_completed_focus = APA_sieze_the_means_of_production
-		}
 	}
 }
 APA_collective_air_organization = {
@@ -19,9 +16,6 @@ APA_collective_air_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-		has_completed_focus = APA_sieze_the_means_of_production
-		}
 	}
 }
 APA_collective_navy_organization = {
@@ -32,9 +26,6 @@ APA_collective_navy_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-		has_completed_focus = APA_sieze_the_means_of_production
-		}
 	}
 }
 APA_collective_weaponry_organization = {
@@ -45,9 +36,6 @@ APA_collective_weaponry_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-		has_completed_focus = APA_sieze_the_means_of_production
-		}
 	}
 }
 APA_collective_motorized_organization = {
@@ -58,9 +46,6 @@ APA_collective_motorized_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-		has_completed_focus = APA_sieze_the_means_of_production
-		}
 	}
 }
 APA_collective_artillery_organization = {
@@ -71,8 +56,5 @@ APA_collective_artillery_organization = {
 		has_dlc = "Arms Against Tyranny"
 	}
 	available = {
-		FROM = {
-		has_completed_focus = APA_sieze_the_means_of_production
-		}
 	}
 }

@@ -23,11 +23,6 @@
 					defense_bonus_against = 0.05
 				}
 				targeted_modifier = {
-					tag = AAR
-					attack_bonus_against = 0.10
-					defense_bonus_against = 0.05
-				}
-				targeted_modifier = {
 					tag = SAR
 					attack_bonus_against = 0.10
 					defense_bonus_against = 0.05

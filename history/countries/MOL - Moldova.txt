@@ -120,7 +120,6 @@ add_ideas = {
 	low_conscription
 }
 
-country_event = { id = moldova.1 days = 334 }
 
 set_politics = {	
 	ruling_party = libertarian_socialist

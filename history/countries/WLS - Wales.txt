@@ -1,6 +1,6 @@
 	capital = 453
 
-#	oob = ""
+#
 
 	set_research_slots = 2
 	set_convoys = 10
@@ -106,5 +106,3 @@
 	add_ideas = {
 	}
 
-	
-}

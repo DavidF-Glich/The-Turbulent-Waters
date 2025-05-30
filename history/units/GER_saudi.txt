@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Alliwa Almikanikiu"
-	override_model = SAU_mechanized_entity
 	
 	regiments = {
 		mechanized = { x = 0 y = 0 }

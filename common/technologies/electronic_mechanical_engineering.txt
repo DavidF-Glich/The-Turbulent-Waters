@@ -924,9 +924,6 @@ technologies = {
 		}
 	}
 	advanced_centimetric_radar = {
-		enable_equipment_modules = {
-			ship_radar_5
-		}
 		static_anti_air_hit_chance_factor = 0.2
 		air_night_penalty = -0.1
 		path = {
@@ -1023,9 +1020,9 @@ technologies = {
 			building = radar_station
 			level = 7
 		}
-		enable_equipment_modules = {
-			ship_radar_6
-		}
+		air_detection = 0.05
+		naval_detection = 0.05
+		army_intel_factor = 0.05
 		path = {
 			leads_to_tech = advanced_quantum_radar
 			research_cost_coeff = 1

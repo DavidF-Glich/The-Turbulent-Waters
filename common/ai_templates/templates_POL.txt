@@ -4,9 +4,7 @@ infantry_POL = {
 		POL
 	}
 	
-	roles = {
-		infantry
-	}
+	role = infantry
 	
 	upgrade_prio = {
 		factor = 20

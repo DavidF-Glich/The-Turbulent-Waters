@@ -646,6 +646,10 @@ guiTypes = {
 			position = { x = 0 y = 435 }
 			size = { width=100%% height=100%% }
 			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 41
+			scroll_wheel_factor = 40
+			smooth_scrolling = yes
+
 			margin = { top = 8 bottom = 10}
 		
 			background = {
@@ -847,6 +851,10 @@ guiTypes = {
 				position = { x = 0 y = -8 }
 				size = { width=500 height=-4 }
 				verticalScrollbar = "right_vertical_slider"
+				vertical_scroll_step = 41
+				scroll_wheel_factor = 40
+				smooth_scrolling = yes
+
 				margin = { top = 4 bottom = 12}	
 
 				background = {
@@ -1217,6 +1225,10 @@ guiTypes = {
 			size = { width=548 height=100%% }
 			clipping = yes
 			verticalScrollbar = "right_vertical_slider"
+			vertical_scroll_step = 21
+			scroll_wheel_factor = 20
+			smooth_scrolling = yes
+
 			margin = { top = 15 bottom = 15}
 		
 			background = {
@@ -1763,6 +1775,10 @@ guiTypes = {
 		size = { width=548 height=100%% }
 		clipping = yes
 		verticalScrollbar = "right_vertical_slider"
+		vertical_scroll_step = 21
+		scroll_wheel_factor = 20
+		smooth_scrolling = yes
+
 		margin = { top = 15 bottom = 15}
 		
 			background = {

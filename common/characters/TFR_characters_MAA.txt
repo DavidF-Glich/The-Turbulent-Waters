@@ -2,7 +2,7 @@ characters={
 	MAA_Ted_Cruz_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/TEX/Ted_Cruz.png"
+				large="gfx/leaders/TEX/Ted_Cruz.png"
 			}
 		}
 		country_leader={
@@ -17,7 +17,7 @@ characters={
 	MAA_Mike_Ma_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/CAC/CAC_mike_ma_national.png"
+				large="gfx/leaders/CAC/CAC_mike_ma_national.png"
 			}
 		}
 		country_leader={
@@ -32,7 +32,7 @@ characters={
 	MAA_Stephen_Bullock_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Stephen_Bullock.png"
+				large="gfx/leaders/MAA/Stephen_Bullock.png"
 			}
 		}
 		country_leader={
@@ -47,7 +47,7 @@ characters={
 	MAA_Ted_Kaczysnki_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/GMA/GMA_ted_kaczynski.png"
+				large="gfx/leaders/GMA/GMA_ted_kaczynski.png"
 			}
 		}
 		country_leader={
@@ -62,7 +62,7 @@ characters={
 	MAA_James_Mason_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/ATW/ATW_james_mason2.png"
+				large="gfx/leaders/ATW/ATW_james_mason2.png"
 			}
 		}
 		country_leader={
@@ -77,7 +77,7 @@ characters={
 	MAA_Jonathan_Nez_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/NNN/Jonathan_Nez.dds"
+				large="gfx/leaders/NNN/Jonathan_Nez.dds"
 			}
 		}
 		country_leader={
@@ -92,7 +92,7 @@ characters={
 	MAA_Kevin_Baugh_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Kevin_Baugh.png"
+				large="gfx/leaders/MAA/Kevin_Baugh.png"
 			}
 		}
 		country_leader={
@@ -107,7 +107,7 @@ characters={
 	MAA_Mitt_Romney_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USB/USB_mitt_romney.png"
+				large="gfx/leaders/USB/USB_mitt_romney.png"
 			}
 		}
 		country_leader={
@@ -122,7 +122,7 @@ characters={
 	MAA_Scott_Witt_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/CAL/CAL_scott_witt.png"
+				large="gfx/leaders/CAL/CAL_scott_witt.png"
 			}
 		}
 		country_leader={
@@ -137,7 +137,7 @@ characters={
 	MAA_Bernie_Sanders_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USB/USA_bernie_sanders.png"
+				large="gfx/leaders/USB/USA_bernie_sanders.png"
 			}
 		}
 		country_leader={
@@ -152,7 +152,7 @@ characters={
 	MAA_Jo_Jorgensen_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USB/USB_jo_jorgenson.png"
+				large="gfx/leaders/USB/USB_jo_jorgenson.png"
 			}
 		}
 		country_leader={
@@ -167,7 +167,7 @@ characters={
 	MAA_Ralph_Northam_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Ralph_Northam.png"
+				large="gfx/leaders/MAA/Ralph_Northam.png"
 			}
 		}
 		country_leader={
@@ -182,7 +182,7 @@ characters={
 	MAA_James_Mattis_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USA/generals/USA_james_mattis.png"
+				large="gfx/leaders/USA/generals/USA_james_mattis.png"
 			}
 		}
 		country_leader={
@@ -197,7 +197,7 @@ characters={
 	MAA_Mike_Pence_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USA/USA_mike_pence.png"
+				large="gfx/leaders/USA/USA_mike_pence.png"
 			}
 		}
 		country_leader={
@@ -212,7 +212,7 @@ characters={
 	MAA_Mehmet_Oz_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Dr_Oz.png"
+				large="gfx/leaders/MAA/Dr_Oz.png"
 			}
 		}
 		country_leader={
@@ -227,7 +227,7 @@ characters={
 	MAA_Janet_Mills_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/NEG/NEG_janet_mils.png"
+				large="gfx/leaders/NEG/NEG_janet_mils.png"
 			}
 		}
 		country_leader={
@@ -242,7 +242,7 @@ characters={
 	MAA_Joe_Biden_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USA/generals/USA_joe_biden.png"
+				large="gfx/leaders/USA/generals/USA_joe_biden.png"
 			}
 		}
 		country_leader={
@@ -257,7 +257,7 @@ characters={
 	MAA_Donald_Trump_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USA/USA_donald_trump4.png"
+				large="gfx/leaders/USA/USA_donald_trump4.png"
 			}
 		}
 		country_leader={
@@ -272,7 +272,7 @@ characters={
 	MAA_Kanye_West_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Kanye_west.png"
+				large="gfx/leaders/MAA/Kanye_west.png"
 			}
 		}
 		country_leader={
@@ -287,7 +287,7 @@ characters={
 	MAA_Barron_Trump_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Barron_Trump.png"
+				large="gfx/leaders/MAA/Barron_Trump.png"
 			}
 		}
 		country_leader={
@@ -302,7 +302,7 @@ characters={
 	MAA_UN_Council_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/LRA/United Nations.dds"
+				large="gfx/leaders/LRA/United Nations.dds"
 			}
 		}
 		country_leader={
@@ -317,7 +317,7 @@ characters={
 	MAA_Tucker_Carlson_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Tucker_Carlson.png"
+				large="gfx/leaders/MAA/Tucker_Carlson.png"
 			}
 		}
 		country_leader={
@@ -332,7 +332,7 @@ characters={
 	MAA_Mark_Milley_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/USA/generals/USA_mark_milley.png"
+				large="gfx/leaders/USA/generals/USA_mark_milley.png"
 			}
 		}
 		country_leader={
@@ -347,7 +347,7 @@ characters={
 	MAA_Colonel_Sanders_char = {
 		portraits={
 			civilian={
-				large="gfx/Leaders/MAA/Anthony_Sanders.png"
+				large="gfx/leaders/MAA/Anthony_Sanders.png"
 			}
 		}
 		country_leader={

@@ -2,7 +2,7 @@ characters={
 	MOL_igor_dodon_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MOL/Igor_Dodon.dds" 
+				large = "gfx/leaders/MOL/Igor_Dodon.dds" 
 			}
 		}
 		country_leader = {
@@ -16,7 +16,7 @@ characters={
 	MOL_maia_sandu_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MOL/Maia_Sandu.dds" 
+				large = "gfx/leaders/MOL/Maia_Sandu.dds" 
 			}
 		}
 		country_leader = {
@@ -26,7 +26,7 @@ characters={
 	MOL_pavel_filip_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MOL/PavelFilip.dds" 
+				large = "gfx/leaders/MOL/PavelFilip.dds" 
 			}
 		}
 		country_leader = {
@@ -36,7 +36,7 @@ characters={
 	MOL_ilan_shor_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MOL/Ilan_Shor.png" 
+				large = "gfx/leaders/MOL/Ilan_Shor.png" 
 			}
 		}
 		country_leader = {
@@ -46,7 +46,7 @@ characters={
 	MOL_andrei_nastase_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MOL/Andrei_Nastase.dds" 
+				large = "gfx/leaders/MOL/Andrei_Nastase.dds" 
 			}
 		}
 		country_leader = {
@@ -56,7 +56,7 @@ characters={
 	MOL_vladimir_voronin_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MOL/Vladimir_Voronin.dds" 
+				large = "gfx/leaders/MOL/Vladimir_Voronin.dds" 
 			}
 		}
 		country_leader = {
@@ -66,7 +66,7 @@ characters={
 	MOL_igor_cutie_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/MOL/generals/Igor Cutie.png" 
+				large = "gfx/leaders/MOL/generals/Igor Cutie.png" 
 			}
 		}
 
@@ -78,7 +78,7 @@ characters={
 	MOL_eduard_ohladciuc_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/MOL/generals/Eduard Ohladciuc.png" 
+				large = "gfx/leaders/MOL/generals/Eduard Ohladciuc.png" 
 			}
 		}
 
@@ -90,7 +90,7 @@ characters={
 	MOL_igor_gorgan_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/MOL/generals/Igor Gorgan.png" 
+				large = "gfx/leaders/MOL/generals/Igor Gorgan.png" 
 			}
 		}
 
@@ -102,7 +102,7 @@ characters={
 	MOL_victor_gaiciuc_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/MOL/generals/Victor Gaiciuc.png" 
+				large = "gfx/leaders/MOL/generals/Victor Gaiciuc.png" 
 			}
 		}
 

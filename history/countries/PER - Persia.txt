@@ -9,13 +9,6 @@
 		}
 	}
 
-	set_variable = { Russian_Influence = 0.20 }
-	set_variable = { Chinese_Influence = 0.25 }
-	set_variable = { American_Influence = 0.0 }
-	set_variable = { European_Influence = 0.0 }
-	set_variable = { PDO_Influence = 0.00 }
-	set_variable = { Sovereign_Influence = 0.55 }
-
 	set_research_slots = 4
 	set_convoys = 320
 	set_stability = 0.56
@@ -424,7 +417,6 @@
 			name = "Type 72z"
 			type = modern_tank_chassis_1
 			parent_version = 0
-			model = "SOV_modern_armor_1_entity"
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon
 				turret_type_slot = tank_modern_tank_turret

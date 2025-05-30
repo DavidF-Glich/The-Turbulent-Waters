@@ -493,37 +493,235 @@ SOV_election_var_balancer = {
 	}
 }
 SOV_upgrade_faltering = {
+	if = {
+		limit = {
+			has_idea = SOV_Putinism_Faltering
+		}
+		swap_ideas = {
+			remove_idea = SOV_Putinism_Faltering
+			add_idea = SOV_Putinism_Faltering_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_Putinism_Faltering_2
+		}
+		swap_ideas = {
+			remove_idea = SOV_Putinism_Faltering_2
+			add_idea = SOV_Putinism_Faltering_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_Putinism_Faltering_3
+		}
+		swap_ideas = {
+			remove_idea = SOV_Putinism_Faltering_3
+			add_idea = SOV_Putinism_Faltering_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = SOV_Putinism_Faltering_4
+		}
+		remove_ideas = SOV_Putinism_Faltering_4
+	}
+}
+SOV_decrease_corruption = {
 		if = {
 			limit = {
-				has_idea = SOV_Putinism_Faltering
+				has_idea = SOV_kleptocratic_state
 			}
 			swap_ideas = {
-				remove_idea = SOV_Putinism_Faltering
-				add_idea = SOV_Putinism_Faltering_2
+				remove_idea = SOV_kleptocratic_state
+				add_idea = SOV_kleptocratic_state_2
 			}
 		}
 		else_if = {
 			limit = {
-				has_idea = SOV_Putinism_Faltering_2
+				has_idea = SOV_kleptocratic_state_2
 			}
 			swap_ideas = {
-				remove_idea = SOV_Putinism_Faltering_2
-				add_idea = SOV_Putinism_Faltering_3
+				remove_idea = SOV_kleptocratic_state_2
+				add_idea = SOV_kleptocratic_state_3
 			}
 		}
 		else_if = {
 			limit = {
-				has_idea = SOV_Putinism_Faltering_3
+				has_idea = SOV_kleptocratic_state_3
+			}
+			remove_ideas = SOV_kleptocratic_state_3
+		}
+}
+SOV_decrease_birth_rate = {
+		if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_6
 			}
 			swap_ideas = {
-				remove_idea = SOV_Putinism_Faltering_3
-				add_idea = SOV_Putinism_Faltering_4
+				remove_idea = SOV_bad_birth_rate_6
+				add_idea = SOV_bad_birth_rate_7
 			}
 		}
 		else_if = {
 			limit = {
-				has_idea = SOV_Putinism_Faltering_4
+				has_idea = SOV_bad_birth_rate_7
 			}
-				remove_ideas = SOV_Putinism_Faltering_4
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_7
+				add_idea = SOV_bad_birth_rate_8
 			}
 		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_8
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_8
+				add_idea = SOV_bad_birth_rate_9
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_9
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_9
+				add_idea = SOV_bad_birth_rate_10
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_1
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_1
+				add_idea = SOV_bad_birth_rate_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_2
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_2
+				add_idea = SOV_bad_birth_rate_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_3
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_3
+				add_idea = SOV_bad_birth_rate_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_4
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_4
+				add_idea = SOV_bad_birth_rate_5
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_5
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_5
+				add_idea = SOV_bad_birth_rate_6
+			}
+		}
+	}
+SOV_increase_birth_rate = {
+		if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_10
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_10
+				add_idea = SOV_bad_birth_rate_9
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_9
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_9
+				add_idea = SOV_bad_birth_rate_8
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_8
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_8
+				add_idea = SOV_bad_birth_rate_7
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_7
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_7
+				add_idea = SOV_bad_birth_rate_6
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_6
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_6
+				add_idea = SOV_bad_birth_rate_5
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_5
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_5
+				add_idea = SOV_bad_birth_rate_4
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_4
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_4
+				add_idea = SOV_bad_birth_rate_3
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_3
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_3
+				add_idea = SOV_bad_birth_rate_2
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_2
+			}
+			swap_ideas = {
+				remove_idea = SOV_bad_birth_rate_2
+				add_idea = SOV_bad_birth_rate_1
+			}
+		}
+		else_if = {
+			limit = {
+				has_idea = SOV_bad_birth_rate_1
+			}
+			remove_ideas = SOV_bad_birth_rate_1
+		}
+}

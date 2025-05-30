@@ -2,7 +2,7 @@
 		TAU_Belaid_Abrika = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALG/Belaid Abrika.png"
+					large = "gfx/leaders/ALG/Belaid Abrika.png"
 				}
 			}
 			country_leader={

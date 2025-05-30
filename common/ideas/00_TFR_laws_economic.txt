@@ -30,41 +30,21 @@ ideas = {
 			visible = {
 				tag = SOV
 				NOT = {
-					OR = {
-						has_completed_focus = SOV_nationalize_oligarch_industries
-						has_completed_focus = SOV_deals_with_oligarchs
-						has_completed_focus = SOV_deal_with_oligarchs
-						has_completed_focus = SOV_pragmatic_economics
-					}
+					has_completed_focus = SOV_Ukrainian_Strategy
 				}
 			}
 			allowed_to_remove = {
-				NOT = {
-					has_country_leader = {
-						character = SOV_vladimir_putin
-						ruling_only = yes
+				OR = {
+					NOT = {
+						has_country_leader = {
+							character = SOV_vladimir_putin
+							ruling_only = yes
+						}
 					}
-				}
-				hidden_trigger = {
-					OR = {
-						has_completed_focus = SOV_nationalize_oligarch_industries
-						has_completed_focus = SOV_deals_with_oligarchs
-						has_completed_focus = SOV_deal_with_oligarchs
-						has_completed_focus = SOV_pragmatic_economics
-					}
+					has_completed_focus = SOV_Ukrainian_Strategy
 				}
 			}
 			available = {
-				hidden_trigger = {
-					NOT = {
-						OR = {
-							has_completed_focus = SOV_nationalize_oligarch_industries
-							has_completed_focus = SOV_deals_with_oligarchs
-							has_completed_focus = SOV_deal_with_oligarchs
-							has_completed_focus = SOV_pragmatic_economics
-						}
-					}
-				}
 			}
 			modifier = {
 				business_value_factor = 0.13
@@ -83,23 +63,7 @@ ideas = {
 			level = 6
 			cancel_if_invalid = no
 			available = {
-				if = {
-					limit = {
-						tag = GER
-						NOT = {
-							has_idea = early_mobilization
-							has_idea = partial_mobilization
-							has_idea = war_mobilization
-							has_idea = total_mobilization
-							has_idea = permanent_mobilization
-						}
-					}
-					set_temp_variable = {
-						var = GER_support_bundestag_total_trigger_var_temp
-						value = 0.5
-					}
-					GER_has_bundestag_support_greater_than = yes
-				}
+				
 			}
 			modifier = {
 				business_value_factor = 0.1
@@ -121,38 +85,7 @@ ideas = {
 				NOT = {
 					has_war_support < 0.15
 				}
-				if = {
-					limit = {
-						tag = GER
-						NOT = {
-							has_idea = partial_mobilization
-							has_idea = war_mobilization
-							has_idea = total_mobilization
-							has_idea = permanent_mobilization
-						}
-					}
-					set_temp_variable = {
-						var = GER_support_bundestag_total_trigger_var_temp
-						value = 0.5
-					}
-					GER_has_bundestag_support_greater_than = yes
-				}
-				if = {
-					limit = {
-						tag = JAP
-					}
-					NOT = {
-						has_idea = JAP_japanese_pacifism_idea
-						has_idea = JAP_japanese_pacifism_2_idea
-						has_idea = JAP_japanese_pacifism_3_idea
-					}
-				}
-				if = {
-					limit = {
-						tag = PRC
-					}
-					has_completed_focus = PRC_the_final_opportunity
-				}
+				
 			}
 			modifier = {
 				business_value_factor = 0.05
@@ -190,37 +123,7 @@ ideas = {
 				NOT = {
 					has_war_support < 0.25
 				}
-				if = {
-					limit = {
-						tag = GER
-						NOT = {
-							has_idea = war_mobilization
-							has_idea = total_mobilization
-							has_idea = permanent_mobilization
-						}
-					}
-					set_temp_variable = {
-						var = GER_support_bundestag_total_trigger_var_temp
-						value = 0.5
-					}
-					GER_has_bundestag_support_greater_than = yes
-				}
-				if = {
-					limit = {
-						tag = JAP
-					}
-					NOT = {
-						has_idea = JAP_japanese_pacifism_idea
-						has_idea = JAP_japanese_pacifism_2_idea
-						has_idea = JAP_japanese_pacifism_3_idea
-					}
-				}
-				if = {
-					limit = {
-						tag = PRC
-					}
-					has_completed_focus = PRC_suspend_the_consumer_economy
-				}
+		
 			}
 			modifier = {
 				consumer_goods_expected_value = 0.25
@@ -250,45 +153,6 @@ ideas = {
 			available = {
 				NOT = {
 					has_war_support < 0.5
-				}
-				if = {
-					limit = {
-						tag = GER
-						NOT = {
-							has_idea = total_mobilization
-							has_idea = permanent_mobilization
-						}
-					}
-					set_temp_variable = {
-						var = GER_support_bundestag_total_trigger_var_temp
-						value = 0.5
-					}
-					GER_has_bundestag_support_greater_than = yes
-				}
-				if = {
-					limit = {
-						tag = JAP
-					}
-					NOT = {
-						has_idea = JAP_japanese_pacifism_idea
-						has_idea = JAP_japanese_pacifism_2_idea
-						has_idea = JAP_japanese_pacifism_3_idea
-					}
-				}
-				if = {
-					limit = {
-						tag = PRC
-					}
-					has_completed_focus = PRC_suspend_the_consumer_economy
-				}
-				IF = {
-					LIMIT = {
-						tag = FRA
-					}
-					OR = {
-						has_country_flag = Wartime_Mobilization_Allowed
-						has_war_support < 0.5
-					}
 				}
 				AND = {
 					has_war = yes
@@ -337,35 +201,6 @@ ideas = {
 				has_war = yes
 				NOT = {
 					has_war_support < 0.8
-				}
-				if = {
-					limit = {
-						tag = GER
-						NOT = {
-							has_idea = permanent_mobilization
-						}
-					}
-					set_temp_variable = {
-						var = GER_support_bundestag_total_trigger_var_temp
-						value = 0.5
-					}
-					GER_has_bundestag_support_greater_than = yes
-				}
-				if = {
-					limit = {
-						tag = JAP
-					}
-					NOT = {
-						has_idea = JAP_japanese_pacifism_idea
-						has_idea = JAP_japanese_pacifism_2_idea
-						has_idea = JAP_japanese_pacifism_3_idea
-					}
-				}
-				if = {
-					limit = {
-						tag = PRC
-					}
-					has_completed_focus = PRC_all_chinese_mobilization
 				}
 				any_enemy_country = {
 					ic_ratio = {
@@ -539,48 +374,8 @@ ideas = {
 				}
 			}
 			visible = {
-				NOT = {
-					has_idea = all_russian_total_mobilization
-					has_idea = all_russian_consolidation
-				}
-				OR = {
-					AND = {
-						tag = SOV
-						has_completed_focus = SOV_state_of_permanent_mobilization
-					}
-					AND = {
-						tag = GMA
-						has_completed_focus = GMA_Privatize_Mobilization
-					}
-					AND = {
-						tag = GER
-						has_completed_focus = GER_economy_fueld_by_war
-					}
-					AND = {
-						tag = PLD
-						has_cosmetic_tag = PLD_National_Government
-					}
-					AND = {
-						tag = USB
-						has_completed_focus = USB_the_visible_hand
-					}
-					# AND = {
-					# 	has_war = yes
-					# 	NOT = {
-					# 		has_war_support < 0.5
-					# 	}
-					# 	surrender_progress > 0.25
-					# 	date > 2027.01.01
-					# }
-					AND = {
-						tag = NSM
-						has_completed_focus = NSM_Create_The_Peoples_Liberators
-					}
-					AND = {
-						tag = ATW
-						has_completed_focus = ATW_obliterate_the_social_contract
-					}
-				}
+				surrender_progress > 0.4
+				
 			}
 			available = {
 				OR = {
@@ -591,6 +386,12 @@ ideas = {
 						}
 						surrender_progress > 0.25
 						date > 2027.01.01
+					}
+					any_enemy_country = {
+						ic_ratio = {
+							tag = ROOT
+							ratio > 0.8
+						}
 					}
 				}
 			}
@@ -636,93 +437,6 @@ ideas = {
 			modifier = {
 				personal_value_factor = 0.2
 				min_export = 0
-			}
-			ai_will_do = {
-				base = 1
-				modifier = {
-					factor = 0
-					is_major = no
-					is_in_faction = yes
-					has_war = yes
-				}
-				# minors not at war should want to get the bonuses from free trade
-				modifier = {
-					factor = 0
-					is_major = no
-					has_war = no
-				}
-			}
-		}
-		low_trade_autarky = {
-			picture = laws_trade1
-			cost = 100
-			removal_cost = -1
-			level = 4
-			cancel_if_invalid = no
-			allowed = {
-				OR = {
-					tag = SOV
-					tag = ATW
-					AND = {
-						tag = FAF
-						has_completed_focus = FAF_Suspend_Civilian_Imports
-					}
-					AND = {
-						tag = PRC
-						has_completed_focus = PRC_focus_on_protectionism
-					}
-					AND = {
-						tag = PLD
-						has_cosmetic_tag = PLD_National_Government
-					}
-				}
-			}
-			available = {
-				OR = {
-					#has_completed_focus = SOV_russian_autarky
-					tag = ATW
-					AND = {
-						tag = FAF
-						has_completed_focus = FAF_Suspend_Civilian_Imports
-					}
-					AND = {
-						tag = PRC
-						has_completed_focus = PRC_focus_on_protectionism
-					}
-					AND = {
-						tag = PLD
-						has_cosmetic_tag = PLD_National_Government
-					}
-				}
-			}
-			visible = {
-				OR = {
-					#has_completed_focus = SOV_russian_autarky
-					tag = ATW
-					AND = {
-						tag = FAF
-						has_completed_focus = FAF_Suspend_Civilian_Imports
-					}		
-					AND = {
-						tag = PRC
-						has_completed_focus = PRC_focus_on_protectionism
-					}
-					AND = {
-						tag = PLD
-						has_cosmetic_tag = PLD_National_Government
-					}
-				}
-			}
-			modifier = {
-				personal_value_factor = 0.1
-				min_export = 0.2
-				industrial_capacity_factory = 0.05
-				industrial_capacity_dockyard = 0.05
-				production_speed_buildings_factor = -0.2
-				research_speed_factor = 0.025
-				civilian_intel_to_others = 10
-				navy_intel_to_others = 5
-				inflation_monthly = 0.001
 			}
 			ai_will_do = {
 				base = 1
@@ -1243,18 +957,7 @@ ideas = {
 				}
 			}
 			available = {
-				if = {
-					limit = {
-						tag = USC
-					}
-					has_completed_focus = USC_establish_an_all_american_banking_system
-				}
-				if = {
-					limit = {
-						tag = ATW
-					}
-					has_completed_focus = ATW_blood_money
-				}
+				
 				if = {
 					limit = {
 						has_country_flag = disabled_interest_rates_flag
@@ -1540,39 +1243,6 @@ ideas = {
 				}
 			}
 		}
-		GER_interest_law = {
-			removal_cost = -1
-			cost = 100
-			level = 1
-			picture = laws_interest_rates2
-			allowed = {
-				tag = GER
-			}
-			visible = {
-				hidden_trigger = {
-					tag = GER
-					has_completed_focus = GER_centralize_the_economy
-				}
-			}
-			available = {
-				if = {
-					limit = {
-						has_country_flag = disabled_interest_rates_flag
-					}
-					NOT = {
-						has_country_flag = disabled_interest_rates_flag
-					}
-				}
-			}
-			modifier = {
-				inflation_monthly = -0.004
-				production_speed_buildings_factor = 0.05
-				business_value_factor = -0.05
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
 	}
 	welfare_laws = {
 		law = yes
@@ -1806,50 +1476,6 @@ ideas = {
 				low_stability_weekly = 0.002
 			}
 		}
-		highest_welfare = {
-			removal_cost = -1
-			cost = 100
-			level = 1
-			picture = laws_welfare5
-			allowed = {
-				tag = GER
-			}
-			available = {
-				has_completed_focus = GER_establish_minimum_pension
-			}
-			ai_will_do = {
-				base = 1
-				modifier = {
-					factor = 20
-					NOT = {
-						has_idea = higher_welfare
-						has_idea = higher_society
-						has_idea = higher_poverty
-					}
-					check_variable = {
-						var = expenses_income_var
-						value = 0.5
-						compare = less_than
-					}
-				}
-				modifier = {
-					factor = 20
-					NOT = {
-						has_idea = higher_society
-						has_idea = high_society
-						has_idea = higher_poverty
-						has_idea = high_poverty
-					}
-				}
-			}
-			modifier = {
-				personal_expense = 0.75
-				poverty_development_monthly = 0.015
-				society_development_monthly = 0.015
-				production_speed_infrastructure_factor = 0.3
-				low_stability_weekly = 0.003
-			}
-		}
 	}
 	safety_laws = {
 		law = yes
@@ -1885,37 +1511,6 @@ ideas = {
 				industrial_capacity_dockyard = 0.025
 				industrial_development_monthly = -0.005
 				farming_development_monthly = -0.005
-			}
-		}
-		GER_safety_law = {
-			removal_cost = -1
-			cost = 100
-			level = 1
-			picture = laws_interest_rates2
-			allowed = {
-				tag = GER
-			}
-			visible = {
-				hidden_trigger = {
-					tag = GER
-					has_completed_focus = GER_liquidate_the_capitalist_class
-				}
-			}
-			available = {
-				hidden_trigger = {
-				}
-			}
-			modifier = {
-				production_factory_efficiency_gain_factor = 0.05
-				production_speed_buildings_factor = 0.025
-				industrial_capacity_factory = 0.025
-				industrial_capacity_dockyard = 0.025
-				industrial_development_monthly = -0.005
-				society_development_monthly = 0.005
-				personal_value_factor = -0.1
-			}
-			ai_will_do = {
-				base = 1
 			}
 		}
 		medium_safety = {

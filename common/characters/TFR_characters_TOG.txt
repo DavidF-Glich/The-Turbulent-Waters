@@ -2,7 +2,7 @@
 		TOG_Faure_Gnassingbe_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TOG/Faure Gnassingbe.png"
+					large = "gfx/leaders/TOG/Faure Gnassingbe.png"
 				}
 			}
 			country_leader={

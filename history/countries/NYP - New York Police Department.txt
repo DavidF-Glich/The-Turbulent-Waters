@@ -86,7 +86,6 @@ if = {
 
 add_ideas = {
 	NYP_lawless_city_idea
-	USA_low_morale_idea
 	high_interest_rates
 	higher_safety
 	high_female_service

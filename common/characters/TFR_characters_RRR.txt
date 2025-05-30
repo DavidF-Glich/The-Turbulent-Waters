@@ -14,7 +14,7 @@ characters={
 	RRR_Dwayne_Dixon_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Dwayne Dixon.png" 
+				large = "gfx/leaders/RRR/Dwayne Dixon.png" 
 			}
 		}
 
@@ -25,7 +25,7 @@ characters={
 	RRR_Kevin_Smith_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Kevin Smith.png" 
+				large = "gfx/leaders/RRR/Kevin Smith.png" 
 			}
 		}
 
@@ -36,7 +36,7 @@ characters={
 	RRR_Sherrie_Smith_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Sherrie Smith.png" 
+				large = "gfx/leaders/RRR/Sherrie Smith.png" 
 			}
 		}
 
@@ -47,7 +47,7 @@ characters={
 	RRR_Conrad_George_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Conrad George.png" 
+				large = "gfx/leaders/RRR/Conrad George.png" 
 			}
 		}
 
@@ -58,7 +58,7 @@ characters={
 	RRR_Margaret_Dickhaus_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Margaret Dickhaus.png" 
+				large = "gfx/leaders/RRR/Margaret Dickhaus.png" 
 			}
 		}
 
@@ -69,7 +69,7 @@ characters={
 	RRR_Rem_Bunkchius_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Rem Bunkchius.png" 
+				large = "gfx/leaders/RRR/Rem Bunkchius.png" 
 			}
 		}
 
@@ -80,7 +80,7 @@ characters={
 	RRR_Andrew_Hunt_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/RRR/Andrew Hunt.png" 
+				large = "gfx/leaders/RRR/Andrew Hunt.png" 
 			}
 		}
 

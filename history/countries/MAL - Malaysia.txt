@@ -2,11 +2,6 @@
 	
 	oob = "MAY_2020"
 
-	country_event = {
-		id = asean.3
-		days = 54
-	}
-
 	set_research_slots = 3
 	set_convoys = 350
 	set_stability = 0.4

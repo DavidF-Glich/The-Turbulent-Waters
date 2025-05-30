@@ -70,7 +70,7 @@ focus_tree = {
 				limit = { has_country_flag = USA_MAGA_Communism}
 				create_country_leader = {
 					name = USA_greyson_walker_char
-					picture = "gfx/Leaders/USA/USA_Greyson_Walker.png"
+					picture = "gfx/leaders/USA/USA_Greyson_Walker.png"
 					ideology = marxism_leninism
 				}
 				add_ideas = APA_jackson_hinkle_hog
@@ -157,7 +157,7 @@ focus_tree = {
 				limit = { has_country_flag = USA_Go_APLA }
 				create_country_leader = {
 					name = USA_gloria_la_riva_char
-					picture = "gfx/Leaders/APA/APA_gloria_la_riva.png"
+					picture = "gfx/leaders/APA/APA_gloria_la_riva.png"
 					ideology = marxism_leninism
 				}
 				add_ideas = {
@@ -248,7 +248,7 @@ focus_tree = {
 				limit = { has_country_flag = USA_Patriotic_Front }
 				create_country_leader = {
 					name = PTF_thomas_rousseau_char_revolution
-					picture = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+					picture = "gfx/leaders/PTF/PTF_thomas_rousseau_revolution.png"
 					ideology = classical_fascism
 				}
 				set_popularities = {

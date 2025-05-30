@@ -101,9 +101,6 @@
 	}
 
 	add_ideas = {
-		USA_low_morale_idea
-		NEG_northern_insurgency_idea
-		NEG_mills_collins_coalition_idea
 		high_interest_rates
 		higher_safety
 		high_female_service

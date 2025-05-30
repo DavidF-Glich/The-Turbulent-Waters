@@ -1,0 +1,74 @@
+on_actions = {
+	on_state_control_changed = {
+		effect = {
+			if = {
+				#Kharkov on Donbass
+				limit = {
+					FROM.FROM = {
+						state = 221
+					}
+					OR = {
+						FROM = {
+							tag = UKR
+						}
+						FROM = {
+							tag = DPR
+						}
+						FROM = {
+							tag = NOV
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = SOV
+						}
+						ROOT = {
+							tag = DPR
+						}
+						ROOT = {
+							tag = NOV
+						}
+					}
+				}
+			news_event = { 
+			id = SOV_SMO_news.1
+				hours = 5
+				}
+			}
+		if = {
+				#Severodonetsk on Donbass
+				limit = {
+					FROM.FROM = {
+						state = 1090
+					}
+					OR = {
+						FROM = {
+							tag = UKR
+						}
+						FROM = {
+							tag = DPR
+						}
+						FROM = {
+							tag = NOV
+						}
+					}
+					OR = {
+						ROOT = {
+							tag = SOV
+						}
+						ROOT = {
+							tag = DPR
+						}
+						ROOT = {
+							tag = NOV
+						}
+					}
+				}
+			news_event = { 
+			id = SOV_SMO_news.2
+				hours = 5
+				}
+			}
+		}
+	}
+}

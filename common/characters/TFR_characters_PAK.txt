@@ -38,7 +38,7 @@ characters={
 	PAK_Imran_Khan = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PAK/Imran Khan.png" 
+				large = "gfx/leaders/PAK/Imran Khan.png" 
 			}
 		}
 		country_leader={
@@ -51,10 +51,10 @@ characters={
 	PAK_Aurangzaib_Farooqi = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PAK/PAK_Aurangzaib_Farooqi.png" 
+				large = "gfx/leaders/PAK/PAK_Aurangzaib_Farooqi.png" 
 			}
 			army = {
-				large = "gfx/Leaders/PAK/PAK_Aurangzaib_Farooqi.png" 
+				large = "gfx/leaders/PAK/PAK_Aurangzaib_Farooqi.png" 
 			}
 		}
 		country_leader={
@@ -72,7 +72,7 @@ characters={
 	PAK_Taimur_Rahman = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PAK/Taimur Rahman.png" 
+				large = "gfx/leaders/PAK/Taimur Rahman.png" 
 			}
 		}
 		country_leader={
@@ -166,10 +166,10 @@ characters={
 	ISK_Shahab_alMuhajir = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PAK/Civil_War/ISK_Shahab_alMuhajir.png" 
+				large = "gfx/leaders/PAK/Civil_War/ISK_Shahab_alMuhajir.png" 
 			}
 			army = {
-				large = "gfx/Leaders/PAK/Civil_War/ISK_Shahab_alMuhajir.png" 
+				large = "gfx/leaders/PAK/Civil_War/ISK_Shahab_alMuhajir.png" 
 			}
 		}
 		country_leader={
@@ -191,10 +191,10 @@ characters={
 	BAL_Basheer_Zeb = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PAK/Civil_War/BAL_Basheer_Zeb.png" 
+				large = "gfx/leaders/PAK/Civil_War/BAL_Basheer_Zeb.png" 
 			}
 			army = {
-				large = "gfx/Leaders/PAK/Civil_War/BAL_Basheer_Zeb.png" 
+				large = "gfx/leaders/PAK/Civil_War/BAL_Basheer_Zeb.png" 
 			}
 		}
 		country_leader={
@@ -216,10 +216,10 @@ characters={
 	SND_Shafi_Muhammad_Burfat = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PAK/Civil_War/SND_Shafi_Muhammad_Burfat.png" 
+				large = "gfx/leaders/PAK/Civil_War/SND_Shafi_Muhammad_Burfat.png" 
 			}
 			army = {
-				large = "gfx/Leaders/PAK/Civil_War/SND_Shafi_Muhammad_Burfat.png" 
+				large = "gfx/leaders/PAK/Civil_War/SND_Shafi_Muhammad_Burfat.png" 
 			}
 		}
 		country_leader={

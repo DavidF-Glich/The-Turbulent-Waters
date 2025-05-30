@@ -3703,6 +3703,10 @@ spriteTypes = {
 		texturefile = "gfx/interface/goals/PRC/PRC_Transparent_Kitchen.png"
 	}
 	SpriteType = {
+		name = "GFX_focus_PRC_Fourteenth_Five"
+		textureFile = "gfx/interface/goals/PRC/PRC_fourteenth_five_year.png"
+	}
+	SpriteType = {
 		name = "GFX_focus_PRC_new_three_principles_of_the_people"
 		texturefile = "gfx/interface/goals/PRC/PRC_new_three_principles_of_the_people.png"
 	}

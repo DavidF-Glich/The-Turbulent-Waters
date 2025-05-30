@@ -41,14 +41,14 @@
 	recruit_character = SOV_zakhar_prilepin
 	recruit_character = SOV_dmitry_medvedev
 	recruit_character = SOV_gennady_zyuganov
-	recruit_character = SOV_nicholas_romanov
+	#recruit_character = SOV_nicholas_romanov
 	recruit_character = SOV_nikolay_rybakov
 	recruit_character = SOV_vladimir_zhirinovsky
 	recruit_character = SOV_viktor_zolotov
 	recruit_character = SOV_eduard_limonov
 	recruit_character = SOV_alexander_dugin
 	recruit_character = SOV_mikhail_kasyanov
-	recruit_character = SOV_gennady_semigin
+	#recruit_character = SOV_gennady_semigin
 	recruit_character = SOV_alexei_navalny
 	recruit_character = SOV_victor_tyulkin
 	recruit_character = SOV_valery_gerasimov
@@ -104,7 +104,7 @@
 	recruit_character = SOV_viktor_liina
 	recruit_character = SOV_vladimir_vysotskiy
 	recruit_character = SOV_maxim_suraykin
-	recruit_character = SOV_viktor_nikitin
+	#recruit_character = SOV_viktor_nikitin
 	recruit_character = SOV_valery_rashkin
 	recruit_character = SOV_yuri_afonin
 	recruit_character = SOV_pavel_grudinin
@@ -129,7 +129,7 @@
 	recruit_character = SOV_denis_parfenov
 	recruit_character = SOV_aleksandr_lukashenko
 	recruit_character = SOV_sergey_levchenko
-	recruit_character = SOV_dmitriy_patrushev
+	#recruit_character = SOV_dmitriy_patrushev
 	recruit_character = SOV_alexander_belousov 
 	recruit_character = SOV_andrey_vorobyov 
 	recruit_character = SOV_leonid_slutsky
@@ -193,6 +193,58 @@
 	set_variable = {
 		nuke_maintenence_ratio = 0.6
 	}
+	add_dynamic_modifier = {
+		modifier = SOV_oligarch_support_dynamic
+	}
+	set_variable = {
+		SOV_election_approval_rating_cprf_var = 0.25
+	}
+	set_variable = {
+		SOV_election_approval_rating_ldpr_var = 0.2
+	}
+	set_variable = {
+		SOV_election_approval_rating_ur_var = 0.46
+	}
+	set_variable = {
+		SOV_election_approval_rating_srzp_var = 0.09
+	}
+	set_variable = {
+		SOV_election_approval_rating_nav_var = 0.2
+	}
+	set_variable = {
+		SOV_propaganda_decision_cost_var = 50
+	}
+	add_to_array = {
+		SOV_political_parties = SOV_election_approval_rating_cprf_var
+	}
+	add_to_array = {
+		SOV_political_parties = SOV_election_approval_rating_ldpr_var
+	}
+	add_to_array = {
+		SOV_political_parties = SOV_election_approval_rating_ur_var
+	}
+	add_to_array = {
+		SOV_political_parties = SOV_election_approval_rating_srzp_var
+	}
+	
+	set_variable = {
+		var = SOV_oligarch_factory_var
+		value = 1
+	}
+	set_variable = {
+		var = SOV_remove_oligarch_factory_var
+		value = -1
+	}
+	set_variable = {
+		var = SOV_oligarch_support_dynamic_var
+		value = 0.1
+	}
+	set_temp_variable = {
+		var = SOV_oligarch_approval_rating_var_temp
+		value = 0.5
+	}
+	SOV_add_oligarch_approval_rating = yes
+
 	set_country_flag = developed_country
 	set_country_flag = csto_member
 	set_country_flag = {
@@ -203,6 +255,62 @@
 		id = russia.9
 		days = 3
 	}
+	country_event = {
+		#Small Birth Rate
+		id = russia.19
+		days = 70
+	}
+	country_event = {
+		#Shortage of Workers
+		id = russia.18
+		days = 60
+	}
+	country_event = {
+		#Tesak death
+		id = russia.20
+		days = 259
+	}
+	country_event = {
+		#Khovanskyy arrest
+		id = russia.22
+		days = 524
+	}
+	country_event = {
+		#Maddyson LDPR
+		id = russia.21
+		days = 193
+	}
+	country_event = {
+		#CPRF Metro
+		id = russia.25
+		days = 144
+	}
+	country_event = {
+		#Zapad-2021
+		id = russia.27
+		days = 622
+	}
+	country_event = {
+		#Kazan shot
+		id = russia.30
+		days = 131
+	}
+	country_event = {
+		#Norilsk
+		id = russia.29
+		days = 149
+	}
+	country_event = {
+		#Kushtau
+		id = russia.28
+		days = 215
+	}
+	country_event = {
+		# Navalny Gets Poisoned
+		id = russia.34
+		days = 245
+	}			
+
 	set_party_name = {
 	    ideology = totalitarian_socialist 
 	    long_name = SOV_totalitarian_socialist_long
@@ -594,7 +702,6 @@
 			plane_engine_upgrade = 3
 			plane_reliability_upgrade = 4
 		}
-		obsolete = no
 		icon = "gfx/interface/technologies/aircraft/SOV_attack_helicopter_equipment_2.png"
 	}
 
@@ -636,7 +743,6 @@
 				mid_1_custom_slot = ship_torpedo_1
 				rear_1_custom_slot = ship_depth_charge_1
 			}
-			obsolete = no
 		}
 		## Frigates ##
 		create_equipment_variant = { #Frigate 1
@@ -655,7 +761,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		## Destroyers ##
 		create_equipment_variant = { #Destroyer 1
@@ -690,7 +795,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		## Missile Cruisers ##
 		create_equipment_variant = { #Missile Cruiser 1
@@ -729,7 +833,6 @@
 				mid_2_custom_slot = ship_secondaries_1
 				rear_1_custom_slot = ship_heavy_battery_1
 			}
-			obsolete = no
 		}
 		create_equipment_variant = { #Battle Cruiser
 			name = "Kirov-class"
@@ -740,7 +843,6 @@
 				fixed_ship_anti_air_slot = ship_anti_air_1
 				fixed_ship_fire_control_system_slot = ship_fire_control_system_0
 				fixed_ship_radar_slot = ship_radar_1
-				fixed_ship_engine_slot = super_heavy_ship_engine_1
 				fixed_ship_secondaries_slot = ship_secondaries_1
 				fixed_ship_armor_slot = ship_armor_shbb
 				front_1_custom_slot = ship_anti_air_1
@@ -749,7 +851,6 @@
 				rear_1_custom_slot = ship_super_heavy_battery_1
 				rear_2_custom_slot = ship_airplane_launcher_1
 			}
-			obsolete = no
 		}
 		## Carriers ##
 		create_equipment_variant = { #Carrier 1
@@ -766,7 +867,6 @@
 				mid_1_custom_slot = ship_deck_space
 				
 			}
-			obsolete = no
 		}
 		## Submarines ##
 		create_equipment_variant = { #Diesel Sub 1
@@ -789,7 +889,6 @@
 				fixed_ship_engine_slot = sub_ship_engine_2
 				rear_1_custom_slot = ship_torpedo_sub_2
 			}
-			obsolete = no
 		}
 	}
 	
@@ -843,7 +942,6 @@
 			name = "T-80U"
 			type = modern_tank_chassis_1
 			parent_version = 0
-			model = "SOV_t80_entity"
 			modules = {
 				main_armament_slot = tank_high_velocity_cannon_2
 				turret_type_slot = tank_3_man_tank_turret
@@ -865,7 +963,6 @@
 			name = "T-90A"
 			type = modern_tank_chassis_1
 			parent_version = 0
-			model = "SOV_modern_armor_entity"
 			modules = {
 				main_armament_slot = tank_heavy_cannon
 				turret_type_slot = tank_3_man_tank_turret
@@ -881,7 +978,6 @@
 				tank_nsb_engine_upgrade = 8
 				tank_nsb_armor_upgrade = 0
 			}
-			icon = "gfx/interface/technologies/armor/MBT_2012_T-90.png"
 		}
 		create_equipment_variant = {
 			name = "BRM-3K"
@@ -924,7 +1020,6 @@
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 2
 			}
-			icon = "gfx/interface/technologies/armor/Universal/BMO-T.png"
 		}
 	}
 	

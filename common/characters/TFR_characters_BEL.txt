@@ -2,7 +2,7 @@
 		BEL_Philippe_I_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/BEL/Philippe.png"
+					large = "gfx/leaders/BEL/Philippe.png"
 				}
 			}
 			country_leader={
@@ -45,7 +45,7 @@
 		BEL_Elisabeth_I_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/BEL/Elisabeth_of_Belgium.png"
+					large = "gfx/leaders/BEL/Elisabeth_of_Belgium.png"
 				}
 			}
 			country_leader={
@@ -89,14 +89,14 @@
 		BEL_Gabriel_of_Belgium_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/BEL/Gabriel_of_Belgium.png"
+					large = "gfx/leaders/BEL/Gabriel_of_Belgium.png"
 				}
 			}
 		}
 		BEL_Laurent_Brogniet_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/BEL/Laurent_Brogniet.png"
+					large = "gfx/leaders/BEL/Laurent_Brogniet.png"
 				}
 			}
 		}

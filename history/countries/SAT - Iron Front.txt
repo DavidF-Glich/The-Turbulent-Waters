@@ -1,6 +1,6 @@
 ﻿	capital = 357
 
-	oob = ""
+
 
 	recruit_character = SAT_Iron_Congress
 	recruit_character = SAT_technate_council_char

@@ -2,7 +2,7 @@
 		ALB_ilir_ieta_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ALB/ALB_ilir_meta.png"
+					large = "gfx/leaders/ALB/ALB_ilir_meta.png"
 				}
 			}
 			country_leader={

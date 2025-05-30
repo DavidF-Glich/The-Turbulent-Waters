@@ -2,7 +2,7 @@
 		LUX_Henri_Guilluame = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/LUX/LUX_henri_guillaume.png"
+					large = "gfx/leaders/LUX/LUX_henri_guillaume.png"
 				}
 			}
 			country_leader={
@@ -45,7 +45,7 @@
 		LUX_Ali_Ruckert = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/LUX/Ali_Ruckert.png"
+					large = "gfx/leaders/LUX/Ali_Ruckert.png"
 				}
 			}
 			country_leader={

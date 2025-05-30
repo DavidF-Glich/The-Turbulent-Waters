@@ -2,7 +2,7 @@ characters={
 	BUL_rumen_radev_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BUL/Rumen Radev.png"
+				large="gfx/leaders/BUL/Rumen Radev.png"
 			}
 		}
 		country_leader={
@@ -17,7 +17,7 @@ characters={
 	BUL_vasil_bozhkov_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BUL/Vasil Bozhkov.png"
+				large="gfx/leaders/BUL/Vasil Bozhkov.png"
 			}
 		}
 		country_leader={
@@ -33,7 +33,7 @@ characters={
 	BUL_volen_siderov_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BUL/Volen_Siderov.dds"
+				large="gfx/leaders/BUL/Volen_Siderov.dds"
 			}
 		}
 		country_leader={
@@ -48,7 +48,7 @@ characters={
 	BUL_mincho_minchev_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BUL/mincho_minchev.png"
+				large="gfx/leaders/BUL/mincho_minchev.png"
 			}
 		}
 		country_leader={

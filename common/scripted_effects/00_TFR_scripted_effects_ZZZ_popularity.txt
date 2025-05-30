@@ -358,13 +358,6 @@ add_totalitarian_socialist_popularity = {
 		}
 		custom_effect_tooltip = add_totalitarian_socialist_popularity_tooltip
 	}
-	else_if = {
-		limit = {
-			tag = APA
-		}
-		custom_effect_tooltip = APA_add_jacobin_popularity_tooltip
-		APA_popularity_change = yes
-	}
 }
 
 add_communist_popularity = {
@@ -437,13 +430,6 @@ add_communist_popularity = {
 			}
 		}
 		custom_effect_tooltip = add_communist_popularity_tooltip
-	}
-	else_if = {
-		limit = {
-			tag = APA
-		}
-		custom_effect_tooltip = APA_add_octoberist_popularity_tooltip
-		APA_popularity_change = yes
 	}
 }
 
@@ -518,13 +504,6 @@ add_libertarian_socialist_popularity = {
 		}
 		custom_effect_tooltip = add_libertarian_socialist_popularity_tooltip
 	}
-	else_if = {
-		limit = {
-			tag = APA
-		}
-		custom_effect_tooltip = APA_add_anarchist_popularity_tooltip
-		APA_popularity_change = yes
-	}
 }
 
 add_social_democrat_popularity = {
@@ -597,13 +576,6 @@ add_social_democrat_popularity = {
 			}
 		}
 		custom_effect_tooltip = add_social_democrat_popularity_tooltip
-	}
-	else_if = {
-		limit = {
-			tag = APA
-		}
-		custom_effect_tooltip = APA_add_neosocialist_popularity_tooltip
-		APA_popularity_change = yes
 	}
 }
 
@@ -875,13 +847,6 @@ add_authoritarian_democrat_popularity = {
 			}
 		}
 		custom_effect_tooltip = add_authoritarian_democrat_popularity_tooltip
-	}
-	else_if = {
-		limit = {
-			tag = APA
-		}
-		custom_effect_tooltip = APA_add_reactionary_popularity_tooltip
-		APA_popularity_change = yes
 	}
 }
 

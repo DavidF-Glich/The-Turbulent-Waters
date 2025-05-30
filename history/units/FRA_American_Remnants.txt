@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Special Operations Force"
-	override_model = USA_special_forces_2_entity
 	is_locked = yes
 	regiments = {
 		special_forces = { x = 0 y = 0 }

@@ -2,7 +2,7 @@ characters = {
 	USA_bernie_sanders_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/USB/portrait_USA_bernie_sanders.png"
+				large = "gfx/leaders/USB/portrait_USA_bernie_sanders.png"
 			}
 		}
 		country_leader = {
@@ -12,7 +12,7 @@ characters = {
 	USA_joe_biden_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/USA/USA_joe_biden.dds"
+				large = "gfx/leaders/USA/USA_joe_biden.dds"
 			}
 		}
 		country_leader = {
@@ -26,7 +26,7 @@ characters = {
 	USA_gloria_la_riva_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_gloria_la_riva.png"
+				large = "gfx/leaders/APA/APA_gloria_la_riva.png"
 			}
 		}
 		country_leader = {
@@ -51,7 +51,7 @@ characters = {
 	USA_peta_lindsey_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/APA/APA_peta_lindsay.png"
+				large = "gfx/leaders/APA/APA_peta_lindsay.png"
 			}
 		}
 		country_leader = {
@@ -71,7 +71,7 @@ characters = {
 	USA_thomas_rousseau_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+				large = "gfx/leaders/PTF/PTF_thomas_rousseau_revolution.png"
 			}
 		}
 		country_leader = {

@@ -1,7 +1,6 @@
 ﻿capital = 372
 
-# oob = ""
-
+# 
 set_research_slots = 3
 set_convoys = 10
 set_stability = 0.7
@@ -178,7 +177,6 @@ add_ideas = {
 	LOS_confederal_system_idea
 	LOS_terrible_industry_idea
 	LOS_spirit_of_the_south_idea
-	USA_battle_for_america_idea
 
 	#Laws
 	partial_mobilization

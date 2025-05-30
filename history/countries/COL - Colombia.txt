@@ -144,10 +144,6 @@
 		}
 	}
 
-	country_event = {
-		id = COL.1
-		days = 900
-	}
 
 	add_ideas = {
 		low_poverty

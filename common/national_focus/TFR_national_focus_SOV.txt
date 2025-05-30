@@ -11,357 +11,27 @@ focus_tree = {
 	focus = {
 		id = SOV_New_Century
 		icon = GFX_focus_SOV_the_russian_dream
-		cost = 5.00
-		x = 14
+		cost = 5
+		x = 0
 		y = 0
-
-	}
-	focus = {
-		id = SOV_Prevent_Spread
-		icon = GFX_focus_SOV_force_lockdowns
-		cost = 2.00
-		prerequisite = {
-			focus = SOV_New_Century
-		}
-		x = 5
-		y = 1
-
-	}
-	focus = {
-		id = SOV_Establish_Tourist_System
-		icon = GFX_focus_SOV_slutsky_economic_agenda
-		cost = 5.00
-		prerequisite = {
-			focus = SOV_Prevent_Spread
-		}
-		x = 3
-		y = 2
-
-	}
-	focus = {
-		id = SOV_Remote_Life
-		icon = GFX_focus_SOV_sensible_economic_management
-		cost = 2.00
-		prerequisite = {
-			focus = SOV_Prevent_Spread
-		}
-		x = 6
-		y = 2
-
-	}
-	focus = {
-		id = SOV_Talk_with_Ministers
-		icon = GFX_focus_SOV_pass_the_new_constitution
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_New_Century
-		}
-		x = 9
-		y = 1
-
-	}
-	focus = {
-		id = SOV_Economic_Stability
-		icon = GFX_focus_SOV_protect_russian_economy
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Prevent_Spread
-		}
-		prerequisite = {
-			focus = SOV_Talk_with_Ministers
-		}
-		x = 8
-		y = 2
-
-	}
-	focus = {
-		id = SOV_Power_of_Friend
-		icon = GFX_focus_SOV_purchase_sinovac_vaccine
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Establish_Tourist_System
-			focus = SOV_Economic_Stability
-		}
-		x = 3
-		y = 3
-		available = {
-			OR = {
-				NOT = {
-					has_completed_focus = SOV_Sputnik_Vaccine
-				}
-				has_country_flag = {
-					flag = SOV_Developing_Vaccine
-					days > 100
+		completion_reward = {
+		add_political_power = 100
+			hidden_effect = {
+				SOV = {
+					country_event = { 
+						id = russia.14
+						days = 31
+					}
 				}
 			}
-			PRC = {
-				has_country_flag = PRC_Third_Success
-			}
-		}
-
-	}
-	focus = {
-		id = SOV_Sputnik_Vaccine
-		icon = GFX_focus_SOV_kickstart_vaccine_research
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Economic_Stability
-			focus = SOV_Establish_Tourist_System
-		}
-		x = 5
-		y = 3
-		completion_reward = {
-			set_country_flag = SOV_Developing_Vaccine
-		}
-	}
-	focus = {
-		id = SOV_Hospital_Budgets
-		icon = GFX_focus_SOV_hospital_budget
-		cost = 5.00
-		prerequisite = {
-			focus = SOV_Establish_Tourist_System
-			focus = SOV_Economic_Stability
-			focus = SOV_Remote_Life
-		}
-		x = 7
-		y = 3
-
-	}
-	focus = {
-		id = SOV_Medicine_Distribution
-		icon = GFX_focus_SOV_against_chipivization
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Hospital_Budgets
-			focus = SOV_Sputnik_Vaccine
-			focus = SOV_Power_of_Friend
-		}
-		x = 5
-		y = 4
-		available = {
-			has_country_flag = SOV_Medicine_Ready
-		}
-
-	}
-	focus = {
-		id = SOV_Sustain_Building
-		icon = GFX_focus_SOV_restore_public_confidence
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Talk_with_Ministers
-		}
-		x = 10
-		y = 2
-
-	}
-	focus = {
-		id = SOV_Protect_Core_Corps
-		icon = GFX_focus_SOV_secure_oligarch_loyalty
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Economic_Stability
-		}
-		prerequisite = {
-			focus = SOV_Sustain_Building
-		}
-		x = 9
-		y = 3
-
-	}
-	focus = {
-		id = SOV_Focus_on_Infrastructure
-		icon = GFX_focus_SOV_begin_reconstruction_plan
-		cost = 5.00
-		prerequisite = {
-			focus = SOV_Protect_Core_Corps
-		}
-		x = 9
-		y = 4
-
-	}
-	focus = {
-		id = SOV_2035_Energy_Principle
-		icon = GFX_focus_SOV_encourage_domestic_production
-		cost = 10.00
-		prerequisite = {
-			focus = SOV_Focus_on_Infrastructure
-		}
-		prerequisite = {
-			focus = SOV_Medicine_Distribution
-		}
-		x = 8
-		y = 5
-		completion_reward = {
-			
-		}
-
-	}
-	focus = {
-		id = SOV_Strategy_for_Timber
-		icon = GFX_focus_SOV_restore_collective_farms
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_Focus_on_Infrastructure
-		}
-		x = 10
-		y = 5
-		
-
-	}
-	focus = {
-		id = SOV_One_Stop_Trade_System
-		icon = GFX_focus_SOV_restructure_state_corporations
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_2035_Energy_Principle
-		}
-		x = 8
-		y = 6
-		
-
-	}
-	focus = {
-		id = SOV_Develop_Tourism
-		icon = GFX_focus_SOV_develop_tourism
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Strategy_for_Timber
-			focus = SOV_One_Stop_Trade_System
-		}
-		x = 10
-		y = 7
-
-	}
-	focus = {
-		id = SOV_Break_USA_Propaganda
-		icon = GFX_focus_SOV_the_navalny_fifth_column
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Develop_Tourism
-		}
-		x = 10
-		y = 8
-
-	}
-	focus = {
-		id = SOV_Our_Politic_situation
-		icon = GFX_focus_SOV_crush_western_influence
-		cost = 4
-		x = 14
-		y = 1
-		prerequisite = {
-			focus = SOV_New_Century
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_decrease_kprf
-		icon = GFX_focus_SOV_fight_against_the_left
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = SOV_Our_Politic_situation
-		prerequisite = {
-			focus = SOV_Our_Politic_situation
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_decrease_lpdr
-		icon = GFX_focus_SOV_fight_against_the_right
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = SOV_Our_Politic_situation
-		prerequisite = {
-			focus = SOV_Our_Politic_situation
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_compliment_tsardom
-		icon = GFX_focus_SOV_heirs_of_the_union
-		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = SOV_decrease_kprf
-		prerequisite = {
-			focus = SOV_decrease_kprf
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_compliment_ussr
-		icon = GFX_focus_SOV_utilize_communist_nostalgia
-		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = SOV_decrease_lpdr
-		prerequisite = {
-			focus = SOV_decrease_lpdr
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_loyalities_in_kprf
-		icon = GFX_focus_SOV_fight_against_the_left
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = SOV_decrease_kprf
-		prerequisite = {
-			focus = SOV_decrease_kprf
-		}
-		prerequisite = {
-			focus = SOV_compliment_tsardom
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_loyalities_in_ldpr
-		icon = GFX_focus_SOV_fight_against_the_right
-		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = SOV_decrease_lpdr
-		prerequisite = {
-			focus = SOV_decrease_lpdr
-		}
-		prerequisite = {
-			focus = SOV_compliment_ussr
-		}
-		completion_reward = {
-		}
-	}
-	focus = {
-		id = SOV_political_security
-		icon = GFX_focus_SOV_1000_years_of_putinism
-		cost = 4
-		x = 0
-		y = 4
-		relative_position_id = SOV_Our_Politic_situation
-		prerequisite = {
-			focus = SOV_loyalities_in_ldpr
-		}
-		prerequisite = {
-			focus = SOV_loyalities_in_kprf
-		}
-		completion_reward = {
 		}
 	}
 	focus = {
 		id = SOV_Our_Foreign_Politic
-		icon = GFX_focus_SOV_international
+		icon = GFX_focus_SOV_crush_western_influence
 		cost = 4
-		x = 8
+		x = -8
 		y = 1
-		relative_position_id = SOV_New_Century
 		prerequisite = {
 			focus = SOV_New_Century
 		}
@@ -372,15 +42,15 @@ focus_tree = {
 			}
 			SOV_add_election_approval_rating_nav = yes
 			add_political_power = 100
+			add_stability = 0.05
 		}
 	}
 	focus = {
 		id = SOV_Make_New_Deals
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_anti_globalist_bulwark
 		cost = 4
-		x = -3
-		y = 1
-		relative_position_id = SOV_Our_Foreign_Politic
+		x = -11
+		y = 2
 		prerequisite = {
 			focus = SOV_Our_Foreign_Politic
 		}
@@ -398,11 +68,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Destroy_NPO
-		icon = GFX_focus_SOV_spread_anti_western_propaganda
+		icon = GFX_focus_SOV_tighten_media_noose
 		cost = 4
-		x = 3
-		y = 1
-		relative_position_id = SOV_Our_Foreign_Politic
+		x = -5
+		y = 2
 		prerequisite = {
 			focus = SOV_Our_Foreign_Politic
 		}
@@ -413,37 +82,35 @@ focus_tree = {
 			value = -0.1
 			}
 			SOV_add_election_approval_rating_nav = yes
-		SOV_upgrade_faltering = yes
-		add_stability = 0.02
-		add_war_support = 0.02
+			SOV_upgrade_faltering = yes
+			add_stability = 0.02
+			add_war_support = 0.02
 		}
 	}
 	focus = {
 		id = SOV_SCHOS
-		icon = GFX_focus_SOV_anti_globalist_bulwark
+		icon = GFX_focus_SOV_pragmatic_eurasianism
 		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = SOV_Make_New_Deals
+		x = -10
+		y = 3
 		prerequisite = {
 			focus = SOV_Make_New_Deals
 		}
 		mutually_exclusive = { focus = SOV_BRICS }
 		completion_reward = {
-			custom_effect_tooltip = SOV_schos_focus_tt
-			swap_ideas = {
-				remove_idea = SOV_anti-globalism_diplomacy
-				add_idea = SOV_anti-globalism_diplomacy_schos
-			}
+		custom_effect_tooltip = SOV_schos_focus_tt
+		swap_ideas = {
+		remove_idea = SOV_anti-globalism_diplomacy
+		add_idea = SOV_anti-globalism_diplomacy_schos
 		}
 	}
+}
 	focus = {
 		id = SOV_BRICS
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_brics
 		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = SOV_Make_New_Deals
+		x = -12
+		y = 3
 		prerequisite = {
 			focus = SOV_Make_New_Deals
 		}
@@ -458,11 +125,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_New_constitution
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_spread_anti_western_propaganda
 		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = SOV_Our_Foreign_Politic
+		x = -8
+		y = 3
 		prerequisite = {
 			focus = SOV_Make_New_Deals
 			focus = SOV_Destroy_NPO
@@ -478,18 +144,17 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_persecution_leaders
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_the_navalny_fifth_column
 		cost = 4
-		x = 1
-		y = 1
-		relative_position_id = SOV_Destroy_NPO
+		x = -4
+		y = 3
 		prerequisite = {
 			focus = SOV_Destroy_NPO
 		}
 		mutually_exclusive = { focus = SOV_persecution_majority }
 		completion_reward = {
-		SOV_upgrade_faltering = yes
-		add_political_power = 50
+			SOV_upgrade_faltering = yes
+			add_political_power = 50
 			set_temp_variable = {
 				var = SOV_election_approval_rating_nav_var_temp
 				value = -0.05
@@ -499,21 +164,20 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_persecution_majority
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_expand_government_framework
 		cost = 4
-		x = -1
-		y = 1
-		relative_position_id = SOV_Destroy_NPO
+		x = -6
+		y = 3
 		prerequisite = {
 			focus = SOV_Destroy_NPO
 		}
 		mutually_exclusive = { focus = SOV_persecution_leaders }
 		completion_reward = {
 			add_ideas = SOV_potemkin_reforms
-			add_popularity = {
-				ideology = authoritarian_democrat
-				popularity = 0.05
-			}
+				add_popularity = {
+					ideology = authoritarian_democrat
+					popularity = 0.05
+				}
 			set_temp_variable = {
 				var = SOV_election_approval_rating_ur_var_temp
 				value = 0.03
@@ -523,11 +187,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Create_Free_Trade_Zone
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_russian_national_interests
 		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = SOV_SCHOS
+		x = -10
+		y = 4
 		prerequisite = {
 			focus = SOV_New_constitution
 		}
@@ -536,6 +199,7 @@ focus_tree = {
 			focus = SOV_BRICS
 		}
 		completion_reward = {
+			SOV_upgrade_faltering = yes
 			add_stability = 0.04
 			custom_effect_tooltip = SOV_ftz_focus_tt
 			set_temp_variable = {
@@ -547,11 +211,13 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_increase_censore
-		icon = GFX_focus_SOV_increase_online_censorship
+		icon = GFX_focus_SOV_amplify_state_media
 		cost = 4
-		x = 0
-		y = 1
-		relative_position_id = SOV_persecution_majority
+		x = -6
+		y = 4
+		available = {
+			has_country_flag = SOV_navalny_protest
+			}
 		prerequisite = {
 			focus = SOV_New_constitution
 		}
@@ -560,7 +226,6 @@ focus_tree = {
 			focus = SOV_persecution_majority
 		}
 		completion_reward = {
-			custom_effect_tooltip = SOV_censore_focus_tt
 			set_temp_variable = {
 				var = SOV_election_approval_rating_nav_var_temp
 				value = -0.05
@@ -571,11 +236,10 @@ focus_tree = {
 	}
 	focus = {
 		id = SOV_Our_internal_security
-		icon = GFX_focus_SOV_crush_western_influence
+		icon = GFX_focus_SOV_1000_years_of_putinism
 		cost = 4
-		x = 0
-		y = 2
-		relative_position_id = SOV_New_constitution
+		x = -8
+		y = 5
 		prerequisite = {
 			focus = SOV_Create_Free_Trade_Zone
 			focus = SOV_increase_censore
@@ -586,214 +250,615 @@ focus_tree = {
 				value = 0.05
 			}
 			SOV_add_election_approval_rating_ur = yes
+			SOV_upgrade_faltering = yes
 		}
 	}
 	focus = {
-		id = SOV_Ukrainian_Strategy
-		icon = GFX_focus_SOV_restore_breadbasket
-		cost = 5.00
+		id = SOV_Our_Politic_situation
+		icon = GFX_focus_SOV_crush_western_influence
+		cost = 3
+		x = 0
+		y = 1
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		completion_reward = {
+			add_political_power = 70
+			unlock_decision_tooltip = shut_down_ldpr_social_media
+			unlock_decision_tooltip = prevent_communist_rally
+		}
+	}
+	focus = {
+		id = SOV_decrease_kprf
+		icon = GFX_focus_SOV_fight_communist_nostolgia
+		cost = 3
+		x = -1
+		y = 2
+		prerequisite = {
+			focus = SOV_Our_Politic_situation
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			add_stability = -0.015
+			unlock_decision_tooltip = arrest_communist_politician
+		}
+	}
+	focus = {
+		id = SOV_decrease_lpdr
+		icon = GFX_focus_SOV_fight_ldpr_influence
+		cost = 3
+		x = 1
+		y = 2
+		prerequisite = {
+			focus = SOV_Our_Politic_situation
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			add_war_support = -0.015
+			unlock_decision_tooltip = arrest_ldpr_politician
+		}
+	}
+	focus = {
+		id = SOV_compliment_tsardom
+		icon = GFX_focus_SOV_calls_of_russian_unity
+		cost = 4
+		x = -2.5
+		y = 3
+		prerequisite = {
+			focus = SOV_decrease_kprf
+		}
+		completion_reward = {
+		add_war_support = 0.02
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		unlock_decision_tooltip = stir_up_nationalism
+		}
+	}
+	focus = {
+		id = SOV_compliment_ussr
+		icon = GFX_focus_SOV_utilize_communist_nostalgia
+		cost = 4
+		x = 2.5
+		y = 3
+		prerequisite = {
+			focus = SOV_decrease_lpdr
+		}
+		completion_reward = {
+		add_stability = 0.02
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = 0.03
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.015
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			unlock_decision_tooltip = offer_material_concessions
+		}
+	}
+	focus = {
+		id = SOV_loyalities_in_kprf
+		icon = GFX_focus_SOV_bribe_corrupt_cprf_officials
+		cost = 4
+		x = -1
+		y = 4
+		prerequisite = {
+			focus = SOV_decrease_kprf
+		}
+		prerequisite = {
+			focus = SOV_compliment_tsardom
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = libertarian_socialist
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = communist
+				popularity = -0.02
+			}
+			add_popularity = {
+				ideology = totalitarian_socialist
+				popularity = -0.01
+			}
+			add_stability = 0.025
+			add_political_power = 20
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.03
+			}
+			SOV_add_election_approval_rating_cprf = yes
+		}
+	}
+	focus = {
+		id = SOV_loyalities_in_ldpr
+		icon = GFX_focus_SOV_bribe_corrupt_ldpr_officials
+		cost = 4
+		x = 1
+		y = 4
+		prerequisite = {
+			focus = SOV_decrease_lpdr
+		}
+		prerequisite = {
+			focus = SOV_compliment_ussr
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = fascist
+				popularity = -0.03
+			}
+			add_popularity = {
+				ideology = national_socialist
+				popularity = -0.03
+			}
+			add_stability = 0.025
+			add_political_power = 20
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.03
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+		}
+	}
+	focus = {
+		id = SOV_campany_fight_with_corruption
+		icon = GFX_focus_SOV_focus_on_corruption
+		cost = 3
+		x = 0
+		y = 3
+		prerequisite = {
+			focus = SOV_Our_Politic_situation
+		}
+		completion_reward = {
+		SOV_decrease_corruption = yes
+		}
+	}
+	focus = {
+		id = SOV_political_security
+		icon = GFX_focus_SOV_pass_the_new_constitution
+		cost = 4
+		x = 0
+		y = 5
+
+		prerequisite = {
+			focus = SOV_loyalities_in_ldpr
+		}
+		prerequisite = {
+				focus = SOV_loyalities_in_kprf
+		}
+		available = {
+			check_variable = {
+				var = SOV_election_approval_rating_ur_var
+				value = 0.50
+				compare = greater_than_or_equals
+			}
+		}
+		
+		completion_reward = {
+			add_stability = 0.05
+			set_temp_variable = {
+				var = SOV_election_approval_rating_cprf_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_cprf = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ldpr_var_temp
+				value = -0.05
+			}
+			SOV_add_election_approval_rating_ldpr = yes
+			add_political_power = 100
+			custom_effect_tooltip = SOV_reyting_odobreniya_tt
+		}
+	}
+	focus = {
+		id = SOV_Economic_Situation
+		icon = GFX_focus_SOV_enrich_mother_russia
+		cost = 4
+		x = 7
+		y = 1
+		prerequisite = {
+			focus = SOV_New_Century
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = debt_var_temp
+				value = 150
+			}
+			add_debt_with_inflation = yes
+			random_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							has_state_category = wasteland
+							has_state_category = enclave
+							has_state_category = tiny_island
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			652 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			SOV = { country_event = russia.13 }
+	}
+}
+	focus = {
+		id = SOV_Sanction_Economic_Resistance
+		icon = GFX_focus_SOV_sanction_proof_economy
+		cost = 3
+		x = 9
+		y = 2
+		prerequisite = {
+			focus = SOV_Economic_Situation
+		}
+		completion_reward = {
+			SOV_decrease_sanction = yes
+			set_temp_variable = {
+                var = SOV_election_approval_rating_ur_var_temp
+                value = -0.02
+            }
+            SOV_add_election_approval_rating_ur = yes
+		}
+	}
+	focus = {
+		id = SOV_Coronavirus
+		icon = GFX_focus_SOV_force_lockdowns
+		cost = 2
+		x = 5
+		y = 2
+		prerequisite = {
+			focus = SOV_Economic_Situation
+		}
+		completion_reward = {
+			add_stability = -0.05
+			add_political_power = -50
+			add_days_mission_timeout = {
+				mission = SOV_handle_covid_mission
+				days = 90
+			}
+		}
+	}
+	focus = {
+		id = SOV_Help_the_people
+		icon = GFX_focus_SOV_hospital_budget
+		cost = 3
+		x = 4
+		y = 3
+		prerequisite = {
+			focus = SOV_Coronavirus
+		}
+		mutually_exclusive = { focus = SOV_Maximum_Economy }
+		completion_reward = {
+			set_temp_variable = {
+                var = SOV_election_approval_rating_ur_var_temp
+                value = 0.015
+            }
+            SOV_add_election_approval_rating_ur = yes
+			add_days_mission_timeout = {
+				mission = SOV_handle_covid_mission
+				days = 60
+			}
+			add_timed_idea = {
+				idea = SOV_save_economy_covid
+				days = 90
+			}
+		}
+	}
+	focus = {
+		id = SOV_Maximum_Economy
+		icon = GFX_focus_SOV_reform_central_bank
+		cost = 3
+		x = 6
+		y = 3
+		prerequisite = {
+			focus = SOV_Coronavirus
+		}
+		mutually_exclusive = { focus = SOV_Help_the_people }
+		completion_reward = {
+			set_temp_variable = {
+                var = SOV_election_approval_rating_ur_var_temp
+                value = -0.02
+            }
+            SOV_add_election_approval_rating_ur = yes
+			add_timed_idea = {
+				idea = SOV_ignored_people
+				days = 120
+			}
+		}
+	}
+	focus = {
+		id = SOV_development_vaccine
+		icon = GFX_focus_SOV_kickstart_vaccine_research
+		cost = 4
+		x = 5
+		y = 4
+		prerequisite = {
+			focus = SOV_Help_the_people
+			focus = SOV_Maximum_Economy
+		}
+		completion_reward = {
+			set_temp_variable = {
+				var = income_var_temp
+				value = -63.48
+			}
+			add_income_with_inflation = yes
+			set_temp_variable = {
+				var = SOV_election_approval_rating_ur_var_temp
+				value = 0.02
+			}
+			SOV_add_election_approval_rating_ur = yes
+			add_days_mission_timeout = {
+				mission = SOV_handle_covid_mission
+				days = 60
+			}
+			add_days_mission_timeout = {
+				mission = SOV_vaccine_development
+				days = -30
+			}			
+		}
+	}
+	focus = {
+		id = SOV_Development_Big_City
+		icon = GFX_focus_SOV_focus_russian_economy
+		cost = 4
+		x = 8
+		y = 3
+		prerequisite = {
+			focus = SOV_Sanction_Economic_Resistance
+		}
+		mutually_exclusive = { focus = SOV_Development_Many_Cities }
+		completion_reward = {
+			hidden_effect = {
+				SOV_decrease_birth_rate = yes
+				add_to_variable = {
+					var = SOV_shortage_of_workers_production_speed_buildings_factor_dynamic
+					value = 0.02
+				}
+				add_to_variable = {
+					var = SOV_shortage_of_workers_industrial_capacity_factory_dynamic
+					value = 0.02
+				}
+				add_to_variable = {
+					var = SOV_shortage_of_workers_factory_max_efficiency_factor_dynamic
+					value = 0.02
+				}
+				add_to_variable = {
+					var = SOV_shortage_of_workers_income_growth_factor_dynamic
+					value = 0.03
+				}
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							has_state_category = town 
+							has_state_category = village
+							has_state_category = rural
+							has_state_category = pastoral
+							has_state_category = small_island
+							has_state_category = tiny_island
+							has_state_category = enclave
+							has_state_category = wasteland	
+							has_state_category = large_town
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+					}
+				add_building_construction = {
+					type = office_park
+					level = 2
+					instant_build = yes
+					}
+			}
+			random_owned_state = {
+				limit = {
+					NOT = {
+						OR = {
+							has_state_category = town 
+							has_state_category = village
+							has_state_category = rural
+							has_state_category = pastoral
+							has_state_category = small_island
+							has_state_category = tiny_island
+							has_state_category = enclave
+							has_state_category = wasteland	
+							has_state_category = large_town
+						}
+					}
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = office_park
+					level = 2
+					instant_build = yes
+				}
+			}
+			custom_effect_tooltip = SOV_decrease_shortage_of_workers_tt
+			custom_effect_tooltip = SOV_decrease_birth_rate_tt
+		}
+	}
+	focus = {
+		id = SOV_Development_Many_Cities
+		icon = GFX_focus_SOV_municipal_zemstva
+		cost = 4
+		x = 10
+		y = 3
+		prerequisite = {
+			focus = SOV_Sanction_Economic_Resistance
+		}
+		mutually_exclusive = { focus = SOV_Development_Big_City }
+		completion_reward = {
+			hidden_effect = {
+				SOV_increase_birth_rate = yes
+			}
+			custom_effect_tooltip = SOV_increase_birth_rate_tt
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = SOV_subsiddion_rce
+		icon = GFX_focus_SOV_sponsor_russian_digital_economy
+		cost = 4
+		x = 10
+		y = 4
+		prerequisite = {
+			focus = SOV_Development_Many_Cities
+			focus = SOV_Development_Big_City
+		}
+		completion_reward = {
+			custom_effect_tooltip = SOV_rce_tt
+			add_timed_idea = {
+				idea = SOV_Russian_Internet_Companies
+				days = 180
+					}
+			hidden_effect = {
+				unlock_decision_tooltip = SOV_subsidion_gosuslugi
+				unlock_decision_tooltip = SOV_subsidion_yandex
+				unlock_decision_tooltip = SOV_subsidion_VK
+			}
+		}
+	}
+	focus = {
+		id = SOV_Vostok_Oil
+		icon = GFX_focus_SOV_deals_with_oligarchs
+		cost = 4
+		x = 8
+		y = 4
+		prerequisite = {
+			focus = SOV_Development_Many_Cities
+			focus = SOV_Development_Big_City
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = SOV_The_Petrol_Economy
+				add_idea = SOV_The_Petrol_Economy_2
+			}
+			unlock_decision_tooltip = SOV_oil_norilsk
+			unlock_decision_tooltip = SOV_oil_salekhard
+			add_resource = {
+				type = oil
+				amount = 40
+				state = 516 
+			}
+		}
+	}
+	focus = {
+		id = SOV_Economic_Stabilization
+		icon = GFX_focus_SOV_back_to_normal
+		cost = 4
+		x = 7
+		y = 5
+		prerequisite = {
+			focus = SOV_Vostok_Oil
+		}
+		prerequisite = {
+			focus = SOV_subsiddion_rce
+		}
+		prerequisite = {
+			focus = SOV_development_vaccine
+		}
+		completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		add_timed_idea = {
+		idea = SOV_New_Russian_Economy
+		days = 210
+			}
+		}
+	}
+	focus = {
+		id = SOV_Zapad-2021
+		icon = GFX_focus_SOV_anti_ukranian_military_exercizes
+		cost = 2
+		x = 0
+		y = 6
+		available = {
+		has_country_flag = SOV_Zapad_2021
+			}
+		prerequisite = {
+			focus = SOV_Economic_Stabilization
+		}
 		prerequisite = {
 			focus = SOV_Our_internal_security
 		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Our_internal_security
-
-	}
-	focus = {
-		id = SOV_Another_Coup
-		icon = GFX_focus_SOV_attack_kuban_traitors
-		cost = 4.00
 		prerequisite = {
-			focus = SOV_Ukrainian_Strategy
+			focus = SOV_political_security
 		}
-		mutually_exclusive = {
-			focus = SOV_Prep_for_War
-		}
-		x = -2
-		y = 1
-		relative_position_id = SOV_Ukrainian_Strategy
-
-	}
-	focus = {
-		id = SOV_Prep_for_War
-		icon = GFX_focus_SOV_cult_of_combined_arms
-		cost = 5.00
-		prerequisite = {
-			focus = SOV_Ukrainian_Strategy
-		}
-		mutually_exclusive = {
-			focus = SOV_Another_Coup
-		}
-		x = 2
-		y = 1
-		relative_position_id = SOV_Ukrainian_Strategy
-
-	}
-	focus = {
-		id = SOV_Stupid_Intelligence
-		icon = GFX_focus_SOV_anti_globalist_bulwark
-		cost = 2.00
-		prerequisite = {
-			focus = SOV_Prep_for_War
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Prep_for_War
-
-	}
-	focus = {
-		id = SOV_Reload_Arms
-		icon = GFX_focus_SOV_anti_ukranian_military_exercizes
-		cost = 5.00
-		prerequisite = {
-			focus = SOV_Stupid_Intelligence
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Stupid_Intelligence
-
-	}
-	focus = {
-		id = SOV_Vaccine_Injection
-		icon = GFX_focus_SOV_against_chipivization
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Medicine_Distribution
-		}
-		x = 5
-		y = 5
-
-	}
-	focus = {
-		id = SOV_Trusted_Intelligence
-		icon = GFX_focus_SOV_increase_fsb_funding
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Another_Coup
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Another_Coup
-
-	}
-	focus = {
-		id = SOV_Secure_Airport
-		icon = GFX_focus_SOV_build_up_western_air_bases
-		cost = 4.00
-		prerequisite = {
-			focus = SOV_Trusted_Intelligence
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_Trusted_Intelligence
-
-	}
-
-	focus = {
-		id = SOV_The_Two_Republics
-		icon = GFX_focus_SOV_novorussian_integration
-		cost = 2
-		x = 0
-		y = 4
-		relative_position_id = SOV_Ukrainian_Strategy
-		prerequisite = {
-			focus = SOV_Reload_Arms
-			focus = SOV_Secure_Airport
-		}
-		completion_reward = { }
-	}
-	focus = {
-		id = SOV_SMO
-		icon = GFX_focus_SOV_declare_smo
-		cost = 1.00
-		prerequisite = {
-			focus = SOV_The_Two_Republics
-		}
-		x = 0
-		y = 1
-		relative_position_id = SOV_The_Two_Republics
-		will_lead_to_war_with = UKR
 		completion_reward = {
-			hidden_effect = {
-				play_song = "tno_song_goosestep"
-			}
-			if = {
-				limit = { 
-					has_completed_focus = SOV_Prep_for_War
-				}
-				declare_war_on = {
-					target = UKR
-					type = puppet_wargoal_focus
-				}
-				hidden_effect = {
-					load_focus_tree = SOV_2022
-				}
-				focus_unlock = yes
-			}
-			else = {
-				effect_tooltip = {
-					UKR = {
-						start_civil_war = {
-							ideology = authoritarian_democrat
-							size = 0.5
-							states = all
-						}
-					}
-					create_wargoal = {
-						target = UKR
-						type = liberate_wargoal
-					}
-					focus_unlock = yes
-				}
-				hidden_effect = {
-					UKR = {
-						every_core_state = {
-							add_dynamic_modifier = {
-								modifier = unplanned_offensive
-							}
-						}
-					}
-					declare_war_on = {
-						target = UKR
-						type = annex_everything
-					}
-					load_focus_tree = SOV_2022
-				}
-				
-			}
+			add_war_support = 0.05
+			custom_effect_tooltip = New_focuses_tt
+			country_event = russia.26
 		}
-
-	}
-	focus = {
-		id = SOV_Support_Micro_Corps
-		icon = GFX_focus_SOV_restructure_tax_system
-		cost = 3.00
-		prerequisite = {
-			focus = SOV_One_Stop_Trade_System
-		}
-		prerequisite = {
-			focus = SOV_Strategy_for_Timber
-		}
-		x = 8
-		y = 7
-
-	}
-	focus = {
-		id = SOV_Sanction_Resistent
-		icon = GFX_focus_SOV_sanction_proof_economy
-		cost = 5.00
-		prerequisite = {
-			focus = SOV_Support_Micro_Corps
-		}
-		prerequisite = {
-			focus = SOV_Break_USA_Propaganda
-		}
-		prerequisite = {
-			focus = SOV_Vaccine_Injection
-		}
-		x = 8
-		y = 9
-
 	}
 }

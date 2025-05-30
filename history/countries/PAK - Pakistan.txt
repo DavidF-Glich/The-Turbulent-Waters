@@ -24,15 +24,6 @@
 		}
 	}
 
-	country_event = {
-		id = PAK.3
-		days = 1450
-	}
-	
-	country_event = {
-		id = PAK.11
-		days = 830
-	}
 
 	set_research_slots = 3
 	set_convoys = 320
@@ -51,12 +42,6 @@
 	recruit_character = PAK_Sahir_Shamshad_Mirza
 	recruit_character = PAK_Nadeem_Raza
 
-	set_variable = { Russian_Influence = 0.10 }
-	set_variable = { Chinese_Influence = 0.30 }
-	set_variable = { American_Influence = 0.00 }
-	set_variable = { European_Influence = 0.0 }
-	set_variable = { PDO_Influence = 0.10 }
-	set_variable = { Sovereign_Influence = 0.50 }
 
 	set_technology = {
 		## Infantry ##
@@ -188,7 +173,6 @@
 	set_country_flag = sunni_islam
 
 	add_ideas = {
-		PRC_personal_expense_factor_fix
 		lower_poverty
 		commonwealth_of_nations_member
 		PAK_fervent_nationalism

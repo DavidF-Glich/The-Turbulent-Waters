@@ -2,7 +2,7 @@ characters={
 	JOR_abdullah_ii_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/JOR/Abdullah II.png" 
+				large = "gfx/leaders/JOR/Abdullah II.png" 
 			}
 		}
 		country_leader = {

@@ -1,24 +1,12 @@
 ﻿	capital = 670
 
-#	oob = ""
+#
 
 	set_research_slots = 2
 	set_convoys = 10
 	set_stability = 0.55
-	country_event = {
-		id = laos.1
-		days = 380
-	}
-
 	set_country_flag = country_language_lao
 	set_country_flag = country_behavior_indolent
-
-	set_variable = { Russian_Influence = 0.00 }
-	set_variable = { Chinese_Influence = 0.70 }
-	set_variable = { American_Influence = 0.00 }
-	set_variable = { European_Influence = 0.0 }
-	set_variable = { PDO_Influence = 0.05 }
-	set_variable = { Sovereign_Influence = 0.25 }
 
 	recruit_character = LAO_bounnhang_vorachith_char
 	recruit_character = LAO_thongloun_sisoulith_char

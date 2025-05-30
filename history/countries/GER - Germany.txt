@@ -89,7 +89,7 @@ set_variable = {
 set_variable = {
 	GER_war_escalation_level = 1
 }
-
+recruit_character = GER_angela_merkel_char
 recruit_character = GER_frankwalter_steinmeir
 recruit_character = GER_max_otte_char
 recruit_character = GER_winfried_kretschmannr
@@ -144,7 +144,6 @@ recruit_character = GER_jan_christian_kaack_char
 recruit_character = GER_frank_martin_lenski_char
 recruit_character = GER_thomas_daum_char
 recruit_character = GER_wilhelm_tobias_abry_char
-recruit_character = GER_angela_merkel_char
 recruit_character = GER_european_commission_char
 recruit_character = GER_klaus_schwab_char
 recruit_character = GER_Heinrich_XIII

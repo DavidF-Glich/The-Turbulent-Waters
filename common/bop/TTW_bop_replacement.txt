@@ -1,10 +1,13 @@
 ## These MUST follow the naming standard noted in each category, otherwise it WILL NOT WORK!!
 BoP_Decisions_PRC = { decision_category = PRC_BoP_category }
 BoP_Decisions_USA = { decision_category = USA_BoP_category }
-BoP_Decisions_RUS = { decision_category = RUS_BoP_category }
+BoP_Decisions_SOV = { decision_category = RUS_BoP_category }
 BoP_Decisions_ENG = { decision_category = ENG_BoP_category }
 BoP_Decisions_FRA = { decision_category = FRA_BoP_category }
 BoP_Decisions_GER = { decision_category = GER_BoP_category }
 BoP_Decisions_PRK = { decision_category = PRK_BoP_category }
 BoP_Decisions_KOR = { decision_category = KOR_BoP_category }
 BoP_Decisions_JAP = { decision_category = JAP_BoP_category }
+BoP_Decisions_UKR = { decision_category = UKR_BoP_category }
+BoP_Decisions_RAJ = { decision_category = RAJ_BoP_category }
+BoP_Decisions_SWE = { decision_category = SWE_BoP_category }

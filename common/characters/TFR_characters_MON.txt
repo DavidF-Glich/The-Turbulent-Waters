@@ -75,7 +75,7 @@ characters={
 	MON_tsevegsurengiin_togoo_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/MON/MON_Tsevegsurengiin_Togoo.png"
+				large = "gfx/leaders/MON/MON_Tsevegsurengiin_Togoo.png"
 			}
 		}
 		corps_commander = {
@@ -91,7 +91,7 @@ characters={
 	MON_dovchinsurengiin_ganzorig_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/MON/MON_Dovchinsurengiin_Ganzorig.png"
+				large = "gfx/leaders/MON/MON_Dovchinsurengiin_Ganzorig.png"
 			}
 		}
 		field_marshal = {
@@ -109,7 +109,7 @@ characters={
 	MON_tserendejidiin_byambajav_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/MON/MON_Tserendejidiin_Byambajav.png"
+				large = "gfx/leaders/MON/MON_Tserendejidiin_Byambajav.png"
 			}
 		}
 		corps_commander = {
@@ -126,7 +126,7 @@ characters={
 	MON_gursediin_saikhanbayar_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/MON/MON_Gursediin_Saikhanbayar.png"
+				large = "gfx/leaders/MON/MON_Gursediin_Saikhanbayar.png"
 			}
 		}
 		corps_commander = {

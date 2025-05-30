@@ -1,6 +1,5 @@
 ﻿capital = 932
-#oob = ""
-set_convoys = 60
+#set_convoys = 60
 set_stability = 0.6
 set_war_support = 0.4
 set_country_flag = shithole_country
@@ -1048,9 +1047,6 @@ add_ideas = {
 	medium_society
 }
 
-add_dynamic_modifier = {
-	modifier = APA_drug_trade_dynamic
-}
 
 recruit_character = APA_michael_prysner_char
 recruit_character = APA_caleb_maupin_char
@@ -1172,7 +1168,6 @@ if = {
 			tank_nsb_engine_upgrade = 3
 			tank_nsb_armor_upgrade = 2
 		}
-		icon = "gfx/interface/technologies/armor/Universal/M113 Zippo.png"
 	}
 }
 
@@ -1193,7 +1188,6 @@ if = {
 			special_type_slot_2 = lmg_defense_turret_2x
 			special_type_slot_3 = empty
 		}
-		icon = "GFX_GER_tactical_bomber1_medium"
 	}
 	create_equipment_variant = {
 		name = "F-15E"

@@ -30,23 +30,6 @@
 					always = yes
 				}
 
-				on_add = {
-					add_dynamic_modifier = {
-						modifier = BLA_bp_influence_dynamic_modifier
-					}
-					add_dynamic_modifier = {
-						modifier = BLA_noi_influence_dynamic_modifier
-					}
-				}
-
-				on_remove = {
-					remove_dynamic_modifier = {
-						modifier = BLA_bp_influence_dynamic_modifier
-					}
-					remove_dynamic_modifier = {
-						modifier = BLA_noi_influence_dynamic_modifier
-					}
-				}
 
 				removal_cost = -1
 				

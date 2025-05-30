@@ -6,10 +6,6 @@
 	set_convoys = 10
 	set_stability = 0.1
 
-	country_event = {
-		id = car.2
-		days = 741
-	}
 
 	set_technology = {
 		## Infantry ##

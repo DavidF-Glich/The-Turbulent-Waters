@@ -2,7 +2,7 @@
 		CZE_milos_zeman_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/CZE/Miloš Zeman.png"
+					large = "gfx/leaders/CZE/Miloš Zeman.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		CZE_katerina_konecna_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/CZE/Katerina_Konecna.png"
+					large = "gfx/leaders/CZE/Katerina_Konecna.png"
 				}
 			}
 			country_leader={

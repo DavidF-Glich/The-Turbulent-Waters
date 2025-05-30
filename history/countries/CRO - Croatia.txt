@@ -169,9 +169,3 @@ set_popularities = {
 	communist = 4
 }
 
-CRO = {
-	country_event = {
-		id = serbia.28
-		days = 5
-	}
-}

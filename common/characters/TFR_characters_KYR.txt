@@ -2,7 +2,7 @@ characters={
 	KYR_sooronbay_jeenbekov_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/KYR/Sooronbay_Jeenbekov.dds" 
+				large = "gfx/leaders/KYR/Sooronbay_Jeenbekov.dds" 
 			}
 		}
 
@@ -16,7 +16,7 @@ characters={
 	KYR_iskhak_masaliev_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/KYR/Iskhak_Masaliev.png" 
+				large = "gfx/leaders/KYR/Iskhak_Masaliev.png" 
 			}
 		}
 
@@ -30,7 +30,7 @@ characters={
 	KYR_sadyr_japarov_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/KYR/Sadyr Japarov.png" 
+				large = "gfx/leaders/KYR/Sadyr Japarov.png" 
 			}
 		}
 
@@ -44,7 +44,7 @@ characters={
 	KYR_adakhan_madumarov_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/KYR/Adakhan_Madumarov.png" 
+				large = "gfx/leaders/KYR/Adakhan_Madumarov.png" 
 			}
 		}
 

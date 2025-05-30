@@ -2,11 +2,11 @@ characters = {
 	PTF_thomas_rousseau_char_revolution = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+				large = "gfx/leaders/PTF/PTF_thomas_rousseau_revolution.png"
 			}
 			army = {
 				small = "gfx/interface/ideas/PTF/advisors/PTF_thomas_rousseau.png"
-				large = "gfx/Leaders/PTF/PTF_thomas_rousseau_revolution.png"
+				large = "gfx/leaders/PTF/PTF_thomas_rousseau_revolution.png"
 			}
 		}
 		country_leader = {
@@ -570,10 +570,10 @@ characters = {
 	PTF_John_Doyle_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_Chris_Hood.png"
+				large = "gfx/leaders/PTF/PTF_Chris_Hood.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_Chris_Hood.png"
+				large = "gfx/leaders/PTF/PTF_Chris_Hood.png"
 			}
 		}
 		country_leader = {
@@ -583,10 +583,10 @@ characters = {
 	PTF_Chris_Hood_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_Chris_Hood.png"
+				large = "gfx/leaders/PTF/PTF_Chris_Hood.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_Chris_Hood.png"
+				large = "gfx/leaders/PTF/PTF_Chris_Hood.png"
 			}
 		}
 		country_leader = {
@@ -607,10 +607,10 @@ characters = {
 	PTF_OUTLAWED_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_artyom.png"
+				large = "gfx/leaders/PTF/PTF_artyom.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_artyom.png"
+				large = "gfx/leaders/PTF/PTF_artyom.png"
 			}
 		}
 		country_leader = {
@@ -635,10 +635,10 @@ characters = {
 	NSC_Chris_Hood_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_Chris_Hood.png"
+				large = "gfx/leaders/PTF/PTF_Chris_Hood.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_Chris_Hood.png"
+				large = "gfx/leaders/PTF/PTF_Chris_Hood.png"
 			}
 		}
 		country_leader = {
@@ -648,10 +648,10 @@ characters = {
 	GOP_paul_lepage_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_paul_lepage.png"
+				large = "gfx/leaders/PTF/PTF_paul_lepage.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_paul_lepage.png"
+				large = "gfx/leaders/PTF/PTF_paul_lepage.png"
 			}
 		}
 		country_leader = {
@@ -662,10 +662,10 @@ characters = {
 		name = GOP_paul_lepage_char
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/PTF/PTF_paul_lepage.png"
+				large = "gfx/leaders/PTF/PTF_paul_lepage.png"
 			}
 			army = {
-				large = "gfx/Leaders/PTF/PTF_paul_lepage.png"
+				large = "gfx/leaders/PTF/PTF_paul_lepage.png"
 			}
 		}
 		country_leader = {

@@ -23,7 +23,12 @@ spriteTypes = {
 		name = "GFX_surovikin_soviet"
 		texturefile = "gfx/leaders/SOV/generals/Sergey Surovikin (Soviet).dds"
 	}
-	
+		
+	spriteType = {
+		name = "GFX_vladimir_putin1"
+		texturefile = "gfx/leaders/SOV/SOV_vladimir_putin1.png"
+	}
+
 	spriteType = {
 		name = "GFX_gerasimov_soviet"
 		texturefile = "gfx/leaders/SOV/generals/Valery_Gerasimov_Soviet.dds"
@@ -118,6 +123,10 @@ spriteTypes = {
 	}
 
 	### GER
+	spriteType = {
+		name = "GFX_portrait_angela_merkel"
+		texturefile = "gfx/texticons/HoG/GER/GER_angela_merkel.png"
+	}	
 
 	spriteType = {
 		name = "GFX_portrait_ger_felix_steiner"
@@ -4919,7 +4928,10 @@ spriteTypes = {
 		name = GFX_portrait_JAP_emperor_hirohito
 		texturefile = "gfx/leaders/JAP/Portrait_Japan_Hirohito.dds"
 	}
-
+	spriteType = {
+		name = GFX_portrait_JAP_shinzo_abe
+		texturefile = "gfx/texticons/HoG/JAP/JAP_shinzo_abe.png"
+	}
 	spriteType = {
 		name = GFX_portrait_JAP_tomoyuki_yamashita
 		texturefile = "gfx/leaders/JAP/Portrait_Japan_Tomoyuki_Yamashita.dds"

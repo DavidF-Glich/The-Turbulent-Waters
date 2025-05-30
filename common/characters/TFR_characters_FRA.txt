@@ -828,10 +828,10 @@ characters = {
 		}
 		gender = female
 	}
-	FPR_Collective_Leadership_char = {
+	FPR_Collective_leadership_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/leaders/FRA/FPR_Collective_Leadership.png"
+				large = "gfx/leaders/FRA/FPR_Collective_leadership.png"
 			}
 		}
 		

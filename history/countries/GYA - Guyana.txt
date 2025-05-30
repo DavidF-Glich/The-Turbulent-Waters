@@ -110,9 +110,3 @@
 		social_liberal = 7
 	}
 
-	GYA = {
-		country_event = {
-			id = latin_america.8
-			days = 61
-		}
-	}

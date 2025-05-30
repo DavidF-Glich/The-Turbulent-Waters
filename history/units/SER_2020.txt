@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Brigada Kopnene Vojske"
-	override_model = SER_mechanized_entity
 
 	regiments = {
 		modern_armor = { x = 0 y = 0 }

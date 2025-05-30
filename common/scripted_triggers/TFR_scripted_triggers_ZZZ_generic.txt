@@ -16,7 +16,8 @@ has_content_tag = {
 		tag = PRC
 		tag = FRA
 		tag = GER
-		tag = FPR
+		tag = PRK
+		tag = KOR
 	}
 }
 
@@ -30,8 +31,6 @@ has_skeleton_tag = {
 		tag = AST
 		tag = ITA
 		tag = CHI
-		tag = PRK
-		tag = KOR
 		tag = SAF
 		tag = SAU
 		tag = SER
@@ -310,72 +309,6 @@ has_unsupported_manpower_law = {
 	}
 }
 
-#Development
-has_academic_development_greater_than_or_equals = {
-	custom_trigger_tooltip = {
-		tooltip = has_academic_development_greater_than_or_equals_tooltip
-		check_variable = {
-			var = academic_development_var
-			value = academic_development_trigger_temp
-			compare = greater_than_or_equals
-		}
-	}
-}
-
-has_farming_development_greater_than_or_equals = {
-	custom_trigger_tooltip = {
-		tooltip = has_farming_development_greater_than_or_equals_tooltip
-		check_variable = {
-			var = farming_development_var
-			value = farming_development_trigger_temp
-			compare = greater_than_or_equals
-		}
-	}
-}
-
-has_poverty_development_greater_than_or_equals = {
-	custom_trigger_tooltip = {
-		tooltip = has_poverty_development_greater_than_or_equals_tooltip
-		check_variable = {
-			var = poverty_development_var
-			value = poverty_development_trigger_temp
-			compare = greater_than_or_equals
-		}
-	}
-}
-
-has_industrial_development_greater_than_or_equals = {
-	custom_trigger_tooltip = {
-		tooltip = has_industrial_development_greater_than_or_equals_tooltip
-		check_variable = {
-			var = industrial_development_var
-			value = industrial_development_trigger_temp
-			compare = greater_than_or_equals
-		}
-	}
-}
-
-has_military_development_greater_than_or_equals = {
-	custom_trigger_tooltip = {
-		tooltip = has_military_development_greater_than_or_equals_tooltip
-		check_variable = {
-			var = military_development_var
-			value = military_development_trigger_temp
-			compare = greater_than_or_equals
-		}
-	}
-}
-
-has_society_development_greater_than_or_equals = {
-	custom_trigger_tooltip = {
-		tooltip = has_society_development_greater_than_or_equals_tooltip
-		check_variable = {
-			var = society_development_var
-			value = society_development_trigger_temp
-			compare = greater_than_or_equals
-		}
-	}
-}
 
 #Economy
 has_income_greater_than_or_equals = {

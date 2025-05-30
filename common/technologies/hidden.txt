@@ -30,10 +30,10 @@ technologies = {
 		}
 
 		start_year = 1936
-		enable_building = {
-			building = commercial_nuclear_reactor
-			level = 1
-		}
+#		enable_building = {
+#			building = commercial_nuclear_reactor
+#			level = 1
+#		}
 	}
 
 	stronghold_network_tech = {
@@ -42,10 +42,10 @@ technologies = {
 		}
 
 		start_year = 1936
-		enable_building = {
-			building = stronghold_network
-			level = 1
-		}
+#		enable_building = {
+#			building = stronghold_network
+#			level = 1
+#		}
 	}
 	
 	#############################

@@ -2,7 +2,7 @@
 		DAH_patrice_talon_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/DAH/DAH_patrice_talon.png"
+					large = "gfx/leaders/DAH/DAH_patrice_talon.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		DAH_Fructueux_Gbaguidi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/DAH/Fructueux Gbaguidi.png"
+					large = "gfx/leaders/DAH/Fructueux Gbaguidi.png"
 				}
 			}
 			country_leader = {

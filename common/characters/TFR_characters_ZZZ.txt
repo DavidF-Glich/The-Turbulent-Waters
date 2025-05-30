@@ -2,10 +2,10 @@ characters = {
 	ZZZ_anarchy_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+				large = "gfx/leaders/ZZZ/ZZZ_anarchy.png"
 			}
 			army = {
-				large = "gfx/Leaders/ZZZ/ZZZ_anarchy.png"
+				large = "gfx/leaders/ZZZ/ZZZ_anarchy.png"
 			}
 		}
 		country_leader = {

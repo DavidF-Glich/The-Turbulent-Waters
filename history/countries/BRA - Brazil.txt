@@ -347,6 +347,5 @@
 				special_type_slot_1 = empty
 				special_type_slot_2 = empty	
 			}
-			icon = "GFX_naval_bomber5_medium"
 		}
 	}

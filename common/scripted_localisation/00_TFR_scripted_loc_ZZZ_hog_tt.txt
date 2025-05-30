@@ -575,7 +575,6 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = SOV
-			has_completed_focus = SOV_restore_the_1977_constitution
 			NOT = {
 				has_country_flag = SOV_zyuganov_retired
 			}
@@ -585,7 +584,6 @@ defined_text = {
 	text = {
 		trigger = {
 			tag = SOV
-			has_completed_focus = SOV_restore_the_1977_constitution
 			has_country_flag = SOV_zyuganov_retired
 		}
 		localization_key = SOV_hog_yuri_afonin
@@ -640,13 +638,6 @@ defined_text = {
 			has_government = nationalist
 		}
 		localization_key = MLT_hog_maiga_chogel
-	}	
-	text = {
-		trigger = {
-			tag = SOV
-			has_idea = SOV_Baburin
-		}
-		localization_key = SOV_hog_andrey_baburin
 	}	
 	text = {
 		trigger = {

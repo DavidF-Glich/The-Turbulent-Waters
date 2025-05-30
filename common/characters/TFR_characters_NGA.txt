@@ -62,7 +62,7 @@
 		NGA_Bashir_Magashi_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Bashir Magashi.png"
+					large = "gfx/leaders/NGA/Bashir Magashi.png"
 				}
 			}
 			field_marshal={
@@ -77,7 +77,7 @@
 		NGA_Mohammed_Badaru_Abubakar_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Mohammed Badaru Abubakar.png"
+					large = "gfx/leaders/NGA/Mohammed Badaru Abubakar.png"
 				}
 			}
 			field_marshal={
@@ -92,7 +92,7 @@
 		NGA_Christopher_Gwabin_Musa_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Christopher Gwabin Musa.png"
+					large = "gfx/leaders/NGA/Christopher Gwabin Musa.png"
 				}
 			}
 			corps_commander={
@@ -107,7 +107,7 @@
 		NGA_Faruk_Yahaya_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Faruk Yahaya.png"
+					large = "gfx/leaders/NGA/Faruk Yahaya.png"
 				}
 			}
 			corps_commander={
@@ -122,7 +122,7 @@
 		NGA_Taoreed_Lagbaja_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Taoreed Lagbaja.png"
+					large = "gfx/leaders/NGA/Taoreed Lagbaja.png"
 				}
 			}
 			corps_commander={
@@ -137,7 +137,7 @@
 		NGA_Onyema_Nwachukwu_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Onyema Nwachukwu.png"
+					large = "gfx/leaders/NGA/Onyema Nwachukwu.png"
 				}
 			}
 			corps_commander={
@@ -152,7 +152,7 @@
 		NGA_JE_Osifo_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/JE Osifo.png"
+					large = "gfx/leaders/NGA/JE Osifo.png"
 				}
 			}
 			corps_commander={
@@ -167,7 +167,7 @@
 		NGA_Hassan_Abubakar_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Hassan Abubakar.png"
+					large = "gfx/leaders/NGA/Hassan Abubakar.png"
 				}
 			}
 			corps_commander={
@@ -182,7 +182,7 @@
 		NGA_Hilary_Nzan_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Hilary Nzan.png"
+					large = "gfx/leaders/NGA/Hilary Nzan.png"
 				}
 			}
 			corps_commander={
@@ -197,7 +197,7 @@
 		NGA_Ibrahim_Attahiru_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Ibrahim Attahiru.png"
+					large = "gfx/leaders/NGA/Ibrahim Attahiru.png"
 				}
 			}
 			corps_commander={
@@ -212,7 +212,7 @@
 		NGA_Isiaka_Oladayo_Amao_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Isiaka Oladayo Amao.png"
+					large = "gfx/leaders/NGA/Isiaka Oladayo Amao.png"
 				}
 			}
 			corps_commander={
@@ -227,7 +227,7 @@
 		NGA_Wisdom_Benjamin_Etuk_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Wisdom Benjamin Etuk.png"
+					large = "gfx/leaders/NGA/Wisdom Benjamin Etuk.png"
 				}
 			}
 			corps_commander={
@@ -242,7 +242,7 @@
 		NGA_Awwal_Zubairu_Gambo_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/NGA/Awwal Zubairu Gambo.png" 
+					large = "gfx/leaders/NGA/Awwal Zubairu Gambo.png" 
 				}
 			}
 
@@ -253,7 +253,7 @@
 		NGA_Emmanuel_Ogalla_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/NGA/Emmanuel Ogalla.png" 
+					large = "gfx/leaders/NGA/Emmanuel Ogalla.png" 
 				}
 			}
 
@@ -264,7 +264,7 @@
 		NGA_Ibok_Ete_Ekwe_Ibas_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/NGA/Ibok-Ete Ekwe Ibas.png" 
+					large = "gfx/leaders/NGA/Ibok-Ete Ekwe Ibas.png" 
 				}
 			}
 
@@ -352,7 +352,7 @@
 		AQI_Abu_Musab_al_Barnawi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Abu_Musab_al_Barnawi.png"
+					large = "gfx/leaders/NGA/Abu_Musab_al_Barnawi.png"
 				}
 			}
 			country_leader={
@@ -373,7 +373,7 @@
 		AQI_Adnan_Abu_Walid_al_Sahrawi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Adnan_Abu_Walid_al_Sahrawi.png"
+					large = "gfx/leaders/NGA/Adnan_Abu_Walid_al_Sahrawi.png"
 				}
 			}
 			country_leader={
@@ -393,7 +393,7 @@
 		AQI_Iyad_Ag_Ghaly = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Iyad_Ag_Ghaly.png"
+					large = "gfx/leaders/NGA/Iyad_Ag_Ghaly.png"
 				}
 			}
 			country_leader={
@@ -414,7 +414,7 @@
 		AQI_Mokhtar_Belmokhtar = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Mokhtar_Belmokhtar.png"
+					large = "gfx/leaders/NGA/Mokhtar_Belmokhtar.png"
 				}
 			}
 			country_leader={
@@ -435,7 +435,7 @@
 		AQI_Abu_al_Darda = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Abu_al_Darda.png"
+					large = "gfx/leaders/NGA/Abu_al_Darda.png"
 				}
 			}
 			country_leader={
@@ -456,7 +456,7 @@
 		AQI_Abubakar_Shekau = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Abubakar_Shekau.png"
+					large = "gfx/leaders/NGA/Abubakar_Shekau.png"
 				}
 			}
 			country_leader={
@@ -477,7 +477,7 @@
 		AQI_Abu_Huzeifa = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Abu_Huzeifa.png"
+					large = "gfx/leaders/NGA/Abu_Huzeifa.png"
 				}
 			}
 			country_leader={
@@ -498,7 +498,7 @@
 		AQI_Abu_Zaid_al_Maghribi = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Abu_Zaid_al_Maghribi.png"
+					large = "gfx/leaders/NGA/Abu_Zaid_al_Maghribi.png"
 				}
 			}
 			country_leader={
@@ -519,7 +519,7 @@
 		AQI_Ibrahim_Ousmane = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Ibrahim_Ousmane.png"
+					large = "gfx/leaders/NGA/Ibrahim_Ousmane.png"
 				}
 			}
 			country_leader={
@@ -540,7 +540,7 @@
 		AQI_Illiassou_Djibo = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NGA/Illiassou_Djibo.png"
+					large = "gfx/leaders/NGA/Illiassou_Djibo.png"
 				}
 			}
 			country_leader={

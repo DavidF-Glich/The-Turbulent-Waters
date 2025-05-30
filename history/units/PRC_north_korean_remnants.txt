@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Chongjian Chaoxian Jixiehua Lu"
-	override_model = PRK_mechanized_entity
 
 	regiments = {						
 		mechanized = { x = 0 y = 0 }

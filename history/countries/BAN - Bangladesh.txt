@@ -1,12 +1,6 @@
 ﻿	capital = 430
 
 	oob = "BAN_2020"
-
-	country_event = {
-		id = RAJ.16
-		days = 1139
-	}
-
 	set_research_slots = 2
 	set_convoys = 200
 	set_stability = 0.25

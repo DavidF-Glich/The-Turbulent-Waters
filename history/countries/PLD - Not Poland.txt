@@ -228,7 +228,6 @@
 	}
 
 	add_ideas = {
-		POL_i_hate_poland
 		POL_nationalism_idea
 		POL_legacy_idea
 		POL_splintered_society_idea
@@ -236,6 +235,7 @@
 		#Laws
 		higher_trade
 		high_poverty
+		high_military
 		#Diplo
 		visegrad_group_member
 		lower_conscription
@@ -248,8 +248,11 @@
 
 	add_opinion_modifier = {
 		target = HUN
-		modifier = visegrad_group
 		modifier = declaration_of_friendship
+	}
+	add_opinion_modifier = {
+		target = HUN
+		modifier = visegrad_group
 	}
 	add_opinion_modifier = {
 		target = SLO

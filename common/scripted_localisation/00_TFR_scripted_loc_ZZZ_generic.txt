@@ -499,15 +499,7 @@ defined_text = {
 		}
 		localization_key = "GFX_idea_SOV_brics_member"
 	}
-	text = {
-		trigger = {
-			tag = JAP
-			has_dynamic_modifier = {
-				modifier = JAP_PEC_dynamic
-			}
-		}
-		localization_key = "GFX_idea_JAP_PEC"
-	}
+	
 	text = {
 		trigger = {
 			tag = EGY
@@ -540,17 +532,7 @@ defined_text = {
 		}
 		localization_key = "TFR_international_organization_EU"
 	}
-	text = {
-		trigger = {
-			OR = {
-				has_dynamic_modifier = {
-					modifier = SOV_ADS_dynamic
-				}
-				has_idea = SOV_ADS_member
-			}
-		}
-		localization_key = "TFR_international_organization_ADS"
-	}
+	
 	text = {
 		trigger = {
 			OR = {
@@ -572,17 +554,6 @@ defined_text = {
 			}
 		}
 		localization_key = "TFR_international_organization_BRICS"
-	}
-	text = {
-		trigger = {
-			OR = {
-				has_dynamic_modifier = {
-					modifier = JAP_PEC_dynamic
-				}
-				has_idea = JAP_PEC_member
-			}
-		}
-		localization_key = "TFR_international_organization_PEC"
 	}
 	text = {
 		trigger = {
@@ -620,10 +591,6 @@ defined_text = {
 						modifier = SOV_TMC_dynamic
 					}
 					has_idea = SOV_tmca_member
-					has_dynamic_modifier = {
-						modifier = SOV_ADS_dynamic
-					}
-					has_idea = SOV_ADS_member
 					has_dynamic_modifier = {
 						modifier = EU_member_dynamic
 					}

@@ -129,6 +129,17 @@ characters = {
 			ideology = neonazism
 		}
 	}
+	JAP_shinzo_abe_char = {
+		name = JAP_abe
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/JAP/JAP_shinzo_abe.png"
+			}
+		}
+		country_leader = {
+			ideology = right_centrist
+		}
+	}
 	JAP_koji_yamazaki_char = {
 		portraits = {
 			army = {

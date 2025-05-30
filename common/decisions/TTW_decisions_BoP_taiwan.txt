@@ -1,34 +1,4 @@
 USA_BoP_category = {
-	USA_CIA_analyze_intelligence = {
-		icon = GFX_decision_generic_political_discourse
-		visible = {
-			OR = {
-				is_ai = yes
-				TTW_Espionage_Viewing_NorthAmerica = yes
-			}
-		}
-
-		available = {
-			custom_trigger_tooltip = {
-				tooltip = USA_CIA_Mission_Cost_25_Million
-				check_variable = { TTW_Espionage_Budget > 0.024 }
-			}
-		}
-
-		days_remove = 30
-
-		fixed_random_seed = no
-		complete_effect = {
-			subtract_from_variable = { TTW_Espionage_Budget = 0.025 }
-		}
-
-		remove_effect = {
-			set_temp_variable = { ExpertiseChange = 15 }
-		}
-
-		days_re_enable = 120
-
-	}
 	Pelosi_Coming_mission_USA = {
 		name = Pelosi_Coming_mission
 		icon = generic_political_rally
@@ -67,6 +37,9 @@ USA_BoP_category = {
 		visible = {
 			tag = USA
 			has_global_flag = Taiwan_Crisis
+			check_variable = {
+				selected_conflict_id = token:TaiwanCrisis
+			}
 		}
 		cost = 10
 		ai_will_do = {
@@ -123,6 +96,9 @@ PRC_BoP_category = {
 		visible = {
 			tag = PRC
 			has_global_flag = Taiwan_Crisis
+			check_variable = {
+				selected_conflict_id = token:TaiwanCrisis
+			}
 		}
 		cost = 10
 		days_remove = 10
@@ -221,6 +197,9 @@ PRC_BoP_category = {
 		visible = {
 			tag = PRC
 			has_global_flag = Taiwan_Crisis
+			check_variable = {
+				selected_conflict_id = token:TaiwanCrisis
+			}
 		}
 		available = {
 			ships_in_area = {
@@ -248,6 +227,9 @@ PRC_BoP_category = {
 		visible = {
 			tag = PRC
 			has_global_flag = Taiwan_Crisis
+			check_variable = {
+				selected_conflict_id = token:TaiwanCrisis
+			}
 		}
 		available = {
 			
@@ -269,6 +251,9 @@ PRC_BoP_category = {
 			has_global_flag = {
 				flag = Taiwan_Crisis
 				days > 60
+			}
+			check_variable = {
+				selected_conflict_id = token:TaiwanCrisis
 			}
 		}
 		cost = 25

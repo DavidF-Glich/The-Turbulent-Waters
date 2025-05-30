@@ -153,10 +153,3 @@
 		libertarian_socialist = 5
 		social_liberal = 4
 	}
-
-	TZN = {
-		country_event = {
-			id = tanzania.7
-			days = 441
-		}
-	}

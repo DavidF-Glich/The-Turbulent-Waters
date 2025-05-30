@@ -145,9 +145,3 @@
 		communist = 5
 	}
 
-	KUW = {
-		country_event = {
-			id = arab.1
-			days = 272
-		}
-	}

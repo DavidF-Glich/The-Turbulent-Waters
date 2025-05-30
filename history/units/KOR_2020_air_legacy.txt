@@ -1,0 +1,11 @@
+﻿### Air OOB ###
+air_wings = {
+	5252 = {
+		#KF-16
+		fighter_equipment_3 = {
+			owner = "KOR"
+			amount = 136
+		}
+
+	}
+}

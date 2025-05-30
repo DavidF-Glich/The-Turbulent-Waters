@@ -1,13 +1,20 @@
 ﻿l_simp_chinese:
   BOP_BUTTON: "国际战略"
-  TTW_GlobalConflicts_GUI_Title: "国际牌局"
+  TTW_GlobalConflicts_GUI_Title: "[TTW_GlobalConflicts_GUI_Titlereal]"
+  TTW_GlobalConflicts_GUI_Title_1: "国际牌局"
   GC_no_current_involvement: "暂无事项"
   GC_no_current_involvement_poem: "我不去想，是否能够成功，\n既然选择了远方，便只顾风雨兼程。\n我不去想，能否赢得爱情，\n既然钟情于玫瑰，就勇敢地吐露真诚。\n我不去想，身后会不会袭来寒风冷雨，\n既然目标是地平线，留给世界的只能是背影。\n我不去想，未来是平坦还是泥泞，\n只要热爱生命，\n一切，都在意料之中。"
   GC_no_current_involvement_poem_title: "热爱生命"
   BoP_Tab_GlobalConflicts: "全球冲突"
   BoP_Tab_Espionage: "情报行动"
   BOP_TAB_BUTTON_tt: "[?Tab_v.GetTokenLocalizedKey]"
-
+  fopo_name_tab: "§Y[Get_fopo_tab_name]§!"
+  TTW_add_fopo_conflict_tab_tt: "请在§3国际战略§!窗口查看新的局势。"
+  TTW_remove_fopo_conflict_tab_tt: "问题暂时消失了。\n请在§3国际战略§!窗口查看新的局势。"
+  TTW_fopo_into_icon_tt: "[TTW_fopo_into_icon_ttreal]"
+  TTW_fopo_into_icon_tt_1: "§Y国际战略介绍§!"
+  TTW_fopo_into_icon_tt_delayed: "[TTW_fopo_into_icon_tt_delayedreal]"
+  TTW_fopo_into_icon_tt_delayed_1: "这是一幅§2动荡世界§!的缩影，是你所执掌的国家在国际舞台上纵横捭阖的见证。\n\n§0代理人战争§!的暗流涌动、如§C外交危机§!的剑拔弩张。每一场冲突，都如同一页被风暴撕裂的历史篇章，化作一个个独立而鲜明的§Y分页§!，静静等待你的抉择。分页之中，蕴藏着该场冲突独有的§Y决议§!之钥——它们或许是和平的曙光，也可能是战火的引信。\n\n你所扮演的国家，在外交棋盘上的每一次落子，皆牵动着命运的天平。成功与失败，不仅书写着国家的荣辱兴衰，更重塑着其与周遭世界千丝万缕的联系。\n\n是§p袖手旁观§!，还是§R挺身而出§!？是§G合纵连横§!，还是§R孤军奋战§!？——这一切，皆取决于你如何权衡干涉的程度，以及在国际外交舞台上所采取的行动方针。"
 #决议冷战
   World_tension: "主要国家（集团）冲突"
   USA_PRC_Tension: "中美冲突"
@@ -33,6 +40,33 @@
   TTW_Cold_War_GUI_Tension_ID_Sino_US_Trade_War: "2018年中美贸易战"
   TTW_Cold_War_GUI_Tension_ID_US_Exit_IRNFT: "美国退出《中导条约》"
   rank_grid_title_text: "最新变动"
-  Other_country_economy_score: "经济分数：[?THIS.economic_score1]"
-  Other_country_military_score: "军事分数：[?THIS.military_score1]"
-  Other_country_total_score: "总分：[?THIS.total_score1]"
+  Other_country_economy_score: "经济分数：[?THIS.economic_score1|.0]"
+  Other_country_military_score: "军事分数：[?THIS.military_score1|.0]"
+  Other_country_total_score: "总分：[?THIS.total_score1|.0]"
+
+## Victories/Achievements
+  incident: "[Cold_War_GUI_GetVictoryName]"
+  incident_outcome: "[Cold_War_GUI_GetVictoryOutcome]\n[?ROOT.TTW_Cold_War_GUI_Victory_Points_Display^TTW_Cold_War_GUI_Victories_i|+0]"
+
+
+#总分目录
+  TTW_Cold_War_Victory_ID_0: "你不应该看到这个"
+  TTW_Cold_War_Victory_ID_1: "克里米亚危机"
+  TTW_Cold_War_Victory_ID_2: "叙利亚内战"
+  TTW_Cold_War_Victory_ID_3: "南海仲裁"
+  TTW_Cold_War_Victory_ID_4: "贸易战"
+
+#结局
+  TTW_Cold_War_Victory_Outcome_Error: "§R冲突结果§!"
+  TTW_Cold_War_Victory_Outcome_Ongoing: "§W进行中§!"
+  TTW_Cold_War_Victory_Outcome_Total_Defeat: "§n完败§!"
+  TTW_Cold_War_Victory_Outcome_Defeat: "§R失败§!"
+  TTW_Cold_War_Victory_Outcome_Stalemate: "§Y平手§!"
+  TTW_Cold_War_Victory_Outcome_Victory: "§3胜利§!"
+  TTW_Cold_War_Victory_Outcome_Total_Victory: "§G完胜§!"
+
+#台湾问题
+  Taiwan_Crisis2022_name: "台湾问题"
+
+#藏南问题
+  arunachal_war: "藏南问题"

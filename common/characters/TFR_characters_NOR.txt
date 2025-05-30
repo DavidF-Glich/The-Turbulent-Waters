@@ -2,7 +2,7 @@
 		NOR_harald_v_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NOR/Harald_V.png"
+					large = "gfx/leaders/NOR/Harald_V.png"
 				}
 			}
 			country_leader={
@@ -64,7 +64,7 @@
 		NOR_Haakon_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/NOR/NOR_Prince_Haakon.png"
+					large = "gfx/leaders/NOR/NOR_Prince_Haakon.png"
 				}
 			}
 			country_leader={

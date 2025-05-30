@@ -2,7 +2,7 @@
 		TUN_kais_saied_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/TUN/Kais_Saied_Tunisia.png"
+					large = "gfx/leaders/TUN/Kais_Saied_Tunisia.png"
 				}
 			}
 			country_leader={
@@ -21,7 +21,7 @@
 		TUN_Mohamed_El_Ghoul_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/TUN/Mohamed El Ghoul.png" 
+					large = "gfx/leaders/TUN/Mohamed El Ghoul.png" 
 				}
 			}
 
@@ -32,7 +32,7 @@
 		TUN_ismail_fathali_char = {
 			portraits={
 				army = {
-					large = "gfx/Leaders/TUN/Ismail Fathali.png" 
+					large = "gfx/leaders/TUN/Ismail Fathali.png" 
 				}
 			}
 

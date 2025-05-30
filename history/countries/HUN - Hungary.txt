@@ -16,18 +16,6 @@
 	set_variable = { European_Influence = 0.50 }
 	set_variable = { PDO_Influence = 0.00 }
 	set_variable = { Sovereign_Influence = 0.10 }
-	country_event = {
-		id = Hungary.13
-		days = 62
-	}
-	country_event = {
-		id = Hungary.2022
-		days = 823
-	}
-	country_event = {
-		id = Hungary.20222
-		days = 363
-	}
 	set_technology = {
 		## Infantry ##
 		infantry_weapons1 = 1
@@ -285,7 +273,6 @@
 				tank_nsb_engine_upgrade = 3
 				tank_nsb_armor_upgrade = 2
 			}
-			icon = "gfx/interface/technologies/armor/Universal/BMO-T.png"
 		}
 	}
 	

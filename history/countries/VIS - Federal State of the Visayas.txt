@@ -1,6 +1,6 @@
 	capital = 625
 
-#	oob = ""
+#
 	
 	if = {
 		limit = { has_dlc = "By Blood Alone" }
@@ -60,9 +60,6 @@
 	set_country_flag = shithole_country
 	recruit_character = VIS_gwendolyn_garcia_char
 
-	set_technology = {
-		
-	}
 
 	set_politics = {	
 		ruling_party = authoritarian_democrat

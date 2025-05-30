@@ -2,10 +2,10 @@ characters={
 	CLS_Dario_Antonio_Usuga_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/COL/CLS_Dario_Antonio_Usuga.png" 
+				large = "gfx/leaders/COL/CLS_Dario_Antonio_Usuga.png" 
 			}
 			army = {
-				large = "gfx/Leaders/COL/CLS_Dario_Antonio_Usuga.png" 
+				large = "gfx/leaders/COL/CLS_Dario_Antonio_Usuga.png" 
 			}
 		}
 		country_leader={
@@ -18,10 +18,10 @@ characters={
 	COL_Gustavo_Petro_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/COL/COL_Gustavo_Petro.png" 
+				large = "gfx/leaders/COL/COL_Gustavo_Petro.png" 
 			}
 			army = {
-				large = "gfx/Leaders/COL/COL_Gustavo_Petro.png" 
+				large = "gfx/leaders/COL/COL_Gustavo_Petro.png" 
 			}
 		}
 		country_leader={
@@ -39,10 +39,10 @@ characters={
 	COL_Ivan_Duque_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/COL/COL_Ivan_Duque.png" 
+				large = "gfx/leaders/COL/COL_Ivan_Duque.png" 
 			}
 			army = {
-				large = "gfx/Leaders/COL/COL_Ivan_Duque.png" 
+				large = "gfx/leaders/COL/COL_Ivan_Duque.png" 
 			}
 		}
 		country_leader={
@@ -55,10 +55,10 @@ characters={
 	COL_Juan_Barragan_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/COL/COL_Juan_Barragan.png" 
+				large = "gfx/leaders/COL/COL_Juan_Barragan.png" 
 			}
 			army = {
-				large = "gfx/Leaders/COL/COL_Juan_Barragan.png" 
+				large = "gfx/leaders/COL/COL_Juan_Barragan.png" 
 			}
 		}
 		country_leader={
@@ -80,10 +80,10 @@ characters={
 	ELN_Antonio_Garcica_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/COL/ELN_Antonio_Garcica.png" 
+				large = "gfx/leaders/COL/ELN_Antonio_Garcica.png" 
 			}
 			army = {
-				large = "gfx/Leaders/COL/ELN_Antonio_Garcica.png" 
+				large = "gfx/leaders/COL/ELN_Antonio_Garcica.png" 
 			}
 		}
 		country_leader={
@@ -96,10 +96,10 @@ characters={
 	FRC_Ivan_Marquez_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/COL/FRC_Ivan_Marquez.png" 
+				large = "gfx/leaders/COL/FRC_Ivan_Marquez.png" 
 			}
 			army = {
-				large = "gfx/Leaders/COL/FRC_Ivan_Marquez.png" 
+				large = "gfx/leaders/COL/FRC_Ivan_Marquez.png" 
 			}
 		}
 		country_leader={

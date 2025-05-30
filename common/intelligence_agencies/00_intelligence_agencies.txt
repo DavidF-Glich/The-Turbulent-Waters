@@ -74,14 +74,6 @@
 		available = { original_tag = ITA date < "2007.8.28" }
 	}
 
-	intelligence_agency = {
-		
-		picture = GFX_intelligence_agency_logo_ita2007
-		names = { "External Intelligence and Security Agency" }
-		
-		default = { tag = ITA date > "2007.8.27" }
-		available = { original_tag = ITA date > "2007.8.27" }
-	}
 
 	intelligence_agency = {
 		
@@ -279,41 +271,6 @@
 	#}
 
 	## NEW AGENCIES ##
-	intelligence_agency = {
-
-		picture = GFX_intelligence_agency_logo_raj
-		names = { "Research and Analysis Wing" }
-		
-		default = { tag = RAJ }
-		available = { original_tag = RAJ }
-	}
-
-	intelligence_agency = {
-
-		picture = GFX_intelligence_agency_logo_bra
-		names = { "Brazilian Intelligence Agency" }
-		
-		default = { tag = BRA }
-		available = { original_tag = BRA }
-	}
-
-	intelligence_agency = {
-
-		picture = GFX_intelligence_agency_logo_mex
-		names = { "National Intelligence Centre" }
-		
-		default = { tag = MEX }
-		available = { original_tag = MEX }
-	}
-
-	intelligence_agency = {
-
-		picture = GFX_intelligence_agency_logo_tur
-		names = { "National Intelligence Organization" }
-		
-		default = { tag = TUR }
-		available = { original_tag = TUR }
-	}
 	## /NEW AGENCIES ##
 
 	intelligence_agency = {
@@ -396,15 +353,6 @@
 		available = { 
 			has_government = communist #NVX#
 		}
-		
-		default = { always = yes } 
-	}
-	intelligence_agency = {
-		
-		picture = GFX_intelligence_agency_logo_oros
-		names = { "OROS" }
-		
-		available = { always = yes }
 		
 		default = { always = yes } 
 	}

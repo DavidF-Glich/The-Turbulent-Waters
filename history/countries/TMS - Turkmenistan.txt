@@ -122,7 +122,6 @@
 		create_equipment_variant = {
 			name = "Su-25"
 			type = small_plane_cas_airframe_1
-			model = "SOV_CAS_equipment_2_entity"
 			modules = {
 				fixed_main_weapon_slot = small_bomb_bay
 				fixed_auxiliary_weapon_slot_1 = small_bomb_bay
@@ -143,14 +142,6 @@
 		TMS_totalitarian_cult_state_idea
 		low_poverty
 	}
-
-	TMS = {
-		country_event = {
-			id = TMS.1
-			days = 801
-		}
-	}
-
 	set_politics = {	
 		ruling_party = nationalist
 		last_election = "2017.9.1"

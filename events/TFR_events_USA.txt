@@ -317,10 +317,6 @@ country_event = {
 	title = usa.10.t
 	desc = usa.10.d
 	is_triggered_only = yes
-	trigger = {
-		date = 2022.4.10
-		has_government = social_liberal
-	}
 	option = {
 		name = usa.10.a
 		hidden_effect = {
@@ -329,16 +325,16 @@ country_event = {
 				days = 80
 			}
 			set_global_flag =Taiwan_Crisis
-			activate_mission = Pelosi_Coming_mission
+			activate_mission = Pelosi_Coming_mission_USA
 		}
-		PRC = {
-			country_event = china.28
-		}
+		
 		CHI = {
 			country_event = china.28
+			set_temp_variable = { conflict_id = token:TaiwanCrisis }
+			TTW_add_fopo_conflict_tab = yes
 		}
 		custom_effect_tooltip = 2022_Taiwan_Crisis_tt3
-		set_temp_variable = { conflict_id = token:TaiwanCrisis2022 }
+		set_temp_variable = { conflict_id = token:TaiwanCrisis }
 		TTW_add_fopo_conflict_tab = yes
 	}
  }
@@ -1469,9 +1465,6 @@ country_event = {
 	desc = usa.38.desc
 	picture = GFX_USB_USB_im_a_kennedy_democrat
 	is_triggered_only = yes
-	trigger = {
-		tag = USB
-	}
 	immediate = {
 		hidden_effect = {
 			log = "[GetDateText]: [Root.GetName]: event usa.38 immediate"
@@ -1479,7 +1472,7 @@ country_event = {
 	}
 	option = {
 		name = usa.38.a
-		custom_effect_tooltip = tooltip_white_line
-		custom_effect_tooltip = unlock_eco_minister_tooltip
+		set_temp_variable = { conflict_id = token:Russo_Ukrainian_conflict }
+		TTW_add_fopo_conflict_tab = yes
 	}
 }

@@ -184,7 +184,7 @@ characters={
 		TMS_gurbanguly_berdimuhamedow_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/TMS/Gurbanguly_Berdimuhamedow.dds" 
+					large = "gfx/leaders/TMS/Gurbanguly_Berdimuhamedow.dds" 
 				}
 			}
 
@@ -198,7 +198,7 @@ characters={
 		TMS_reconstruction_council_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/TMS/Reconstruction Council.png" 
+					large = "gfx/leaders/TMS/Reconstruction Council.png" 
 				}
 			}
 
@@ -212,7 +212,7 @@ characters={
 		TMS_ata_serdarov_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/TMS/Ata_Serdarov.png" 
+					large = "gfx/leaders/TMS/Ata_Serdarov.png" 
 				}
 			}
 
@@ -225,7 +225,7 @@ characters={
 		TMS_serdar_berdimuhamedow_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/TMS/serdar_berdimuhamedow.png" 
+					large = "gfx/leaders/TMS/serdar_berdimuhamedow.png" 
 				}
 			}
 			country_leader={
@@ -243,7 +243,7 @@ characters={
 		TMS_begenc_gundogdyyew_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/TMS/Begenc_Gundogdyyew.png" 
+					large = "gfx/leaders/TMS/Begenc_Gundogdyyew.png" 
 				}
 			}
 			country_leader={
@@ -256,7 +256,7 @@ characters={
 		UZB_shavkat_mirziyoyev_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/UZB/Shavkat_Mirziyoyev.dds" 
+					large = "gfx/leaders/UZB/Shavkat_Mirziyoyev.dds" 
 				}
 			}
 
@@ -270,7 +270,7 @@ characters={
 		UZB_bahram_abdukhalimov_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/UZB/Bahram Abdukhalimov.png" 
+					large = "gfx/leaders/UZB/Bahram Abdukhalimov.png" 
 				}
 			}
 
@@ -284,7 +284,7 @@ characters={
 		UZB_ulugbek_inoyatov_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/UZB/Ulugbek_Inoyatov.png" 
+					large = "gfx/leaders/UZB/Ulugbek_Inoyatov.png" 
 				}
 			}
 
@@ -298,7 +298,7 @@ characters={
 		UZB_alisher_qodirov_char = {
 			portraits={
 				civilian = {
-					large = "gfx/Leaders/UZB/Alisher_Qodirov.png" 
+					large = "gfx/leaders/UZB/Alisher_Qodirov.png" 
 				}
 			}
 

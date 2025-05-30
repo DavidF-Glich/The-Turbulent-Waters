@@ -2,7 +2,7 @@ characters={
 	BRM_myint_swe_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BRM/Myint_Swe.png"
+				large="gfx/leaders/BRM/Myint_Swe.png"
 			}
 		}
 		country_leader={
@@ -23,7 +23,7 @@ characters={
 	BRM_win_myint_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BRM/Win_Myint.png"
+				large="gfx/leaders/BRM/Win_Myint.png"
 			}
 		}
 		country_leader={
@@ -37,7 +37,7 @@ characters={
 	BRM_min_aung_hlaing_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BRM/Min_Aung_Hlaing.png"
+				large="gfx/leaders/BRM/Min_Aung_Hlaing.png"
 			}
 		}
 		country_leader={
@@ -52,7 +52,7 @@ characters={
 	BRM_aung_suu_kyi_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BRM/Aung_San_Suu_Kyi.png"
+				large="gfx/leaders/BRM/Aung_San_Suu_Kyi.png"
 			}
 		}
 		country_leader={
@@ -67,7 +67,7 @@ characters={
 	BRM_ashin_wirathu_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/BRM/Ashin_Wirathu.png"
+				large="gfx/leaders/BRM/Ashin_Wirathu.png"
 			}
 		}
 		country_leader={
@@ -82,7 +82,7 @@ characters={
 	PDF_duwa_lashi_la_char = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/PDF/Duwa Lashi La.png"
+				large="gfx/leaders/PDF/Duwa Lashi La.png"
 			}
 		}
 		country_leader={
@@ -104,7 +104,7 @@ characters={
 	KLA_nban_la = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/KLA/NBan_La.png"
+				large="gfx/leaders/KLA/NBan_La.png"
 			}
 		}
 		country_leader={
@@ -119,7 +119,7 @@ characters={
 	CNF_pu_zing_cung = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/CNF/Pu_Zing_Cung.png"
+				large="gfx/leaders/CNF/Pu_Zing_Cung.png"
 			}
 		}
 		country_leader={
@@ -134,7 +134,7 @@ characters={
 	KNU_saw_mutu_say_poe = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/KNU/Saw_Mutu_Say_Poe.png" 
+				large="gfx/leaders/KNU/Saw_Mutu_Say_Poe.png" 
 			}
 		}
 		country_leader={
@@ -149,7 +149,7 @@ characters={
 	WAT_bao_youxiang = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/WAT/Bao_Youxiang.png" 
+				large="gfx/leaders/WAT/Bao_Youxiang.png" 
 			}
 		}
 		country_leader={
@@ -170,7 +170,7 @@ characters={
 	MND_peng_daxun = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/MND/Peng_Daxun.png" 
+				large="gfx/leaders/MND/Peng_Daxun.png" 
 			}
 		}
 		country_leader={
@@ -198,7 +198,7 @@ characters={
 	MOA_yawd_serk = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/MOA/Yawd_Serk.png" 
+				large="gfx/leaders/MOA/Yawd_Serk.png" 
 			}
 		}
 		country_leader={
@@ -219,7 +219,7 @@ characters={
 	SSA_pang_fa = {
 		portraits = {
 			civilian = {
-				large="gfx/Leaders/SSA/Pang_Fa.png" 
+				large="gfx/leaders/SSA/Pang_Fa.png" 
 			}
 		}
 		country_leader={

@@ -18,11 +18,6 @@
 	set_research_slots = 4
 	set_convoys = 480
 	set_stability = 0.7
-	country_event = {
-		id = norway.4
-		days = 1776
-	}
-
 	set_country_flag = country_language_norwegian
 	set_country_flag = global_ass_lol
 

@@ -97,7 +97,7 @@ units = {
 	
 	division = {
 		name = "7. Brigada de Infanteria"
-		location = 193933
+		location = 12728
 		division_template = "Brigada Motorizada"
 		start_experience_factor = 0.1
 	}

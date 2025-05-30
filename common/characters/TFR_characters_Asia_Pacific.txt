@@ -12,7 +12,7 @@ characters={
 	CAM_tea_banh_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/CAM/generals/Tea_Banh.dds" 
+				large = "gfx/leaders/CAM/generals/Tea_Banh.dds" 
 			}
 		}
 
@@ -23,7 +23,7 @@ characters={
 	CAM_ke_kim_yan_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/CAM/generals/Ke_Kim_Yan.dds" 
+				large = "gfx/leaders/CAM/generals/Ke_Kim_Yan.dds" 
 			}
 		}
 
@@ -34,7 +34,7 @@ characters={
 	CAM_tea_vinh_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/CAM/admirals/Tea_Vinh.dds" 
+				large = "gfx/leaders/CAM/admirals/Tea_Vinh.dds" 
 			}
 		}
 
@@ -67,7 +67,7 @@ characters={
 	INS_prabowo_subianto_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/INS/Prabowo_Subianto.png"
+				large = "gfx/leaders/INS/Prabowo_Subianto.png"
 			}
 		}
 		country_leader = {
@@ -80,7 +80,7 @@ characters={
 	INS_bambang_darmono_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/generals/Bambang_Darmono.dds" 
+				large = "gfx/leaders/INS/generals/Bambang_Darmono.dds" 
 			}
 		}
 
@@ -91,7 +91,7 @@ characters={
 	INS_gatot_numantyo_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/generals/Gatot_Nurmantyo.dds" 
+				large = "gfx/leaders/INS/generals/Gatot_Nurmantyo.dds" 
 			}
 		}
 
@@ -102,7 +102,7 @@ characters={
 	INS_jenderal_mulyono_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/generals/Jenderal_Mulyono.dds" 
+				large = "gfx/leaders/INS/generals/Jenderal_Mulyono.dds" 
 			}
 		}
 
@@ -113,7 +113,7 @@ characters={
 	INS_moeldoko_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/generals/Moeldoko.dds" 
+				large = "gfx/leaders/INS/generals/Moeldoko.dds" 
 			}
 		}
 
@@ -124,7 +124,7 @@ characters={
 	INS_muhammad_munir_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/generals/Muhammad_Munir.dds" 
+				large = "gfx/leaders/INS/generals/Muhammad_Munir.dds" 
 			}
 		}
 
@@ -135,7 +135,7 @@ characters={
 	INS_ade_supandi_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/admirals/Ade_Supandi.dds" 
+				large = "gfx/leaders/INS/admirals/Ade_Supandi.dds" 
 			}
 		}
 
@@ -146,7 +146,7 @@ characters={
 	INS_marsetio_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/admirals/Marsetio.dds" 
+				large = "gfx/leaders/INS/admirals/Marsetio.dds" 
 			}
 		}
 
@@ -157,7 +157,7 @@ characters={
 	INS_soeparno_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/INS/admirals/Soeparno.dds" 
+				large = "gfx/leaders/INS/admirals/Soeparno.dds" 
 			}
 		}
 
@@ -226,7 +226,7 @@ characters={
 	MAL_sultan_ibrahim_iskandar_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/MAL/MAL_sultan_ibrahim.png"
+				large = "gfx/leaders/MAL/MAL_sultan_ibrahim.png"
 			}
 		}
 		country_leader = {
@@ -252,7 +252,7 @@ characters={
 	NZL_patsy_reddy_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/NZL/Patsy_Reddy.png" 
+				large = "gfx/leaders/NZL/Patsy_Reddy.png" 
 			}
 		}
 		country_leader = {
@@ -280,14 +280,14 @@ characters={
 	NZL_Bruce_Ferguson_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/NZL/NZL_Bruce_Ferguson.png" 
+				large = "gfx/leaders/NZL/NZL_Bruce_Ferguson.png" 
 			}
 		}
 	}
 	NZL_Cindy_Kiro_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/NZL/Cindy_Kiro.png" 
+				large = "gfx/leaders/NZL/Cindy_Kiro.png" 
 			}
 		}
 	}
@@ -295,7 +295,7 @@ characters={
 	PHI_rodrigo_duterte_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Duterte.png" 
+				large = "gfx/leaders/PHI/Duterte.png" 
 			}
 		}
 		country_leader = {
@@ -305,7 +305,7 @@ characters={
 	PHI_bongbong_marcos_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Bongbong_Marcos.png" 
+				large = "gfx/leaders/PHI/Bongbong_Marcos.png" 
 			}
 		}
 		country_leader = {
@@ -315,7 +315,7 @@ characters={
 	PHI_leni_robredo_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Leni Robredo.png" 
+				large = "gfx/leaders/PHI/Leni Robredo.png" 
 			}
 		}
 		country_leader = {
@@ -325,7 +325,7 @@ characters={
 	PHI_manny_pacquiao_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Manny Pacquiao.png" 
+				large = "gfx/leaders/PHI/Manny Pacquiao.png" 
 			}
 		}
 		country_leader = {
@@ -335,7 +335,7 @@ characters={
 	PHI_eduardo_ano_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/generals/Eduardo_Ano.dds" 
+				large = "gfx/leaders/PHI/generals/Eduardo_Ano.dds" 
 			}
 		}
 
@@ -346,7 +346,7 @@ characters={
 	PHI_mayoralgo_dela_cruz_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/generals/Mayoralgo_Dela_Cruz.dds" 
+				large = "gfx/leaders/PHI/generals/Mayoralgo_Dela_Cruz.dds" 
 			}
 		}
 
@@ -357,7 +357,7 @@ characters={
 	PHI_rey_guerrero_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/generals/Rey_Guerrero.dds" 
+				large = "gfx/leaders/PHI/generals/Rey_Guerrero.dds" 
 			}
 		}
 
@@ -368,7 +368,7 @@ characters={
 	PHI_ricardo_visaya_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/generals/Ricardo_Visaya.dds" 
+				large = "gfx/leaders/PHI/generals/Ricardo_Visaya.dds" 
 			}
 		}
 
@@ -379,7 +379,7 @@ characters={
 	PHI_romeo_gan_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/generals/Romeo_Gan.dds" 
+				large = "gfx/leaders/PHI/generals/Romeo_Gan.dds" 
 			}
 		}
 
@@ -390,7 +390,7 @@ characters={
 	PHI_romeo_tanalgo_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/generals/Romeo_Tanalgo.dds" 
+				large = "gfx/leaders/PHI/generals/Romeo_Tanalgo.dds" 
 			}
 		}
 
@@ -401,7 +401,7 @@ characters={
 	PHI_caeser_taccad_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/admirals/Caeser_Taccad.dds" 
+				large = "gfx/leaders/PHI/admirals/Caeser_Taccad.dds" 
 			}
 		}
 
@@ -412,7 +412,7 @@ characters={
 	PHI_jesus_millan_char = {
 		portraits={
 			army = {
-				large = "gfx/Leaders/PHI/admirals/Jesus_Millan.dds" 
+				large = "gfx/leaders/PHI/admirals/Jesus_Millan.dds" 
 			}
 		}
 
@@ -425,7 +425,7 @@ characters={
 		name = "Gwendolyn Garcia"
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Gwendolyn Garcia.png" 
+				large = "gfx/leaders/PHI/Gwendolyn Garcia.png" 
 			}
 		}
 		country_leader = {
@@ -443,7 +443,7 @@ characters={
 		name = "Rodrigo Duterte"
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Duterte.png" 
+				large = "gfx/leaders/PHI/Duterte.png" 
 			}
 		}
 		country_leader = {
@@ -457,7 +457,7 @@ characters={
 		name = "Luis Jalandoni"
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PHI/Luis_Jalandoni.png" 
+				large = "gfx/leaders/PHI/Luis_Jalandoni.png" 
 			}
 		}
 		country_leader = {
@@ -477,7 +477,7 @@ characters={
 		name = "Esmael Abdulmalik"
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/Terrorists/terror3.png" 
+				large = "gfx/leaders/Terrorists/terror3.png" 
 			}
 		}
 		country_leader = {
@@ -487,7 +487,7 @@ characters={
 	PNG_bob_dadae_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/PNG/Sir_Bob_Bofeng_Dadae.png" 
+				large = "gfx/leaders/PNG/Sir_Bob_Bofeng_Dadae.png" 
 			}
 		}
 		country_leader = {

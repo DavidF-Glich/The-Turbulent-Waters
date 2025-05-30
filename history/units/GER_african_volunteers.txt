@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Motorized Division"
-	override_model = GER_african_legion_motorized_entity
 	
 	regiments = {
 		motorized = { x = 0 y = 0 }

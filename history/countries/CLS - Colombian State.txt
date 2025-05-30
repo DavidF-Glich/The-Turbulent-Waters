@@ -147,10 +147,10 @@
 		election_frequency = 48
 		elections_allowed = no
 	}
-	set_party_name = { ideology = conservative name = COL_conservative_party }
-	set_party_name = { ideology = social_democrat name = COL_social_democrat_party }
-	set_party_name = { ideology = social_liberal name = COL_social_liberal_party }
-	set_party_name = { ideology = market_liberal name = COL_market_liberal_party }
+	set_party_name = { ideology = conservative name = COL_conservative_party long_name = COL_conservative_party}
+	set_party_name = { ideology = social_democrat name = COL_social_democrat_party long_name = COL_social_democrat_party}
+	set_party_name = { ideology = social_liberal name = COL_social_liberal_party long_name = COL_social_liberal_party}
+	set_party_name = { ideology = market_liberal name = COL_market_liberal_party long_name = COL_market_liberal_party}
 	set_popularities = {
 		conservative = 23
 		nationalist =  36

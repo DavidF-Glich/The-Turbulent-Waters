@@ -138,6 +138,7 @@ ideas = {
 				}
 			}
 		}
+		#世界警察
 		can_puppet_idea = {
 			allowed = {
 				always = no

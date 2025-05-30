@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Brigada Natsgvardii"
-	override_model = SOV_militia_entity
 
 	regiments = {
 		motorized = { x = 0 y = 0 }
@@ -21,7 +20,7 @@
 
 units = {
 	division = {			
-		name = "Brigada Natsgvardii "Eltsin""
+		name = "Brigada Natsgvardii Eltsin"
 		location = 6474
 		division_template = "Brigada Natsgvardii"
 		start_experience_factor = 0.5
@@ -30,7 +29,7 @@ units = {
 }
 units = {
 	division = {			
-		name = "Brigada Natsgvardii "Svoboda""
+		name = "Brigada Natsgvardii Svoboda"
 		location = 6474
 		division_template = "Brigada Natsgvardii"
 		start_experience_factor = 0.5
@@ -39,7 +38,7 @@ units = {
 }
 units = {
 	division = {			
-		name = "Brigada Natsgvardii "Presidentskya""
+		name = "Brigada Natsgvardii Presidentskya"
 		location = 6474
 		division_template = "Brigada Natsgvardii"
 		start_experience_factor = 0.5
@@ -48,7 +47,7 @@ units = {
 }
 units = {
 	division = {			
-		name = "Brigada Natsgvardii "Velkiya Rodina""
+		name = "Brigada Natsgvardii Velkiya Rodina"
 		location = 6474
 		division_template = "Brigada Natsgvardii"
 		start_experience_factor = 0.5
@@ -57,7 +56,7 @@ units = {
 }
 units = {
 	division = {			
-		name = "Brigada Natsgvardii "Nemtsov""
+		name = "Brigada Natsgvardii Nemtsov"
 		location = 6474
 		division_template = "Brigada Natsgvardii"
 		start_experience_factor = 0.5

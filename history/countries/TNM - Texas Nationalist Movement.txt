@@ -1,6 +1,6 @@
 ﻿	capital = 375
 
-#	oob = ""
+#
 
 	set_research_slots = 2
 	set_convoys = 10
@@ -111,5 +111,3 @@
 		TNM_fight_for_independence_idea
 		TNM_yellow_rose_idea
 	}
-	
-}

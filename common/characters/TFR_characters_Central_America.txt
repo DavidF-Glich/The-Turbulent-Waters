@@ -2,10 +2,10 @@ characters={
 	NIC_Daniel_Ortega_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/NIC/NIC_Daniel_Ortega.png" 
+				large = "gfx/leaders/NIC/NIC_Daniel_Ortega.png" 
 			}
 			army = {
-				large = "gfx/Leaders/NIC/NIC_Daniel_Ortega.png" 
+				large = "gfx/leaders/NIC/NIC_Daniel_Ortega.png" 
 			}
 		}
 		country_leader={
@@ -18,10 +18,10 @@ characters={
 	ELS_Nayib_Bukele_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ELS/ELS_Nayib_Bukele.png" 
+				large = "gfx/leaders/ELS/ELS_Nayib_Bukele.png" 
 			}
 			army = {
-				large = "gfx/Leaders/ELS/ELS_Nayib_Bukele.png" 
+				large = "gfx/leaders/ELS/ELS_Nayib_Bukele.png" 
 			}
 		}
 		country_leader = {
@@ -32,10 +32,10 @@ characters={
 	Dictator_Nayib_Bukele_char = {
 		portraits={
 			civilian = {
-				large = "gfx/Leaders/ELS/ELS_Nayib_Bukele_Dictator.png" 
+				large = "gfx/leaders/ELS/ELS_Nayib_Bukele_Dictator.png" 
 			}
 			army = {
-				large = "gfx/Leaders/ELS/ELS_Nayib_Bukele_Dictator.png" 
+				large = "gfx/leaders/ELS/ELS_Nayib_Bukele_Dictator.png" 
 			}
 		}
 		country_leader = {

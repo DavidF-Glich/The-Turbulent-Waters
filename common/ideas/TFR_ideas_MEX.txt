@@ -20,7 +20,6 @@ ideas = {
 			picture = GFX_idea_CAN_american_refugees
 			name = CAN_bulwark_against_fascism_idea
 			allowed = {
-				MEX_is_civil_war_faction = yes
 			}
 			modifier = {
 				industrial_capacity_factory = 0.5

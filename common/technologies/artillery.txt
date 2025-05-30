@@ -381,7 +381,7 @@ technologies = {
 		}
 		categories = {
 			artillery
-			anti_tank
+			cat_anti_tank
 			mio_cat_all_artillery_equipment
 			cat_self_propelled
 		}
@@ -416,7 +416,7 @@ technologies = {
 		}
 		categories = {
 			artillery
-			anti_tank
+			cat_anti_tank
 			mio_cat_all_artillery_equipment
 			cat_self_propelled
 		}
@@ -1068,9 +1068,8 @@ technologies = {
 			anti_air_equipment_4
 		}
 		static_anti_air_damage_factor = 0.1
-		enable_equipment_modules = {
-			ship_anti_air_5
-		}
+		anti_air_attack = 0.05
+		
 		path = {
 			leads_to_tech = antiair7
 			research_cost_coeff = 1
@@ -1145,9 +1144,7 @@ technologies = {
 			anti_air_equipment_5
 		}
 		static_anti_air_damage_factor = 0.1
-		enable_equipment_modules = {
-			ship_anti_air_6
-		}
+		anti_air_attack = 0.05
 		research_cost = 2
 		start_year = 2036
 		folder = {

@@ -1,20 +1,20 @@
 	ideas = {
-		country = {
-			hidden_ideas = {
-				POL_i_hate_poland = {
-					picture = KAZ_close_ties_to_moscow
-					
-					allowed = {
-						always = no
-					}
+		hidden_ideas = {
+			POL_i_hate_poland = {
+				picture = KAZ_close_ties_to_moscow				
+				allowed = {
+					always = no
+				}
 
-					removal_cost = -1
-					
-					modifier = {
-						surrender_limit = -0.5
-					}
+				removal_cost = -1
+				
+				modifier = {
+					surrender_limit = -0.5
 				}
 			}
+		}
+
+		country = {
 			POL_border_crisis = {
 				picture = POL_legacy
 			

@@ -38,6 +38,7 @@ joint_focus = {
 		add_doctrine_cost_reduction = {
 			cost_reduction = 0.2
 			name = NATO_WCC
+			category = air_doctrine
 		}
 		set_temp_variable = {
 			military_development_var_temp = 0.05

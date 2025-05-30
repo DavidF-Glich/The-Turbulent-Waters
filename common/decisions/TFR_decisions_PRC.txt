@@ -2574,7 +2574,7 @@ PRC_enviromental_policy_category = {
 		}
 	}
 }
-arunachal_war_decisions_category = {
+PRC_BoP_category = {
 	attack_434_from_1153 = { # 日喀则袭击藏南
 		days_remove = 10
 		days_re_enable = 60
@@ -2588,6 +2588,9 @@ arunachal_war_decisions_category = {
 		visible = {
 			controls_state = 1153
 			NOT = { controls_state = 434 }
+			check_variable = {
+				selected_conflict_id = token:arunachal_war
+			}
 		}
 		available = {
 			custom_trigger_tooltip = {
@@ -2656,6 +2659,10 @@ arunachal_war_decisions_category = {
 		visible = {
 			controls_state = 1152
 			NOT = { controls_state = 434 }
+			check_variable = {
+				selected_conflict_id = token:arunachal_war
+			}
+
 		}
 
 		complete_effect = {
@@ -2723,6 +2730,10 @@ arunachal_war_decisions_category = {
 
 		visible = {
 			NOT = { controls_state = 434 }
+			check_variable = {
+				selected_conflict_id = token:arunachal_war
+			}
+
 		}
 
 		available = {
@@ -2745,6 +2756,10 @@ arunachal_war_decisions_category = {
 			RAJ = {
 				remove_state_core = 434
 			}
+			set_temp_variable = {
+				conflict_id = token:arunachal_war
+			}
+			TTW_remove_fopo_conflict_tab = yes
 		}
 
 		ai_will_do = { factor = 10 }

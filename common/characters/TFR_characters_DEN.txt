@@ -2,7 +2,7 @@
 		DEN_margrethe_ii_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/DEN/Margrethe.png"
+					large = "gfx/leaders/DEN/Margrethe.png"
 				}
 			}
 			country_leader={
@@ -65,7 +65,7 @@
 		DEN_frederick_x_char = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/DEN/Frederick_X.png"
+					large = "gfx/leaders/DEN/Frederick_X.png"
 				}
 			}
 			country_leader={

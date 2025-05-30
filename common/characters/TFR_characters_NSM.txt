@@ -453,7 +453,7 @@ characters = {
 	BOA_anarchist_council_char = {
 		portraits = {
 			civilian = {
-				large = "gfx/Leaders/ATS/Anarchist Council.dds"
+				large = "gfx/leaders/ATS/Anarchist Council.dds"
 			}
 		}
 		country_leader = {

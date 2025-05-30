@@ -1,0 +1,26 @@
+scripted_guis = {
+	helldiver_gui = {
+		context_type = player_context
+		parent_window_name = powerbalanceview
+		window_name = "TTW_fopo_helldiver_window"
+		visible = {
+			check_variable = {
+				selected_conflict_id = token:hell_diver
+			}
+		}
+		properties = {
+			Bar_Shanghai = {
+				frame = shanghai_hd_var
+			}
+			Bar_Brussel = {
+				frame = brussel_hd_var
+			}
+			Bar_Singapore = {
+				frame = singapore_hd_var
+			}
+			Bar_New_York = {
+				frame = new_york_hd_var
+			}
+		}
+	}
+}

@@ -18,22 +18,22 @@
 
 units = {
 	division = {
-		name = "1aya Brigada "Julius Evola""
+		name = "1aya Brigada Julius Evola"
 		location = 6380
 		division_template = "Internatsional'naya Brigada"
 	}
 	division = {
-		name = "Brigada "Freies Deutschland""
+		name = "Brigada Freies Deutschland"
 		location = 6380
 		division_template = "Internatsional'naya Brigada"
 	}
 	division = {
-		name = "Brigada "Nazionale Italia""
+		name = "Brigada Nazionale Italia"
 		location = 6380
 		division_template = "Internatsional'naya Brigada"
 	}
 	division = {
-		name = "Brigada "Marcel Déat""
+		name = "Brigada Marcel Déat"
 		location = 6380
 		division_template = "Internatsional'naya Brigada"
 	}

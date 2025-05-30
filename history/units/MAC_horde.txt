@@ -599,7 +599,3 @@
 			start_experience_factor = 0.3
 		}
 	}
-
-	
-		
-	}

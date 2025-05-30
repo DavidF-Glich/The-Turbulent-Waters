@@ -42,9 +42,6 @@ scripted_gui = {
 							has_idea = SOV_EEC_leader
 							tag = SOV
 						}
-						has_dynamic_modifier = {
-							modifier = JAP_PEC_dynamic
-						}
 					}
 				}
 			}

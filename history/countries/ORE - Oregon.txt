@@ -1,7 +1,6 @@
 ﻿capital = 993
 
-# oob = ""
-
+# 
 set_research_slots = 4
 set_convoys = 60
 set_stability = 0.5
@@ -105,7 +104,6 @@ if = {
 }
 
 add_ideas = {
-	USA_low_morale_idea
 	sympathetic_soldiers_2
 	high_interest_rates
 	higher_safety

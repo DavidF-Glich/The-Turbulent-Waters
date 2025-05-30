@@ -20,10 +20,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/factions/GFX_HU_Member.png"			
 	}
 	SpriteType = {
-		name = "GFX_Pact_of_Steel_faction"
-		texturefile = "gfx/interface/factions/GFX_Pact_of_Steel_Member.png"			
-	}
-	SpriteType = {
 		name = "GFX_EADI_faction"
 		texturefile = "gfx/interface/factions/GFX_EADI_Member.png"			
 	}
@@ -55,10 +51,6 @@ spriteTypes = {
 		name = "GFX_WDTO_Member"
 		texturefile = "gfx/interface/factions/GFX_WDTO_Member.png"			
 	}	
-	SpriteType = {
-		name = "GFX_ASD_Member"
-		texturefile = "gfx/interface/factions/GFX_ASD_Member.png"			
-	}
 	SpriteType = {
 		name = "GFX_CES_Member"
 		texturefile = "gfx/interface/factions/GFX_CES_Member.png"			

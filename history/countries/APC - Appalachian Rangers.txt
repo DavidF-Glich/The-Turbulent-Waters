@@ -1,6 +1,6 @@
 ﻿	capital = 1005
 
-	oob = ""
+
 
 	set_research_slots = 1
 	set_stability = 0.4
@@ -104,7 +104,6 @@
 	recruit_character = APC_The_Patriot_char
 
 	add_ideas = {
-		APC_patriotic_ranger_association_idea
 		#Laws
 		partial_mobilization
 		lower_trade

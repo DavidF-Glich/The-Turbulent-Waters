@@ -678,7 +678,6 @@ equipments = {
 		year = 1980
 		is_archetype = yes
 		is_buildable = no
-		visual_level = 0
 		can_be_produced = {
 			NOT = {
 				

@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Malorosskaya Osvoboditel'naya Armiya"
-	override_model = SOV_moa_infantry_entity
 
 	regiments = {
 		motorized = { x = 0 y = 0 }

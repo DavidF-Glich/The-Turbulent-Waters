@@ -141,9 +141,3 @@
 		type = civil_war 
 	}
 
-	YEM = {
-		country_event = {
-			id = arab.4
-			days = 827
-		}
-	}

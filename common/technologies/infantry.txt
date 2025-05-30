@@ -880,16 +880,16 @@ technologies = {
 		}
 	}
 	support_weapons7 = {
-		on_research_complete = {
-			custom_effect_tooltip = unmanned_tech_tt
-			hidden_effect = {
-				ROOT = {
-					country_event = {
-						id = tech.1
-					}
-				}
-			}
-		}
+#		on_research_complete = {
+#			custom_effect_tooltip = unmanned_tech_tt
+#			hidden_effect = {
+#				ROOT = {
+#					country_event = {
+#						id = tech.1
+#					}
+#				}
+#			}
+#		}
 		show_effect_as_desc = yes
 		category_all_infantry = {
 			hard_attack = 0.1
@@ -932,9 +932,9 @@ technologies = {
 		}
 	}
 	support_weapons8 = {
-		on_research_complete = {
-			custom_effect_tooltip = unmanned_tech_tt
-		}
+	#	on_research_complete = {
+	#		custom_effect_tooltip = unmanned_tech_tt
+	#	}
 		show_effect_as_desc = yes
 		category_all_infantry = {
 			hard_attack = 0.1
@@ -1424,7 +1424,6 @@ technologies = {
 			exoskeleton_equipment_1
 		}
 		enable_subunits = {
-			exoskeleton_unit
 			motorized_exoskeleton_unit
 			mechanized_exoskeleton_unit
   			light_mechanized_exoskeleton_unit

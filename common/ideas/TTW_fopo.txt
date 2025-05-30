@@ -1,0 +1,16 @@
+ideas = {
+	hidden_ideas = {
+		BoP_Tab_GlobalConflicts = {}
+		TaiwanCrisis = {}
+		Russo_Ukrainian_conflict = {}
+		israeli_palestine_conflict = {}
+		arunachal_war = {}
+	}
+	#uovo
+	hidden_ideas = {
+		unity_front = {}
+		TBC_CR = {}
+		RDA_VOV = {}
+		hell_diver = {}
+	}
+}

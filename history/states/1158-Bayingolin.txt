@@ -9,7 +9,6 @@ state={
 	history={
 		owner = PRC
 		add_core_of = PRC
-		add_core_of = SIK
 		add_claim_by = CHI
 
 		buildings = {

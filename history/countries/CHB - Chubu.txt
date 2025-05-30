@@ -371,7 +371,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		create_equipment_variant = { #Frigate 2
 			name = "Tachikaze-class"
@@ -390,7 +389,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		create_equipment_variant = { #Frigate 2
 			name = "Kongo-class"
@@ -409,7 +407,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = empty
 			}
-			obsolete = no
 		}
 		create_equipment_variant = { #Frigate 2
 			name = "Maya-class"
@@ -428,7 +425,6 @@
 				mid_2_custom_slot = ship_anti_air_1
 				rear_1_custom_slot = ship_light_medium_battery_2
 			}
-			obsolete = no
 		}
 		## Destroyers ##
 		create_equipment_variant = {

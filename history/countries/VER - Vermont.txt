@@ -100,7 +100,6 @@ add_ideas = {
 	high_interest_rates
 	civil_service_exemptions
 	medium_female_service
-	USA_low_morale_idea
 }
 
 set_politics = {

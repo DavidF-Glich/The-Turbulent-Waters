@@ -1,12 +1,5 @@
 ﻿	capital = 41
 
-	if = {
-		limit = { has_dlc = "Man the Guns" }
-			set_naval_oob = "SPR_2000_naval_mtg"
-		else = {
-			set_naval_oob = "SPR_2000_naval_legacy"
-		}
-	}
 
 	set_research_slots = 4
 	set_convoys = 700

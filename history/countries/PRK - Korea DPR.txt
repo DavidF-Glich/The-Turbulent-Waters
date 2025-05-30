@@ -67,13 +67,13 @@
 	
 	recruit_character = PRK_kim_jongun
 	recruit_character = PRK_ri_myong_su
-	recruit_character = PRK_kim_yong_chol
+	#recruit_character = PRK_kim_yong_chol
 	recruit_character = PRK_pak_jong_chon
 	recruit_character = PRK_ri_yong_gil
 	recruit_character = PRK_hwang_pyongso
 	recruit_character = PRK_cho_ryong_hae
 	recruit_character = PRK_choe_pu_il
-	recruit_character = PRK_jo_chun_ryong
+	#recruit_character = PRK_jo_chun_ryong
 	recruit_character = PRK_pak_yong_sik
 	recruit_character = NK2_kim_yojong
 	recruit_character = PRK_minjae_ro
@@ -341,7 +341,6 @@
 		create_equipment_variant = {
 			name = "F-7"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
@@ -368,7 +367,6 @@
 		create_equipment_variant = {
 			name = "F-5"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks
@@ -381,7 +379,6 @@
 		create_equipment_variant = {
 			name = "F-6"
 			type = small_plane_airframe_0
-			model = "SOV_fighter_equipment_1_entity"
 			modules = {
 				fixed_main_weapon_slot = light_mg_4x
 				fixed_auxiliary_weapon_slot_1 = bomb_locks

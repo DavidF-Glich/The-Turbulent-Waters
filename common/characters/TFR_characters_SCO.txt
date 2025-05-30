@@ -2,7 +2,7 @@
 		SCO_Alex_Salmond = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/SCO/Alex_Salmond.png"
+					large = "gfx/leaders/SCO/Alex_Salmond.png"
 				}
 			}
 			country_leader={
@@ -15,7 +15,7 @@
 		SCO_Charles_III = {
 			portraits={
 				civilian={
-					large = "gfx/Leaders/ENG/ENG_charles_iii_absolute.png"
+					large = "gfx/leaders/ENG/ENG_charles_iii_absolute.png"
 				}
 			}
 			country_leader={

@@ -1,6 +1,6 @@
 ﻿	capital = 924
 
-	oob = ""
+
 
 	set_research_slots = 2
 	set_convoys = 10
@@ -96,7 +96,3 @@
 		nationalist = 100
 	}
 
-	add_ideas = {
-		#Country Ideas
-		PRC_nationalist_insurgency
-}

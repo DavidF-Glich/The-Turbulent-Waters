@@ -1,7 +1,6 @@
 ﻿	capital = 993
 
-	#oob = ""
-
+	#
 	recruit_character = RCA_anarchist_council_char
 	
 	set_research_slots = 2

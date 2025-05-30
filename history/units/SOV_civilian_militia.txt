@@ -1,6 +1,5 @@
 ﻿division_template = {
 	name = "Mobilizovannoye Grazhdanstvo"
-	override_model = SOV_civilian_militia_infantry_entity
 	
 	regiments = {
 		militia = { x = 0 y = 0 }
@@ -24,7 +23,6 @@
 
 division_template = {
 	name = "Mobilizovannoye Grazhdanskoye Dvizheniye"
-	override_model = SOV_civilian_militia_motorized_entity
 	
 	regiments = {
 		mot_militia = { x = 0 y = 0 }
