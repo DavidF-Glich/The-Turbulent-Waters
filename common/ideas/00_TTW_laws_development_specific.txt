@@ -1,0 +1,1217 @@
+ideas = {
+	#学术	Academic
+	research_budget = {
+		law = yes
+		use_list_view = yes
+		lowest_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 7
+			modifier = {
+				
+			}
+		}
+		lower_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 6
+			modifier = {
+				
+			}
+
+		}
+		low_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				
+			}
+		}
+		medium_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				
+			}
+		}
+		high_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				
+			}
+		}
+		higher_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				
+			}
+		}
+		highest_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				
+			}
+		}
+	}
+	education_quality = {
+		law = yes
+		use_list_view = yes
+		lowest_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 7
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		lower_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 6
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		highest_quality = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = quality_development_modifier_tooltip	
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+	}
+	patent_number = {
+		law = yes
+		use_list_view = yes
+		lower_patent = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = patent_number_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_patent = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = patent_number_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_patent = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				custom_modifier_tooltip = patent_number_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_patent = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = patent_number_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_patent = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = patent_number_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+	}
+	#农业	Farming
+	food_security = {
+		law = yes
+		use_list_view = yes
+		lowest_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 7
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip	
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		lower_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 6
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		highest_food_security = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = food_security_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+	}
+	tech_farming = {
+		law = yes
+		use_list_view = yes
+		lower_tech_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = tech_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_tech_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = tech_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_tech_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				custom_modifier_tooltip = tech_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_tech_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = tech_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_tech_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = tech_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+
+	}
+	sustain_farming = {
+		law = yes
+		use_list_view = yes
+		lower_sustainable_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = sustain_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_sustainable_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = sustain_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_sustainable_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = sustain_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_sustainable_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = sustain_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_sustainable_farming = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = sustain_farming_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+	}
+	#贫困率	 Poverty
+	poverty_ratio = {
+		law = yes
+		use_list_view = yes
+		lowest_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 7
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		lower_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 6
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		highest_poverty_ratio = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = poverty_ratio_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+
+	}
+	poverty_gap = {
+		law = yes
+		use_list_view = yes
+		lower_poverty_gap = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = poverty_gap_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_poverty_gap = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = poverty_gap_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_poverty_gap = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = poverty_gap_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_poverty_gap = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = poverty_gap_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_poverty_gap = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = poverty_gap_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+
+	}
+	structured_poverty = {
+		law = yes
+		use_list_view = yes
+		lower_structured_poverty = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = structured_poverty_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_structured_poverty = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = structured_poverty_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_structured_poverty = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = structured_poverty_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_structured_poverty = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = structured_poverty_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_structured_poverty = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = structured_poverty_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+
+	}
+	#工业	Industry
+	export_structure = {
+		law = yes
+		use_list_view = yes
+		lower_end_export = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = export_structure_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_end_export = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = export_structure_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_end_export = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = export_structure_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_end_export = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = export_structure_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_end_export = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = export_structure_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+	}
+	energy_efficiency = {
+		law = yes
+		use_list_view = yes
+		lower_energy_efficiency = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = energy_efficiency_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_energy_efficiency = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = energy_efficiency_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_energy_efficiency = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = energy_efficiency_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_energy_efficiency = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = energy_efficiency_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_energy_efficiency = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = energy_efficiency_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+
+	}
+	digitalization = {
+		law = yes
+		use_list_view = yes
+		lower_digitalization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = digitalization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_digitalization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = digitalization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_digitalization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = digitalization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_digitalization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = digitalization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_digitalization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = digitalization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}	
+	}
+	#军事	Military
+	defence_budget = {
+		law = yes
+		use_list_view = yes
+		lowest_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 7
+			modifier = {
+				
+			}
+		}
+		lower_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 6
+			modifier = {
+				
+			}
+
+		}
+		low_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				
+			}
+		}
+		medium_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				
+			}
+		}
+		high_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				
+			}
+		}
+		higher_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				
+			}
+		}
+		highest_defence_budget = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				
+			}
+		}
+
+	}
+	projection = {
+		law = yes
+		use_list_view = yes
+		lower_projection = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = projection_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_projection = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			modifier = {
+				custom_modifier_tooltip = projection_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_projection = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = projection_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_projection = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = projection_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_projection = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = projection_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}	
+	}
+	mobilization = {
+		law = yes
+		use_list_view = yes
+		lower_mobilization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = mobilization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_mobilization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			modifier = {
+				custom_modifier_tooltip = mobilization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_mobilization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = mobilization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_mobilization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = mobilization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_mobilization = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = mobilization_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}	
+
+	}
+	#社会	Society
+	public_service = {
+		law = yes
+		use_list_view = yes
+		lowest_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 7
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		lower_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 6
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		highest_public_service = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = public_service_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+
+	}
+	social_equity = {
+		law = yes
+		use_list_view = yes
+		lower_social_equity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = social_equity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_social_equity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			modifier = {
+				custom_modifier_tooltip = social_equity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_social_equity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = social_equity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_social_equity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = social_equity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_social_equity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = social_equity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}	
+
+	}
+	social_sustainablity = {
+		law = yes
+		use_list_view = yes
+		lower_social_sustainablity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 5
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = social_sustainablity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+
+		}
+		low_social_sustainablity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 4
+			modifier = {
+				custom_modifier_tooltip = social_sustainablity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		medium_social_sustainablity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 3
+			default = yes
+			modifier = {
+				custom_modifier_tooltip = social_sustainablity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		high_social_sustainablity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 2
+			modifier = {
+				custom_modifier_tooltip = social_sustainablity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}
+		higher_social_sustainablity = {
+			picture = laws_economic_focus
+			cancel_if_invalid = no
+			level = 1
+			modifier = {
+				custom_modifier_tooltip = social_sustainablity_modifier_tooltip
+			}
+			allowed_to_remove = {
+				development = yes
+			}
+		}	
+
+	}
+}

@@ -53,7 +53,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = -0.15
 				industrial_capacity_factory = -0.15
 				production_speed_buildings_factor = -0.15
-				society_development_monthly = -0.01
+				
 			}
 		}
 		BLR_New_Protests =  {
@@ -133,7 +133,7 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				industrial_capacity_factory = -0.05
 				production_speed_buildings_factor = 0.05
-				society_development_monthly = 0.01
+				
 			}
 		}
 		BLR_LDPB_protets =  {

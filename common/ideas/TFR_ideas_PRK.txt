@@ -415,7 +415,7 @@
 				modifier = {
 					stability_factor = -0.1
 					political_power_gain = -0.15
-					society_development_monthly = 0.01
+					
 				}
 			}
 			

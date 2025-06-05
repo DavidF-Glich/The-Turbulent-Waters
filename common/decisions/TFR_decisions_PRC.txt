@@ -2079,12 +2079,6 @@ PRC_enviromental_policy_category = {
 			}
 		}
 		complete_effect = {
-			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = -0.075
-			}
-			add_industrial_development = yes
-			add_stability = 0.025
 		}
 		remove_effect = {
 			set_temp_variable = {
@@ -2208,11 +2202,6 @@ PRC_enviromental_policy_category = {
 			
 		}	
 		complete_effect = {
-			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = -0.075
-			}
-			add_industrial_development = yes
 			add_stability = 0.025
 		}
 		remove_effect = {
@@ -3527,11 +3516,6 @@ PRC_Political_Opinion_category = {
 			#	idea = PRC_new_left_workers_strikes_idea
 			#	days = 70
 			#}
-			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = -0.05
-			}
-			add_industrial_development = yes
 		}
 		remove_effect = {
 			add_stability = -0.035

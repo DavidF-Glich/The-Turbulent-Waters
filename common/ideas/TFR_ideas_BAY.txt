@@ -81,7 +81,7 @@
 					industrial_capacity_factory = -0.4
 					production_speed_buildings_factor = -0.35
 					min_export = -0.3
-					poverty_development_monthly = -0.035
+					
 				}
 			}
 		}

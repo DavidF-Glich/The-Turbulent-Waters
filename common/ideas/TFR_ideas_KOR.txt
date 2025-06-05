@@ -25,7 +25,7 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				misc_expense = 0.15
 				personal_value_factor = -0.25
-				poverty_development_monthly = -0.02
+				
 				business_value_factor = 0.3
 			}
 		}
@@ -41,7 +41,7 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				misc_expense = 0.05
 				personal_value_factor = -0.1
-				poverty_development_monthly = 0.02
+				
 				business_value_factor = 0.1
 			}
 		}
@@ -58,8 +58,8 @@ ideas = {
 				personal_value_factor = -0.1
 				personal_expense_factor = 0.1
 				inflation_monthly = -0.002
-				society_development_monthly = -0.04
-				poverty_development_monthly = -0.01
+				
+				
 			}
 		}
 		KOR_jap_military_advisors = {

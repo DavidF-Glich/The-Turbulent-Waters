@@ -32,8 +32,8 @@ ideas = {
 				MONTHLY_POPULATION = 1.25
 				stability_factor = -0.3
 				consumer_goods_factor = 0.15
-				society_development_monthly = -0.01
-				poverty_development_monthly = -0.01
+				
+				
 				personal_value_factor = -0.35
 				mobilization_speed = -0.35
 				drift_defence_factor = -0.15

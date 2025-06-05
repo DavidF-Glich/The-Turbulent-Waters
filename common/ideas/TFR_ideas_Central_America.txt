@@ -64,8 +64,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				income_growth_factor = 0.15
-				industrial_development_monthly = -0.01
-				society_development_monthly = -0.01
+				
+				
 				political_power_gain = 0.3
 				market_liberal_acceptance = 45
 				conservative_acceptance = 45
@@ -83,7 +83,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				income_growth_factor = 0.1
-				industrial_development_monthly = -0.01
+				
 				political_power_gain = 0.3
 				libertarian_socialist_acceptance = 45
 				communist_acceptance = 45
@@ -101,7 +101,7 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				army_morale_factor = 0.025
-				society_development_monthly = 0.01
+				
 				political_power_gain = 0.1
 				party_popularity_stability_factor = 0.15
 				army_defence_factor = 0.2
@@ -121,7 +121,7 @@ ideas = {
 				stability_factor = -0.1
 				consumer_goods_factor = 0.02
 				production_speed_buildings_factor = -0.1
-				poverty_development_monthly = -0.01
+				
 				political_power_factor = -0.05
 				research_speed_factor = -0.05
 				personal_value_factor = -0.1
@@ -157,7 +157,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_speed_industrial_complex_factor = 0.15
-				industrial_development_monthly = -0.01
+				
 				income_growth_factor = 0.1
 				business_value_factor = 0.3
 			}

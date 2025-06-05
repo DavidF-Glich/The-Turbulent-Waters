@@ -271,8 +271,15 @@ characters={
 			idea_token = PRC_Xu_Qiliang_air_chief
 			ledger = air
 			allowed = { original_tag = PRC }
+			visible = {
+				NOT = {
+					has_character_flag = farewell
+				}
+			}
 			available = {
-
+				NOT = {
+					has_character_flag = farewell
+				}
 			}
 			traits = {
 				air_chief_safety_1
@@ -283,6 +290,11 @@ characters={
 			}
 		}
 		field_marshal={
+			visible = {
+				NOT = {
+					has_character_flag = farewell
+				}
+			}
 			traits={ old_guard politically_connected air_force_connections }
 			skill=4
 			attack_skill=2

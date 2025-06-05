@@ -315,7 +315,7 @@
 				modifier = {
 					production_speed_arms_factory_factor = 0.02
 					political_power_gain = 0.10
-					society_development_monthly = 0.01
+					
 					drift_defence_factor = 0.05
 				}
 			}
@@ -331,7 +331,7 @@
 				modifier = {
 					production_speed_arms_factory_factor = 0.05
 					political_power_gain = 0.15
-					society_development_monthly = 0.02
+					
 					drift_defence_factor = 0.10
 				}
 			}
@@ -399,7 +399,7 @@
 					conscription = 0.01
 					training_time_army_factor = -0.05
 					recon_factor = 0.02
-					academic_development_monthly = 0.03
+					
 				}
 			}
 				
@@ -415,7 +415,7 @@
 					stability_factor = 0.05
 					political_power_gain = -0.02
 					drift_defence_factor = 0.02
-					society_development_monthly = 0.02
+					
 				}
 			}
 			
@@ -431,7 +431,7 @@
 					industrial_capacity_factory = -0.10
 					production_factory_max_efficiency_factor = -0.05
 					production_factory_efficiency_gain_factor = 0.05
-					industrial_development_monthly = 0.01
+					
 				}	
 			}
 			
@@ -448,9 +448,9 @@
 					production_factory_start_efficiency_factor = 0.05
 					production_factory_max_efficiency_factor = 0.15
 					production_factory_efficiency_gain_factor = 0.10
-					industrial_development_monthly = 0.02
-					poverty_development_monthly = 0.02
-					society_development_monthly = 0.02
+					
+					
+					
 					consumer_goods_factor = -0.10
 					production_speed_buildings_factor = 0.05
 					business_value_factor = 0.10
@@ -470,9 +470,9 @@
 					production_factory_start_efficiency_factor = 0.10
 					production_factory_max_efficiency_factor = 0.20
 					production_factory_efficiency_gain_factor = 0.15
-					industrial_development_monthly = 0.05
-					poverty_development_monthly = 0.05
-					society_development_monthly = 0.05
+					
+					
+					
 					consumer_goods_factor = -0.15
 					production_speed_buildings_factor = 0.10
 					business_value_factor = 0.15
@@ -506,7 +506,7 @@
 					political_power_gain = 0.05
 					stability_factor = 0.02
 					war_support_weekly = 0.07
-					poverty_development_monthly = 0.02
+					
 				}
 			}
 			
@@ -522,7 +522,7 @@
 					political_power_gain = 0.10
 					stability_factor = -0.03
 					war_support_weekly = 0.07
-					farming_development_monthly = 0.02
+					
 				}
 			}
 			
@@ -537,7 +537,7 @@
 				modifier = {
 					tax_business_rate = -0.05
 					tax_personal_rate = -0.05
-					industrial_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.10
 				}
 			}
@@ -554,7 +554,7 @@
 					tax_business_rate = -0.07
 					tax_personal_rate = -0.05
 					consumer_goods_factor = -0.025
-					industrial_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.10
 				}
 			}
@@ -571,7 +571,7 @@
 					tax_business_rate = -0.07
 					tax_personal_rate = -0.05
 					consumer_goods_factor = -0.05
-					industrial_development_monthly = 0.02
+					
 					production_speed_industrial_complex_factor = 0.05
 					income_growth_factor = 0.05
 					personal_expense_factor = -0.03
@@ -590,7 +590,7 @@
 					tax_business_rate = -0.10
 					tax_personal_rate = -0.10
 					consumer_goods_factor = -0.07
-					industrial_development_monthly = 0.02
+					
 					production_speed_industrial_complex_factor = 0.05
 					income_growth_factor = 0.03
 					personal_expense_factor = -0.03
@@ -609,7 +609,7 @@
 					tax_business_rate = -0.10
 					tax_personal_rate = -0.10
 					consumer_goods_factor = -0.07
-					industrial_development_monthly = 0.03
+					
 					production_speed_industrial_complex_factor = 0.05
 					income_growth_factor = 0.10
 					production_factory_max_efficiency_factor = 0.10
@@ -630,7 +630,7 @@
 					tax_business_rate = -0.05
 					tax_personal_rate = -0.08
 					consumer_goods_factor = -0.030
-					industrial_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.10
 				}
 			}
@@ -647,7 +647,7 @@
 					tax_business_rate = -0.06
 					tax_personal_rate = -0.08
 					consumer_goods_factor = -0.035
-					industrial_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.07
 					income_growth_factor = 0.04
 					personal_expense_factor = -0.03
@@ -666,7 +666,7 @@
 					tax_business_rate = -0.07
 					tax_personal_rate = -0.12
 					consumer_goods_factor = -0.09
-					industrial_development_monthly = 0.02
+					
 					production_speed_industrial_complex_factor = 0.05
 					income_growth_factor = 0.05
 					personal_expense_factor = -0.03
@@ -683,7 +683,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.1
-					poverty_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.05
 					production_speed_arms_factory_factor = 0.05
 					production_speed_infrastructure_factor = 0.05
@@ -700,7 +700,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.15
-					poverty_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.05
 					production_speed_arms_factory_factor = 0.05
 					production_speed_infrastructure_factor = 0.05
@@ -718,7 +718,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.2
-					poverty_development_monthly = 0.03
+					
 					production_speed_industrial_complex_factor = 0.07
 					production_speed_arms_factory_factor = 0.07
 					production_speed_infrastructure_factor = 0.07
@@ -738,7 +738,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.25
-					poverty_development_monthly = 0.05
+					
 					production_speed_industrial_complex_factor = 0.07
 					production_speed_arms_factory_factor = 0.07
 					production_speed_infrastructure_factor = 0.07
@@ -758,7 +758,6 @@
 				
 				modifier = {
 					tax_business_rate = 0.25
-					poverty_development_monthly = 0.10
 					production_speed_industrial_complex_factor = 0.07
 					production_speed_arms_factory_factor = 0.07
 					production_speed_infrastructure_factor = 0.10
@@ -780,7 +779,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.20
-					poverty_development_monthly = 0.01
+					
 					production_speed_industrial_complex_factor = 0.05
 					production_speed_arms_factory_factor = 0.05
 					production_speed_infrastructure_factor = 0.05
@@ -798,7 +797,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.25
-					poverty_development_monthly = 0.05
+					
 					production_speed_industrial_complex_factor = 0.06
 					production_speed_arms_factory_factor = 0.06
 					production_speed_infrastructure_factor = 0.08
@@ -817,7 +816,7 @@
 				
 				modifier = {
 					tax_business_rate = 0.35
-					poverty_development_monthly = 0.05
+					
 					production_speed_industrial_complex_factor = 0.05
 					production_speed_arms_factory_factor = 0.05
 					production_speed_infrastructure_factor = 0.10
@@ -835,7 +834,7 @@
 				}
 				
 				modifier = {
-					farming_development_monthly = 0.01
+					
 					production_speed_infrastructure_factor = 0.05
 				}
 			}
@@ -849,7 +848,7 @@
 				}
 				
 				modifier = {
-					farming_development_monthly = 0.02
+					
 					production_speed_infrastructure_factor = 0.10
 					production_speed_buildings_factor = 0.05
 				}
@@ -994,7 +993,7 @@
 				}
 				
 				modifier = {
-					society_development_monthly = 0.01
+					
 					political_power_factor = -0.05
 					stability_factor = -0.05
 				}
@@ -1010,7 +1009,7 @@
 				}
 				
 				modifier = {
-					society_development_monthly = 0.01
+					
 					political_power_factor = -0.08
 					stability_factor = -0.05
 				}
@@ -1026,7 +1025,7 @@
 				}
 				
 				modifier = {
-					farming_development_monthly = 0.01
+					
 					stability_factor = -0.05
 				}
 				
@@ -1041,7 +1040,7 @@
 				}
 				
 				modifier = {
-					industrial_development_monthly = 0.02
+					
 					consumer_goods_factor = -0.05
 				}
 				
@@ -1088,7 +1087,7 @@
 				
 				modifier = {
 					army_attack_factor = 0.01
-					military_development_monthly = 0.02
+					
 				}	
 			}
 			
@@ -1101,7 +1100,7 @@
 				}
 				
 				modifier = {
-					society_development_monthly = 0.01
+					
 					consumer_goods_factor = -0.05
 				}
 				
@@ -1135,7 +1134,7 @@
 				}
 				
 				modifier = {
-					society_development_monthly = 0.01
+					
 					industrial_capacity_factory = 0.07
 				}
 				
@@ -1172,7 +1171,7 @@
 					research_speed_factor = 0.02
 					consumer_goods_factor = -0.05
 					political_power_gain = 0.08
-					society_development_monthly = 0.05
+					
 				}
 			}
 
@@ -1271,7 +1270,7 @@
 					production_speed_arms_factory_factor = 0.08
 					stability_weekly = 0.05
 					political_power_gain = 0.05
-					society_development_monthly = 0.02
+					
 					war_support_weekly = 0.06
 				}
 			}

@@ -17,7 +17,7 @@ ideas = {
 				army_morale_factor = 0.05
 				army_attack_factor = 0.035
 				communist_drift = 0.03
-				society_development_monthly = 0.01
+				
 			}
 		}
 		VEN_economy_under_sanctions_idea = {
@@ -32,7 +32,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.25
 				production_speed_buildings_factor = -0.15
-				poverty_development_monthly = -0.01
+				
 				research_speed_factor = -0.05
 				industrial_capacity_factory = -0.1
 				industrial_capacity_dockyard = -0.1
@@ -128,7 +128,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.02
 				production_speed_buildings_factor = 0.1
-				poverty_development_monthly = 0.01
+				
 				research_speed_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.025
 			}
@@ -149,7 +149,7 @@ ideas = {
 				army_defence_factor = 0.05
 				army_strength_factor = 0.075
 				recon_factor = 0.1
-				military_development_monthly = 0.01
+				
 				battalion_upkeep_factor = 0.15
 			}
 		}
@@ -269,7 +269,7 @@ ideas = {
 				nationalist_drift = 0.01
 				authoritarian_democrat_drift = 0.03
 				conservative_drift = 0.02
-				society_development_monthly = -0.01
+				
 			}
 			on_remove = {
 				add_ideas = PRU_castillo_constitution_idea
@@ -314,7 +314,7 @@ ideas = {
 				income_growth_factor = 0.25
 				libertarian_socialist_drift = 0.02
 				communist_drift = 0.01
-				society_development_monthly = 0.02
+				
 			}
 		}
 		PRU_fujimorist_vanguard_idea = {

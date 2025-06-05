@@ -324,7 +324,7 @@ stability_bad_modifier = {
 	political_power_gain = -0.2
 	army_org_factor = -0.1
 	expense_growth_factor = 0.1
-	society_development_monthly = -0.05
+	
 }
 
 war_support_good_modifier = {
@@ -339,7 +339,7 @@ war_support_bad_modifier = {
 	command_power_gain_mult = -0.3
 	surrender_limit = -0.1
 	army_morale_factor = -0.1
-	military_development_monthly = -0.02
+	
 }
 
 war_support_during_war = { #Applied during war, scaled from 0-100% with war support, not split.

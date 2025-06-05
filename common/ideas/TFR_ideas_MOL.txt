@@ -17,7 +17,7 @@
 					industrial_capacity_factory = -0.15
 					production_speed_buildings_factor = -0.1
 					research_speed_factor = -0.05
-					poverty_development_monthly = -0.01
+					
 					personal_value_factor = -0.1
 				}
 			}
@@ -58,7 +58,7 @@
 					air_mission_efficiency = -0.1
 					breakthrough_factor = -0.1
 					conscription_factor = -0.15
-					military_development_monthly = -0.02
+					
 				}
 			}			
 			MOL_pro_european_opposition = {

@@ -13,7 +13,7 @@
 					personal_expense_factor = 0.15
 					misc_expense = 0.02
 					business_value_factor = -0.15
-					society_development_monthly = -0.01
+					
 				}
 			}
 			
@@ -76,7 +76,7 @@
 					production_factory_max_efficiency_factor = -0.2
 					income_growth_factor = -0.15
 					inflation_monthly = 0.002
-					poverty_development_monthly = -0.01
+					
 					trade_opinion_factor = 0.2
 					social_democrat_drift = 0.01
 				}

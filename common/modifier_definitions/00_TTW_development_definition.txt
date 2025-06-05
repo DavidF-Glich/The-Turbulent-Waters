@@ -1,0 +1,175 @@
+# Academic Development Modifier, Adds to academic_development_var monthly
+academic_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+# Poverty Development Modifier, Adds to farming_development_var monthly
+farming_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+# Poverty Development Modifier, Adds to poverty_development_var monthly
+poverty_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+# Industrial Development Modifier, Adds to industrial_development_var monthly
+industrial_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+# Army Development Modifier, Adds to military_development_var monthly
+military_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+# Society Development Modifier, Adds to society_development_var monthly
+society_development_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+##	education_quality Modifier, Adds to education_quality_var monthly
+education_quality_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	patent_number Modifier, Adds to patent_number_var monthly
+patent_number_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	food_security Modifier, Adds to food_security_var monthly
+food_security_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	tech_farming Modifier, Adds to tech_farming_var monthly
+tech_farming_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	sustain_farming Modifier, Adds to sustain_farming_var monthly
+sustain_farming_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	poverty_ratio Modifier, Adds to poverty_ratio_var monthly
+poverty_ratio_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	poverty_gap Modifier, Adds to poverty_gap_var monthly
+poverty_gap_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	structured_poverty Modifier, Adds to structured_poverty_var monthly
+structured_poverty_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	export_structure Modifier, Adds to export_structure_var monthly
+export_structure_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	energy_efficiency Modifier, Adds to energy_efficiency_var monthly
+energy_efficiency_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	digitalization Modifier, Adds to digitalization_var monthly
+digitalization_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	projection Modifier, Adds to projection_var monthly
+projection_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	mobilization Modifier, Adds to mobilization_var monthly
+mobilization_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	public_service Modifier, Adds to public_service_var monthly
+public_service_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	social_equity Modifier, Adds to social_equity_var monthly
+social_equity_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+
+##	social_sustainablity Modifier, Adds to social_sustainablity_var monthly
+social_sustainablity_monthly = {
+	color_type = good
+	value_type = percentage
+	precision = 1
+	category = country
+}
+

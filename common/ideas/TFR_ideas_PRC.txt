@@ -238,7 +238,7 @@ ideas ={
 				income_growth_factor = 0.05
 				production_speed_infrastructure_factor = 0.1
 				production_speed_naval_base_factor = 0.1
-				industrial_development_monthly = 0.005
+				
 			}
 		}
 		PRC_corrupt_bureaucracy_idea = {
@@ -261,7 +261,7 @@ ideas ={
 				economic_minister_cost_factor = 0.3
 				interior_minister_cost_factor = 0.3
 				intelligence_minister_cost_factor = 0.3
-				society_development_monthly = 0.005
+				
 			}
 		}
 		PRC_corrupt_bureaucracy_idea1 = {
@@ -283,7 +283,7 @@ ideas ={
 				economic_minister_cost_factor = 0.20
 				interior_minister_cost_factor = 0.20
 				intelligence_minister_cost_factor = 0.20
-				society_development_monthly = 0.01
+				
 			}
 		}
 		PRC_corrupt_bureaucracy_idea2 = {
@@ -305,7 +305,7 @@ ideas ={
 				economic_minister_cost_factor = 0.15
 				interior_minister_cost_factor = 0.15
 				intelligence_minister_cost_factor = 0.15
-				society_development_monthly = 0.03
+				
 			}
 		}
 		PRC_chinese_enviroment_dummy_idea = {	#仅用作展示 Tooltip only
@@ -399,7 +399,7 @@ ideas ={
 			removal_cost = -1
 			
 			modifier = {
-				society_development_monthly = 0.01
+				
 			}
 		}
 
@@ -419,8 +419,8 @@ ideas ={
 			modifier = {
 				stability_weekly = 0.0025
 				income_growth_factor = 0.125
-				industrial_development_monthly = 0.005
-				poverty_development_monthly = 0.005
+				
+				
 			}
 		}
 	 #疯狂的港人
@@ -483,9 +483,9 @@ ideas ={
 				stability_factor = 0.1
 				political_power_gain = 0.20
 				monthly_population = 0.05
-				society_development_monthly = 0.03
+				
 				army_org_regain = 0.1
-				farming_development_monthly = 0.03
+				
 			}
 		}
 	 #临阵磨枪，不快也光

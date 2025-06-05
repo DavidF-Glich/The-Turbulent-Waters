@@ -58,7 +58,7 @@ ideas = {
 				stability_factor = 0.05
 				consumer_goods_factor = -0.05
 				business_value_factor = -0.05
-				society_development_monthly = 0.01
+				
 			}
 		}
 		GER_anti_consumerism_dummy = {
@@ -71,8 +71,8 @@ ideas = {
 				stability_factor = 0.05
 				consumer_goods_factor = -0.05
 				business_value_factor = -0.05
-				society_development_monthly = 0.01
-				farming_development_monthly = 0.01
+				
+				
 			}
 		}
 		GER_green_new_deal = {
@@ -85,7 +85,7 @@ ideas = {
 				production_speed_power_plant_factor = -0.35
 				consumer_goods_factor = -0.025
 				stability_factor = 0.1
-				farming_development_monthly = 0.01
+				
 			}
 		}
 		GER_green_new_deal_dummy = {
@@ -98,7 +98,7 @@ ideas = {
 				production_speed_power_plant_factor = -0.35
 				consumer_goods_factor = -0.025
 				stability_factor = 0.1
-				farming_development_monthly = 0.01
+				
 			}
 		}
 		GER_spd_welfare = {
@@ -112,8 +112,8 @@ ideas = {
 				consumer_goods_factor = 0.02
 				income_growth_factor = 0.025
 				personal_value_factor = 0.025
-				society_development_monthly = 0.005
-				poverty_development_monthly = 0.005
+				
+				
 			}
 		}
 		GER_spd_welfare_dummy = {
@@ -127,8 +127,8 @@ ideas = {
 				consumer_goods_factor = 0.02
 				income_growth_factor = 0.025
 				personal_value_factor = 0.025
-				society_development_monthly = 0.005
-				poverty_development_monthly = 0.005
+				
+				
 			}
 		}
 		GER_spd_welfare1 = {
@@ -142,8 +142,8 @@ ideas = {
 				consumer_goods_factor = 0.04
 				income_growth_factor = 0.05
 				personal_value_factor = 0.05
-				society_development_monthly = 0.01
-				poverty_development_monthly = 0.01
+				
+				
 			}
 		}
 		GER_spd_welfare1_dummy = {
@@ -157,8 +157,8 @@ ideas = {
 				consumer_goods_factor = 0.04
 				income_growth_factor = 0.05
 				personal_value_factor = 0.05
-				society_development_monthly = 0.01
-				poverty_development_monthly = 0.01
+				
+				
 			}
 		}
 		GER_spd_welfare2 = {
@@ -172,8 +172,8 @@ ideas = {
 				consumer_goods_factor = 0.06
 				income_growth_factor = 0.075
 				personal_value_factor = 0.075
-				society_development_monthly = 0.015
-				poverty_development_monthly = 0.015
+				
+				
 			}
 		}
 		GER_spd_welfare2_dummy = {
@@ -187,8 +187,8 @@ ideas = {
 				consumer_goods_factor = 0.06
 				income_growth_factor = 0.075
 				personal_value_factor = 0.075
-				society_development_monthly = 0.015
-				poverty_development_monthly = 0.015
+				
+				
 			}
 		}
 		GER_spd_welfare3 = {
@@ -202,8 +202,8 @@ ideas = {
 				consumer_goods_factor = 0.08
 				income_growth_factor = 0.1
 				personal_value_factor = 0.1
-				society_development_monthly = 0.02
-				poverty_development_monthly = 0.02
+				
+				
 			}
 		}
 		GER_spd_welfare3_dummy = {
@@ -217,8 +217,8 @@ ideas = {
 				consumer_goods_factor = 0.08
 				income_growth_factor = 0.1
 				personal_value_factor = 0.1
-				society_development_monthly = 0.02
-				poverty_development_monthly = 0.02
+				
+				
 			}
 		}
 		GER_invisible_hand = {
@@ -233,8 +233,8 @@ ideas = {
 				personal_expense_factor = -0.02
 				business_value_factor = 0.05
 				income_growth_factor = 0.05
-				academic_development_monthly = 0.005
-				society_development_monthly = 0.005
+				
+				
 			}
 		}
 		GER_invisible_hand_dummy = {
@@ -249,8 +249,8 @@ ideas = {
 				personal_expense_factor = -0.02
 				business_value_factor = 0.05
 				income_growth_factor = 0.05
-				academic_development_monthly = 0.005
-				society_development_monthly = 0.005
+				
+				
 			}
 		}
 		GER_invisible_hand1 = {
@@ -265,8 +265,8 @@ ideas = {
 				personal_expense_factor = -0.05
 				business_value_factor = 0.075
 				income_growth_factor = 0.075
-				academic_development_monthly = 0.01
-				society_development_monthly = 0.01
+				
+				
 			}
 		}
 		GER_invisible_hand1_dummy = {
@@ -281,8 +281,8 @@ ideas = {
 				personal_expense_factor = -0.05
 				business_value_factor = 0.075
 				income_growth_factor = 0.075
-				academic_development_monthly = 0.01
-				society_development_monthly = 0.01
+				
+				
 			}
 		}
 		GER_invisible_hand2 = {
@@ -297,8 +297,8 @@ ideas = {
 				personal_expense_factor = -0.05
 				business_value_factor = 0.1
 				income_growth_factor = 0.1
-				academic_development_monthly = 0.01
-				society_development_monthly = 0.015
+				
+				
 			}
 		}
 		GER_invisible_hand2_dummy = {
@@ -313,8 +313,8 @@ ideas = {
 				personal_expense_factor = -0.05
 				business_value_factor = 0.1
 				income_growth_factor = 0.1
-				academic_development_monthly = 0.01
-				society_development_monthly = 0.015
+				
+				
 			}
 		}
 		GER_invisible_hand3 = {
@@ -329,8 +329,8 @@ ideas = {
 				personal_expense_factor = -0.075
 				business_value_factor = 0.15
 				income_growth_factor = 0.15
-				academic_development_monthly = 0.015
-				society_development_monthly = 0.02
+				
+				
 			}
 		}
 		GER_invisible_hand3_dummy = {
@@ -345,8 +345,8 @@ ideas = {
 				personal_expense_factor = -0.075
 				business_value_factor = 0.15
 				income_growth_factor = 0.15
-				academic_development_monthly = 0.015
-				society_development_monthly = 0.02
+				
+				
 			}
 		}
 		GER_digitalization = {
@@ -357,7 +357,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				production_speed_buildings_factor = 0.05
-				academic_development_monthly = 0.005
+				
 				income_growth_factor = 0.05
 				stability_factor = 0.05
 				consumer_goods_factor = 0.025
@@ -371,7 +371,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				production_speed_buildings_factor = 0.05
-				academic_development_monthly = 0.005
+				
 				income_growth_factor = 0.05
 				stability_factor = 0.05
 				consumer_goods_factor = 0.025
@@ -389,10 +389,10 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 				consumer_goods_factor = -0.025
 				personal_value_factor = 0.1
-				society_development_monthly = 0.005
-				poverty_development_monthly = 0.005
-				academic_development_monthly = 0.005
-				industrial_development_monthly = 0.005
+				
+				
+				
+				
 			}
 		}
 		GER_nwp_dummy = {
@@ -407,10 +407,10 @@ ideas = {
 				production_factory_start_efficiency_factor = 0.1
 				consumer_goods_factor = -0.025
 				personal_value_factor = 0.1
-				society_development_monthly = 0.005
-				poverty_development_monthly = 0.005
-				academic_development_monthly = 0.005
-				industrial_development_monthly = 0.005
+				
+				
+				
+				
 			}
 		}
 	}
@@ -468,7 +468,6 @@ ideas = {
 				experience_loss_factor = 0.1
 				land_reinforce_rate = 0.1
 				coordination_bonus = 0.1
-				military_development_monthly = -0.015
 			}
 			ai_will_do = {
 				base = 1
@@ -486,7 +485,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.04
-				industrial_development_monthly = 0.02
+				
 				production_factory_max_efficiency_factor = 0.1
 				personal_expense_factor = -0.05
 				production_speed_arms_factory_factor = 0.1
@@ -502,8 +501,8 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.08
-				industrial_development_monthly = 0.02
-				society_development_monthly = 0.02
+				
+				
 				production_factory_max_efficiency_factor = 0.2
 				personal_expense_factor = -0.1
 				production_speed_arms_factory_factor = 0.2
@@ -520,7 +519,7 @@ ideas = {
 			}
 			modifier = {
 				industrial_capacity_factory = 0.1
-				poverty_development_monthly = 0.02
+				
 				production_factory_efficiency_gain_factor = 0.1
 				business_value_factor = 0.15
 				production_speed_industrial_complex_factor = 0.1
@@ -536,7 +535,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.05
-				industrial_development_monthly = 0.01
+				
 				line_change_production_efficiency_factor = 0.1
 				research_speed_factor = 0.05
 			}
@@ -551,8 +550,8 @@ ideas = {
 			}
 			modifier = {
 				industrial_capacity_factory = 0.15
-				poverty_development_monthly = 0.02
-				academic_development_monthly = 0.02
+				
+				
 				production_factory_efficiency_gain_factor = 0.15
 				business_value_factor = 0.25
 				production_speed_industrial_complex_factor = 0.2
@@ -756,8 +755,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.3
 				war_support_factor = -0.4
-				society_development_monthly = -0.03
-				poverty_development_monthly = -0.03
+				
+				
 				training_time_factor = 5
 			}
 		}
@@ -773,8 +772,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.2
 				war_support_factor = -0.25
-				society_development_monthly = -0.02
-				poverty_development_monthly = -0.02
+				
+				
 				training_time_factor = 5
 			}
 		}
@@ -790,8 +789,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.1
 				war_support_factor = -0.1
-				society_development_monthly = -0.01
-				poverty_development_monthly = -0.01
+				
+				
 			}
 		}
 		GER_EU_prop_up_eastern_europes_industry_idea = {
@@ -1007,7 +1006,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.05
-				poverty_development_monthly = 0.005
+				
 			}
 		}
 		GER_empower_the_unions_idea = {
@@ -1017,7 +1016,7 @@ ideas = {
 				original_tag = GER
 			}
 			modifier = {
-				society_development_monthly = 0.005
+				
 				libertarian_socialist_drift = 0.03
 			}
 		}
@@ -1132,7 +1131,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				interest_rate_factor = 0.1
-				farming_development_monthly = 0.025
+				
 				income_growth_factor = 0.1
 			}
 		}
@@ -1210,7 +1209,7 @@ ideas = {
 				mobilization_speed = -0.8
 				army_morale_factor = -0.15
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 			}
@@ -1243,7 +1242,7 @@ ideas = {
 				battalion_upkeep_factor = 0.2
 				land_doctrine_cost_factor = 0.4
 				mobilization_speed = -0.3
-				military_development_monthly = -0.02
+				
 			}
 		}
 		GER_german_legacy_idea = {
@@ -1349,7 +1348,7 @@ ideas = {
 				war_support_factor = 0.05
 				army_org_Factor = 0.1
 				army_morale_factor = 0.05
-				military_development_monthly = 0.005
+				
 			}
 		}
 		GER_inspire_the_youth_idea = {
@@ -1421,7 +1420,7 @@ ideas = {
 			modifier = {
 				command_power_gain_mult = 0.5
 				experience_gain_army = 0.05
-				military_development_monthly = 0.03
+				
 			}
 		}
 		GER_defenders_of_democracy_campaign_idea = {
@@ -1467,7 +1466,7 @@ ideas = {
 			}
 			modifier = {
 				experience_gain_army_factor = 0.15
-				military_development_monthly = 0.02
+				
 				max_command_power = -20
 			}
 		}
@@ -1905,7 +1904,7 @@ ideas = {
 			modifier = {
 				army_attack_factor = 0.05
 				army_speed_factor = 0.1
-				military_development_monthly = 0.01
+				
 			}
 		}
 		GER_dominate_the_skies_idea = {
@@ -2191,7 +2190,7 @@ ideas = {
 				mobilization_speed = -0.7
 				army_morale_factor = -0.05
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 			}
@@ -2210,7 +2209,7 @@ ideas = {
 				mobilization_speed = -0.8
 				army_morale_factor = -0.15
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 				army_core_defence_factor = 0.1
@@ -2230,7 +2229,7 @@ ideas = {
 				mobilization_speed = -0.8
 				army_morale_factor = -0.15
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 				max_command_power = 50
@@ -2252,7 +2251,7 @@ ideas = {
 				mobilization_speed = -0.8
 				army_morale_factor = -0.15
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 				mechanized_attack_factor = 0.1
@@ -2274,7 +2273,7 @@ ideas = {
 				mobilization_speed = -0.8
 				army_morale_factor = -0.15
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 				army_speed_factor = 0.15
@@ -2296,7 +2295,7 @@ ideas = {
 				mobilization_speed = -0.8
 				army_morale_factor = -0.15
 				land_doctrine_cost_factor = 0.4
-				military_development_monthly = -0.02
+				
 				national_socialist_drift = -0.04
 				totalitarian_socialist_drift = -0.04
 				air_attack_factor = 0.1
@@ -2692,7 +2691,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.1
-				industrial_development_monthly = 0.005
+				
 				expense_growth_factor = 0.2
 			}
 		}
@@ -2755,7 +2754,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
-				industrial_development_monthly = 0.005
+				
 			}
 		}
 		GER_autarky_initiative_idea = {
@@ -2766,7 +2765,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.025
-				industrial_development_monthly = 0.005
+				
 				production_lack_of_resource_penalty_factor = -0.05
 				local_resources_factor = 0.1
 			}
@@ -2780,7 +2779,7 @@ ideas = {
 			modifier = {
 				political_power_gain = -0.1
 				consumer_goods_factor = -0.025
-				industrial_development_monthly = 0.005
+				
 				industrial_capacity_factory = 0.1
 				industrial_capacity_dockyard = 0.1
 				production_speed_power_plant_factor = 0.2
@@ -2807,7 +2806,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.1
-				industrial_development_monthly = 0.025
+				
 				production_lack_of_resource_penalty_factor = -0.2
 				local_resources_factor = 0.2
 				industrial_capacity_factory = 0.15
@@ -2823,7 +2822,7 @@ ideas = {
 			}
 			modifier = {
 				line_change_production_efficiency_factor = 0.05
-				poverty_development_monthly = 0.005
+				
 				personal_expense_factor = 0.05
 				consumer_goods_factor = -0.05
 			}
@@ -2937,7 +2936,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.1
-				industrial_development_monthly = 0.005
+				
 			}
 		}
 		GER_ensure_domestic_stability_idea = {
@@ -2949,7 +2948,7 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				industrial_development_monthly = 0.005
+				
 			}
 		}
 		GER_work_with_the_banks_idea = {
@@ -3046,7 +3045,7 @@ ideas = {
 				original_tag = GER
 			}
 			modifier = {
-				industrial_development_monthly = 0.01
+				
 			}
 		}
 		GER_revitalized_industry_campaign_idea = {
@@ -3160,7 +3159,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = 0.1
-				academic_development_monthly = 0.02
+				
 			}
 		}
 		GER_supply_the_struggle_campaign_idea = {
@@ -3183,7 +3182,7 @@ ideas = {
 			}
 			modifier = {
 				income_growth_factor = 0.1
-				poverty_development_monthly = 0.02
+				
 			}
 		}
 		GER_master_negotiators_campaign_idea = {
@@ -3221,8 +3220,8 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.05
 				industrial_capacity_factory = -0.025
 				industrial_capacity_dockyard = -0.025
-				farming_development_monthly = 0.005
-				industrial_development_monthly = 0.005
+				
+				
 			}
 		}
 		GER_german_edgenuity_idea = {
@@ -3237,7 +3236,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				research_speed_factor = 0.15
-				academic_development_monthly = 0.02
+				
 			}
 		}
 		GER_technocrats_idea = {
@@ -3277,7 +3276,7 @@ ideas = {
 			}
 			modifier = {
 				stability_weekly = 0.05
-				farming_development_monthly = 0.02
+				
 			}
 		}
 		GER_FDP_win = {
@@ -3367,7 +3366,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				poverty_development_monthly = 0.01
+				
 				personal_value_factor = 0.1
 			}			
 		}
@@ -3381,7 +3380,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				industrial_development_monthly = 0.01
+				
 				business_value_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
@@ -3398,7 +3397,7 @@ ideas = {
 			}
 			modifier = {
 				income_growth_factor = 0.1
-				industrial_development_monthly = 0.01
+				
 			}
 		}
 		GER_empower_the_individual_idea = {
@@ -3499,9 +3498,9 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				farming_development_monthly = 0.02
+				
 				income_growth_factor = 0.1
-				industrial_development_monthly = 0.005
+				
 			}
 		}
 		GER_fund_russian_dissident_groups_idea = {
@@ -3587,7 +3586,7 @@ ideas = {
 			}
 			modifier = {
 				consumer_goods_factor = -0.05
-				industrial_development_monthly = 0.01
+				
 				income_growth_factor = 0.1
 			}
 		}
@@ -3652,7 +3651,7 @@ ideas = {
 				always = yes
 			}
 			modifier = {
-				military_development_monthly = 0.05
+				
 			}
 		}
 		GER_promote_public_transportation_idea = {
@@ -3682,8 +3681,8 @@ ideas = {
 			}
 			modifier = {
 				min_export = -0.1
-				farming_development_monthly = 0.01
-				industrial_development_monthly = 0.01
+				
+				
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
@@ -3716,7 +3715,7 @@ ideas = {
 				income_growth_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				production_factory_max_efficiency_factor = 0.05
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		GER_criticize_the_eu_political_idea = {
@@ -3784,7 +3783,6 @@ ideas = {
 				consumer_goods_factor = 0.4
 				industrial_capacity_dockyard = -0.4
 				min_export = -0.2
-				poverty_development_monthly = -0.04
 			}
 		}
 		GER_budget_sustainment_idea = {
@@ -3798,7 +3796,7 @@ ideas = {
 				consumer_goods_factor = 0.1
 				industrial_capacity_dockyard = 0.1
 				min_export = 0.05
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		GER_wholesale_bailout_idea = {
@@ -3832,7 +3830,7 @@ ideas = {
 			}
 			modifier = {
 				min_export = 0.1
-				poverty_development_monthly = 0.02
+				
 			}
 		}
 		GER_finance_bailout_idea1 = {
@@ -3844,7 +3842,7 @@ ideas = {
 			}
 			modifier = {
 				min_export = 0.05
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		GER_automotive_bailout_idea = {
@@ -3903,7 +3901,7 @@ ideas = {
 				min_export = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				industrial_capacity_dockyard = 0.2
-				poverty_development_monthly = 0.02
+				
 			}
 		}
 		GER_small_business_bailout_idea1 = {
@@ -3918,7 +3916,7 @@ ideas = {
 				min_export = 0.05
 				production_factory_max_efficiency_factor = 0.05
 				industrial_capacity_dockyard = 0.1
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		#Military
@@ -3944,7 +3942,7 @@ ideas = {
 				production_factory_max_efficiency_factor = -0.05
 				conservative_drift = 0.02
 				authoritarian_democrat_drift = 0.02
-				poverty_development_monthly = -0.015
+				
 			}
 		}
 		GER_saudi_refugees_idea2 = {
@@ -3955,7 +3953,7 @@ ideas = {
 			modifier = {
 				production_factory_max_efficiency_factor = 0.05
 				stability_factor = -0.1
-				poverty_development_monthly = -0.005
+				
 			}
 		}
 		GER_unsre_kaiser_unsre_volk = {
@@ -4003,7 +4001,7 @@ ideas = {
 			modifier = {
 				army_core_defence_factor = 0.05
 				mobilization_speed = 0.05
-				military_development_monthly = 0.005
+				
 			}
 		}
 		GER_army_of_the_future2 = {
@@ -4015,7 +4013,6 @@ ideas = {
 			modifier = {
 				army_core_defence_factor = 0.1
 				mobilization_speed = 0.1
-				military_development_monthly = 0.015
 			}
 		}
 		GER_army_of_the_future3 = {
@@ -4027,7 +4024,6 @@ ideas = {
 			modifier = {
 				army_core_defence_factor = 0.1
 				mobilization_speed = 0.1
-				military_development_monthly = 0.015
 				breakthrough_factor = 0.1
 				terrain_penalty_reduction = 0.1
 			}
@@ -4041,7 +4037,7 @@ ideas = {
 			modifier = {
 				army_core_defence_factor = 0.1
 				mobilization_speed = 0.1
-				military_development_monthly = 0.02
+				
 				recon_factor = 0.15
 				army_speed_factor = 0.15
 			}
@@ -4315,7 +4311,7 @@ ideas = {
 			modifier = {
 				inflation_monthly_factor = -0.75
 				consumer_goods_factor = 0.05
-				industrial_development_monthly = 0.02
+				
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
@@ -4786,7 +4782,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				political_power_cost = -0.05
-				society_development_monthly = 0.01
+				
 				stability_factor = 0.07
 				business_value_factor = 0.15
 				social_liberal_drift = 0.015
@@ -4810,9 +4806,9 @@ ideas = {
 				party_popularity_stability_factor = 0.02
 				production_factory_efficiency_gain_factor = 0.05
 				production_speed_industrial_complex_factor = 0.05
-				farming_development_monthly = 0.01
+				
 				consumer_goods_factor = 0.02
-				industrial_development_monthly = 0.015
+				
 				stability_factor = 0.05
 			}
 		}
@@ -4834,9 +4830,9 @@ ideas = {
 				production_factory_efficiency_gain_factor = 0.1
 				production_speed_industrial_complex_factor = 0.05
 				production_speed_nuclear_reactor_factor = 0.05
-				farming_development_monthly = 0.01
+				
 				consumer_goods_factor = 0.02
-				industrial_development_monthly = 0.02
+				
 				stability_factor = 0.05
 			}
 		}
@@ -4853,15 +4849,15 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_morale_factor = 0.1
-				academic_development_monthly = -0.02
+				
 				industrial_capacity_factory = 0.045
 				party_popularity_stability_factor = 0.04
 				production_factory_efficiency_gain_factor = 0.1
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_nuclear_reactor_factor = 0.05
-				farming_development_monthly = 0.01
+				
 				consumer_goods_factor = 0.02
-				industrial_development_monthly = 0.02
+				
 				stability_factor = 0.05
 				war_stability_factor = 0.1
 			}
@@ -4881,17 +4877,17 @@ ideas = {
 				army_morale_factor = 0.1
 				army_core_defence_factor = 0.02
 				army_speed_factor = 0.05
-				academic_development_monthly = -0.02
-				military_development_monthly = 0.01
+				
+				
 				industrial_capacity_factory = 0.05
 				party_popularity_stability_factor = 0.1
 				production_factory_efficiency_gain_factor = 0.1
 				production_lack_of_resource_penalty_factor = 0.03
 				production_speed_industrial_complex_factor = 0.15
 				production_speed_nuclear_reactor_factor = 0.1
-				farming_development_monthly = 0.01
+				
 				consumer_goods_factor = 0.02
-				industrial_development_monthly = 0.02
+				
 				stability_factor = 0.05
 				war_stability_factor = 0.1
 			}
@@ -4910,8 +4906,8 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				army_org = 2
-				academic_development_monthly = 0.015
-				society_development_monthly = 0.015
+				
+				
 				offensive_war_stability_factor = 0.15
 			}
 		}
@@ -4933,8 +4929,8 @@ ideas = {
 				army_attack_against_major_factor = 0.1
 				income_growth_factor = 0.05
 				expense_growth_factor = 0.05
-				academic_development_monthly = 0.025
-				society_development_monthly = 0.025
+				
+				
 				offensive_war_stability_factor = 0.15
 			}
 		}
@@ -4956,8 +4952,8 @@ ideas = {
 				army_attack_against_major_factor = 0.1
 				income_growth_factor = 0.1
 				expense_growth_factor = 0.05
-				academic_development_monthly = 0.025
-				society_development_monthly = 0.03
+				
+				
 				offensive_war_stability_factor = 0.2
 			}
 		}
@@ -4982,8 +4978,8 @@ ideas = {
 				army_attack_against_major_factor = 0.1
 				income_growth_factor = 0.1
 				expense_growth_factor = 0.05
-				academic_development_monthly = 0.025
-				society_development_monthly = 0.03
+				
+				
 				offensive_war_stability_factor = 0.2
 			}
 		}
@@ -5321,7 +5317,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.15
 				drift_defence_factor = 0.05
-				society_development_monthly = 0.01
+				
 				personal_value_factor = 0.1
 			}
 		}
@@ -5339,7 +5335,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				drift_defence_factor = 0.1
-				society_development_monthly = 0.015
+				
 				personal_value_factor = 0.1
 			}
 		}
@@ -5357,7 +5353,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				drift_defence_factor = 0.15
-				society_development_monthly = 0.025
+				
 				personal_value_factor = 0.15
 				defensive_war_stability_factor = 0.1
 			}
@@ -5376,7 +5372,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				drift_defence_factor = 0.2
-				society_development_monthly = 0.03
+				
 				personal_value_factor = 0.15
 				defensive_war_stability_factor = 0.15
 			}
@@ -5395,7 +5391,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.25
 				drift_defence_factor = 0.25
-				society_development_monthly = 0.03
+				
 				personal_value_factor = 0.2
 				defensive_war_stability_factor = 0.25
 			}
@@ -5746,7 +5742,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				army_morale_factor = 0.1
-				society_development_monthly = -0.015
+				
 				offensive_war_stability_factor = 0.15
 			}
 		}
@@ -5774,7 +5770,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				poverty_development_monthly = 0.015
+				
 				stability_factor = 0.075
 				war_support_factor = 0.025
 				political_power_gain = -0.1
@@ -5796,7 +5792,7 @@ ideas = {
 			}
 			removal_cost = -1
 			modifier = {
-				poverty_development_monthly = 0.02
+				
 				stability_factor = 0.075
 				war_support_factor = 0.025
 				political_power_gain = -0.1
@@ -5893,7 +5889,7 @@ ideas = {
 				army_org_factor = 0.025
 				stability_factor = 0.1
 				national_socialist_drift = 0.05
-				society_development_monthly = 0.01
+				
 			}
 		}
 		GER_hitlerism_of_21_century_idea = {
@@ -5910,7 +5906,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.15
 				resistance_growth = 0.05
-				society_development_monthly = -0.02
+				
 				army_attack_speed_factor = 0.05
 				national_socialist_drift = 0.01
 				army_attack_factor = 0.02
@@ -5932,7 +5928,7 @@ ideas = {
 			modifier = {
 				political_power_factor = 0.2
 				resistance_growth = 0.05
-				society_development_monthly = -0.02
+				
 				army_attack_speed_factor = 0.1
 				national_socialist_drift = 0.01
 				army_attack_factor = 0.05
@@ -6174,7 +6170,7 @@ ideas = {
 			modifier = {
 				army_breakthrough_against_major_factor = 0.025
 				planning_speed = 0.05
-				society_development_monthly = -0.02
+				
 				political_power_factor = 0.05
 				ship_upkeep_factor = -0.1
 				military_factory_upkeep_factor = -0.1
@@ -6258,7 +6254,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				mobilization_speed = 0.1
-				society_development_monthly = 0.01
+				
 				monthly_population = 0.5
 				consumer_goods_factor = 0.02
 				training_time_factor = -0.15
@@ -6341,7 +6337,7 @@ ideas = {
 				war_support_factor = 0.15
 				political_power_gain = 0.05
 				army_morale_factor = 0.1
-				academic_development_monthly = -0.01
+				
 			}
 		}
 		GER_kirchenkampf_christianity_idea = {
@@ -6380,7 +6376,7 @@ ideas = {
 				stability_factor = 0.15
 				political_power_gain = -0.05
 				army_core_defence_factor = 0.1
-				society_development_monthly = -0.01
+				
 			}
 		}
 		GER_blood_and_soil_idea = {
@@ -6396,7 +6392,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				non_core_manpower = 0.05
-				farming_development_monthly = 0.05
+				
 				conscription_factor = -0.025
 				production_speed_buildings_factor = -0.05
 				personal_expense_factor = -0.15
@@ -6417,7 +6413,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.05
 				weekly_manpower = 500
-				military_development_monthly = 0.01
+				
 				army_strength_factor = 0.15
 				army_morale = 0.1
 			}
@@ -6457,7 +6453,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.1
-				industrial_development_monthly = 0.015
+				
 				production_speed_buildings_factor = 0.075
 				personal_value_factor = 0.2
 			}
@@ -6478,7 +6474,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				production_speed_infrastructure_factor = 0.025
 				personal_expense_factor = 0.15
-				industrial_development_monthly = 0.015
+				
 				production_speed_buildings_factor = 0.075
 				personal_value_factor = 0.3
 			}
@@ -6519,7 +6515,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = 0.025
 				political_power_cost = -0.05
-				poverty_development_monthly = 0.01
+				
 				personal_expense_factor = -0.1
 				production_factory_start_efficiency_factor = 0.15
 				business_value_factor = 0.45
@@ -6742,7 +6738,7 @@ ideas = {
 				conscription_factor = -0.5
 				battalion_upkeep_factor = 1
 				military_factory_upkeep_factor = 1
-				military_development_monthly = -0.01
+				
 				defensive_war_stability_factor = 0.25
 				army_core_attack_factor = 0.25
 				army_core_defence_factor = 0.25

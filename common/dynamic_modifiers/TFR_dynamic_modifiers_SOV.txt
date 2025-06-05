@@ -47,8 +47,6 @@
 	    resistance_decay = SOV_organic_democracy_resistance_decay_dynamic_var
 		production_factory_max_efficiency_factor = SOV_organic_democracy_production_factory_max_efficiency_factor_dynamic_var
 		production_factory_efficiency_gain_factor = SOV_organic_democracy_production_factory_efficiency_gain_factor_dynamic_var
-		society_development_monthly = SOV_organic_democracy_society_development_monthly_dynamic_var
-		poverty_development_monthly = SOV_organic_democracy_poverty_development_monthly_dynamic_var
 		expense_growth_factor = SOV_organic_democracy_expense_growth_factor_dynamic_var
 		income_growth_factor = SOV_organic_democracy_expense_income_growth_factor_dynamic_var
 		tax_business_rate = SOV_organic_democracy_tax_business_rate_dynamic_var
@@ -63,7 +61,6 @@
 		war_stability_factor = SOV_ADS_war_stability_factor_dynamic_var
 		production_factory_start_efficiency_factor = SOV_ADS_production_factory_start_efficiency_factor_dynamic_var
 		income_growth_factor = SOV_ADS_income_growth_factor_dynamic_var
-		industrial_development_monthly = SOV_ADS_industrial_development_monthly_dynamic_var
 		consumer_goods_factor = SOV_ADS_consumer_goods_factor_dynamic_var
 	}	
 	SOV_TMC_dynamic = {
@@ -73,7 +70,6 @@
 		lend_lease_tension = SOV_TMC_lend_lease_tension_dynamic_var
 		war_stability_factor = SOV_TMC_war_stability_factor_dynamic_var
 		income_growth_factor = SOV_TMC_income_growth_factor_dynamic_var
-		industrial_development_monthly = SOV_TMC_industrial_development_monthly_dynamic_var
 		consumer_goods_factor = SOV_TMC_consumer_goods_factor_dynamic_var
 	}
 	SOV_brics_dynamic = {
@@ -102,7 +98,6 @@
 		battalion_upkeep_factor = SOV_voenny_battalion_upkeep_factor_dynamic
 		aircraft_upkeep_factor = SOV_voenny_aircraft_upkeep_factor_dynamic
 		ship_upkeep_factor = SOV_voenny_ship_upkeep_factor_dynamic
-		military_development_monthly = SOV_voenny_military_development_monthly_dynamic
 		army_morale_factor = SOV_voenny_army_morale_factor_dynamic
 		army_attack_factor = SOV_voenny_army_attack_factor_dynamic
 		conscription = SOV_voenny_conscription_dynamic
@@ -133,7 +128,6 @@
 		battalion_upkeep_factor = SOV_voenny_battalion_upkeep_factor_dynamic
 		aircraft_upkeep_factor = SOV_voenny_aircraft_upkeep_factor_dynamic
 		ship_upkeep_factor = SOV_voenny_ship_upkeep_factor_dynamic
-		military_development_monthly = SOV_voenny_military_development_monthly_dynamic
 		army_morale_factor = SOV_voenny_army_morale_factor_dynamic
 		army_attack_factor = SOV_voenny_army_attack_factor_dynamic
 		conscription = SOV_voenny_conscription_dynamic
@@ -161,7 +155,6 @@
 		battalion_upkeep_factor = SOV_voenny_battalion_upkeep_factor_dynamic
 		aircraft_upkeep_factor = SOV_voenny_aircraft_upkeep_factor_dynamic
 		ship_upkeep_factor = SOV_voenny_ship_upkeep_factor_dynamic
-		military_development_monthly = SOV_voenny_military_development_monthly_dynamic
 		army_morale_factor = SOV_voenny_army_morale_factor_dynamic
 		army_attack_factor = SOV_voenny_army_attack_factor_dynamic
 		conscription = SOV_voenny_conscription_dynamic
@@ -190,7 +183,6 @@
 		battalion_upkeep_factor = SOV_navalny_battalion_upkeep_factor_dynamic
 		aircraft_upkeep_factor = SOV_navalny_aircraft_upkeep_factor_dynamic
 		ship_upkeep_factor = SOV_navalny_ship_upkeep_factor_dynamic
-		military_development_monthly = SOV_navalny_military_development_monthly_dynamic
 		army_morale_factor = SOV_navalny_army_morale_factor_dynamic
 		army_attack_factor = SOV_navalny_army_attack_factor_dynamic
 		cas_damage_reduction = SOV_navalny_cas_damage_reduction_dynamic
@@ -237,7 +229,6 @@
 		dockyard_upkeep_factor = SOV_navalny_dockyard_upkeep_factor_dynamic
 		aircraft_upkeep_factor = SOV_navalny_aircraft_upkeep_factor_dynamic
 		ship_upkeep_factor = SOV_navalny_ship_upkeep_factor_dynamic
-		military_development_monthly = SOV_navalny_military_development_monthly_dynamic
 		army_morale_factor = SOV_navalny_army_morale_factor_dynamic
 		army_attack_factor = SOV_navalny_army_attack_factor_dynamic
 		cas_damage_reduction = SOV_navalny_cas_damage_reduction_dynamic
@@ -275,72 +266,6 @@
 		production_factory_efficiency_gain_factor = SOV_navalny_production_factory_efficiency_gain_factor_dynamic
 		production_factory_max_efficiency_factor = SOV_navalny_production_factory_max_efficiency_factor_dynamic
 	}
-	SOV_eurasian_armed_forces_dynamic = {
-		icon = GFX_idea_SOV_eurasian_armed_forces_idea
-		army_org_factor = SOV_dugin_army_org_factor_dynamic
-		stability_factor  = SOV_dugin_stability_factor_dynamic
-		army_defence_factor = SOV_dugin_army_defence_factor_dynamic
-		military_factory_upkeep_factor = SOV_dugin_military_factory_upkeep_dynamic
-		dockyard_upkeep_factor = SOV_dugin_dockyard_upkeep_factor_dynamic
-		battalion_upkeep_factor = SOV_dugin_battalion_upkeep_factor_dynamic
-		aircraft_upkeep_factor = SOV_dugin_aircraft_upkeep_factor_dynamic
-		ship_upkeep_factor = SOV_dugin_ship_upkeep_factor_dynamic
-		military_development_monthly = SOV_dugin_military_development_monthly_dynamic
-		army_morale_factor = SOV_dugin_army_morale_factor_dynamic
-		army_attack_factor = SOV_dugin_army_attack_factor_dynamic
-		cas_damage_reduction = SOV_dugin_cas_damage_reduction_dynamic
-		fortification_damage = SOV_dugin_fortification_damage_dynamic
-		terrain_penalty_reduction = SOV_dugin_terrain_penalty_reduction_dynamic
-		army_speed_factor = SOV_dugin_army_speed_factor_dynamic
-		army_core_attack_factor = SOV_dugin_army_core_attack_factor_dynamic
-		army_core_defence_factor = SOV_dugin_army_core_defence_factor_dynamic
-		army_attack_speed_factor = SOV_dugin_army_attack_speed_factor_dynamic
-		conscription = SOV_dugin_conscription_dynamic
-		special_forces_cap = SOV_dugin_special_forces_cap_dynamic
-		initiative_factor = SOV_dugin_initiative_factor_dynamic
-		planning_speed = SOV_dugin_planning_speed_dynamic
-		max_planning_factor = SOV_dugin_max_planning_factor_dynamic
-		supply_node_range = SOV_dugin_supply_node_range_dynamic
-		training_time_factor = SOV_dugin_training_time_factor_dynamic
-		military_leader_cost_factor = SOV_dugin_military_leader_cost_factor_dynamic
-		grant_medal_cost_factor = SOV_dugin_grant_medal_cost_factor_dynamic
-		land_doctrine_cost_factor = SOV_dugin_land_doctrine_cost_factor_dynamic
-		max_command_power = SOV_dugin_max_command_power_dynamic
-		max_dig_in_factor = SOV_dugin_max_dig_in_factor_dynamic
-		experience_loss_factor = SOV_dugin_experience_loss_factor_dynamic
-		experience_gain_army_unit_factor = SOV_dugin_experience_gain_army_unit_factor_dynamic
-		land_night_attack = SOV_dugin_land_night_attack_dynamic
-		recon_factor = SOV_dugin_recon_factor_dynamic
-		coordination_bonus = SOV_dugin_coordination_bonus_dynamic
-		mobilization_speed = SOV_dugin_mobilization_speed_dynamic
-		research_speed_factor = SOV_dugin_research_speed_factor_dynamic
-		conscription_factor = SOV_dugin_conscription_factor_dynamic
-		army_breakthrough_against_major_factor = SOV_dugin_army_breakthrough_against_major_factor_dynamic
-		breakthrough_factor = SOV_dugin_breakthrough_factor_dynamic
-		army_fuel_consumption_factor = SOV_dugin_army_fuel_consumption_factor_dynamic 
-		army_org_regain = SOV_dugin_army_org_regain_factor_dynamic
-		experience_gain_army_factor = SOV_dugin_experience_gain_army_factor_dynamic
-		unit_upkeep_attrition_factor = SOV_dugin_unit_upkeep_attrition_factor_dynamic
-		minimum_training_level = SOV_dugin_minimum_training_level_factor_dynamic
-		production_factory_efficiency_gain_factor = SOV_dugin_production_factory_efficiency_gain_factor_dynamic
-		production_factory_max_efficiency_factor = SOV_dugin_production_factory_max_efficiency_factor_dynamic
-	}
-	SOV_new_nep_dynamic = {
-		icon = GFX_idea_SOV_birdcage_economy2
-		production_speed_buildings_factor = SOV_new_nep_production_speed_buildings_factor_dynamic
-		production_factory_efficiency_gain_factor = SOV_new_nep_production_factory_efficiency_gain_factor_dynamic
-		production_factory_max_efficiency_factor = SOV_new_nep_production_factory_max_efficiency_factor_dynamic
-		production_factory_start_efficiency_factor = SOV_new_nep_production_factory_start_efficiency_factor_dynamic
-		consumer_goods_factor = SOV_new_nep_consumer_goods_factor_dynamic
-		income_growth_factor = SOV_new_nep_income_growth_factor_dynamic
-		business_value_factor = SOV_new_nep_business_value_factor_dynamic
-		personal_value_factor = SOV_new_nep_personal_value_factor_dynamic
-		research_speed_factor = SOV_new_nep_research_speed_factor_dynamic
-		industrial_development_monthly = SOV_new_nep_industrial_development_monthly_dynamic
-		society_development_monthly = SOV_new_nep_society_development_monthly_dynamic
-		poverty_development_monthly = SOV_new_nep_poverty_development_monthly_dynamic
-		academic_development_monthly = SOV_new_nep_academic_development_monthly_dynamic
-	}
 	SOV_reforms_social_justice_dynamic = {
 		icon = GFX_idea_SOV_russian_communism
 		production_speed_buildings_factor = SOV_social_justice_production_speed_buildings_factor_dynamic
@@ -352,29 +277,9 @@
 		business_value_factor = SOV_social_justice_business_value_factor_dynamic
 		personal_value_factor = SOV_social_justice_personal_value_factor_dynamic
 		research_speed_factor = SOV_social_justice_research_speed_factor_dynamic
-		industrial_development_monthly = SOV_social_justice_industrial_development_monthly_dynamic
-		society_development_monthly = SOV_social_justice_society_development_monthly_dynamic
-		poverty_development_monthly = SOV_social_justice_poverty_development_monthly_dynamic
-		academic_development_monthly = SOV_social_justice_academic_development_monthly_dynamic
 		production_speed_infrastructure_factor = SOV_social_justice_production_speed_infrastructure_dynamic
 		political_power_factor = SOV_social_justice_political_power_dynamic
 	}
-	SOV_rethought_gosplan_dynamic = {
-		icon = GFX_idea_SOV_five_year_plan
-		production_speed_buildings_factor = SOV_rethought_gosplan_production_speed_buildings_factor_dynamic
-		production_factory_efficiency_gain_factor = SOV_rethought_gosplan_production_factory_efficiency_gain_factor_dynamic
-		production_factory_max_efficiency_factor = SOV_rethought_gosplan_production_factory_max_efficiency_factor_dynamic
-		production_factory_start_efficiency_factor = SOV_rethought_gosplan_production_factory_start_efficiency_factor_dynamic
-		consumer_goods_factor = SOV_rethought_gosplan_consumer_goods_factor_dynamic
-		income_growth_factor = SOV_rethought_gosplan_income_growth_factor_dynamic
-		business_value_factor = SOV_rethought_gosplan_business_value_factor_dynamic
-		personal_value_factor = SOV_rethought_gosplan_personal_value_factor_dynamic
-		research_speed_factor = SOV_rethought_gosplan_research_speed_factor_dynamic
-		industrial_development_monthly = SOV_rethought_gosplan_industrial_development_monthly_dynamic
-		society_development_monthly = SOV_rethought_gosplan_society_development_monthly_dynamic
-		poverty_development_monthly = SOV_rethought_gosplan_poverty_development_monthly_dynamic
-		academic_development_monthly = SOV_rethought_gosplan_academic_development_monthly_dynamic
-	}	
 	SOV_socialism_of_21_century_dengist_dynamic = {
 		icon = GFX_idea_SOV_birdcage_economy
 		production_speed_buildings_factor = SOV_socialism_of_21_century_dengist_production_speed_buildings_factor_dynamic
@@ -386,10 +291,6 @@
 		business_value_factor = SOV_socialism_of_21_century_dengist_business_value_factor_dynamic
 		personal_value_factor = SOV_socialism_of_21_century_dengist_personal_value_factor_dynamic
 		research_speed_factor = SOV_socialism_of_21_century_dengist_research_speed_factor_dynamic
-		industrial_development_monthly = SOV_socialism_of_21_century_dengist_industrial_development_monthly_dynamic
-		society_development_monthly = SOV_socialism_of_21_century_dengist_society_development_monthly_dynamic
-		poverty_development_monthly = SOV_socialism_of_21_century_dengist_poverty_development_monthly_dynamic
-		academic_development_monthly = SOV_socialism_of_21_century_dengist_academic_development_monthly_dynamic
 		trade_opinion_factor = SOV_socialism_of_21_century_dengist_trade_opinion_factor_dynamic
 		stability_factor = SOV_socialism_of_21_century_dengist_stability_factor_dynamic
 		political_power_gain = SOV_socialism_of_21_century_dengist_political_power_gain_dynamic
@@ -398,12 +299,8 @@
 		icon = GFX_idea_SOV_Pragmatic_Economy_Idea
 		production_speed_buildings_factor = SOV_pragmatic_economy_production_speed_buildings_factor_dynamic
 		production_factory_efficiency_gain_factor = SOV_pragmatic_economy_production_factory_efficiency_gain_factor_dynamic
-		poverty_development_monthly = SOV_pragmatic_economy_poverty_development_monthly_dynamic
 		industrial_capacity_factory =	SOV_pragmatic_economy_industrial_capacity_factory_dynamic
 		stability_factor = SOV_pragmatic_economy_stability_factor_dynamic
-		industrial_development_monthly = SOV_pragmatic_economy_industrial_development_monthly_dynamic
-		society_development_monthly = SOV_pragmatic_economy_society_development_monthly_dynamic
-		military_development_monthly = SOV_pragmatic_economy_military_development_monthly_dynamic
 		political_power_factor = SOV_pragmatic_economy_political_power_factor_dynamic 
 		war_support_factor = SOV_pragmatic_economy_war_support_factor_dynamic
 		production_factory_max_efficiency_factor = SOV_pragmatic_economy_production_factory_max_efficiency_factor_dynamic
@@ -434,12 +331,8 @@
 		icon = GFX_idea_SOV_navalnomics
 		production_speed_buildings_factor = SOV_navalnomika_production_speed_buildings_factor_dynamic
 		production_factory_efficiency_gain_factor = SOV_navalnomika_production_factory_efficiency_gain_factor_dynamic
-		poverty_development_monthly = SOV_navalnomika_poverty_development_monthly_dynamic
 		industrial_capacity_factory = SOV_navalnomika_industrial_capacity_factory_dynamic
 		stability_factor = SOV_navalnomika_stability_factor_dynamic
-		industrial_development_monthly = SOV_navalnomika_industrial_development_monthly_dynamic
-		society_development_monthly = SOV_navalnomika_society_development_monthly_dynamic
-		military_development_monthly = SOV_navalnomika_military_development_monthly_dynamic
 		political_power_factor = SOV_navalnomika_political_power_factor_dynamic 
 		war_support_factor = SOV_navalnomika_war_support_factor_dynamic
 		production_factory_max_efficiency_factor = SOV_navalnomika_production_factory_max_efficiency_factor_dynamic
@@ -465,7 +358,6 @@
 		production_factory_start_efficiency_factor = SOV_navalnomika_production_factory_start_efficiency_factor_dynamic
 		production_speed_infrastructure_factor = SOV_navalnomika_production_speed_infrastructure_factor_dynamic
 		military_factory_upkeep_factor = SOV_navalnomika_military_factory_upkeep_factor_dynamic
-		academic_development_monthly = SOV_navalnomika_academic_development_monthly_dynamic
 		min_export = SOV_navalnomika_min_export_factor_dynamic
 	}	
 	SOV_russian_space_age_dynamic = {
@@ -473,7 +365,6 @@
 		production_speed_buildings_factor = SOV_russian_space_age_production_speed_buildings_factor_dynamic
 		production_factory_efficiency_gain_factor = SOV_russian_space_age_production_factory_efficiency_gain_factor_dynamic
 		industrial_capacity_factory =	SOV_russian_space_age_industrial_capacity_factory_dynamic
-		society_development_monthly = SOV_russian_space_age_society_development_monthly_dynamic
 		political_power_factor = SOV_russian_space_age_political_power_factor_dynamic 
 		production_lack_of_resource_penalty_factor = SOV_russian_space_age_production_lack_of_resource_penalty_factor_dynamic
 		consumer_goods_factor = SOV_russian_space_age_consumer_goods_factor_dynamic
@@ -1217,10 +1108,10 @@
 	SOV_shortage_of_workers = {
 		icon = GFX_idea_SOV_economic_instability
 		production_speed_buildings_factor = SOV_shortage_of_workers_production_speed_buildings_factor_dynamic
-		poverty_development_monthly = SOV_shortage_of_workers_poverty_development_monthly_dynamic
+		#poverty_development_monthly = SOV_shortage_of_workers_poverty_development_monthly_dynamic
 		industrial_capacity_factory = SOV_shortage_of_workers_industrial_capacity_factory_dynamic
-		society_development_monthly = SOV_shortage_of_workers_society_development_monthly_dynamic
+		#society_development_monthly = SOV_shortage_of_workers_society_development_monthly_dynamic
 		production_factory_max_efficiency_factor = SOV_shortage_of_workers_factory_max_efficiency_factor_dynamic
 		income_growth_factor = SOV_shortage_of_workers_income_growth_factor_dynamic
-		industrial_development_monthly = SOV_shortage_of_workers_industrial_development_monthly_dynamic
+		#industrial_development_monthly = SOV_shortage_of_workers_industrial_development_monthly_dynamic
 	}

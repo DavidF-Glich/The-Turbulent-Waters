@@ -598,7 +598,7 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/KOR/advisors/KOR_Hong_Nam_ki.png"
 	}
 	spriteType = {
-		name = "GFX_idea_KOR_Kim_Boo_Kyum"
+		name = "GFX_idea_KOR_Kim_Boo_kyum"
 		texturefile = "gfx/interface/ideas/KOR/advisors/KOR_Kim_Boo_Kyum.png"
 	}
 	spriteType = {
@@ -6067,6 +6067,31 @@ spriteTypes = {
 		name = "GFX_idea_MEX_cartel_presence_severe"
 		texturefile = "gfx/interface/ideas/MEX/MEX_cartel_presence_severe.png"
 	}
+	#SWE
+	spriteType = {
+		name = "GFX_idea_SWE_Ba_naijian"
+		textureFile = "gfx/interface/ideas/SWE/easter/SWE_Ba_naijian.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_sergey_taboritsky"
+		textureFile = "gfx/interface/ideas/SWE/easter/SWE_Sergey_Taboritsky.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_ICED"
+		textureFile = "gfx/interface/ideas/SWE/easter/SWE_ICED.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_Com"
+		textureFile = "gfx/interface/ideas/SWE/easter/SWE_Com.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_AEQS"
+		textureFile = "gfx/interface/ideas/SWE/easter/SWE_AEQS.png"
+	}
+	spriteType = {
+		name = "GFX_idea_SWE_sanbone"
+		textureFile = "gfx/interface/ideas/SWE/easter/SWE_sanbone.png"
+	}
 	#SYR 
 	spriteType = {
 		name = "GFX_idea_SYR_syrian_economic_renewal"
@@ -7559,7 +7584,105 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/PRC/NCM_destruction_of_the_old_world.png"
 	}
 
-	#PRC chars
+	#PRC chars (easter)
+	spriteType = {
+		name = "GFX_idea_PRC_Fengyingas"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_Fengyingas.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_Feiyang"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_Feiyang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_LH"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_LH.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_LH_big"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_LH_mad.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_jianchi"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_jianchi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_Zhoujia"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_Zhoujia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_Baiquan"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_Baiquan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_mo_zheng_ren"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_mad_guy.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_xiao_mo"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_xiaomo.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_bu_wenzhong"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_buwenzhong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_dai_dai_artist"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_daidai_artist.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_jiang_yuan"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_jiangyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_jiang_yuan_big"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_canzhi_zhengshi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_59_tankie"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_59.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_mia"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_Mia.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_mana"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_mana.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_du_xiaoyuan"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_du_xiaoyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_KAISER"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_kaiser.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_sliver_wolf"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_sliver_wolf.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_ying_xingze"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_yingxingze.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_crossing_the_styx"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_crossing.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_lu_mouren"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_lu_mouren.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_quan_douhuan"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_quan_douhuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_mude"
+		textureFile = "gfx/interface/ideas/PRC/easter/PRC_mude.png"
+	}
+
+	#PRC chars (real)
 	spriteType = {
 		name = "GFX_idea_PRC_cai_qi_hog"
 		texturefile = "gfx/interface/ideas/PRC/advisors/PRC_cai_qi.png"

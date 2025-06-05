@@ -259,7 +259,7 @@ guiTypes = {
 			Orientation = upper_left
 
 			verticalScrollbar = "right_vertical_slider"
-
+			scroll_wheel_factor = 40
 			background = {
 				name = "Background"
 				quadTextureSprite = "GFX_tiled_decisions_bg_small"

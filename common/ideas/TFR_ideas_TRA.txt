@@ -20,7 +20,7 @@ ideas = {
 				army_org_factor = 0.3
 				army_morale_factor = -0.1
 				battalion_upkeep_factor = -0.15
-				military_development_monthly = -0.02
+				
 				ai_focus_defense_factor = 0.5
 				supply_factor = -0.3
 				custom_modifier_tooltip = TRA_cobasna_ammunition_depot_tooltip
@@ -60,7 +60,7 @@ ideas = {
 			modifier = {
 				political_power_gain = 0.2
 				consumer_goods_factor = 0.1
-				poverty_development_monthly = -0.01
+				
 				income_growth_factor = -0.15
 			}
 		}

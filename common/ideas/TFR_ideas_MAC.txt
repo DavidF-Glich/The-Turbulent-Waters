@@ -41,7 +41,7 @@
 				modifier = {
 					stability_weekly = -0.001
 					army_org = -2.5
-					society_development_monthly = -0.02
+					
 					authoritarian_democrat_drift = 0.01
 					nationalist_drift = 0.01
 				}
@@ -61,7 +61,7 @@
 				removal_cost = -1
 				
 				modifier = {
-					society_development_monthly = -0.02
+					
 				}
 			}
 

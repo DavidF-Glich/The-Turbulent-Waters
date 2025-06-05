@@ -210,5 +210,9 @@ spriteTypes = {
 		name = "GFX_Cold_War_GUI_Ranking_Incident"
 		texturefile = "gfx/interface/decisions/cold_war/rankings_victories_slot.dds"
 	}
+	SpriteType = {
+		name = "GFX_Cold_War_GUI_Victories_Ranking_Slot"
+		texturefile = "gfx/interface/cold_war/rankings_victories_slot.dds"
+	}
 
 }

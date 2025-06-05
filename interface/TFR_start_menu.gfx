@@ -57,6 +57,21 @@
 			texturefile = "gfx/interface/China.png"
 			alwaystransparent = yes
 		}
+		SpriteType = { 
+			name = "GFX_North_Korea_BG"
+			texturefile = "gfx/interface/north_korea.png"
+			alwaystransparent = yes
+		}
+		SpriteType = { 
+			name = "GFX_South_Korea_BG"
+			texturefile = "gfx/interface/south_korea.png"
+			alwaystransparent = yes
+		}
+		SpriteType = { 
+			name = "GFX_India_BG"
+			texturefile = "gfx/interface/india.png"
+			alwaystransparent = yes
+		}
 		SpriteType = {
 			name = "GFX_World_Map_BG"
 			texturefile = "gfx/interface/World_Map.dds"

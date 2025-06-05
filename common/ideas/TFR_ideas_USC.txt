@@ -64,7 +64,7 @@ ideas = {
 				stability_factor = -0.1
 				stability_weekly = -0.001
 				war_support_factor = -0.1
-				society_development_monthly = -0.03
+				
 				personal_expense_factor = -0.15
 				disabled_ideas = 1
 			}
@@ -78,7 +78,7 @@ ideas = {
 				army_attack_factor = 0.025
 				army_defence_factor = 0.035
 				war_stability_factor = 0.1
-				military_development_monthly = 0.01
+				
 			}
 		}		
 		USC_trumps_party_idea = {
@@ -103,7 +103,7 @@ ideas = {
 				political_power_gain = 0.03
 				production_speed_infrastructure_factor = 0.05
 				stability_factor = 0.05
-				society_development_monthly = 0.01
+				
 				conservative_drift = 0.01
 			}
 		}		
@@ -119,7 +119,7 @@ ideas = {
 				tax_personal_rate_factor = -0.05
 				stability_factor = 0.05
 				market_liberal_drift = 0.01
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		USC_constitutional_congress_dummy_idea = {
@@ -144,7 +144,7 @@ ideas = {
 				stability_factor = 0.05
 				war_support_factor = -0.1
 				personal_expense_factor = -0.15
-				society_development_monthly = -0.03
+				
 			}
 		}
 		USC_limited_bill_of_rights_idea = {
@@ -159,7 +159,7 @@ ideas = {
 				war_support_factor = -0.05
 				stability_factor = -0.1
 				personal_expense_factor = -0.15
-				society_development_monthly = -0.03
+				
 			}
 		}
 		USC_liberalize_the_party_idea = {
@@ -208,7 +208,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.1
-				society_development_monthly = 0.03
+				
 			}
 		}
 		USC_empower_the_people_idea = {
@@ -223,7 +223,7 @@ ideas = {
 				war_support_factor = 0.01
 				stability_factor = 0.02
 				compliance_growth  = 0.03
-				society_development_monthly = 0.01
+				
 			}
 		}	
 		USC_embrace_the_stratocracy_idea = {
@@ -332,7 +332,7 @@ ideas = {
 				original_tag = USC
 			}
 			modifier = {
-				society_development_monthly = 0.005
+				
 			}
 		}
 		USC_begin_transformation_idea = {
@@ -458,7 +458,7 @@ ideas = {
 				original_tag = USC
 			}
 			modifier = {
-				industrial_development_monthly = 0.01
+				
 				business_value_factor = 0.1
 			}
 		}
@@ -470,7 +470,7 @@ ideas = {
 				original_tag = USC
 			}
 			modifier = {
-				farming_development_monthly = 0.01
+				
 				production_speed_infrastructure_factor = 0.15
 			}
 		}
@@ -562,9 +562,9 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.05
 				political_power_gain = 0.2
-				industrial_development_monthly = 0.01
-				society_development_monthly = 0.01
-				farming_development_monthly = 0.01
+				
+				
+				
 			}
 		}
 		USC_revive_the_american_spirit_idea = {
@@ -577,8 +577,8 @@ ideas = {
 			modifier = {
 				industrial_capacity_factory = 0.025
 				war_support_factor = 0.1
-				poverty_development_monthly = 0.01
-				academic_development_monthly = 0.01
+				
+				
 			}
 		}
 		USC_remove_anti_american_leadership_idea = {
@@ -589,7 +589,7 @@ ideas = {
 				original_tag = USC
 			}
 			modifier = {
-				society_development_monthly = 0.01
+				
 			}
 		}
 		USC_patriotic_education_idea = {
@@ -600,7 +600,7 @@ ideas = {
 				original_tag = USC
 			}
 			modifier = {
-				academic_development_monthly = 0.01
+				
 				authoritarian_democrat_drift = 0.02
 			}
 		}
@@ -637,8 +637,8 @@ ideas = {
 			}
 			modifier = {
 				business_value_factor = -0.05
-				society_development_monthly = 0.01
-				poverty_development_monthly = 0.01
+				
+				
 			}
 		}
 		USC_defenders_of_american_values_idea = {
@@ -814,7 +814,7 @@ ideas = {
 			modifier = {
 				production_speed_industrial_complex_factor = 0.1
 				production_speed_infrastructure_factor = 0.1
-				farming_development_monthly = 0.02
+				
 			}
 		}
 		USC_expand_the_defense_production_act_idea = {
@@ -864,7 +864,7 @@ ideas = {
 			modifier = {
 				consumer_goods_factor = -0.05
 				production_factory_efficiency_gain_factor = 0.1
-				industrial_development_monthly = 0.02
+				
 			}
 		}
 		USC_resurrect_the_dream_idea = {
@@ -878,8 +878,8 @@ ideas = {
 				stability_factor = 0.05
 				personal_value_factor = 0.1
 				research_speed_factor = 0.1
-				academic_development_monthly = 0.02
-				poverty_development_monthly = 0.02
+				
+				
 			}
 		}
 		USC_recruit_our_veterans_idea = {
@@ -945,8 +945,8 @@ ideas = {
 				consumer_goods_factor = -0.1
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				industrial_development_monthly = 0.02
-				poverty_development_monthly = 0.02
+				
+				
 			}
 		}
 		USC_build_anti_poverty_encampments_idea = {
@@ -959,8 +959,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.1
 				personal_expense = 0.05
-				poverty_development_monthly = 0.01
-				society_development_monthly = 0.01
+				
+				
 			}
 		}
 		USC_a_gun_in_every_hand_idea = {
@@ -1180,7 +1180,7 @@ ideas = {
 			}
 			modifier = {
 				research_speed_factor = 0.1
-				academic_development_monthly = 0.02
+				
 			}
 		}
 		USC_supply_the_struggle_campaign_idea = {
@@ -1205,7 +1205,7 @@ ideas = {
 			}
 			modifier = {
 				income_growth_factor = 0.1
-				poverty_development_monthly = 0.02
+				
 			}
 		}
 		#Military
@@ -1280,7 +1280,7 @@ ideas = {
 				land_doctrine_cost_factor = 0.5
 				experience_loss_factor = 0.2
 				ai_focus_defense_factor = 5
-				military_development_monthly = -0.02
+				
 			}
 		}
 		USC_argumental_army_second_ammendment_idea = {
@@ -1486,7 +1486,7 @@ ideas = {
 				army_attack_factor = 0.1
 				cas_damage_reduction = 0.1
 				ai_focus_defense_factor = -1
-				military_development_monthly = 0.02
+				
 			}
 		}
 		USC_army_reorganization_idea = {
@@ -1517,7 +1517,7 @@ ideas = {
 				land_doctrine_cost_factor = -0.1
 				army_attack_factor = 0.1
 				experience_gain_army_factor = 0.1
-				military_development_monthly = 0.02
+				
 				ai_focus_defense_factor = -1
 			}
 		}
@@ -1533,7 +1533,7 @@ ideas = {
 				land_doctrine_cost_factor = -0.1
 				land_reinforce_rate = 0.1
 				org_loss_when_moving = -0.1
-				military_development_monthly = 0.02
+				
 				ai_focus_defense_factor = -1
 			}
 		}
@@ -1625,7 +1625,7 @@ ideas = {
 			modifier = {
 				command_power_gain_mult = 0.5
 				experience_gain_army = 0.05
-				military_development_monthly = 0.03
+				
 			}
 		}
 		USC_americas_call_campaign_idea = {
@@ -1671,7 +1671,7 @@ ideas = {
 			}
 			modifier = {
 				experience_gain_army_factor = 0.15
-				military_development_monthly = 0.02
+				
 				max_command_power = -20
 			}
 		}
@@ -1921,7 +1921,7 @@ ideas = {
 			}
 			modifier = {
 				army_attack_factor = 0.025
-				military_development_monthly = 0.01
+				
 			}
 		}
 		USC_where_we_go_all_idea2 = {
@@ -2020,7 +2020,7 @@ ideas = {
 			}
 			modifier = {
 				experience_gain_air_factor = 0.15
-				military_development_monthly = 0.02
+				
 				max_command_power = -20
 			}
 		}

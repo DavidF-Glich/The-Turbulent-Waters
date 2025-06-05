@@ -21,7 +21,7 @@
 					income_growth_factor = -0.5
 					dtg_threshold = -0.5
 					personal_value_factor = 0.11
-					academic_development_monthly = 0.01
+					
 					inflation_monthly = 0.1
 					business_value_factor = -0.35
 				}
@@ -47,8 +47,8 @@
 					income_growth_factor = -0.3
 					dtg_threshold = -0.2
 					personal_value_factor = 0.05
-					academic_development_monthly = 0.01
-					poverty_development_monthly = 0.02
+					
+					
 					inflation_monthly = -0.05
 				}
 			}		
@@ -73,8 +73,8 @@
 					income_growth_factor = 0.5
 					dtg_threshold = -0.5
 					personal_value_factor = -0.45
-					academic_development_monthly = -0.01
-					poverty_development_monthly = -0.02
+					
+					
 					inflation_monthly = 0.35
 					business_value_factor = 0.65
 				}

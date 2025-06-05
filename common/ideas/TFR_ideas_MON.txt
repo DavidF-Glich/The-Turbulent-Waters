@@ -47,7 +47,7 @@
 					political_power_gain = -0.5
 					production_speed_buildings_factor = -0.1
 					research_speed_factor = -0.1
-					industrial_development_monthly = -0.01
+					
 				}
 			}
 			MON_between_two_giants_idea = {

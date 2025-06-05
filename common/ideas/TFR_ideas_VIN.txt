@@ -60,7 +60,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_power_gain = -0.05
-				society_development_monthly = 0.05
+				
 				drift_defence_factor = -0.10
 				business_value_factor = 0.05
 				income_growth_factor = 0.05

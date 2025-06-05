@@ -20,7 +20,7 @@
 					social_democrat_drift = 0.02
 					nationalist_drift = 0.02
 					stability_weekly = -0.001
-					society_development_monthly = -0.04
+					
 				}
 			}
 			
@@ -41,7 +41,7 @@
 					stability_factor = -0.1
 					business_value_factor = -0.15
 					production_factory_max_efficiency_factor = -0.2
-					poverty_development_monthly = -0.01
+					
 				}
 			}
 			

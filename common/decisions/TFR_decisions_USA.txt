@@ -827,10 +827,6 @@ USA_deal_with_movement_category = {
 			add_manpower = -50
 			add_stability = 0.03
 			army_experience = 10
-			set_temp_variable = {
-				society_development_var_temp = -0.04
-			}
-			add_society_development = yes
 		}
 	}
 	#民主党：悲剧重演
@@ -857,10 +853,6 @@ USA_deal_with_movement_category = {
 			add_to_variable = {
 				USA_Riot_Danger = -0.2
 			}
-			set_temp_variable = {
-				society_development_var_temp = -0.04
-			}
-			add_society_development = yes
 			
 			activate_mission = USA_comfort_the_crowd_mission
 		}
@@ -1123,10 +1115,6 @@ USA_deal_with_movement_category = {
 		fire_only_once = yes
 		remove_effect = {
 			clr_country_flag = USA_2020_Riot
-			set_temp_variable = {
-				society_development_var_temp = 0.1
-			}
-			add_society_development = yes
 			add_stability = 0.1
 			remove_ideas = USA_BLM_campaign_idea
 		}

@@ -112,6 +112,7 @@ guiTypes = {
 				size = { width = 480 height = 45 }
 				slotsize = { width = 120 height = 45 }
 				add_horizontal = yes
+				max_slots_vertical = 1
 			}
 		}
 
@@ -122,7 +123,7 @@ guiTypes = {
 		}
 		instantTextBoxType = {
 			name = "conflict_title"
-			text = fopo_name_tab_title
+			text = fopo_name_tab
 			position = { x = 12 y = 83 }
 			maxwidth = 480
 			maxheight = 30
@@ -161,7 +162,7 @@ guiTypes = {
 		}
 		buttonType = {
 			name = "conflict_icon"
-			spriteType = "GFX_fopo_indonesia_icon_us"
+			spriteType = "GFX_fopo_tab"
 			position = { x = -125 y = 2 }
 			pdx_tooltip = fopo_name_tab
 		}
@@ -217,67 +218,6 @@ guiTypes = {
 		}
 	}
 	
-	containerWindowType = {
-		name = "TTW_fopo_generic_conflict"
-		position = { x = 29 y = 131 }
-		size = { width = 496 height = 506 }
-
-		iconType = {
-			name = "sidebar"
-			position = { x = 8 y = 8 }
-			spriteType = "GFX_fopo_indonesia_sidebar"
-		}
-
-		iconType = {
-			name = "seal"
-			position = { x = 153 y = 75 }
-			spriteType = "GFX_fopo_dept_of_state_seal"
-		}
-
-		instantTextBoxType = {
-			name = "fopo_desc"
-			position = { x = 118 y = 10 }
-			text = fopo_desc_text
-			font = "VCR02_18"
-			maxWidth = 370
-			maxHeight = 500
-		}
-	}
-
-	containerWindowType = {
-		name = "TTW_fopo_generic_conflict_topbar"
-		position = { x = 29 y = 131 }
-		size = { width = 496 height = 506 }
-
-		iconType = {
-			name = "topbar"
-			position = { x = 11 y = 8 }
-			spriteType = "GFX_fopo_south_africa_topbar"
-		}
-
-		iconType = {
-			name = "seal"
-			position = { x = 98 y = 160 }
-			spriteType = "GFX_fopo_dept_of_state_seal"
-		}
-
-		instantTextBoxType = {
-			name = "fopo_desc"
-			position = { x = 11 y = 160 }
-			text = fopo_desc_text
-			font = "VCR02_18"
-			maxWidth = 475
-			maxHeight = 500
-		}
-		
-		iconType = {
-			name = "info_tab"
-			spriteType = "GFX_fopo_info_tab"
-			position = { x = 175 y = 468 }
-			pdx_tooltip = "TTW_fopo_into_tab_tt"
-		}
-	}
-
 	containerWindowType = {
 		name = "TTW_fopo_generic_conflict_noimage"
 		position = { x = 0 y = 0 }

@@ -95,7 +95,7 @@ SOV_cooperation_program = {
 	}
 	priority = {
 		base = 1
-	}
+		}
 	visible = {
 		has_completed_focus = SOV_Make_New_Deals
 	}

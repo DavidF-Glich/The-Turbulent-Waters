@@ -367,48 +367,6 @@ debug_decisions = {
 		}
 	}
 	#removing this cringe
-	generic_increase_industrial_development_debug_decision = {
-		icon = generic_ignite_civil_war
-		allowed = {
-		}
-		visible = {
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = 0.1
-			}
-			add_industrial_development = yes
-		}
-		remove_effect = {
-		}
-	}
-	generic_decrease_industrial_development_debug_decision = {
-		icon = generic_ignite_civil_war
-		allowed = {
-		}
-		visible = {
-		}
-		available = {
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		complete_effect = {
-			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = -0.1
-			}
-			add_industrial_development = yes
-		}
-		remove_effect = {
-		}
-	}
 	generic_update_economy_debug_decision = {
 		icon = generic_ignite_civil_war
 		allowed = {

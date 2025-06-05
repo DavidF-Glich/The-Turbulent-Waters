@@ -16,9 +16,7 @@ RAJ_rising_hindu_nationalism_dynamic = {
 	resistance_growth_on_our_occupied_states = RAJ_resistance_growth_on_our_occupied_states_var
 	war_support_factor = RAJ_war_support_factor_var
 	army_core_attack_factor = RAJ_army_core_attack_factor_var
-	army_core_defence_factor = RAJ_army_core_defence_factor_var
-	society_development_monthly = RAJ_society_development_monthly_var
-	
+	army_core_defence_factor = RAJ_army_core_defence_factor_var	
 	
 
 }
@@ -47,9 +45,5 @@ RAJ_chaotic_administration_dynamic = {
 		intelligence_minister_cost_factor = IND_minister_cost_factor_var
 		head_minister_cost_factor = IND_minister_cost_factor_var
 		military_industrial_organization_funds_gain = IND_military_industrial_organization_funds_gain_var
-		industrial_development_monthly = IND_industrial_development_monthly_var
-		poverty_development_monthly = IND_development_monthly_var
-		society_development_monthly = IND_development_monthly_var
-	
 	
 }

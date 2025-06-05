@@ -264,8 +264,8 @@
 				modifier = {
 					stability_weekly = 0.003
 					war_support_weekly = 0.001
-					military_development_monthly = 0.02
-					society_development_monthly = -0.01
+					
+					
 					nationalist_drift = 0.05
 					conservative_drift = 0.02
 					authoritarian_democrat_drift = 0.05
@@ -338,11 +338,11 @@
 				removal_cost = -1
 				
 				modifier = {
-					society_development_monthly = -0.02
-					industrial_development_monthly = -0.02
+					
+					
 					stability_factor = -0.075
 					consumer_goods_factor = 0.15
-					poverty_development_monthly = -0.01
+					
 					personal_value_factor = -0.05
 					income_growth_factor = -0.15
 				}
@@ -362,8 +362,8 @@
 				removal_cost = -1
 				
 				modifier = {
-					society_development_monthly = -0.01
-					industrial_development_monthly = -0.01
+					
+					
 					stability_factor = -0.03
 					consumer_goods_factor = 0.075
 					income_growth_factor = -0.05

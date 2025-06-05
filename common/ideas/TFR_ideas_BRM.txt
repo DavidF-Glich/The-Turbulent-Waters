@@ -35,7 +35,7 @@
 				
 				modifier = {
 					army_org_factor = -0.05
-					society_development_monthly = -0.015
+					
 					planning_speed = -0.15
 				}
 			}

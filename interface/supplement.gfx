@@ -54,9 +54,5 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate_nodowneffect.lua"
 	}
 	
-	SpriteType = {
-		name = "GFX_develop_state_button"
-		texturefile = "gfx//interface//supplement//GFX_develop_state_button.dds"
-	}
 
 }

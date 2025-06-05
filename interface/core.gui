@@ -314,7 +314,8 @@ guiTypes = {
 		startValue = 0
 		orientation = upper_right
 		origo = upper_right
-		smooth_scrolling = 0.25
+		smooth_scrolling = yes
+		
 
 		background = {
 			name = "Background"

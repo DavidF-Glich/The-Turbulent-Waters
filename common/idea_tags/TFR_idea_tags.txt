@@ -68,7 +68,7 @@ idea_categories = {
 		ledger = civilian
 	}
 	
-	development = {
+	development_total = {
 		slot = academic_development
 		slot = farming_development
 		slot = poverty_development
@@ -81,6 +81,43 @@ idea_categories = {
 		ledger = civilian
 	}
 	
+	development_academic_military = {
+		slot = research_budget
+		slot = education_quality
+		slot = patent_number
+		slot = defence_budget
+		slot = projection
+		slot = mobilization
+		cost = 0
+		removal_cost = 0
+		ledger = civilian
+	}
+
+	development_farming_industry = {
+		slot = food_security
+		slot = tech_farming
+		slot = sustain_farming
+		slot = export_structure
+		slot = energy_efficiency
+		slot = digitalization
+		cost = 0
+		removal_cost = 0
+		ledger = civilian
+	}
+
+	development_poverty_society = {
+		slot = poverty_ratio
+		slot = poverty_gap
+		slot = structured_poverty
+		slot = public_service
+		slot = social_equity
+		slot = social_sustainablity
+		cost = 0
+		removal_cost = 0
+		ledger = civilian
+	}
+
+
 	military_staff = {
 		character_slot = army_chief 
 		character_slot = navy_chief 

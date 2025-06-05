@@ -43,7 +43,7 @@
 					battalion_upkeep_factor = 0.05
 					army_org_factor = 0.10
 					command_power_gain = 0.10
-					military_development_monthly = 0.01
+					
 				}
 			}
 
@@ -58,7 +58,7 @@
 					battalion_upkeep_factor = 0.1
 					army_org_factor = 0.15
 					command_power_gain = 0.2
-					military_development_monthly = 0.02
+					
 				}
 			}		
 			
@@ -73,7 +73,7 @@
 					battalion_upkeep_factor = 0.05
 					army_org_factor = 0.15
 					command_power_gain = 0.15
-					military_development_monthly = 0.02
+					
 				}
 			}
 			
@@ -137,7 +137,7 @@
 					stability_factor = -0.10
 					production_factory_max_efficiency_factor = -0.10
 					income_growth_factor = -0.15
-					poverty_development_monthly = -0.025
+					
                     libertarian_socialist_drift = 0.03
 				}
 			}
@@ -153,7 +153,7 @@
 					stability_factor = -0.10
 					production_factory_max_efficiency_factor = -0.05
 					income_growth_factor = -0.10
-					poverty_development_monthly = -0.015
+					
 					libertarian_socialist_drift = 0.015
 				}
 			}
@@ -199,7 +199,7 @@
 					production_factory_efficiency_gain_factor = 0.05
 					production_factory_max_efficiency_factor = 0.1
 					consumer_goods_factor = 0.05
-					industrial_development_monthly = 0.01
+					
 					income_growth_factor = 0.025
 					personal_value_factor = 0.03
 				}
@@ -217,7 +217,7 @@
 					stability_factor = 0.03
 					personal_value_factor = 0.015
 					army_morale_factor = 0.02
-					society_development_monthly = 0.005
+					
 					authoritarian_democrat_drift = 0.02
 					market_liberal_drift = 0.02
 					social_democrat_drift = 0.02
@@ -254,7 +254,7 @@
 					stability_factor = 0.1
 					income_growth_factor = 0.025
 					trade_opinion_factor = -0.05
-					society_development_monthly = 0.01
+					
 				}
 			}
 
@@ -438,7 +438,7 @@
 				modifier = {
 					stability_factor = -0.15
 					stability_weekly_factor = -0.02
-					society_development_monthly = -0.025
+					
 
 				}
 			}
@@ -453,7 +453,7 @@
 				modifier = {
 					stability_factor = -0.10
 					stability_weekly_factor = -0.015
-					society_development_monthly = -0.02
+					
 
 				}
 			}
@@ -468,7 +468,7 @@
 				modifier = {
 					stability_factor = -0.05
 					stability_weekly_factor = -0.015
-					society_development_monthly = -0.01
+					
 
 				}
 			}
@@ -483,7 +483,7 @@
 				modifier = {
 					stability_factor = -0.05
 					stability_weekly_factor = -0.015
-					society_development_monthly = -0.01
+					
 
 				}
 			}
@@ -506,9 +506,9 @@
 					stability_factor = -0.05
 					monthly_population = -0.05
 					consumer_goods_factor = 0.05
-					industrial_development_monthly = -0.01
-					society_development_monthly = -0.01
-					poverty_development_monthly = -0.01
+					
+					
+					
 				}
 			}
 
@@ -528,9 +528,9 @@
 					stability_weekly_factor = -0.02
 					monthly_population = -0.50
 					consumer_goods_factor = 0.10
-					industrial_development_monthly = -0.02
-					society_development_monthly = -0.02
-					poverty_development_monthly = -0.02
+					
+					
+					
 				}
 			}
 
@@ -549,9 +549,9 @@
 					stability_weekly_factor = -0.015
 					monthly_population = -0.30
 					consumer_goods_factor = 0.20
-					society_development_monthly = -0.025
-					industrial_development_monthly = -0.015
-					poverty_development_monthly = -0.015
+					
+					
+					
 				}
 			}
 
@@ -569,9 +569,9 @@
 					stability_factor = -0.15
 					monthly_population = -0.25
 					consumer_goods_factor = 0.20
-					society_development_monthly = -0.025
-					industrial_development_monthly = -0.015
-					poverty_development_monthly = -0.015
+					
+					
+					
 					research_speed_factor = -0.15
 				}
 			}
@@ -591,9 +591,9 @@
 					stability_weekly_factor = -0.025
 					monthly_population = -0.45
 					consumer_goods_factor = 0.10
-					society_development_monthly = -0.015
-					industrial_development_monthly = -0.015
-					poverty_development_monthly = -0.015
+					
+					
+					
 				}
 			}
 
@@ -611,9 +611,9 @@
 					stability_factor = -0.15
 					monthly_population = -0.50
 					consumer_goods_factor = 0.05
-					society_development_monthly = -0.01
-					industrial_development_monthly = -0.01
-					poverty_development_monthly = -0.01
+					
+					
+					
 				}
 			}
 
@@ -631,9 +631,9 @@
 					stability_factor = -0.20
 					monthly_population = -0.40
 					consumer_goods_factor = 0.15
-					society_development_monthly = -0.02
-					industrial_development_monthly = -0.02
-					poverty_development_monthly = -0.02
+					
+					
+					
 				}
 			}
 			SCO_Sovereignty_Movement = {
@@ -649,9 +649,9 @@
 					production_speed_infrastructure_factor = 0.075
 					line_change_production_efficiency_factor = 0.075
 					consumer_goods_factor = -0.025
-					society_development_monthly = 0.02
-					industrial_development_monthly = 0.02
-					poverty_development_monthly = -0.03
+					
+					
+					
 				}
 			}
 			SCO_Unionist_Terror_Attacks = {

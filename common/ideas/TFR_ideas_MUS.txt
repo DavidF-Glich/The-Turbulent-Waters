@@ -32,8 +32,8 @@
 				removal_cost = -1
 				
 				modifier = {
-					society_development_monthly = -0.025
-					poverty_development_monthly = -0.02
+					
+					
 					conscription_factor = -0.35
 					political_power_gain = -0.15
 				}

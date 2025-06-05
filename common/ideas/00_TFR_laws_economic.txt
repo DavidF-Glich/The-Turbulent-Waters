@@ -30,7 +30,7 @@ ideas = {
 			visible = {
 				tag = SOV
 				NOT = {
-					has_completed_focus = SOV_Ukrainian_Strategy
+					has_completed_focus = SOV_Zapad-2021
 				}
 			}
 			allowed_to_remove = {
@@ -41,7 +41,7 @@ ideas = {
 							ruling_only = yes
 						}
 					}
-					has_completed_focus = SOV_Ukrainian_Strategy
+					has_completed_focus = SOV_Zapad-2021
 				}
 			}
 			available = {
@@ -309,49 +309,6 @@ ideas = {
 				conversion_cost_civ_to_mil_factor = -0.2
 				max_fuel_factor = 0.3
 				mobilization_speed = 0.4
-				poverty_development_monthly = -0.025
-			}
-			ai_will_do = {
-				base = 1
-			}
-		}
-		all_russian_consolidation = {
-			picture = laws_economic_special_focus_sov_ur
-			cost = 100
-			removal_cost = -1
-			level = 1
-			allowed = {
-				original_tag = SOV
-			}
-			visible = {
-				has_country_flag = SOV_med_consolidation_of_society
-				NOT = {
-					has_global_flag = SOV_first_nato_war_victory
-				}
-			}
-			available = {
-				has_war = yes
-				has_country_flag = SOV_med_consolidation_of_society
-				NOT = {
-					has_global_flag = SOV_first_nato_war_victory
-				}
-			}
-			allowed_to_remove = {
-				always = no
-			}
-			modifier = {
-				business_value_factor = -0.15
-				stability_factor = -0.1
-				conscription_factor = 0.05
-				consumer_goods_expected_value = -0.02
-				production_speed_arms_factory_factor = 0.25
-				production_speed_industrial_complex_factor = 0.15
-				production_speed_dockyard_factor = 0.2
-				conversion_cost_civ_to_mil_factor = -0.25
-				max_fuel_factor = 0.35
-				mobilization_speed = 0.45
-				poverty_development_monthly = -0.025
-				academic_development_monthly = -0.025
 			}
 			ai_will_do = {
 				base = 1
@@ -1257,8 +1214,6 @@ ideas = {
 			modifier = {
 				personal_expense = 0
 				production_speed_infrastructure_factor = -0.2
-				society_development_monthly = -0.01
-				poverty_development_monthly = -0.01
 			}
 			ai_will_do = {
 				base = 2
@@ -1299,8 +1254,6 @@ ideas = {
 			modifier = {
 				personal_expense = 0.15
 				production_speed_infrastructure_factor = -0.1
-				society_development_monthly = -0.005
-				poverty_development_monthly = -0.005
 			}
 			ai_will_do = {
 				base = 2
@@ -1396,8 +1349,6 @@ ideas = {
 			modifier = {
 				personal_expense = 0.45
 				production_speed_infrastructure_factor = 0.1
-				society_development_monthly = 0.005
-				poverty_development_monthly = 0.005
 				low_stability_weekly = 0.001
 			}
 			ai_will_do = {
@@ -1471,8 +1422,6 @@ ideas = {
 			modifier = {
 				personal_expense = 0.6
 				production_speed_infrastructure_factor = 0.2
-				society_development_monthly = 0.01
-				poverty_development_monthly = 0.01
 				low_stability_weekly = 0.002
 			}
 		}
@@ -1494,8 +1443,6 @@ ideas = {
 				production_speed_buildings_factor = 0.05
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				industrial_development_monthly = -0.01
-				farming_development_monthly = -0.01
 			}
 		}
 		low_safety = {
@@ -1509,8 +1456,6 @@ ideas = {
 				production_speed_buildings_factor = 0.025
 				industrial_capacity_factory = 0.025
 				industrial_capacity_dockyard = 0.025
-				industrial_development_monthly = -0.005
-				farming_development_monthly = -0.005
 			}
 		}
 		medium_safety = {
@@ -1534,8 +1479,6 @@ ideas = {
 				production_speed_buildings_factor = -0.025
 				industrial_capacity_factory = -0.025
 				industrial_capacity_dockyard = -0.025
-				industrial_development_monthly = 0.005
-				farming_development_monthly = 0.005
 			}
 		}
 		higher_safety = {
@@ -1549,8 +1492,6 @@ ideas = {
 				production_speed_buildings_factor = -0.05
 				industrial_capacity_factory = -0.05
 				industrial_capacity_dockyard = -0.05
-				industrial_development_monthly = 0.01
-				farming_development_monthly = 0.01
 			}
 		}
 	}

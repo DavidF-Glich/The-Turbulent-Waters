@@ -1568,18 +1568,13 @@ SOV_the_house_of_cards = {
 		cancel_if_not_visible = yes
 		is_good = no
 		complete_effect = {
-		custom_effect_tooltip = SOV_Navalny_over_tt
+			custom_effect_tooltip = SOV_Navalny_over_tt
 		}
 		timeout_effect = {
-		activate_mission = SOV_navalny_mitings
-		add_stability = -0.05
-		add_war_support = -0.05
-		add_political_power = -50
-			set_temp_variable = {
-				var = society_development_var_temp
-				value = 0.05
-			}
-			add_society_development = yes
+			activate_mission = SOV_navalny_mitings
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -50
 		}
 	}
 
@@ -1961,7 +1956,6 @@ SOV_duma_category = {
 		cancel_if_not_visible = yes
 		modifier = {
 			political_power_gain = -0.1
-			society_development_monthly = 0.005
 			stability_weekly = 0.001
 			war_support_weekly = 0.001
 			mobilization_speed = 0.025
@@ -1998,8 +1992,6 @@ SOV_duma_category = {
 		cancel_if_not_visible = yes
 		modifier = {
 			political_power_gain = -0.15
-			society_development_monthly = 0.005
-			poverty_development_monthly = 0.015
 		}
 		complete_effect = {
 		}
@@ -2027,7 +2019,6 @@ SOV_duma_category = {
 		cancel_if_not_visible = yes
 		modifier = {
 			political_power_gain = -0.05
-			society_development_monthly = 0.01
 			war_support_weekly = 0.002
 		}
 		complete_effect = {
@@ -2059,8 +2050,6 @@ SOV_duma_category = {
 		cancel_if_not_visible = yes
 		modifier = {
 			political_power_gain = -0.05
-			society_development_monthly = 0.01
-			poverty_development_monthly = 0.005
 			stability_weekly = 0.001
 		}
 		complete_effect = {
@@ -2091,7 +2080,6 @@ SOV_duma_category = {
 		cancel_if_not_visible = yes
 		modifier = {
 			political_power_gain = -0.15
-			society_development_monthly = 0.01
 			stability_weekly = 0.001
 		}
 		complete_effect = {
@@ -2124,7 +2112,6 @@ SOV_duma_category = {
 		cancel_if_not_visible = yes
 		modifier = {
 			political_power_gain = -0.15
-			military_development_monthly = 0.01
 			army_attack_factor = 0.05
 			army_armor_speed_factor = 0.05
 			breakthrough_factor = 0.025
@@ -2146,9 +2133,6 @@ SOV_duma_category = {
 			political_power_gain = -0.10
 			consumer_goods_factor = 0.04
 			personal_expense_factor = 0.05
-			academic_development_monthly = 0.015
-			poverty_development_monthly = 0.015
-			society_development_monthly = 0.02
 			conservative_drift = 0.01
 		}
 		remove_effect = {
@@ -2205,8 +2189,6 @@ SOV_duma_category = {
 			consumer_goods_factor = 0.05
 			personal_expense_factor = 0.05
 			authoritarian_democrat_drift = 0.03
-			society_development_monthly = 0.015
-			academic_development_monthly = 0.01
 		}
 		remove_effect = {
 			set_temp_variable = {
@@ -2558,11 +2540,6 @@ SOV_duma_category = {
 		days_re_enable = 30
 		complete_effect = {
 			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = 0.05
-			}
-			add_industrial_development = yes
-			set_temp_variable = {
 				var = SOV_oligarch_approval_rating_var_temp
 				value = -0.05
 			}
@@ -2621,11 +2598,6 @@ SOV_duma_category = {
 			}
 			SOV_add_oligarch_approval_rating = yes
 			set_temp_variable = {
-				var = industrial_development_var_temp
-				value = -0.03
-			}
-			add_industrial_development = yes
-			set_temp_variable = {
 				var = SOV_oligarch_approval_factory_temp
 				value = 1
 			}
@@ -2673,11 +2645,6 @@ SOV_duma_category = {
 				value = 10
 			}
 			add_income = yes
-			set_temp_variable = {
-				var = society_development_var_temp
-				value = 0.01
-			}
-			add_society_development = yes
 		}
 		cost = 50
 	}	
@@ -4174,7 +4141,6 @@ SOV_duma_category = {
 			political_power_gain = -0.25
 			consumer_goods_factor = -0.10
 			conservative_drift = 0.05
-			industrial_development_monthly = 0.03
 		}
 		complete_effect = {
 			set_country_flag = SOV_supported_platform
@@ -4207,7 +4173,6 @@ SOV_duma_category = {
 			base = 35
 		}
 		modifier = {
-			poverty_development_monthly = 0.03
 			personal_value_factor = 0.25
 			production_speed_buildings_factor = 0.07
 			production_factory_max_efficiency_factor = 0.07
@@ -4445,16 +4410,6 @@ SOV_duma_category = {
 					}
 				}
 			}
-			set_temp_variable = {
-				var = academic_development_var_temp
-				value = -0.10
-			}
-			add_academic_development = yes
-			set_temp_variable = {
-				var = poverty_development_var_temp
-				value = 0.05
-			}
-			add_poverty_development = yes
 			effect_tooltip = {
 				swap_ideas = {
 					remove_idea = SOV_reforms_social_justice_dummy
@@ -4544,8 +4499,6 @@ SOV_duma_category = {
 			consumer_goods_factor = 0.05
 			personal_value_factor = 0.10
 			production_speed_buildings_factor = 0.025
-			poverty_development_monthly = 0.02
-			society_development_monthly = 0.02
 		}
 		remove_effect = {
 			set_temp_variable = {
@@ -4590,21 +4543,11 @@ SOV_duma_category = {
 				limit = { country_exists = DPR }
 				DPR = {
 					add_ideas = SOV_russian_investment_transnistria
-					set_temp_variable = {
-						var = military_development_var_temp
-						value = 0.05
-					}
-					add_military_development = yes
 				}
 			}
 			else = {
 				NOV = {
 					add_ideas = SOV_russian_investment_transnistria
-					set_temp_variable = {
-						var = military_development_var_temp
-						value = 0.05
-					}
-					add_military_development = yes
 				}
 			}
 		}
@@ -4644,11 +4587,6 @@ SOV_duma_category = {
 			add_debt = yes
 			NOV = {
 				add_ideas = SOV_russian_civilian_investment_transnistria
-				set_temp_variable = {
-					var = poverty_development_var_temp
-					value = 0.1
-				}
-				add_poverty_development = yes
 			}
 		}
 		cost = 50
@@ -5030,11 +4968,13 @@ SOV_duma_category = {
 			base = 35
 		}
 		visible = {
-		has_completed_focus = SOV_Create_Free_Trade_Zone
+			has_completed_focus = SOV_Create_Free_Trade_Zone
 		}
 		complete_effect = {
-		income_growth_factor = -0.05
-		consumer_goods_factor = 0.02
+		}
+		modifier = {
+			income_growth_factor = -0.05
+			consumer_goods_factor = 0.02			
 		}
 		remove_effect = {
 		137 = {
@@ -5052,13 +4992,17 @@ SOV_duma_category = {
 }
 SOV_cooperation_program = {
 	SOV_economic_partnership_raj_brics = {
+		icon = GFX_decision_SOV_brics_economy_decision
 		allowed = {
 			tag = SOV
 		}
 		visible = {
-		has_completed_focus = SOV_BRICS
+			has_completed_focus = SOV_BRICS
 		}
-		icon = GFX_decision_SOV_brics_economy_decision
+		fire_only_once = no
+		days_remove = 180
+		days_re_enable = 365
+		cost = 100
 		available = {
 			hidden_trigger = {
 				tag = SOV
@@ -5086,10 +5030,6 @@ SOV_cooperation_program = {
 		ai_will_do = {
 			base = 10
 		}
-		fire_only_once = no
-		days_remove = 180
-		days_re_enable = 365
-		cost = 100
 		complete_effect = {
 			set_country_flag = SOV_economic_partnership_ongoing
 			set_temp_variable = {
@@ -5272,10 +5212,10 @@ SOV_economic_partnership_bra_brics = {
 		ai_will_do = {
 			base = 10
 		}
+		cost = 100
 		fire_only_once = no
 		days_remove = 180
 		days_re_enable = 365
-		cost = 100
 		complete_effect = {
 			set_country_flag = SOV_economic_partnership_ongoing
 			set_temp_variable = {
@@ -5330,21 +5270,21 @@ SOV_economic_partnership_bra_brics = {
 		}
 	}
 	SOV_economic_development_KAZ = {
-	allowed = {
-		tag = SOV
-	}
-	visible = {
-	has_completed_focus = SOV_SCHOS
-	}
-	icon = GFX_decision_SOV_brics_economy_decision
-		available = {
-		hidden_trigger = {
-		tag = SOV
+		allowed = {
+			tag = SOV
 		}
-		NOT = {
-			has_country_flag = SOV_economic_partnership_ongoing
-		}		
-	}
+		visible = {
+		has_completed_focus = SOV_SCHOS
+		}
+		icon = GFX_decision_SOV_brics_economy_decision
+		available = {
+			hidden_trigger = {
+			tag = SOV
+			}
+			NOT = {
+				has_country_flag = SOV_economic_partnership_ongoing
+			}		
+		}
 		modifier = {
 			consumer_goods_factor = 0.05
 			production_speed_buildings_factor = 0.1
@@ -5357,7 +5297,7 @@ SOV_economic_partnership_bra_brics = {
 		fire_only_once = yes
 		days_remove = 90
 		cost = 75
-	complete_effect = {
+		complete_effect = {
 			set_country_flag = SOV_economic_partnership_ongoing
 			set_temp_variable = {
 				var = debt_var_temp
@@ -5382,54 +5322,57 @@ SOV_economic_partnership_bra_brics = {
 				value = 15
 			}
 			add_income = yes
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
 				}
 			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-		KAZ = {
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			KAZ = {
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
 				}
-			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+				random_owned_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
 	}
-}
 	SOV_economic_development_PRC = {
-	allowed = {
-		tag = SOV
-	}
-	visible = {
-	has_completed_focus = SOV_SCHOS
-	}
-	icon = GFX_decision_SOV_brics_economy_decision
-		available = {
-		hidden_trigger = {
-		tag = SOV
+		allowed = {
+			tag = SOV
 		}
-		NOT = {
-			has_country_flag = SOV_economic_partnership_ongoing
-		}		
-	}
+		visible = {
+			has_completed_focus = SOV_SCHOS
+		}
+		icon = GFX_decision_SOV_brics_economy_decision
+		available = {
+			hidden_trigger = {
+				tag = SOV
+			}
+			NOT = {
+				has_country_flag = SOV_economic_partnership_ongoing
+			}		
+		}
+		fire_only_once = yes
+		days_remove = 90
+		cost = 75
 		modifier = {
 			consumer_goods_factor = 0.05
 			production_speed_buildings_factor = 0.1
@@ -5439,10 +5382,7 @@ SOV_economic_partnership_bra_brics = {
 		ai_will_do = {
 			base = 10
 		}
-		fire_only_once = yes
-		days_remove = 90
-		cost = 75
-	complete_effect = {
+		complete_effect = {
 			set_country_flag = SOV_economic_partnership_ongoing
 			set_temp_variable = {
 				var = debt_var_temp
@@ -5467,54 +5407,54 @@ SOV_economic_partnership_bra_brics = {
 				value = 15
 			}
 			add_income = yes
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
 				}
 			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-		PRC = {
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			PRC = {
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
 				}
-			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+				random_owned_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
 	}
-}
 	SOV_economic_development_RAJ = {
-	allowed = {
-		tag = SOV
-	}
-	visible = {
-	has_completed_focus = SOV_SCHOS
-	}
-	icon = GFX_decision_SOV_brics_economy_decision
-		available = {
-		hidden_trigger = {
-		tag = SOV
+		allowed = {
+			tag = SOV
 		}
-		NOT = {
-			has_country_flag = SOV_economic_partnership_ongoing
-		}		
-	}
+		visible = {
+		has_completed_focus = SOV_SCHOS
+		}
+		icon = GFX_decision_SOV_brics_economy_decision
+		available = {
+			hidden_trigger = {
+				tag = SOV
+			}
+			NOT = {
+				has_country_flag = SOV_economic_partnership_ongoing
+			}		
+		}
 		modifier = {
 			consumer_goods_factor = 0.05
 			production_speed_buildings_factor = 0.1
@@ -5527,7 +5467,7 @@ SOV_economic_partnership_bra_brics = {
 		fire_only_once = yes
 		days_remove = 90
 		cost = 75
-	complete_effect = {
+		complete_effect = {
 			set_country_flag = SOV_economic_partnership_ongoing
 			set_temp_variable = {
 				var = debt_var_temp
@@ -5539,11 +5479,11 @@ SOV_economic_partnership_bra_brics = {
 					idea = SOV_economic_development_idea
 					days = 180
 				}
-			set_temp_variable = {
-				var = debt_var_temp
-				value = 40
-			}
-			add_debt = yes
+				set_temp_variable = {
+					var = debt_var_temp
+					value = 40
+				}
+				add_debt = yes
 			}
 		}
 		remove_effect = {
@@ -5552,54 +5492,54 @@ SOV_economic_partnership_bra_brics = {
 				value = 15
 			}
 			add_income = yes
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
 				}
 			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-		RAJ = {
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			RAJ = {
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
 				}
-			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+				random_owned_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
 	}
-}
 	SOV_economic_development_UZB = {
-	allowed = {
-		tag = SOV
-	}
-	visible = {
-	has_completed_focus = SOV_SCHOS
-	}
-	icon = GFX_decision_SOV_brics_economy_decision
-		available = {
-		hidden_trigger = {
-		tag = SOV
+		icon = GFX_decision_SOV_brics_economy_decision
+		allowed = {
+			tag = SOV
 		}
-		NOT = {
-			has_country_flag = SOV_economic_partnership_ongoing
-		}		
-	}
+		visible = {
+			has_completed_focus = SOV_SCHOS
+		}
+		available = {
+			hidden_trigger = {
+				tag = SOV
+			}
+			NOT = {
+				has_country_flag = SOV_economic_partnership_ongoing
+			}		
+		}
 		modifier = {
 			consumer_goods_factor = 0.05
 			production_speed_buildings_factor = 0.1
@@ -5612,7 +5552,7 @@ SOV_economic_partnership_bra_brics = {
 		fire_only_once = yes
 		days_remove = 90
 		cost = 75
-	complete_effect = {
+		complete_effect = {
 			set_country_flag = SOV_economic_partnership_ongoing
 			set_temp_variable = {
 				var = debt_var_temp
@@ -5624,11 +5564,11 @@ SOV_economic_partnership_bra_brics = {
 					idea = SOV_economic_development_idea
 					days = 180
 				}
-			set_temp_variable = {
-				var = debt_var_temp
-				value = 40
-			}
-			add_debt = yes
+				set_temp_variable = {
+					var = debt_var_temp
+					value = 40
+				}
+				add_debt = yes
 			}
 		}
 		remove_effect = {
@@ -5637,40 +5577,40 @@ SOV_economic_partnership_bra_brics = {
 				value = 15
 			}
 			add_income = yes
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = office_park
+					level = 1
+					instant_build = yes
 				}
 			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+			random_owned_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
 				}
 			}
-		UZB = {
-		random_owned_state = {
-		add_building_construction = {
-			type = office_park
-			level = 1
-			instant_build = yes
+			UZB = {
+				random_owned_state = {
+					add_building_construction = {
+						type = office_park
+						level = 1
+						instant_build = yes
+					}
 				}
-			}
-		random_owned_state = {
-        add_building_construction = {
-            type = industrial_complex
-            level = 1
-            instant_build = yes
+				random_owned_state = {
+					add_building_construction = {
+						type = industrial_complex
+						level = 1
+						instant_build = yes
+					}
 				}
 			}
 		}
 	}
-}
 	SOV_economic_agreement_SYR = {
-	allowed = {
+		allowed = {
 			tag = SOV
 		}
 		visible = {
@@ -5717,11 +5657,11 @@ SOV_economic_partnership_bra_brics = {
 					idea = SOV_economic_assistance_idea
 					days = 180
 				}
-			set_temp_variable = {
-				var = debt_var_temp
-				value = 15
-			}
-			add_debt = yes
+				set_temp_variable = {
+					var = debt_var_temp
+					value = 15
+				}
+				add_debt = yes
 			}
 		}
 		remove_effect = {

@@ -131,6 +131,17 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
+		name = "GFX_MON_two_giants_banner"
+		textureFile = "gfx/texticons/banners/MON_two_giants.png"
+		legacy_lazy_load = no
+	}
+
+	spriteType = {
+		name = "GFX_JAP_peace_constitution_banner"
+		textureFile = "gfx/texticons/banners/JAP/peace_constitution.png"
+		legacy_lazy_load = no
+	}
+	spriteType = {
 		name = "GFX_JAP_national_diet_banner"
 		texturefile = "gfx/texticons/banners/JAP/JAP_national_diet_banner.png"
 		legacy_lazy_load = no
@@ -1735,11 +1746,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	spriteType = {
-		name = "GFX_Russian_Rebels"
-		texturefile = "gfx/texticons/banners/SOV/RUS_Rebs.dds"
-		legacy_lazy_load = no
-	}
-	spriteType = {
 		name = "GFX_SOV_convoy"
 		texturefile = "gfx/texticons/banners/SOV/SOV_convoy.png"
 		legacy_lazy_load = no
@@ -1920,6 +1926,12 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	#GER
+	spriteType = {
+		name = "GFX_GER_history"
+		textureFile = "gfx/texticons/banners/GER/GER_history.png"
+		legacy_lazy_load = no
+	}
+
 	spriteType = {
 		name = "GFX_GER_bundeswehr_recruitment"
 		texturefile = "gfx/texticons/banners/GER/GER_bundeswehr_recruitment_campaign.png"

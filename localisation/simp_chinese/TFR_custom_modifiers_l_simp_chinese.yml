@@ -19,6 +19,7 @@
  battalion_upkeep_factor: "£GFX_division_upkeep 陆军维护费"
  aircraft_upkeep_factor: "£air_efficiency_texticon 空军维护费"
  ship_upkeep_factor: "£navy_anchor_texticon 海军维护费"
+
  academic_development_monthly: "£development 月度教育水平发展"
  farming_development_monthly: "£development 月度农业发展"
  poverty_development_monthly: "£development 月度贫困率变化"
@@ -28,6 +29,7 @@
  industrial_development_monthly: "£development 月度工业发展"
  military_development_monthly: "£development 月度军事发展"
  society_development_monthly: "£development 月度社会发展"
+
  irradiated_area: "辐照区"
  tax_laws_cost_factor: "税收法案花费"
  interest_rate_laws_cost_factor: "利率法案花费"

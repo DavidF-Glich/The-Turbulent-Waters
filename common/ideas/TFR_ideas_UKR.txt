@@ -206,7 +206,7 @@
 					consumer_goods_factor = 0.05
 					social_liberal_drift = 0.025
 					stability_factor = -0.05
-					society_development_monthly = 0.001
+					
 					foreign_minister_cost_factor = 0.25
 					economic_minister_cost_factor = 0.25
 					interior_minister_cost_factor = 0.25
@@ -229,7 +229,7 @@
 					political_power_gain = 0.15
 					social_liberal_drift = 0.025
 					stability_factor = -0.02
-					society_development_monthly = 0.002
+					
 					foreign_minister_cost_factor = 0.15
 					economic_minister_cost_factor = 0.15
 					interior_minister_cost_factor = 0.15
@@ -251,7 +251,6 @@
 					political_power_gain = 0.15
 					conservative_drift = 0.02
 					stability_factor = -0.1
-					poverty_development_monthly = -0.002
 					personal_expense_factor = 0.15
 					income_growth_factor = 0.025
 				}
@@ -273,8 +272,6 @@
 					political_power_gain = -0.15
 					fascist_drift = 0.02
 					stability_factor = -0.1
-					poverty_development_monthly = -0.001
-					society_development_monthly = -0.001
 					personal_expense_factor = 0.15
 					army_morale_factor = 0.025
 					army_attack_factor = 0.025
@@ -441,7 +438,7 @@
 					stability_factor = 0.1
 					political_power_gain = 0.15
 					consumer_goods_factor = -0.05
-					society_development_monthly = 0.01
+					
 					personal_expense_factor = -0.2
 				}
 			}
@@ -507,8 +504,8 @@
 					consumer_goods_factor = -0.05
 					business_value_factor = 0.15
 					army_morale_factor = 0.025
-					society_development_monthly = 0.01
-					poverty_development_monthly = 0.01
+					
+					
 				}
 			}
 
@@ -595,8 +592,8 @@
 					political_power_factor = -0.1
 					consumer_goods_factor = -0.02
 					production_speed_buildings_factor = -0.05
-					society_development_monthly = -0.01
-					poverty_development_monthly = -0.01
+					
+					
 					fascist_drift = 0.01
 					national_socialist_drift = 0.01
 				}

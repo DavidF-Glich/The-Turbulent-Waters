@@ -109,7 +109,7 @@
 				picture = FRA_Army_Disloyalty
 				
 				modifier = {
-					industrial_development_monthly = 0.02
+					
 					min_export = 0.1
 					production_speed_industrial_complex_factor = 0.1
 				}
@@ -148,7 +148,7 @@
 				picture = FRA_Army_Disloyalty
 				
 				modifier = {
-					military_development_monthly = -0.02
+					
 					army_core_defence_factor = -0.10
 					army_core_attack_factor = -0.10
 				}

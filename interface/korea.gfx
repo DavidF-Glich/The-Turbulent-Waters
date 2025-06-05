@@ -1,0 +1,70 @@
+spriteTypes = {
+	spriteType = { 
+		name = "GFX_idea_KOR_hyundai"
+		texturefile = "gfx/interface/ideas/KOR/KOR_hyundai.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_Hyundai_Rotem"
+		texturefile = "gfx/interface/ideas/KOR/KOR_Hyundai_Rotem.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_Hyundai_Wia"
+		texturefile = "gfx/interface/ideas/KOR/KOR_Hyundai_Wia.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_hanhwa"
+		texturefile = "gfx/interface/ideas/KOR/KOR_hanhwa.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_korean_air"
+		texturefile = "gfx/interface/ideas/KOR/KOR_korean_air.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_kai"
+		texturefile = "gfx/interface/ideas/KOR/KOR_kai.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_daewoo"
+		texturefile = "gfx/interface/ideas/KOR/KOR_daewoo.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_dsme"
+		texturefile = "gfx/interface/ideas/KOR/KOR_dsme.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_korean_air"
+		texturefile = "gfx/interface/ideas/KOR/KOR_korean_air.dds"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_Gang_Gyung_Hwa"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Gang_Gyung_Hwa.png"
+	}
+	spriteType = { 
+		name = "GFX_idea_KOR_Jeon_Hae_Cheol"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Jeon_Hae_Cheol.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Jeong_Eui_Yong"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Jeong_Eui_Yong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Jeong_Gyeong_Du"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Jeong_Gyeong_Du.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Jeong_Sye_Kyun"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Jeong_Sye_Kyun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Jin_Young"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Jin_Young.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Park_Ji_Won"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Park_Ji_Won.png"
+	}
+	spriteType = {
+		name = "GFX_idea_KOR_Seo_Wook"
+		texturefile = "gfx/interface/ideas/KOR/advisors/Seo_Wook.png"
+	}
+}

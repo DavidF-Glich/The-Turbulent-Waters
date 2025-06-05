@@ -79,7 +79,7 @@ ideas = {
 				stability_factor = -0.05
 				political_power_factor = 0.05
 				stability_weekly = 0.001
-				society_development_monthly = 0.0015
+				
 				party_popularity_stability_factor = -0.15
 			}
 		}
@@ -93,7 +93,7 @@ ideas = {
 				stability_factor = -0.1
 				political_power_factor = 0.10
 				stability_weekly = 0.0025
-				society_development_monthly = 0.0025
+				
 				party_popularity_stability_factor = -0.25
 			}
 			on_remove = {
@@ -116,7 +116,7 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_power_factor = 0.25
-				industrial_development_monthly = 0.02
+				
 				party_popularity_stability_factor = 0.15
 				authoritarian_democrat_drift = 0.02
 				army_morale_factor = 0.025
@@ -133,8 +133,8 @@ ideas = {
 			modifier = {
 				stability_factor = 0.05
 				political_power_factor = 0.25
-				industrial_development_monthly = 0.01
-				society_development_monthly = 0.02
+				
+				
 				party_popularity_stability_factor = 0.15
 				army_morale_factor = 0.025
 				conservative_drift = 0.02
@@ -151,8 +151,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_power_factor = 0.35
-				military_development_monthly = 0.01
-				society_development_monthly = 0.02
+				
+				
 				party_popularity_stability_factor = 0.15
 				army_morale_factor = 0.025
 			}
@@ -173,8 +173,8 @@ ideas = {
 			modifier = {
 				stability_factor = -0.05
 				political_power_factor = -0.25
-				poverty_development_monthly = 0.01
-				industrial_development_monthly = 0.01
+				
+				
 				party_popularity_stability_factor = 0.05
 				libertarian_socialist_drift = 0.01
 				industrial_capacity_factory = 0.05
@@ -196,10 +196,6 @@ ideas = {
 			modifier = {
 				stability_factor = -0.15
 				political_power_gain = 0.15
-				poverty_development_monthly = -0.0025
-				industrial_development_monthly = -0.0025
-				society_development_monthly = -0.0025
-				academic_development_monthly = 0.005
 				party_popularity_stability_factor = -0.05
 				social_liberal_drift = 0.01
 			}

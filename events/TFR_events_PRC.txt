@@ -341,18 +341,6 @@ country_event = {
 		name = china.10.a
 		set_country_flag = PRC_internal_factions_enabled_flag
 		hidden_effect = {
-			add_dynamic_modifier = {
-				modifier = PRC_influence_cen_dynamic
-			}
-			add_dynamic_modifier = {
-				modifier = PRC_influence_lib_dynamic
-			}
-			add_dynamic_modifier = {
-				modifier = PRC_influence_nat_dynamic
-			}
-			add_dynamic_modifier = {
-				modifier = PRC_influence_new_dynamic
-			}
 			set_variable = {
 				PRC_approval_rating_cen_var = 1
 			}
@@ -595,7 +583,9 @@ country_event = {
 	option = {
 		name = china.17.a
 		custom_effect_tooltip = Taiwan_Separation_Ended
-		change_tag_from = PRC
+		PRC = {
+			change_tag_from = ROOT
+		}
 		clear_variable = PRC_Civilwar_End_Year
 	}
 
@@ -1265,5 +1255,21 @@ country_event = {
 				add_idea = PRC_the_separatist_problem1
 			}
 		}
+	}
+}
+#许其亮 - 解放军笑得最开心的将军 - 缅怀
+country_event = {
+	id = china.36
+	title = china.36.t
+	desc = china.36.d
+	is_triggered_only = yes
+	option = {
+		name = china.36.a
+		retire_character = PRC_Xu_Qiliang
+	}
+	option = {
+		name = china.36.b
+		add_political_power = -100
+		add_command_power = -20
 	}
 }

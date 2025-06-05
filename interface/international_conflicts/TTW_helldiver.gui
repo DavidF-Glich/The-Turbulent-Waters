@@ -1,0 +1,45 @@
+guiTypes = {
+	containerWindowType = {
+		name = "TTW_fopo_helldiver_window"
+		position = {
+			x = 29
+			y = 131
+		}
+		iconType = {
+			name = "map"
+			spriteType = "GFX_Espionage_GUI_World_Map"
+			position = {
+				x = 0
+				y = 0
+			}
+		}
+		iconType = {
+			name = "Bar_Shanghai"
+			quadTextureSprite = "GFX_Espionage_GUI_BarTraining"
+			position = { x = 0 y = 80 }
+			scale = 1.2
+			pdx_tooltip = HD_Shanghai
+		}
+		iconType = {
+			name = "Bar_Brussel"
+			quadTextureSprite = "GFX_Espionage_GUI_BarTraining"
+			position = { x = 0 y = 120 }
+			scale = 1.2
+			pdx_tooltip = HD_Brussel
+		}
+		iconType = {
+			name = "Bar_Singapore"
+			quadTextureSprite = "GFX_Espionage_GUI_BarTraining"
+			position = { x = 0 y = 160 }
+			scale = 1.2
+			pdx_tooltip = HD_Singapore
+		}
+		iconType = {
+			name = "Bar_New_York"
+			quadTextureSprite = "GFX_Espionage_GUI_BarTraining"
+			position = { x = 0 y = 200 }
+			scale = 1.2
+			pdx_tooltip = HD_New_York
+		}
+	}
+}

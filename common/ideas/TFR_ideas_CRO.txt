@@ -15,7 +15,7 @@
 				modifier = {
 					stability_factor = -0.05
 					consumer_goods_factor = 0.10
-					industrial_development_monthly = -0.02
+					
 					industrial_capacity_factory = 0.025
 					industrial_capacity_dockyard = 0.075
 					income_growth_factor = 0.05

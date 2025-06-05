@@ -255,62 +255,6 @@
 		id = russia.9
 		days = 3
 	}
-	country_event = {
-		#Small Birth Rate
-		id = russia.19
-		days = 70
-	}
-	country_event = {
-		#Shortage of Workers
-		id = russia.18
-		days = 60
-	}
-	country_event = {
-		#Tesak death
-		id = russia.20
-		days = 259
-	}
-	country_event = {
-		#Khovanskyy arrest
-		id = russia.22
-		days = 524
-	}
-	country_event = {
-		#Maddyson LDPR
-		id = russia.21
-		days = 193
-	}
-	country_event = {
-		#CPRF Metro
-		id = russia.25
-		days = 144
-	}
-	country_event = {
-		#Zapad-2021
-		id = russia.27
-		days = 622
-	}
-	country_event = {
-		#Kazan shot
-		id = russia.30
-		days = 131
-	}
-	country_event = {
-		#Norilsk
-		id = russia.29
-		days = 149
-	}
-	country_event = {
-		#Kushtau
-		id = russia.28
-		days = 215
-	}
-	country_event = {
-		# Navalny Gets Poisoned
-		id = russia.34
-		days = 245
-	}			
-
 	set_party_name = {
 	    ideology = totalitarian_socialist 
 	    long_name = SOV_totalitarian_socialist_long

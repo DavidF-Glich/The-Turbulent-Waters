@@ -16,7 +16,7 @@ guiTypes = {
 			quadTextureSprite = "GFX_playthrough_stats_bg"
 		}
 		
-		background = {
+		iconType = {
 			name ="critical_power"
 			spriteType = "GFX_critical_power"
 			position = { x = 0 y = -100 }

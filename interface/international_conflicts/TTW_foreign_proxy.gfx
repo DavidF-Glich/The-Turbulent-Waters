@@ -8,16 +8,15 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_ParliamentMechanic_InfoButton"
-		textureFile = "gfx/interface/cold_war/GFX_ParliamentMechanic_InfoButton.dds"
+		textureFile = "gfx/interface/cold_war/fopo_info.png"
 	}
 	spriteType = {
 		name = "GFX_fopo_crisis_box"
 		texturefile = "gfx/interface/cold_war/fopo_gui_box.dds"
 	}
-
 	spriteType = {
 		name = "GFX_fopo_tab"
-		texturefile = "gfx/interface/cold_war/tab.dds"
+		texturefile = "gfx/interface/cold_war/tab.png"
 		noOfFrames = 2
 	}
 	spriteType = {
@@ -55,6 +54,45 @@ spriteTypes = {
 		name = "GFX_fopo_empty_fopo_block"
 		texturefile = "gfx/interface/cold_war/empty_fopo_block.dds"
 	}
-
-
+	#Russo-Ukrainian Conflict
+	#俄乌战争
+	spriteType = {
+		name = "GFX_fopo_Russo_Ukrainian_conflict"
+		textureFile = "gfx/interface/cold_war/category_icons/russo_ukrainian.png"
+	}
+	#Taiwan to China
+	#收台问题
+	spriteType = {
+		name = "GFX_fopo_Taiwan"
+		textureFile = "gfx/interface/cold_war/category_icons/taiwan_to_china.png"
+	}
+	#Israeli-Palestini Conflict
+	#巴以冲突
+	spriteType = {
+		name = "GFX_fopo_israel_palestine"
+		textureFile = "gfx/interface/cold_war/category_icons/israeli_palestine.png"
+	}
+	#Arunachal war
+	#藏南问题
+	spriteType = {
+		name = "GFX_fopo_arunachal_war"
+		textureFile = "gfx/interface/cold_war/category_icons/south_tibet.png"
+	}
+	#uova
+	spriteType = {
+		name = "GFX_fopo_TBC_CR"
+		textureFile = "gfx/interface/cold_war/category_icons/TBC_CR.png"
+	}
+	spriteType = {
+		name = "GFX_fopo_RDA_VOV"
+		textureFile = "gfx/interface/cold_war/category_icons/RDA_VOV.png"
+	}
+	spriteType = {
+		name = "GFX_fopo_unity"
+		textureFile = "gfx/interface/cold_war/category_icons/unity_front.png"
+	}
+	spriteType = {
+		name = "GFX_fopo_hell_diver"
+		textureFile = "gfx/interface/cold_war/category_icons/hell_diver.png"
+	}
 }

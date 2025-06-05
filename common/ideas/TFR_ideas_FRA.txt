@@ -211,7 +211,7 @@ ideas = {
 
 			removal_cost = -1
 			modifier = {
-				military_development_monthly = 0.01
+				
 				industrial_capacity_dockyard = 0.25
 			}
 			equipment_bonus = {
@@ -384,7 +384,7 @@ ideas = {
 			removal_cost = -1
 			
 			modifier = {
-				military_development_monthly = 0.01
+				
 				industrial_capacity_factory = 0.125
 			}
 			equipment_bonus = {
@@ -461,8 +461,8 @@ ideas = {
 				political_power_gain = -0.1
 				monthly_population = 0.2
 				expense_growth_factor = 0.2
-				society_development_monthly = -0.01
-				poverty_development_monthly = -0.01
+				
+				
 			}
 		}
 		FRA_yellow_vests_idea = {
@@ -525,7 +525,7 @@ ideas = {
 				interior_minister_cost_factor = 0.5
 				intelligence_minister_cost_factor = 0.5
 				theorist_minister_cost_factor = 0.5
-				society_development_monthly = -0.05
+				
 			}
 		}
 

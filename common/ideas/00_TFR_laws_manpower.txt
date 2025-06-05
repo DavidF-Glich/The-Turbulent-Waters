@@ -102,14 +102,6 @@ ideas = {
 					factor = 20
 					manpower_per_military_factory < 1000
 				}
-				modifier = {
-					add = 20
-					tag = CAN
-					OR = {
-						has_global_flag = USA_american_civil_war_global
-						has_global_flag = USA_american_civil_war_over_global
-					}
-				}
 			}
 			cancel_if_invalid = no
 		}
@@ -140,14 +132,6 @@ ideas = {
 					factor = 3
 					tag = CHI
 					has_manpower < 200000
-				}
-				modifier = {
-					add = 20
-					tag = CAN
-					OR = {
-						has_global_flag = USA_american_civil_war_global
-						has_global_flag = USA_american_civil_war_over_global
-					}
 				}
 			}
 			cost = 100
@@ -222,14 +206,6 @@ ideas = {
 						manpower_k < 3000
 					}
 				}
-				modifier = {
-					add = 20
-					tag = CAN
-					OR = {
-						has_global_flag = USA_american_civil_war_global
-						has_global_flag = USA_american_civil_war_over_global
-					}
-				}
 			}
 			cost = 100
 			removal_cost = -1
@@ -294,14 +270,6 @@ ideas = {
 					date > 2026.1.1
 					has_manpower < 2000000
 				}
-				modifier = {
-					add = 20
-					tag = CAN
-					OR = {
-						has_global_flag = USA_american_civil_war_global
-						has_global_flag = USA_american_civil_war_over_global
-					}
-				}
 			}
 			cost = 100
 			removal_cost = -1
@@ -350,14 +318,6 @@ ideas = {
 					#Block has plenty manpower
 					factor = 0
 					manpower_per_military_factory > 5000
-				}
-				modifier = {
-					add = 20
-					tag = CAN
-					OR = {
-						has_global_flag = USA_american_civil_war_global
-						has_global_flag = USA_american_civil_war_over_global
-					}
 				}
 			}
 			cost = 100
@@ -508,7 +468,7 @@ ideas = {
 				army_attack_factor = 0.1
 				war_support_factor = -0.1
 				experience_gain_factor = -0.2
-				military_development_monthly = -0.01
+				
 			}
 			ai_will_do = {
 				base = 1
@@ -540,7 +500,7 @@ ideas = {
 				army_attack_factor = 0.05
 				war_support_factor = -0.05
 				experience_gain_factor = -0.1
-				military_development_monthly = -0.005
+				
 			}
 			ai_will_do = {
 				base = 1
@@ -576,7 +536,7 @@ ideas = {
 				army_attack_factor = -0.05
 				war_support_factor = 0.05
 				experience_gain_factor = 0.1
-				military_development_monthly = 0.005
+				
 			}
 			ai_will_do = {
 				base = 1
@@ -598,7 +558,7 @@ ideas = {
 				army_attack_factor = -0.1
 				war_support_factor = 0.1
 				experience_gain_factor = 0.2
-				military_development_monthly = 0.01
+				
 			}
 			ai_will_do = {
 				base = 1
@@ -622,7 +582,7 @@ ideas = {
 				battalion_upkeep_factor = -0.1
 				aircraft_upkeep_factor = -0.1
 				ship_upkeep_factor = -0.1
-				military_development_monthly = -0.01
+				
 			}
 			ai_will_do = {
 				base = 2
@@ -650,7 +610,7 @@ ideas = {
 				battalion_upkeep_factor = -0.05
 				aircraft_upkeep_factor = -0.05
 				ship_upkeep_factor = -0.05
-				military_development_monthly = -0.005
+				
 			}
 			ai_will_do = {
 				base = 2
@@ -714,7 +674,7 @@ ideas = {
 				battalion_upkeep_factor = 0.05
 				aircraft_upkeep_factor = 0.05
 				ship_upkeep_factor = 0.05
-				military_development_monthly = 0.005
+				
 			}
 			ai_will_do = {
 				base = 1
@@ -755,7 +715,7 @@ ideas = {
 				battalion_upkeep_factor = 0.1
 				aircraft_upkeep_factor = 0.1
 				ship_upkeep_factor = 0.1
-				military_development_monthly = 0.01
+				
 			}
 			ai_will_do = {
 				base = 2
@@ -807,7 +767,6 @@ ideas = {
 				battalion_upkeep_factor = 0.15
 				aircraft_upkeep_factor = 0.15
 				ship_upkeep_factor = 0.15
-				military_development_monthly = 0.015
 			}
 			ai_will_do = {
 				base = 1
@@ -936,9 +895,6 @@ ideas = {
 			default = yes
 			modifier = {
 				war_support_factor = -0.05
-				farming_development_monthly = -0.002
-				society_development_monthly = -0.002
-				academic_development_monthly = -0.002
 			}
 			ai_will_do = {
 				base = 1
@@ -952,7 +908,6 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.1
 				research_speed_factor = 0.05
-				academic_development_monthly = 0.005
 			}
 			ai_will_do = {
 				base = 1
@@ -966,7 +921,6 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.1
 				political_power_gain = 0.1
-				farming_development_monthly = 0.005
 			}
 			ai_will_do = {
 				base = 1
@@ -980,7 +934,6 @@ ideas = {
 			modifier = {
 				conscription_factor = -0.1
 				war_support_factor = 0.05
-				society_development_monthly = 0.005
 			}
 			ai_will_do = {
 				base = 1
@@ -996,9 +949,6 @@ ideas = {
 				war_support_factor = 0.05
 				research_speed_factor = 0.05
 				political_power_gain = 0.1
-				farming_development_monthly = 0.002
-				society_development_monthly = 0.002
-				academic_development_monthly = 0.002
 			}
 			ai_will_do = {
 				base = 1

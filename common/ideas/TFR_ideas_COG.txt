@@ -36,11 +36,8 @@
 				
 				modifier = {
 					stability_weekly = 0.002
-					academic_development_monthly = 0.02
-					farming_development_monthly = 0.02
-					poverty_development_monthly = 0.025
-					industrial_development_monthly = 0.01
-					society_development_monthly = 0.02
+					
+					
 				}
 			}
 			COG_chaos_in_diversity = {

@@ -88,7 +88,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				consumer_goods_factor = -0.05
-				industrial_development_monthly = 0.01
+				
 				line_change_production_efficiency_factor = 0.1
 				research_speed_factor = 0.05
 			}
@@ -144,7 +144,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				income_growth_factor = 0.15
 				weekly_manpower = 750
-				society_development_monthly = 0.05
+				
 			}
 		}
 		FAF_EU = {
@@ -229,8 +229,8 @@ ideas = {
 				political_power_gain = 0.125
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
-				academic_development_monthly = 0.05
-				society_development_monthly = 0.05
+				
+				
 			}
 		}
 		FAF_Imperial_Palace_idea = {
@@ -276,8 +276,8 @@ ideas = {
 			picture = FRA_Anti_Islamism
 			modifier = {
 			    war_support_weekly = 0.02
-			    military_development_monthly = 0.01
-			    society_development_monthly = -0.005
+			    
+			    
 			}
 			targeted_modifier = {
 				tag = SOV
@@ -322,7 +322,7 @@ ideas = {
 				army_org_factor = 0.05
 				army_attack_factor = 0.05
 				army_speed_factor = 0.05
-				military_development_monthly = 0.02
+				
 			}
 		}
 		FAF_the_crime_of_opinion_idea = {
@@ -417,7 +417,7 @@ ideas = {
 			modifier = {
 				inflation_monthly = -0.005
 				consumer_goods_factor = 0.05
-				industrial_development_monthly = 0.02
+				
 				production_factory_max_efficiency_factor = 0.1
 			}
 		}
@@ -618,7 +618,7 @@ ideas = {
 				stability_factor = 0.1
 				political_power_gain = 0.15
 				consumer_goods_factor = 0.05
-				society_development_monthly = 0.02
+				
 				personal_expense_factor = 0.2
 				decryption = 1
 				encryption = 1
@@ -889,8 +889,8 @@ ideas = {
 				interior_minister_cost_factor = -0.2
 				intelligence_minister_cost_factor = -0.2
 				theorist_minister_cost_factor = -0.2
-				academic_development_monthly = 0.05
-				society_development_monthly = 0.05
+				
+				
 			}
 		}
 		FAF_Roman_Legacy_2 = {
@@ -915,8 +915,8 @@ ideas = {
 				interior_minister_cost_factor = -0.2
 				intelligence_minister_cost_factor = -0.2
 				theorist_minister_cost_factor = -0.2
-				academic_development_monthly = 0.05
-				society_development_monthly = 0.05
+				
+				
 			}
 		}
 		FAF_Quadrilingual_Unification_Campaign = {
@@ -1109,7 +1109,7 @@ ideas = {
 				conscription = 0.01
 				tax_business_rate = 0.5
 				research_speed_factor = -0.10
-				poverty_development_monthly = 0.05
+				
 			}
 		}
 		FAF_burgeoning_middle_class_idea = {
@@ -1125,8 +1125,8 @@ ideas = {
 			
 			modifier = {
 				consumer_goods_factor = -0.05
-				society_development_monthly = 0.015
-				poverty_development_monthly = 0.015
+				
+				
 				income_growth_factor = 0.3
 				personal_value_factor = 0.15
 				inflation_monthly = 0.005
@@ -1190,8 +1190,8 @@ ideas = {
 				personal_value_factor = -0.50
 				tax_business_rate = 0.25
 				consumer_goods_factor = -0.02
-				industrial_development_monthly = 0.05
-				poverty_development_monthly = -0.02
+				
+				
 				production_factory_efficiency_gain_factor = 0.05
 			}
 		}	
@@ -1213,7 +1213,7 @@ ideas = {
 				stability_factor = 0.06
 				industrial_capacity_factory = 0.05
 				industrial_capacity_dockyard = 0.05
-				poverty_development_monthly = 0.02
+				
 				income_growth_factor = 0.1
 				production_speed_buildings_factor = 0.05
 				conscription = -0.01
@@ -1239,7 +1239,7 @@ ideas = {
 				production_factory_max_efficiency_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
 				production_speed_infrastructure_factor = 0.05
-				poverty_development_monthly = 0.02
+				
 			}
 		}	
 		FAF_Engie_Bills_idea = {

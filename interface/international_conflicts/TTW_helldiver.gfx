@@ -1,0 +1,18 @@
+## World Map Regions
+Spritetypes = {
+	spriteType = {
+		name = "GFX_Espionage_GUI_World_Map"
+		texturefile = "gfx/interface/espionage/GFX_Espionage_GUI_World_Map.dds"
+	}
+	progressbartype = {
+		name = "GFX_Espionage_GUI_BarTraining"
+		textureFile1 = "gfx/interface/espionage/GFX_Espionage_GUI_BarTraining_Full.dds"
+		textureFile2 = "gfx/interface/espionage/GFX_Espionage_GUI_BarTraining_Empty.dds"
+		color = { 0.0 0.0 0.0 }
+		colortwo = { 0.0 0.0 0.0 }
+		size = { x = 272 y = 26 }
+		effectFile = "gfx/FX/progress.lua"
+		horizontal = yes
+	}
+
+}

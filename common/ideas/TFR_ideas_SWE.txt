@@ -30,7 +30,6 @@ ideas = {
 				monthly_population = 0.02
 				weekly_manpower = 200
 				stability_weekly = -0.001
-				society_development_monthly = -0.003
 			}
 			targeted_modifier = {
 				tag = RAJ

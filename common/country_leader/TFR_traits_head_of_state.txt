@@ -100,7 +100,6 @@ leader_traits = {
 		army_defence_factor = 0.025
 		production_speed_infrastructure_factor = 0.05
 		production_speed_industrial_complex_factor = 0.05
-		poverty_development_monthly = 0.005
 		ai_will_do = {
 			factor = 1
 		}
@@ -124,7 +123,6 @@ leader_traits = {
 		tax_business_rate_factor = -0.1
 		income_growth_factor  = 0.1
 		initiative_factor = 0.025
-		society_development_monthly = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -147,7 +145,6 @@ leader_traits = {
 		army_core_defence_factor = 0.05
 		weekly_casualties_war_support = 0.05
 		fascist_drift = 0.02
-		society_development_monthly = -0.005
 		ai_focus_aggressive_factor = 0.1
 		ai_will_do = {
 			factor = 1
@@ -158,8 +155,6 @@ leader_traits = {
 		stability_factor = 0.05
 		party_popularity_stability_factor = 0.15
 		drift_defence_factor = 0.025
-		academic_development_monthly = 0.01
-		society_development_monthly = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -631,7 +626,6 @@ leader_traits = {
 		}
 	}
 	FAF_imperator = {
-		military_development_monthly = 0.05
 		war_stability_factor = 0.25
 		national_socialist_drift = 0.02
 		ai_strategy = {
@@ -668,7 +662,6 @@ leader_traits = {
 		mobilization_speed = 0.25
 	}
 	hos_puppet_imperator = {
-		military_development_monthly = 0.025
 		national_socialist_drift = 0.01
 		stability_factor = -0.2
 		ai_strategy = {
@@ -913,7 +906,6 @@ leader_traits = {
 		political_power_gain = 0.075
 		drift_defence_factor = 0.25
 		ai_focus_war_production_factor = 0.25
-		society_development_monthly = 0.035
 		social_democrat_drift = 0.01
 		social_liberal_drift = 0.01
 		libertarian_socialist_drift = 0.01
@@ -1954,7 +1946,6 @@ leader_traits = {
 		random = no
 		war_support_factor = 0.05
 		political_power_gain = -0.05
-		military_development_monthly = 0.005
 		communist_drift = 0.05
 		ai_will_do = {
 			factor = 1
@@ -2191,7 +2182,6 @@ leader_traits = {
 		random = no
 		conscription_factor = 0.05
 		consumer_goods_factor = -0.15
-		poverty_development_monthly = -0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -2587,7 +2577,6 @@ leader_traits = {
 	NSM_The_Founding_Father_Trait = {
 		random = no
 		party_popularity_stability_factor = 0.15
-		military_development_monthly = 0.05
 		national_socialist_drift = 0.02
 		conscription_factor = 0.035
 		ai_will_do = {
@@ -2596,7 +2585,6 @@ leader_traits = {
 	}
 	NSM_Imperator_Trait = {
 		random = no
-		military_development_monthly = 0.05
 		political_power_gain = 0.05
 		stability_factor = 0.05
 		ai_will_do = {
@@ -2617,8 +2605,6 @@ leader_traits = {
 		national_socialist_drift = 0.01
 		stability_factor = 0.025
 		political_power_gain = 0.05
-		military_development_monthly = 0.035
-		society_development_monthly = 0.035
 		conscription_factor = 0.05
 		ai_will_do = {
 			factor = 1
@@ -2644,7 +2630,6 @@ leader_traits = {
 	ATW_apostle_of_god_hos = {
 		random = no
 		party_popularity_stability_factor = 0.1
-		society_development_monthly = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -2653,7 +2638,6 @@ leader_traits = {
 		random = no
 		political_power_gain = -0.1
 		party_popularity_stability_factor = 0.25
-		society_development_monthly = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -2664,7 +2648,6 @@ leader_traits = {
 		political_advisor_cost_factor = -0.1
 		stability_factor = 0.1
 		war_stability_factor = 0.1
-		society_development_monthly = 0.01
 		ai_will_do = {
 			factor = 1
 		}
@@ -2742,7 +2725,6 @@ leader_traits = {
 	USB_sanders_3_on = {
 		random = no
 		personal_value_factor = 0.1
-		poverty_development_monthly = 0.01
 	}
 	
 	USB_romney_1_off = { random = no }

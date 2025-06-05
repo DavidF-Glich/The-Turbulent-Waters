@@ -14,7 +14,7 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					society_development_monthly = -0.03
+					
 					political_power_gain = -0.25
 				}
 			}
@@ -73,7 +73,7 @@ ideas = {
 				
 				modifier = {
 					stability_factor = -0.25
-					poverty_development_monthly = -0.05
+					
 					war_support_factor = 0.25
 					war_support_weekly = -0.005
 				}
@@ -94,7 +94,7 @@ ideas = {
 				
 				modifier = {
 					consumer_goods_factor = 0.25
-					society_development_monthly = -0.05
+					
 					war_support_factor = -0.20
 				}
 			}
@@ -173,7 +173,6 @@ ideas = {
 				removal_cost = -1
 				
 				modifier = {
-					poverty_development_monthly = -0.10
 					army_attack_factor = 0.25
 					breakthrough_factor = 0.15
 					coordination_bonus = 0.3

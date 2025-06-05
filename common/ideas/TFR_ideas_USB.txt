@@ -11,9 +11,6 @@ ideas = {
 				}
 			}
 			modifier = {
-				poverty_development_monthly = -0.025
-				farming_development_monthly = -0.025
-				society_development_monthly = 0.05
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.25
 			}
@@ -408,7 +405,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				poverty_development_monthly = 0.01
+				
 				production_factory_max_efficiency_factor = -0.05
 				consumer_goods_factor = -0.1
 			}
@@ -463,7 +460,7 @@ ideas = {
 				race_laws_type_cost_factor = -0.25
 				female_laws_type_cost_factor = -0.25
 				prison_laws_type_cost_factor = -0.25
-				poverty_development_monthly = 0.02
+				
 			}
 		}
 		USB_ino_spending_bill_idea = {
@@ -479,7 +476,7 @@ ideas = {
 			modifier = {
 				tax_business_rate = -0.3
 				production_speed_office_park_factor = 0.1
-				academic_development_monthly = 0.02
+				
 			}
 		}
 		USB_neo_spending_bill_idea = {
@@ -496,7 +493,7 @@ ideas = {
 				production_speed_arms_factory_factor = 0.1
 				production_speed_rail_way_factor = 0.1
 				industry_repair_factor = 0.2
-				military_development_monthly = 0.02
+				
 			}
 		}
 		USB_con_spending_bill_idea = {
@@ -511,7 +508,7 @@ ideas = {
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.2
-				industrial_development_monthly = 0.02
+				
 			}
 		}
 		USB_emergency_presidential_powers_idea = {
@@ -580,8 +577,8 @@ ideas = {
 				production_speed_rail_way_factor = 0.1
 				industry_repair_factor = 0.2
 				research_speed_factor = 0.1
-				industrial_development_monthly = 0.03
-				military_development_monthly = 0.03
+				
+				
 			}
 		}
 		USB_nato_advisors_idea = {
@@ -673,7 +670,7 @@ ideas = {
 				stability_factor = 0.05
 				production_factory_max_efficiency_factor = 0.1
 				line_change_production_efficiency_factor = 0.1
-				society_development_monthly = 0.01
+				
 			}
 		}
 		USB_second_great_society_dummy_idea = {
@@ -718,8 +715,8 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.1
-				poverty_development_monthly = 0.01
-				society_development_monthly = 0.02
+				
+				
 				compliance_growth = 0.05
 			}
 		}
@@ -783,7 +780,7 @@ ideas = {
 			}
 			modifier = {
 				resistance_growth = -0.1
-				society_development_monthly = 0.03
+				
 			}
 		}
 		USB_green_new_deal_progressive_idea = {
@@ -804,7 +801,7 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				production_factory_max_efficiency_factor = 0.1
 				research_speed_factor = 0.03
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		USB_green_new_deal_progressive_dummy_idea = {
@@ -886,8 +883,8 @@ ideas = {
 				production_speed_buildings_factor = 0.1
 				production_speed_rail_way_factor = 0.1
 				research_speed_factor = 0.05
-				industrial_development_monthly = 0.02
-				poverty_development_monthly = 0.02
+				
+				
 			}
 		}
 		USB_tackle_the_military_industrial_complex = {
@@ -907,7 +904,7 @@ ideas = {
 				consumer_goods_factor = -0.1
 				production_speed_industrial_complex_factor = 0.1
 				stability_weekly = 0.002
-				industrial_development_monthly = 0.01
+				
 			}
 		}
 		USB_medicare_for_all_idea = {
@@ -925,8 +922,8 @@ ideas = {
 				consumer_goods_factor = 0.1
 				personal_expense_factor = 0.2
 				inflation_monthly_factor = 0.3
-				poverty_development_monthly = 0.03
-				society_development_monthly = 0.02
+				
+				
 				monthly_population = 0.15
 				compliance_growth = 0.1
 				resistance_growth = -0.1
@@ -946,8 +943,8 @@ ideas = {
 				consumer_goods_factor = 0.05
 				personal_expense_factor = 0.1
 				inflation_monthly_factor = 0.1
-				poverty_development_monthly = 0.01
-				society_development_monthly = 0.01
+				
+				
 				monthly_population = 0.05
 				production_factory_efficiency_gain_factor = 0.1
 			}
@@ -1031,8 +1028,8 @@ ideas = {
 			}
 			modifier = {
 				production_speed_buildings_factor = 0.05
-				poverty_development_monthly = 0.01
-				society_development_monthly = 0.03
+				
+				
 				research_speed_factor = 0.05
 			}
 		}
@@ -1376,8 +1373,8 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				business_value_factor = 0.1
-				academic_development_monthly = 0.005
-				industrial_development_monthly = 0.005
+				
+				
 			}
 		}
 		USB_utilize_artificial_intelligence_idea = {
@@ -1487,7 +1484,7 @@ ideas = {
 				}
 			}
 			modifier = {
-				academic_development_monthly = 0.01
+				
 				research_speed_factor = 0.05
 			}
 		}
@@ -1534,7 +1531,7 @@ ideas = {
 			}
 			modifier = {
 				stability_factor = 0.05
-				poverty_development_monthly = 0.01
+				
 			}
 		}
 		USB_supercharge_the_war_machine_idea = {
@@ -1821,7 +1818,7 @@ ideas = {
 				mobilization_speed = 0.1
 				conscription_factor = 0.1
 				experience_gain_army_factor = 0.1
-				military_development_monthly = 0.005
+				
 			}
 		}
 		USB_caution_over_land_idea = {
@@ -1859,7 +1856,7 @@ ideas = {
 				army_org_factor = 0.1
 				command_power_gain_mult = 0.1
 				max_command_power = 30
-				military_development_monthly = 0.005
+				
 			}
 		}
 		USB_reorganized_army_idea = {
@@ -1999,7 +1996,7 @@ ideas = {
 				line_change_production_efficiency_factor = -0.1
 				production_speed_buildings_factor = -0.1
 				political_power_gain = 0.05
-				poverty_development_monthly = 0.01
+				
 				consumer_goods_factor = -0.05
 				production_factory_max_efficiency_factor = 0.1
 			}
@@ -2033,8 +2030,8 @@ ideas = {
 				}
 			}
 			modifier = {
-				academic_development_monthly = 0.02
-				industrial_development_monthly = 0.01
+				
+				
 				research_speed_factor = 0.05
 			}
 		}
@@ -2443,7 +2440,7 @@ ideas = {
 			}
 			modifier = {
 				political_power_gain = 0.025
-				society_development_monthly = 0.01
+				
 				drift_defence_factor = 0.1
 			}
 		}
@@ -2480,7 +2477,7 @@ ideas = {
 			modifier = {
 				research_speed_factor = 0.05
 				personal_expense_factor = -0.075
-				academic_development_monthly = 0.02
+				
 			}
 		}
 		USB_treason_trial_kill_blinken_idea = {
@@ -2513,7 +2510,7 @@ ideas = {
 				tag = USB
 			}
 			modifier = {
-				society_development_monthly = 0.02
+				
 				root_out_resistance_effectiveness_factor = 0.15
 				political_power_gain = 0.01
 			}
@@ -2536,8 +2533,7 @@ ideas = {
 				tag = USB
 			}
 			modifier = {
-				academic_development_monthly = 0.06
-				society_development_monthly = 0.06
+				
 				nationalist_drift = 0.2
 				political_power_gain = 0.3
 				stability_factor = 0.2
